@@ -152,25 +152,49 @@
         <section class="section section-hero">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7">
+                    <div class="col-lg-8">
                         <div class="swiper swiperHeroSlider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <a href="#">
                                         <picture>
-                                            <img src="img/hero-banner-01.jpg" alt="">
+                                            <img class="swiper-img-banner" src="img/hero-banner-01.jpg" alt="">
                                         </picture>
                                     </a>
                                 </div>
-                                <div class="swiper-slide"></div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <picture>
+                                            <img class="swiper-img-banner" src="img/hero-banner-01.jpg" alt="">
+                                        </picture>
+                                    </a>
+                                </div>
                             </div>
+                            <div class="swiperHeroSlider-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="46" viewBox="0 0 27 46" fill="none">
+                                    <path d="M2 41L23 23.0001L2 5.00017L2 7.56872L20.0034 23.0001L2 38.4315L2 41Z" fill="white"/>
+                                    <path d="M1 41L1 43.1742L2.65079 41.7593L23.6508 23.7593L24.5366 23.0001L23.6508 22.2408L2.65079 4.24092L0.999997 2.82596L0.999997 5.00017L0.999997 7.56872L0.999997 8.02865L1.34921 8.32797L18.4668 23.0001L1.34921 37.6722L1 37.9715L1 38.4315L1 41Z" stroke="#9F9387" stroke-opacity="0.8" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="swiperHeroSlider-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="46" viewBox="0 0 28 46" fill="none">
+                                    <path d="M25.5274 5L4 22.9999L25.5274 40.9998V38.4313L7.0719 22.9999L25.5274 7.56854V5Z" fill="white"/>
+                                    <path d="M26.5274 5V2.86035L24.8859 4.23284L3.35855 22.2327L2.44104 22.9999L3.35855 23.7671L24.8859 41.767L26.5274 43.1395V40.9998V38.4313V37.9639L26.1689 37.6641L8.63086 22.9999L26.1689 8.3357L26.5274 8.03591V7.56854V5Z" stroke="#9F9387" stroke-opacity="0.8" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
-                    <div class="col-lg-5">
-                        <div>
-                            <div>Хиты продаж</div>
-                            <div>
-                                <a href="#">подробнее</a>
+                    <div class="col-lg-4">
+                        <div class="position-relative">
+                            <picture>
+                                <img class="img-fluid" src="img/hero-category-01.jpg" alt="">
+                            </picture>
+                            <div class="position-absolute start-0 bottom-0 m-4">
+                                <div>Хиты продаж</div>
+                                <div>
+                                    <a href="#">подробнее</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -179,7 +203,45 @@
         </section>
 
         <section class="section section-categories-circles">
-            <div class="container"></div>
+            <div class="container">
+                <h2 class="section-title">Интернет-магазин плитки и керамогранита</h2>
+            </div>
+            <div class="container-swiper">
+                <div class="swiper swiperCategoriesCircles">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="categories-circles__link">
+                                <div class="categories-circles__link-img">
+                                    <picture>
+                                        <img src="img/section-categories-circles-01.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="categories-circles__link-title">SALE</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="categories-circles__link">
+                                <div class="categories-circles__link-img">
+                                    <picture>
+                                        <img src="img/section-categories-circles-02.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="categories-circles__link-title">Крупный формат</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiperCategoriesCircles-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                            <path d="M0.00125885 36L21.5195 18.0001L0.00125563 0.000173497L0.00125586 2.56872L18.4489 18.0001L0.00125862 33.4315L0.00125885 36Z" fill="#02378F"/>
+                        </svg>
+                    </div>
+                    <div class="swiperCategoriesCircles-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                            <path d="M0.00125885 36L21.5195 18.0001L0.00125563 0.000173497L0.00125586 2.56872L18.4489 18.0001L0.00125862 33.4315L0.00125885 36Z" fill="#02378F"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="section section-popular-products">
@@ -199,6 +261,7 @@
     <footer class="footer"></footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
 
