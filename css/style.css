@@ -440,6 +440,34 @@ textarea {
     margin-bottom: 32px;
 }
 
+.section-popular-products .scrollable-container {
+    margin-bottom: 34px;
+}
+
+.section-popular-products .nav-pills {
+    gap: 32px;
+}
+
+.section-popular-products .nav-pills .nav-link {
+    color: #474A51;
+    padding: 2px 0px;
+    font-family: var(--bs-title-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    border-radius: 0;
+    border-bottom: 1px solid transparent;
+}
+
+.section-popular-products .nav-pills .nav-link.active,
+.section-popular-products .nav-pills .show>.nav-link {
+    color: #02378F;
+    font-weight: 700;
+    border-color: inherit;
+    background-color: transparent;
+}
+
 .products-grid {
     display: grid;
     grid-template-columns: 1fr;
