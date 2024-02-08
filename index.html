@@ -13,7 +13,7 @@
 <body>
 
     <header class="header">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-lg">
             <div class="container">
                 <div class="header-navigation">
                     <div class="header-navigation__logo">
@@ -33,7 +33,13 @@
                             <li class="nav-item"><a class="nav-link" href="#">Магазины</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Плитка</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Обои</a></li>
-                            <li class="nav-item dropdown dropdown-fullwidth">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Сантехника</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Выпадающее меню</a>
+                                </div>
+                            </li>
+                            <!-- <li class="nav-item dropdown dropdown-fullwidth">
                                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Сантехника</a>
                                 <div class="dropdown-menu">
                                     <div class="categories_dropdown">
@@ -86,7 +92,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
+                            </li> -->
                             <li class="nav-item"><a class="nav-link" href="#">Свет</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Краски</a></li>
                         </ul>
@@ -229,23 +235,121 @@
                                 <div class="categories-circles__link-title">Крупный формат</div>
                             </a>
                         </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="categories-circles__link">
+                                <div class="categories-circles__link-img">
+                                    <picture>
+                                        <img src="img/section-categories-circles-03.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="categories-circles__link-title">Плитка под мрамор</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="categories-circles__link">
+                                <div class="categories-circles__link-img">
+                                    <picture>
+                                        <img src="img/section-categories-circles-04.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="categories-circles__link-title">Готовые решения</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="categories-circles__link">
+                                <div class="categories-circles__link-img">
+                                    <picture>
+                                        <img src="img/section-categories-circles-05.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="categories-circles__link-title">Новинки</div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="categories-circles__link">
+                                <div class="categories-circles__link-img">
+                                    <picture>
+                                        <img src="img/section-categories-circles-02.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="categories-circles__link-title">Крупный формат</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="swiperCategoriesCircles-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
-                            <path d="M0.00125885 36L21.5195 18.0001L0.00125563 0.000173497L0.00125586 2.56872L18.4489 18.0001L0.00125862 33.4315L0.00125885 36Z" fill="#02378F"/>
-                        </svg>
-                    </div>
-                    <div class="swiperCategoriesCircles-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
-                            <path d="M0.00125885 36L21.5195 18.0001L0.00125563 0.000173497L0.00125586 2.56872L18.4489 18.0001L0.00125862 33.4315L0.00125885 36Z" fill="#02378F"/>
-                        </svg>
-                    </div>
+                </div>
+                <div class="swiperCategoriesCircles-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                        <path d="M0.00125885 36L21.5195 18.0001L0.00125563 0.000173497L0.00125586 2.56872L18.4489 18.0001L0.00125862 33.4315L0.00125885 36Z" fill="#02378F"/>
+                    </svg>
+                </div>
+                <div class="swiperCategoriesCircles-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                        <path d="M0.00125885 36L21.5195 18.0001L0.00125563 0.000173497L0.00125586 2.56872L18.4489 18.0001L0.00125862 33.4315L0.00125885 36Z" fill="#02378F"/>
+                    </svg>
                 </div>
             </div>
         </section>
 
         <section class="section section-popular-products">
-            <div class="container"></div>
+            <div class="container">
+                <h2 class="section-title">Популярные товары</h2>
+            </div>
+
+            <!-- Навигация табы -->
+            <div class="scrollable-container">
+                <div class="nav nav-pills justify-content-lg-center scrollable-wrapper" role="tablist">
+                    <div class="nav-item scrollable-item" role="presentation">
+                        <button type="button" class="nav-link active" data-bs-toggle="pill" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="true">Плитка</button>
+                    </div>
+                    <div class="nav-item scrollable-item" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false" tabindex="-1">Обои</button>
+                    </div>
+                    <div class="nav-item scrollable-item" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false" tabindex="-1">Сантехника</button>
+                    </div>
+                    <div class="nav-item scrollable-item" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false" tabindex="-1">Свет</button>
+                    </div>
+                    <div class="nav-item scrollable-item" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false" tabindex="-1">Краски</button>
+                    </div>
+                    <div class="nav-item scrollable-item" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="pill" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false" tabindex="-1">Строительные смеси</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Контейнер табы -->
+            <div class="tab-content">
+                <div class="container">
+                    
+                    <!-- Вкладка -->
+                    <div class="tab-pane fade show active" id="tab-popular-products-01" role="tabpanel" tabindex="0">
+                        <div class="products-grid">
+                            <div class="card card-product">
+                                <div class="card-img-wrapper">
+                                    <picture>
+                                        <img class="card-img" src="img/popular-product-thumb-01.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="card-body">
+                                    <span class="card-title">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</span>
+                                    <div>
+                                        <span>2 480 ₽</span> / <span>1 шт.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Вкладка -->
+                    <div class="tab-pane fade" id="tab-popular-products-02" role="tabpanel" tabindex="0">
+                        456
+                    </div>
+
+                </div>
+            </div>
+
         </section>
 
         <section class="section section-shops-location">
