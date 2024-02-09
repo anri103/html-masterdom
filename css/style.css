@@ -474,6 +474,118 @@ textarea {
     gap: 47px 34px;
 }
 
+.card-product {
+    --bs-card-spacer-y: 12px;
+    --bs-card-spacer-x: 60px;
+    --bs-card-border-width: 0;
+    --bs-card-border-radius: 0;
+    --bs-card-inner-border-radius: 0;
+}
+
+.card-product .card-top {
+    position: relative;
+}
+
+.card-product .markerContainer {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.card-product .marker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    font-family: var(--bs-title-font-family);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+.card-product .card-name {
+    text-align: center;
+}
+
+.card-product .card-name a {
+    color: #1A1A16;
+    font-family: var(--bs-title-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.24px;
+}
+
+.card-product .card-name a:hover {
+    color: #02378F;
+}
+
+.card-product .card-price {
+    text-align: center;
+    color: #02378F;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 12px;
+}
+
+.card-product .card-price .discount {
+    display: inline-block;
+    margin-left: 8px;
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card-product .skuProperty {
+    margin-top: 12px;
+}
+
+.card-product .skuPropertyList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+}
+
+.card-product .skuProperty li {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.card-product .skuPropertyLink {
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    padding: 0;
+    display: block;
+    border: 1px solid #ddd;
+}
+
+.card-product .skuProperty .selected .skuPropertyLink {
+    border: 1px solid #02378F;
+    pointer-events: none;
+    position: relative;
+}
+
+.product .skuPropertyList img {
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+}
+
 @media (min-width: 992px) {
     .products-grid {
         grid-template-columns: 1fr 1fr 1fr;
