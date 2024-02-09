@@ -371,7 +371,7 @@ textarea {
     top: 35%;
     transform: translateY(0);
     cursor: pointer;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     z-index: 10;
@@ -420,6 +420,13 @@ textarea {
     line-height: normal;
     letter-spacing: 0.24px;
     margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+    .swiperCategoriesCircles-next,
+    .swiperCategoriesCircles-prev {
+        display: flex;
+    }
 }
 
 /* section-popular-products ============================ */
@@ -484,6 +491,37 @@ textarea {
 
 .card-product .card-top {
     position: relative;
+}
+
+.card-product .card-img-wrapper {
+    position: relative;
+}
+
+.card-product .card-img-wrapper img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.card-product .card-img-wrapper img:nth-child(1) {
+    display: block;
+}
+
+.card-product .card-img-wrapper img:nth-child(2) {
+    display: none;
+}
+
+.card-product .card-img-wrapper:after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 100%;
 }
 
 .card-product .markerContainer {
@@ -589,5 +627,13 @@ textarea {
 @media (min-width: 992px) {
     .products-grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card-product .card-img-wrapper:hover img:first-child {
+        display: none;
+    }
+    
+    .card-product .card-img-wrapper:hover img:last-child {
+        display: block;
     }
 }

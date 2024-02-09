@@ -16,13 +16,24 @@ var swiperHeroSlider = new Swiper(".swiperHeroSlider", {
 });
 
 var swiperCategoriesCircles = new Swiper(".swiperCategoriesCircles", {
-    slidesPerView: 5,
+    slidesPerView: 2.5,
     loop: false,
     spaceBetween: 32,
     grabCursor: true,
     navigation: {
         nextEl: ".swiperCategoriesCircles-next",
         prevEl: ".swiperCategoriesCircles-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+        },
+        992: {
+            slidesPerView: 4,
+        },
+        1200: {
+            slidesPerView: 5,
+        },
     },
 });
 
