@@ -197,16 +197,18 @@
                             <div class="swiper swiperHeroSlider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="#" class="swiper-img-banner">
+                                        <a href="#" class="hero-slider-item">
+                                            <!-- Тег "picture" для загрузки разных баннеров для разных экранов в будущем -->
                                             <picture>
-                                                <img src="img/hero-banner-01.jpg" alt="">
+                                                <img src="img/hero-banner-01.jpg" alt="Новая коллекция уже на складе">
                                             </picture>
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="#" class="swiper-img-banner">
+                                        <a href="#" class="hero-slider-item">
+                                            <!-- Тег "picture" для загрузки разных баннеров для разных экранов в будущем -->
                                             <picture>
-                                                <img src="img/hero-banner-01.jpg" alt="">
+                                                <img src="img/hero-banner-01.jpg" alt="Новая коллекция уже на складе">
                                             </picture>
                                         </a>
                                     </div>
@@ -239,9 +241,7 @@
                     <div class="col-lg-4">
                         <div class="hero-category">
                             <div class="hero-category__img">
-                                <picture>
-                                    <img src="img/hero-category-01.jpg" alt="Хиты продаж">
-                                </picture>
+                                <img src="img/hero-category-01.jpg" alt="Хиты продаж">
                             </div>
                             <div class="hero-category__text">
                                 <div class="hero-category__title">Хиты продаж</div>
@@ -264,63 +264,51 @@
                 <div class="swiper swiperCategoriesCircles">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="#" class="categories-circles__link">
-                                <div class="categories-circles__img-wrap">
-                                    <picture>
-                                        <img src="img/section-categories-circles-01.png" alt="">
-                                    </picture>
+                            <a href="#" class="categories-circles__item">
+                                <div class="categories-circles__img">
+                                    <img loading="lazy" src="img/section-categories-circles-01.png" alt="SALE">
                                 </div>
-                                <div class="categories-circles__link-title">SALE</div>
+                                <div class="categories-circles__title">SALE</div>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="categories-circles__link">
-                                <div class="categories-circles__img-wrap">
-                                    <picture>
-                                        <img src="img/section-categories-circles-02.png" alt="">
-                                    </picture>
+                            <a href="#" class="categories-circles__item">
+                                <div class="categories-circles__img">
+                                    <img loading="lazy" src="img/section-categories-circles-02.png" alt="Крупный формат">
                                 </div>
-                                <div class="categories-circles__link-title">Крупный формат</div>
+                                <div class="categories-circles__title">Крупный формат</div>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="categories-circles__link">
-                                <div class="categories-circles__img-wrap">
-                                    <picture>
-                                        <img src="img/section-categories-circles-03.png" alt="">
-                                    </picture>
+                            <a href="#" class="categories-circles__item">
+                                <div class="categories-circles__img">
+                                    <img loading="lazy" src="img/section-categories-circles-03.png" alt="Плитка под мрамор">
                                 </div>
-                                <div class="categories-circles__link-title">Плитка под мрамор</div>
+                                <div class="categories-circles__title">Плитка под мрамор</div>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="categories-circles__link">
-                                <div class="categories-circles__img-wrap">
-                                    <picture>
-                                        <img src="img/section-categories-circles-04.png" alt="">
-                                    </picture>
+                            <a href="#" class="categories-circles__item">
+                                <div class="categories-circles__img">
+                                    <img loading="lazy" src="img/section-categories-circles-04.png" alt="Готовые решения">
                                 </div>
-                                <div class="categories-circles__link-title">Готовые решения</div>
+                                <div class="categories-circles__title">Готовые решения</div>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="categories-circles__link">
-                                <div class="categories-circles__img-wrap">
-                                    <picture>
-                                        <img src="img/section-categories-circles-05.png" alt="">
-                                    </picture>
+                            <a href="#" class="categories-circles__item">
+                                <div class="categories-circles__img">
+                                    <img loading="lazy" src="img/section-categories-circles-05.png" alt="Новинки">
                                 </div>
-                                <div class="categories-circles__link-title">Новинки</div>
+                                <div class="categories-circles__title">Новинки</div>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <a href="#" class="categories-circles__link">
-                                <div class="categories-circles__img-wrap">
-                                    <picture>
-                                        <img src="img/section-categories-circles-02.png" alt="">
-                                    </picture>
+                            <a href="#" class="categories-circles__item">
+                                <div class="categories-circles__img">
+                                    <img loading="lazy" src="img/section-categories-circles-02.png" alt="Крупный формат">
                                 </div>
-                                <div class="categories-circles__link-title">Крупный формат</div>
+                                <div class="categories-circles__title">Крупный формат</div>
                             </a>
                         </div>
                     </div>
@@ -384,15 +372,19 @@
                 <!-- Вкладка 01 -->
                 <div class="tab-pane fade show active" id="tab-popular-products-01" role="tabpanel" tabindex="0">
                     <div class="container">
-                        <!-- Для десктопа выводить 6 товаров, для мобилки - 3 -->
-                        <div class="products-grid">
+
+                        <!-- =================================================================================================== -->
+                        <!-- Для десктопа (экраны с min-width: 992px) выводить 6 товаров, для мобилки (всё что меньше 992px) - 3 -->
+                        <!-- =================================================================================================== -->
+
+                        <div class="popular-products-grid">
     
                             <!-- item 1 -->
                             <div class="card card-product">
                                 <div class="card-top">
-                                    <a href="#" class="text-decoration-none">
+                                    <a href="#">
                                         <div class="card-img-wrapper">
-                                            <img itemprop="image" loading="lazy" src="img/popular-product-thumb-01.jpg">
+                                            <img loading="lazy" src="img/popular-product-thumb-01.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
@@ -442,9 +434,9 @@
                             <!-- item 2 -->
                             <div class="card card-product">
                                 <div class="card-top">
-                                    <a href="#" class="text-decoration-none">
+                                    <a href="#">
                                         <div class="card-img-wrapper">
-                                            <img itemprop="image" loading="lazy" src="img/popular-product-thumb-02.jpg">
+                                            <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-01.jpg">
                                         </div>
                                     </a>
@@ -492,9 +484,9 @@
                             <!-- item 3 -->
                             <div class="card card-product">
                                 <div class="card-top">
-                                    <a href="#" class="text-decoration-none">
+                                    <a href="#">
                                         <div class="card-img-wrapper">
-                                            <img itemprop="image" loading="lazy" src="img/popular-product-thumb-03.jpg">
+                                            <img loading="lazy" src="img/popular-product-thumb-03.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
@@ -542,9 +534,9 @@
                             <!-- item 4 -->
                             <div class="card card-product">
                                 <div class="card-top">
-                                    <a href="#" class="text-decoration-none">
+                                    <a href="#">
                                         <div class="card-img-wrapper">
-                                            <img itemprop="image" loading="lazy" src="img/popular-product-thumb-04.jpg">
+                                            <img loading="lazy" src="img/popular-product-thumb-04.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
@@ -590,9 +582,9 @@
                             <!-- item 5 -->
                             <div class="card card-product">
                                 <div class="card-top">
-                                    <a href="#" class="text-decoration-none">
+                                    <a href="#">
                                         <div class="card-img-wrapper">
-                                            <img itemprop="image" loading="lazy" src="img/popular-product-thumb-05.jpg">
+                                            <img loading="lazy" src="img/popular-product-thumb-05.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
@@ -640,9 +632,9 @@
                             <!-- item 6 -->
                             <div class="card card-product">
                                 <div class="card-top">
-                                    <a href="#" class="text-decoration-none">
+                                    <a href="#">
                                         <div class="card-img-wrapper">
-                                            <img itemprop="image" loading="lazy" src="img/popular-product-thumb-06.jpg">
+                                            <img loading="lazy" src="img/popular-product-thumb-06.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
@@ -688,21 +680,30 @@
                             </div>
     
                         </div>
+
+                        <div class="products-category-link">
+                            <a href="#">Смотреть все</a>
+                        </div>
+
                     </div>
                 </div>
 
                 <!-- Вкладка 02 -->
                 <div class="tab-pane fade" id="tab-popular-products-02" role="tabpanel" tabindex="0">
                     <div class="container">
-                        <!-- Для десктопа выводить 6 товаров, для мобилки - 3 -->
-                        <div class="products-grid">
+
+                        <!-- =================================================================================================== -->
+                        <!-- Для десктопа (экраны с min-width: 992px) выводить 6 товаров, для мобилки (всё что меньше 992px) - 3 -->
+                        <!-- =================================================================================================== -->
+
+                        <div class="popular-products-grid">
     
                             <!-- item 1 -->
                             <div class="card card-product">
                                 <div class="card-top">
-                                    <a href="#" class="text-decoration-none">
+                                    <a href="#">
                                         <div class="card-img-wrapper">
-                                            <img itemprop="image" loading="lazy" src="img/popular-product-thumb-06.jpg">
+                                            <img loading="lazy" src="img/popular-product-thumb-06.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
@@ -752,9 +753,9 @@
                             <!-- item 2 -->
                             <div class="card card-product">
                                 <div class="card-top">
-                                    <a href="#" class="text-decoration-none">
+                                    <a href="#">
                                         <div class="card-img-wrapper">
-                                            <img itemprop="image" loading="lazy" src="img/popular-product-thumb-05.jpg">
+                                            <img loading="lazy" src="img/popular-product-thumb-05.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
@@ -802,9 +803,9 @@
                             <!-- item 3 -->
                             <div class="card card-product">
                                 <div class="card-top">
-                                    <a href="#" class="text-decoration-none">
+                                    <a href="#">
                                         <div class="card-img-wrapper">
-                                            <img itemprop="image" loading="lazy" src="img/popular-product-thumb-04.jpg">
+                                            <img loading="lazy" src="img/popular-product-thumb-04.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
@@ -852,9 +853,9 @@
                             <!-- item 4 -->
                             <div class="card card-product">
                                 <div class="card-top">
-                                    <a href="#" class="text-decoration-none">
+                                    <a href="#">
                                         <div class="card-img-wrapper">
-                                            <img itemprop="image" loading="lazy" src="img/popular-product-thumb-03.jpg">
+                                            <img loading="lazy" src="img/popular-product-thumb-03.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
@@ -900,9 +901,9 @@
                             <!-- item 5 -->
                             <div class="card card-product">
                                 <div class="card-top">
-                                    <a href="#" class="text-decoration-none">
+                                    <a href="#">
                                         <div class="card-img-wrapper">
-                                            <img itemprop="image" loading="lazy" src="img/popular-product-thumb-02.jpg">
+                                            <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-01.jpg">
                                         </div>
                                     </a>
@@ -950,9 +951,9 @@
                             <!-- item 6 -->
                             <div class="card card-product">
                                 <div class="card-top">
-                                    <a href="#" class="text-decoration-none">
+                                    <a href="#">
                                         <div class="card-img-wrapper">
-                                            <img itemprop="image" loading="lazy" src="img/popular-product-thumb-01.jpg">
+                                            <img loading="lazy" src="img/popular-product-thumb-01.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
@@ -998,6 +999,11 @@
                             </div>
     
                         </div>
+
+                        <div class="products-category-link">
+                            <a href="#">Смотреть все</a>
+                        </div>
+
                     </div>
                 </div>
 
@@ -1007,12 +1013,287 @@
 
         <!-- section-shops-location -->
         <section class="section section-shops-location">
-            <div class="container"></div>
+            <div class="container">
+                <div>
+                    <a href="#">
+                        <span>Все магазины</span>
+                        <div class="flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" fill="none">
+                                <path d="M1 14L10.6276 8.03992C10.7453 7.97014 10.839 7.88633 10.903 7.79352C10.967 7.70073 11 7.60088 11 7.49998C11 7.39909 10.967 7.29923 10.903 7.20644C10.839 7.11365 10.7453 7.02984 10.6276 6.96004L1 1" stroke="#7C7D80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper swiperShopsLocation">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="shop-location__item">
+                                <div class="row">
+                                    <div class="col-lg-8 order-lg-2">
+                                        <div class="shop-location__img">
+                                            <img loading="lazy" src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 order-lg-1">
+                                        <div class="shop-location__body">
+                                            <div class="shop-location__body-top">
+                                                <div class="shop-location__title">МастерДом на Профсоюзной</div>
+                                                <div class="shop-location__tags">
+                                                    <div>Обои</div>
+                                                    <div>Плитка</div>
+                                                    <div>Отдел шторы</div>
+                                                    <div>Светильники</div>
+                                                    <div>Сантехники</div>
+                                                </div>
+                                            </div>
+                                            <div class="shop-location__body-bottom">
+                                                <div>ежедневно с 10:00 до 21:00</div>
+                                                <div>г. Москва, Нахимовский проспект, д.59а</div>
+                                                <div>
+                                                    <div>Профсоюзная, 15 м</div>
+                                                    <div>Профсоюзная, 15 м</div>
+                                                </div>
+                                                <div>8 (800) 350-32-43</div>
+                                                <div>
+                                                    <a href="#">
+                                                        <div class="flex-shrink-0">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
+                                                                <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#ACB2BF"/>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="shop-location__item">
+                                <div class="row">
+                                    <div class="col-lg-8 order-lg-2">
+                                        <div class="shop-location__img">
+                                            <img loading="lazy" src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 order-lg-1">
+                                        <div class="shop-location__body">
+                                            <div class="shop-location__body-top">
+                                                <div class="shop-location__title">МастерДом на Профсоюзной</div>
+                                                <div class="shop-location__tags">
+                                                    <div>Обои</div>
+                                                    <div>Плитка</div>
+                                                    <div>Отдел шторы</div>
+                                                    <div>Светильники</div>
+                                                    <div>Сантехники</div>
+                                                </div>
+                                            </div>
+                                            <div class="shop-location__body-bottom">
+                                                <div>ежедневно с 10:00 до 21:00</div>
+                                                <div>г. Москва, Нахимовский проспект, д.59а</div>
+                                                <div>
+                                                    <div>Профсоюзная, 15 м</div>
+                                                    <div>Профсоюзная, 15 м</div>
+                                                </div>
+                                                <div>8 (800) 350-32-43</div>
+                                                <div>
+                                                    <a href="#">
+                                                        <div class="flex-shrink-0">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
+                                                                <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#ACB2BF"/>
+                                                            </svg>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- section-blog-slider -->
         <section class="section section-blog-slider">
-            <div class="container"></div>
+            <div class="container">
+                <h2 class="section-title">Блог</h2>
+                <div class="blog-slider__navigation">
+                    <div>Все</div>
+                    <div>Новости</div>
+                    <div>Статьи</div>
+                    <div>События</div>
+                </div>
+            </div>
+            <div class="swiper swiperBlogSlider">
+                <div class="swiper-wrapper">
+                    <!-- item-01 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-01.jpg" alt="Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">Новости</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-02 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">Акции</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-03 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">мероприятия</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-04 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">мероприятия</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-05 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">Акции</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-06 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">мероприятия</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-07 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">мероприятия</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiperBlogSlider-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                        <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="swiperBlogSlider-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                        <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+
         </section>
 
     </main>

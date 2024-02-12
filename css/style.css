@@ -144,6 +144,18 @@ textarea {
 
 /* BASE ============================ */
 
+.section {}
+
+.section-title {
+    color: #1A1A16;
+    font-family: var(--bs-title-font-family);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+}
+
 .bg-img {
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -261,16 +273,13 @@ textarea {
 }
 
 .header-phone {
+    --bs-link-color-rgb: 2,55,143;
     display: none;
     text-align: end;
-    margin-top: 12px;
-}
-
-.header-phone__link {
-    color: #02378F;
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
+    margin-top: 12px;
 }
 
 .header-icons {
@@ -345,6 +354,31 @@ textarea {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* section-hero ============================ */
 
 .section-hero {
@@ -361,7 +395,7 @@ textarea {
     height: 100%;
 }
 
-.swiperHeroSlider .swiper-img-banner img {
+.swiperHeroSlider .hero-slider-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -414,8 +448,6 @@ textarea {
     position: relative;
 }
 
-.hero-category__img {}
-
 .hero-category__img img {
     width: 100%;
     height: 100%;
@@ -437,8 +469,8 @@ textarea {
     margin-bottom: 9px;
 }
 
-.hero-category__link a {
-    color: #FFF;
+.hero-category__link {
+    --bs-link-color-rgb: 255,255,255;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.149px;
@@ -467,6 +499,20 @@ textarea {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* section-categories-circles ============================ */
 
 .section-categories-circles {
@@ -475,13 +521,9 @@ textarea {
 }
 
 .section-categories-circles .section-title {
-    color: #1A1A16;
     text-align: center;
-    font-family: var(--bs-title-font-family);
-    font-size: 32px;
     font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.64px;
+    text-transform: none;
     margin-bottom: 32px;
 }
 
@@ -521,27 +563,28 @@ textarea {
     opacity: 0;
 }
 
-.categories-circles__link {
+.categories-circles__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
-.categories-circles__img-wrap {
+.categories-circles__img {
     padding: 4px;
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid #02378F;
 }
 
-.categories-circles__img-wrap img {
+.categories-circles__img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.categories-circles__link-title {
+.categories-circles__title {
     text-align: center;
     color: #474A51;
     font-family: var(--bs-title-font-family);
@@ -549,7 +592,6 @@ textarea {
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.24px;
-    margin-top: 10px;
 }
 
 @media (min-width: 992px) {
@@ -564,6 +606,17 @@ textarea {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* section-popular-products ============================ */
 
 .section-popular-products {
@@ -571,13 +624,6 @@ textarea {
 }
 
 .section-popular-products .section-title {
-    color: #1A1A16;
-    font-family: var(--bs-title-font-family);
-    font-size: 32px;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.64px;
-    text-transform: uppercase;
     text-align: center;
     margin-bottom: 32px;
 }
@@ -613,7 +659,7 @@ textarea {
     background-color: transparent;
 }
 
-.products-grid {
+.popular-products-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 47px 34px;
@@ -768,7 +814,7 @@ textarea {
         padding: 0;
         gap: 32px;
     }
-    .products-grid {
+    .popular-products-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
@@ -778,5 +824,54 @@ textarea {
     
     .card-product .card-img-wrapper:hover img:last-child {
         display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* section-blog-slider ============================ */
+
+.section-blog-slider {}
+
+.blog-slider__navigation {}
+
+.swiperBlogSlider {}
+
+.swiperBlogSlider .swiper-slide {
+    width: 305px;
+}
+
+.blog-slide-item {}
+
+.blog-slide-item__img {}
+
+.blog-slide-item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-slide-item__body {}
+
+.blog-slide-item__tags {}
+
+.blog-slide-item__title {}
+
+.blog-slide-item__read-link {}
+
+@media (min-width: 992px) {
+
+    .swiperBlogSlider .swiper-slide {
+        width: 345px;
     }
 }

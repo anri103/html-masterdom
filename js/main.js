@@ -37,6 +37,32 @@ var swiperCategoriesCircles = new Swiper(".swiperCategoriesCircles", {
     },
 });
 
+var swiperShopsLocation = new Swiper(".swiperShopsLocation", {
+    slidesPerView: 1,
+    loop: false,
+    spaceBetween: 16,
+    grabCursor: true,
+});
+
+var swiperBlogSlider = new Swiper(".swiperBlogSlider", {
+    slidesPerView: 'auto',
+    loop: false,
+    spaceBetween: 22,
+    grabCursor: true,
+    slidesOffsetBefore: 12,
+    slidesOffsetAfter: 12,
+    navigation: {
+        nextEl: ".swiperBlogSlider-next",
+        prevEl: ".swiperBlogSlider-prev",
+    },
+    breakpoints: {
+        992: {
+            spaceBetween: 34,
+        },
+    },
+});
+
+
 
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
