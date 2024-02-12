@@ -131,10 +131,12 @@
                 <div>
                     <div class="header-icons">
                         <div class="header-icons__search">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <path d="M14.1733 25.1308C20.2244 25.1308 25.1298 20.2254 25.1298 14.1743C25.1298 8.12317 20.2244 3.21777 14.1733 3.21777C8.12219 3.21777 3.2168 8.12317 3.2168 14.1743C3.2168 20.2254 8.12219 25.1308 14.1733 25.1308Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M28.7816 28.7825L21.9492 21.9805" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M14.1733 25.1308C20.2244 25.1308 25.1298 20.2254 25.1298 14.1743C25.1298 8.12317 20.2244 3.21777 14.1733 3.21777C8.12219 3.21777 3.2168 8.12317 3.2168 14.1743C3.2168 20.2254 8.12219 25.1308 14.1733 25.1308Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.7816 28.7825L21.9492 21.9805" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
                         </div>
                         <div class="header-icons__location">
                             <a href="#">
@@ -191,43 +193,45 @@
             <div class="container">
                 <div class="row gy-4">
                     <div class="col-lg-8">
-                        <div class="swiper swiperHeroSlider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="#" class="swiper-img-banner">
-                                        <picture>
-                                            <img src="img/hero-banner-01.jpg" alt="">
-                                        </picture>
-                                    </a>
+                        <div class="swiperHeroSlider-container">
+                            <div class="swiper swiperHeroSlider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="swiper-img-banner">
+                                            <picture>
+                                                <img src="img/hero-banner-01.jpg" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="swiper-img-banner">
+                                            <picture>
+                                                <img src="img/hero-banner-01.jpg" alt="">
+                                            </picture>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <a href="#" class="swiper-img-banner">
-                                        <picture>
-                                            <img src="img/hero-banner-01.jpg" alt="">
-                                        </picture>
-                                    </a>
+                                <div class="swiperHeroSlider-next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="46" viewBox="0 0 27 46"
+                                        fill="none">
+                                        <path d="M2 41L23 23.0001L2 5.00017L2 7.56872L20.0034 23.0001L2 38.4315L2 41Z"
+                                            fill="white" />
+                                        <path
+                                            d="M1 41L1 43.1742L2.65079 41.7593L23.6508 23.7593L24.5366 23.0001L23.6508 22.2408L2.65079 4.24092L0.999997 2.82596L0.999997 5.00017L0.999997 7.56872L0.999997 8.02865L1.34921 8.32797L18.4668 23.0001L1.34921 37.6722L1 37.9715L1 38.4315L1 41Z"
+                                            stroke="#9F9387" stroke-opacity="0.8" stroke-width="2" />
+                                    </svg>
                                 </div>
-                            </div>
-                            <div class="swiperHeroSlider-next">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="46" viewBox="0 0 27 46"
-                                    fill="none">
-                                    <path d="M2 41L23 23.0001L2 5.00017L2 7.56872L20.0034 23.0001L2 38.4315L2 41Z"
-                                        fill="white" />
-                                    <path
-                                        d="M1 41L1 43.1742L2.65079 41.7593L23.6508 23.7593L24.5366 23.0001L23.6508 22.2408L2.65079 4.24092L0.999997 2.82596L0.999997 5.00017L0.999997 7.56872L0.999997 8.02865L1.34921 8.32797L18.4668 23.0001L1.34921 37.6722L1 37.9715L1 38.4315L1 41Z"
-                                        stroke="#9F9387" stroke-opacity="0.8" stroke-width="2" />
-                                </svg>
-                            </div>
-                            <div class="swiperHeroSlider-prev">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="46" viewBox="0 0 28 46"
-                                    fill="none">
-                                    <path
-                                        d="M25.5274 5L4 22.9999L25.5274 40.9998V38.4313L7.0719 22.9999L25.5274 7.56854V5Z"
-                                        fill="white" />
-                                    <path
-                                        d="M26.5274 5V2.86035L24.8859 4.23284L3.35855 22.2327L2.44104 22.9999L3.35855 23.7671L24.8859 41.767L26.5274 43.1395V40.9998V38.4313V37.9639L26.1689 37.6641L8.63086 22.9999L26.1689 8.3357L26.5274 8.03591V7.56854V5Z"
-                                        stroke="#9F9387" stroke-opacity="0.8" stroke-width="2" />
-                                </svg>
+                                <div class="swiperHeroSlider-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="46" viewBox="0 0 28 46"
+                                        fill="none">
+                                        <path
+                                            d="M25.5274 5L4 22.9999L25.5274 40.9998V38.4313L7.0719 22.9999L25.5274 7.56854V5Z"
+                                            fill="white" />
+                                        <path
+                                            d="M26.5274 5V2.86035L24.8859 4.23284L3.35855 22.2327L2.44104 22.9999L3.35855 23.7671L24.8859 41.767L26.5274 43.1395V40.9998V38.4313V37.9639L26.1689 37.6641L8.63086 22.9999L26.1689 8.3357L26.5274 8.03591V7.56854V5Z"
+                                            stroke="#9F9387" stroke-opacity="0.8" stroke-width="2" />
+                                    </svg>
+                                </div>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
