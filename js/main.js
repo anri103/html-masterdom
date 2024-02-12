@@ -16,23 +16,23 @@ var swiperHeroSlider = new Swiper(".swiperHeroSlider", {
 });
 
 var swiperCategoriesCircles = new Swiper(".swiperCategoriesCircles", {
-    slidesPerView: 2.5,
+    slidesPerView: 'auto',
     loop: false,
     spaceBetween: 32,
     grabCursor: true,
+    slidesOffsetBefore: 12,
+    slidesOffsetAfter: 12,
     navigation: {
         nextEl: ".swiperCategoriesCircles-next",
         prevEl: ".swiperCategoriesCircles-prev",
     },
     breakpoints: {
-        768: {
-            slidesPerView: 3,
-        },
+        // 768: {
+        //     slidesPerView: 3,
+        // },
         992: {
-            slidesPerView: 4,
-        },
-        1200: {
-            slidesPerView: 5,
+            slidesOffsetBefore: 0,
+            slidesOffsetAfter: 0,
         },
     },
 });

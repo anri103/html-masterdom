@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header class="header">
-        <nav class="navbar navbar-lg">
+        <nav class="navbar navbar-desktop">
             <div class="container">
                 <div class="header-navigation">
                     <div class="header-navigation__logo">
@@ -103,8 +103,8 @@
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <form class="search-form" action="#">
+                <div class="search-form">
+                    <form class="form-search" action="#">
                         <input type="text" class="form-control" placeholder="поиск">
                         <div class="position-absolute top-50 end-0 translate-middle-y d-flex gap-3 align-items-center">
                             <button type="submit" class="btn p-1 border-0">
@@ -130,49 +130,50 @@
                 </div>
                 <div>
                     <div class="header-icons">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
-                                fill="none">
-                                <path
-                                    d="M28.0687 13.0343C28.0687 21.0572 16.0343 30.4172 16.0343 30.4172C16.0343 30.4172 4 21.0572 4 13.0343C4 6.47963 9.47963 1 16.0343 1C22.589 1 28.0687 6.47963 28.0687 13.0343Z"
-                                    stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M16.0349 17.0453C18.2503 17.0453 20.0463 15.2494 20.0463 13.0339C20.0463 10.8184 18.2503 9.02246 16.0349 9.02246C13.8194 9.02246 12.0234 10.8184 12.0234 13.0339C12.0234 15.2494 13.8194 17.0453 16.0349 17.0453Z"
-                                    stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                        <div class="header-icons__search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M14.1733 25.1308C20.2244 25.1308 25.1298 20.2254 25.1298 14.1743C25.1298 8.12317 20.2244 3.21777 14.1733 3.21777C8.12219 3.21777 3.2168 8.12317 3.2168 14.1743C3.2168 20.2254 8.12219 25.1308 14.1733 25.1308Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M28.7816 28.7825L21.9492 21.9805" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
-                                fill="none">
-                                <path
-                                    d="M16.2817 13.0472C19.3335 13.0472 21.8075 10.5742 21.8075 7.52358C21.8075 4.47299 19.3335 2 16.2817 2C13.2299 2 10.7559 4.47299 10.7559 7.52358C10.7559 10.5742 13.2299 13.0472 16.2817 13.0472Z"
-                                    fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z"
-                                    fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                        <div class="header-icons__location">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M28.0687 13.0343C28.0687 21.0572 16.0343 30.4172 16.0343 30.4172C16.0343 30.4172 4 21.0572 4 13.0343C4 6.47963 9.47963 1 16.0343 1C22.589 1 28.0687 6.47963 28.0687 13.0343Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16.0349 17.0453C18.2503 17.0453 20.0463 15.2494 20.0463 13.0339C20.0463 10.8184 18.2503 9.02246 16.0349 9.02246C13.8194 9.02246 12.0234 10.8184 12.0234 13.0339C12.0234 15.2494 13.8194 17.0453 16.0349 17.0453Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
                         </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
-                                fill="none">
-                                <path
-                                    d="M16.5091 28.2013L4.20238 17.054C-2.48607 10.3655 7.34593 -2.47625 16.5091 7.91311C25.6722 -2.47625 35.4598 10.4101 28.8159 17.054L16.5091 28.2013Z"
-                                    stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                        <div class="header-icons__phone">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16.3466 25.0126C19.5706 26.8301 23.5406 28.1469 28.4004 28.6306V21.3966L20.3618 18.8705L16.3466 25.0126ZM16.3466 25.0126C11.9066 22.5094 8.88175 19.0565 6.89662 15.5219M6.89662 15.5219C4.57454 11.3873 3.67515 7.14109 3.59766 4.1726L10.3721 3.36914L13.2427 11.7516L6.89662 15.5219Z" stroke="#1A1A16"/>
+                                </svg>
+                            </a>
                         </div>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
-                                fill="none">
-                                <path
-                                    d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803"
-                                    stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M25.0033 30.5417C24.3684 30.5417 23.8535 30.0268 23.8535 29.3919C23.8535 28.757 24.3684 28.2422 25.0033 28.2422C25.6382 28.2422 26.153 28.757 26.153 29.3919C26.153 30.0268 25.6382 30.5417 25.0033 30.5417Z"
-                                    stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                <path
-                                    d="M10.0619 30.5417C9.42685 30.5417 8.91211 30.0268 8.91211 29.3919C8.91211 28.757 9.42685 28.2422 10.0619 28.2422C10.6969 28.2422 11.2116 28.757 11.2116 29.3919C11.2116 30.0268 10.6969 30.5417 10.0619 30.5417Z"
-                                    stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
+                        <div class="header-icons__profile">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16.2817 13.0472C19.3335 13.0472 21.8075 10.5742 21.8075 7.52358C21.8075 4.47299 19.3335 2 16.2817 2C13.2299 2 10.7559 4.47299 10.7559 7.52358C10.7559 10.5742 13.2299 13.0472 16.2817 13.0472Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header-icons__whishlist">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16.5091 28.2013L4.20238 17.054C-2.48607 10.3655 7.34593 -2.47625 16.5091 7.91311C25.6722 -2.47625 35.4598 10.4101 28.8159 17.054L16.5091 28.2013Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header-icons__cart">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M25.0033 30.5417C24.3684 30.5417 23.8535 30.0268 23.8535 29.3919C23.8535 28.757 24.3684 28.2422 25.0033 28.2422C25.6382 28.2422 26.153 28.757 26.153 29.3919C26.153 30.0268 25.6382 30.5417 25.0033 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.0619 30.5417C9.42685 30.5417 8.91211 30.0268 8.91211 29.3919C8.91211 28.757 9.42685 28.2422 10.0619 28.2422C10.6969 28.2422 11.2116 28.757 11.2116 29.3919C11.2116 30.0268 10.6969 30.5417 10.0619 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                     <div class="header-phone">
@@ -185,23 +186,24 @@
 
     <main class="main">
 
+        <!-- section-hero -->
         <section class="section section-hero">
             <div class="container">
-                <div class="row">
+                <div class="row gy-4">
                     <div class="col-lg-8">
                         <div class="swiper swiperHeroSlider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <a href="#">
+                                    <a href="#" class="swiper-img-banner">
                                         <picture>
-                                            <img class="swiper-img-banner" src="img/hero-banner-01.jpg" alt="">
+                                            <img src="img/hero-banner-01.jpg" alt="">
                                         </picture>
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
-                                    <a href="#">
+                                    <a href="#" class="swiper-img-banner">
                                         <picture>
-                                            <img class="swiper-img-banner" src="img/hero-banner-01.jpg" alt="">
+                                            <img src="img/hero-banner-01.jpg" alt="">
                                         </picture>
                                     </a>
                                 </div>
@@ -231,13 +233,15 @@
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="position-relative">
-                            <picture>
-                                <img class="img-fluid" src="img/hero-category-01.jpg" alt="">
-                            </picture>
-                            <div class="position-absolute start-0 bottom-0 m-4">
-                                <div>Хиты продаж</div>
-                                <div>
+                        <div class="hero-category">
+                            <div class="hero-category__img">
+                                <picture>
+                                    <img src="img/hero-category-01.jpg" alt="Хиты продаж">
+                                </picture>
+                            </div>
+                            <div class="hero-category__text">
+                                <div class="hero-category__title">Хиты продаж</div>
+                                <div class="hero-category__link">
                                     <a href="#">подробнее</a>
                                 </div>
                             </div>
@@ -247,16 +251,17 @@
             </div>
         </section>
 
+        <!-- section-categories-circles -->
         <section class="section section-categories-circles">
             <div class="container">
                 <h2 class="section-title">Интернет-магазин плитки и керамогранита</h2>
             </div>
-            <div class="container-swiper">
+            <div class="swiperCategoriesCircles-container">
                 <div class="swiper swiperCategoriesCircles">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="#" class="categories-circles__link">
-                                <div class="categories-circles__link-img">
+                                <div class="categories-circles__img-wrap">
                                     <picture>
                                         <img src="img/section-categories-circles-01.png" alt="">
                                     </picture>
@@ -266,7 +271,7 @@
                         </div>
                         <div class="swiper-slide">
                             <a href="#" class="categories-circles__link">
-                                <div class="categories-circles__link-img">
+                                <div class="categories-circles__img-wrap">
                                     <picture>
                                         <img src="img/section-categories-circles-02.png" alt="">
                                     </picture>
@@ -276,7 +281,7 @@
                         </div>
                         <div class="swiper-slide">
                             <a href="#" class="categories-circles__link">
-                                <div class="categories-circles__link-img">
+                                <div class="categories-circles__img-wrap">
                                     <picture>
                                         <img src="img/section-categories-circles-03.png" alt="">
                                     </picture>
@@ -286,7 +291,7 @@
                         </div>
                         <div class="swiper-slide">
                             <a href="#" class="categories-circles__link">
-                                <div class="categories-circles__link-img">
+                                <div class="categories-circles__img-wrap">
                                     <picture>
                                         <img src="img/section-categories-circles-04.png" alt="">
                                     </picture>
@@ -296,7 +301,7 @@
                         </div>
                         <div class="swiper-slide">
                             <a href="#" class="categories-circles__link">
-                                <div class="categories-circles__link-img">
+                                <div class="categories-circles__img-wrap">
                                     <picture>
                                         <img src="img/section-categories-circles-05.png" alt="">
                                     </picture>
@@ -306,7 +311,7 @@
                         </div>
                         <div class="swiper-slide">
                             <a href="#" class="categories-circles__link">
-                                <div class="categories-circles__link-img">
+                                <div class="categories-circles__img-wrap">
                                     <picture>
                                         <img src="img/section-categories-circles-02.png" alt="">
                                     </picture>
@@ -333,6 +338,7 @@
             </div>
         </section>
 
+        <!-- section-popular-products -->
         <section class="section section-popular-products">
             <div class="container">
                 <h2 class="section-title">Популярные товары</h2>
@@ -340,7 +346,7 @@
 
             <!-- Навигация табы -->
             <div class="scrollable-container">
-                <div class="nav nav-pills justify-content-lg-center scrollable-wrapper" role="tablist">
+                <div class="nav nav-pills scrollable-wrapper" role="tablist">
                     <div class="nav-item scrollable-item" role="presentation">
                         <button type="button" class="nav-link active" data-bs-toggle="pill"
                             data-bs-target="#tab-popular-products-01" role="tab" aria-selected="true">Плитка</button>
@@ -995,24 +1001,33 @@
 
         </section>
 
+        <!-- section-shops-location -->
         <section class="section section-shops-location">
             <div class="container"></div>
         </section>
 
+        <!-- section-blog-slider -->
         <section class="section section-blog-slider">
             <div class="container"></div>
         </section>
 
     </main>
 
-    <footer class="footer"></footer>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container"></div>
+    </footer>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+
+    <!-- Скрипт с карточкой товара -->
+    <!-- <script src="js/template_341c2a529e6e48dde527d7407790c86e_v1.js"></script> -->
+
     <script src="js/main.js"></script>
-    <script src="https://dw-deluxe.ru/bitrix/cache/js/s1/dresscode/template_341c2a529e6e48dde527d7407790c86e/template_341c2a529e6e48dde527d7407790c86e_v1.js?1706207512204509"></script>
+    
 
 </body>
 
