@@ -42,11 +42,12 @@ var swiperPopularProductsNav = new Swiper(".swiperPopularProductsNav", {
     loop: false,
     spaceBetween: 12,
     grabCursor: true,
-    centerInsufficientSlides: true,
+    centerInsufficientSlides: false,
     slidesOffsetBefore: 12,
     slidesOffsetAfter: 12,
     breakpoints: {
         992: {
+            centerInsufficientSlides: true,
             spaceBetween: 32,
             slidesOffsetBefore: 12,
             slidesOffsetAfter: 12,
@@ -66,11 +67,12 @@ var swiperBlogSliderNav = new Swiper(".swiperBlogSliderNav", {
     loop: false,
     spaceBetween: 12,
     grabCursor: true,
-    centerInsufficientSlides: true,
+    centerInsufficientSlides: false,
     slidesOffsetBefore: 12,
     slidesOffsetAfter: 12,
     breakpoints: {
         992: {
+            centerInsufficientSlides: true,
             spaceBetween: 32,
             slidesOffsetBefore: 12,
             slidesOffsetAfter: 12,
