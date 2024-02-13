@@ -20,6 +20,7 @@ var swiperCategoriesCircles = new Swiper(".swiperCategoriesCircles", {
     loop: false,
     spaceBetween: 32,
     grabCursor: true,
+    freeMode: true,
     slidesOffsetBefore: 12,
     slidesOffsetAfter: 12,
     navigation: {
@@ -42,6 +43,7 @@ var swiperPopularProductsNav = new Swiper(".swiperPopularProductsNav", {
     loop: false,
     spaceBetween: 12,
     grabCursor: true,
+    freeMode: true,
     centerInsufficientSlides: false,
     slidesOffsetBefore: 12,
     slidesOffsetAfter: 12,
@@ -67,6 +69,7 @@ var swiperBlogSliderNav = new Swiper(".swiperBlogSliderNav", {
     loop: false,
     spaceBetween: 12,
     grabCursor: true,
+    freeMode: true,
     centerInsufficientSlides: false,
     slidesOffsetBefore: 12,
     slidesOffsetAfter: 12,
@@ -85,6 +88,7 @@ var swiperBlogSlider = new Swiper(".swiperBlogSlider", {
     loop: false,
     spaceBetween: 22,
     grabCursor: true,
+    freeMode: true,
     slidesOffsetBefore: 12,
     slidesOffsetAfter: 12,
     navigation: {
