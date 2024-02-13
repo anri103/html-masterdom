@@ -337,31 +337,25 @@
             </div>
 
             <!-- Навигация табы -->
-            <div class="scrollable-container">
-                <div class="nav nav-pills scrollable-wrapper" role="tablist">
-                    <div class="nav-item scrollable-item" role="presentation">
-                        <button type="button" class="nav-link active" data-bs-toggle="pill"
-                            data-bs-target="#tab-popular-products-01" role="tab" aria-selected="true">Плитка</button>
+            <div class="swiper swiperPopularProductsNav">
+                <div class="swiper-wrapper" role="tablist">
+                    <div class="swiper-slide" role="presentation">
+                        <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="true">Плитка</button>
                     </div>
-                    <div class="nav-item scrollable-item" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="pill"
-                            data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Обои</button>
+                    <div class="swiper-slide" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Обои</button>
                     </div>
-                    <div class="nav-item scrollable-item" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="pill"
-                            data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false">Сантехника</button>
+                    <div class="swiper-slide" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false">Сантехника</button>
                     </div>
-                    <div class="nav-item scrollable-item" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="pill"
-                            data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Свет</button>
+                    <div class="swiper-slide" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Свет</button>
                     </div>
-                    <div class="nav-item scrollable-item" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="pill"
-                            data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false">Краски</button>
+                    <div class="swiper-slide" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false">Краски</button>
                     </div>
-                    <div class="nav-item scrollable-item" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="pill"
-                            data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Строительные смеси</button>
+                    <div class="swiper-slide" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Строительные смеси</button>
                     </div>
                 </div>
             </div>
@@ -380,25 +374,25 @@
                         <div class="popular-products-grid">
     
                             <!-- item 1 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-01.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #02378F">hit</div>
-                                        <div class="marker" style="color: #1A1A16">new</div>
-                                        <div class="marker" style="color: #DF5A5A">sale</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #02378F">hit</div>
+                                        <div class="marker-item" style="color: #1A1A16">new</div>
+                                        <div class="marker-item" style="color: #DF5A5A">sale</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure">/ 1 шт.</span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -432,23 +426,23 @@
                             </div>
     
                             <!-- item 2 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-01.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #1A1A16">new</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #1A1A16">new</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -482,23 +476,23 @@
                             </div>
     
                             <!-- item 3 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-03.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #1A1A16">new</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #1A1A16">new</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -532,21 +526,21 @@
                             </div>
     
                             <!-- item 4 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-04.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer"></div>
+                                    <div class="product-item__markers"></div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -580,23 +574,23 @@
                             </div>
     
                             <!-- item 5 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-05.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #02378F">hit</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #02378F">hit</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -630,23 +624,23 @@
                             </div>
     
                             <!-- item 6 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-06.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #DF5A5A">sale</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #DF5A5A">sale</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -699,25 +693,25 @@
                         <div class="popular-products-grid">
     
                             <!-- item 1 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-06.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #02378F">hit</div>
-                                        <div class="marker" style="color: #1A1A16">new</div>
-                                        <div class="marker" style="color: #DF5A5A">sale</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #02378F">hit</div>
+                                        <div class="marker-item" style="color: #1A1A16">new</div>
+                                        <div class="marker-item" style="color: #DF5A5A">sale</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -751,23 +745,23 @@
                             </div>
     
                             <!-- item 2 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-05.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #1A1A16">new</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #1A1A16">new</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -801,23 +795,23 @@
                             </div>
     
                             <!-- item 3 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-04.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #1A1A16">new</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #1A1A16">new</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -851,21 +845,21 @@
                             </div>
     
                             <!-- item 4 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-03.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer"></div>
+                                    <div class="product-item__markers"></div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -899,23 +893,23 @@
                             </div>
     
                             <!-- item 5 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-01.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #02378F">hit</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #02378F">hit</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -949,23 +943,23 @@
                             </div>
     
                             <!-- item 6 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-01.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #DF5A5A">sale</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #DF5A5A">sale</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -1015,7 +1009,7 @@
         <section class="section section-shops-location">
             <div class="container">
                 <div>
-                    <a href="#">
+                    <a href="#" class="section-shops-location__link">
                         <span>Все магазины</span>
                         <div class="flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" fill="none">
@@ -1125,173 +1119,359 @@
         <section class="section section-blog-slider">
             <div class="container">
                 <h2 class="section-title">Блог</h2>
-                <div class="blog-slider__navigation">
-                    <div>Все</div>
-                    <div>Новости</div>
-                    <div>Статьи</div>
-                    <div>События</div>
+            </div>
+
+            <!-- Навигация табы -->
+            <div class="swiper swiperBlogSliderNav">
+                <div class="swiper-wrapper" role="tablist">
+                    <div class="swiper-slide" role="presentation">
+                        <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-blog-slider-01" role="tab" aria-selected="true">Все</button>
+                    </div>
+                    <div class="swiper-slide" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-blog-slider-02" role="tab" aria-selected="false">Новости</button>
+                    </div>
+                    <div class="swiper-slide" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-blog-slider-01" role="tab" aria-selected="false">Статьи</button>
+                    </div>
+                    <div class="swiper-slide" role="presentation">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-blog-slider-02" role="tab" aria-selected="false">События</button>
+                    </div>
                 </div>
             </div>
-            <div class="swiper swiperBlogSlider">
-                <div class="swiper-wrapper">
-                    <!-- item-01 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img loading="lazy" src="img/blog-thumb-01.jpg" alt="Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете">
-                                </a>
+
+            <!-- Контейнер табы -->
+            <div class="tab-content">
+
+                <!-- Вкладка 01 -->
+                <div class="tab-pane fade show active" id="tab-blog-slider-01" role="tabpanel" tabindex="0">
+                    <div class="swiper swiperBlogSlider">
+                        <div class="swiper-wrapper">
+                            <!-- item-01 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-01.jpg" alt="Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">Новости</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">Новости</a>
+                            <!-- item-02 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">Акции</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете</a>
+                            </div>
+                            <!-- item-03 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">мероприятия</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
+                            </div>
+                            <!-- item-04 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">мероприятия</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item-05 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">Акции</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item-06 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">мероприятия</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item-07 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">мероприятия</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- item-02 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                </a>
-                            </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">Акции</a>
-                                </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
-                                </div>
-                            </div>
+                        <div class="swiperBlogSlider-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                            </svg>
                         </div>
-                    </div>
-                    <!-- item-03 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
-                                </a>
-                            </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">мероприятия</a>
-                                </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
-                                </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-04 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                </a>
-                            </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">мероприятия</a>
-                                </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-05 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                </a>
-                            </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">Акции</a>
-                                </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-06 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
-                                </a>
-                            </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">мероприятия</a>
-                                </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
-                                </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-07 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                </a>
-                            </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">мероприятия</a>
-                                </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
-                                </div>
-                            </div>
+                        <div class="swiperBlogSlider-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                            </svg>
                         </div>
                     </div>
                 </div>
-                <div class="swiperBlogSlider-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
-                        <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                    </svg>
+
+                <!-- Вкладка 02 -->
+                <div class="tab-pane fade" id="tab-blog-slider-02" role="tabpanel" tabindex="0">
+                    <div class="swiper swiperBlogSlider">
+                        <div class="swiper-wrapper">
+                            <!-- item-01 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-01.jpg" alt="Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">Новости</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item-02 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">Акции</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item-03 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">мероприятия</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item-04 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">мероприятия</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item-05 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">Акции</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item-06 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">мероприятия</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item-07 -->
+                            <div class="swiper-slide">
+                                <div class="blog-slide-item">
+                                    <div class="blog-slide-item__img">
+                                        <a href="#">
+                                            <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                        </a>
+                                    </div>
+                                    <div class="blog-slide-item__body">
+                                        <div class="blog-slide-item__tags">
+                                            <a href="#">мероприятия</a>
+                                        </div>
+                                        <div class="blog-slide-item__title">
+                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                        </div>
+                                        <div class="blog-slide-item__read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiperBlogSlider-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="swiperBlogSlider-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiperBlogSlider-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
-                        <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                    </svg>
-                </div>
+
             </div>
 
         </section>
