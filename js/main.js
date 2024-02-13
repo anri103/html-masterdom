@@ -16,7 +16,7 @@ var swiperHeroSlider = new Swiper(".swiperHeroSlider", {
 });
 
 var swiperCategoriesCircles = new Swiper(".swiperCategoriesCircles", {
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     loop: false,
     spaceBetween: 32,
     grabCursor: true,
@@ -28,9 +28,6 @@ var swiperCategoriesCircles = new Swiper(".swiperCategoriesCircles", {
         prevEl: ".swiperCategoriesCircles-prev",
     },
     breakpoints: {
-        // 768: {
-        //     slidesPerView: 3,
-        // },
         992: {
             slidesOffsetBefore: 0,
             slidesOffsetAfter: 0,
@@ -39,7 +36,7 @@ var swiperCategoriesCircles = new Swiper(".swiperCategoriesCircles", {
 });
 
 var swiperPopularProductsNav = new Swiper(".swiperPopularProductsNav", {
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     loop: false,
     spaceBetween: 12,
     grabCursor: true,
@@ -65,7 +62,7 @@ var swiperShopsLocation = new Swiper(".swiperShopsLocation", {
 });
 
 var swiperBlogSliderNav = new Swiper(".swiperBlogSliderNav", {
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     loop: false,
     spaceBetween: 12,
     grabCursor: true,
@@ -84,7 +81,7 @@ var swiperBlogSliderNav = new Swiper(".swiperBlogSliderNav", {
 });
 
 var swiperBlogSlider = new Swiper(".swiperBlogSlider", {
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     loop: false,
     spaceBetween: 22,
     grabCursor: true,
