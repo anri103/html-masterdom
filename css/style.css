@@ -979,6 +979,17 @@ textarea {
     gap: 8px;
 }
 
+.item-metro::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='17' viewBox='0 0 24 17' fill='none'%3E%3Cpath d='M22.3419 14.1803L16.7219 0L11.983 8.2907L7.24417 0L1.62416 14.1848H0V16.3164H8.46286V14.1848H7.2102L8.42888 10.6624L11.983 16.484L15.5371 10.6624L16.7558 14.1848H15.5032V16.3164H24V14.1848L22.3419 14.1803Z' fill='%23FF0000'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .shop-location__phone {
     --bs-link-color-rgb: var(--bs-secondary-rgb);
     --bs-link-hover-color-rgb: var(--bs-primary-rgb);
