@@ -337,24 +337,24 @@
             </div>
 
             <!-- Навигация табы -->
-            <div class="swiper swiperPopularProductsNav">
-                <div class="swiper-wrapper" role="tablist">
-                    <div class="swiper-slide" role="presentation">
+            <div class="popular-products-tab-nav scrollable-container" role="tablist">
+                <div class="scrollable-wrapper">
+                    <div class="scrollable-item">
                         <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="true">Плитка</button>
                     </div>
-                    <div class="swiper-slide" role="presentation">
+                    <div class="scrollable-item">
                         <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Обои</button>
                     </div>
-                    <div class="swiper-slide" role="presentation">
+                    <div class="scrollable-item">
                         <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false">Сантехника</button>
                     </div>
-                    <div class="swiper-slide" role="presentation">
+                    <div class="scrollable-item">
                         <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Свет</button>
                     </div>
-                    <div class="swiper-slide" role="presentation">
+                    <div class="scrollable-item">
                         <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false">Краски</button>
                     </div>
-                    <div class="swiper-slide" role="presentation">
+                    <div class="scrollable-item">
                         <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Строительные смеси</button>
                     </div>
                 </div>
@@ -1127,356 +1127,184 @@
             </div>
 
             <!-- Навигация табы -->
-            <div class="swiper swiperBlogSliderNav">
-                <div class="swiper-wrapper" role="tablist">
-                    <div class="swiper-slide" role="presentation">
-                        <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-blog-slider-01" role="tab" aria-selected="true">Все</button>
+            <div class="blog-slider-tab-nav">
+                <div class="scrollable-wrapper">
+                    <div class="scrollable-item">
+                        <a href="#" class="nav-link">Все</a>
                     </div>
-                    <div class="swiper-slide" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-blog-slider-02" role="tab" aria-selected="false">Новости</button>
+                    <div class="scrollable-item">
+                        <a href="#" class="nav-link">Новости</a>
                     </div>
-                    <div class="swiper-slide" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-blog-slider-01" role="tab" aria-selected="false">Статьи</button>
+                    <div class="scrollable-item">
+                        <a href="#" class="nav-link">Статьи</a>
                     </div>
-                    <div class="swiper-slide" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-blog-slider-02" role="tab" aria-selected="false">События</button>
+                    <div class="scrollable-item">
+                        <a href="#" class="nav-link">События</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Контейнер табы -->
-            <div class="tab-content">
 
-                <!-- Вкладка 01 -->
-                <div class="tab-pane fade show active" id="tab-blog-slider-01" role="tabpanel" tabindex="0">
-                    <div class="swiper swiperBlogSlider">
-                        <div class="swiper-wrapper">
-                            <!-- item-01 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-01.jpg" alt="Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">Новости</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="swiper swiperBlogSlider">
+                <div class="swiper-wrapper">
+                    <!-- item-01 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-01.jpg" alt="Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете">
+                                </a>
                             </div>
-                            <!-- item-02 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">Акции</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">Новости</a>
                                 </div>
-                            </div>
-                            <!-- item-03 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">мероприятия</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете</a>
                                 </div>
-                            </div>
-                            <!-- item-04 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">мероприятия</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item-05 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">Акции</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item-06 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">мероприятия</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item-07 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">мероприятия</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiperBlogSlider-next">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
-                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                            </svg>
+                    </div>
+                    <!-- item-02 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">Акции</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="swiperBlogSlider-prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
-                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                            </svg>
+                    </div>
+                    <!-- item-03 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">мероприятия</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-04 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">мероприятия</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-05 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">Акции</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-06 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">мероприятия</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item-07 -->
+                    <div class="swiper-slide">
+                        <div class="blog-slide-item">
+                            <div class="blog-slide-item__img">
+                                <a href="#">
+                                    <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                </a>
+                            </div>
+                            <div class="blog-slide-item__body">
+                                <div class="blog-slide-item__tags">
+                                    <a href="#">мероприятия</a>
+                                </div>
+                                <div class="blog-slide-item__title">
+                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                </div>
+                                <div class="blog-slide-item__read-link">
+                                    <a href="#">Читать</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Вкладка 02 -->
-                <div class="tab-pane fade" id="tab-blog-slider-02" role="tabpanel" tabindex="0">
-                    <div class="swiper swiperBlogSlider">
-                        <div class="swiper-wrapper">
-                            <!-- item-02 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">Акции</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item-01 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-01.jpg" alt="Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">Новости</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item-04 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">мероприятия</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item-03 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">мероприятия</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item-06 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">мероприятия</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item-05 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">Акции</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item-07 -->
-                            <div class="swiper-slide">
-                                <div class="blog-slide-item">
-                                    <div class="blog-slide-item__img">
-                                        <a href="#">
-                                            <img loading="lazy" src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                        </a>
-                                    </div>
-                                    <div class="blog-slide-item__body">
-                                        <div class="blog-slide-item__tags">
-                                            <a href="#">мероприятия</a>
-                                        </div>
-                                        <div class="blog-slide-item__title">
-                                            <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                        </div>
-                                        <div class="blog-slide-item__read-link">
-                                            <a href="#">Читать</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiperBlogSlider-next">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
-                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                            </svg>
-                        </div>
-                        <div class="swiperBlogSlider-prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
-                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                            </svg>
-                        </div>
-                    </div>
+                <div class="swiperBlogSlider-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                        <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                    </svg>
                 </div>
-
+                <div class="swiperBlogSlider-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                        <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                    </svg>
+                </div>
             </div>
 
         </section>
@@ -1494,31 +1322,22 @@
                     </a>
                 </div>
     
-                <div>
-                    <div class="">
-                        <a href="tel:+78003503243">8 (800) 350 32 43</a>
-                    </div>
-                    <div class="">
-                        <a href="mail:info@gmail.com">info@gmail.com</a>
-                    </div>
-                    <div class="">
-                        <a href="#">
-                            <span>сотрудничать</span>
-                            <div class="flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
-                                    <path d="M0.500002 16L9.5 8L0.5 7.67558e-07L0.500001 1.90348L7.52342 8L0.500002 14.0965L0.500002 16Z" fill="#02378F"/>
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
+                <div class="footer-top__contacts">
+                    <a href="tel:+78003503243" class="contacts-link link-phone">8 (800) 350 32 43</a>
+                    <a href="mail:info@gmail.com" class="contacts-link link-email">info@gmail.com</a>
+                    <a href="#" class="contacts-link link-cooperate">
+                        <span>сотрудничать</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                            <path d="M0.500002 16L9.5 8L0.5 7.67558e-07L0.500001 1.90348L7.52342 8L0.500002 14.0965L0.500002 16Z" fill="#02378F"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
-
             <div class="footer-middle">
-                <div class="row">
+                <div class="row justify-content-center">
     
-                    <div class="col-6 col-lg-3">
+                    <div class="col-6 col-lg-2" style="border-right: 1px solid; border-color: #ACB2BF;">
                         <div class="footer-widget">
                             <ul class="footer-widget__menu">
                                 <li><a href="#" class="menu-link title">Ассортимент</a></li>
@@ -1540,8 +1359,8 @@
                             </ul>
                         </div>
                     </div>
-        
-                    <div class="col-6 col-lg-3">
+                    
+                    <div class="col-6 col-lg-2" style="border-right: 1px solid; border-color: #ACB2BF;">
                         <div class="footer-widget">
                             <ul class="footer-widget__menu">
                                 <li><a href="#" class="menu-link title">Покупателям</a></li>
@@ -1562,7 +1381,7 @@
                         </div>
                     </div>
         
-                    <div class="col-12 col-lg-3">
+                    <div class="col-12 col-lg-3" style="border-right: 1px solid; border-color: #ACB2BF;">
                         <div class="footer-widget">
                             <ul class="footer-widget__menu">
                                 <li><a href="#" class="menu-link title">Спецпредложения</a></li>

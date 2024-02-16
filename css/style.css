@@ -233,7 +233,20 @@ textarea {
 }
 
 .scrollable-wrapper::-webkit-scrollbar {
-    display: none;
+    width: 2px;
+    height: 2px;
+}
+
+.scrollable-wrapper::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
+}
+
+.scrollable-wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--bs-primary);
+}
+
+.scrollbar-none::-webkit-scrollbar {
+    display: none !important;
 }
 
 .scrollable-wrapper .scrollable-item {
@@ -370,11 +383,54 @@ textarea {
 
 .footer {}
 
-.footer-top {}
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    margin-bottom: 34px;
+}
 
 .footer-logo {}
 
-.footer-logo img {}
+.footer-logo img {
+    max-width: 83px;
+    height: auto;
+}
+
+.footer-top__contacts {
+    --bs-link-color-rgb: var(--bs-primary-rgb);
+    --bs-link-hover-color-rgb: var(--bs-body-color-rgb);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.footer-top__contacts .contacts-link {
+    font-family: var(--bs-title-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer-top__contacts .link-cooperate {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-top__contacts .link-cooperate svg {
+    flex-shrink: 0;
+}
+
+.footer-middle {
+    padding: 32px 0 10px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: #ACB2BF;
+}
 
 .footer-widget {
     margin-bottom: 22px;
@@ -694,19 +750,31 @@ textarea {
     margin-bottom: 32px;
 }
 
-.swiperPopularProductsNav {
-    width: 100%;
+.popular-products-tab-nav {
+    --bs-nav-link-color: var(--bs-secondary);
+    --bs-nav-link-hover-color: var(--bs-primary);
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-bottom: 34px;
 }
 
-.swiperPopularProductsNav .swiper-slide {
-    width: auto;
+.popular-products-tab-nav .scrollable-wrapper {
+    padding-bottom: 12px;
 }
 
-.swiperPopularProductsNav .nav-link {
-    color: var(--bs-secondary);
+.popular-products-tab-nav .scrollable-item {
+    padding: 0 6px;
+}
+
+.popular-products-tab-nav .scrollable-item:first-child {
+    padding-left: 12px;
+}
+
+.popular-products-tab-nav .scrollable-item:last-child {
+    padding-right: 12px;
+}
+
+.popular-products-tab-nav .nav-link {
     padding: 2px 0px;
     font-family: var(--bs-title-font-family);
     font-size: 24px;
@@ -717,9 +785,8 @@ textarea {
     border-bottom: 1px solid transparent;
 }
 
-.swiperPopularProductsNav .nav-link.active {
+.popular-products-tab-nav .nav-link.active {
     color: var(--bs-primary);
-    border-color: inherit;
     background-color: transparent;
 }
 
@@ -727,6 +794,17 @@ textarea {
     display: grid;
     grid-template-columns: 1fr;
     gap: 47px 34px;
+}
+
+@media (min-width: 992px) {
+
+    .popular-products-tab-nav {
+        justify-content: center;
+    }
+
+    .popular-products-tab-nav .nav-link.active {
+        border-color: inherit;
+    }
 }
 
 /* product-item ============================ */
@@ -1076,16 +1154,31 @@ textarea {
     margin-bottom: 32px;
 }
 
-.swiperBlogSliderNav {
+.blog-slider-tab-nav {
+    --bs-nav-link-color: var(--bs-secondary);
+    --bs-nav-link-hover-color: var(--bs-primary);
+    display: flex;
+    justify-content: start;
     margin-bottom: 32px;
 }
 
-.swiperBlogSliderNav .swiper-slide {
-    width: auto;
+.blog-slider-tab-nav .scrollable-wrapper {
+    padding-bottom: 12px;
 }
 
-.swiperBlogSliderNav .nav-link {
-    color: var(--bs-secondary);
+.blog-slider-tab-nav .scrollable-item {
+    padding: 0 11px;
+}
+
+.blog-slider-tab-nav .scrollable-item:first-child {
+    padding-left: 12px;
+}
+
+.blog-slider-tab-nav .scrollable-item:last-child {
+    padding-right: 12px;
+}
+
+.blog-slider-tab-nav .nav-link {
     padding: 2px 0px;
     font-family: var(--bs-title-font-family);
     font-size: 28px;
@@ -1094,12 +1187,6 @@ textarea {
     letter-spacing: 0.28px;
     border-radius: 0;
     border-bottom: 1px solid transparent;
-}
-
-.swiperBlogSliderNav .nav-link.active {
-    color: var(--bs-primary);
-    border-color: inherit;
-    background-color: transparent;
 }
 
 .swiperBlogSlider {}
@@ -1159,6 +1246,10 @@ textarea {
 }
 
 @media (min-width: 992px) {
+
+    .blog-slider-tab-nav {
+        justify-content: center;
+    }
 
     .swiperBlogSlider .swiper-slide {
         width: 345px;

@@ -36,49 +36,11 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
     
-    var swiperPopularProductsNav = new Swiper(".swiperPopularProductsNav", {
-        slidesPerView: "auto",
-        loop: false,
-        spaceBetween: 12,
-        grabCursor: true,
-        freeMode: true,
-        centerInsufficientSlides: false,
-        slidesOffsetBefore: 12,
-        slidesOffsetAfter: 12,
-        breakpoints: {
-            992: {
-                centerInsufficientSlides: true,
-                spaceBetween: 32,
-                slidesOffsetBefore: 12,
-                slidesOffsetAfter: 12,
-            },
-        },
-    });
-    
     var swiperShopsLocation = new Swiper(".swiperShopsLocation", {
         slidesPerView: 1,
         loop: false,
         spaceBetween: 16,
         grabCursor: true,
-    });
-    
-    var swiperBlogSliderNav = new Swiper(".swiperBlogSliderNav", {
-        slidesPerView: "auto",
-        loop: false,
-        spaceBetween: 12,
-        grabCursor: true,
-        freeMode: true,
-        centerInsufficientSlides: false,
-        slidesOffsetBefore: 12,
-        slidesOffsetAfter: 12,
-        breakpoints: {
-            992: {
-                centerInsufficientSlides: true,
-                spaceBetween: 32,
-                slidesOffsetBefore: 12,
-                slidesOffsetAfter: 12,
-            },
-        },
     });
     
     var swiperBlogSlider = new Swiper(".swiperBlogSlider", {
