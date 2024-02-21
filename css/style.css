@@ -425,11 +425,11 @@ textarea {
     flex-shrink: 0;
 }
 
-.footer-middle {
-    padding: 32px 0 10px;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-color: #ACB2BF;
+.footer-middle {}
+
+.footer-middle__border {
+    height: 1px;
+    background: #ACB2BF;
 }
 
 .footer-widget {
