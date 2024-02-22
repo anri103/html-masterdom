@@ -1,83 +1,80 @@
-document.addEventListener('DOMContentLoaded', function () {
-    //////////////////////////////////////////////////////////////////
-    // [ Swiper Sliders ]
-    
-    var swiperHeroSlider = new Swiper(".swiperHeroSlider", {
-        slidesPerView: 1,
-        loop: false,
-        spaceBetween: 16,
-        grabCursor: true,
-        pagination: {
-            el: ".swiper-pagination",
+//////////////////////////////////////////////////////////////////
+// [ Swiper Sliders ]
+
+var swiperHeroSlider = new Swiper(".swiperHeroSlider", {
+    slidesPerView: 1,
+    loop: false,
+    spaceBetween: 16,
+    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    navigation: {
+        nextEl: ".swiperHeroSlider-next",
+        prevEl: ".swiperHeroSlider-prev",
+    },
+});
+
+var swiperCategoriesCircles = new Swiper(".swiperCategoriesCircles", {
+    slidesPerView: "auto",
+    loop: false,
+    spaceBetween: 32,
+    grabCursor: true,
+    freeMode: true,
+    slidesOffsetBefore: 12,
+    slidesOffsetAfter: 12,
+    navigation: {
+        nextEl: ".swiperCategoriesCircles-next",
+        prevEl: ".swiperCategoriesCircles-prev",
+    },
+    breakpoints: {
+        992: {
+            slidesOffsetBefore: 0,
+            slidesOffsetAfter: 0,
         },
-        navigation: {
-            nextEl: ".swiperHeroSlider-next",
-            prevEl: ".swiperHeroSlider-prev",
+    },
+});
+
+var swiperShopsLocation = new Swiper(".swiperShopsLocation", {
+    slidesPerView: 1,
+    loop: false,
+    spaceBetween: 16,
+    grabCursor: true,
+});
+
+var swiperBlogSlider = new Swiper(".swiperBlogSlider", {
+    slidesPerView: "auto",
+    loop: false,
+    spaceBetween: 22,
+    grabCursor: true,
+    freeMode: true,
+    slidesOffsetBefore: 12,
+    slidesOffsetAfter: 12,
+    navigation: {
+        nextEl: ".swiperBlogSlider-next",
+        prevEl: ".swiperBlogSlider-prev",
+    },
+    breakpoints: {
+        992: {
+            spaceBetween: 34,
         },
-    });
-    
-    var swiperCategoriesCircles = new Swiper(".swiperCategoriesCircles", {
-        slidesPerView: "auto",
-        loop: false,
-        spaceBetween: 32,
-        grabCursor: true,
-        freeMode: true,
-        slidesOffsetBefore: 12,
-        slidesOffsetAfter: 12,
-        navigation: {
-            nextEl: ".swiperCategoriesCircles-next",
-            prevEl: ".swiperCategoriesCircles-prev",
+    },
+});
+
+
+
+//////////////////////////////////////////////////////////////////
+// [ Enable Fancybox ]
+
+Fancybox.bind("[data-fancybox]", {
+    Thumbs: {
+        type: "classic",
+    },
+    Toolbar: {
+        display: {
+            left: [],
+            middle: [],
+            right: ["close"],
         },
-        breakpoints: {
-            992: {
-                slidesOffsetBefore: 0,
-                slidesOffsetAfter: 0,
-            },
-        },
-    });
-    
-    var swiperShopsLocation = new Swiper(".swiperShopsLocation", {
-        slidesPerView: 1,
-        loop: false,
-        spaceBetween: 16,
-        grabCursor: true,
-    });
-    
-    var swiperBlogSlider = new Swiper(".swiperBlogSlider", {
-        slidesPerView: "auto",
-        loop: false,
-        spaceBetween: 22,
-        grabCursor: true,
-        freeMode: true,
-        slidesOffsetBefore: 12,
-        slidesOffsetAfter: 12,
-        navigation: {
-            nextEl: ".swiperBlogSlider-next",
-            prevEl: ".swiperBlogSlider-prev",
-        },
-        breakpoints: {
-            992: {
-                spaceBetween: 34,
-            },
-        },
-    });
-    
-    
-    
-    //////////////////////////////////////////////////////////////////
-    // [ Enable Fancybox ]
-    
-    Fancybox.bind("[data-fancybox]", {
-        Thumbs: {
-            type: "classic",
-        },
-        Toolbar: {
-            display: {
-                left: [],
-                middle: [],
-                right: ["close"],
-            },
-        },
-    });
-    
-})
+    },
+});

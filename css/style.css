@@ -408,11 +408,23 @@ textarea {
 }
 
 .footer-top__contacts .contacts-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     font-family: var(--bs-title-font-family);
     font-size: 24px;
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+}
+
+.footer-top__contacts .contacts-link + .contacts-link::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--bs-secondary);
 }
 
 .footer-top__contacts .link-cooperate {
@@ -425,11 +437,18 @@ textarea {
     flex-shrink: 0;
 }
 
-.footer-middle {}
+.footer-middle > * {
+    margin-bottom: 22px;
+}
 
-.footer-middle__border {
+.footer-middle .horizontal-divider {
     height: 1px;
     background: #ACB2BF;
+}
+
+.footer-middle .vertical-divider {
+    border-right: 1px solid;
+    border-color: transparent;
 }
 
 .footer-widget {
@@ -471,11 +490,58 @@ textarea {
     margin-bottom: 0;
 }
 
+.footer-bottom__menu {
+    --bs-link-color-rgb: var(--bs-secondary-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px 12px;
+}
 
+.footer-bottom__menu .menu-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
 
+.footer-bottom__menu .menu-link + .menu-link::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--bs-secondary);
+}
 
+.footer-copyright {
+    --bs-link-color-rgb: var(--bs-secondary-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    color: var(--bs-secondary);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
 
+.footer-copyright a {
+    text-decoration: underline;
+}
 
+@media (min-width: 992px) {
+
+    .footer-middle .vertical-divider {
+        border-color: #ACB2BF;
+    }
+
+    .footer-middle .vertical-divider:last-child {
+        border-color: transparent;
+    }
+}
 
 
 
