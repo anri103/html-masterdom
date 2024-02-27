@@ -16,10 +16,11 @@ var swiperHeroSlider = new Swiper(".swiperHeroSlider", {
 });
 
 var swiperCategoriesCircles = new Swiper(".swiperCategoriesCircles", {
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     loop: false,
     spaceBetween: 32,
     grabCursor: true,
+    freeMode: true,
     slidesOffsetBefore: 12,
     slidesOffsetAfter: 12,
     navigation: {
@@ -27,9 +28,6 @@ var swiperCategoriesCircles = new Swiper(".swiperCategoriesCircles", {
         prevEl: ".swiperCategoriesCircles-prev",
     },
     breakpoints: {
-        // 768: {
-        //     slidesPerView: 3,
-        // },
         992: {
             slidesOffsetBefore: 0,
             slidesOffsetAfter: 0,
@@ -45,10 +43,11 @@ var swiperShopsLocation = new Swiper(".swiperShopsLocation", {
 });
 
 var swiperBlogSlider = new Swiper(".swiperBlogSlider", {
-    slidesPerView: 'auto',
+    slidesPerView: "auto",
     loop: false,
     spaceBetween: 22,
     grabCursor: true,
+    freeMode: true,
     slidesOffsetBefore: 12,
     slidesOffsetAfter: 12,
     navigation: {

@@ -337,31 +337,25 @@
             </div>
 
             <!-- Навигация табы -->
-            <div class="scrollable-container">
-                <div class="nav nav-pills scrollable-wrapper" role="tablist">
-                    <div class="nav-item scrollable-item" role="presentation">
-                        <button type="button" class="nav-link active" data-bs-toggle="pill"
-                            data-bs-target="#tab-popular-products-01" role="tab" aria-selected="true">Плитка</button>
+            <div class="popular-products-tab-nav scrollable-container" role="tablist">
+                <div class="scrollable-wrapper">
+                    <div class="scrollable-item">
+                        <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="true">Плитка</button>
                     </div>
-                    <div class="nav-item scrollable-item" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="pill"
-                            data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Обои</button>
+                    <div class="scrollable-item">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Обои</button>
                     </div>
-                    <div class="nav-item scrollable-item" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="pill"
-                            data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false">Сантехника</button>
+                    <div class="scrollable-item">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false">Сантехника</button>
                     </div>
-                    <div class="nav-item scrollable-item" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="pill"
-                            data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Свет</button>
+                    <div class="scrollable-item">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Свет</button>
                     </div>
-                    <div class="nav-item scrollable-item" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="pill"
-                            data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false">Краски</button>
+                    <div class="scrollable-item">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false">Краски</button>
                     </div>
-                    <div class="nav-item scrollable-item" role="presentation">
-                        <button type="button" class="nav-link" data-bs-toggle="pill"
-                            data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Строительные смеси</button>
+                    <div class="scrollable-item">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Строительные смеси</button>
                     </div>
                 </div>
             </div>
@@ -380,25 +374,25 @@
                         <div class="popular-products-grid">
     
                             <!-- item 1 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-01.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #02378F">hit</div>
-                                        <div class="marker" style="color: #1A1A16">new</div>
-                                        <div class="marker" style="color: #DF5A5A">sale</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #02378F">hit</div>
+                                        <div class="marker-item" style="color: #1A1A16">new</div>
+                                        <div class="marker-item" style="color: #DF5A5A">sale</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure">/ 1 шт.</span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -432,23 +426,23 @@
                             </div>
     
                             <!-- item 2 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-01.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #1A1A16">new</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #1A1A16">new</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -482,23 +476,23 @@
                             </div>
     
                             <!-- item 3 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-03.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #1A1A16">new</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #1A1A16">new</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -532,21 +526,21 @@
                             </div>
     
                             <!-- item 4 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-04.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer"></div>
+                                    <div class="product-item__markers"></div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -580,23 +574,23 @@
                             </div>
     
                             <!-- item 5 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-05.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #02378F">hit</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #02378F">hit</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -630,23 +624,23 @@
                             </div>
     
                             <!-- item 6 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-06.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #DF5A5A">sale</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #DF5A5A">sale</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -699,25 +693,25 @@
                         <div class="popular-products-grid">
     
                             <!-- item 1 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-06.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #02378F">hit</div>
-                                        <div class="marker" style="color: #1A1A16">new</div>
-                                        <div class="marker" style="color: #DF5A5A">sale</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #02378F">hit</div>
+                                        <div class="marker-item" style="color: #1A1A16">new</div>
+                                        <div class="marker-item" style="color: #DF5A5A">sale</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -751,23 +745,23 @@
                             </div>
     
                             <!-- item 2 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-05.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #1A1A16">new</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #1A1A16">new</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -801,23 +795,23 @@
                             </div>
     
                             <!-- item 3 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-04.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #1A1A16">new</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #1A1A16">new</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -851,21 +845,21 @@
                             </div>
     
                             <!-- item 4 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-03.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer"></div>
+                                    <div class="product-item__markers"></div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -899,23 +893,23 @@
                             </div>
     
                             <!-- item 5 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-01.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #02378F">hit</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #02378F">hit</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -949,23 +943,23 @@
                             </div>
     
                             <!-- item 6 -->
-                            <div class="card card-product">
-                                <div class="card-top">
+                            <div class="product-item product-wallpaper">
+                                <div class="product-item__top">
                                     <a href="#">
-                                        <div class="card-img-wrapper">
+                                        <div class="product-item__img">
                                             <img loading="lazy" src="img/popular-product-thumb-01.jpg">
                                             <img loading="lazy" src="img/popular-product-thumb-02.jpg">
                                         </div>
                                     </a>
-                                    <div class="markerContainer">
-                                        <div class="marker" style="color: #DF5A5A">sale</div>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item" style="color: #DF5A5A">sale</div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="card-name">
+                                <div class="product-item__body">
+                                    <div class="product-item__title">
                                         <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
                                     </div>
-                                    <div class="card-price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
+                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
                                     <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
                                         <ul class="skuPropertyList">
                                             <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
@@ -1015,7 +1009,7 @@
         <section class="section section-shops-location">
             <div class="container">
                 <div>
-                    <a href="#">
+                    <a href="#" class="section-shops-location__link">
                         <span>Все магазины</span>
                         <div class="flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" fill="none">
@@ -1027,36 +1021,39 @@
 
                 <div class="swiper swiperShopsLocation">
                     <div class="swiper-wrapper">
-
                         <div class="swiper-slide">
                             <div class="shop-location__item">
-                                <div class="row">
-                                    <div class="col-lg-8 order-lg-2">
+                                <div class="row g-0">
+                                    <div class="col-lg-7 order-lg-2">
                                         <div class="shop-location__img">
                                             <img loading="lazy" src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 order-lg-1">
+                                    <div class="col-lg-5 order-lg-1">
                                         <div class="shop-location__body">
                                             <div class="shop-location__body-top">
                                                 <div class="shop-location__title">МастерДом на Профсоюзной</div>
                                                 <div class="shop-location__tags">
-                                                    <div>Обои</div>
-                                                    <div>Плитка</div>
-                                                    <div>Отдел шторы</div>
-                                                    <div>Светильники</div>
-                                                    <div>Сантехники</div>
+                                                    <div class="item-tag">Обои</div>
+                                                    <div class="item-tag">Плитка</div>
+                                                    <div class="item-tag">Отдел шторы</div>
+                                                    <div class="item-tag">Светильники</div>
+                                                    <div class="item-tag">Сантехники</div>
                                                 </div>
                                             </div>
                                             <div class="shop-location__body-bottom">
-                                                <div>ежедневно с 10:00 до 21:00</div>
-                                                <div>г. Москва, Нахимовский проспект, д.59а</div>
-                                                <div>
-                                                    <div>Профсоюзная, 15 м</div>
-                                                    <div>Профсоюзная, 15 м</div>
+                                                <div class="shop-location__body-bottom-content">
+                                                    <div class="shop-location__hours">ежедневно с 10:00 до 21:00</div>
+                                                    <div class="shop-location__address">г. Москва, Нахимовский проспект, д.59а</div>
+                                                    <div class="shop-location__metro">
+                                                        <div class="item-metro">Профсоюзная, 15 м</div>
+                                                        <div class="item-metro">Профсоюзная, 15 м</div>
+                                                    </div>
+                                                    <div class="shop-location__phone">
+                                                        <a href="tel:88003503243">8 (800) 350-32-43</a>
+                                                    </div>
                                                 </div>
-                                                <div>8 (800) 350-32-43</div>
-                                                <div>
+                                                <div class="shop-location__link">
                                                     <a href="#">
                                                         <div class="flex-shrink-0">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
@@ -1071,36 +1068,39 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="swiper-slide">
                             <div class="shop-location__item">
-                                <div class="row">
-                                    <div class="col-lg-8 order-lg-2">
+                                <div class="row g-0">
+                                    <div class="col-lg-7 order-lg-2">
                                         <div class="shop-location__img">
                                             <img loading="lazy" src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 order-lg-1">
+                                    <div class="col-lg-5 order-lg-1">
                                         <div class="shop-location__body">
                                             <div class="shop-location__body-top">
-                                                <div class="shop-location__title">МастерДом на Профсоюзной</div>
+                                                <div class="shop-location__title">МастерДом на Профсоюзной пример длинного заголовка</div>
                                                 <div class="shop-location__tags">
-                                                    <div>Обои</div>
-                                                    <div>Плитка</div>
-                                                    <div>Отдел шторы</div>
-                                                    <div>Светильники</div>
-                                                    <div>Сантехники</div>
+                                                    <div class="item-tag">Обои</div>
+                                                    <div class="item-tag">Плитка</div>
+                                                    <div class="item-tag">Отдел шторы</div>
+                                                    <div class="item-tag">Светильники</div>
+                                                    <div class="item-tag">Сантехники</div>
                                                 </div>
                                             </div>
                                             <div class="shop-location__body-bottom">
-                                                <div>ежедневно с 10:00 до 21:00</div>
-                                                <div>г. Москва, Нахимовский проспект, д.59а</div>
-                                                <div>
-                                                    <div>Профсоюзная, 15 м</div>
-                                                    <div>Профсоюзная, 15 м</div>
+                                                <div class="shop-location__body-bottom-content">
+                                                    <div class="shop-location__hours">ежедневно с 10:00 до 21:00</div>
+                                                    <div class="shop-location__address">г. Москва, Нахимовский проспект, д.59а</div>
+                                                    <div class="shop-location__metro">
+                                                        <div class="item-metro">Профсоюзная, 15 м</div>
+                                                        <div class="item-metro">Профсоюзная, 15 м</div>
+                                                    </div>
+                                                    <div class="shop-location__phone">
+                                                        <a href="tel:88003503243">8 (800) 350-32-43</a>
+                                                    </div>
                                                 </div>
-                                                <div>8 (800) 350-32-43</div>
-                                                <div>
+                                                <div class="shop-location__link">
                                                     <a href="#">
                                                         <div class="flex-shrink-0">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
@@ -1115,7 +1115,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -1125,13 +1124,27 @@
         <section class="section section-blog-slider">
             <div class="container">
                 <h2 class="section-title">Блог</h2>
-                <div class="blog-slider__navigation">
-                    <div>Все</div>
-                    <div>Новости</div>
-                    <div>Статьи</div>
-                    <div>События</div>
+            </div>
+
+            <!-- Навигация табы -->
+            <div class="blog-slider-tab-nav">
+                <div class="scrollable-wrapper">
+                    <div class="scrollable-item">
+                        <a href="#" class="nav-link">Все</a>
+                    </div>
+                    <div class="scrollable-item">
+                        <a href="#" class="nav-link">Новости</a>
+                    </div>
+                    <div class="scrollable-item">
+                        <a href="#" class="nav-link">Статьи</a>
+                    </div>
+                    <div class="scrollable-item">
+                        <a href="#" class="nav-link">События</a>
+                    </div>
                 </div>
             </div>
+
+
             <div class="swiper swiperBlogSlider">
                 <div class="swiper-wrapper">
                     <!-- item-01 -->
@@ -1300,7 +1313,137 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container"></div>
+        <div class="container">
+
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="#">
+                        <img src="img/logo.svg" alt="masterdom.ru">
+                    </a>
+                </div>
+    
+                <div class="footer-top__contacts">
+                    <a href="tel:+78003503243" class="contacts-link link-phone">8 (800) 350 32 43</a>
+                    <a href="mail:info@gmail.com" class="contacts-link link-email">info@gmail.com</a>
+                    <a href="#" class="contacts-link link-cooperate">
+                        <span>сотрудничать</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                            <path d="M0.500002 16L9.5 8L0.5 7.67558e-07L0.500001 1.90348L7.52342 8L0.500002 14.0965L0.500002 16Z" fill="#02378F"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-middle">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="horizontal-divider"></div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+    
+                    <div class="col-6 col-lg-2 vertical-divider">
+                        <div class="footer-widget">
+                            <ul class="footer-widget__menu">
+                                <li><a href="#" class="menu-link title">Ассортимент</a></li>
+                                <li><a href="#" class="menu-link">Плитка</a></li>
+                                <li><a href="#" class="menu-link">Обои</a></li>
+                                <li><a href="#" class="menu-link">Сантехника</a></li>
+                                <li><a href="#" class="menu-link">Свет</a></li>
+                                <li><a href="#" class="menu-link">Краски</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-widget">
+                            <ul class="footer-widget__menu">
+                                <li><a href="#" class="menu-link title">Услуги</a></li>
+                                <li><a href="#" class="menu-link">3D визуализация</a></li>
+                                <li><a href="#" class="menu-link">Примерка обоев</a></li>
+                                <li><a href="#" class="menu-link">Примерка плитки</a></li>
+                                <li><a href="#" class="menu-link">Выезд дизайнера для подбора штор</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6 col-lg-2 vertical-divider">
+                        <div class="footer-widget">
+                            <ul class="footer-widget__menu">
+                                <li><a href="#" class="menu-link title">Покупателям</a></li>
+                                <li><a href="#" class="menu-link">Доставка</a></li>
+                                <li><a href="#" class="menu-link">Оплата</a></li>
+                                <li><a href="#" class="menu-link">Возврат</a></li>
+                                <li><a href="#" class="menu-link">Вопрос-ответ</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-widget">
+                            <ul class="footer-widget__menu">
+                                <li><a href="#" class="menu-link title">Блог</a></li>
+                                <li><a href="#" class="menu-link">Новости</a></li>
+                                <li><a href="#" class="menu-link">Статьи</a></li>
+                                <li><a href="#" class="menu-link">События</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-lg-3 vertical-divider">
+                        <div class="footer-widget">
+                            <ul class="footer-widget__menu">
+                                <li><a href="#" class="menu-link title">Спецпредложения</a></li>
+                                <li><a href="#" class="menu-link">Каталог товаров SALE</a></li>
+                                <li><a href="#" class="menu-link">Программа лояльности</a></li>
+                                <li><a href="#" class="menu-link">Акции</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="col-12 col-lg-3 vertical-divider">
+                        <div class="horizontal-divider d-lg-none" style="margin-bottom: 22px;"></div>
+                        <div class="footer-widget">
+                            <ul class="footer-widget__menu">
+                                <li><a href="#" class="menu-link title">О компании</a></li>
+                                <li><a href="#" class="menu-link title">Магазины</a></li>
+                                <li><a href="#" class="menu-link title">Дизайнерам</a></li>
+                                <li><a href="#" class="menu-link title">Дилерам</a></li>
+                                <li><a href="#" class="menu-link title">О компании</a></li>
+                                <li><a href="#" class="menu-link title">Магазины</a></li>
+                                <li><a href="#" class="menu-link title">Дизайнерам</a></li>
+                                <li><a href="#" class="menu-link title">Дилерам</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="horizontal-divider"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+
+                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                    <div class="footer-widget">
+                        <div class="footer-bottom__menu">
+                            <a href="#" class="menu-link">Политика конфиденциальности</a>
+                            <a href="#" class="menu-link">Глоссарий</a>
+                            <a href="#" class="menu-link">Карта сайта</a>
+                        </div>
+                    </div>
+        
+                    <div class="footer-widget">
+                        <img class="footer-payment img-fluid" src="img/footer-payment-01.png" alt="Оплата">
+                    </div>
+                </div>
+    
+                <div class="d-flex flex-column flex-lg-row justify-content-between">
+                    <div class="footer-widget footer-copyright">© 2023, <a href="#">«Мастер Дом»</a> <a href="mailto:shop@masterdom.ru">shop@masterdom.ru</a></div>
+                    <div class="footer-widget footer-copyright">ИП Цыпкин Александр Владимирович, ИНН: 772318769317, ОГРНИП: 317774600218206, ГРНИП 317774600218206 от 03.05.2017 г.</div>
+                </div>
+            </div>
+
+        </div>
     </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
