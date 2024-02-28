@@ -16,16 +16,75 @@
 
     <!-- HEADER -->
     <header class="header">
-        <nav class="navbar navbar-desktop">
+        <!-- Мобильное меню -->
+        <nav class="navbar navbar-mobile">
             <div class="container">
-                <div class="header-navigation">
-                    <div class="header-navigation__logo">
+                <div class="navbar-mobile__navigation">
+                    <div class="navbar-mobile__logo">
                         <a href="#">
                             <img src="img/logo.svg" alt="masterdom.ru">
                         </a>
                     </div>
-                    <div class="header-navigation__menu-wrapper">
+                    <!-- Кнопка -->
+                    <a href="#" class="navbar-mobile__offcanvas-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="14" viewBox="0 0 30 14"
+                            fill="none">
+                            <path d="M1 7H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M1 1H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M1 13H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="navbar-mobile__right-block">
+                    <div class="navbar-mobile__icons">
+                        <div class="navbar-mobile__icon icon-search">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M14.1733 25.1308C20.2244 25.1308 25.1298 20.2254 25.1298 14.1743C25.1298 8.12317 20.2244 3.21777 14.1733 3.21777C8.12219 3.21777 3.2168 8.12317 3.2168 14.1743C3.2168 20.2254 8.12219 25.1308 14.1733 25.1308Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.7816 28.7825L21.9492 21.9805" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="navbar-mobile__icon icon-phone">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16.3466 25.0126C19.5706 26.8301 23.5406 28.1469 28.4004 28.6306V21.3966L20.3618 18.8705L16.3466 25.0126ZM16.3466 25.0126C11.9066 22.5094 8.88175 19.0565 6.89662 15.5219M6.89662 15.5219C4.57454 11.3873 3.67515 7.14109 3.59766 4.1726L10.3721 3.36914L13.2427 11.7516L6.89662 15.5219Z" stroke="#1A1A16"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="navbar-mobile__icon icon-profile">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16.2817 13.0472C19.3335 13.0472 21.8075 10.5742 21.8075 7.52358C21.8075 4.47299 19.3335 2 16.2817 2C13.2299 2 10.7559 4.47299 10.7559 7.52358C10.7559 10.5742 13.2299 13.0472 16.2817 13.0472Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="navbar-mobile__icon icon-cart">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M25.0033 30.5417C24.3684 30.5417 23.8535 30.0268 23.8535 29.3919C23.8535 28.757 24.3684 28.2422 25.0033 28.2422C25.6382 28.2422 26.153 28.757 26.153 29.3919C26.153 30.0268 25.6382 30.5417 25.0033 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.0619 30.5417C9.42685 30.5417 8.91211 30.0268 8.91211 29.3919C8.91211 28.757 9.42685 28.2422 10.0619 28.2422C10.6969 28.2422 11.2116 28.757 11.2116 29.3919C11.2116 30.0268 10.6969 30.5417 10.0619 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Десктопное меню -->
+        <nav class="navbar navbar-desktop">
+            <div class="container">
+                <div class="navbar-desktop__navigation">
+                    <div class="navbar-desktop__logo">
                         <a href="#">
+                            <img src="img/logo.svg" alt="masterdom.ru">
+                        </a>
+                    </div>
+                    <div class="navbar-desktop__menu-wrapper">
+                        <!-- Кнопка -->
+                        <a href="#" class="navbar-desktop__offcanvas-toggle">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="14" viewBox="0 0 30 14"
                                 fill="none">
                                 <path d="M1 7H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
@@ -33,6 +92,7 @@
                                 <path d="M1 13H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </a>
+                        <!-- Меню -->
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="#">Магазины</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Плитка</a></li>
@@ -103,42 +163,32 @@
                         </ul>
                     </div>
                 </div>
-                <div class="search-form">
+                <div class="navbar-desktop__search">
                     <form class="form-search" action="#">
                         <input type="text" class="form-control" placeholder="поиск">
-                        <div class="position-absolute top-50 end-0 translate-middle-y d-flex gap-3 align-items-center">
-                            <button type="submit" class="btn p-1 border-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
-                                    fill="none">
-                                    <g clip-path="url(#clip0_34_11018)">
-                                        <path
-                                            d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02943 14.9706 1 10 1C5.02943 1 1 5.02943 1 10C1 14.9706 5.02943 19 10 19Z"
-                                            stroke="#7C7D80" stroke-width="1.18421" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M21.999 21.9995L16.3867 16.4121" stroke="#7C7D80"
-                                            stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_34_11018">
-                                            <rect width="23" height="23" fill="white" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </button>
-                        </div>
+                        <button type="submit" class="btn form-search__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"
+                                fill="none">
+                                <g clip-path="url(#clip0_34_11018)">
+                                    <path
+                                        d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02943 14.9706 1 10 1C5.02943 1 1 5.02943 1 10C1 14.9706 5.02943 19 10 19Z"
+                                        stroke="#7C7D80" stroke-width="1.18421" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M21.999 21.9995L16.3867 16.4121" stroke="#7C7D80"
+                                        stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_34_11018">
+                                        <rect width="23" height="23" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
                     </form>
                 </div>
-                <div>
-                    <div class="header-icons">
-                        <div class="header-icons__search">
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                    <path d="M14.1733 25.1308C20.2244 25.1308 25.1298 20.2254 25.1298 14.1743C25.1298 8.12317 20.2244 3.21777 14.1733 3.21777C8.12219 3.21777 3.2168 8.12317 3.2168 14.1743C3.2168 20.2254 8.12219 25.1308 14.1733 25.1308Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M28.7816 28.7825L21.9492 21.9805" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="header-icons__location">
+                <div class="navbar-desktop__right-block">
+                    <div class="navbar-desktop__icons">
+                        <div class="navbar-desktop__icon icon-location">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <path d="M28.0687 13.0343C28.0687 21.0572 16.0343 30.4172 16.0343 30.4172C16.0343 30.4172 4 21.0572 4 13.0343C4 6.47963 9.47963 1 16.0343 1C22.589 1 28.0687 6.47963 28.0687 13.0343Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
@@ -146,14 +196,7 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="header-icons__phone">
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                    <path d="M16.3466 25.0126C19.5706 26.8301 23.5406 28.1469 28.4004 28.6306V21.3966L20.3618 18.8705L16.3466 25.0126ZM16.3466 25.0126C11.9066 22.5094 8.88175 19.0565 6.89662 15.5219M6.89662 15.5219C4.57454 11.3873 3.67515 7.14109 3.59766 4.1726L10.3721 3.36914L13.2427 11.7516L6.89662 15.5219Z" stroke="#1A1A16"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="header-icons__profile">
+                        <div class="navbar-desktop__icon icon-profile">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <path d="M16.2817 13.0472C19.3335 13.0472 21.8075 10.5742 21.8075 7.52358C21.8075 4.47299 19.3335 2 16.2817 2C13.2299 2 10.7559 4.47299 10.7559 7.52358C10.7559 10.5742 13.2299 13.0472 16.2817 13.0472Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
@@ -161,14 +204,14 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="header-icons__whishlist">
+                        <div class="navbar-desktop__icon icon-whishlist">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <path d="M16.5091 28.2013L4.20238 17.054C-2.48607 10.3655 7.34593 -2.47625 16.5091 7.91311C25.6722 -2.47625 35.4598 10.4101 28.8159 17.054L16.5091 28.2013Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </a>
                         </div>
-                        <div class="header-icons__cart">
+                        <div class="navbar-desktop__icon icon-cart">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
@@ -178,8 +221,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="header-phone">
-                        <a href="tel:88003503243" class="header-phone__link">8 800 350-32-43</a>
+                    <div class="navbar-desktop__phone">
+                        <a href="tel:88003503243">8 800 350-32-43</a>
                     </div>
                 </div>
             </div>
@@ -191,9 +234,9 @@
         <!-- section-hero -->
         <section class="section section-hero">
             <div class="container">
-                <div class="row gy-4">
-                    <div class="col-lg-8">
-                        <div class="swiperHeroSlider-container">
+                <div class="section-hero__row">
+                    <div class="section-hero__col">
+                        <div class="position-relative h-100">
                             <div class="swiper swiperHeroSlider">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -235,10 +278,10 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="swiper-pagination"></div>
+                            <div class="swiperHeroSlider-pagination"></div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="section-hero__col">
                         <div class="hero-category">
                             <div class="hero-category__img">
                                 <img src="img/hero-category-01.jpg" alt="Хиты продаж">
@@ -257,9 +300,9 @@
 
         <!-- section-categories-circles -->
         <section class="section section-categories-circles">
-            <div class="container">
-                <h2 class="section-title">Интернет-магазин плитки и керамогранита</h2>
-            </div>
+            <!-- Заголовок -->
+            <h2 class="section-title">Интернет-магазин плитки и керамогранита</h2>
+            <!-- Слайдер -->
             <div class="swiperCategoriesCircles-container">
                 <div class="swiper swiperCategoriesCircles">
                     <div class="swiper-wrapper">
@@ -313,6 +356,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Навигация слайдера -->
                 <div class="swiperCategoriesCircles-next">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
                         <path
@@ -320,6 +364,7 @@
                             fill="#02378F" />
                     </svg>
                 </div>
+                <!-- Навигация слайдера -->
                 <div class="swiperCategoriesCircles-prev">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
                         <path
@@ -332,10 +377,8 @@
 
         <!-- section-popular-products -->
         <section class="section section-popular-products">
-            <div class="container">
-                <h2 class="section-title">Популярные товары</h2>
-            </div>
-
+            <!-- Заголовок -->
+            <h2 class="section-title">Популярные товары</h2>
             <!-- Навигация табы -->
             <div class="popular-products-tab-nav scrollable-container" role="tablist">
                 <div class="scrollable-wrapper">
@@ -359,22 +402,22 @@
                     </div>
                 </div>
             </div>
-
             <!-- Контейнер табы -->
             <div class="tab-content">
-
                 <!-- Вкладка 01 -->
                 <div class="tab-pane fade show active" id="tab-popular-products-01" role="tabpanel" tabindex="0">
                     <div class="container">
 
-                        <!-- =================================================================================================== -->
-                        <!-- Для десктопа (экраны с min-width: 992px) выводить 6 товаров, для мобилки (всё что меньше 992px) - 3 -->
-                        <!-- =================================================================================================== -->
+                        <!-- =========================================================== -->
+                        <!-- ====================== ПРОГРАММИСТУ! ====================== -->
+                        <!-- Для десктопа (экраны с min-width: 992px) выводить 6 товаров -->
+                        <!-- Для мобилки (всё что меньше 992px) - выводить 3 товара -->
+                        <!-- =========================================================== -->
 
+                        <!-- Сетка -->
                         <div class="popular-products-grid">
-    
                             <!-- item 1 -->
-                            <div class="product-item product-wallpaper">
+                            <div class="product-item product-cat-wallpaper">
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -424,9 +467,8 @@
                                     </div>
                                 </div>
                             </div>
-    
                             <!-- item 2 -->
-                            <div class="product-item product-wallpaper">
+                            <div class="product-item product-cat-wallpaper">
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -474,9 +516,8 @@
                                     </div>
                                 </div>
                             </div>
-    
                             <!-- item 3 -->
-                            <div class="product-item product-wallpaper">
+                            <div class="product-item product-cat-wallpaper">
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -524,9 +565,8 @@
                                     </div>
                                 </div>
                             </div>
-    
                             <!-- item 4 -->
-                            <div class="product-item product-wallpaper">
+                            <div class="product-item product-cat-wallpaper">
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -572,9 +612,8 @@
                                     </div>
                                 </div>
                             </div>
-    
                             <!-- item 5 -->
-                            <div class="product-item product-wallpaper">
+                            <div class="product-item product-cat-wallpaper">
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -622,9 +661,8 @@
                                     </div>
                                 </div>
                             </div>
-    
                             <!-- item 6 -->
-                            <div class="product-item product-wallpaper">
+                            <div class="product-item product-cat-wallpaper">
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -675,25 +713,22 @@
     
                         </div>
 
-                        <div class="products-category-link">
-                            <a href="#">Смотреть все</a>
-                        </div>
-
                     </div>
                 </div>
-
                 <!-- Вкладка 02 -->
                 <div class="tab-pane fade" id="tab-popular-products-02" role="tabpanel" tabindex="0">
                     <div class="container">
 
-                        <!-- =================================================================================================== -->
-                        <!-- Для десктопа (экраны с min-width: 992px) выводить 6 товаров, для мобилки (всё что меньше 992px) - 3 -->
-                        <!-- =================================================================================================== -->
+                        <!-- =========================================================== -->
+                        <!-- ====================== ПРОГРАММИСТУ! ====================== -->
+                        <!-- Для десктопа (экраны с min-width: 992px) выводить 6 товаров -->
+                        <!-- Для мобилки (всё что меньше 992px) - выводить 3 товара -->
+                        <!-- =========================================================== -->
 
+                        <!-- Сетка -->
                         <div class="popular-products-grid">
-    
                             <!-- item 1 -->
-                            <div class="product-item product-wallpaper">
+                            <div class="product-item product-cat-wallpaper">
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -743,9 +778,8 @@
                                     </div>
                                 </div>
                             </div>
-    
                             <!-- item 2 -->
-                            <div class="product-item product-wallpaper">
+                            <div class="product-item product-cat-wallpaper">
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -793,9 +827,8 @@
                                     </div>
                                 </div>
                             </div>
-    
                             <!-- item 3 -->
-                            <div class="product-item product-wallpaper">
+                            <div class="product-item product-cat-wallpaper">
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -843,9 +876,8 @@
                                     </div>
                                 </div>
                             </div>
-    
                             <!-- item 4 -->
-                            <div class="product-item product-wallpaper">
+                            <div class="product-item product-cat-wallpaper">
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -891,9 +923,8 @@
                                     </div>
                                 </div>
                             </div>
-    
                             <!-- item 5 -->
-                            <div class="product-item product-wallpaper">
+                            <div class="product-item product-cat-wallpaper">
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -941,9 +972,8 @@
                                     </div>
                                 </div>
                             </div>
-    
                             <!-- item 6 -->
-                            <div class="product-item product-wallpaper">
+                            <div class="product-item product-cat-wallpaper">
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -991,45 +1021,41 @@
                                     </div>
                                 </div>
                             </div>
-    
-                        </div>
-
-                        <div class="products-category-link">
-                            <a href="#">Смотреть все</a>
                         </div>
 
                     </div>
                 </div>
-
             </div>
-
+            <!-- Кнопка -->
+            <div class="section-popular-products__link">
+                <a href="#" class="btn btn-outline">Смотреть все</a>
+            </div>
         </section>
 
         <!-- section-shops-location -->
         <section class="section section-shops-location">
             <div class="container">
-                <div>
-                    <a href="#" class="section-shops-location__link">
-                        <span>Все магазины</span>
-                        <div class="flex-shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" fill="none">
-                                <path d="M1 14L10.6276 8.03992C10.7453 7.97014 10.839 7.88633 10.903 7.79352C10.967 7.70073 11 7.60088 11 7.49998C11 7.39909 10.967 7.29923 10.903 7.20644C10.839 7.11365 10.7453 7.02984 10.6276 6.96004L1 1" stroke="#7C7D80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-
+                <!-- Ссылочка -->
+                <a href="#" class="section-shops-location__link">
+                    <span>Все магазины</span>
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" fill="none">
+                            <path d="M1 14L10.6276 8.03992C10.7453 7.97014 10.839 7.88633 10.903 7.79352C10.967 7.70073 11 7.60088 11 7.49998C11 7.39909 10.967 7.29923 10.903 7.20644C10.839 7.11365 10.7453 7.02984 10.6276 6.96004L1 1" stroke="#7C7D80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </a>
+                <!-- Слайдер -->
                 <div class="swiper swiperShopsLocation">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="shop-location__item">
-                                <div class="row g-0">
-                                    <div class="col-lg-7 order-lg-2">
+                                <div class="shop-location__row">
+                                    <div class="shop-location__col">
                                         <div class="shop-location__img">
                                             <img loading="lazy" src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
                                         </div>
                                     </div>
-                                    <div class="col-lg-5 order-lg-1">
+                                    <div class="shop-location__col">
                                         <div class="shop-location__body">
                                             <div class="shop-location__body-top">
                                                 <div class="shop-location__title">МастерДом на Профсоюзной</div>
@@ -1070,13 +1096,13 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="shop-location__item">
-                                <div class="row g-0">
-                                    <div class="col-lg-7 order-lg-2">
+                                <div class="shop-location__row">
+                                    <div class="shop-location__col">
                                         <div class="shop-location__img">
                                             <img loading="lazy" src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
                                         </div>
                                     </div>
-                                    <div class="col-lg-5 order-lg-1">
+                                    <div class="shop-location__col">
                                         <div class="shop-location__body">
                                             <div class="shop-location__body-top">
                                                 <div class="shop-location__title">МастерДом на Профсоюзной пример длинного заголовка</div>
@@ -1116,16 +1142,26 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Навигация слайдера -->
+                    <div class="swiperShopsLocation-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                            <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <!-- Навигация слайдера -->
+                    <div class="swiperShopsLocation-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                            <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- section-blog-slider -->
         <section class="section section-blog-slider">
-            <div class="container">
-                <h2 class="section-title">Блог</h2>
-            </div>
-
+            <!-- Заголовок -->
+            <h2 class="section-title">Блог</h2>
             <!-- Навигация табы -->
             <div class="blog-slider-tab-nav">
                 <div class="scrollable-wrapper">
@@ -1143,8 +1179,7 @@
                     </div>
                 </div>
             </div>
-
-
+            <!-- Слайдер -->
             <div class="swiper swiperBlogSlider">
                 <div class="swiper-wrapper">
                     <!-- item-01 -->
@@ -1295,18 +1330,19 @@
                         </div>
                     </div>
                 </div>
+                <!-- Навигация слайдера -->
                 <div class="swiperBlogSlider-next">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
                         <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
                     </svg>
                 </div>
+                <!-- Навигация слайдера -->
                 <div class="swiperBlogSlider-prev">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
                         <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
                     </svg>
                 </div>
             </div>
-
         </section>
 
     </main>

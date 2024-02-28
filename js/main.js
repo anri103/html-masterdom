@@ -7,7 +7,7 @@ var swiperHeroSlider = new Swiper(".swiperHeroSlider", {
     spaceBetween: 16,
     grabCursor: true,
     pagination: {
-        el: ".swiper-pagination",
+        el: ".swiperHeroSlider-pagination",
     },
     navigation: {
         nextEl: ".swiperHeroSlider-next",
@@ -40,6 +40,10 @@ var swiperShopsLocation = new Swiper(".swiperShopsLocation", {
     loop: false,
     spaceBetween: 16,
     grabCursor: true,
+    navigation: {
+        nextEl: ".swiperShopsLocation-next",
+        prevEl: ".swiperShopsLocation-prev",
+    },
 });
 
 var swiperBlogSlider = new Swiper(".swiperBlogSlider", {
