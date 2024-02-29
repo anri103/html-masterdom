@@ -27,6 +27,7 @@
 :root {
     --bs-primary: #02378f;
     --bs-secondary: #474a51;
+    --theme-gray: #7C7D80;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
@@ -35,6 +36,7 @@
     --bs-dark: #212529;
     --bs-primary-rgb: 2,55,143;
     --bs-secondary-rgb: 71,74,81;
+    --theme-gray-rgb: 124,125,128;
     --bs-success-rgb: 25,135,84;
     --bs-info-rgb: 13,202,240;
     --bs-warning-rgb: 255,193,7;
@@ -49,14 +51,14 @@
     --bs-body-line-height: normal;
 
     --bs-body-color: #1A1A16;
-    --bs-body-color-rgb: 18,14,30;
+    --bs-body-color-rgb: 26,26,22;
     --bs-body-bg: #fff;
     --bs-body-bg-rgb: 255,255,255;
 
     --bs-link-color: #02378f;
     --bs-link-color-rgb: 2,55,143;
     --bs-link-hover-color: #1A1A16;
-    --bs-link-hover-color-rgb: 18,14,30;
+    --bs-link-hover-color-rgb: 26,26,22;
 
     --bs-border-width: 1px;
     --bs-border-style: solid;
@@ -178,8 +180,9 @@ textarea {
 
 /* BASE ============================ */
 
-.section-title {
-    color: var(--bs-body-color);
+.title {
+    --bs-link-color-rgb: var(--bs-body-color-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
     font-family: var(--bs-title-font-family);
     font-size: 28px;
     font-weight: 700;
@@ -297,7 +300,7 @@ textarea {
 
 @media (min-width: 992px) {
 
-    .section-title {
+    .title {
         font-size: 32px;
     }
 }
@@ -347,10 +350,11 @@ textarea {
 
 .navbar-desktop {
     display: none;
+    height: 100px;
 }
 
 .navbar.navbar-desktop {
-    --bs-navbar-padding-y: 10px;
+    --bs-navbar-padding-y: 16px;
 }
 
 .navbar-desktop__navigation {
@@ -368,6 +372,19 @@ textarea {
     display: flex;
     align-items: center;
     gap: 22px;
+}
+
+.navbar-desktop__offcanvas-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-desktop__offcanvas-toggle:not(.js-active) .icon-close,
+.navbar-desktop__offcanvas-toggle.js-active .icon-burger {
+    display: none;
 }
 
 .navbar-desktop .navbar-nav {
@@ -396,7 +413,7 @@ textarea {
 }
 
 .form-search .form-control {
-    --bs-border-color: #7C7D80;
+    --bs-border-color: var(--theme-gray);
     border-top-width: 0 !important;
     border-right-width: 0 !important;
     border-left-width: 0 !important;
@@ -431,6 +448,26 @@ textarea {
 
 .navbar-desktop__icon {
     position: relative;
+}
+
+.navbar-desktop__icon .notification-count {
+    position: absolute;
+    top: 0;
+    right: -7px;
+    color: var(--bs-body-color);
+    text-align: center;
+    font-size: 10px;
+    line-height: 15px;
+    height: 15px;
+    min-width: 15px;
+    padding: 0 2px;
+    border-radius: 50px;
+    background-color: #DEE5ED;
+}
+
+.navbar-desktop__icon.icon-profile .notification-count {
+    top: auto;
+    bottom: -2px;
 }
 
 @media (min-width: 992px) {
@@ -544,12 +581,8 @@ textarea {
     flex-basis: 50%;
 }
 
-.footer-middle__widget {
+.footer-middle__widget:not(:last-child) {
     margin-bottom: 22px;
-}
-
-.footer-middle__widget:last-child {
-    margin-bottom: 0 !important;
 }
 
 .footer-middle__menu {
@@ -560,27 +593,39 @@ textarea {
     padding: 0;
 }
 
-.footer-middle__menu .menu-link {
+.footer-middle__menu > li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.footer-middle__menu > li > a {
     display: block;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.16px;
-    margin-bottom: 6px;
-}
-
-.footer-middle__menu li:last-child .menu-link {
-    margin-bottom: 0 !important;
-}
-
-.footer-middle__menu .menu-link.title {
     font-family: var(--bs-title-font-family);
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.22px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+}
+
+.footer-middle__menu .submenu {
+    --bs-link-color-rgb: var(--bs-secondary-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-middle__menu .submenu li:not(:last-child) {
+    margin-bottom: 6px !important;
+}
+
+.footer-middle__menu .submenu a {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
 }
 
 @media (min-width: 992px) {
@@ -602,15 +647,19 @@ textarea {
         border-left: 1px solid #ACB2BF;
     }
 
-    .footer-middle__widget {
+    .footer-middle__widget:not(:last-child) {
         margin-bottom: 32px;
     }
 
-    .footer-middle__menu .menu-link.title {
+    .footer-middle__menu > li > a {
         font-size: 24px;
     }
 
-    .footer-middle__menu .menu-link {
+    .footer-middle__menu .submenu {
+        margin-top: 12px;
+    }
+
+    .footer-middle__menu .submenu a {
         font-size: 18px;
     }
 }
@@ -847,7 +896,7 @@ textarea {
     margin-bottom: 52px;
 }
 
-.section-categories-circles .section-title {
+.section-categories-circles .title {
     text-align: center;
     font-weight: 400;
     text-transform: none;
@@ -940,7 +989,7 @@ textarea {
     margin-bottom: 82px;
 }
 
-.section-popular-products .section-title {
+.section-popular-products .title {
     text-align: center;
     margin-bottom: 32px;
 }
@@ -1090,7 +1139,7 @@ textarea {
 }
 
 .product-item__title {
-    --bs-link-color-rgb: 26,26,22;
+    --bs-link-color-rgb: var(--bs-body-color-rgb);
     --bs-link-hover-color-rgb: var(--bs-primary-rgb);
     text-align: center;
     font-family: var(--bs-title-font-family);
@@ -1189,7 +1238,7 @@ textarea {
 }
 
 .section-shops-location__link {
-    --bs-link-color-rgb: 124,125,128;
+    --bs-link-color-rgb: var(--theme-gray-rgb);
     --bs-link-hover-color-rgb: var(--bs-primary-rgb);
     display: inline-flex;
     align-items: center;
@@ -1394,7 +1443,7 @@ textarea {
     margin-bottom: 94px;
 }
 
-.section-blog-slider .section-title {
+.section-blog-slider .title {
     text-align: center;
     margin-bottom: 32px;
 }
@@ -1481,7 +1530,7 @@ textarea {
 }
 
 .blog-slide-item__tags {
-    --bs-link-color-rgb: 124,125,128;
+    --bs-link-color-rgb: var(--theme-gray-rgb);
     --bs-link-hover-color-rgb: var(--bs-primary-rgb);
     font-size: 18px;
     font-weight: 400;
@@ -1490,7 +1539,7 @@ textarea {
 }
 
 .blog-slide-item__title {
-    --bs-link-color-rgb: 26,26,22;
+    --bs-link-color-rgb: var(--bs-body-color-rgb);
     --bs-link-hover-color-rgb: var(--bs-primary-rgb);
     font-family: var(--bs-title-font-family);
     font-size: 24px;
