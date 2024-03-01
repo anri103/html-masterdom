@@ -314,6 +314,10 @@ textarea {
 
 /* HEADER ============================ */
 
+.header {
+    height: 100px;
+}
+
 /* Мобильное меню */
 
 .navbar-mobile {}
@@ -382,8 +386,8 @@ textarea {
     height: 30px;
 }
 
-.navbar-desktop__offcanvas-toggle:not(.js-active) .icon-close,
-.navbar-desktop__offcanvas-toggle.js-active .icon-burger {
+.navbar-desktop__offcanvas-toggle:not(.collapsed) .icon-burger,
+.navbar-desktop__offcanvas-toggle.collapsed .icon-close {
     display: none;
 }
 
