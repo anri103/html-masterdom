@@ -11,170 +11,6 @@
     <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        .overlay-menu {
-            height: calc(100vh - 100px);
-            overflow-y: auto;
-        }
-
-        .overlay-menu__row {
-            display: flex;
-            justify-content: center;
-        }
-
-        .overlay-menu__col {
-            flex: 1 1 100%;
-            padding: 22px 22px;
-            border-left: 1px solid #DEE5ED;
-        }
-
-        .overlay-menu__col:last-child {
-            padding: 22px 0;
-            border: none;
-        }
-
-        .overlay-menu__menu {
-            --bs-link-color-rgb: var(--bs-body-color-rgb);
-            --bs-link-hover-color-rgb: var(--bs-primary-rgb);
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .overlay-menu__menu > li {
-            margin-bottom: 31px;
-        }
-
-        .overlay-menu__menu > li > a {
-            display: block;
-            font-family: var(--bs-title-font-family);
-            font-size: 32px;
-            font-weight: 400;
-            line-height: normal;
-            text-transform: uppercase;
-        }
-
-        .overlay-menu__menu .submenu {
-            --bs-link-color-rgb: var(--theme-gray-rgb);
-            --bs-link-hover-color-rgb: var(--bs-primary-rgb);
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            margin-top: 12px;
-        }
-
-        .overlay-menu__menu .submenu li:not(:last-child) {
-            margin-bottom: 12px !important;
-        }
-
-        .overlay-menu__menu .submenu a {
-            display: block;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: normal;
-        }
-
-        .overlay-menu__blog-item .blog-item-img {
-            height: 470px;
-            overflow: hidden;
-        }
-
-        .overlay-menu__blog-item .blog-item-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            transition: all .3s ease;
-        }
-
-        .overlay-menu__blog-item .blog-item-img:hover img {
-            transform: scale(1.1);
-        }
-
-        .overlay-menu__blog-item .blog-item-body {
-            padding: 18px 0;
-        }
-
-        .overlay-menu__blog-item .blog-item-title {
-            --bs-link-color-rgb: var(--bs-body-color-rgb);
-            --bs-link-hover-color-rgb: var(--bs-primary-rgb);
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 1.2;
-            letter-spacing: 0.24px;
-            margin-bottom: 18px;
-        }
-
-        .overlay-menu__blog-item .blog-item-tags {
-            --bs-link-color-rgb: var(--bs-secondary-rgb);
-            --bs-link-hover-color-rgb: var(--bs-primary-rgb);
-            display: flex;
-            gap: 5px;
-            color: var(--bs-secondary);
-            font-family: var(--bs-title-font-family);
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 0.18px;
-            margin-bottom: 18px;
-        }
-
-        .overlay-menu__blog-item .item-tag {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .overlay-menu__blog-item .item-tag + .item-tag::before {
-            content: "";
-            display: block;
-            width: 3px;
-            height: 3px;
-            border-radius: 50%;
-            background: var(--bs-secondary);
-        }
-
-        .overlay-menu__blog-item .blog-item-read-link {
-            font-size: 18px;
-            font-weight: 500;
-            line-height: normal;
-            text-transform: lowercase;
-        }
-
-
-
-
-
-
-        .navbar-desktop__col {
-            flex: 0 0 auto;
-            display: flex;
-            align-items: center;
-        }
-
-        .navbar-desktop__col:nth-child(1) {
-            flex-basis: 60%;
-        }
-
-        .navbar-desktop__col:nth-child(2) {
-            flex-basis: 20%;
-            justify-content: center;
-        }
-
-        .navbar-desktop__col:nth-child(3) {
-            flex-basis: 20%;
-            justify-content: end;
-        }
-
-
-
-
-
-
-    </style>
-
 </head>
 
 <body>
@@ -241,15 +77,16 @@
 
         <!-- Десктопное меню -->
         <div class="fixed-top bg-white">
+            <!-- Десктопное меню -->
             <nav class="navbar navbar-desktop">
                 <div class="container">
-                    <div class="navbar-desktop__col js-mega-menu">
+                    <div class="navbar-desktop__logo">
+                        <a href="#">
+                            <img src="img/logo.svg" alt="masterdom.ru">
+                        </a>
+                    </div>
+                    <div class="navbar-desktop__middle">
                         <div class="navbar-desktop__navigation">
-                            <div class="navbar-desktop__logo">
-                                <a href="#">
-                                    <img src="img/logo.svg" alt="masterdom.ru">
-                                </a>
-                            </div>
                             <div class="navbar-desktop__menu-wrapper">
                                 <!-- Кнопка -->
                                 <a href="#collapseExample" class="navbar-desktop__offcanvas-toggle collapsed" data-bs-toggle="collapse" aria-expanded="false">
@@ -265,69 +102,140 @@
                                 </a>
                                 <!-- Меню -->
                                 <ul class="navbar-nav">
-                                    <li class="nav-item"><a href="#" class="nav-link">Магазины</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Плитка</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Обои</a></li>
+                                    <!-- Должна быть возможность добавить свои классы ссылке -->
+                                    <li class="nav-item"><a href="#" class="nav-link fw-semibold text-primary"><span>Магазины</span></a></li>
                                     <li class="nav-item dropdown has-mega-menu">
-                                        <a href="#" class="nav-link dropdown-toggle mega-menu-invoker" data-bs-toggle="dropdown" aria-expanded="false">Сантехника</a>
-                                        <div class="dropdown-menu mega-menu w-100" style="min-width: 30rem;">
-                                            <div class="row">
-                                                <div class="col-lg-4">
-                                                    123
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    456
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    789
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <!-- <li class="nav-item dropdown dropdown-fullwidth">
-                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Сантехника</a>
-                                        <div class="dropdown-menu">
-                                            <div class="categories_dropdown">
-                                                <div class="row">
-                                                    <div class="col-4 border-end">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><span>Плитка</span></a>
+                                        <div class="dropdown-menu mega-menu">
+                                            <div class="row g-0">
+                                                <div class="col-3 border-end">
+                                                    <div class="nav-wrapper">
                                                         <ul class="nav nav-tabs flex-column" role="tablist">
                                                             <li class="nav-item" role="presentation">
-                                                                <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-01" role="tab" aria-controls="tab-01" aria-selected="true">Раковины</button>
+                                                                <a href="#mega-menu-tab-cat-plitka" class="nav-link active" data-bs-toggle="tab" role="tab" aria-selected="true">Плитка</a>
                                                             </li>
                                                             <li class="nav-item" role="presentation">
-                                                                <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-02" role="tab" aria-controls="tab-02" aria-selected="false">Унитазы и биде</button>
+                                                                <a href="#mega-menu-tab-cat-keramogranit" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">Керамогранит</a>
                                                             </li>
                                                             <li class="nav-item" role="presentation">
-                                                                <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-03" role="tab" aria-controls="tab-03" aria-selected="false">Смесители</button>
+                                                                <a href="#mega-menu-tab-cat-kamen" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">Камень</a>
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="col-8">
-                                                        <div class="tab-content">
-                                                            <div class="tab-pane fade show active" id="tab-01" role="tabpanel" aria-labelledby="tab-01">
-                                                                <div class="row row-cols-3">
-                                                                    <div class="col">
-                                                                        <span class="catalog-menu-section-menu-items__item-sec">Раковины</span>
-                                                                        <ul class="list-unstyled mb-0">
-                                                                            <li><a href="#">Раковины</a></li>
-                                                                            <li><a href="#">Раковины</a></li>
-                                                                            <li><a href="#">Раковины</a></li>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="tab-content">
+                                                        <div class="tab-pane fade show active" id="mega-menu-tab-cat-plitka" role="tabpanel">
+                                                            <div class="content-wrapper">
+                                                                <div class="mega-menu__grid">
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Материал</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Керамогранит</a></li>
+                                                                            <li><a href="#">Керамическая плитка</a></li>
+                                                                            <li><a href="#">Камень</a></li>
                                                                         </ul>
                                                                     </div>
-                                                                    <div class="col">
-                                                                        <span class="catalog-menu-section-menu-items__item-sec">Раковины</span>
-                                                                        <ul class="list-unstyled mb-0">
-                                                                            <li><a href="#">Раковины</a></li>
-                                                                            <li><a href="#">Раковины</a></li>
-                                                                            <li><a href="#">Раковины</a></li>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Мозаика</a></li>
+                                                                            <li><a href="#">Ступени</a></li>
+                                                                            <li><a href="#">Плинтусы</a></li>
+                                                                            <li><a href="#">Декоры</a></li>
+                                                                            <li><a href="#">Панно напольное</a></li>
                                                                         </ul>
                                                                     </div>
-                                                                    <div class="col">
-                                                                        <span class="catalog-menu-section-menu-items__item-sec">Раковины</span>
-                                                                        <ul class="list-unstyled mb-0">
-                                                                            <li><a href="#">Раковины</a></li>
-                                                                            <li><a href="#">Раковины</a></li>
-                                                                            <li><a href="#">Раковины</a></li>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Назначение</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Для пола</a></li>
+                                                                            <li><a href="#">Для стен</a></li>
+                                                                            <li><a href="#">Универсальное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Мозаика</a></li>
+                                                                            <li><a href="#">Ступени</a></li>
+                                                                            <li><a href="#">Плинтусы</a></li>
+                                                                            <li><a href="#">Декоры</a></li>
+                                                                            <li><a href="#">Панно напольное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="mega-menu-tab-cat-keramogranit" role="tabpanel">
+                                                            <div class="content-wrapper">
+                                                                <div class="mega-menu__grid">
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Назначение</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Для пола</a></li>
+                                                                            <li><a href="#">Для стен</a></li>
+                                                                            <li><a href="#">Универсальное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Мозаика</a></li>
+                                                                            <li><a href="#">Ступени</a></li>
+                                                                            <li><a href="#">Плинтусы</a></li>
+                                                                            <li><a href="#">Декоры</a></li>
+                                                                            <li><a href="#">Панно напольное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Материал</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Керамогранит</a></li>
+                                                                            <li><a href="#">Керамическая плитка</a></li>
+                                                                            <li><a href="#">Камень</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="mega-menu-tab-cat-kamen" role="tabpanel">
+                                                            <div class="content-wrapper">
+                                                                <div class="mega-menu__grid">
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Назначение</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Для пола</a></li>
+                                                                            <li><a href="#">Для стен</a></li>
+                                                                            <li><a href="#">Универсальное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Материал</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Керамогранит</a></li>
+                                                                            <li><a href="#">Керамическая плитка</a></li>
+                                                                            <li><a href="#">Камень</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Мозаика</a></li>
+                                                                            <li><a href="#">Ступени</a></li>
+                                                                            <li><a href="#">Плинтусы</a></li>
+                                                                            <li><a href="#">Декоры</a></li>
+                                                                            <li><a href="#">Панно напольное</a></li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -337,14 +245,193 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </li> -->
-                                    <li class="nav-item"><a href="#" class="nav-link">Свет</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Краски</a></li>
+                                    </li>
+                                    <li class="nav-item"><a href="#" class="nav-link"><span>Обои</span></a></li>
+                                    <li class="nav-item dropdown has-mega-menu">
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><span>Сантехника</span></a>
+                                        <div class="dropdown-menu mega-menu">
+                                            <div class="row g-0">
+                                                <div class="col-3 border-end">
+                                                    <div class="nav-wrapper">
+                                                        <ul class="nav nav-tabs flex-column" role="tablist">
+                                                            <li class="nav-item" role="presentation">
+                                                                <a href="#mega-menu-tab-cat-rakoviny" class="nav-link active" data-bs-toggle="tab" role="tab" aria-selected="true">Раковины</a>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <a href="#mega-menu-tab-cat-unitazy-i-bide" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">Унитазы и биде</a>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <a href="#mega-menu-tab-cat-smesiteli" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">Смесители</a>
+                                                            </li>
+                                                            <li class="nav-item" role="presentation">
+                                                                <a href="#mega-menu-tab-cat-dushevie-kabiny" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">Душевые кабины</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="tab-content">
+                                                        <div class="tab-pane fade show active" id="mega-menu-tab-cat-rakoviny" role="tabpanel">
+                                                            <div class="content-wrapper">
+                                                                <div class="mega-menu__grid">
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Материал</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Керамогранит</a></li>
+                                                                            <li><a href="#">Керамическая плитка</a></li>
+                                                                            <li><a href="#">Камень</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Мозаика</a></li>
+                                                                            <li><a href="#">Ступени</a></li>
+                                                                            <li><a href="#">Плинтусы</a></li>
+                                                                            <li><a href="#">Декоры</a></li>
+                                                                            <li><a href="#">Панно напольное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Назначение</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Для пола</a></li>
+                                                                            <li><a href="#">Для стен</a></li>
+                                                                            <li><a href="#">Универсальное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Мозаика</a></li>
+                                                                            <li><a href="#">Ступени</a></li>
+                                                                            <li><a href="#">Плинтусы</a></li>
+                                                                            <li><a href="#">Декоры</a></li>
+                                                                            <li><a href="#">Панно напольное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="mega-menu-tab-cat-unitazy-i-bide" role="tabpanel">
+                                                            <div class="content-wrapper">
+                                                                <div class="mega-menu__grid">
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Назначение</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Для пола</a></li>
+                                                                            <li><a href="#">Для стен</a></li>
+                                                                            <li><a href="#">Универсальное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Мозаика</a></li>
+                                                                            <li><a href="#">Ступени</a></li>
+                                                                            <li><a href="#">Плинтусы</a></li>
+                                                                            <li><a href="#">Декоры</a></li>
+                                                                            <li><a href="#">Панно напольное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Материал</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Керамогранит</a></li>
+                                                                            <li><a href="#">Керамическая плитка</a></li>
+                                                                            <li><a href="#">Камень</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="mega-menu-tab-cat-smesiteli" role="tabpanel">
+                                                            <div class="content-wrapper">
+                                                                <div class="mega-menu__grid">
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Назначение</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Для пола</a></li>
+                                                                            <li><a href="#">Для стен</a></li>
+                                                                            <li><a href="#">Универсальное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Мозаика</a></li>
+                                                                            <li><a href="#">Ступени</a></li>
+                                                                            <li><a href="#">Плинтусы</a></li>
+                                                                            <li><a href="#">Декоры</a></li>
+                                                                            <li><a href="#">Панно напольное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Материал</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Керамогранит</a></li>
+                                                                            <li><a href="#">Керамическая плитка</a></li>
+                                                                            <li><a href="#">Камень</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="mega-menu-tab-cat-dushevie-kabiny" role="tabpanel">
+                                                            <div class="content-wrapper">
+                                                                <div class="mega-menu__grid">
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Назначение</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Для пола</a></li>
+                                                                            <li><a href="#">Для стен</a></li>
+                                                                            <li><a href="#">Универсальное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Мозаика</a></li>
+                                                                            <li><a href="#">Ступени</a></li>
+                                                                            <li><a href="#">Плинтусы</a></li>
+                                                                            <li><a href="#">Декоры</a></li>
+                                                                            <li><a href="#">Панно напольное</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="mega-menu__widget">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="mega-menu__widget-title">Материал</p>
+                                                                        <ul class="mega-menu__widget-menu">
+                                                                            <li><a href="#">Керамогранит</a></li>
+                                                                            <li><a href="#">Керамическая плитка</a></li>
+                                                                            <li><a href="#">Камень</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item"><a href="#" class="nav-link"><span>Свет</span></a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"><span>Краски</span></a></li>
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="navbar-desktop__col">
                         <div class="navbar-desktop__search">
                             <form class="form-search" action="#">
                                 <input type="text" class="form-control" placeholder="поиск">
@@ -369,53 +456,83 @@
                             </form>
                         </div>
                     </div>
-                    <div class="navbar-desktop__col">
-                        <div class="navbar-desktop__right-block">
-                            <div class="navbar-desktop__icons">
-                                <div class="navbar-desktop__icon icon-location">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                            <path d="M28.0687 13.0343C28.0687 21.0572 16.0343 30.4172 16.0343 30.4172C16.0343 30.4172 4 21.0572 4 13.0343C4 6.47963 9.47963 1 16.0343 1C22.589 1 28.0687 6.47963 28.0687 13.0343Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M16.0349 17.0453C18.2503 17.0453 20.0463 15.2494 20.0463 13.0339C20.0463 10.8184 18.2503 9.02246 16.0349 9.02246C13.8194 9.02246 12.0234 10.8184 12.0234 13.0339C12.0234 15.2494 13.8194 17.0453 16.0349 17.0453Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="navbar-desktop__icon icon-profile">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                            <path d="M16.2817 13.0472C19.3335 13.0472 21.8075 10.5742 21.8075 7.52358C21.8075 4.47299 19.3335 2 16.2817 2C13.2299 2 10.7559 4.47299 10.7559 7.52358C10.7559 10.5742 13.2299 13.0472 16.2817 13.0472Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                    <div class="notification-count">2</div>
-                                </div>
-                                <div class="navbar-desktop__icon icon-whishlist">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                            <path d="M16.5091 28.2013L4.20238 17.054C-2.48607 10.3655 7.34593 -2.47625 16.5091 7.91311C25.6722 -2.47625 35.4598 10.4101 28.8159 17.054L16.5091 28.2013Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                    <div class="notification-count">2</div>
-                                </div>
-                                <div class="navbar-desktop__icon icon-cart">
-                                    <a href="#">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                            <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M25.0033 30.5417C24.3684 30.5417 23.8535 30.0268 23.8535 29.3919C23.8535 28.757 24.3684 28.2422 25.0033 28.2422C25.6382 28.2422 26.153 28.757 26.153 29.3919C26.153 30.0268 25.6382 30.5417 25.0033 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M10.0619 30.5417C9.42685 30.5417 8.91211 30.0268 8.91211 29.3919C8.91211 28.757 9.42685 28.2422 10.0619 28.2422C10.6969 28.2422 11.2116 28.757 11.2116 29.3919C11.2116 30.0268 10.6969 30.5417 10.0619 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </a>
-                                    <div class="notification-count">99</div>
+                    <div class="navbar-desktop__right-block">
+                        <div class="navbar-desktop__icons">
+                            <div class="navbar-desktop__icon icon-location dropdown">
+                                <a href="#" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M28.0687 13.0343C28.0687 21.0572 16.0343 30.4172 16.0343 30.4172C16.0343 30.4172 4 21.0572 4 13.0343C4 6.47963 9.47963 1 16.0343 1C22.589 1 28.0687 6.47963 28.0687 13.0343Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.0349 17.0453C18.2503 17.0453 20.0463 15.2494 20.0463 13.0339C20.0463 10.8184 18.2503 9.02246 16.0349 9.02246C13.8194 9.02246 12.0234 10.8184 12.0234 13.0339C12.0234 15.2494 13.8194 17.0453 16.0349 17.0453Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-end dropdown-geo-search"
+                                style="
+                                --bs-dropdown-min-width: 18rem;
+                                --bs-dropdown-padding-y: 22px;
+                                --bs-dropdown-spacer: 16px;
+                                ">
+                                    <div class="px-2" style="margin-bottom: 16px;">
+                                        <div class="mb-2">Ваш город: Москва</div>
+                                        <form class="form-geo-search" action="#">
+                                            <input type="text" class="form-control" placeholder="Найти город">
+                                        </form>
+                                    </div>
+                                    <div class="scroll-y" style="max-height: 260px; overflow-y: auto;">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="dropdown-item">Москва</a></li>
+                                            <li><a href="#" class="dropdown-item">Санкт-Петербург</a></li>
+                                            <li><a href="#" class="dropdown-item">Минск</a></li>
+                                            <li><a href="#" class="dropdown-item">Симферополь</a></li>
+                                            <li><a href="#" class="dropdown-item">Керчь</a></li>
+                                            <li><a href="#" class="dropdown-item">Иркутск</a></li>
+                                            <li><a href="#" class="dropdown-item">Киров</a></li>
+                                            <li><a href="#" class="dropdown-item">Астрахань</a></li>
+                                            <li><a href="#" class="dropdown-item">Волгоград</a></li>
+                                            <li><a href="#" class="dropdown-item">Сочи</a></li>
+                                            <li><a href="#" class="dropdown-item">Калининград</a></li>
+                                            <li><a href="#" class="dropdown-item">Владимир</a></li>
+                                            <li><a href="#" class="dropdown-item">Воронеж</a></li>
+                                            <li><a href="#" class="dropdown-item">Киев</a></li>
+                                            <li><a href="#" class="dropdown-item">Алматинская область</a></li>
+                                            <li><a href="#" class="dropdown-item">Севастополь</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="navbar-desktop__phone">
-                                <a href="tel:88003503243">8 800 350-32-43</a>
+                            <div class="navbar-desktop__icon icon-profile">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M16.2817 13.0472C19.3335 13.0472 21.8075 10.5742 21.8075 7.52358C21.8075 4.47299 19.3335 2 16.2817 2C13.2299 2 10.7559 4.47299 10.7559 7.52358C10.7559 10.5742 13.2299 13.0472 16.2817 13.0472Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <div class="notification-count">2</div>
                             </div>
+                            <div class="navbar-desktop__icon icon-whishlist">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M16.5091 28.2013L4.20238 17.054C-2.48607 10.3655 7.34593 -2.47625 16.5091 7.91311C25.6722 -2.47625 35.4598 10.4101 28.8159 17.054L16.5091 28.2013Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <div class="notification-count">2</div>
+                            </div>
+                            <div class="navbar-desktop__icon icon-cart">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M25.0033 30.5417C24.3684 30.5417 23.8535 30.0268 23.8535 29.3919C23.8535 28.757 24.3684 28.2422 25.0033 28.2422C25.6382 28.2422 26.153 28.757 26.153 29.3919C26.153 30.0268 25.6382 30.5417 25.0033 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.0619 30.5417C9.42685 30.5417 8.91211 30.0268 8.91211 29.3919C8.91211 28.757 9.42685 28.2422 10.0619 28.2422C10.6969 28.2422 11.2116 28.757 11.2116 29.3919C11.2116 30.0268 10.6969 30.5417 10.0619 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <div class="notification-count">99</div>
+                            </div>
+                        </div>
+                        <div class="navbar-desktop__phone">
+                            <a href="tel:88003503243">8 800 350-32-43</a>
                         </div>
                     </div>
                 </div>
             </nav>
-            
             <!-- Выпадающее окно на десктопе -->
             <div class="collapse" id="collapseExample">
                 <div class="overlay-menu">
