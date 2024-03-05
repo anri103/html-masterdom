@@ -1,3 +1,38 @@
+// Кастомные выпадашки на мобильном меню
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileSubmenuTogglers = document.querySelectorAll('.mobile-overlay-menu__menu .submenu-toggler');
+
+    mobileSubmenuTogglers.forEach(toggler => {
+        toggler.addEventListener('click', function () {
+            const submenu = this.nextElementSibling;
+            if (submenu) {
+                submenu.classList.toggle('submenu-open');
+                this.classList.toggle('submenu-active');
+            }
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileCatalogMenuInvoker = document.querySelector('.mobile-catalog-menu__invoker');
+    const mobileOverlayMenuContent = document.querySelector('.mobile-overlay-menu__content');
+
+    if (mobileCatalogMenuInvoker && mobileOverlayMenuContent) {
+        mobileCatalogMenuInvoker.addEventListener('click', function() {
+            mobileCatalogMenuInvoker.classList.toggle('catalog-menu-active');
+            mobileOverlayMenuContent.classList.toggle('catalog-menu-open');
+        });
+
+        // mobileOverlayMenuContent.addEventListener('click', function(event) {
+        //     if (event.target.classList.contains('catalog-menu-toggle')) {
+        //         mobileOverlayMenuContent.classList.toggle('catalog-menu-open');
+        //     }
+        // });
+    }
+});
+
+
+
 //////////////////////////////////////////////////////////////////
 // [ Swiper Sliders ]
 
