@@ -13,25 +13,97 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileCatalogMenuInvoker = document.querySelector('.mobile-catalog-menu__invoker');
-    const mobileOverlayMenuContent = document.querySelector('.mobile-overlay-menu__content');
+const mobileCatalogMenuInvoker = document.querySelector('.mobile-catalog-menu__invoker');
+const mobileOverlayMenuContent = document.querySelector('.mobile-overlay-menu__content');
 
-    if (mobileCatalogMenuInvoker && mobileOverlayMenuContent) {
-        mobileCatalogMenuInvoker.addEventListener('click', function() {
-            mobileCatalogMenuInvoker.classList.toggle('catalog-menu-active');
-            mobileOverlayMenuContent.classList.toggle('catalog-menu-open');
-        });
-
-        // mobileOverlayMenuContent.addEventListener('click', function(event) {
-        //     if (event.target.classList.contains('catalog-menu-toggle')) {
-        //         mobileOverlayMenuContent.classList.toggle('catalog-menu-open');
-        //     }
-        // });
-    }
+mobileCatalogMenuInvoker.addEventListener('click', (e) => {
+    e.preventDefault();
+    toggleCatalogMenu();
+    mobileCatalogMenuInvoker.classList.toggle('invoker--active');
 });
 
+function toggleCatalogMenu() {
+    mobileOverlayMenuContent.classList.toggle('catalog--open');
+}
 
+
+
+
+
+
+
+
+
+
+// const body = document.body;
+// const header = document.querySelector('.header');
+// const stickyHeader = header.offsetTop;
+// const headerHeight = header.offsetHeight;
+const menu = document.querySelector('.mobile-overlay-menu__content');
+const menuSection = menu.querySelector('.mobile-catalog-menu');
+const menuArrow = menu.querySelector('.menu-mobile-arrow');
+let subMenu;
+
+menuSection.addEventListener('click', (e) => {
+    if (!menu.classList.contains('catalog--open')) {
+       return;
+    }
+    if (e.target.closest('.menu-item-has-children')) {
+       const hasChildren = e.target.closest('.menu-item-has-children');
+       showSubMenu(hasChildren);
+    }
+ });
+
+ menuArrow.addEventListener('click', () => {
+    hideSubMenu();
+ });
+
+ function showSubMenu(hasChildren) {
+    subMenu = hasChildren.querySelector('.menu-subs');
+    subMenu.classList.add('active');
+    subMenu.style.animation = 'slideLeft 0.5s ease forwards';
+    const menuTitle = hasChildren.querySelector('svg').parentNode.childNodes[0].textContent;
+    menu.querySelector('.menu-mobile-title').innerHTML = menuTitle;
+    menu.querySelector('.menu-mobile-header').classList.add('active');
+ }
+ function hideSubMenu() {
+    subMenu.style.animation = 'slideRight 0.5s ease forwards';
+    setTimeout(() => {
+       subMenu.classList.remove('active');
+    }, 300);
+    menu.querySelector('.menu-mobile-title').innerHTML = '';
+    menu.querySelector('.menu-mobile-header').classList.remove('active');
+ }
+
+ function mainLinkMobile() {
+    if (window.innerWidth < 1200) {
+       const mainMobileLink = menu.querySelectorAll('.menu-item__link');
+       mainMobileLink.forEach(link => {
+          link.addEventListener('click', (e) => {
+             e.preventDefault();
+          });
+       })
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 //////////////////////////////////////////////////////////////////
 // [ Swiper Sliders ]

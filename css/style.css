@@ -334,12 +334,9 @@ textarea {
 
 /* Мобильное меню */
 
-.navbar-mobile {
-    height: 75px;
-}
-
 .navbar.navbar-mobile {
     --bs-navbar-padding-y: 10px;
+    height: 75px;
 }
 
 .navbar-mobile__navigation {
@@ -366,10 +363,9 @@ textarea {
     display: none;
 }
 
-.navbar-mobile__right-block {}
-
 .navbar-mobile__icons {
     display: flex;
+    align-items: center;
     gap: 22px;
 }
 
@@ -460,21 +456,18 @@ textarea {
 
 @media (min-width: 992px) {
 
-    .navbar-mobile {
+    .navbar.navbar-mobile {
         display: none;
     }
 }
 
 /* Десктопное меню */
 
-.navbar-desktop {
-    display: none;
-    height: 100px;
-}
-
 .navbar.navbar-desktop {
     --bs-navbar-padding-y: 16px;
     --bs-navbar-active-color: var(--bs-primary);
+    display: none;
+    height: 100px;
 }
 
 .navbar-desktop__logo {
@@ -856,7 +849,7 @@ textarea {
 
 @media (min-width: 992px) {
 
-    .navbar-desktop {
+    .navbar.navbar-desktop {
         display: block;
     }
 }

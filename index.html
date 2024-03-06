@@ -12,19 +12,122 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-        .mobile-overlay-menu__content .mobile-catalog-menu__wrapper {
+        .mobile-overlay-menu__content.catalog--open .mobile-overlay-menu__wrapper,
+        .mobile-overlay-menu__content:not(.catalog--open) .mobile-catalog-menu__wrapper {
             display: none;
         }
 
-        .mobile-overlay-menu__content.catalog-menu-open .mobile-catalog-menu__wrapper {
+        .mobile-catalog-menu__invoker {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            text-decoration: none;
+            border: 1px solid #B0C7DD;
+            padding: 17px 12px;
+            color: #474A51;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 0.36px;
+            text-transform: uppercase;
+        }
+
+        .mobile-catalog-menu__invoker .icon-arrow-left,
+        .mobile-catalog-menu__invoker.invoker--active .icon-arrow-right {
+            display: none;
+        }
+
+        .mobile-catalog-menu__invoker .icon-arrow-right,
+        .mobile-catalog-menu__invoker.invoker--active .icon-arrow-left {
             display: block;
         }
 
-        .mobile-overlay-menu__content.catalog-menu-open .mobile-overlay-menu__wrapper {
-            display: none;
+        .mobile-catalog-menu__invoker.invoker--active {
+            justify-content: start;
         }
 
-        .mobile-overlay-menu__content .mobile-overlay-menu__wrapper {}
+        .mobile-catalog-menu__wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+
+
+
+
+        .mobile-catalog-menu {
+            position: relative;
+        }
+
+        @keyframes slideRight {
+            0% {
+                opacity: 1;
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+
+            100% {
+                opacity: 0;
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes slideLeft {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+            }
+        }
+
+        .menu-mobile-header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            z-index: 501;
+            background: #fff;
+        }
+
+        .menu-mobile-arrow {
+            display: none;
+            cursor: pointer;
+        }
+
+        .menu-mobile-header.active .menu-mobile-arrow {
+            display: flex;
+        }
+
+        .menu-item__link {
+            position: relative;
+        }
+
+        .menu-subs {
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 10px;
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+            background: #fff;
+            transition: all .5s ease-in-out;
+        }
+
+        .menu-subs.active {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
     </style>
 
 </head>
@@ -57,40 +160,38 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="navbar-mobile__right-block">
-                        <div class="navbar-mobile__icons">
-                            <div class="navbar-mobile__icon icon-search">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M14.1733 25.1308C20.2244 25.1308 25.1298 20.2254 25.1298 14.1743C25.1298 8.12317 20.2244 3.21777 14.1733 3.21777C8.12219 3.21777 3.2168 8.12317 3.2168 14.1743C3.2168 20.2254 8.12219 25.1308 14.1733 25.1308Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M28.7816 28.7825L21.9492 21.9805" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="navbar-mobile__icon icon-phone">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M16.3466 25.0126C19.5706 26.8301 23.5406 28.1469 28.4004 28.6306V21.3966L20.3618 18.8705L16.3466 25.0126ZM16.3466 25.0126C11.9066 22.5094 8.88175 19.0565 6.89662 15.5219M6.89662 15.5219C4.57454 11.3873 3.67515 7.14109 3.59766 4.1726L10.3721 3.36914L13.2427 11.7516L6.89662 15.5219Z" stroke="#1A1A16"/>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="navbar-mobile__icon icon-profile">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M16.2817 13.0472C19.3335 13.0472 21.8075 10.5742 21.8075 7.52358C21.8075 4.47299 19.3335 2 16.2817 2C13.2299 2 10.7559 4.47299 10.7559 7.52358C10.7559 10.5742 13.2299 13.0472 16.2817 13.0472Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="navbar-mobile__icon icon-cart">
-                                <a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                        <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M25.0033 30.5417C24.3684 30.5417 23.8535 30.0268 23.8535 29.3919C23.8535 28.757 24.3684 28.2422 25.0033 28.2422C25.6382 28.2422 26.153 28.757 26.153 29.3919C26.153 30.0268 25.6382 30.5417 25.0033 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M10.0619 30.5417C9.42685 30.5417 8.91211 30.0268 8.91211 29.3919C8.91211 28.757 9.42685 28.2422 10.0619 28.2422C10.6969 28.2422 11.2116 28.757 11.2116 29.3919C11.2116 30.0268 10.6969 30.5417 10.0619 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </a>
-                            </div>
+                    <div class="navbar-mobile__icons">
+                        <div class="navbar-mobile__icon icon-search">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M14.1733 25.1308C20.2244 25.1308 25.1298 20.2254 25.1298 14.1743C25.1298 8.12317 20.2244 3.21777 14.1733 3.21777C8.12219 3.21777 3.2168 8.12317 3.2168 14.1743C3.2168 20.2254 8.12219 25.1308 14.1733 25.1308Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.7816 28.7825L21.9492 21.9805" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="navbar-mobile__icon icon-phone">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16.3466 25.0126C19.5706 26.8301 23.5406 28.1469 28.4004 28.6306V21.3966L20.3618 18.8705L16.3466 25.0126ZM16.3466 25.0126C11.9066 22.5094 8.88175 19.0565 6.89662 15.5219M6.89662 15.5219C4.57454 11.3873 3.67515 7.14109 3.59766 4.1726L10.3721 3.36914L13.2427 11.7516L6.89662 15.5219Z" stroke="#1A1A16"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="navbar-mobile__icon icon-profile">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16.2817 13.0472C19.3335 13.0472 21.8075 10.5742 21.8075 7.52358C21.8075 4.47299 19.3335 2 16.2817 2C13.2299 2 10.7559 4.47299 10.7559 7.52358C10.7559 10.5742 13.2299 13.0472 16.2817 13.0472Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="navbar-mobile__icon icon-cart">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M25.0033 30.5417C24.3684 30.5417 23.8535 30.0268 23.8535 29.3919C23.8535 28.757 24.3684 28.2422 25.0033 28.2422C25.6382 28.2422 26.153 28.757 26.153 29.3919C26.153 30.0268 25.6382 30.5417 25.0033 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.0619 30.5417C9.42685 30.5417 8.91211 30.0268 8.91211 29.3919C8.91211 28.757 9.42685 28.2422 10.0619 28.2422C10.6969 28.2422 11.2116 28.757 11.2116 29.3919C11.2116 30.0268 10.6969 30.5417 10.0619 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -99,20 +200,42 @@
             <div class="collapse" id="collapseMobileOverlayMenu">
                 <div class="mobile-overlay-menu">
                     <div class="container">
+
                         <div style="margin-bottom: 22px;">
                             <div class="title">Меню</div>
                             <div>Ваш город: Москва</div>
                         </div>
+
                         <div style="margin-bottom: 22px;">
-                            <a href="#" class="btn btn-outline w-100 mobile-catalog-menu__invoker">Каталог</a>
+                            <a href="#" class="mobile-catalog-menu__invoker">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
+                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="invoker--title">Каталог</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="icon-arrow-right">
+                                    <path d="M6.94446 15.4551L12.8272 10.4531C12.8991 10.3946 12.9563 10.3242 12.9954 10.2463C13.0345 10.1685 13.0547 10.0847 13.0547 9.99998C13.0547 9.91532 13.0345 9.8315 12.9954 9.75363C12.9563 9.67576 12.8991 9.60542 12.8272 9.54684L6.94446 4.54492" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
                         </div>
+
                         <div class="mobile-overlay-menu__content">
+
                             <!-- Каталог -->
                             <div class="mobile-catalog-menu__wrapper">
+
+                                <div class="menu-mobile-header">
+                                    <button type="button" class="menu-mobile-arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
+                                            <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <div class="menu-mobile-title"></div>
+                                </div>
+
                                 <ul class="mobile-catalog-menu list-unstyled">
-                                    <li>
-                                        <a href="#">Плитка</a>
-                                        <div class="d-grid gap-3 p-3" style="grid-template-columns: 2fr 2fr;">
+                                    <li class="menu-item-has-children">
+                                        <a href="#" class="menu-item__link">Плитка</a>
+                                        <div class="menu-subs">
                                             <div class="grid-item">
                                                 <p class="h6">Помещение</p>
                                                 <ul class="list-unstyled">
@@ -139,12 +262,8 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li><a href="#">Обои</a></li>
-                                    <li><a href="#">Сантехника</a></li>
-                                    <li><a href="#">Свет</a></li>
-                                    <li><a href="#">Краски</a></li>
-                                    <li><a href="#">Акция</a></li>
                                 </ul>
+
                             </div>
                             <!-- Обычное меню -->
                             <div class="mobile-overlay-menu__wrapper">
