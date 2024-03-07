@@ -39,13 +39,21 @@ function toggleCatalogMenu() {
 // const header = document.querySelector('.header');
 // const stickyHeader = header.offsetTop;
 // const headerHeight = header.offsetHeight;
-const menu = document.querySelector('.mobile-overlay-menu__content');
-const menuSection = menu.querySelector('.mobile-catalog-menu');
+const menu = document.querySelector('.menu');
+const menuSection = menu.querySelector('.menu-section');
 const menuArrow = menu.querySelector('.menu-mobile-arrow');
+const burger = document.querySelector('[data-burger]');
 let subMenu;
 
+window.addEventListener('load', function () {
+    mainLinkMobile();
+ })
+ window.addEventListener('resize', function () {
+    mainLinkMobile();
+ })
+
 menuSection.addEventListener('click', (e) => {
-    if (!menu.classList.contains('catalog--open')) {
+    if (!menu.classList.contains('active')) {
        return;
     }
     if (e.target.closest('.menu-item-has-children')) {
@@ -53,11 +61,22 @@ menuSection.addEventListener('click', (e) => {
        showSubMenu(hasChildren);
     }
  });
-
  menuArrow.addEventListener('click', () => {
     hideSubMenu();
  });
-
+ 
+ burger.addEventListener('click', (e) => {
+    toggleMenu();
+    burger.classList.toggle('burger--active');
+ });
+ 
+ function toggleMenu() {
+    menu.classList.toggle('active');
+    // header.classList.add('header-fixed');
+    // header.classList.toggle('active-head');
+    // body.classList.toggle('stop-scroll');
+ }
+ 
  function showSubMenu(hasChildren) {
     subMenu = hasChildren.querySelector('.menu-subs');
     subMenu.classList.add('active');
@@ -74,7 +93,14 @@ menuSection.addEventListener('click', (e) => {
     menu.querySelector('.menu-mobile-title').innerHTML = '';
     menu.querySelector('.menu-mobile-header').classList.remove('active');
  }
-
+ window.onresize = function () {
+    if (this.innerWidth < 1200) {
+       if (menu.classList.contains('active')) {
+          toggleMenu();
+       }
+    }
+ };
+ 
  function mainLinkMobile() {
     if (window.innerWidth < 1200) {
        const mainMobileLink = menu.querySelectorAll('.menu-item__link');

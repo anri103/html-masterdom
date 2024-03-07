@@ -55,78 +55,565 @@
 
 
 
-        .mobile-catalog-menu {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .menu > ul > li {
+            display: inline-block;
+        }
+        .menu > ul > li a {
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.4;
+            letter-spacing: 0.01em;
+            padding: 12px 0;
+            color: #212121;
+            text-rendering: optimizeLegibility;
+            transition: color 0.3s ease-in-out;
+        }
+        .menu > ul > li a.menu-item__link {
+            padding: 5px 0;
+            text-transform: uppercase;
+            color: #fff;
+            position: relative;
+            margin: 0 15px;
+        }
+        .menu > ul > li a.menu-item__link::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: #212121;
+            transition: width 0.35s;
+        }
+        .menu > ul > li a.menu-item__link:hover:before {
+            width: 100%;
+        }
+        .menu > ul > li .menu-column-1 {
+            min-width: 16rem;
+            max-width: 20rem;
+        }
+        .menu-subs {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            margin-top: 1.75rem;
+            padding: 1rem 2rem;
+            border: none;
+            outline: none;
+            z-index: 50;
+            opacity: 0;
+            visibility: hidden;
+            border-radius: 0;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            background: #fff;
+            transition: all 0.5s ease-in-out;
+        }
+        .menu-subs > ul > li {
+            line-height: 1;
+        }
+        .menu-subs > ul > li > a {
+            display: inline-block;
+            padding: 12px 0;
+        }
+        .menu-subs.menu-mega {
+            left: 0;
+            transform: translateX(0);
+        }
+        .header__logo {
+            width: 210px;
+            flex-shrink: 0;
+        }
+        .header__logo svg {
+            display: inline-block;
+            margin-bottom: 7px;
+        }
+        .header__logo svg path {
+            fill: #fff;
+        }
+        .header__contact {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 2.75em;
+        }
+
+        .menu > ul > li .menu-subs.menu-mega > .list-item > ul > li {
+            display: block;
+            line-height: 1;
+        }
+
+        .menu > ul > li .menu-subs.menu-mega > .list-item > ul > li > a {
+            display: inline-block;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.4;
+            letter-spacing: 0.02em;
+            padding: 12px 0;
+            border: none;
+            outline: none;
+            color: #212121;
+            text-rendering: optimizeLegibility;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .menu > ul > li .menu-subs.menu-column-4 {
+            display: flex;
+            max-width: 100%;
+            width: 100%;
+            padding: 50px 0;
+            min-height: 196px;
+            align-items: center;
+        }
+
+        .menu > ul > li .menu-subs.menu-column-4 .container-subs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px 44px;
+            width: 100%;
+            max-width: 1365px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .menu > ul > li.menu-item-has-children:nth-child(3) > div > div.container-subs {
+            grid-template-columns: 40% 60%;
+        }
+
+        .menu > ul > li.menu-item-has-children:nth-child(3) > div > div.container-subs .list-item {
+            display: flex;
+            column-gap: 30px;
+        }
+
+        .menu > ul > li.menu-item-has-children:nth-child(3) > div > div.container-subs .list-item p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.4;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            color: #212121;
+            opacity: 0.6;
+            display: inline-block;
+            min-width: 140px;
+            padding: 7px 0;
+        }
+
+        .menu > ul > li.menu-item-has-children:nth-child(3) > div > div.container-subs .list-item > ul ul {
+            display: block;
+            margin-left: 16px;
+            margin-top: 4px;
+        }
+
+        .menu > ul > li.menu-item-has-children:nth-child(3) > div > div.container-subs .list-item > ul ul > li {
+            position: relative;
+            padding-left: 14px;
+        }
+
+        .menu > ul > li.menu-item-has-children:nth-child(3) > div > div.container-subs .list-item > ul ul > li > a {
+            display: inline-flex;
+            column-gap: 4px;
+            padding: 8px 0;
+            letter-spacing: 0;
             position: relative;
         }
 
-        @keyframes slideRight {
-            0% {
-                opacity: 1;
-                -webkit-transform: translateX(0);
-                transform: translateX(0);
-            }
+        .menu > ul > li.menu-item-has-children:nth-child(3) > div > div.container-subs .list-item > ul ul > li > a::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            width: 0;
+            height: 1px;
+            background-color: #212121;
+            transition: width 0.35s;
+        }
 
-            100% {
+        .menu > ul > li.menu-item-has-children:nth-child(3) > div > div.container-subs .list-item > ul ul > li > a:hover::before {
+            width: 100%;
+        }
+
+        .menu > ul > li.menu-item-has-children:nth-child(3) > div > div.container-subs .list-item > ul ul > li > a img {
+            display: inline-block;
+        }
+
+        .menu > ul > li.menu-item-has-children:nth-child(3) > div > div.container-subs .list-item > ul ul > li:before {
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 1px;
+            top: 16px;
+            left: 0;
+            background-color: #212121;
+        }
+
+        .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item > ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 22px;
+        }
+
+        .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item > ul > li > a {
+            display: inline-block;
+            position: relative;
+            padding: 7px 0;
+            letter-spacing: 0.02em;
+        }
+
+        .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item > ul > li > a::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            width: 0;
+            height: 1px;
+            background-color: #001235;
+            -webkit-transition: width 0.35s;
+            -o-transition: width 0.35s;
+            transition: width 0.35s;
+        }
+
+        .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item > ul > li > a:hover::before {
+            width: 100%;
+        }
+
+        .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item h4 {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.4;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+        }
+
+        .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item .title {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.4;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            padding: 0.65rem 0;
+            border: none;
+            outline: none;
+            color: #212121;
+            text-transform: uppercase;
+            text-rendering: optimizeLegibility;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item.text-center .title {
+            text-align: center;
+        }
+
+        .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item img.responsive {
+            max-width: 310px;
+            height: 183px;
+            margin-top: 9px;
+            object-fit: cover;
+            vertical-align: middle;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+
+        .menu > ul > li .menu-subs.menu-mega > .list-item > ul > li > a:hover,
+        .menu > ul > li .menu-subs > ul > li > a:hover {
+            color: #212121;
+        }
+
+        .header-item-right a:hover,
+        .menu > ul > li:hover > a {
+            color: #212121;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .menu {
+                /* position: fixed;
+                top: 72px;
+                left: 0;
+                right: 0;
+                z-index: 100; */
+                width: 100%;
+                height: 100%;
                 opacity: 0;
-                -webkit-transform: translateX(100%);
-                transform: translateX(100%);
+                visibility: hidden;
+                background: #fff;
+                transform: translate(-100%);
+                transition: all 0.35s ease-in-out;
+            }
+            .menu.active {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0%);
+            }
+            .menu.active ul li a {
+                color: #212121 !important;
+            }
+            .menu > ul > li a.menu-item__link {
+                font-size: 14px;
+                line-height: 1.4;
+                text-transform: uppercase;
+                padding: 24px 0;
+            }
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li {
+                display: block;
+                line-height: 1;
+                margin: 0;
+            }
+            .menu > ul > li > a {
+                display: block;
+                line-height: 3.125rem;
+                padding: 0 3.125rem 0 1rem;
+            }
+            .menu > ul > li > a svg {
+                position: absolute;
+                top: 22px;
+                right: 7px;
+                bottom: 0;
+                fill: transparent;
+                stroke: #212121;
+            }
+            .menu .menu-mobile-header {
+                position: sticky;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                top: 0;
+                padding-top: 45px;
+                padding-left: 22px;
+                z-index: 501;
+                background: #fff;
+            }
+            .menu > ul > li a.menu-item__link::before {
+                display: none;
+            }
+            .menu .menu-mobile-header .menu-mobile-arrow {
+                display: none;
+                font-size: 24px;
+                line-height: 1.3;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                border: 0;
+                background: #fff;
+                color: #212121;
+                text-align: center;
+            }
+            .menu .menu-mobile-header.active .menu-mobile-arrow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .menu .menu-mobile-header.active .menu-mobile-arrow svg {
+                fill: transparent;
+                stroke: #212121;
+            }
+            .menu .menu-mobile-header .menu-mobile-title {
+                font-family: inherit;
+                font-weight: 400;
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 1.4;
+                letter-spacing: 0.02em;
+                color: #212121;
+                text-rendering: optimizeLegibility;
+            }
+            .menu .menu-section {
+                height: calc(100% - 110px);
+                overflow-y: auto;
+                overflow-x: hidden;
+                padding: 0;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li .menu-subs,
+            .menu > ul > li .menu-subs.menu-mega {
+                position: absolute;
+                display: none;
+                top: 0;
+                left: 0;
+                max-width: none;
+                min-width: auto;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 6.5rem 62px 60px;
+                opacity: 1;
+                overflow-y: auto;
+                visibility: visible;
+                transform: translateX(0%);
+                box-shadow: none;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li .menu-subs.active {
+                display: block;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li .menu-subs.menu-column-4 .container-subs {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                column-gap: 24px;
+                row-gap: 10px;
+                padding: 0;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item {
+                flex: 1 0 48%;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item > ul {
+                row-gap: 10px;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li.menu-item-has-children:nth-child(3) > div > div.container-subs {
+                display: flex;
+                grid-template-columns: inherit;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li.menu-item-has-children:nth-child(3) > div > div.container-subs .list-item {
+                flex-direction: column;
+                row-gap: 10px;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item.text-center .title {
+                margin-bottom: 1.25rem;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item.text-center:last-child .title {
+                margin-bottom: 0rem;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li .menu-subs > ul > li > a {
+                display: block;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li .menu-subs.menu-mega > .list-item > ul {
+                margin-bottom: 1rem;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .menu > ul > li .menu-subs.menu-mega > .list-item > ul > li > a {
+                display: block;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 98;
+                opacity: 0;
+                visibility: hidden;
+                background: rgba(0, 0, 0, 0.55);
+                transition: all 0.5s ease-in-out;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            .overlay.active {
+                opacity: 1;
+                visibility: visible;
             }
         }
 
         @keyframes slideLeft {
             0% {
                 opacity: 0;
-                -webkit-transform: translateX(100%);
                 transform: translateX(100%);
             }
-
             100% {
                 opacity: 1;
-                -webkit-transform: translateX(0);
-                transform: translateX(0);
+                transform: translateX(0%);
+            }
+        }
+        @keyframes slideRight {
+            0% {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(100%);
             }
         }
 
-        .menu-mobile-header {
-            position: relative;
-            display: flex;
-            align-items: center;
-            z-index: 501;
-            background: #fff;
+        @media only screen and (max-width: 768px) {
+            .menu > ul > li .menu-subs.menu-mega {
+                padding: 6.4rem 7.4% 72px;
+            }
+            .menu > ul > li .menu-subs.menu-column-4 .container-subs {
+                width: 100%;
+                max-width: 646px;
+                justify-content: space-between;
+            }
+            .menu > ul > li a.menu-item__link {
+                margin: 0 13px;
+            }
+            .menu > ul > li > a svg {
+                margin-top: 2px;
+                width: 9px !important;
+                height: 16px !important;
+            }
         }
-
-        .menu-mobile-arrow {
-            display: none;
-            cursor: pointer;
+        @media only screen and (max-width: 755px) {
+            .menu > ul > li .menu-subs.menu-column-4 .container-subs {
+                flex-direction: column;
+            }
+            .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item {
+                flex: 1;
+            }
+            .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item:nth-child(2) {
+                margin-top: 0;
+                order: 2;
+            }
+            .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item:nth-child(3) {
+                order: 3;
+            }
+            .menu > ul > li .menu-subs.menu-column-4 .container-subs > .list-item img.responsive {
+                width: 100%;
+            }
         }
-
-        .menu-mobile-header.active .menu-mobile-arrow {
-            display: flex;
-        }
-
-        .menu-item__link {
-            position: relative;
-        }
-
-        .menu-subs {
-            position: absolute;
-            display: none;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 10px;
-            opacity: 1;
-            visibility: visible;
-            transform: translateX(0);
-            background: #fff;
-            transition: all .5s ease-in-out;
-        }
-
-        .menu-subs.active {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+        @media only screen and (max-width: 578px) {
+            .menu .menu-mobile-header {
+                padding-top: 28px;
+                padding-left: 15px;
+            }
+            .menu .menu-mobile-header .menu-mobile-title {
+                padding-left: 5px;
+            }
+            .menu > ul > li .menu-subs.menu-mega {
+                padding: 5.7rem 64px 110px;
+                bottom: 0;
+            }
         }
     </style>
 
@@ -223,16 +710,226 @@
                             <!-- Каталог -->
                             <div class="mobile-catalog-menu__wrapper">
 
-                                <div class="menu-mobile-header">
+                                <!-- КНОПКА TEST -->
+                                <button class="burger" data-burger aria-label="open-menu" aria-expanded="false">МЕНЮ</button>
+
+                                <!-- МЕНЮ -->
+                                <nav class="menu">
+                                    <div class="menu-mobile-header">
+                                        <button type="button" class="menu-mobile-arrow">
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-back"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="menu-mobile-title"></div>
+                                    </div>
+                                    <ul class="menu-section">
+                                        <li class="menu-item-has-children">
+                                            <a href="#" class="btn-reset menu-item__link">
+                                                Компания
+                                                <svg width="13" height="22">
+                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="menu-subs menu-mega menu-column-4">
+                                                <div class="container-subs">
+                                                    <div class="list-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Кратко о компании</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Миссия и ценности</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="list-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">История развития</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">География деятельности</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="list-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Карьера в компании</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#" class="btn-reset menu-item__link">
+                                                Продукция <svg width="13" height="22">
+                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="menu-subs menu-mega menu-column-4">
+                                                <div class="container-subs">
+                                                    <div class="list-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Виды продукции</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Принципы производства</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="list-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Где купить</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">FAQ потребителя</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#" class="btn-reset menu-item__link">
+                                                Инвесторам и акционерам
+                                                <svg width="13" height="22">
+                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="menu-subs menu-mega menu-column-4">
+                                                <div class="container-subs">
+                                                    <div class="list-item">
+                                                        <p>Инвесторам</p>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Инвестиционный кейс</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Обзор рынка</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Отчеты и результаты</a>
+                                                                <ul>
+                                                                    <li><a href="#">Годовые отчеты</a></li>
+                                                                    <li><a href="#">Презентации</a></li>
+                                                                    <li><a href="#">Финансовые и операционные результаты</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Контакты IR</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="list-item">
+                                                        <p>Акционерам</p>
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Акционерный капитал</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Корпоративные документы</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Раскрытие информации</a>
+                                                                <ul>
+                                                                    <li><a href="#">Отчеты эмитента</a></li>
+                                                                    <li><a href="#">Аффилированные лица</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Общее собрание акционеров</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Совет директоров</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Контакты для акционеров</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#" class="btn-reset menu-item__link">
+                                                Поставщикам
+                                                <svg width="13" height="22">
+                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="menu-subs menu-mega menu-column-4">
+                                                <div class="container-subs">
+                                                    <div class="list-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Тендеры для поставщиков</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="list-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Коммерческое предложение</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#" class="btn-reset menu-item__link">
+                                                Медиа
+                                                <svg width="13" height="22">
+                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="menu-subs menu-mega menu-column-4">
+                                                <div class="container-subs">
+                                                    <div class="list-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Новости</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">Медиаматериалы</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="list-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Пресс-кит</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="list-item">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#">Контакты</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                                <!-- <div class="menu-mobile-header">
                                     <button type="button" class="menu-mobile-arrow">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
                                             <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
                                         </svg>
                                     </button>
                                     <div class="menu-mobile-title"></div>
-                                </div>
+                                </div> -->
 
-                                <ul class="mobile-catalog-menu list-unstyled">
+                                <!-- <ul class="mobile-catalog-menu list-unstyled">
                                     <li class="menu-item-has-children">
                                         <a href="#" class="menu-item__link">Плитка</a>
                                         <div class="menu-subs">
@@ -262,7 +959,7 @@
                                             </div>
                                         </div>
                                     </li>
-                                </ul>
+                                </ul> -->
 
                             </div>
                             <!-- Обычное меню -->
