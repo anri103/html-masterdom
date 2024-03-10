@@ -382,6 +382,13 @@ textarea {
     overflow-y: auto;
 }
 
+.mobile-main-menu__header,
+.mobile-main-menu__body {
+    max-width: 720px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .mobile-main-menu__header {
     margin-bottom: 22px;
 }
