@@ -11,127 +11,6 @@
     <link rel="stylesheet" href="css/fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <style>
-
-
-        /* header */
-        .menu-mobile-header {
-            display: none;
-        }
-        .menu-mobile-header.active {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 5px;
-        }
-        .menu-mobile-header .menu-mobile-arrow {
-            display: flex;
-            align-items: center;
-            border: 0;
-            gap: 12px;
-            width: 100%;
-            text-decoration: none;
-            border: 1px solid #B0C7DD;
-            padding: 17px 12px;
-            color: #474A51;
-            font-size: 18px;
-            font-weight: 500;
-            line-height: normal;
-            letter-spacing: 0.36px;
-            text-transform: uppercase;
-            margin-bottom: 22px;
-        }
-        .menu-mobile-header .menu-mobile-title {
-            font-size: 16px;
-            text-transform: uppercase;
-        }
-
-        /* menu-section */
-        .menu {
-            position: relative;
-            overflow-x: hidden;
-            height: 100%;
-        }
-        .menu .menu-section {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .menu-section a {
-            display: block;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 1.4;
-            letter-spacing: 0.01em;
-            padding: 12px 0;
-            color: #212121;
-            text-rendering: optimizeLegibility;
-            transition: color 0.3s ease-in-out;
-        }
-        .menu-section a.menu-item__link {
-            position: relative;
-            font-size: 14px;
-            line-height: 1.4;
-            text-transform: uppercase;
-            padding: 24px 0;
-        }
-        .menu-section a.menu-item__link svg {
-            position: absolute;
-            top: 22px;
-            right: 7px;
-            bottom: 0;
-            margin-top: 2px;
-            width: 9px !important;
-            height: 16px !important;
-            fill: transparent;
-            stroke: #212121;
-        }
-        .menu-section .menu-subs {
-            position: absolute;
-            display: none;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow-y: auto;
-            transform: translateX(0%);
-            background: #fff;
-            z-index: 50;
-            transition: all 0.5s ease-in-out;
-        }
-        .menu-section .menu-subs.active {
-            display: block;
-        }
-        .menu-section .menu-subs > ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-
-
-        @keyframes slideLeft {
-            0% {
-                opacity: 0;
-                transform: translateX(100%);
-            }
-            100% {
-                opacity: 1;
-                transform: translateX(0%);
-            }
-        }
-        @keyframes slideRight {
-            0% {
-                opacity: 1;
-                transform: translateX(0%);
-            }
-            100% {
-                opacity: 0;
-                transform: translateX(100%);
-            }
-        }
-    </style>
-
 </head>
 
 <body>
@@ -198,149 +77,33 @@
                     </div>
                 </div>
             </nav>
+
             <!-- Выпадающее окно на мобилке -->
             <div class="collapse" id="collapseMobileOverlayMenu">
-                <div class="">
+                <div class="mobile-main-menu">
+                    <div class="container">
 
-
-                    <div class="mobile-main-menu">
+                        <!-- Выбор города -->
                         <div class="mobile-main-menu__header">
-                            <div class="container">
-                                <div class="title">Меню</div>
-                                <div>Ваш город: Москва</div>
-                            </div>
+                            <div class="title">Меню</div>
+                            <div>Ваш город: Москва</div>
                         </div>
     
+                        <!-- Контейнер для двух меню -->
                         <div class="mobile-main-menu__body">
 
-                            <a href="#" class="mobile-catalog-invoker">
-                                <span>Каталог</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="icon-arrow-right">
-                                    <path d="M6.94446 15.4551L12.8272 10.4531C12.8991 10.3946 12.9563 10.3242 12.9954 10.2463C13.0345 10.1685 13.0547 10.0847 13.0547 9.99998C13.0547 9.91532 13.0345 9.8315 12.9954 9.75363C12.9563 9.67576 12.8991 9.60542 12.8272 9.54684L6.94446 4.54492" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </a>
-                            
-                            <!-- Каталог -->
-                            <div class="mobile-catalog-menu__wrapper">
-    
-                                <a href="#" class="mobile-catalog-close">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
-                                        <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                            <!-- Конетейнер: Обычное меню -->
+                            <div class="main-menu-container open">
+
+                                <!-- Кнопка "Каталог >" -->
+                                <button type="button" class="btn-catalog mobile-catalog-invoker">
+                                    <div>Каталог</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="icon-arrow-right">
+                                        <path d="M6.94446 15.4551L12.8272 10.4531C12.8991 10.3946 12.9563 10.3242 12.9954 10.2463C13.0345 10.1685 13.0547 10.0847 13.0547 9.99998C13.0547 9.91532 13.0345 9.8315 12.9954 9.75363C12.9563 9.67576 12.8991 9.60542 12.8272 9.54684L6.94446 4.54492" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                    <span>Каталог</span>
-                                </a>
-    
-                                <div class="menu-mobile-header">
-                                    <button type="button" class="menu-mobile-arrow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
-                                            <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        <div class="menu-mobile-title"></div>
-                                    </button>
-                                </div>
-    
-                                <!-- МЕНЮ -->
-                                <nav class="menu">
-                                    <ul class="menu-section">
-                                        <li class="menu-item-has-children">
-                                            <a href="#" class="menu-item__link">
-                                                Компания
-                                                <svg width="13" height="22">
-                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                                </svg>
-                                            </a>
-                                            <div class="menu-subs">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Кратко о компании</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Миссия и ценности</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">История развития</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">География деятельности</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Карьера в компании</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="#" class="menu-item__link">
-                                                Продукция
-                                                <svg width="13" height="22">
-                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                                </svg>
-                                            </a>
-                                            <div class="menu-subs">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Виды продукции</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Принципы производства</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Где купить</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">FAQ потребителя</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </nav>
-    
-                                <!-- <div class="menu-mobile-header">
-                                    <button type="button" class="menu-mobile-arrow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
-                                            <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                    <div class="menu-mobile-title"></div>
-                                </div> -->
-    
-                                <!-- <ul class="mobile-catalog-menu list-unstyled">
-                                    <li class="menu-item-has-children">
-                                        <a href="#" class="menu-item__link">Плитка</a>
-                                        <div class="menu-subs">
-                                            <div class="grid-item">
-                                                <p class="h6">Помещение</p>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#">Для ванной</a></li>
-                                                    <li><a href="#">Для ванной</a></li>
-                                                    <li><a href="#">Для ванной</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="grid-item">
-                                                <p class="h6">Помещение</p>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#">Для ванной</a></li>
-                                                    <li><a href="#">Для ванной</a></li>
-                                                    <li><a href="#">Для ванной</a></li>
-                                                </ul>
-                                            </div>
-                                            <div class="grid-item">
-                                                <p class="h6">Помещение</p>
-                                                <ul class="list-unstyled">
-                                                    <li><a href="#">Для ванной</a></li>
-                                                    <li><a href="#">Для ванной</a></li>
-                                                    <li><a href="#">Для ванной</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul> -->
-    
-                            </div>
-    
-                            <!-- Обычное меню -->
-                            <div class="mobile-main-menu__wrapper">
+                                </button>
+
+                                <!-- Основное меню -->
                                 <ul class="mobile-main-menu__menu">
                                     <li><a href="#" class="text-primary fw-semibold">Магазины</a></li>
                                     <li>
@@ -390,10 +153,195 @@
                                     <li><a href="#">Диллерам</a></li>
                                 </ul>
                             </div>
+                            
+                            <!-- Конетейнер: Каталог -->
+                            <div class="catalog-menu-container">
+
+                                <!-- Кнопка "< Каталог" -->
+                                <button type="button" class="btn-catalog catalog-menu-close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
+                                        <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <div>Каталог</div>
+                                </button>
+
+                                <!-- Кнопка "< Имя_Категории" -->
+                                <button type="button" class="btn-catalog catalog-menu-cat-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
+                                        <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <div class="catalog-menu-cat-btn__title"></div>
+                                </button>
+
+                                <!-- Меню каталога -->
+                                <ul class="catalog-menu-section">
+                                    <li class="catalog-menu-item-has-children">
+                                        <a href="#" class="catalog-menu-item__link">
+                                            Плитка
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="catalog-menu-subs">
+                                            <div class="catalog-grid-item">
+                                                <!-- Название фильтра -->
+                                                <p class="h6">Помещение</p>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="catalog-grid-item">
+                                                <!-- Название фильтра -->
+                                                <p class="h6">Помещение</p>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="catalog-menu-item-has-children">
+                                        <a href="#" class="catalog-menu-item__link">
+                                            Керамогранит
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="catalog-menu-subs">
+                                            <div class="catalog-grid-item">
+                                                <!-- Название фильтра -->
+                                                <p class="h6">Помещение</p>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="catalog-menu-item-has-children">
+                                        <a href="#" class="catalog-menu-item__link">
+                                            Обои
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="catalog-menu-subs">
+                                            <div class="catalog-grid-item">
+                                                <!-- Название фильтра -->
+                                                <p class="h6">Помещение</p>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="catalog-menu-item-has-children">
+                                        <a href="#" class="catalog-menu-item__link">
+                                            Сантехника
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="catalog-menu-subs">
+                                            <div class="catalog-grid-item">
+                                                <!-- Название фильтра -->
+                                                <p class="h6">Помещение</p>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="catalog-menu-item-has-children">
+                                        <a href="#" class="catalog-menu-item__link">
+                                            Свет
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="catalog-menu-subs">
+                                            <div class="catalog-grid-item">
+                                                <!-- Название фильтра -->
+                                                <p class="h6">Помещение</p>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="catalog-menu-item-has-children">
+                                        <a href="#" class="catalog-menu-item__link">
+                                            Краска
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="catalog-menu-subs">
+                                            <div class="catalog-grid-item">
+                                                <!-- Название фильтра -->
+                                                <p class="h6">Помещение</p>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="catalog-grid-item">
+                                                <!-- Название фильтра -->
+                                                <p class="h6">Помещение</p>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="catalog-grid-item">
+                                                <!-- Название фильтра -->
+                                                <p class="h6">Помещение</p>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="catalog-grid-item">
+                                                <!-- Название фильтра -->
+                                                <p class="h6">Помещение</p>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="catalog-grid-item">
+                                                <!-- Название фильтра -->
+                                                <p class="h6">Помещение</p>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                    <li><a href="#">Для ванной</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#" class="catalog-menu-item__link text-red font-title fw-bold">Акция</a></li>
+                                </ul>
+    
+                            </div>
     
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>

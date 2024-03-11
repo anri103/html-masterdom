@@ -1,3 +1,4 @@
+//////////////////////////////////////////////////////////////////
 // Кастомные выпадашки на мобильном меню
 const mobileSubmenuTogglers = document.querySelectorAll('.mobile-main-menu__menu .submenu-toggler');
 
@@ -5,19 +6,19 @@ mobileSubmenuTogglers.forEach(toggler => {
     toggler.addEventListener('click', function () {
         const submenu = this.nextElementSibling;
         if (submenu) {
-            submenu.classList.toggle('submenu-open');
+            submenu.classList.toggle('open');
             this.classList.toggle('submenu-active');
         }
     });
 });
 
-// Выпадашка "Каталог"
-
+//////////////////////////////////////////////////////////////////
+// Мобильное меню "Каталог"
 const mobMainMenuBody = document.querySelector('.mobile-main-menu__body');
 const mobCatalogInvoker = document.querySelector('.mobile-catalog-invoker');
-const mobCatalogClose = document.querySelector('.mobile-catalog-close');
-const mobCatalogMenu = document.querySelector('.mobile-catalog-menu__wrapper');
-const mobMainMenu = document.querySelector('.mobile-main-menu__wrapper');
+const mobMainMenu = document.querySelector('.main-menu-container');
+const mobCatalogMenu = document.querySelector('.catalog-menu-container');
+const mobCatalogClose = document.querySelector('.catalog-menu-close');
 
 mobCatalogInvoker.addEventListener('click', (e) => {
     e.preventDefault();
@@ -26,8 +27,10 @@ mobCatalogInvoker.addEventListener('click', (e) => {
 
 function showMobCatalogMenu() {
     mobCatalogInvoker.classList.add('d-none');
-    mobMainMenu.classList.add('d-none');
+    mobMainMenu.classList.remove('open');
+    mobMainMenu.style.animation = 'slideRightReverse 0.5s ease forwards';
     mobCatalogMenu.classList.add('open');
+    mobCatalogMenu.style.animation = 'slideLeft 0.5s ease forwards';
 }
 
 mobCatalogClose.addEventListener('click', (e) => {
@@ -37,33 +40,28 @@ mobCatalogClose.addEventListener('click', (e) => {
 
 function hideMobCatalogMenu() {
     mobCatalogInvoker.classList.remove('d-none');
-    mobMainMenu.classList.remove('d-none');
+    mobMainMenu.classList.add('open');
+    mobMainMenu.style.animation = 'slideLeftReverse 0.5s ease forwards';
     mobCatalogMenu.classList.remove('open');
+    mobCatalogMenu.style.animation = 'slideRight 0.5s ease forwards';
 }
 
-
-
-
-
-const menu = document.querySelector('.menu');
-const menuSection = menu.querySelector('.menu-section');
-const menuArrow = document.querySelector('.menu-mobile-arrow');
-
+//////////////////////////////////////////////////////////////////
+// Мобильное меню "Каталог", реализация многоуровневого перехода
+const menuArrow = document.querySelector('.catalog-menu-cat-btn');
+const menuSection = document.querySelector('.catalog-menu-section');
 let subMenu;
 
-window.addEventListener('load', function () {
-    mainLinkMobile();
-})
-window.addEventListener('resize', function () {
-    mainLinkMobile();
-})
+const mainMobileLink = menuSection.querySelectorAll('.catalog-menu-item-has-children .catalog-menu-item__link');
+mainMobileLink.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+    });
+});
 
 menuSection.addEventListener('click', (e) => {
-    // if (!menu.classList.contains('active')) {
-    //    return;
-    // }
-    if (e.target.closest('.menu-item-has-children')) {
-        const hasChildren = e.target.closest('.menu-item-has-children');
+    if (e.target.closest('.catalog-menu-item-has-children')) {
+        const hasChildren = e.target.closest('.catalog-menu-item-has-children');
         showSubMenu(hasChildren);
     }
 });
@@ -73,12 +71,12 @@ menuArrow.addEventListener('click', () => {
 });
 
 function showSubMenu(hasChildren) {
-    subMenu = hasChildren.querySelector('.menu-subs');
+    subMenu = hasChildren.querySelector('.catalog-menu-subs');
     subMenu.classList.add('active');
     subMenu.style.animation = 'slideLeft 0.5s ease forwards';
     const menuTitle = hasChildren.querySelector('svg').parentNode.childNodes[0].textContent;
-    document.querySelector('.menu-mobile-title').innerHTML = menuTitle;
-    document.querySelector('.menu-mobile-header').classList.add('active');
+    document.querySelector('.catalog-menu-cat-btn').classList.add('active');
+    document.querySelector('.catalog-menu-cat-btn__title').innerHTML = menuTitle;
     mobCatalogClose.classList.add('d-none');
 }
 
@@ -87,40 +85,10 @@ function hideSubMenu() {
     setTimeout(() => {
         subMenu.classList.remove('active');
     }, 300);
-    document.querySelector('.menu-mobile-title').innerHTML = '';
-    document.querySelector('.menu-mobile-header').classList.remove('active');
+    document.querySelector('.catalog-menu-cat-btn').classList.remove('active');
+    document.querySelector('.catalog-menu-cat-btn__title').innerHTML = '';
     mobCatalogClose.classList.remove('d-none');
 }
-
-function mainLinkMobile() {
-    if (window.innerWidth < 1200) {
-        const mainMobileLink = menu.querySelectorAll('.menu-item__link');
-        mainMobileLink.forEach(link => {
-            link.addEventListener('click', (e) => {
-                e.preventDefault();
-            });
-        })
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //////////////////////////////////////////////////////////////////
 // [ Swiper Sliders ]
