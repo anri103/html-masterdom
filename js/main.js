@@ -1,6 +1,55 @@
 //////////////////////////////////////////////////////////////////
+// [ Fixed headers ]
+
+window.onscroll = function () {
+    const windowScroll = window.scrollY;
+    let fixedMenu;
+
+    if (window.innerWidth >= 992) {
+        // Для десктопов
+        fixedMenu = document.querySelector('.fixed-header-desktop');
+        if (fixedMenu) {
+            if (windowScroll > 200) {
+                fixedMenu.classList.add('js-fixed');
+            } else {
+                fixedMenu.classList.remove('js-fixed');
+            }
+        }
+    } else {
+        // Для мобильных устройств
+        fixedMenu = document.querySelector('.fixed-header-mobile');
+        if (fixedMenu) {
+            if (windowScroll > 100) {
+                fixedMenu.classList.add('js-fixed');
+            } else {
+                fixedMenu.classList.remove('js-fixed');
+            }
+        }
+    }
+};
+
+//////////////////////////////////////////////////////////////////
+// Клик по кнопкам, вызывающим всплывающие меню
+
+const mobileToggle = document.querySelector('.navbar-mobile__offcanvas-toggle');
+const desktopToggle = document.querySelector('.navbar-desktop__offcanvas-toggle');
+
+function toggleOverflow(isExpanded) {
+    document.body.style.overflow = isExpanded ? 'hidden' : 'auto';
+}
+
+function handleToggleClick(e) {
+    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+    toggleOverflow(isExpanded);
+}
+
+mobileToggle.addEventListener('click', handleToggleClick);
+desktopToggle.addEventListener('click', handleToggleClick);
+
+//////////////////////////////////////////////////////////////////
 // Кастомные выпадашки на мобильном меню
-const mobileSubmenuTogglers = document.querySelectorAll('.mobile-main-menu__menu .submenu-toggler');
+
+const mobileSubmenuTogglers = document.querySelectorAll('.mobile-main-menu-section .submenu-toggler');
 
 mobileSubmenuTogglers.forEach(toggler => {
     toggler.addEventListener('click', function () {
@@ -14,11 +63,12 @@ mobileSubmenuTogglers.forEach(toggler => {
 
 //////////////////////////////////////////////////////////////////
 // Мобильное меню "Каталог"
-const mobMainMenuBody = document.querySelector('.mobile-main-menu__body');
-const mobCatalogInvoker = document.querySelector('.mobile-catalog-invoker');
-const mobMainMenu = document.querySelector('.main-menu-container');
-const mobCatalogMenu = document.querySelector('.catalog-menu-container');
-const mobCatalogClose = document.querySelector('.catalog-menu-close');
+
+const mobMainMenuBody = document.querySelector('.mobile-collapse-menu__body');
+const mobCatalogInvoker = document.querySelector('.mobile-catalog-menu-invoker');
+const mobMainMenu = document.querySelector('.mobile-collapse-menu__menu-container');
+const mobCatalogMenu = document.querySelector('.mobile-collapse-menu__catalog-container');
+const mobCatalogClose = document.querySelector('.mobile-catalog-menu-close');
 
 mobCatalogInvoker.addEventListener('click', (e) => {
     e.preventDefault();
@@ -48,8 +98,9 @@ function hideMobCatalogMenu() {
 
 //////////////////////////////////////////////////////////////////
 // Мобильное меню "Каталог", реализация многоуровневого перехода
+
 const menuArrow = document.querySelector('.catalog-menu-cat-btn');
-const menuSection = document.querySelector('.catalog-menu-section');
+const menuSection = document.querySelector('.mobile-catalog-menu-section');
 let subMenu;
 
 const mainMobileLink = menuSection.querySelectorAll('.catalog-menu-item-has-children .catalog-menu-item__link');
@@ -172,3 +223,5 @@ Fancybox.bind("[data-fancybox]", {
         },
     },
 });
+
+Fancybox.bind("[fancybox-dialog]", {});
