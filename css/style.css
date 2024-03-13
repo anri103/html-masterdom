@@ -1631,7 +1631,10 @@ textarea {
 }
 
 .hero-category {
+    --bs-link-color-rgb: var(--bs-white-rgb);
+    --bs-link-hover-color-rgb: var(--bs-body-rgb);
     position: relative;
+    display: block;
     height: 100%;
     overflow: hidden;
 }
@@ -1659,8 +1662,6 @@ textarea {
 }
 
 .hero-category__link {
-    --bs-link-color-rgb: var(--bs-white-rgb);
-    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.149px;
