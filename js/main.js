@@ -181,7 +181,7 @@ var swiperCategoriesCircles = new Swiper(".swiperCategoriesCircles", {
 var swiperShopsLocation = new Swiper(".swiperShopsLocation", {
     slidesPerView: 1,
     loop: false,
-    spaceBetween: 16,
+    spaceBetween: 22,
     grabCursor: true,
     navigation: {
         nextEl: ".swiperShopsLocation-next",

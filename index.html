@@ -88,7 +88,15 @@
                         <!-- Выбор города -->
                         <div class="mobile-collapse-menu__header">
                             <div class="title">Меню</div>
-                            <div>Ваш город: <span data-src="#city-selector-modal" fancybox-dialog>Москва</span></div>
+                            <div class="city-select-invoker">
+                                <div>Ваш город:</div>
+                                <div class="city-select__current-city" data-src="#city-selector-modal" fancybox-dialog>
+                                    <div>Москва</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                        <path d="M1 1L5.0931 5.81382C5.14102 5.87267 5.19858 5.91951 5.26232 5.95151C5.32604 5.9835 5.39461 6 5.4639 6C5.53319 6 5.60177 5.9835 5.66549 5.95151C5.72921 5.91951 5.78677 5.87267 5.83471 5.81382L9.92778 0.999999" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
     
                         <!-- Контейнер для двух меню -->
@@ -908,9 +916,7 @@
                     </div>
                     <div class="section-hero__col">
                         <div class="hero-category">
-                            <div class="hero-category__img">
-                                <img src="img/hero-category-01.jpg" alt="Хиты продаж">
-                            </div>
+                            <img src="img/hero-category-01.jpg" alt="Хиты продаж">
                             <div class="hero-category__text">
                                 <div class="hero-category__title">Хиты продаж</div>
                                 <div class="hero-category__link">
@@ -1008,22 +1014,22 @@
             <div class="popular-products-tab-nav scrollable-container" role="tablist">
                 <div class="scrollable-wrapper">
                     <div class="scrollable-item">
-                        <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="true">Плитка</button>
+                        <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="true"><span>Плитка</span></button>
                     </div>
                     <div class="scrollable-item">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Обои</button>
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false"><span>Обои</span></button>
                     </div>
                     <div class="scrollable-item">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false">Сантехника</button>
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false"><span>Сантехника</span></button>
                     </div>
                     <div class="scrollable-item">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Свет</button>
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false"><span>Свет</span></button>
                     </div>
                     <div class="scrollable-item">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false">Краски</button>
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false"><span>Краски</span></button>
                     </div>
                     <div class="scrollable-item">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false">Строительные смеси</button>
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false"><span>Строительные смеси</span></button>
                     </div>
                 </div>
             </div>
@@ -1670,96 +1676,90 @@
                     </div>
                 </a>
                 <!-- Слайдер -->
-                <div class="swiper swiperShopsLocation">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="shop-location__item">
-                                <div class="shop-location__row">
-                                    <div class="shop-location__col">
-                                        <div class="shop-location__img">
-                                            <img src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
-                                        </div>
+                <div class="position-relative">
+                    <div class="swiper swiperShopsLocation">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="shop-location__item">
+                                    <div class="shop-location__img">
+                                        <img src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
                                     </div>
-                                    <div class="shop-location__col">
-                                        <div class="shop-location__body">
-                                            <div class="shop-location__body-top">
-                                                <div class="shop-location__title">МастерДом на Профсоюзной</div>
-                                                <div class="shop-location__tags">
-                                                    <div class="item-tag">Обои</div>
-                                                    <div class="item-tag">Плитка</div>
-                                                    <div class="item-tag">Отдел шторы</div>
-                                                    <div class="item-tag">Светильники</div>
-                                                    <div class="item-tag">Сантехники</div>
+                                    <div class="shop-location__body">
+                                        <div class="shop-location__body-top">
+                                            <div class="shop-location__title">
+                                                <a href="#">МастерДом на Профсоюзной</a>
+                                            </div>
+                                            <div class="shop-location__tags">
+                                                <div class="item-tag">Обои</div>
+                                                <div class="item-tag">Плитка</div>
+                                                <div class="item-tag">Отдел шторы</div>
+                                                <div class="item-tag">Светильники</div>
+                                                <div class="item-tag">Сантехники</div>
+                                            </div>
+                                        </div>
+                                        <div class="shop-location__body-bottom">
+                                            <div class="shop-location__body-bottom-content">
+                                                <div class="shop-location__hours">ежедневно с 10:00 до 21:00</div>
+                                                <div class="shop-location__address">г. Москва, Нахимовский проспект, д.59а</div>
+                                                <div class="shop-location__metro">
+                                                    <div class="item-metro">Профсоюзная, 15 м</div>
+                                                    <div class="item-metro">Профсоюзная, 15 м</div>
+                                                </div>
+                                                <div class="shop-location__phone">
+                                                    <a href="tel:88003503243">8 (800) 350-32-43</a>
                                                 </div>
                                             </div>
-                                            <div class="shop-location__body-bottom">
-                                                <div class="shop-location__body-bottom-content">
-                                                    <div class="shop-location__hours">ежедневно с 10:00 до 21:00</div>
-                                                    <div class="shop-location__address">г. Москва, Нахимовский проспект, д.59а</div>
-                                                    <div class="shop-location__metro">
-                                                        <div class="item-metro">Профсоюзная, 15 м</div>
-                                                        <div class="item-metro">Профсоюзная, 15 м</div>
+                                            <div class="shop-location__link">
+                                                <a href="#">
+                                                    <div class="flex-shrink-0">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
+                                                            <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#ACB2BF"/>
+                                                        </svg>
                                                     </div>
-                                                    <div class="shop-location__phone">
-                                                        <a href="tel:88003503243">8 (800) 350-32-43</a>
-                                                    </div>
-                                                </div>
-                                                <div class="shop-location__link">
-                                                    <a href="#">
-                                                        <div class="flex-shrink-0">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
-                                                                <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#ACB2BF"/>
-                                                            </svg>
-                                                        </div>
-                                                    </a>
-                                                </div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="shop-location__item">
-                                <div class="shop-location__row">
-                                    <div class="shop-location__col">
-                                        <div class="shop-location__img">
-                                            <img src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
-                                        </div>
+                            <div class="swiper-slide">
+                                <div class="shop-location__item">
+                                    <div class="shop-location__img">
+                                        <img src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
                                     </div>
-                                    <div class="shop-location__col">
-                                        <div class="shop-location__body">
-                                            <div class="shop-location__body-top">
-                                                <div class="shop-location__title">МастерДом на Профсоюзной пример длинного заголовка</div>
-                                                <div class="shop-location__tags">
-                                                    <div class="item-tag">Обои</div>
-                                                    <div class="item-tag">Плитка</div>
-                                                    <div class="item-tag">Отдел шторы</div>
-                                                    <div class="item-tag">Светильники</div>
-                                                    <div class="item-tag">Сантехники</div>
+                                    <div class="shop-location__body">
+                                        <div class="shop-location__body-top">
+                                            <div class="shop-location__title">
+                                                <a href="#">МастерДом на Профсоюзной пример длинного заголовка</a>
+                                            </div>
+                                            <div class="shop-location__tags">
+                                                <div class="item-tag">Обои</div>
+                                                <div class="item-tag">Плитка</div>
+                                                <div class="item-tag">Отдел шторы</div>
+                                                <div class="item-tag">Светильники</div>
+                                                <div class="item-tag">Сантехники</div>
+                                            </div>
+                                        </div>
+                                        <div class="shop-location__body-bottom">
+                                            <div class="shop-location__body-bottom-content">
+                                                <div class="shop-location__hours">ежедневно с 10:00 до 21:00</div>
+                                                <div class="shop-location__address">г. Москва, Нахимовский проспект, д.59а</div>
+                                                <div class="shop-location__metro">
+                                                    <div class="item-metro">Профсоюзная, 15 м</div>
+                                                    <div class="item-metro">Профсоюзная, 15 м</div>
+                                                </div>
+                                                <div class="shop-location__phone">
+                                                    <a href="tel:88003503243">8 (800) 350-32-43</a>
                                                 </div>
                                             </div>
-                                            <div class="shop-location__body-bottom">
-                                                <div class="shop-location__body-bottom-content">
-                                                    <div class="shop-location__hours">ежедневно с 10:00 до 21:00</div>
-                                                    <div class="shop-location__address">г. Москва, Нахимовский проспект, д.59а</div>
-                                                    <div class="shop-location__metro">
-                                                        <div class="item-metro">Профсоюзная, 15 м</div>
-                                                        <div class="item-metro">Профсоюзная, 15 м</div>
+                                            <div class="shop-location__link">
+                                                <a href="#">
+                                                    <div class="flex-shrink-0">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
+                                                            <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#ACB2BF"/>
+                                                        </svg>
                                                     </div>
-                                                    <div class="shop-location__phone">
-                                                        <a href="tel:88003503243">8 (800) 350-32-43</a>
-                                                    </div>
-                                                </div>
-                                                <div class="shop-location__link">
-                                                    <a href="#">
-                                                        <div class="flex-shrink-0">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
-                                                                <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#ACB2BF"/>
-                                                            </svg>
-                                                        </div>
-                                                    </a>
-                                                </div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1768,16 +1768,17 @@
                         </div>
                     </div>
                     <!-- Навигация слайдера -->
-                    <div class="swiperShopsLocation-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
-                            <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                        </svg>
-                    </div>
-                    <!-- Навигация слайдера -->
-                    <div class="swiperShopsLocation-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
-                            <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                        </svg>
+                    <div class="swiperShopsLocation-navigation">
+                        <div class="swiperShopsLocation-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="swiperShopsLocation-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1804,168 +1805,170 @@
                     </div>
                 </div>
             </div>
-            <!-- Слайдер -->
-            <div class="swiper swiperBlogSlider">
-                <div class="swiper-wrapper">
-                    <!-- item-01 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img src="img/blog-thumb-01.jpg" alt="Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете">
-                                </a>
+            <div class="container">
+                <!-- Слайдер -->
+                <div class="swiper swiperBlogSlider">
+                    <div class="swiper-wrapper">
+                        <!-- item-01 -->
+                        <div class="swiper-slide">
+                            <div class="blog-slide-item">
+                                <div class="blog-slide-item__img">
+                                    <a href="#">
+                                        <img src="img/blog-thumb-01.jpg" alt="Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете">
+                                    </a>
+                                </div>
+                                <div class="blog-slide-item__body">
+                                    <div class="blog-slide-item__tags">
+                                        <a href="#">Новости</a>
+                                    </div>
+                                    <div class="blog-slide-item__title">
+                                        <a href="#">Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете</a>
+                                    </div>
+                                    <div class="blog-slide-item__read-link">
+                                        <a href="#">Читать</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">Новости</a>
+                        </div>
+                        <!-- item-02 -->
+                        <div class="swiper-slide">
+                            <div class="blog-slide-item">
+                                <div class="blog-slide-item__img">
+                                    <a href="#">
+                                        <img src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                    </a>
                                 </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете</a>
+                                <div class="blog-slide-item__body">
+                                    <div class="blog-slide-item__tags">
+                                        <a href="#">Акции</a>
+                                    </div>
+                                    <div class="blog-slide-item__title">
+                                        <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                    </div>
+                                    <div class="blog-slide-item__read-link">
+                                        <a href="#">Читать</a>
+                                    </div>
                                 </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
+                            </div>
+                        </div>
+                        <!-- item-03 -->
+                        <div class="swiper-slide">
+                            <div class="blog-slide-item">
+                                <div class="blog-slide-item__img">
+                                    <a href="#">
+                                        <img src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
+                                    </a>
+                                </div>
+                                <div class="blog-slide-item__body">
+                                    <div class="blog-slide-item__tags">
+                                        <a href="#">мероприятия</a>
+                                    </div>
+                                    <div class="blog-slide-item__title">
+                                        <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
+                                    </div>
+                                    <div class="blog-slide-item__read-link">
+                                        <a href="#">Читать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-04 -->
+                        <div class="swiper-slide">
+                            <div class="blog-slide-item">
+                                <div class="blog-slide-item__img">
+                                    <a href="#">
+                                        <img src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                    </a>
+                                </div>
+                                <div class="blog-slide-item__body">
+                                    <div class="blog-slide-item__tags">
+                                        <a href="#">мероприятия</a>
+                                    </div>
+                                    <div class="blog-slide-item__title">
+                                        <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                    </div>
+                                    <div class="blog-slide-item__read-link">
+                                        <a href="#">Читать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-05 -->
+                        <div class="swiper-slide">
+                            <div class="blog-slide-item">
+                                <div class="blog-slide-item__img">
+                                    <a href="#">
+                                        <img src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                    </a>
+                                </div>
+                                <div class="blog-slide-item__body">
+                                    <div class="blog-slide-item__tags">
+                                        <a href="#">Акции</a>
+                                    </div>
+                                    <div class="blog-slide-item__title">
+                                        <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                    </div>
+                                    <div class="blog-slide-item__read-link">
+                                        <a href="#">Читать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-06 -->
+                        <div class="swiper-slide">
+                            <div class="blog-slide-item">
+                                <div class="blog-slide-item__img">
+                                    <a href="#">
+                                        <img src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
+                                    </a>
+                                </div>
+                                <div class="blog-slide-item__body">
+                                    <div class="blog-slide-item__tags">
+                                        <a href="#">мероприятия</a>
+                                    </div>
+                                    <div class="blog-slide-item__title">
+                                        <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
+                                    </div>
+                                    <div class="blog-slide-item__read-link">
+                                        <a href="#">Читать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item-07 -->
+                        <div class="swiper-slide">
+                            <div class="blog-slide-item">
+                                <div class="blog-slide-item__img">
+                                    <a href="#">
+                                        <img src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
+                                    </a>
+                                </div>
+                                <div class="blog-slide-item__body">
+                                    <div class="blog-slide-item__tags">
+                                        <a href="#">мероприятия</a>
+                                    </div>
+                                    <div class="blog-slide-item__title">
+                                        <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
+                                    </div>
+                                    <div class="blog-slide-item__read-link">
+                                        <a href="#">Читать</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- item-02 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                </a>
-                            </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">Акции</a>
-                                </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Навигация слайдера -->
+                    <div class="swiperBlogSlider-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                            <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                        </svg>
                     </div>
-                    <!-- item-03 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
-                                </a>
-                            </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">мероприятия</a>
-                                </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
-                                </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Навигация слайдера -->
+                    <div class="swiperBlogSlider-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                            <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                        </svg>
                     </div>
-                    <!-- item-04 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                </a>
-                            </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">мероприятия</a>
-                                </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-05 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                </a>
-                            </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">Акции</a>
-                                </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-06 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
-                                </a>
-                            </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">мероприятия</a>
-                                </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
-                                </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item-07 -->
-                    <div class="swiper-slide">
-                        <div class="blog-slide-item">
-                            <div class="blog-slide-item__img">
-                                <a href="#">
-                                    <img src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                </a>
-                            </div>
-                            <div class="blog-slide-item__body">
-                                <div class="blog-slide-item__tags">
-                                    <a href="#">мероприятия</a>
-                                </div>
-                                <div class="blog-slide-item__title">
-                                    <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                </div>
-                                <div class="blog-slide-item__read-link">
-                                    <a href="#">Читать</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Навигация слайдера -->
-                <div class="swiperBlogSlider-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
-                        <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                    </svg>
-                </div>
-                <!-- Навигация слайдера -->
-                <div class="swiperBlogSlider-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
-                        <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                    </svg>
                 </div>
             </div>
         </section>
@@ -2147,7 +2150,17 @@
         <div class="city-selector__container">
             <p class="h5 city-selector__title">Выберете город</p>
             <div class="city-selector__input-wrapper">
-                <input type="text" class="form-control" placeholder="Найти город">
+                <form class="form-city-selector" action="#">
+                    <input type="text" class="form-control" placeholder="Найти город">
+                    <button type="submit" class="btn form-city-selector__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                            <g>
+                                <path class="path-stroke-dynamic" d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02943 14.9706 1 10 1C5.02943 1 1 5.02943 1 10C1 14.9706 5.02943 19 10 19Z" stroke="#7C7D80" stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path class="path-stroke-dynamic" d="M21.999 21.9995L16.3867 16.4121" stroke="#7C7D80" stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </form>
             </div>
             <div class="city-selector__popular-cities">
                 <p class="h6 city-selector__popular-cities-title">Популярные города</p>
