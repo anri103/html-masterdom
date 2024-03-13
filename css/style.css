@@ -1806,7 +1806,7 @@ textarea {
     font-family: var(--bs-title-font-family);
     font-size: 24px;
     font-weight: 700;
-    line-height: normal;
+    line-height: 90%;
     letter-spacing: 0.24px;
 }
 
@@ -1913,11 +1913,14 @@ textarea {
     text-transform: lowercase;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
     .popular-products-tab-nav {
         justify-content: center;
     }
+}
+
+@media (min-width: 992px) {
 
     .section-popular-products__link {
         margin-top: 52px;
@@ -2467,14 +2470,17 @@ textarea {
     text-transform: lowercase;
 }
 
+@media (min-width: 576px) {
+
+    .blog-slider-tab-nav {
+        justify-content: center;
+    }
+}
+
 @media (min-width: 992px) {
 
     .section-blog-slider {
         margin-bottom: 82px;
-    }
-
-    .blog-slider-tab-nav {
-        justify-content: center;
     }
 
     .swiperBlogSlider-next,

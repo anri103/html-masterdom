@@ -195,8 +195,8 @@ var swiperBlogSlider = new Swiper(".swiperBlogSlider", {
     spaceBetween: 22,
     grabCursor: true,
     freeMode: true,
-    slidesOffsetBefore: 12,
-    slidesOffsetAfter: 12,
+    // slidesOffsetBefore: 12,
+    // slidesOffsetAfter: 12,
     navigation: {
         nextEl: ".swiperBlogSlider-next",
         prevEl: ".swiperBlogSlider-prev",
