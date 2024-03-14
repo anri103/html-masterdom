@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Каталог</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -864,191 +864,82 @@
     <!-- MAIN -->
     <main class="main">
 
-        <!-- section-hero -->
-        <section class="section section-hero">
+        <!-- section-breadcrumbs -->
+        <section class="section section-breadcrumbs">
             <div class="container">
-                <div class="section-hero__row">
-                    <div class="section-hero__col">
-                        <div class="position-relative">
-                            <div class="swiper swiperHeroSlider">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="#" class="hero-slider-item">
-                                            <!-- Тег "picture" для загрузки разных баннеров для разных экранов в будущем -->
-                                            <picture>
-                                                <img src="img/hero-banner-01.jpg" alt="Новая коллекция уже на складе">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#" class="hero-slider-item">
-                                            <!-- Тег "picture" для загрузки разных баннеров для разных экранов в будущем -->
-                                            <picture>
-                                                <img src="img/hero-banner-01.jpg" alt="Новая коллекция уже на складе">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiperHeroSlider-next">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="46" viewBox="0 0 27 46"
-                                        fill="none">
-                                        <path d="M2 41L23 23.0001L2 5.00017L2 7.56872L20.0034 23.0001L2 38.4315L2 41Z"
-                                            fill="white" />
-                                        <path
-                                            d="M1 41L1 43.1742L2.65079 41.7593L23.6508 23.7593L24.5366 23.0001L23.6508 22.2408L2.65079 4.24092L0.999997 2.82596L0.999997 5.00017L0.999997 7.56872L0.999997 8.02865L1.34921 8.32797L18.4668 23.0001L1.34921 37.6722L1 37.9715L1 38.4315L1 41Z"
-                                            stroke="#9F9387" stroke-opacity="0.8" stroke-width="2" />
-                                    </svg>
-                                </div>
-                                <div class="swiperHeroSlider-prev">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="46" viewBox="0 0 28 46"
-                                        fill="none">
-                                        <path
-                                            d="M25.5274 5L4 22.9999L25.5274 40.9998V38.4313L7.0719 22.9999L25.5274 7.56854V5Z"
-                                            fill="white" />
-                                        <path
-                                            d="M26.5274 5V2.86035L24.8859 4.23284L3.35855 22.2327L2.44104 22.9999L3.35855 23.7671L24.8859 41.767L26.5274 43.1395V40.9998V38.4313V37.9639L26.1689 37.6641L8.63086 22.9999L26.1689 8.3357L26.5274 8.03591V7.56854V5Z"
-                                            stroke="#9F9387" stroke-opacity="0.8" stroke-width="2" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="swiperHeroSlider-pagination"></div>
-                        </div>
-                    </div>
-                    <div class="section-hero__col">
-                        <a href="#" class="hero-category">
-                            <img src="img/hero-category-01.jpg" alt="Хиты продаж">
-                            <div class="hero-category__text">
-                                <div class="hero-category__title">Хиты продаж</div>
-                                <div class="hero-category__link">
-                                    <span>подробнее</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span>Страница</span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- section-catalog-heading -->
+        <section class="section section-catalog-heading">
+            <div class="container">
+                <div class="catalog-heading__wrapper">
+                    <h1 class="title">Мраморная плитка</h1>
+                    <div class="number-of-goods">660 товаров</div>
                 </div>
             </div>
         </section>
 
-        <!-- section-categories-circles -->
-        <section class="section section-categories-circles">
-            <!-- Заголовок -->
-            <h2 class="title">Интернет-магазин плитки и керамогранита</h2>
-            <!-- Слайдер -->
-            <div class="swiperCategoriesCircles-container">
-                <div class="swiper swiperCategoriesCircles">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#" class="categories-circles__item">
-                                <div class="categories-circles__img">
-                                    <img src="img/section-categories-circles-01.png" alt="SALE">
-                                </div>
-                                <div class="categories-circles__title">SALE</div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="categories-circles__item">
-                                <div class="categories-circles__img">
-                                    <img src="img/section-categories-circles-02.png" alt="Крупный формат">
-                                </div>
-                                <div class="categories-circles__title">Крупный формат</div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="categories-circles__item">
-                                <div class="categories-circles__img">
-                                    <img src="img/section-categories-circles-03.png" alt="Плитка под мрамор">
-                                </div>
-                                <div class="categories-circles__title">Плитка под мрамор</div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="categories-circles__item">
-                                <div class="categories-circles__img">
-                                    <img src="img/section-categories-circles-04.png" alt="Готовые решения">
-                                </div>
-                                <div class="categories-circles__title">Готовые решения</div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="categories-circles__item">
-                                <div class="categories-circles__img">
-                                    <img src="img/section-categories-circles-05.png" alt="Новинки">
-                                </div>
-                                <div class="categories-circles__title">Новинки</div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="categories-circles__item">
-                                <div class="categories-circles__img">
-                                    <img src="img/section-categories-circles-02.png" alt="Крупный формат">
-                                </div>
-                                <div class="categories-circles__title">Крупный формат</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Навигация слайдера -->
-                <div class="swiperCategoriesCircles-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
-                        <path
-                            d="M0.00125885 36L21.5195 18.0001L0.00125563 0.000173497L0.00125586 2.56872L18.4489 18.0001L0.00125862 33.4315L0.00125885 36Z"
-                            fill="#02378F" />
-                    </svg>
-                </div>
-                <!-- Навигация слайдера -->
-                <div class="swiperCategoriesCircles-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
-                        <path
-                            d="M0.00125885 36L21.5195 18.0001L0.00125563 0.000173497L0.00125586 2.56872L18.4489 18.0001L0.00125862 33.4315L0.00125885 36Z"
-                            fill="#02378F" />
-                    </svg>
-                </div>
-            </div>
-        </section>
+        <!-- section-catalog-body -->
+        <section class="section section-catalog-body">
+            <div class="container">
+                <div class="row">
 
-        <!-- section-popular-products -->
-        <section class="section section-popular-products">
-            <!-- Заголовок -->
-            <h2 class="title">Популярные товары</h2>
-            <!-- Навигация табы -->
-            <div class="popular-products-tab-nav scrollable-container" role="tablist">
-                <div class="scrollable-wrapper">
-                    <div class="scrollable-item">
-                        <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="true"><span>Плитка</span></button>
-                    </div>
-                    <div class="scrollable-item">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false"><span>Обои</span></button>
-                    </div>
-                    <div class="scrollable-item">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false"><span>Сантехника</span></button>
-                    </div>
-                    <div class="scrollable-item">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false"><span>Свет</span></button>
-                    </div>
-                    <div class="scrollable-item">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-01" role="tab" aria-selected="false"><span>Краски</span></button>
-                    </div>
-                    <div class="scrollable-item">
-                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-popular-products-02" role="tab" aria-selected="false"><span>Строительные смеси</span></button>
-                    </div>
-                </div>
-            </div>
-            <!-- Контейнер табы -->
-            <div class="tab-content">
-                <!-- Вкладка 01 -->
-                <div class="tab-pane fade show active" id="tab-popular-products-01" role="tabpanel" tabindex="0">
-                    <div class="container">
+                    <!-- Фильтры (колонка слева) -->
+                    <div class="col-lg-20">
 
-                        <!-- =========================================================== -->
-                        <!-- ====================== ПРОГРАММИСТУ! ====================== -->
-                        <!-- Для десктопа (экраны с min-width: 992px) выводить 6 товаров -->
-                        <!-- Для мобилки (всё что меньше 992px) - выводить 3 товара -->
-                        <!-- =========================================================== -->
+                        <!-- Категории -->
+                        <div class="section-catalog-body__sidebar-widget">
+                            <div>
+                                <ul>
+                                    <li><a href="#">Затирки</a></li>
+                                    <li><a href="#">Клей для плитки</a></li>
+                                    <li><a href="#">Пропитки и чистящие средства</a></li>
+                                    <li><a href="#">Аутлет</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-                        <!-- Сетка -->
-                        <div class="popular-products-grid">
+                        <!-- Фильтры -->
+                        <div class="section-catalog-body__sidebar-widget">
+                            123
+                        </div>
+
+                        <!-- Каталоги -->
+                        <div class="section-catalog-body__sidebar-widget">
+                            456
+                        </div>
+
+                    </div>
+
+                    <!-- Сетка товаров (колонка справа) -->
+                    <div class="col-lg-75 offset-lg-5">
+
+                        <!-- Сортировка -->
+                        <div class="section-catalog-body__sorting">
+                            <div>Фильтры</div>
+                            <div>По популярности</div>
+                        </div>
+
+                        <!-- Сетка товаров -->
+                        <div class="section-catalog-body__grid">
+
                             <!-- item 1 -->
-                            <div class="product-item product-cat-oboi">
+                            <div class="product-item">
+                                <div class="product-item__pretop">
+                                    <div class="product-item__brand">Italon</div>
+                                    <div class="product-item__country">Россия</div>
+                                </div>
                                 <div class="product-item__top">
                                     <a href="#">
                                         <div class="product-item__img">
@@ -1063,912 +954,41 @@
                                     </div>
                                 </div>
                                 <div class="product-item__body">
+                                    <div class="product-item__body-top">
+                                        <div class="product-item__sku">Арт. CV20195</div>
+                                        <button type="button" class="product-item__like-btn active">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                                <path class="svg-like-path" d="M13.2766 22.8094L3.7117 14.1457C-1.48661 8.94735 6.1549 -1.03339 13.2766 7.0413C20.3982 -1.03339 28.0052 8.98202 22.8415 14.1457L13.2766 22.8094Z" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
                                     <div class="product-item__title">
-                                        <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
+                                        <a href="#">Керамогранит Onix One 60x120 Fancy Grey Polished</a>
                                     </div>
-                                    <div class="product-item__price">2 480 ₽ <span class="measure">/ 1 шт.</span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
-                                    <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
-                                        <ul class="skuPropertyList">
-                                            <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Желтый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Розовый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-03.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Синий">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-04.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Пёстрый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
+                                    <div class="product-item__data-size">
+                                        <span>60x120, 80х120</span>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- item 2 -->
-                            <div class="product-item product-cat-oboi">
-                                <div class="product-item__top">
-                                    <a href="#">
-                                        <div class="product-item__img">
-                                            <img src="img/popular-product-thumb-02.jpg">
-                                            <img src="img/popular-product-thumb-01.jpg">
+                                    <div class="product-item__price">
+                                        <div class="text-muted">
+                                            <span>2 480 ₽</span> / <span class="measure">1 шт.</span>
                                         </div>
-                                    </a>
-                                    <div class="product-item__markers">
-                                        <div class="marker-item" style="color: #1A1A16">new</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__body">
-                                    <div class="product-item__title">
-                                        <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
-                                    </div>
-                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
-                                    <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
-                                        <ul class="skuPropertyList">
-                                            <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Желтый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Розовый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-03.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Синий">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-04.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Пёстрый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 3 -->
-                            <div class="product-item product-cat-oboi">
-                                <div class="product-item__top">
-                                    <a href="#">
-                                        <div class="product-item__img">
-                                            <img src="img/popular-product-thumb-03.jpg">
-                                            <img src="img/popular-product-thumb-02.jpg">
+                                        <div class="text-primary fw-medium">
+                                            <span>3 250 ₽</span> / <span class="measure">1 м<sup>2</sup></span>
                                         </div>
-                                    </a>
-                                    <div class="product-item__markers">
-                                        <div class="marker-item" style="color: #1A1A16">new</div>
                                     </div>
-                                </div>
-                                <div class="product-item__body">
-                                    <div class="product-item__title">
-                                        <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
-                                    </div>
-                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
-                                    <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
-                                        <ul class="skuPropertyList">
-                                            <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Желтый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Розовый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-03.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Синий">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-04.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Пёстрый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <button type="button" class="btn product-item__btn">в корзину</button>
                                 </div>
                             </div>
-                            <!-- item 4 -->
-                            <div class="product-item product-cat-oboi">
-                                <div class="product-item__top">
-                                    <a href="#">
-                                        <div class="product-item__img">
-                                            <img src="img/popular-product-thumb-04.jpg">
-                                            <img src="img/popular-product-thumb-02.jpg">
-                                        </div>
-                                    </a>
-                                    <div class="product-item__markers"></div>
-                                </div>
-                                <div class="product-item__body">
-                                    <div class="product-item__title">
-                                        <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
-                                    </div>
-                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
-                                    <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
-                                        <ul class="skuPropertyList">
-                                            <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Желтый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Розовый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-03.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Синий">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-04.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Пёстрый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 5 -->
-                            <div class="product-item product-cat-oboi">
-                                <div class="product-item__top">
-                                    <a href="#">
-                                        <div class="product-item__img">
-                                            <img src="img/popular-product-thumb-05.jpg">
-                                            <img src="img/popular-product-thumb-02.jpg">
-                                        </div>
-                                    </a>
-                                    <div class="product-item__markers">
-                                        <div class="marker-item" style="color: #02378F">hit</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__body">
-                                    <div class="product-item__title">
-                                        <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
-                                    </div>
-                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
-                                    <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
-                                        <ul class="skuPropertyList">
-                                            <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Желтый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Розовый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-03.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Синий">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-04.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Пёстрый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 6 -->
-                            <div class="product-item product-cat-oboi">
-                                <div class="product-item__top">
-                                    <a href="#">
-                                        <div class="product-item__img">
-                                            <img src="img/popular-product-thumb-06.jpg">
-                                            <img src="img/popular-product-thumb-02.jpg">
-                                        </div>
-                                    </a>
-                                    <div class="product-item__markers">
-                                        <div class="marker-item" style="color: #DF5A5A">sale</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__body">
-                                    <div class="product-item__title">
-                                        <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
-                                    </div>
-                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
-                                    <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
-                                        <ul class="skuPropertyList">
-                                            <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Желтый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Розовый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-03.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Синий">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-04.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Пёстрый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-    
+
+                        </div>
+
+                        <!-- Пагинация -->
+                        <div class="section-catalog-body__pagination">
+                            123
                         </div>
 
                     </div>
-                </div>
-                <!-- Вкладка 02 -->
-                <div class="tab-pane fade" id="tab-popular-products-02" role="tabpanel" tabindex="0">
-                    <div class="container">
 
-                        <!-- =========================================================== -->
-                        <!-- ====================== ПРОГРАММИСТУ! ====================== -->
-                        <!-- Для десктопа (экраны с min-width: 992px) выводить 6 товаров -->
-                        <!-- Для мобилки (всё что меньше 992px) - выводить 3 товара -->
-                        <!-- =========================================================== -->
-
-                        <!-- Сетка -->
-                        <div class="popular-products-grid">
-                            <!-- item 1 -->
-                            <div class="product-item product-cat-oboi">
-                                <div class="product-item__top">
-                                    <a href="#">
-                                        <div class="product-item__img">
-                                            <img src="img/popular-product-thumb-06.jpg">
-                                            <img src="img/popular-product-thumb-02.jpg">
-                                        </div>
-                                    </a>
-                                    <div class="product-item__markers">
-                                        <div class="marker-item" style="color: #02378F">hit</div>
-                                        <div class="marker-item" style="color: #1A1A16">new</div>
-                                        <div class="marker-item" style="color: #DF5A5A">sale</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__body">
-                                    <div class="product-item__title">
-                                        <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
-                                    </div>
-                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
-                                    <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
-                                        <ul class="skuPropertyList">
-                                            <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Желтый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Розовый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-03.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Синий">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-04.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Пёстрый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 2 -->
-                            <div class="product-item product-cat-oboi">
-                                <div class="product-item__top">
-                                    <a href="#">
-                                        <div class="product-item__img">
-                                            <img src="img/popular-product-thumb-05.jpg">
-                                            <img src="img/popular-product-thumb-02.jpg">
-                                        </div>
-                                    </a>
-                                    <div class="product-item__markers">
-                                        <div class="marker-item" style="color: #1A1A16">new</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__body">
-                                    <div class="product-item__title">
-                                        <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
-                                    </div>
-                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
-                                    <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
-                                        <ul class="skuPropertyList">
-                                            <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Желтый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Розовый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-03.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Синий">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-04.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Пёстрый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 3 -->
-                            <div class="product-item product-cat-oboi">
-                                <div class="product-item__top">
-                                    <a href="#">
-                                        <div class="product-item__img">
-                                            <img src="img/popular-product-thumb-04.jpg">
-                                            <img src="img/popular-product-thumb-02.jpg">
-                                        </div>
-                                    </a>
-                                    <div class="product-item__markers">
-                                        <div class="marker-item" style="color: #1A1A16">new</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__body">
-                                    <div class="product-item__title">
-                                        <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
-                                    </div>
-                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
-                                    <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
-                                        <ul class="skuPropertyList">
-                                            <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Желтый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Розовый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-03.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Синий">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-04.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Пёстрый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 4 -->
-                            <div class="product-item product-cat-oboi">
-                                <div class="product-item__top">
-                                    <a href="#">
-                                        <div class="product-item__img">
-                                            <img src="img/popular-product-thumb-03.jpg">
-                                            <img src="img/popular-product-thumb-02.jpg">
-                                        </div>
-                                    </a>
-                                    <div class="product-item__markers"></div>
-                                </div>
-                                <div class="product-item__body">
-                                    <div class="product-item__title">
-                                        <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
-                                    </div>
-                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
-                                    <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
-                                        <ul class="skuPropertyList">
-                                            <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Желтый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Розовый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-03.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Синий">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-04.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Пёстрый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 5 -->
-                            <div class="product-item product-cat-oboi">
-                                <div class="product-item__top">
-                                    <a href="#">
-                                        <div class="product-item__img">
-                                            <img src="img/popular-product-thumb-02.jpg">
-                                            <img src="img/popular-product-thumb-01.jpg">
-                                        </div>
-                                    </a>
-                                    <div class="product-item__markers">
-                                        <div class="marker-item" style="color: #02378F">hit</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__body">
-                                    <div class="product-item__title">
-                                        <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
-                                    </div>
-                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
-                                    <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
-                                        <ul class="skuPropertyList">
-                                            <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Желтый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Розовый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-03.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Синий">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-04.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Пёстрый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- item 6 -->
-                            <div class="product-item product-cat-oboi">
-                                <div class="product-item__top">
-                                    <a href="#">
-                                        <div class="product-item__img">
-                                            <img src="img/popular-product-thumb-01.jpg">
-                                            <img src="img/popular-product-thumb-02.jpg">
-                                        </div>
-                                    </a>
-                                    <div class="product-item__markers">
-                                        <div class="marker-item" style="color: #DF5A5A">sale</div>
-                                    </div>
-                                </div>
-                                <div class="product-item__body">
-                                    <div class="product-item__title">
-                                        <a href="#">Обои AS Creation Boho Love (0.53x10.05)м 36463-4</a>
-                                    </div>
-                                    <div class="product-item__price">2 480 ₽ <span class="measure"> / 1 шт. </span><!-- На случай если у клиента будет параметр "Цены до" - раскомментировать код далее... --><!-- <s class="discount">4 999 ₽</s> --></div>
-                                    <div class="skuProperty" data-name="COLOR" data-level="1" data-highload="N">
-                                        <ul class="skuPropertyList">
-                                            <li class="skuPropertyValue selected" data-name="COLOR" data-value="Красный">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-01.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Желтый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Розовый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-03.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Синий">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-04.png" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="skuPropertyValue" data-name="COLOR" data-value="Пёстрый">
-                                                <a href="#" class="skuPropertyLink">
-                                                    <img src="img/popular-product-sku-thumb-02.png" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- Кнопка -->
-            <div class="section-popular-products__link">
-                <a href="#" class="btn btn-outline">Смотреть все</a>
-            </div>
-        </section>
-
-        <!-- section-shops-location -->
-        <section class="section section-shops-location">
-            <div class="container">
-                <!-- Ссылочка -->
-                <a href="#" class="section-shops-location__link">
-                    <span>Все магазины</span>
-                    <div class="flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15" fill="none">
-                            <path d="M1 14L10.6276 8.03992C10.7453 7.97014 10.839 7.88633 10.903 7.79352C10.967 7.70073 11 7.60088 11 7.49998C11 7.39909 10.967 7.29923 10.903 7.20644C10.839 7.11365 10.7453 7.02984 10.6276 6.96004L1 1" stroke="#7C7D80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                </a>
-                <!-- Слайдер -->
-                <div class="position-relative">
-                    <div class="swiper swiperShopsLocation">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="shop-location__item">
-                                    <div class="shop-location__img">
-                                        <img src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
-                                    </div>
-                                    <div class="shop-location__body">
-                                        <div class="shop-location__body-top">
-                                            <div class="shop-location__title">
-                                                <a href="#">МастерДом на Профсоюзной</a>
-                                            </div>
-                                            <div class="shop-location__tags">
-                                                <div class="item-tag">Обои</div>
-                                                <div class="item-tag">Плитка</div>
-                                                <div class="item-tag">Отдел шторы</div>
-                                                <div class="item-tag">Светильники</div>
-                                                <div class="item-tag">Сантехники</div>
-                                            </div>
-                                        </div>
-                                        <div class="shop-location__body-bottom">
-                                            <div class="shop-location__body-bottom-content">
-                                                <div class="shop-location__hours">ежедневно с 10:00 до 21:00</div>
-                                                <div class="shop-location__address">г. Москва, Нахимовский проспект, д.59а</div>
-                                                <div class="shop-location__metro">
-                                                    <div class="item-metro">Профсоюзная, 15 м</div>
-                                                    <div class="item-metro">Профсоюзная, 15 м</div>
-                                                </div>
-                                                <div class="shop-location__phone">
-                                                    <a href="tel:88003503243">8 (800) 350-32-43</a>
-                                                </div>
-                                            </div>
-                                            <div class="shop-location__link">
-                                                <a href="#">
-                                                    <div class="flex-shrink-0">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
-                                                            <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#ACB2BF"/>
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="shop-location__item">
-                                    <div class="shop-location__img">
-                                        <img src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
-                                    </div>
-                                    <div class="shop-location__body">
-                                        <div class="shop-location__body-top">
-                                            <div class="shop-location__title">
-                                                <a href="#">МастерДом на Профсоюзной пример длинного заголовка</a>
-                                            </div>
-                                            <div class="shop-location__tags">
-                                                <div class="item-tag">Обои</div>
-                                                <div class="item-tag">Плитка</div>
-                                                <div class="item-tag">Отдел шторы</div>
-                                                <div class="item-tag">Светильники</div>
-                                                <div class="item-tag">Сантехники</div>
-                                            </div>
-                                        </div>
-                                        <div class="shop-location__body-bottom">
-                                            <div class="shop-location__body-bottom-content">
-                                                <div class="shop-location__hours">ежедневно с 10:00 до 21:00</div>
-                                                <div class="shop-location__address">г. Москва, Нахимовский проспект, д.59а</div>
-                                                <div class="shop-location__metro">
-                                                    <div class="item-metro">Профсоюзная, 15 м</div>
-                                                    <div class="item-metro">Профсоюзная, 15 м</div>
-                                                </div>
-                                                <div class="shop-location__phone">
-                                                    <a href="tel:88003503243">8 (800) 350-32-43</a>
-                                                </div>
-                                            </div>
-                                            <div class="shop-location__link">
-                                                <a href="#">
-                                                    <div class="flex-shrink-0">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
-                                                            <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#ACB2BF"/>
-                                                        </svg>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Навигация слайдера -->
-                    <div class="swiperShopsLocation-navigation">
-                        <div class="swiperShopsLocation-next">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
-                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                            </svg>
-                        </div>
-                        <div class="swiperShopsLocation-prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
-                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- section-blog-slider -->
-        <section class="section section-blog-slider">
-            <!-- Заголовок -->
-            <h2 class="title">Блог</h2>
-            <!-- Навигация табы -->
-            <div class="blog-slider-tab-nav">
-                <div class="scrollable-wrapper">
-                    <div class="scrollable-item">
-                        <a href="#" class="nav-link">Все</a>
-                    </div>
-                    <div class="scrollable-item">
-                        <a href="#" class="nav-link">Новости</a>
-                    </div>
-                    <div class="scrollable-item">
-                        <a href="#" class="nav-link">Статьи</a>
-                    </div>
-                    <div class="scrollable-item">
-                        <a href="#" class="nav-link">События</a>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <!-- Слайдер -->
-                <div class="swiper swiperBlogSlider">
-                    <div class="swiper-wrapper">
-                        <!-- item-01 -->
-                        <div class="swiper-slide">
-                            <div class="blog-slide-item">
-                                <div class="blog-slide-item__img">
-                                    <a href="#">
-                                        <img src="img/blog-thumb-01.jpg" alt="Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете">
-                                    </a>
-                                </div>
-                                <div class="blog-slide-item__body">
-                                    <div class="blog-slide-item__tags">
-                                        <a href="#">Новости</a>
-                                    </div>
-                                    <div class="blog-slide-item__title">
-                                        <a href="#">Монохромный интерьер: 6 важных рекомендаций по оформлению пространства в одном цвете</a>
-                                    </div>
-                                    <div class="blog-slide-item__read-link">
-                                        <a href="#">Читать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item-02 -->
-                        <div class="swiper-slide">
-                            <div class="blog-slide-item">
-                                <div class="blog-slide-item__img">
-                                    <a href="#">
-                                        <img src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                    </a>
-                                </div>
-                                <div class="blog-slide-item__body">
-                                    <div class="blog-slide-item__tags">
-                                        <a href="#">Акции</a>
-                                    </div>
-                                    <div class="blog-slide-item__title">
-                                        <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                    </div>
-                                    <div class="blog-slide-item__read-link">
-                                        <a href="#">Читать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item-03 -->
-                        <div class="swiper-slide">
-                            <div class="blog-slide-item">
-                                <div class="blog-slide-item__img">
-                                    <a href="#">
-                                        <img src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
-                                    </a>
-                                </div>
-                                <div class="blog-slide-item__body">
-                                    <div class="blog-slide-item__tags">
-                                        <a href="#">мероприятия</a>
-                                    </div>
-                                    <div class="blog-slide-item__title">
-                                        <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
-                                    </div>
-                                    <div class="blog-slide-item__read-link">
-                                        <a href="#">Читать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item-04 -->
-                        <div class="swiper-slide">
-                            <div class="blog-slide-item">
-                                <div class="blog-slide-item__img">
-                                    <a href="#">
-                                        <img src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                    </a>
-                                </div>
-                                <div class="blog-slide-item__body">
-                                    <div class="blog-slide-item__tags">
-                                        <a href="#">мероприятия</a>
-                                    </div>
-                                    <div class="blog-slide-item__title">
-                                        <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                    </div>
-                                    <div class="blog-slide-item__read-link">
-                                        <a href="#">Читать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item-05 -->
-                        <div class="swiper-slide">
-                            <div class="blog-slide-item">
-                                <div class="blog-slide-item__img">
-                                    <a href="#">
-                                        <img src="img/blog-thumb-02.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                    </a>
-                                </div>
-                                <div class="blog-slide-item__body">
-                                    <div class="blog-slide-item__tags">
-                                        <a href="#">Акции</a>
-                                    </div>
-                                    <div class="blog-slide-item__title">
-                                        <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                    </div>
-                                    <div class="blog-slide-item__read-link">
-                                        <a href="#">Читать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item-06 -->
-                        <div class="swiper-slide">
-                            <div class="blog-slide-item">
-                                <div class="blog-slide-item__img">
-                                    <a href="#">
-                                        <img src="img/blog-thumb-03.jpg" alt="ТОП-9 трендов современной планировки: что предлагают застройщики">
-                                    </a>
-                                </div>
-                                <div class="blog-slide-item__body">
-                                    <div class="blog-slide-item__tags">
-                                        <a href="#">мероприятия</a>
-                                    </div>
-                                    <div class="blog-slide-item__title">
-                                        <a href="#">ТОП-9 трендов современной планировки: что предлагают застройщики</a>
-                                    </div>
-                                    <div class="blog-slide-item__read-link">
-                                        <a href="#">Читать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- item-07 -->
-                        <div class="swiper-slide">
-                            <div class="blog-slide-item">
-                                <div class="blog-slide-item__img">
-                                    <a href="#">
-                                        <img src="img/blog-thumb-04.jpg" alt="Камень и бетон в новых коллекциях керамогранита">
-                                    </a>
-                                </div>
-                                <div class="blog-slide-item__body">
-                                    <div class="blog-slide-item__tags">
-                                        <a href="#">мероприятия</a>
-                                    </div>
-                                    <div class="blog-slide-item__title">
-                                        <a href="#">Камень и бетон в новых коллекциях керамогранита</a>
-                                    </div>
-                                    <div class="blog-slide-item__read-link">
-                                        <a href="#">Читать</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Навигация слайдера -->
-                    <div class="swiperBlogSlider-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
-                            <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                        </svg>
-                    </div>
-                    <!-- Навигация слайдера -->
-                    <div class="swiperBlogSlider-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
-                            <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                        </svg>
-                    </div>
                 </div>
             </div>
         </section>
