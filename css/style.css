@@ -1865,14 +1865,11 @@ textarea {
 }
 
 .popular-products-tab-nav .nav-link {
-    padding: 2px 0px;
     font-family: var(--bs-title-font-family);
     font-size: 24px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.24px;
-    border-radius: 0;
-    border-bottom: 1px solid transparent;
 }
 
 .popular-products-tab-nav .nav-link span {
@@ -1942,7 +1939,7 @@ textarea {
     flex-direction: column;
 }
 
-.product-item__pretop {
+.product-item__top {
     display: flex;
     align-items: end;
     justify-content: space-between;
@@ -1952,11 +1949,11 @@ textarea {
     margin-bottom: 8px;
 }
 
-.product-item__brand {
+.product-item__top-brand {
     text-transform: uppercase;
 }
 
-.product-item__top {
+.product-item__header {
     position: relative;
     margin-bottom: 8px;
 }
@@ -2035,13 +2032,11 @@ textarea {
 
 .product-item__body {
     flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-bottom: 12px;
     padding: 0;
 }
 
-.product-item__sku-and-like {
+.product-item__body-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2092,18 +2087,21 @@ textarea {
     letter-spacing: 0.12px;
 }
 
+.product-item__footer {
+    position: relative;
+}
+
 .product-item__price {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-end;
     gap: 4px;
-    margin-top: 12px;
-    margin-bottom: 12px;
     font-size: 12px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.12px;
+    margin-bottom: 12px;
 }
 
 .product-item__btn {
@@ -2141,7 +2139,7 @@ textarea {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .product-item__pretop {
+    .product-item__top {
         font-size: 18px;
     }
 
@@ -2203,7 +2201,7 @@ textarea {
 
 /* product-cat-oboi ============================ */
 
-.product-cat-oboi .product-item__top {
+.product-cat-oboi .product-item__header {
     margin-bottom: 12px;
 }
 
@@ -2239,7 +2237,7 @@ textarea {
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.24px;
-    margin-bottom: 0;
+    margin-bottom: 12px;
 }
 
 .product-cat-oboi .product-item__price {
@@ -2249,7 +2247,7 @@ textarea {
     font-size: 18px;
     font-weight: 500;
     line-height: normal;
-    margin-top: 12px;
+    letter-spacing: normal;
     margin-bottom: 0;
 }
 
@@ -2259,10 +2257,6 @@ textarea {
     color: #888;
     font-size: 14px;
     font-weight: 400;
-}
-
-.product-cat-oboi .skuProperty {
-    margin-top: 12px;
 }
 
 .product-cat-oboi .skuProperty .skuPropertyList {
@@ -2577,14 +2571,11 @@ textarea {
 }
 
 .blog-slider-nav .nav-link {
-    padding: 2px 0px;
     font-family: var(--bs-title-font-family);
     font-size: 28px;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.28px;
-    border-radius: 0;
-    border-bottom: 1px solid transparent;
 }
 
 .swiperBlogSlider {
@@ -2766,6 +2757,10 @@ textarea {
 
 .section-catalog-body {}
 
+/* Колонка слева */
+
+/* Колонка слева: Категории */
+
 .catalog-categories-nav {
     --bs-nav-link-color: var(--bs-secondary);
     --bs-nav-link-hover-color: var(--bs-primary);
@@ -2780,6 +2775,48 @@ textarea {
 .catalog-categories-nav .scrollable-item:not(:last-child) {
     margin-right: 12px;
 }
+
+.catalog-categories-nav .nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Колонка слева: Фильтры */
+
+
+/* Колонка слева: Каталоги */
+
+.pdf-catalogs-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.catalog-pdf-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-pdf-item__title {
+    color: #1A1A16;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+/* .catalog-pdf-item__img {} */
+
+.catalog-pdf-item__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Колонка справа */
 
 .section-catalog-body__sorting {
     display: flex;
@@ -2823,8 +2860,22 @@ textarea {
         width: 22%;
     }
 
-    .catalog-categories-nav .scrollable-wrapper {
+    .catalog-categories-nav .scrollable-container {
+        overflow: visible;
+        touch-action: inherit;
+    }
 
+    .catalog-categories-nav .scrollable-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        white-space: normal;
+        overflow-x: visible;
+        gap: 12px;
+        padding: 0;
+    }
+
+    .catalog-categories-nav .scrollable-item:not(:last-child) {
+        margin-right: 0;
     }
 
     .section-catalog-body .col-lg-75 {
