@@ -142,6 +142,21 @@ function hideSubMenu() {
 }
 
 //////////////////////////////////////////////////////////////////
+// Кнопка "Нравится" у товаров
+
+const likeButtons = document.querySelectorAll('.product-item__like-btn');
+
+likeButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        if (button.classList.contains('active')) {
+            button.classList.remove('active');
+        } else {
+            button.classList.add('active');
+        }
+    });
+});
+
+//////////////////////////////////////////////////////////////////
 // [ Swiper Sliders ]
 
 var swiperHeroSlider = new Swiper(".swiperHeroSlider", {
