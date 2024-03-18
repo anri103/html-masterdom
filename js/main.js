@@ -142,12 +142,22 @@ function hideSubMenu() {
 }
 
 //////////////////////////////////////////////////////////////////
+// На странице каталога всплывашка сбоку от фильтров
+
+document.querySelectorAll('.smartfilter .hint').forEach(function (element) {
+    element.addEventListener('click', function () {
+        this.parentNode.classList.toggle('open');
+        this.nextElementSibling.classList.toggle('filter_block');
+    });
+});
+
+//////////////////////////////////////////////////////////////////
 // Кнопка "Нравится" у товаров
 
 const likeButtons = document.querySelectorAll('.product-item__like-btn');
 
-likeButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
+likeButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
         if (button.classList.contains('active')) {
             button.classList.remove('active');
         } else {

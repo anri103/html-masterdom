@@ -897,65 +897,287 @@
 
                     <!-- Фильтры (колонка слева) -->
                     <div class="col-lg-20">
+                        <div class="d-flex flex-column" style="gap: 22px;">
 
-                        <!-- Категории -->
-                        <div class="section-catalog-body__sidebar-widget">
-                            <div class="catalog-categories-nav scrollable-container">
-                                <div class="scrollable-wrapper">
-                                    <div class="scrollable-item">
-                                        <a href="#" class="nav-link"><span>Затирки</span></a>
-                                    </div>
-                                    <div class="scrollable-item">
-                                        <a href="#" class="nav-link"><span>Клей для плитки</span></a>
-                                    </div>
-                                    <div class="scrollable-item">
-                                        <a href="#" class="nav-link"><span>Пропитки и чистящие средства</span></a>
-                                    </div>
-                                    <div class="scrollable-item">
-                                        <a href="#" class="nav-link"><span>Аутлет</span></a>
+                            <!-- Категории -->
+                            <!-- Если хотим скрыть, то присваиваем d-none d-lg-block -->
+                            <div class="section-catalog-body__sidebar-widget">
+                                <div class="catalog-categories-nav scrollable-container">
+                                    <div class="scrollable-wrapper">
+                                        <div class="scrollable-item">
+                                            <a href="#" class="nav-link"><span>Затирки</span></a>
+                                        </div>
+                                        <div class="scrollable-item">
+                                            <a href="#" class="nav-link"><span>Клей для плитки</span></a>
+                                        </div>
+                                        <div class="scrollable-item">
+                                            <a href="#" class="nav-link"><span>Пропитки и чистящие средства</span></a>
+                                        </div>
+                                        <div class="scrollable-item">
+                                            <a href="#" class="nav-link"><span>Аутлет</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+    
+                            <!-- Фильтры -->
+                            <!-- Если хотим скрыть, то присваиваем d-none d-lg-block -->
+                            <div class="section-catalog-body__sidebar-widget">
+                                <style>
 
-                        <!-- Фильтры -->
-                        <div class="section-catalog-body__sidebar-widget">
-                            <div>Фильтры</div>
-                        </div>
+                                    #offcanvasSmartFilter .offcanvas-title {
+                                        color: #1A1A16;
+                                        font-size: 24px;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                        text-transform: uppercase;
+                                    }
 
-                        <!-- Каталоги -->
-                        <div class="section-catalog-body__sidebar-widget">
-                            <div class="pdf-catalogs-wrapper">
-                                <!-- item 1 -->
-                                <div class="catalog-pdf-item">
-                                    <div class="catalog-pdf-item__title">Новинки от Coliseum</div>
-                                    <a href="#">
-                                        <div class="catalog-pdf-item__img">
-                                            <img src="img/catalog-pdf-cover-01.jpg" alt="Новинки от Coliseum">
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- item 2 -->
-                                <div class="catalog-pdf-item">
-                                    <div class="catalog-pdf-item__title">Новинки от Coliseum</div>
-                                    <a href="#">
-                                        <div class="catalog-pdf-item__img">
-                                            <img src="img/catalog-pdf-cover-02.jpg" alt="Новинки от Coliseum">
-                                        </div>
-                                    </a>
-                                </div>
-                                <!-- item 3 -->
-                                <div class="catalog-pdf-item">
-                                    <div class="catalog-pdf-item__title">Новинки от Coliseum</div>
-                                    <a href="#">
-                                        <div class="catalog-pdf-item__img">
-                                            <img src="img/catalog-pdf-cover-03.jpg" alt="Новинки от Coliseum">
-                                        </div>
-                                    </a>
+                                    .catalog-form-smartfilter__wrapper {
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+
+                                    .bx-filter .bx-filter-parameters-box {
+                                        position: relative;
+                                        padding: 11px 0;
+                                    }
+
+                                    .bx-filter .bx-filter-popup-result {
+                                        padding: 0 10px;
+                                        white-space: nowrap;
+                                        min-height: 37px;
+                                    }
+
+                                    .bx-filter-popup-result.bx-tooltip {
+                                        position: absolute;
+                                        display: none;
+                                        font-size: 12px;
+                                        line-height: normal;
+                                        opacity: 0;
+                                        visibility: visible;
+                                        z-index: 1030;
+                                    }
+
+                                    .bx-filter .bx-filter-popup-result.left {
+                                        left: 100%;
+                                        top: -30px;
+                                    }
+
+                                    .bx-filter-popup-result.bx-tooltip.left {
+                                        margin-left: 3px;
+                                    }
+
+                                    .bx-filter-popup-result .tooltip-inner {
+                                        width: 220px;
+                                        padding: 15px;
+                                        text-align: left;
+                                        text-decoration: none;
+                                        border: 1px solid #ACB2BF;
+                                        border-radius: 0;
+                                        background-color: #fff;
+                                    }
+
+                                    .bx-filter-popup-result .tooltip-inner .tooltip-content {
+                                        text-align: center;
+                                        color: #474A51;
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        line-height: normal;
+                                        margin-bottom: 12px;
+                                    }
+
+                                    .bx-filter-popup-result.bx-tooltip.left .tooltip-arrow {
+                                        position: absolute;
+                                        top: 50%;
+                                        left: -10px;
+                                        margin-top: -13px;
+                                    }
+                                    
+                                    @media (min-width: 992px) {
+
+                                        #offcanvasSmartFilter {
+                                            position: relative;
+                                            width: auto;
+                                            border-right: 0;
+                                            visibility: visible;
+                                            transform: translateX(0px);
+                                            transition: none;
+                                        }
+
+                                        #offcanvasSmartFilter .offcanvas-header {
+                                            display: none;
+                                        }
+
+                                        #offcanvasSmartFilter .offcanvas-body {
+                                            padding: 0;
+                                            overflow: visible;
+                                        }
+
+                                        .bx-filter-popup-result.bx-tooltip.in {
+                                            display: block;
+                                            opacity: 1;
+                                        }
+                                    }
+                                </style>
+                                <div class="offcanvas offcanvas-start" id="offcanvasSmartFilter" tabindex="-1">
+                                    <div class="offcanvas-header justify-content-end">
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="offcanvas-title">Фильтры</div>
+                                        <form action="#" method="get" class="catalog-form-smartfilter bx-filter">
+                                            <div class="smartfilter">
+                                                <div class="catalog-form-smartfilter__wrapper">
+            
+                                                    <!-- Секция фильтра -->
+                                                    <div class="bx-filter-parameters-box">
+                                                        <!-- Контейнер всплывашки -->
+                                                        <span class="bx-filter-container-modef">
+                                                            <div class="bx-tooltip in bx-filter-popup-result left tooltipstered">
+                                                                <div class="tooltip-inner">
+                                                                    <div class="tooltip-content"><span>46</span> товаров</div>
+                                                                    <a class="btn btn-primary w-100 p-2" href="#" target="">применить</a>
+                                                                    <span class="tooltip-arrow">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
+                                                                            <path d="M0.999999 13.5L21.25 1.80866L21.25 25.1913L0.999999 13.5Z" fill="white"/>
+                                                                            <path d="M21.25 1.80872L0.999999 13.5001L21.25 25.1914" stroke="#ACB2BF"/>
+                                                                        </svg>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </span>
+    
+                                                        <div class="filter_parameters_box_title collapsed" data-bs-toggle="collapse" data-bs-target="#smartFilter-razmer" aria-expanded="false">
+                                                            <span>Размер</span>
+                                                            <span class="filter_arrow">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                    <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="filter_block collapse" id="smartFilter-razmer">
+                                                            <div class="filter_flex_box">
+                                                                <div class="checkbox filter_input_checkbox">
+                                                                    <label class="filter_param_label">
+                                                                        <input type="checkbox" data-value="Размер 1">
+                                                                        <span>Размер 1</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox filter_input_checkbox">
+                                                                    <label class="filter_param_label">
+                                                                        <input type="checkbox" data-value="Размер 2">
+                                                                        <span>Размер 2</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Секция фильтра -->
+                                                    <div class="bx-filter-parameters-box">
+                                                        <!-- Контейнер всплывашки -->
+                                                        <span class="bx-filter-container-modef"></span>
+    
+                                                        <div class="filter_parameters_box_title collapsed" data-bs-toggle="collapse" data-bs-target="#smartFilter-poverhnost" aria-expanded="false">
+                                                            <span>Поверхность</span>
+                                                            <span class="filter_arrow">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                    <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="filter_block collapse" id="smartFilter-poverhnost">
+                                                            <div class="filter_flex_box">
+                                                                <div class="checkbox filter_input_checkbox">
+                                                                    <label class="filter_param_label">
+                                                                        <input type="checkbox" data-value="Поверхность 1">
+                                                                        <span>Поверхность 1</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox filter_input_checkbox">
+                                                                    <label class="filter_param_label">
+                                                                        <input type="checkbox" data-value="Поверхность 2">
+                                                                        <span>Поверхность 2</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Секция фильтра -->
+                                                    <div class="bx-filter-parameters-box">
+                                                        <!-- Контейнер всплывашки -->
+                                                        <span class="bx-filter-container-modef"></span>
+    
+                                                        <div class="filter_parameters_box_title" data-bs-toggle="collapse" data-bs-target="#smartFilter-material" aria-expanded="true">
+                                                            <span>Материал</span>
+                                                            <span class="filter_arrow">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                    <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>
+                                                        </div>
+                                                        <div class="filter_block collapse show" id="smartFilter-material">
+                                                            <div class="filter_flex_box">
+                                                                <div class="checkbox filter_input_checkbox">
+                                                                    <label class="filter_param_label">
+                                                                        <input type="checkbox" data-value="Материал 1">
+                                                                        <span>Материал 1</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="checkbox filter_input_checkbox">
+                                                                    <label class="filter_param_label">
+                                                                        <input type="checkbox" data-value="Материал 2">
+                                                                        <span>Материал 2</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+            
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+    
+                            <!-- Каталоги -->
+                            <!-- Если хотим скрыть, то присваиваем d-none d-lg-block -->
+                            <div class="section-catalog-body__sidebar-widget d-none d-lg-block">
+                                <div class="pdf-catalogs-wrapper" style="margin-top: 60px;">
+                                    <!-- item 1 -->
+                                    <div class="catalog-pdf-item">
+                                        <div class="catalog-pdf-item__title">Новинки от Coliseum</div>
+                                        <a href="#">
+                                            <div class="catalog-pdf-item__img">
+                                                <img src="img/catalog-pdf-cover-01.jpg" alt="Новинки от Coliseum">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- item 2 -->
+                                    <div class="catalog-pdf-item">
+                                        <div class="catalog-pdf-item__title">Новинки от Coliseum</div>
+                                        <a href="#">
+                                            <div class="catalog-pdf-item__img">
+                                                <img src="img/catalog-pdf-cover-02.jpg" alt="Новинки от Coliseum">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- item 3 -->
+                                    <div class="catalog-pdf-item">
+                                        <div class="catalog-pdf-item__title">Новинки от Coliseum</div>
+                                        <a href="#">
+                                            <div class="catalog-pdf-item__img">
+                                                <img src="img/catalog-pdf-cover-03.jpg" alt="Новинки от Coliseum">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
                     </div>
 
                     <!-- Сетка товаров (колонка справа) -->
@@ -963,7 +1185,7 @@
 
                         <!-- Сортировка -->
                         <div class="section-catalog-body__sorting">
-                            <button type="button" class="btn btn-catalog-filters">
+                            <button type="button" class="btn btn-catalog-filters" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSmartFilter">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
                                     <g>
                                       <path d="M18.3206 1.17871H0.677734L7.46345 10.6787V18.8216L11.5349 16.1073V10.6787L18.3206 1.17871Z" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
