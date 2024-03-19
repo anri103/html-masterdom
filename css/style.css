@@ -440,19 +440,15 @@ textarea {
 }
 
 .mobile-collapse-menu__body {
-    margin-bottom: 150px;
+    position: relative;
+    margin-bottom: 100px;
 }
 
 /* Мобильное меню */
 /* Конетейнер: Обычное меню */
 
 .mobile-collapse-menu__menu-container {
-    display: none;
-    transform: translateX(0%);
-}
-
-.mobile-collapse-menu__menu-container.open {
-    display: block;
+    position: relative;
 }
 
 .mobile-catalog-menu-invoker {
@@ -476,6 +472,7 @@ textarea {
 
 .mobile-main-menu-section > li > a {
     display: block;
+    padding: 0 12px;
     font-family: var(--bs-title-font-family);
     font-size: 18px;
     font-weight: 400;
@@ -529,6 +526,7 @@ textarea {
 
 .mobile-main-menu-section .submenu a {
     display: block;
+    padding: 0 12px;
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
@@ -538,7 +536,13 @@ textarea {
 /* Конетейнер: Каталог */
 
 .mobile-collapse-menu__catalog-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: none;
+    width: 100%;
+    height: 100%;
+    background: #fff;
     transform: translateX(0%);
 }
 
@@ -566,17 +570,12 @@ textarea {
     margin-bottom: 22px;
 }
 
-.catalog-menu-cat-btn {
-    display: none;
-}
-
-.catalog-menu-cat-btn.active {
+.catalog-menu-subs-close {
     display: flex;
     margin-bottom: 22px;
 }
 
 .mobile-catalog-menu-section {
-    position: relative;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -601,19 +600,32 @@ textarea {
     padding: 6px 0;
 }
 
-.mobile-catalog-menu-section a.catalog-menu-item__link {
+.mobile-catalog-menu-section a.h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+.mobile-catalog-menu-section a.h5 svg {
+    width: 7px !important;
+    fill: transparent;
+    stroke: #212121;
+    margin-left: 4px;
+}
+
+.mobile-catalog-menu-section .catalog-menu-item__link {
     position: relative;
     font-size: 18px;
     line-height: normal;
     font-weight: 500;
     text-transform: uppercase;
-    padding: 22px 0;
+    padding: 22px 12px;
 }
 
-.mobile-catalog-menu-section a.catalog-menu-item__link svg {
+.mobile-catalog-menu-section .catalog-menu-item__link svg {
     position: absolute;
     top: 22px;
-    right: 7px;
+    right: 12px;
     bottom: 0;
     margin-top: 2px;
     width: 9px !important;
@@ -624,22 +636,18 @@ textarea {
 
 .mobile-catalog-menu-section .catalog-menu-subs {
     position: absolute;
-    display: none;
     top: 0;
     left: 0;
+    display: none;
     width: 100%;
     height: 100%;
-    padding: 0 12px;
-    transform: translateX(0%);
     background: #fff;
-    z-index: 50;
-    transition: all 0.5s ease-in-out;
+    transform: translateX(0%);
+    z-index: 10;
 }
 
-.mobile-catalog-menu-section .catalog-menu-subs.active {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 22px;
+.mobile-catalog-menu-section .catalog-menu-subs.open {
+    display: block;
 }
 
 @keyframes slideLeft {
@@ -661,28 +669,6 @@ textarea {
     100% {
         opacity: 0;
         transform: translateX(100%);
-    }
-}
-
-@keyframes slideLeftReverse {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
-
-@keyframes slideRightReverse {
-    0% {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-100%);
     }
 }
 

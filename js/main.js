@@ -64,82 +64,40 @@ mobileSubmenuTogglers.forEach(toggler => {
 //////////////////////////////////////////////////////////////////
 // Мобильное меню "Каталог"
 
-const mobMainMenuBody = document.querySelector('.mobile-collapse-menu__body');
-const mobCatalogInvoker = document.querySelector('.mobile-catalog-menu-invoker');
-const mobMainMenu = document.querySelector('.mobile-collapse-menu__menu-container');
-const mobCatalogMenu = document.querySelector('.mobile-collapse-menu__catalog-container');
-const mobCatalogClose = document.querySelector('.mobile-catalog-menu-close');
+const invokerCatalogBtn = document.querySelector('.mobile-catalog-menu-invoker');
+const closeCatalogBtn = document.querySelector('.mobile-catalog-menu-close');
+const catalogContainer = document.querySelector('.mobile-collapse-menu__catalog-container');
 
-mobCatalogInvoker.addEventListener('click', (e) => {
-    e.preventDefault();
-    showMobCatalogMenu();
+invokerCatalogBtn.addEventListener('click', function() {
+    catalogContainer.classList.add('open');
+    catalogContainer.style.animation = 'slideLeft 0.5s ease forwards';
 });
 
-function showMobCatalogMenu() {
-    mobCatalogInvoker.classList.add('d-none');
-    mobMainMenu.classList.remove('open');
-    mobMainMenu.style.animation = 'slideRightReverse 0.5s ease forwards';
-    mobCatalogMenu.classList.add('open');
-    mobCatalogMenu.style.animation = 'slideLeft 0.5s ease forwards';
-}
-
-mobCatalogClose.addEventListener('click', (e) => {
-    e.preventDefault();
-    hideMobCatalogMenu();
-});
-
-function hideMobCatalogMenu() {
-    mobCatalogInvoker.classList.remove('d-none');
-    mobMainMenu.classList.add('open');
-    mobMainMenu.style.animation = 'slideLeftReverse 0.5s ease forwards';
-    mobCatalogMenu.classList.remove('open');
-    mobCatalogMenu.style.animation = 'slideRight 0.5s ease forwards';
-}
-
-//////////////////////////////////////////////////////////////////
-// Мобильное меню "Каталог", реализация многоуровневого перехода
-
-const menuArrow = document.querySelector('.catalog-menu-cat-btn');
-const menuSection = document.querySelector('.mobile-catalog-menu-section');
-let subMenu;
-
-const mainMobileLink = menuSection.querySelectorAll('.catalog-menu-item-has-children .catalog-menu-item__link');
-mainMobileLink.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-    });
-});
-
-menuSection.addEventListener('click', (e) => {
-    if (e.target.closest('.catalog-menu-item-has-children')) {
-        const hasChildren = e.target.closest('.catalog-menu-item-has-children');
-        showSubMenu(hasChildren);
-    }
-});
-
-menuArrow.addEventListener('click', () => {
-    hideSubMenu();
-});
-
-function showSubMenu(hasChildren) {
-    subMenu = hasChildren.querySelector('.catalog-menu-subs');
-    subMenu.classList.add('active');
-    subMenu.style.animation = 'slideLeft 0.5s ease forwards';
-    const menuTitle = hasChildren.querySelector('svg').parentNode.childNodes[0].textContent;
-    document.querySelector('.catalog-menu-cat-btn').classList.add('active');
-    document.querySelector('.catalog-menu-cat-btn__title').innerHTML = menuTitle;
-    mobCatalogClose.classList.add('d-none');
-}
-
-function hideSubMenu() {
-    subMenu.style.animation = 'slideRight 0.5s ease forwards';
+closeCatalogBtn.addEventListener('click', function() {
     setTimeout(() => {
-        subMenu.classList.remove('active');
+        catalogContainer.classList.remove('open');
     }, 300);
-    document.querySelector('.catalog-menu-cat-btn').classList.remove('active');
-    document.querySelector('.catalog-menu-cat-btn__title').innerHTML = '';
-    mobCatalogClose.classList.remove('d-none');
-}
+    catalogContainer.style.animation = 'slideRight 0.5s ease forwards';
+});
+
+document.querySelectorAll('.catalog-menu-item__link').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const subsBlock = link.nextElementSibling;
+    subsBlock.classList.add('open');
+    subsBlock.style.animation = 'slideLeft 0.5s ease forwards';
+  });
+});
+
+document.querySelectorAll('.catalog-menu-subs-close').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    const subsBlock = btn.parentElement;
+    setTimeout(() => {
+        subsBlock.classList.remove('open');
+    }, 300);
+    subsBlock.style.animation = 'slideRight 0.5s ease forwards';
+  });
+});
 
 //////////////////////////////////////////////////////////////////
 // На странице каталога всплывашка сбоку от фильтров
