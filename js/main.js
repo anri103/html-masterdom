@@ -100,13 +100,19 @@ document.querySelectorAll('.catalog-menu-subs-close').forEach(function(btn) {
 });
 
 //////////////////////////////////////////////////////////////////
-// На странице каталога всплывашка сбоку от фильтров
+// На странице каталога кнопка, раскрывающая все фильтры
 
-document.querySelectorAll('.smartfilter .hint').forEach(function (element) {
-    element.addEventListener('click', function () {
-        this.parentNode.classList.toggle('open');
-        this.nextElementSibling.classList.toggle('filter_block');
-    });
+const hiddenSmartfilterBtn = document.getElementById('btn-toggle-hidden-smartfilter-wrapper');
+const spanToChange = hiddenSmartfilterBtn.querySelector('span');
+
+hiddenSmartfilterBtn.addEventListener('click', () => {
+    const buttonText = spanToChange.textContent;
+    
+    if (buttonText === 'Все фильтры') {
+        spanToChange.textContent = 'Свернуть фильтры';
+    } else {
+        spanToChange.textContent = 'Все фильтры';
+    }
 });
 
 //////////////////////////////////////////////////////////////////
