@@ -1176,12 +1176,12 @@
                                         flex-direction: column;
                                     }
 
-                                    .bx-filter .bx-filter-parameters-box {
+                                    .bx-filter-parameters-box {
                                         position: relative;
                                         margin-bottom: 22px;
                                     }
 
-                                    .bx-filter .bx-filter-popup-result {
+                                    .bx-filter-popup-result {
                                         padding: 0 10px;
                                         white-space: nowrap;
                                         min-height: 37px;
@@ -1197,7 +1197,7 @@
                                         z-index: 1030;
                                     }
 
-                                    .bx-filter .bx-filter-popup-result.left {
+                                    .bx-filter-popup-result.left {
                                         left: 100%;
                                         top: -40px;
                                     }
@@ -1322,9 +1322,73 @@
                                     <div class="offcanvas-body">
                                         <div class="offcanvas-title">Фильтры</div>
 
-                                        <form action="#" method="get" class="catalog-form-smartfilter bx-filter">
+                                        <form action="#" method="get" class="catalog-form-smartfilter">
                                             <div class="smartfilter">
                                                 <div class="catalog-form-smartfilter__wrapper">
+
+                                                    <!-- Секция фильтра -->
+                                                    <!-- Цена -->
+                                                    <!-- <div class="row">
+                                                        <div class="filter-price-block col-lg-12 bx-filter-parameters-box bx-active">
+
+                                                        <span class="bx-filter-container-modef"></span>
+
+                                                        <div class="bx-filter-parameters-box-title">
+                                                            <span>Цена</span>
+                                                        </div>
+                                                        <div class="bx-filter-block" data-role="bx_filter_block">
+                                                            <div class="row bx-filter-parameters-box-container">
+                                                                <div class="col-5 bx-filter-parameters-box-container-block bx-left">
+                                                                    <i class="bx-ft-sub">От</i>
+                                                                    <div class="bx-filter-input-container">
+                                                                        <input
+                                                                            class="min-price"
+                                                                            type="text"
+                                                                            name="arFilterCatalog_P1_MIN"
+                                                                            id="arFilterCatalog_P1_MIN"
+                                                                            value=""
+                                                                            placeholder="168"
+                                                                            size="5"
+                                                                            onkeyup="smartFilter.keyup(this)"
+                                                                        />
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="price-separator col-2"></div>
+
+                                                                <div class="col-5 bx-filter-parameters-box-container-block bx-right">
+                                                                    <i class="bx-ft-sub">До</i>
+                                                                    <div class="bx-filter-input-container">
+                                                                        <input
+                                                                            class="max-price"
+                                                                            type="text"
+                                                                            name="arFilterCatalog_P1_MAX"
+                                                                            id="arFilterCatalog_P1_MAX"
+                                                                            value=""
+                                                                            placeholder="7000"
+                                                                            size="5"
+                                                                            onkeyup="smartFilter.keyup(this)"
+                                                                        />
+                                                                    </div>
+                                                                </div>
+                            
+                                                                <div class="col-12 bx-ui-slider-track-container">
+                                                                    <div class="bx-ui-slider-track" id="drag_track_c4ca4238a0b923820dcc509a6f75849b">
+                                                                        <div class="bx-ui-slider-part p1"><span>168</span></div>
+                                                                        <div class="bx-ui-slider-part p2"><span>7 000</span></div>
+                                                                        
+                                                                        <div class="bx-ui-slider-pricebar-vd" style="left: 0;right: 0;" id="colorUnavailableActive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                                                                        <div class="bx-ui-slider-pricebar-vn" style="left: 0;right: 0;" id="colorAvailableInactive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                                                                        <div class="bx-ui-slider-pricebar-v"  style="left: 0;right: 0;" id="colorAvailableActive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                                                                        <div class="bx-ui-slider-range" id="drag_tracker_c4ca4238a0b923820dcc509a6f75849b"  style="left: 0%; right: 0%;">
+                                                                            <a class="bx-ui-slider-handle left"  style="left:0;" href="javascript:void(0)" id="left_slider_c4ca4238a0b923820dcc509a6f75849b"></a>
+                                                                            <a class="bx-ui-slider-handle right" style="right:0;" href="javascript:void(0)" id="right_slider_c4ca4238a0b923820dcc509a6f75849b"></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div> -->
 
                                                     <!-- Секция фильтра -->
                                                     <!-- Размер -->
@@ -3028,7 +3092,51 @@
 
                         <!-- Пагинация -->
                         <div class="section-catalog-body__pagination">
-                            123
+                            <nav class="pagination-nav">
+                                <ul class="pagination-list">
+                                    <li>
+                                        <a href="#" class="pagination-item prev">
+                                            <span class="me-2">
+                                                <svg width="13" height="22" style="transform: rotate(180deg);">
+                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                </svg>
+                                            </span>
+                                            Назад
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item active">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item">5</a>
+                                    </li>
+                                    <li>
+                                        <span class="pagination-item dots">...</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item">10</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item next">
+                                            Дальше
+                                            <span class="ms-2">
+                                                <svg width="13" height="22">
+                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
 
                     </div>
