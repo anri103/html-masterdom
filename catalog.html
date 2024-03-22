@@ -1162,13 +1162,47 @@
                                         border-right: none;
                                     }
 
-                                    #offcanvasSmartFilter .offcanvas-title {
+                                    #offcanvasSmartFilter .offcanvas-top {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        align-items: center;
+                                        gap: 8px 16px;
+                                        margin-bottom: 22px;
+                                    }
+
+                                    #offcanvasSmartFilter .offcanvas-top .offcanvas-title {
                                         color: #1A1A16;
                                         font-size: 24px;
                                         font-weight: 500;
                                         line-height: normal;
                                         text-transform: uppercase;
-                                        margin-bottom: 22px;
+                                    }
+
+                                    #offcanvasSmartFilter .offcanvas-top .reset_fltr {
+                                        position: relative;
+                                        display: inline-block;
+                                        color: #474A51;
+                                        font-size: 18px;
+                                        padding-left: 24px;
+                                    }
+
+                                    #offcanvasSmartFilter .offcanvas-top .reset_fltr:before {
+                                        content: "";
+                                        display: block;
+                                        position: absolute;
+                                        width: 24px;
+                                        height: 24px;
+                                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Cpath d='M25.2378 7.23767L6.76249 25.713' stroke='%231A1A16' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.81934 7.18066L25.2946 25.656' stroke='%231A1A16' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                                        background-size: contain;
+                                        top: 50%;
+                                        left: 0;
+                                        transform: translateY(-50%);
+                                    }
+
+                                    #offcanvasSmartFilter .offcanvas-top .del_filter {
+                                        background: transparent;
+                                        border: none;
+                                        padding: 0;
                                     }
 
                                     .catalog-form-smartfilter__wrapper {
@@ -1315,14 +1349,18 @@
                                         }
                                     }
                                 </style>
-                                <div class="offcanvas offcanvas-start" id="offcanvasSmartFilter" tabindex="-1">
-                                    <div class="offcanvas-header justify-content-end">
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                                    </div>
-                                    <div class="offcanvas-body">
-                                        <div class="offcanvas-title">Фильтры</div>
-
-                                        <form action="#" method="get" class="catalog-form-smartfilter">
+                                <form action="#" method="get" class="catalog-form-smartfilter">
+                                    <div class="offcanvas offcanvas-start" id="offcanvasSmartFilter" tabindex="-1">
+                                        <div class="offcanvas-header justify-content-end">
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="offcanvas-top">
+                                                <span class="offcanvas-title">Фильтры</span>
+                                                <div class="reset_fltr">
+                                                    <input type="button" class="del_filter" id="del_filter" name="del_filter" value="Сбросить">
+                                                </div>
+                                                </div>
                                             <div class="smartfilter">
                                                 <div class="catalog-form-smartfilter__wrapper">
 
@@ -1936,15 +1974,25 @@
                                                         </svg>
                                                     </span>
                                                 </button>
-    
+
                                                 <!-- Кнопка Применить фильтры -->
-                                                <button type="button" class="btn btn-secondary w-100">Применить фильтры</button>
+                                                <button type="submit" class="btn btn-secondary w-100 d-none d-lg-block">Применить фильтры</button>
 
                                             </div>
-                                        </form>
-
+                                        </div>
+                                        <div class="offcanvas-footer d-lg-none">
+                                            <p class="fs-18 fw-medium">Найдено: 45 товаров</p>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <button type="submit" class="btn btn-primary w-100">Применить</button>
+                                                </div>
+                                                <div class="col-6">
+                                                    <button type="reset" class="btn btn-outline w-100">Сбросить</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
     
                             <!-- Каталоги -->

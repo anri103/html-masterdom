@@ -288,12 +288,20 @@ textarea {
     z-index: 5 !important;
 }
 
+.fs-18 {
+    font-size: 18px;
+}
+
 .text-red {
     color: #DF5A5A !important;
 }
 
 .font-title {
     font-family: "Goldenbook" !important;
+}
+
+.offcanvas-footer {
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
 }
 
 .nav {
