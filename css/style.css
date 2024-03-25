@@ -156,6 +156,15 @@ textarea {
     border-color: #ACB2BF;
 }
 
+.dropdown-select {
+    --bs-dropdown-link-color: var(--bs-body-color);
+    --bs-dropdown-link-hover-color: var(--bs-body-color);
+    --bs-dropdown-link-hover-bg: #DEE5ED;
+    --bs-dropdown-link-active-color: var(--bs-body-color);
+    --bs-dropdown-link-active-bg: #DEE5ED;
+    --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
+}
+
 /* BUTTONS ============================ */
 
 .btn {
@@ -246,6 +255,22 @@ textarea {
 }
 
 .btn-with-collapsing-arrow:not(.collapsed) .svg-arrow {
+    transform: rotate(180deg);
+}
+
+.btn-dropdown {
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-border-width: 0;
+    --bs-btn-font-size: 1rem;
+}
+
+.btn-dropdown__arrow {
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-dropdown.show .btn-dropdown__arrow {
     transform: rotate(180deg);
 }
 
