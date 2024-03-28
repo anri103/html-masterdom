@@ -103,7 +103,7 @@ document.querySelectorAll('.catalog-menu-subs-close').forEach(function(btn) {
 // На странице каталога кнопка, раскрывающая все фильтры
 
 const hiddenSmartfilterBtn = document.getElementById('btn-toggle-hidden-smartfilter-wrapper');
-const spanToChange = hiddenSmartfilterBtn.querySelector('span');
+const spanToChange = hiddenSmartfilterBtn.getElementById('btn-title');
 
 hiddenSmartfilterBtn.addEventListener('click', () => {
     const buttonText = spanToChange.textContent;

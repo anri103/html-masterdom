@@ -3075,3 +3075,26 @@ textarea {
 .pagination-item:hover svg {
     stroke: var(--bs-primary);
 }
+
+/* section-product-item ============================ */
+
+.section-product-item__img .product-img-wrapper {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 550px;
+    border: 1px solid #DEE5ED;
+}
+
+@media (min-width: 992px) {
+    .gx-lg-32 {
+        --bs-gutter-x: 32px;
+    }
+
+    .gx-lg-50 {
+        --bs-gutter-x: 50px;
+    }
+}
