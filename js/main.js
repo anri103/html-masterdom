@@ -102,18 +102,18 @@ document.querySelectorAll('.catalog-menu-subs-close').forEach(function(btn) {
 //////////////////////////////////////////////////////////////////
 // На странице каталога кнопка, раскрывающая все фильтры
 
-const hiddenSmartfilterBtn = document.getElementById('btn-toggle-hidden-smartfilter-wrapper');
-const spanToChange = hiddenSmartfilterBtn.getElementById('btn-title');
+// const hiddenSmartfilterBtn = document.getElementById('btn-toggle-hidden-smartfilter-wrapper');
+// const spanToChange = hiddenSmartfilterBtn.getElementById('btn-title');
 
-hiddenSmartfilterBtn.addEventListener('click', () => {
-    const buttonText = spanToChange.textContent;
+// hiddenSmartfilterBtn.addEventListener('click', () => {
+//     const buttonText = spanToChange.textContent;
     
-    if (buttonText === 'Все фильтры') {
-        spanToChange.textContent = 'Свернуть фильтры';
-    } else {
-        spanToChange.textContent = 'Все фильтры';
-    }
-});
+//     if (buttonText === 'Все фильтры') {
+//         spanToChange.textContent = 'Свернуть фильтры';
+//     } else {
+//         spanToChange.textContent = 'Все фильтры';
+//     }
+// });
 
 //////////////////////////////////////////////////////////////////
 // Кнопка "Нравится" у товаров
@@ -197,6 +197,38 @@ var swiperBlogSlider = new Swiper(".swiperBlogSlider", {
     },
 });
 
+// product-item page
+
+var swiperProductThumbs = new Swiper(".swiperProductThumbs", {
+    slidesPerView: 4,
+    spaceBetween: 12,
+    grabCursor: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        992: {
+            slidesPerView: 6,
+            spaceBetween: 12,
+        },
+    },
+});
+var swiperProductMainImg = new Swiper('.swiperProductMainImg', {
+    slidesPerView: 1,
+    spaceBetween: 12,
+    grabCursor: true,
+    thumbs: {
+        swiper: swiperProductThumbs,
+    },
+    breakpoints: {
+        992: {
+            slidesPerView: 1,
+            spaceBetween: 22,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
@@ -214,3 +246,5 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 Fancybox.bind("[fancybox-dialog]", {});
+
+// $(document).on('[data-toggle="tab"]',(function(e){e.preventDefault(),$(this).tab("show")}))
