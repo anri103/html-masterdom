@@ -100,22 +100,6 @@ document.querySelectorAll('.catalog-menu-subs-close').forEach(function(btn) {
 });
 
 //////////////////////////////////////////////////////////////////
-// На странице каталога кнопка, раскрывающая все фильтры
-
-// const hiddenSmartfilterBtn = document.getElementById('btn-toggle-hidden-smartfilter-wrapper');
-// const spanToChange = hiddenSmartfilterBtn.getElementById('btn-title');
-
-// hiddenSmartfilterBtn.addEventListener('click', () => {
-//     const buttonText = spanToChange.textContent;
-    
-//     if (buttonText === 'Все фильтры') {
-//         spanToChange.textContent = 'Свернуть фильтры';
-//     } else {
-//         spanToChange.textContent = 'Все фильтры';
-//     }
-// });
-
-//////////////////////////////////////////////////////////////////
 // Кнопка "Нравится" у товаров
 
 const likeButtons = document.querySelectorAll('.product-item__like-btn');
