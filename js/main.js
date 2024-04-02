@@ -232,3 +232,5 @@ Fancybox.bind("[data-fancybox]", {
 Fancybox.bind("[fancybox-dialog]", {});
 
 // $(document).on('[data-toggle="tab"]',(function(e){e.preventDefault(),$(this).tab("show")}))
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

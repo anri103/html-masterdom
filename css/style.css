@@ -431,6 +431,40 @@ textarea {
     flex: 0 0 auto;
 }
 
+.tooltip-custom {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-custom .tooltip-content {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    width: max-content;
+    max-width: 300px;
+    padding: 8px 12px;
+    border: 1px solid #DEE5ED;
+    background-color: #fff;
+    text-align: left;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    z-index: 1;
+    transition: 0.8s ease;
+}
+
+.tooltip-custom:hover .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-top-right {
+    left: -4px;
+    bottom: 100%;
+    margin-bottom: 4px;
+}
+
 @media (min-width: 992px) {
 
     .title {
@@ -3500,6 +3534,18 @@ textarea {
     line-height: normal;
     letter-spacing: 0.16px;
     text-transform: uppercase;
+}
+
+.custom-info-tooltip {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.custom-info-tooltip.show {
+    display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .product-description-table__value {
