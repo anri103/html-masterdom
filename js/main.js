@@ -68,35 +68,35 @@ const invokerCatalogBtn = document.querySelector('.mobile-catalog-menu-invoker')
 const closeCatalogBtn = document.querySelector('.mobile-catalog-menu-close');
 const catalogContainer = document.querySelector('.mobile-collapse-menu__catalog-container');
 
-invokerCatalogBtn.addEventListener('click', function() {
+invokerCatalogBtn.addEventListener('click', function () {
     catalogContainer.classList.add('open');
     catalogContainer.style.animation = 'slideLeft 0.5s ease forwards';
 });
 
-closeCatalogBtn.addEventListener('click', function() {
+closeCatalogBtn.addEventListener('click', function () {
     setTimeout(() => {
         catalogContainer.classList.remove('open');
     }, 300);
     catalogContainer.style.animation = 'slideRight 0.5s ease forwards';
 });
 
-document.querySelectorAll('.catalog-menu-item__link').forEach(function(link) {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    const subsBlock = link.nextElementSibling;
-    subsBlock.classList.add('open');
-    subsBlock.style.animation = 'slideLeft 0.5s ease forwards';
-  });
+document.querySelectorAll('.catalog-menu-item__link').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const subsBlock = link.nextElementSibling;
+        subsBlock.classList.add('open');
+        subsBlock.style.animation = 'slideLeft 0.5s ease forwards';
+    });
 });
 
-document.querySelectorAll('.catalog-menu-subs-close').forEach(function(btn) {
-  btn.addEventListener('click', function() {
-    const subsBlock = btn.parentElement;
-    setTimeout(() => {
-        subsBlock.classList.remove('open');
-    }, 300);
-    subsBlock.style.animation = 'slideRight 0.5s ease forwards';
-  });
+document.querySelectorAll('.catalog-menu-subs-close').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+        const subsBlock = btn.parentElement;
+        setTimeout(() => {
+            subsBlock.classList.remove('open');
+        }, 300);
+        subsBlock.style.animation = 'slideRight 0.5s ease forwards';
+    });
 });
 
 //////////////////////////////////////////////////////////////////
@@ -183,13 +183,13 @@ var swiperBlogSlider = new Swiper(".swiperBlogSlider", {
 
 // product-item page
 
-var swiperProductThumbs = new Swiper(".swiperProductThumbs", {
+var swiperProductGalleryThumbs = new Swiper(".swiperProductGalleryThumbs", {
     slidesPerView: 4,
     spaceBetween: 12,
     grabCursor: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     breakpoints: {
         992: {
@@ -198,12 +198,12 @@ var swiperProductThumbs = new Swiper(".swiperProductThumbs", {
         },
     },
 });
-var swiperProductMainImg = new Swiper('.swiperProductMainImg', {
+var swiperProductGalleryHero = new Swiper('.swiperProductGalleryHero', {
     slidesPerView: 1,
     spaceBetween: 12,
     grabCursor: true,
     thumbs: {
-        swiper: swiperProductThumbs,
+        swiper: swiperProductGalleryThumbs,
     },
     breakpoints: {
         992: {
@@ -231,6 +231,25 @@ Fancybox.bind("[data-fancybox]", {
 
 Fancybox.bind("[fancybox-dialog]", {});
 
-// $(document).on('[data-toggle="tab"]',(function(e){e.preventDefault(),$(this).tab("show")}))
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+
+
+
+document.querySelector(".tabs").addEventListener("click", function (e) {
+    if (e.target.classList.contains("tab")) {
+        e.preventDefault();
+        var tabs = document.querySelectorAll(".tab");
+        var contents = document.querySelectorAll(".content");
+        tabs.forEach(function (tab) {
+            tab.classList.remove("active");
+        });
+
+        contents.forEach(function (content) {
+            content.classList.remove("show");
+        });
+
+        e.target.classList.add("active");
+        document.querySelector(e.target.getAttribute("href")).classList.add("show");
+    }
+});
