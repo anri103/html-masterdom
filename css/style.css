@@ -317,6 +317,10 @@ textarea {
     font-family: var(--bs-title-font-family);
 }
 
+.fs-16 {
+    font-size: 16px;
+}
+
 .fs-18 {
     font-size: 18px;
 }
