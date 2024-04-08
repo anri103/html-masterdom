@@ -1097,7 +1097,7 @@
     <main class="main">
 
         <!-- section-breadcrumbs -->
-        <section class="section section-breadcrumbs">
+        <section class="section section-breadcrumbs mb-22px">
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -1113,11 +1113,11 @@
         </section>
 
         <!-- section-catalog-heading -->
-        <section class="section section-catalog-heading">
+        <section class="section section-catalog-heading mb-22px">
             <div class="container">
-                <div class="catalog-heading__wrapper">
-                    <h1 class="title">Мраморная плитка</h1>
-                    <div class="number-of-goods">660 товаров</div>
+                <div class="catalog-heading__wrapper d-flex flex-column flex-lg-row align-items-lg-center" style="gap: 4px 12px;">
+                    <h1 class="title mb-0">Мраморная плитка</h1>
+                    <div class="text-secondary fs-18">660 товаров</div>
                 </div>
             </div>
         </section>
@@ -1809,31 +1809,31 @@
                             <!-- Каталоги -->
                             <!-- Если хотим скрыть, то присваиваем d-none d-lg-block -->
                             <div class="section-catalog-body__sidebar-widget d-none d-lg-block">
-                                <div class="pdf-catalogs-wrapper" style="margin-top: 60px;">
+                                <div class="pdf-catalogs-wrapper d-flex flex-column" style="margin-top: 60px; gap: 22px;">
                                     <!-- item 1 -->
                                     <div class="catalog-pdf-item">
-                                        <div class="catalog-pdf-item__title">Новинки от Coliseum</div>
+                                        <div class="catalog-pdf-item__title h5 text-center mb-3">Новинки от Coliseum</div>
                                         <a href="#">
                                             <div class="catalog-pdf-item__img">
-                                                <img src="img/catalog-pdf-cover-01.jpg" alt="Новинки от Coliseum">
+                                                <img class="img-fluid w-100" src="img/catalog-pdf-cover-01.jpg" alt="Новинки от Coliseum">
                                             </div>
                                         </a>
                                     </div>
                                     <!-- item 2 -->
                                     <div class="catalog-pdf-item">
-                                        <div class="catalog-pdf-item__title">Новинки от Coliseum</div>
+                                        <div class="catalog-pdf-item__title h5 text-center mb-3">Новинки от Coliseum</div>
                                         <a href="#">
                                             <div class="catalog-pdf-item__img">
-                                                <img src="img/catalog-pdf-cover-02.jpg" alt="Новинки от Coliseum">
+                                                <img class="img-fluid w-100" src="img/catalog-pdf-cover-02.jpg" alt="Новинки от Coliseum">
                                             </div>
                                         </a>
                                     </div>
                                     <!-- item 3 -->
                                     <div class="catalog-pdf-item">
-                                        <div class="catalog-pdf-item__title">Новинки от Coliseum</div>
+                                        <div class="catalog-pdf-item__title h5 text-center mb-3">Новинки от Coliseum</div>
                                         <a href="#">
                                             <div class="catalog-pdf-item__img">
-                                                <img src="img/catalog-pdf-cover-03.jpg" alt="Новинки от Coliseum">
+                                                <img class="img-fluid w-100" src="img/catalog-pdf-cover-03.jpg" alt="Новинки от Coliseum">
                                             </div>
                                         </a>
                                     </div>
@@ -1846,9 +1846,9 @@
                     <!-- Сетка товаров (колонка справа) -->
                     <div class="col-lg-75 offset-lg-5">
 
-                        <!-- Сортировка -->
-                        <div class="section-catalog-body__sorting">
-                            <button type="button" class="btn btn-catalog-filters" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSmartFilter">
+                        <!-- Сортировка и Фильтры -->
+                        <div class="section-catalog-body__sorting d-flex align-items-center justify-content-between mb-32px">
+                            <button type="button" class="btn fs-18 fw-medium text-uppercase border-0 p-0 d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSmartFilter">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
                                     <g>
                                       <path d="M18.3206 1.17871H0.677734L7.46345 10.6787V18.8216L11.5349 16.1073V10.6787L18.3206 1.17871Z" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1861,7 +1861,7 @@
                                 </svg>
                                 <span>Фильтры</span>
                             </button>
-                            <div>
+                            <div class="position-relative">
                                 <button type="button" class="btn btn-dropdown p-0" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span>По популярности</span>
                                     <span class="btn-dropdown__arrow">
@@ -3229,7 +3229,7 @@
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Товар успешно добавлен в корзину</h5>
+                    <p class="h4 modal-title">Товар успешно добавлен в корзину</p>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -3295,12 +3295,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <div class="d-flex flex-column align-items-center flex-lg-row justify-content-between w-100">
-                        <div>В корзине 1 товар на сумму 12 400 ₽</div>
-                        <div class="d-flex flex-column flex-lg-row gap-2">
-                            <button type="button" class="btn">оформить заказ</button>
-                            <button type="button" class="btn">продолжить покупки</button>
+                <div class="modal-footer d-block">
+                    <div class="m-0">
+                        <div class="row gy-4">
+                            <div class="col-lg-5">В корзине 1 товар на сумму 12 400 ₽</div>
+                            <div class="col-lg-7">
+                                <div class="row gy-2">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-secondary w-100">оформить заказ</button>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-outline w-100">продолжить покупки</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
