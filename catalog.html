@@ -1924,7 +1924,7 @@
                                             <span>3 250 ₽</span> / <span class="measure">1 м²</span>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn product-item__btn">в корзину</button>
+                                    <button type="button" class="btn product-item__btn" data-bs-toggle="modal" data-bs-target="#modal_basket_actions">в корзину</button>
                                 </div>
                             </div>
 
@@ -3225,6 +3225,88 @@
     </div>
 
     <!-- Модалка "Товар добавлен в корзину" -->
+    <div class="modal" id="modal_basket_actions" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Товар успешно добавлен в корзину</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row gy-3">
+                        <div class="col-4 col-lg-2">
+                            <img class="img-fluid" src="img/product-gallery-01.jpg" alt="">
+                        </div>
+                        <div class="col-8 col-lg-10">
+                            <div class="position-relative">
+                                <div class="position-absolute top-0 end-0 mt-3">
+                                    <button type="button" class="product-item__like-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                            <path class="svg-like-path" d="M13.2766 22.8094L3.7117 14.1457C-1.48661 8.94735 6.1549 -1.03339 13.2766 7.0413C20.3982 -1.03339 28.0052 8.98202 22.8415 14.1457L13.2766 22.8094Z" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="pe-4">
+                                    <div class="row gy-3">
+                                        <div class="col-lg-6">
+                                            <p class="">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</p>
+                                            <div>Арт. CV20195</div>
+                                            <div>Страна</div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="counter-drop">
+                                                    <button type="button" class="counter__btn decrease">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="2" viewBox="0 0 6 2" fill="none">
+                                                            <path d="M5.48733 0.151936V1.45414H0.183819V0.151936H5.48733Z" fill="black"/>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" style="display: none;">
+                                                    <div class="counter__input" data-product="76578" data-quantity="1" data-measure="м2" data-measurecode="m2" data-measureproduct="м2" data-multiplicity="0.5" data-multiplicityvupakovke="22">
+                                                        <span class="counter__value">900.59</span>
+                                                        <span class="counter__volume ms-1">м<sup>2</sup></span>
+                                                    </div>
+                                                    <button type="button" class="counter__btn increase">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                                                            <path d="M3.82998 8.17133V0.358123H5.15586V8.17133H3.82998ZM0.586317 4.92766V3.60179H8.39952V4.92766H0.586317Z" fill="black"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <div class="d-flex gap-2 align-items-center border p-1" style="height: 50px;">
+                                                        <button type="button" class="flex-grow-1 d-inline-block border-0 text-center py-2 px-2 active bg-light fw-semibold" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
+                                                        <button type="button" class="flex-grow-1 d-inline-block border-0 text-center py-2 px-2" data-measure="pieces" data-measurename="шт">шт</button>
+                                                    </div>
+                                                    <div class="text-muted text-center" style="margin-top: 10px; font-style: 12px;">0,52 м = 36 шт</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex gap-2 flex-wrap align-items-center justify-content-between" style="margin-top: 27px;">
+                        <div>Берут вместе</div>
+                        <div class="d-flex gap-2">
+                            <div>3 250 ₽ / 1 м2</div>
+                            <div>12 400 ₽</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex flex-column align-items-center flex-lg-row justify-content-between w-100">
+                        <div>В корзине 1 товар на сумму 12 400 ₽</div>
+                        <div class="d-flex flex-column flex-lg-row gap-2">
+                            <button type="button" class="btn">оформить заказ</button>
+                            <button type="button" class="btn">продолжить покупки</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="fancybox-custom-modal" id="product-add-to-cart">
         <p class="h5">Товар успешно добавлен в корзину</p>
         <div>

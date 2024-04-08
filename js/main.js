@@ -236,20 +236,20 @@ Fancybox.bind("[fancybox-dialog]", {});
 
 
 
-document.querySelector(".tabs").addEventListener("click", function (e) {
-    if (e.target.classList.contains("tab")) {
-        e.preventDefault();
-        var tabs = document.querySelectorAll(".tab");
-        var contents = document.querySelectorAll(".content");
-        tabs.forEach(function (tab) {
-            tab.classList.remove("active");
-        });
+// document.querySelector(".tabs").addEventListener("click", function (e) {
+//     if (e.target.classList.contains("tab")) {
+//         e.preventDefault();
+//         var tabs = document.querySelectorAll(".tab");
+//         var contents = document.querySelectorAll(".content");
+//         tabs.forEach(function (tab) {
+//             tab.classList.remove("active");
+//         });
 
-        contents.forEach(function (content) {
-            content.classList.remove("show");
-        });
+//         contents.forEach(function (content) {
+//             content.classList.remove("show");
+//         });
 
-        e.target.classList.add("active");
-        document.querySelector(e.target.getAttribute("href")).classList.add("show");
-    }
-});
+//         e.target.classList.add("active");
+//         document.querySelector(e.target.getAttribute("href")).classList.add("show");
+//     }
+// });
