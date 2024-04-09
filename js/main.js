@@ -218,7 +218,7 @@ var swiperProductGalleryHero = new Swiper('.swiperProductGalleryHero', {
 var swiperRecommendProduct = new Swiper(".swiperRecommendProduct", {
     slidesPerView: "auto",
     loop: false,
-    spaceBetween: 22,
+    spaceBetween: 12,
     grabCursor: true,
     freeMode: true,
     slidesOffsetBefore: 22,
@@ -229,7 +229,7 @@ var swiperRecommendProduct = new Swiper(".swiperRecommendProduct", {
     },
     breakpoints: {
         992: {
-            spaceBetween: 32,
+            spaceBetween: 22,
         },
     },
 });

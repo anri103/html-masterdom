@@ -264,21 +264,24 @@ textarea {
     transform: rotate(180deg);
 }
 
-.btn-dropdown {
-    --bs-btn-padding-x: 1rem;
-    --bs-btn-padding-y: 0.25rem;
-    --bs-btn-border-width: 0;
-    --bs-btn-font-size: 1rem;
-}
-
-.btn-dropdown__arrow {
+.btn-dropdown-arrow .icon-arrow-down {
     display: inline-block;
     transition: 0.3s ease;
 }
 
-.btn-dropdown.show .btn-dropdown__arrow {
+.btn-dropdown-arrow.show .icon-arrow-down {
     transform: rotate(180deg);
 }
+
+/* .btn-transform-arrow .icon-arrow-down {
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-transform-arrow:not(.collapsed) .icon-arrow-down,
+.btn-transform-arrow.show .icon-arrow-down {
+    transform: rotate(180deg);
+} */
 
 /* BASE ============================ */
 
@@ -1554,14 +1557,16 @@ textarea {
 
 .modal .btn-close {
     margin-left: auto;
-    padding: 8px;
+    padding: 5px;
 }
 
 .modal-header-top {
+    flex-shrink: 0;
     padding: var(--bs-modal-header-padding);
 }
 
 .modal-footer-bottom {
+    flex-shrink: 0;
     padding: var(--bs-modal-footer-padding);
 }
 
@@ -3426,12 +3431,18 @@ textarea {
 
 .swiperRecommendProduct .swiper-slide {
     width: 320px;
+    height: auto;
 }
 
 .recommend-item {
     position: relative;
+    display: flex;
     padding: 12px;
     border: 1px solid var(--bs-border-color);
+}
+
+.swiperRecommendProduct .recommend-item {
+    height: 100%;
 }
 
 .recommend-item__title {
