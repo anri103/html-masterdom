@@ -332,24 +332,38 @@ textarea {
     font-family: var(--bs-title-font-family) !important;
 }
 
-.fs-16 {
-    font-size: 16px !important;
+.fs-14px {
+    font-size: .875rem !important;
 }
 
-.fs-18 {
-    font-size: 18px !important;
+.fs-16px {
+    font-size: 1rem !important;
 }
 
-.fs-20 {
-    font-size: 20px !important;
+.fs-18px {
+    font-size: 1.125rem !important;
 }
 
-.fs-28 {
-    font-size: 28px !important;
+.fs-20px {
+    font-size: 1.25rem !important;
+}
+
+.fs-28px {
+    font-size: 1.75rem !important;
+}
+
+.link-body {
+    --bs-link-color-rgb: var(--bs-body-color-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
 }
 
 .text-red {
     color: #DF5A5A !important;
+}
+
+.text-muted-light {
+    --bs-text-opacity: 1;
+    color: var(--theme-light-gray) !important;
 }
 
 .offcanvas-footer {
@@ -1531,6 +1545,30 @@ textarea {
 }
 
 /* MODALS */
+
+.modal {
+    --bs-modal-padding: 22px;
+    --bs-modal-header-padding: 22px;
+    --bs-modal-footer-padding: 22px;
+}
+
+.modal .btn-close {
+    margin-left: auto;
+    padding: 8px;
+}
+
+.modal-header-top {
+    padding: var(--bs-modal-header-padding);
+}
+
+.modal-footer-bottom {
+    padding: var(--bs-modal-footer-padding);
+}
+
+.modal-footer {
+    display: block;
+    padding: var(--bs-modal-footer-padding);
+}
 
 .fancybox__container {
     --fancybox-bg: rgba(24, 24, 27, 0.69);
@@ -3339,6 +3377,93 @@ textarea {
     stroke: var(--bs-primary);
 }
 
+/* Модалка заказа товара */
+
+.swiperRecommendProduct-next,
+.swiperRecommendProduct-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.swiperRecommendProduct-next:hover,
+.swiperRecommendProduct-prev:hover {
+    background-color: rgba(159, 147, 135, 0.80);
+}
+
+.swiperRecommendProduct-next.swiper-button-disabled,
+.swiperRecommendProduct-prev.swiper-button-disabled {
+    opacity: 0.45;
+    background-color: transparent;
+}
+
+.swiperRecommendProduct-next {
+    right: 69px;
+    left: auto;
+}
+
+.swiperRecommendProduct-next svg {
+    margin-left: 10px;
+}
+
+.swiperRecommendProduct-prev {
+    left: 69px;
+    right: auto;
+}
+
+.swiperRecommendProduct-prev svg {
+    margin-right: 10px;
+}
+
+.swiperRecommendProduct .swiper-slide {
+    width: 320px;
+}
+
+.recommend-item {
+    position: relative;
+    padding: 12px;
+    border: 1px solid var(--bs-border-color);
+}
+
+.recommend-item__title {
+    font-size: 1rem;
+}
+
+.recommend-item__btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+@media (min-width: 992px) {
+
+    .swiperRecommendProduct-next,
+    .swiperRecommendProduct-prev {
+        display: flex;
+    }
+
+    .swiperRecommendProduct .swiper-slide {
+        width: 440px;
+    }
+
+    .recommend-item__title {
+        font-size: 1.25rem;
+    }
+
+    .recommend-item__btn svg {
+        width: 32px;
+        height: 32px;
+    }
+}
+
 /* section-product ============================ */
 
 .section-product__top-line-mob {
@@ -3562,29 +3687,54 @@ textarea {
 }
 
 .counter-drop {
-    flex-grow: 1;
     display: flex;
     height: 50px;
 }
 
 .counter-drop .counter__btn {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
+    width: 35px;
     padding: 0;
     border: none;
     background: #F8F8F8;
 }
 
 .counter-drop .counter__input {
+    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+    border: none;
     text-align: center;
     font-size: 18px;
     background: #F8F8F8;
+}
+
+.counter-measure {
+    display: flex;
+    gap: 4px;
+    height: 50px;
+    padding: 4px;
+    border: 1px solid var(--bs-border-color);
+}
+
+.counter-measure__item {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    border: none;
+    text-align: center;
+}
+
+.counter-measure__item.active {
+    font-weight: 600;
+    background-color: #f8f8f8;
 }
 
 .btn-blue {

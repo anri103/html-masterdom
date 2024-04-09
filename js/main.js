@@ -213,6 +213,27 @@ var swiperProductGalleryHero = new Swiper('.swiperProductGalleryHero', {
     },
 });
 
+// catalog page
+
+var swiperRecommendProduct = new Swiper(".swiperRecommendProduct", {
+    slidesPerView: "auto",
+    loop: false,
+    spaceBetween: 22,
+    grabCursor: true,
+    freeMode: true,
+    slidesOffsetBefore: 22,
+    slidesOffsetAfter: 22,
+    navigation: {
+        nextEl: ".swiperRecommendProduct-next",
+        prevEl: ".swiperRecommendProduct-prev",
+    },
+    breakpoints: {
+        992: {
+            spaceBetween: 32,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
