@@ -1120,13 +1120,15 @@
             <div class="container">
 
                 <!-- Оценка, комментарии, кнопки (на мобилке) -->
-                <div class="section-product__top-line-mob">
-                    <div class="section-product__reviews-wrap" style="margin-bottom: 12px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                            <path d="M11.5 0.5L14.8798 7.6459L22.4371 8.7918L16.9686 14.3541L18.2595 22.2082L11.5 18.5L4.74047 22.2082L6.03142 14.3541L0.56285 8.7918L8.12023 7.6459L11.5 0.5Z" fill="#B0C7DD"/>
-                        </svg>
+                <div class="section-product__top-line-mob d-lg-none">
+                    <div class="section-product__reviews-wrap d-flex gap-1 align-items-center" style="margin-bottom: 12px;">
+                        <div class="section-product__reviews-svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                <path d="M11.5 0.5L14.8798 7.6459L22.4371 8.7918L16.9686 14.3541L18.2595 22.2082L11.5 18.5L4.74047 22.2082L6.03142 14.3541L0.56285 8.7918L8.12023 7.6459L11.5 0.5Z" fill="#B0C7DD"/>
+                            </svg>
+                        </div>
                         <div class="section-product__rating">4,5</div>
-                        <div class="section-product__reviews">
+                        <div class="section-product__reviews ms-2">
                             <a href="#tab-reviews">150 отзывов</a>
                         </div>
                     </div>
@@ -1234,14 +1236,16 @@
                     <div class="col-lg-6 col-xxl-7">
 
                         <!-- Оценка, комментарии, кнопки (на десктопе) -->
-                        <div class="section-product__top-line-desk">
+                        <div class="section-product__top-line-desk d-none d-lg-block mb-22px">
                             <div class="d-flex align-items-center">
-                                <div class="section-product__reviews-wrap">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                                        <path d="M11.5 0.5L14.8798 7.6459L22.4371 8.7918L16.9686 14.3541L18.2595 22.2082L11.5 18.5L4.74047 22.2082L6.03142 14.3541L0.56285 8.7918L8.12023 7.6459L11.5 0.5Z" fill="#B0C7DD"/>
-                                    </svg>
+                                <div class="section-product__reviews-wrap d-flex gap-1 align-items-center">
+                                    <div class="section-product__reviews-svg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                            <path d="M11.5 0.5L14.8798 7.6459L22.4371 8.7918L16.9686 14.3541L18.2595 22.2082L11.5 18.5L4.74047 22.2082L6.03142 14.3541L0.56285 8.7918L8.12023 7.6459L11.5 0.5Z" fill="#B0C7DD"/>
+                                        </svg>
+                                    </div>
                                     <div class="section-product__rating">4,5</div>
-                                    <div class="section-product__reviews">
+                                    <div class="section-product__reviews ms-2">
                                         <a href="#tab-reviews">150 отзывов</a>
                                     </div>
                                 </div>
@@ -1390,36 +1394,38 @@
 
                                     <div class="calculate-cost__calc-form">
                                         <div class="d-flex gap-2">
-                                            <div class="counter-drop">
-                                                <button type="button" class="counter__btn decrease">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="2" viewBox="0 0 6 2" fill="none">
-                                                        <path d="M5.48733 0.151936V1.45414H0.183819V0.151936H5.48733Z" fill="black"/>
-                                                    </svg>
-                                                </button>
-                                                <input type="text" style="display: none;">
-                                                <div class="counter__input" data-product="76578" data-quantity="1" data-measure="м2" data-measurecode="m2" data-measureproduct="м2" data-multiplicity="0.5" data-multiplicityvupakovke="22">
-                                                    <span class="counter__value">900.59</span>
-                                                    <span class="counter__volume ms-1">м<sup>2</sup></span>
+                                            <div class="flex-grow-1">
+                                                <div class="counter-drop">
+                                                    <button type="button" class="counter__btn counter-decrease">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="2" viewBox="0 0 6 2" fill="none">
+                                                            <path d="M5.48733 0.151936V1.45414H0.183819V0.151936H5.48733Z" fill="black"/>
+                                                        </svg>
+                                                    </button>
+                                                    <input type="text" style="display: none;">
+                                                    <div class="counter__input" data-product="76578" data-quantity="1" data-measure="м2" data-measurecode="m2" data-measureproduct="м2" data-multiplicity="0.5" data-multiplicityvupakovke="22">
+                                                        <span class="counter__value">900.59</span>
+                                                        <span class="counter__volume ms-1">м<sup>2</sup></span>
+                                                    </div>
+                                                    <button type="button" class="counter__btn counter-increase">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                                                            <path d="M3.82998 8.17133V0.358123H5.15586V8.17133H3.82998ZM0.586317 4.92766V3.60179H8.39952V4.92766H0.586317Z" fill="black"/>
+                                                        </svg>
+                                                    </button>
                                                 </div>
-                                                <button type="button" class="counter__btn increase">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
-                                                        <path d="M3.82998 8.17133V0.358123H5.15586V8.17133H3.82998ZM0.586317 4.92766V3.60179H8.39952V4.92766H0.586317Z" fill="black"/>
-                                                    </svg>
-                                                </button>
                                             </div>
                                             <div class="flex-grow-1">
-                                                <div class="d-flex gap-2 align-items-center border p-1" style="height: 50px;">
-                                                    <button type="button" class="flex-grow-1 d-inline-block border-0 text-center py-2 px-2 active bg-light fw-semibold" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
-                                                    <button type="button" class="flex-grow-1 d-inline-block border-0 text-center py-2 px-2" data-measure="pieces" data-measurename="шт">шт</button>
+                                                <div class="counter-measure">
+                                                    <button type="button" class="counter-measure__item active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
+                                                    <button type="button" class="counter-measure__item" data-measure="pieces" data-measurename="шт">шт</button>
                                                 </div>
-                                                <div class="text-muted-light text-center" style="margin-top: 10px; font-style: 12px;">0,52 м = 36 шт</div>
+                                                <div class="text-muted-light text-center" style="margin-top: 10px; font-size: 12px;">0,52 м = 36 шт</div>
                                             </div>
                                         </div>
-                                        <button type="button" class="btn btn-secondary w-100 btn-blue" data-id="76578" data-quantity="0.5">В корзину</button>
+                                        <button type="button" class="btn btn-secondary w-100 counter-btn-blue" data-id="76578" data-quantity="0.5" data-bs-toggle="modal" data-bs-target="#modal_product_add">В корзину</button>
                                     </div>
 
                                     <div class="calculate-cost__calc-link" style="margin: 32px 0;">
-                                        <a href="#" class="btn btn-calculator btn-with-arrow">
+                                        <a href="#modal_calc_product" class="btn btn-calculator btn-with-arrow" data-bs-toggle="modal">
                                             <span>Калькулятор плитки</span>
                                             <span class="icon-arrow-right ms-3">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
@@ -1428,8 +1434,7 @@
                                             </span>
                                         </a>
                                     </div>
-        
-        
+
                                     <div class="calculate-cost__deliver">
                                         <div class="calculate-cost__deliver-title mb-3">
                                             <a href="#city-selector-modal" fancybox-dialog>
@@ -1733,6 +1738,156 @@
             </div>
         </div>
     </div>
+
+    <!-- Модалка "Калькулятор товара" -->
+    <div class="modal fade" id="modal_calc_product" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header-top">
+                    <div class="d-flex justify-content-between">
+                        <p class="h4 modal-title">Расчитайте колличество плитки</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row gy-5">
+                        <div class="col-xl">
+                            <div class="d-flex flex-column" style="gap: 32px;">
+                                <div class="calc-product-line">
+                                    <div class="row gy-3 align-items-center">
+                                        <div class="col-lg-3">
+                                            <div>Поверхность 1</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="d-flex" style="gap: 22px;">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
+                                                    <div class="text-center text-muted-light">длина</div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <div class="p-1">x</div>
+                                                </div>
+                                                <div class="d-flex flex-column gap-2">
+                                                    <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
+                                                    <div class="text-center text-muted-light">высота</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <div class="counter-measure" style="height: 42px;">
+                                                        <button type="button" class="counter-measure__item px-4 active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
+                                                        <button type="button" class="counter-measure__item px-4" data-measure="pieces" data-measurename="шт">шт</button>
+                                                    </div>
+                                                    <div class="text-muted-light text-center small">0,52 м = 36 шт</div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <div class="p-1">=</div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <div class="fs-18px fw-semibold">0 м<sup>2</sup></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calc-product-line">
+                                    <div class="row gy-3 align-items-center">
+                                        <div class="col-lg-3">
+                                            <div>Поверхность 2</div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="d-flex" style="gap: 22px;">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
+                                                    <div class="text-center text-muted-light">длина</div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <div class="p-1">x</div>
+                                                </div>
+                                                <div class="d-flex flex-column gap-2">
+                                                    <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
+                                                    <div class="text-center text-muted-light">высота</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <div class="counter-measure" style="height: 42px;">
+                                                        <button type="button" class="counter-measure__item px-4 active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
+                                                        <button type="button" class="counter-measure__item px-4" data-measure="pieces" data-measurename="шт">шт</button>
+                                                    </div>
+                                                    <div class="text-muted-light text-center small">0,52 м = 36 шт</div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <div class="p-1">=</div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <div class="fs-18px fw-semibold">9 м<sup>2</sup></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-auto">
+                            <div class="d-flex flex-column" style="width: 200px; gap: 12px;">
+                                <div class="text-secondary fs-18px">Итог: 9 м<sup>2</sup></div>
+                                <div class="text-secondary h4 fw-semibold">19 938 ₽/м2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer-bottom">
+                    <div class="border-top" style="padding-top: 22px;">
+                        <div class="row gy-4">
+                            <div class="col-lg-5">
+                                <div class="fw-medium">В корзине 1 товар на сумму 19 938 ₽</div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row gy-2">
+                                    <div class="col-lg-6"></div>
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-secondary w-100">добавить в корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модалка "Товар добавлен" -->
+    <div class="modal fade" id="modal_product_add" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header-top pb-0">
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column gap-3" style="padding: 70px 0 90px;">
+                        <div class="d-flex justify-content-center">
+                            <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+                                <path d="M24.5001 46.2853C36.8083 46.2853 46.7858 36.3078 46.7858 23.9996C46.7858 11.6915 36.8083 1.71387 24.5001 1.71387C12.192 1.71387 2.21436 11.6915 2.21436 23.9996C2.21436 36.3078 12.192 46.2853 24.5001 46.2853Z" stroke="#ACB2BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.5 27.0826L17.6022 33.6425C17.7744 33.8662 17.995 34.048 18.2475 34.1744C18.4999 34.3005 18.7777 34.368 19.06 34.3714C19.3377 34.3747 19.6126 34.3159 19.8648 34.1996C20.117 34.0832 20.34 33.912 20.5178 33.6986L36.7962 14" stroke="#ACB2BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="text-center">
+                            <p class="h4">Товар добавлен</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
