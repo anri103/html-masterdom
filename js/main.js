@@ -252,25 +252,90 @@ Fancybox.bind("[data-fancybox]", {
 
 Fancybox.bind("[fancybox-dialog]", {});
 
+//////////////////////////////////////////////////////////////////
+// Табы
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     var tabLinks = document.querySelectorAll('.custom-tab-link-js');
+//     var mainTabLinks = document.querySelectorAll('.custom-tab-nav-js a');
 
+//     tabLinks.forEach(function(link) {
+//         link.addEventListener('click', function(e) {
+//             e.preventDefault();
 
+//             var tabId = this.getAttribute('href').substring(1);
+//             var correspondingMainTab = document.querySelector('.custom-tab-nav-js a[href="#' + tabId + '"]');
 
+//             mainTabLinks.forEach(function(mainTabLink) {
+//                 mainTabLink.classList.remove('active');
+//             });
 
-// document.querySelector(".tabs").addEventListener("click", function (e) {
-//     if (e.target.classList.contains("tab")) {
-//         e.preventDefault();
-//         var tabs = document.querySelectorAll(".tab");
-//         var contents = document.querySelectorAll(".content");
-//         tabs.forEach(function (tab) {
-//             tab.classList.remove("active");
+//             correspondingMainTab.classList.add('active');
+//             showTab(tabId);
+//         });
+//     });
+
+//     function showTab(tabId) {
+//         var tabPanes = document.querySelectorAll('.product-tab');
+        
+//         tabPanes.forEach(function(tabPane) {
+//             tabPane.classList.remove('show');
 //         });
 
-//         contents.forEach(function (content) {
-//             content.classList.remove("show");
-//         });
-
-//         e.target.classList.add("active");
-//         document.querySelector(e.target.getAttribute("href")).classList.add("show");
+//         var correspondingTab = document.getElementById(tabId);
+//         if (correspondingTab) {
+//             correspondingTab.classList.add('show');
+//         }
 //     }
 // });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var tabLinks = document.querySelectorAll('.custom-tab-nav-js a');
+    var customTabLinks = document.querySelectorAll('.custom-tab-link-js');
+
+    tabLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            var tabId = this.getAttribute('href').substring(1);
+            activateTab(tabId);
+        });
+    });
+
+    customTabLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            var tabId = this.getAttribute('href').substring(1);
+            var tab = document.getElementById(tabId);
+
+            if (tab) {
+                tab.scrollIntoView({ behavior: 'smooth' });
+                activateTab(tabId);
+            }
+        });
+    });
+
+    function activateTab(tabId) {
+        var tabPanes = document.querySelectorAll('.product-tab');
+        var tabLinks = document.querySelectorAll('.custom-tab-nav-js a');
+
+        tabPanes.forEach(function(tabPane) {
+            if (tabPane.id === tabId) {
+                tabPane.classList.add('show');
+            } else {
+                tabPane.classList.remove('show');
+            }
+        });
+
+        tabLinks.forEach(function(tabLink) {
+            if (tabLink.getAttribute('href') === '#' + tabId) {
+                tabLink.classList.add('active');
+            } else {
+                tabLink.classList.remove('active');
+            }
+        });
+    }
+});

@@ -1129,7 +1129,7 @@
                         </div>
                         <div class="section-product__rating">4,5</div>
                         <div class="section-product__reviews ms-2">
-                            <a href="#tab-reviews">150 отзывов</a>
+                            <a href="#product-tab-reviews" class="product-tab-link-js">150 отзывов</a>
                         </div>
                     </div>
                     <div class="d-flex align-items-center">
@@ -1246,7 +1246,7 @@
                                     </div>
                                     <div class="section-product__rating">4,5</div>
                                     <div class="section-product__reviews ms-2">
-                                        <a href="#tab-reviews">150 отзывов</a>
+                                        <a href="#product-tab-reviews" class="custom-tab-link-js">150 отзывов</a>
                                     </div>
                                 </div>
                                 <div class="section-product__sku" style="margin-left: 32px;">Арт. 610010001196</div>
@@ -1393,8 +1393,8 @@
                                     </div>
 
                                     <div class="calculate-cost__calc-form">
-                                        <div class="d-flex gap-2">
-                                            <div class="flex-grow-1">
+                                        <div class="row gy-3 gx-2">
+                                            <div class="col-sm-6">
                                                 <div class="counter-drop">
                                                     <button type="button" class="counter__btn counter-decrease">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="6" height="2" viewBox="0 0 6 2" fill="none">
@@ -1413,7 +1413,7 @@
                                                     </button>
                                                 </div>
                                             </div>
-                                            <div class="flex-grow-1">
+                                            <div class="col-sm-6">
                                                 <div class="counter-measure">
                                                     <button type="button" class="counter-measure__item active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
                                                     <button type="button" class="counter-measure__item" data-measure="pieces" data-measurename="шт">шт</button>
@@ -1425,7 +1425,7 @@
                                     </div>
 
                                     <div class="calculate-cost__calc-link" style="margin: 32px 0;">
-                                        <a href="#modal_calc_product" class="btn btn-calculator btn-with-arrow" data-bs-toggle="modal">
+                                        <a href="#modal_calc_product" class="btn btn-with-arrow border-0 p-0" data-bs-toggle="modal">
                                             <span>Калькулятор плитки</span>
                                             <span class="icon-arrow-right ms-3">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
@@ -1481,56 +1481,110 @@
         </section>
 
         <!-- section-product-tabs -->
-        <!-- <section class="section section-product-tabs">
-            <div class="scrollable-container">
+        <section class="section section-product-tabs">
+            <div class="section-product-tabs__nav custom-tab-nav-js scrollable-container">
                 <div class="scrollable-wrapper">
                     <div class="scrollable-item">
-                        <a href="#tab-properties" class="nav-link active">
+                        <a href="#product-tab-properties" class="nav-link active">
                             <span>Характеристики</span>
                         </a>
                     </div>
                     <div class="scrollable-item">
-                        <a href="#tab-about" class="nav-link">
+                        <a href="#product-tab-about" class="nav-link">
                             <span>Описание</span>
                         </a>
                     </div>
                     <div class="scrollable-item">
-                        <a href="#tab-reviews" class="nav-link">
+                        <a href="#product-tab-reviews" class="nav-link">
                             <span>Отзывы</span>
                         </a>
                     </div>
                     <div class="scrollable-item">
-                        <a href="#tab-delivery" class="nav-link">
+                        <a href="#product-tab-delivery" class="nav-link">
                             <span>Доставка</span>
                         </a>
                     </div>
                     <div class="scrollable-item">
-                        <a href="#tab-certificates" class="nav-link">
+                        <a href="#product-tab-certificates" class="nav-link">
                             <span>Сертификаты</span>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="container">
-                <div class="section-product-tabs-container">
-                    <div class="tab show" id="tab-properties">
-                        <span>Характеристики</span>
+                <div class="section-product-tabs__container">
+                    <div class="product-tab show" id="product-tab-properties">
+                        <div class="row gy-3">
+                            <div class="col-lg-6">
+                                <div>
+                                    <p class="h4">Основные</p>
+                                    <table class="table" style="--bs-table-bg: inherit;">
+                                        <tbody>
+                                            <tr>
+                                                <td>Работы</td>
+                                                <td>Внутренние</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Назначение плитки</td>
+                                                <td>Для пола</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал</td>
+                                                <td>Керамогранит</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Особенности плитки</td>
+                                                <td>Устойчивая к истиранию, Ректифицированная, Морозостойкая</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div>
+                                    <p class="h4">Основные</p>
+                                    <table class="table" style="--bs-table-bg: inherit;">
+                                        <tbody>
+                                            <tr>
+                                                <td>Работы</td>
+                                                <td>Внутренние</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Назначение плитки</td>
+                                                <td>Для пола</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Материал</td>
+                                                <td>Керамогранит</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Особенности плитки</td>
+                                                <td>Устойчивая к истиранию, Ректифицированная, Морозостойкая</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="max-width: 717px;">
+                            <p class="text-primary">Информация о технических характеристиках, комплекте поставки, стране изготовления, внешнем виде и цвете товара носит справочный характер и основывается на последних доступных к моменту публикации сведениях</p>
+                        </div>
                     </div>
-                    <div class="tab" id="tab-about">
+                    <div class="product-tab" id="product-tab-about">
                         <span>Описание</span>
                     </div>
-                    <div class="tab" id="tab-reviews">
+                    <div class="product-tab" id="product-tab-reviews">
                         <span>Отзывы</span>
                     </div>
-                    <div class="tab" id="tab-delivery">
+                    <div class="product-tab" id="product-tab-delivery">
                         <span>Доставка</span>
                     </div>
-                    <div class="tab" id="tab-certificates">
+                    <div class="product-tab" id="product-tab-certificates">
                         <span>Сертификаты</span>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
     </main>
 
@@ -1745,7 +1799,7 @@
             <div class="modal-content">
                 <div class="modal-header-top">
                     <div class="d-flex justify-content-between">
-                        <p class="h4 modal-title">Расчитайте колличество плитки</p>
+                        <p class="h4 modal-title">Рассчитайте количество плитки</p>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                 </div>
@@ -1755,38 +1809,40 @@
                             <div class="d-flex flex-column" style="gap: 32px;">
                                 <div class="calc-product-line">
                                     <div class="row gy-3 align-items-center">
-                                        <div class="col-lg">
-                                            <div>Поверхность 1</div>
+                                        <div class="col-xl-auto col-xl-20">
+                                            <div class="fs-18px">Поверхность 1</div>
                                         </div>
-                                        <div class="col-lg-5">
-                                            <div class="d-flex" style="gap: 22px;">
-                                                <div class="d-flex flex-column gap-2">
-                                                    <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
-                                                    <div class="text-center text-muted-light">длина</div>
-                                                </div>
-                                                <div class="d-flex align-items-center justify-content-center">
-                                                    <div class="p-1">x</div>
-                                                </div>
-                                                <div class="d-flex flex-column gap-2">
-                                                    <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
-                                                    <div class="text-center text-muted-light">высота</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-5">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div class="d-flex flex-column gap-2">
-                                                    <div class="counter-measure" style="height: 42px;">
-                                                        <button type="button" class="counter-measure__item px-4 active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
-                                                        <button type="button" class="counter-measure__item px-4" data-measure="pieces" data-measurename="шт">шт</button>
+                                        <div class="col-xl">
+                                            <div class="row gy-3">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex align-items-center" style="gap: 22px;">
+                                                        <div class="d-flex flex-column gap-2">
+                                                            <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
+                                                            <div class="text-center text-muted-light">длина</div>
+                                                        </div>
+                                                        <div class="p-1">x</div>
+                                                        <div class="d-flex flex-column gap-2">
+                                                            <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
+                                                            <div class="text-center text-muted-light">высота</div>
+                                                        </div>
                                                     </div>
-                                                    <div class="text-muted-light text-center small">0,52 м = 36 шт</div>
                                                 </div>
-                                                <div class="d-flex align-items-center justify-content-center">
-                                                    <div class="p-1">=</div>
-                                                </div>
-                                                <div class="d-flex align-items-center justify-content-center">
-                                                    <div class="fs-18px fw-semibold">0 м<sup>2</sup></div>
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="d-flex flex-column gap-2">
+                                                            <div class="counter-measure" style="height: 42px;">
+                                                                <button type="button" class="counter-measure__item px-4 active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
+                                                                <button type="button" class="counter-measure__item px-4" data-measure="pieces" data-measurename="шт">шт</button>
+                                                            </div>
+                                                            <div class="text-muted-light text-center small">0,52 м = 36 шт</div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div class="p-1">=</div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div class="fs-18px fw-semibold">0 м<sup>2</sup></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1794,38 +1850,40 @@
                                 </div>
                                 <div class="calc-product-line">
                                     <div class="row gy-3 align-items-center">
-                                        <div class="col-lg">
-                                            <div>Поверхность 2</div>
+                                        <div class="col-xl-auto col-xl-20">
+                                            <div class="fs-18px">Поверхность 2</div>
                                         </div>
-                                        <div class="col-lg-5">
-                                            <div class="d-flex" style="gap: 22px;">
-                                                <div class="d-flex flex-column gap-2">
-                                                    <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
-                                                    <div class="text-center text-muted-light">длина</div>
-                                                </div>
-                                                <div class="d-flex align-items-center justify-content-center">
-                                                    <div class="p-1">x</div>
-                                                </div>
-                                                <div class="d-flex flex-column gap-2">
-                                                    <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
-                                                    <div class="text-center text-muted-light">высота</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-5">
-                                            <div class="d-flex align-items-center gap-2">
-                                                <div class="d-flex flex-column gap-2">
-                                                    <div class="counter-measure" style="height: 42px;">
-                                                        <button type="button" class="counter-measure__item px-4 active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
-                                                        <button type="button" class="counter-measure__item px-4" data-measure="pieces" data-measurename="шт">шт</button>
+                                        <div class="col-xl">
+                                            <div class="row gy-3">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex align-items-center" style="gap: 22px;">
+                                                        <div class="d-flex flex-column gap-2">
+                                                            <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
+                                                            <div class="text-center text-muted-light">длина</div>
+                                                        </div>
+                                                        <div class="p-1">x</div>
+                                                        <div class="d-flex flex-column gap-2">
+                                                            <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
+                                                            <div class="text-center text-muted-light">высота</div>
+                                                        </div>
                                                     </div>
-                                                    <div class="text-muted-light text-center small">0,52 м = 36 шт</div>
                                                 </div>
-                                                <div class="d-flex align-items-center justify-content-center">
-                                                    <div class="p-1">=</div>
-                                                </div>
-                                                <div class="d-flex align-items-center justify-content-center">
-                                                    <div class="fs-18px fw-semibold">9 м<sup>2</sup></div>
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="d-flex flex-column gap-2">
+                                                            <div class="counter-measure" style="height: 42px;">
+                                                                <button type="button" class="counter-measure__item px-4 active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
+                                                                <button type="button" class="counter-measure__item px-4" data-measure="pieces" data-measurename="шт">шт</button>
+                                                            </div>
+                                                            <div class="text-muted-light text-center small">0,52 м = 36 шт</div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div class="p-1">=</div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div class="fs-18px fw-semibold">9 м<sup>2</sup></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1833,8 +1891,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-auto">
-                            <div class="d-flex flex-column" style="width: 200px; gap: 12px;">
+                        <div class="col-xl-auto col-xl-20">
+                            <div class="d-flex flex-column" style="gap: 12px;">
                                 <div class="text-secondary fs-18px">Итог: 9 м<sup>2</sup></div>
                                 <div class="text-secondary h4 fw-semibold">19 938 ₽/м2</div>
                             </div>
@@ -1844,14 +1902,13 @@
                 <div class="modal-footer-bottom">
                     <div class="border-top" style="padding-top: 22px;">
                         <div class="row gy-4">
-                            <div class="col-lg-5">
+                            <div class="col-lg-6 col-xl-5">
                                 <div class="fw-medium">В корзине 1 товар на сумму 19 938 ₽</div>
                             </div>
-                            <div class="col-lg-7">
+                            <div class="col-lg-6 col-xl-7">
                                 <div class="row gy-2">
-                                    <div class="col-lg-6"></div>
-                                    <div class="col-lg-6">
-                                        <button type="button" class="btn btn-secondary w-100">добавить в корзину</button>
+                                    <div class="col-xl-6 ms-auto">
+                                        <button type="button" class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#modal_product_add">добавить в корзину</button>
                                     </div>
                                 </div>
                             </div>
