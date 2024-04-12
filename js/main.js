@@ -312,8 +312,15 @@ document.addEventListener('DOMContentLoaded', function() {
             var tab = document.getElementById(tabId);
 
             if (tab) {
-                tab.scrollIntoView({ behavior: 'smooth' });
-                activateTab(tabId);
+                var offset = tab.offsetTop - 200;
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth'
+                });
+
+                setTimeout(function() {
+                    activateTab(tabId);
+                }, 500); // Дополнительная задержка для прокрутки
             }
         });
     });
