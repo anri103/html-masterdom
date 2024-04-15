@@ -234,6 +234,60 @@ var swiperRecommendProduct = new Swiper(".swiperRecommendProduct", {
     },
 });
 
+// Слайдер пользователей
+
+var swiperUserCommentary = new Swiper(".swiperUserCommentary", {
+    slidesPerView: 3.8,
+    spaceBetween: 12,
+    grabCursor: true,
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
+    breakpoints: {
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 12,
+        },
+    },
+});
+
+// Слайдер коллекций
+
+var swiperProductCollection = new Swiper(".swiperProductCollection", {
+    slidesPerView: 1.8,
+    spaceBetween: 22,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiperProductCollection-next",
+        prevEl: ".swiperProductCollection-prev",
+    },
+    breakpoints: {
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 34,
+        },
+    },
+});
+
+// Слайдер подборки товаров
+
+var swiperSelectedProducts = new Swiper(".swiperSelectedProducts", {
+    slidesPerView: 2,
+    spaceBetween: 18,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiperSelectedProducts-next",
+        prevEl: ".swiperSelectedProducts-prev",
+    },
+    breakpoints: {
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 34,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
@@ -254,42 +308,6 @@ Fancybox.bind("[fancybox-dialog]", {});
 
 //////////////////////////////////////////////////////////////////
 // Табы
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     var tabLinks = document.querySelectorAll('.custom-tab-link-js');
-//     var mainTabLinks = document.querySelectorAll('.custom-tab-nav-js a');
-
-//     tabLinks.forEach(function(link) {
-//         link.addEventListener('click', function(e) {
-//             e.preventDefault();
-
-//             var tabId = this.getAttribute('href').substring(1);
-//             var correspondingMainTab = document.querySelector('.custom-tab-nav-js a[href="#' + tabId + '"]');
-
-//             mainTabLinks.forEach(function(mainTabLink) {
-//                 mainTabLink.classList.remove('active');
-//             });
-
-//             correspondingMainTab.classList.add('active');
-//             showTab(tabId);
-//         });
-//     });
-
-//     function showTab(tabId) {
-//         var tabPanes = document.querySelectorAll('.product-tab');
-        
-//         tabPanes.forEach(function(tabPane) {
-//             tabPane.classList.remove('show');
-//         });
-
-//         var correspondingTab = document.getElementById(tabId);
-//         if (correspondingTab) {
-//             correspondingTab.classList.add('show');
-//         }
-//     }
-// });
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
     var tabLinks = document.querySelectorAll('.custom-tab-nav-js a');

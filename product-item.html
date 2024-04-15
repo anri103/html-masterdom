@@ -1119,34 +1119,46 @@
         <section class="section section-product">
             <div class="container">
 
-                <!-- Оценка, комментарии, кнопки (на мобилке) -->
-                <div class="section-product__top-line-mob d-lg-none">
-                    <div class="section-product__reviews-wrap d-flex gap-1 align-items-center" style="margin-bottom: 12px;">
-                        <div class="section-product__reviews-svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                                <path d="M11.5 0.5L14.8798 7.6459L22.4371 8.7918L16.9686 14.3541L18.2595 22.2082L11.5 18.5L4.74047 22.2082L6.03142 14.3541L0.56285 8.7918L8.12023 7.6459L11.5 0.5Z" fill="#B0C7DD"/>
-                            </svg>
-                        </div>
-                        <div class="section-product__rating">4,5</div>
-                        <div class="section-product__reviews ms-2">
-                            <a href="#product-tab-reviews" class="product-tab-link-js">150 отзывов</a>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center">
-                        <div class="section-product__sku">Арт. 610010001196</div>
-                        <div class="d-flex gap-3 align-items-center ms-auto">
-                            <button type="button" class="btn section-product__btn-wishlist border-0 p-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
-                                    <path d="M13.0075 21L2.82266 11.7879C-2.71261 6.2605 5.42421 -4.35199 13.0075 4.23381C20.5908 -4.35199 28.6908 6.29736 23.1924 11.7879L13.0075 21Z" stroke="#1A1A16" stroke-width="0.808552" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <button type="button" class="btn section-product__btn-share border-0 p-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-                                    <path d="M22 12L14.5 4L7 12" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M14 20L14 5" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M5 25H23" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
+                <!-- Оценка, комментарии, кнопки -->
+                <div class="row">
+                    <div class="col-lg-6 col-xxl-7 ms-auto">
+                        <div class="section-product__reviews-wrap mb-12px">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-xxl-3">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <div class="d-flex gap-1 align-items-center">
+                                            <div class="section-product__reviews-svg">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                                    <path d="M11.5 0.5L14.8798 7.6459L22.4371 8.7918L16.9686 14.3541L18.2595 22.2082L11.5 18.5L4.74047 22.2082L6.03142 14.3541L0.56285 8.7918L8.12023 7.6459L11.5 0.5Z" fill="#B0C7DD"/>
+                                                </svg>
+                                            </div>
+                                            <div class="section-product__rating">4,5</div>
+                                        </div>
+                                        <div class="section-product__reviews">
+                                            <a href="#product-tab-reviews" class="product-tab-link-js">150 отзывов</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-9">
+                                    <div class="d-flex align-items-center">
+                                        <div class="section-product__sku">Арт. 610010001196</div>
+                                        <div class="d-flex gap-3 align-items-center ms-auto">
+                                            <button type="button" class="btn section-product__btn-wishlist border-0 p-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                                                    <path d="M13.0075 21L2.82266 11.7879C-2.71261 6.2605 5.42421 -4.35199 13.0075 4.23381C20.5908 -4.35199 28.6908 6.29736 23.1924 11.7879L13.0075 21Z" stroke="#1A1A16" stroke-width="0.808552" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="btn section-product__btn-share border-0 p-0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                                    <path d="M22 12L14.5 4L7 12" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14 20L14 5" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M5 25H23" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1234,38 +1246,6 @@
 
                     <!-- Колонка с инфо о товаре -->
                     <div class="col-lg-6 col-xxl-7">
-
-                        <!-- Оценка, комментарии, кнопки (на десктопе) -->
-                        <div class="section-product__top-line-desk d-none d-lg-block mb-22px">
-                            <div class="d-flex align-items-center">
-                                <div class="section-product__reviews-wrap d-flex gap-1 align-items-center">
-                                    <div class="section-product__reviews-svg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                                            <path d="M11.5 0.5L14.8798 7.6459L22.4371 8.7918L16.9686 14.3541L18.2595 22.2082L11.5 18.5L4.74047 22.2082L6.03142 14.3541L0.56285 8.7918L8.12023 7.6459L11.5 0.5Z" fill="#B0C7DD"/>
-                                        </svg>
-                                    </div>
-                                    <div class="section-product__rating">4,5</div>
-                                    <div class="section-product__reviews ms-2">
-                                        <a href="#product-tab-reviews" class="custom-tab-link-js">150 отзывов</a>
-                                    </div>
-                                </div>
-                                <div class="section-product__sku" style="margin-left: 32px;">Арт. 610010001196</div>
-                                <div class="d-flex gap-3 align-items-center ms-auto">
-                                    <button type="button" class="btn section-product__btn-wishlist border-0 p-0">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
-                                            <path d="M13.0075 21L2.82266 11.7879C-2.71261 6.2605 5.42421 -4.35199 13.0075 4.23381C20.5908 -4.35199 28.6908 6.29736 23.1924 11.7879L13.0075 21Z" stroke="#1A1A16" stroke-width="0.808552" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                    <button type="button" class="btn section-product__btn-share border-0 p-0">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-                                            <path d="M22 12L14.5 4L7 12" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M14 20L14 5" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M5 25H23" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
 
                         <!-- Конетейнер для колонок "Характеристики товара" и "Форма для заказа в корзину" -->
                         <div class="row">
@@ -1518,7 +1498,7 @@
                             <div class="col-lg-6">
                                 <div>
                                     <p class="h4">Основные</p>
-                                    <table class="table" style="--bs-table-bg: inherit;">
+                                    <table class="table">
                                         <tbody>
                                             <tr>
                                                 <td>Работы</td>
@@ -1542,24 +1522,28 @@
                             </div>
                             <div class="col-lg-6">
                                 <div>
-                                    <p class="h4">Основные</p>
-                                    <table class="table" style="--bs-table-bg: inherit;">
+                                    <p class="h4">Габариты и вес</p>
+                                    <table class="table">
                                         <tbody>
                                             <tr>
-                                                <td>Работы</td>
-                                                <td>Внутренние</td>
+                                                <td>Длина, см</td>
+                                                <td>60</td>
                                             </tr>
                                             <tr>
-                                                <td>Назначение плитки</td>
-                                                <td>Для пола</td>
+                                                <td>Ширина, см</td>
+                                                <td>60</td>
                                             </tr>
                                             <tr>
-                                                <td>Материал</td>
-                                                <td>Керамогранит</td>
+                                                <td>Толщина, мм</td>
+                                                <td>9</td>
                                             </tr>
                                             <tr>
-                                                <td>Особенности плитки</td>
-                                                <td>Устойчивая к истиранию, Ректифицированная, Морозостойкая</td>
+                                                <td>В коробке, шт</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Кол-во м2 в коробке</td>
+                                                <td>1.08</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1643,7 +1627,32 @@
                                 <!-- Контейнер отзывов -->
                                 <div class="d-flex gap-3 flex-column">
                                     <!-- Отзыв -->
-                                    <div class="d-flex flex-column mt-3" style="gap: 12px;">
+                                    <div class="user-review-item d-flex flex-column pb-3 border-bottom mt-3" style="gap: 12px;">
+                                        <div class="d-flex gap-2 align-items-center">
+                                            <!-- Аватар -->
+                                            <div class="d-flex align-items-center justify-content-center text-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                                                Н
+                                            </div>
+                                            <!-- Оценка пользователя -->
+                                            <div class="d-flex gap-1 align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                                                    <path d="M13 1.12978L16.3722 7.96267L16.4886 8.19839L16.7487 8.23619L24.2893 9.3319L18.8329 14.6506L18.6446 14.8341L18.6891 15.0931L19.9771 22.6032L13.2327 19.0574L13 18.9351L12.7673 19.0574L6.02286 22.6032L7.31094 15.0931L7.35537 14.8341L7.16714 14.6506L1.71075 9.3319L9.2513 8.23619L9.51143 8.19839L9.62776 7.96267L13 1.12978Z" stroke="#ACB2BF"/>
+                                                </svg>
+                                                <div>4</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="d-flex gap-2">
+                                                <div class="fw-medium">Наум</div>
+                                                <div class="text-secondary">12.02.2024</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p>Отзывы оставляют только те, кто купил товар. Так мы формируем честный рейтинг</p>
+                                        </div>
+                                    </div>
+                                    <!-- Отзыв -->
+                                    <div class="user-review-item d-flex flex-column pb-3 border-bottom mt-3" style="gap: 12px;">
                                         <div class="d-flex gap-2 align-items-center">
                                             <!-- Аватар -->
                                             <div class="d-flex align-items-center justify-content-center text-center rounded-circle bg-white" style="width: 55px; height: 55px;">
@@ -1655,6 +1664,52 @@
                                                     <path d="M13 1.12978L16.3722 7.96267L16.4886 8.19839L16.7487 8.23619L24.2893 9.3319L18.8329 14.6506L18.6446 14.8341L18.6891 15.0931L19.9771 22.6032L13.2327 19.0574L13 18.9351L12.7673 19.0574L6.02286 22.6032L7.31094 15.0931L7.35537 14.8341L7.16714 14.6506L1.71075 9.3319L9.2513 8.23619L9.51143 8.19839L9.62776 7.96267L13 1.12978Z" stroke="#ACB2BF"/>
                                                 </svg>
                                                 <div>4</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="swiper swiperUserCommentary" id="user#091275-review-slider">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                        </a>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div>
@@ -1679,6 +1734,382 @@
                     </div>
                     <div class="product-tab" id="product-tab-certificates">
                         <span>Сертификаты</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Коллекции -->
+        <section class="section section-product-collections">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column" style="gap: 42px;">
+                            <div class="d-flex gap-2 flex-column">
+                                <div>
+                                    <h2 class="h3 ff-title">Коллекции Charme Extra</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                </div>
+                                <p><a href="#" class="fw-medium">подробнее</a></p>
+                            </div>
+                            <div class="d-flex gap-2 flex-column align-items-start">
+                                <a href="#" class="btn border-0 p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.61785 11.667C7.33001 11.3792 6.86333 11.3792 6.57549 11.667C6.28766 11.9548 6.28766 12.4215 6.57549 12.7094L15.2397 21.3736C15.3779 21.5118 15.5654 21.5894 15.7609 21.5894C15.9563 21.5894 16.1438 21.5118 16.282 21.3736L24.9462 12.7094C25.2341 12.4215 25.2341 11.9548 24.9462 11.667C24.6584 11.3792 24.1917 11.3792 23.9039 11.667L16.4992 19.0717L16.4992 3.76493C16.4992 3.35787 16.1692 3.02787 15.7621 3.02787C15.355 3.02787 15.0251 3.35787 15.0251 3.76493L15.0251 19.0742L7.61785 11.667Z" fill="#1A1A16"/>
+                                        <path d="M5.64673 27.8317H25.8632" stroke="#1A1A16" stroke-width="1.47412" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    каталог PDF
+                                </a>
+                                <a href="#" class="btn border-0 p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.61785 11.667C7.33001 11.3792 6.86333 11.3792 6.57549 11.667C6.28766 11.9548 6.28766 12.4215 6.57549 12.7094L15.2397 21.3736C15.3779 21.5118 15.5654 21.5894 15.7609 21.5894C15.9563 21.5894 16.1438 21.5118 16.282 21.3736L24.9462 12.7094C25.2341 12.4215 25.2341 11.9548 24.9462 11.667C24.6584 11.3792 24.1917 11.3792 23.9039 11.667L16.4992 19.0717L16.4992 3.76493C16.4992 3.35787 16.1692 3.02787 15.7621 3.02787C15.355 3.02787 15.0251 3.35787 15.0251 3.76493L15.0251 19.0742L7.61785 11.667Z" fill="#1A1A16"/>
+                                        <path d="M5.64673 27.8317H25.8632" stroke="#1A1A16" stroke-width="1.47412" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    текстуры Charme Extra
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center" style="gap: 32px;">
+                                <button type="button" class="swiperProductCollection-prev btn border-0 p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="30" viewBox="0 0 18 30" fill="none">
+                                        <path d="M18 0L0 15L18 30V27.8595L2.56855 15L18 2.14046V0Z" fill="#ACB2BF"/>
+                                    </svg>
+                                </button>
+                                <button type="button" class="swiperProductCollection-next btn border-0 p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="31" viewBox="0 0 18 31" fill="none">
+                                        <path d="M0 30.6628L18 15.6628L-2.69304e-06 0.662782L-2.5009e-06 2.80324L15.4314 15.6628L-1.92145e-07 28.5223L0 30.6628Z" fill="#ACB2BF"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="swiper swiperProductCollection">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product-collection-card">
+                                        <img class="img-fluid w-100" src="img/thumb-charme-01.png" alt="">
+                                        <div class="card-body">
+                                            <a href="#" class="card-title stretched-link">Charme Extra Силвер Мозаика Люкс</a>
+                                            <div class="d-flex gap-2 flex-column">
+                                                <div>29.2x29.2 см</div>
+                                                <div>9 mm, Люкс</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-collection-card">
+                                        <img class="img-fluid w-100" src="img/thumb-charme-02.png" alt="">
+                                        <div class="card-body">
+                                            <a href="#" class="card-title stretched-link">Крим Ривер</a>
+                                            <div class="d-flex gap-2 flex-column">
+                                                <div>80x160 cm</div>
+                                                <div>9 mm, Натуральный</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-collection-card">
+                                        <img class="img-fluid w-100" src="img/thumb-charme-03.png" alt="">
+                                        <div class="card-body">
+                                            <a href="#" class="card-title stretched-link">Charme Extra Атлантик Мозаика</a>
+                                            <div class="d-flex gap-2 flex-column">
+                                                <div>25x29 см</div>
+                                                <div>10 mm, Палированный</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-collection-card">
+                                        <img class="img-fluid w-100" src="img/thumb-charme-01.png" alt="">
+                                        <div class="card-body">
+                                            <a href="#" class="card-title stretched-link">Charme Extra Силвер Мозаика Люкс</a>
+                                            <div class="d-flex gap-2 flex-column">
+                                                <div>29.2x29.2 см</div>
+                                                <div>9 mm, Люкс</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-collection-card">
+                                        <img class="img-fluid w-100" src="img/thumb-charme-02.png" alt="">
+                                        <div class="card-body">
+                                            <a href="#" class="card-title stretched-link">Крим Ривер</a>
+                                            <div class="d-flex gap-2 flex-column">
+                                                <div>80x160 cm</div>
+                                                <div>9 mm, Натуральный</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-collection-card">
+                                        <img class="img-fluid w-100" src="img/thumb-charme-03.png" alt="">
+                                        <div class="card-body">
+                                            <a href="#" class="card-title stretched-link">Charme Extra Атлантик Мозаика</a>
+                                            <div class="d-flex gap-2 flex-column">
+                                                <div>25x29 см</div>
+                                                <div>10 mm, Палированный</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Подобрали для вас -->
+        <section class="section selected-for-you">
+            <div class="container">
+                <p class="h4">Подобрали для вас</p>
+                <div class="swiper swiperSelectedProducts">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__top">
+                                    <div class="product-item__top-brand">Italon</div>
+                                    <div class="product-item__top-country">Россия</div>
+                                </div>
+                                <div class="product-item__header">
+                                    <a href="#">
+                                        <div class="product-item__img">
+                                            <img src="img/product-thumb-01.jpg">
+                                            <img src="img/product-thumb-02.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item marker-hit">hit</div>
+                                        <div class="marker-item marker-new">new</div>
+                                        <div class="marker-item marker-sale">sale</div>
+                                    </div>
+                                </div>
+                                <div class="product-item__body">
+                                    <div class="product-item__body-top">
+                                        <div class="product-item__sku">Арт. CV20195</div>
+                                        <button type="button" class="product-item__like-btn active">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                                <path class="svg-like-path" d="M13.2766 22.8094L3.7117 14.1457C-1.48661 8.94735 6.1549 -1.03339 13.2766 7.0413C20.3982 -1.03339 28.0052 8.98202 22.8415 14.1457L13.2766 22.8094Z" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-item__title">
+                                        <a href="#">Керамогранит Onix One 60x120 Fancy Grey Polished (проверка длинного названия товара)</a>
+                                    </div>
+                                    <div class="product-item__data-size">
+                                        <span>60x120, 80х120</span>
+                                    </div>
+                                </div>
+                                <div class="product-item__footer">
+                                    <div class="product-item__price">
+                                        <div class="text-muted-light">
+                                            <span>2 480 ₽</span> / <span class="measure">1 шт.</span>
+                                        </div>
+                                        <div class="text-primary fw-medium">
+                                            <span>3 250 ₽</span> / <span class="measure">1 м²</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn product-item__btn" data-bs-toggle="modal" data-bs-target="#modal_basket_actions">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__top">
+                                    <div class="product-item__top-brand">Italon</div>
+                                    <div class="product-item__top-country">Россия</div>
+                                </div>
+                                <div class="product-item__header">
+                                    <a href="#">
+                                        <div class="product-item__img">
+                                            <img src="img/product-thumb-01.jpg">
+                                            <img src="img/product-thumb-02.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item marker-hit">hit</div>
+                                        <div class="marker-item marker-new">new</div>
+                                        <div class="marker-item marker-sale">sale</div>
+                                    </div>
+                                </div>
+                                <div class="product-item__body">
+                                    <div class="product-item__body-top">
+                                        <div class="product-item__sku">Арт. CV20195</div>
+                                        <button type="button" class="product-item__like-btn active">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                                <path class="svg-like-path" d="M13.2766 22.8094L3.7117 14.1457C-1.48661 8.94735 6.1549 -1.03339 13.2766 7.0413C20.3982 -1.03339 28.0052 8.98202 22.8415 14.1457L13.2766 22.8094Z" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-item__title">
+                                        <a href="#">Керамогранит Onix One 60x120 Fancy Grey Polished (проверка длинного названия товара)</a>
+                                    </div>
+                                    <div class="product-item__data-size">
+                                        <span>60x120, 80х120</span>
+                                    </div>
+                                </div>
+                                <div class="product-item__footer">
+                                    <div class="product-item__price">
+                                        <div class="text-muted-light">
+                                            <span>2 480 ₽</span> / <span class="measure">1 шт.</span>
+                                        </div>
+                                        <div class="text-primary fw-medium">
+                                            <span>3 250 ₽</span> / <span class="measure">1 м²</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn product-item__btn" data-bs-toggle="modal" data-bs-target="#modal_basket_actions">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__top">
+                                    <div class="product-item__top-brand">Italon</div>
+                                    <div class="product-item__top-country">Россия</div>
+                                </div>
+                                <div class="product-item__header">
+                                    <a href="#">
+                                        <div class="product-item__img">
+                                            <img src="img/product-thumb-01.jpg">
+                                            <img src="img/product-thumb-02.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item marker-hit">hit</div>
+                                        <div class="marker-item marker-new">new</div>
+                                        <div class="marker-item marker-sale">sale</div>
+                                    </div>
+                                </div>
+                                <div class="product-item__body">
+                                    <div class="product-item__body-top">
+                                        <div class="product-item__sku">Арт. CV20195</div>
+                                        <button type="button" class="product-item__like-btn active">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                                <path class="svg-like-path" d="M13.2766 22.8094L3.7117 14.1457C-1.48661 8.94735 6.1549 -1.03339 13.2766 7.0413C20.3982 -1.03339 28.0052 8.98202 22.8415 14.1457L13.2766 22.8094Z" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-item__title">
+                                        <a href="#">Керамогранит Onix One 60x120 Fancy Grey Polished (проверка длинного названия товара)</a>
+                                    </div>
+                                    <div class="product-item__data-size">
+                                        <span>60x120, 80х120</span>
+                                    </div>
+                                </div>
+                                <div class="product-item__footer">
+                                    <div class="product-item__price">
+                                        <div class="text-muted-light">
+                                            <span>2 480 ₽</span> / <span class="measure">1 шт.</span>
+                                        </div>
+                                        <div class="text-primary fw-medium">
+                                            <span>3 250 ₽</span> / <span class="measure">1 м²</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn product-item__btn" data-bs-toggle="modal" data-bs-target="#modal_basket_actions">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__top">
+                                    <div class="product-item__top-brand">Italon</div>
+                                    <div class="product-item__top-country">Россия</div>
+                                </div>
+                                <div class="product-item__header">
+                                    <a href="#">
+                                        <div class="product-item__img">
+                                            <img src="img/product-thumb-01.jpg">
+                                            <img src="img/product-thumb-02.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item marker-hit">hit</div>
+                                        <div class="marker-item marker-new">new</div>
+                                        <div class="marker-item marker-sale">sale</div>
+                                    </div>
+                                </div>
+                                <div class="product-item__body">
+                                    <div class="product-item__body-top">
+                                        <div class="product-item__sku">Арт. CV20195</div>
+                                        <button type="button" class="product-item__like-btn active">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                                <path class="svg-like-path" d="M13.2766 22.8094L3.7117 14.1457C-1.48661 8.94735 6.1549 -1.03339 13.2766 7.0413C20.3982 -1.03339 28.0052 8.98202 22.8415 14.1457L13.2766 22.8094Z" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-item__title">
+                                        <a href="#">Керамогранит Onix One 60x120 Fancy Grey Polished (проверка длинного названия товара)</a>
+                                    </div>
+                                    <div class="product-item__data-size">
+                                        <span>60x120, 80х120</span>
+                                    </div>
+                                </div>
+                                <div class="product-item__footer">
+                                    <div class="product-item__price">
+                                        <div class="text-muted-light">
+                                            <span>2 480 ₽</span> / <span class="measure">1 шт.</span>
+                                        </div>
+                                        <div class="text-primary fw-medium">
+                                            <span>3 250 ₽</span> / <span class="measure">1 м²</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn product-item__btn" data-bs-toggle="modal" data-bs-target="#modal_basket_actions">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-item">
+                                <div class="product-item__top">
+                                    <div class="product-item__top-brand">Italon</div>
+                                    <div class="product-item__top-country">Россия</div>
+                                </div>
+                                <div class="product-item__header">
+                                    <a href="#">
+                                        <div class="product-item__img">
+                                            <img src="img/product-thumb-01.jpg">
+                                            <img src="img/product-thumb-02.jpg">
+                                        </div>
+                                    </a>
+                                    <div class="product-item__markers">
+                                        <div class="marker-item marker-hit">hit</div>
+                                        <div class="marker-item marker-new">new</div>
+                                        <div class="marker-item marker-sale">sale</div>
+                                    </div>
+                                </div>
+                                <div class="product-item__body">
+                                    <div class="product-item__body-top">
+                                        <div class="product-item__sku">Арт. CV20195</div>
+                                        <button type="button" class="product-item__like-btn active">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                                <path class="svg-like-path" d="M13.2766 22.8094L3.7117 14.1457C-1.48661 8.94735 6.1549 -1.03339 13.2766 7.0413C20.3982 -1.03339 28.0052 8.98202 22.8415 14.1457L13.2766 22.8094Z" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="product-item__title">
+                                        <a href="#">Керамогранит Onix One 60x120 Fancy Grey Polished (проверка длинного названия товара)</a>
+                                    </div>
+                                    <div class="product-item__data-size">
+                                        <span>60x120, 80х120</span>
+                                    </div>
+                                </div>
+                                <div class="product-item__footer">
+                                    <div class="product-item__price">
+                                        <div class="text-muted-light">
+                                            <span>2 480 ₽</span> / <span class="measure">1 шт.</span>
+                                        </div>
+                                        <div class="text-primary fw-medium">
+                                            <span>3 250 ₽</span> / <span class="measure">1 м²</span>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn product-item__btn" data-bs-toggle="modal" data-bs-target="#modal_basket_actions">в корзину</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

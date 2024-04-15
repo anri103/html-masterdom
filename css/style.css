@@ -305,6 +305,10 @@ textarea {
     background-size: cover;
 }
 
+.mb-12px {
+    margin-bottom: 12px !important;
+}
+
 .mb-22px {
     margin-bottom: 22px !important;
 }
@@ -3800,6 +3804,10 @@ textarea {
 
 /* Табы */
 
+.section-product-tabs {
+    margin-bottom: 42px;
+}
+
 .section-product-tabs__nav {
     --bs-nav-link-color: var(--bs-secondary);
     --bs-nav-link-hover-color: var(--bs-primary);
@@ -3857,6 +3865,13 @@ textarea {
     }
 }
 
+@media (min-width: 992px) {
+
+    .section-product-tabs {
+        margin-bottom: 82px;
+    }
+}
+
 /* Контейнер табов */
 
 .section-product-tabs__container .product-tab {
@@ -3874,4 +3889,42 @@ textarea {
     .section-product-tabs__container .product-tab {
         padding: 32px;
     }
+}
+
+.section-product-tabs__container .table {
+    --bs-table-bg: inherit;
+}
+
+.section-product-tabs__container .table tr td:first-child {
+    color: var(--theme-light-gray);
+}
+
+/* Коллекции */
+
+.product-collection-card {
+    --bs-card-spacer-y: 16px;
+    --bs-card-spacer-x: 0;
+    --bs-card-title-color: var(--bs-body-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-collection-card .card-title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+@media (min-width: 992px) {
+
+    .product-collection-card {
+        font-size: 18px;
+    }
+}
+
+/* Подобрали для вас */
+
+.swiperSelectedProducts {
+    
 }
