@@ -281,7 +281,11 @@ var swiperSelectedProducts = new Swiper(".swiperSelectedProducts", {
         prevEl: ".swiperSelectedProducts-prev",
     },
     breakpoints: {
-        992: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 22,
+        },
+        1200: {
             slidesPerView: 4,
             spaceBetween: 34,
         },

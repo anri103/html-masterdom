@@ -3901,6 +3901,10 @@ textarea {
 
 /* Коллекции */
 
+.section-product-collections {
+    margin-bottom: 42px;
+}
+
 .product-collection-card {
     --bs-card-spacer-y: 16px;
     --bs-card-spacer-x: 0;
@@ -3918,6 +3922,10 @@ textarea {
 
 @media (min-width: 992px) {
 
+    .section-product-collections {
+        margin-bottom: 82px;
+    }
+
     .product-collection-card {
         font-size: 18px;
     }
@@ -3925,6 +3933,59 @@ textarea {
 
 /* Подобрали для вас */
 
-.swiperSelectedProducts {
-    
+.selected-for-you {
+    margin-bottom: 42px;
+}
+
+.swiper-btn-brown {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.swiper-btn-brown:hover {
+    background-color: rgba(159, 147, 135, 0.80);
+}
+
+.swiper-btn-next {
+    right: 69px;
+    left: auto;
+}
+
+.swiper-btn-next svg {
+    margin-left: 10px;
+}
+
+.swiper-btn-prev {
+    left: 69px;
+    right: auto;
+}
+
+.swiper-btn-prev svg {
+    margin-right: 10px;
+}
+
+.swiper-btn-brown.swiper-button-disabled {
+    opacity: 0.45;
+    background-color: transparent;
+}
+
+@media (min-width: 992px) {
+
+    .selected-for-you {
+        margin-bottom: 82px;
+    }
+
+    .swiper-btn-brown {
+        display: flex;
+    }
 }
