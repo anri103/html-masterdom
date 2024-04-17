@@ -1865,10 +1865,10 @@
         </section>
 
         <!-- Подобрали для вас -->
-        <section class="section selected-for-you">
+        <section class="section section-slider-featured-products">
             <div class="container">
                 <p class="h2 ff-title mb-32px">Подобрали для вас</p>
-                <div class="swiper swiperSelectedProducts">
+                <div class="swiper swiperFeaturedProducts">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="product-item">
@@ -2112,13 +2112,13 @@
                         </div>
                     </div>
                     <!-- Навигация слайдера -->
-                    <div class="swiperSelectedProducts-next swiper-btn-brown swiper-btn-next" style="top: 200px;">
+                    <div class="swiperFeaturedProducts-next swiper-btn-brown swiper-btn-next" style="top: 200px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
                             <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
                         </svg>
                     </div>
                     <!-- Навигация слайдера -->
-                    <div class="swiperSelectedProducts-prev swiper-btn-brown swiper-btn-prev" style="top: 200px;">
+                    <div class="swiperFeaturedProducts-prev swiper-btn-brown swiper-btn-prev" style="top: 200px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
                             <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
                         </svg>
@@ -2128,10 +2128,10 @@
         </section>
 
         <!-- Похожие товары -->
-        <section class="section selected-for-you">
+        <section class="section section-slider-featured-products">
             <div class="container">
                 <p class="h2 ff-title mb-32px">Похожие товары</p>
-                <div class="swiper swiperSelectedProducts">
+                <div class="swiper swiperFeaturedProducts">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="product-item">
@@ -2375,13 +2375,59 @@
                         </div>
                     </div>
                     <!-- Навигация слайдера -->
-                    <div class="swiperSelectedProducts-next swiper-btn-brown swiper-btn-next" style="top: 200px;">
+                    <div class="swiperFeaturedProducts-next swiper-btn-brown swiper-btn-next" style="top: 200px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
                             <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
                         </svg>
                     </div>
                     <!-- Навигация слайдера -->
-                    <div class="swiperSelectedProducts-prev swiper-btn-brown swiper-btn-prev" style="top: 200px;">
+                    <div class="swiperFeaturedProducts-prev swiper-btn-brown swiper-btn-prev" style="top: 200px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                            <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Готовые решения -->
+        <section class="section section-slider-featured-collections">
+            <div class="container">
+                <p class="h2 ff-title mb-32px">Готовые решения</p>
+                <div class="swiper swiperReadyMadeSolutions">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="card-ready-made-solutions">
+                                <div class="card-top position-relative">
+                                    <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true" data-bs-content="<p class='popover-title'><a href='#' class='text-reset'>Керамогранит MARMORI Калакатта Белый Полированный</a></p><p class='text-muted-light'>60x120</p><p class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></p>" style="top: 45%; left: 10%;"></button>
+                                    <div class="card-top__info">Информация о проекте и дизайнере</div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#" class="card-title">Дизайн интерьера кухни</a>
+                                    <div class="text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня , это то место, где мы проводим большую часть времени...</div>
+                                    <a href="#" class="btn border-0 p-0">
+                                        подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                                            <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <!-- Навигация слайдера -->
+                    <div class="swiperReadyMadeSolutions-next swiper-btn-brown swiper-btn-next" style="top: 200px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                            <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <!-- Навигация слайдера -->
+                    <div class="swiperReadyMadeSolutions-prev swiper-btn-brown swiper-btn-prev" style="top: 200px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
                             <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
                         </svg>

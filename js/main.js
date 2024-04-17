@@ -272,13 +272,13 @@ var swiperProductCollection = new Swiper(".swiperProductCollection", {
 
 // Слайдер подборки товаров
 
-var swiperSelectedProducts = new Swiper(".swiperSelectedProducts", {
+var swiperFeaturedProducts = new Swiper(".swiperFeaturedProducts", {
     slidesPerView: 2,
     spaceBetween: 18,
     grabCursor: true,
     navigation: {
-        nextEl: ".swiperSelectedProducts-next",
-        prevEl: ".swiperSelectedProducts-prev",
+        nextEl: ".swiperFeaturedProducts-next",
+        prevEl: ".swiperFeaturedProducts-prev",
     },
     breakpoints: {
         768: {
@@ -287,6 +287,28 @@ var swiperSelectedProducts = new Swiper(".swiperSelectedProducts", {
         },
         1200: {
             slidesPerView: 4,
+            spaceBetween: 34,
+        },
+    },
+});
+
+// Готовые решения
+
+var swiperReadyMadeSolutions = new Swiper(".swiperReadyMadeSolutions", {
+    slidesPerView: 1,
+    spaceBetween: 18,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiperReadyMadeSolutions-next",
+        prevEl: ".swiperReadyMadeSolutions-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 22,
+        },
+        1200: {
+            slidesPerView: 3,
             spaceBetween: 34,
         },
     },
@@ -368,3 +390,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Enable popovers
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))

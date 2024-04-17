@@ -286,6 +286,66 @@ textarea {
     transform: translateX(10px);
 }
 
+.btn-interest {
+    position: absolute;
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 0 0 0 #fff;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 3;
+    animation: pulse-white 2s infinite;
+}
+
+.btn-interest::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 1);
+    transition: all 0.25s ease-in-out;
+}
+
+@keyframes pulse-white {
+    0% {
+        -moz-transform: scale(.95);
+        -o-transform: scale(.95);
+        -ms-transform: scale(.95);
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,0.7);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0.7);
+    }
+    70% {
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-box-shadow: 0 0 0 10px rgba(255,255,255,0);
+        box-shadow: 0 0 0 10px rgba(255,255,255,0);
+    }
+    100% {
+        -moz-transform: scale(.95);
+        -o-transform: scale(.95);
+        -ms-transform: scale(.95);
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        -webkit-box-shadow: 0 0 0 0 rgba(255,255,255,0);
+        box-shadow: 0 0 0 0 rgba(255,255,255,0);
+    }
+}
+
 /* BASE ============================ */
 
 .title {
@@ -3933,7 +3993,7 @@ textarea {
 
 /* Подобрали для вас */
 
-.selected-for-you {
+.section-slider-featured-products {
     margin-bottom: 42px;
 }
 
@@ -3981,11 +4041,80 @@ textarea {
 
 @media (min-width: 992px) {
 
-    .selected-for-you {
+    .section-slider-featured-products {
         margin-bottom: 82px;
     }
 
     .swiper-btn-brown {
         display: flex;
+    }
+}
+
+/* Готовые решения */
+
+.card-ready-made-solutions {
+    --bs-card-spacer-y: 22px;
+    --bs-card-spacer-x: 0;
+}
+
+.card-ready-made-solutions .card-top__info {
+    position: absolute;
+    bottom: 22px;
+    left: 22px;
+    right: 22px;
+    padding: 12px 18px;
+    color: #fff;
+    background-color: #9F9387CC;
+}
+
+.card-ready-made-solutions .card-title {
+    display: block;
+    font-family: var(--bs-title-font-family);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card-ready-made-solutions .btn {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-hover-color: var(--bs-body-color);
+}
+
+.card-ready-made-solutions .btn svg {
+    margin-left: 18px;
+    transition: 0.3s ease;
+}
+
+.card-ready-made-solutions .btn:hover svg {
+    transform: translateX(10px);
+}
+
+.card-ready-made-solutions .btn:hover svg path {
+    fill: var(--bs-body-color);
+}
+
+.popover {
+    --bs-popover-max-width: 240px;
+    font-family: var(--bs-body-font-family);
+}
+
+.popover .popover-body p:last-child {
+    margin-bottom: 0;
+}
+
+.popover .popover-title {
+    font-family: var(--bs-title-font-family);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+@media (min-width: 992px) {
+
+    .card-ready-made-solutions .card-title {
+        font-size: 32px;
+    }
+
+    .popover-title {
+        font-size: 20px;
     }
 }
