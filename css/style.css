@@ -3533,6 +3533,10 @@ textarea {
     margin-bottom: 56px;
 }
 
+.section-product__btn-wishlist.active svg {
+    fill: #02378F;
+}
+
 /* Колонка с галереей товара */
 
 .section-product__gallery-hero {
@@ -3910,7 +3914,34 @@ textarea {
 }
 
 .section-product-tabs__container .table tr td:first-child {
+    width: 35%;
     color: var(--theme-light-gray);
+}
+
+/* Комментарии */
+
+.user-review-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-review-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.user-review-item .user-review-item__body {
+    padding: 22px 0;
+}
+
+.user-review-item:not(:last-child) {
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.user-review-item__text p:last-child {
+    margin-bottom: 0;
 }
 
 /* Коллекции */

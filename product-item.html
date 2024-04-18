@@ -1143,7 +1143,7 @@
                                     <div class="d-flex align-items-center">
                                         <div class="section-product__sku">Арт. 610010001196</div>
                                         <div class="d-flex gap-3 align-items-center ms-auto">
-                                            <button type="button" class="btn section-product__btn-wishlist border-0 p-0">
+                                            <button type="button" class="btn section-product__btn-wishlist js-toggle-active border-0 p-0">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
                                                     <path d="M13.0075 21L2.82266 11.7879C-2.71261 6.2605 5.42421 -4.35199 13.0075 4.23381C20.5908 -4.35199 28.6908 6.29736 23.1924 11.7879L13.0075 21Z" stroke="#1A1A16" stroke-width="0.808552" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
@@ -1619,116 +1619,132 @@
                                 </div>
                             </div>
                             <div class="col-lg-8 col-xl-6 order-lg-1 me-xl-auto">
+
+                                <!-- Заголовок -->
                                 <div class="d-flex gap-3 align-items-center mb-3">
                                     <div class="h4 mb-0">Отзывы</div>
+                                    <!-- Отображать если есть отзывы -->
                                     <div>8 отзывов</div>
                                 </div>
-                                <!-- фильтры -->
-                                <div class="d-flex gap-3">
-                                    <div>Положительные</div>
-                                    <div>По умолчанию</div>
-                                    <div>с фото</div>
-                                </div>
 
-                                <!-- Контейнер отзывов -->
-                                <div class="d-flex gap-3 flex-column">
-                                    <!-- Отзыв -->
-                                    <div class="user-review-item d-flex flex-column pb-3 border-bottom mt-3" style="gap: 12px;">
-                                        <div class="d-flex gap-2 align-items-center">
-                                            <!-- Аватар -->
-                                            <div class="d-flex align-items-center justify-content-center text-center rounded-circle bg-white" style="width: 55px; height: 55px;">
-                                                Н
-                                            </div>
-                                            <!-- Оценка пользователя -->
-                                            <div class="d-flex gap-1 align-items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
-                                                    <path d="M13 1.12978L16.3722 7.96267L16.4886 8.19839L16.7487 8.23619L24.2893 9.3319L18.8329 14.6506L18.6446 14.8341L18.6891 15.0931L19.9771 22.6032L13.2327 19.0574L13 18.9351L12.7673 19.0574L6.02286 22.6032L7.31094 15.0931L7.35537 14.8341L7.16714 14.6506L1.71075 9.3319L9.2513 8.23619L9.51143 8.19839L9.62776 7.96267L13 1.12978Z" stroke="#ACB2BF"/>
-                                                </svg>
-                                                <div>4</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="d-flex gap-2">
-                                                <div class="fw-medium">Наум</div>
-                                                <div class="text-secondary">12.02.2024</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <p>Отзывы оставляют только те, кто купил товар. Так мы формируем честный рейтинг</p>
-                                        </div>
+                                <!-- Если отзывов нет -->
+                                <div class="fs-18px" style="display: none; max-width: 540px;">Помогите другим пользователям с выбором - будьте первым, кто поделится своим мнением об этом товаре.</div>
+
+                                <!-- Если отзывы есть -->
+                                <div style="display: block;">    
+                                    <!-- фильтры -->
+                                    <div class="d-flex gap-3">
+                                        <div>Положительные</div>
+                                        <div>По умолчанию</div>
+                                        <div>с фото</div>
                                     </div>
-                                    <!-- Отзыв -->
-                                    <div class="user-review-item d-flex flex-column pb-3 border-bottom mt-3" style="gap: 12px;">
-                                        <div class="d-flex gap-2 align-items-center">
-                                            <!-- Аватар -->
-                                            <div class="d-flex align-items-center justify-content-center text-center rounded-circle bg-white" style="width: 55px; height: 55px;">
-                                                А
-                                            </div>
-                                            <!-- Оценка пользователя -->
-                                            <div class="d-flex gap-1 align-items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
-                                                    <path d="M13 1.12978L16.3722 7.96267L16.4886 8.19839L16.7487 8.23619L24.2893 9.3319L18.8329 14.6506L18.6446 14.8341L18.6891 15.0931L19.9771 22.6032L13.2327 19.0574L13 18.9351L12.7673 19.0574L6.02286 22.6032L7.31094 15.0931L7.35537 14.8341L7.16714 14.6506L1.71075 9.3319L9.2513 8.23619L9.51143 8.19839L9.62776 7.96267L13 1.12978Z" stroke="#ACB2BF"/>
-                                                </svg>
-                                                <div>4</div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="swiper swiperUserCommentary" id="user#091275-review-slider">
-                                                <div class="swiper-wrapper">
-                                                    <div class="swiper-slide">
-                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
-                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
-                                                        </a>
+    
+                                    <!-- Контейнер отзывов -->
+                                    <div class="user-review-wrap">
+                                        <!-- Отзыв -->
+                                        <div class="user-review-item">
+                                            <div class="user-review-item__body">
+                                                <div class="d-flex flex-column" style="gap: 12px;">
+                                                    <div class="d-flex gap-2 align-items-center">
+                                                        <!-- Аватар -->
+                                                        <div class="d-flex align-items-center justify-content-center text-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                                                            Н
+                                                        </div>
+                                                        <!-- Оценка пользователя -->
+                                                        <div class="d-flex gap-1 align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                                                                <path d="M13 1.12978L16.3722 7.96267L16.4886 8.19839L16.7487 8.23619L24.2893 9.3319L18.8329 14.6506L18.6446 14.8341L18.6891 15.0931L19.9771 22.6032L13.2327 19.0574L13 18.9351L12.7673 19.0574L6.02286 22.6032L7.31094 15.0931L7.35537 14.8341L7.16714 14.6506L1.71075 9.3319L9.2513 8.23619L9.51143 8.19839L9.62776 7.96267L13 1.12978Z" stroke="#ACB2BF"/>
+                                                            </svg>
+                                                            <div>4</div>
+                                                        </div>
                                                     </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
-                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
-                                                        </a>
+                                                    <div class="d-flex gap-2">
+                                                        <div class="fw-medium">Наум</div>
+                                                        <div class="text-secondary">12.02.2024</div>
                                                     </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
-                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
-                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
-                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
-                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
-                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
-                                                            <img class="img-fluid" src="img/product-gallery-01.jpg">
-                                                        </a>
+                                                    <div class="user-review-item__text">
+                                                        <p>Отзывы оставляют только те, кто купил товар. Так мы формируем честный рейтинг</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="d-flex gap-2">
-                                                <div class="fw-medium">Александр</div>
-                                                <div class="text-secondary">12.02.2024</div>
+                                        <!-- Отзыв -->
+                                        <div class="user-review-item">
+                                            <div class="user-review-item__body">
+                                                <div class="d-flex flex-column" style="gap: 12px;">
+                                                    <div class="d-flex gap-2 align-items-center">
+                                                        <!-- Аватар -->
+                                                        <div class="d-flex align-items-center justify-content-center text-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                                                            А
+                                                        </div>
+                                                        <!-- Оценка пользователя -->
+                                                        <div class="d-flex gap-1 align-items-center">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="24" viewBox="0 0 26 24" fill="none">
+                                                                <path d="M13 1.12978L16.3722 7.96267L16.4886 8.19839L16.7487 8.23619L24.2893 9.3319L18.8329 14.6506L18.6446 14.8341L18.6891 15.0931L19.9771 22.6032L13.2327 19.0574L13 18.9351L12.7673 19.0574L6.02286 22.6032L7.31094 15.0931L7.35537 14.8341L7.16714 14.6506L1.71075 9.3319L9.2513 8.23619L9.51143 8.19839L9.62776 7.96267L13 1.12978Z" stroke="#ACB2BF"/>
+                                                            </svg>
+                                                            <div>4</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="swiper swiperUserCommentary" id="user#091275-review-slider">
+                                                            <div class="swiper-wrapper">
+                                                                <div class="swiper-slide">
+                                                                    <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                                        <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                                        <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                                        <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                                        <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                                        <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                                        <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                                        <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="swiper-slide">
+                                                                    <a href="img/product-gallery-01.jpg" data-fancybox="user#091275-review-slide">
+                                                                        <img class="img-fluid" src="img/product-gallery-01.jpg">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex gap-2">
+                                                        <div class="fw-medium">Александр</div>
+                                                        <div class="text-secondary">12.02.2024</div>
+                                                    </div>
+                                                    <div class="user-review-item__text">
+                                                        <p>Отзывы оставляют только те, кто купил товар. Так мы формируем честный рейтинг</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div>
-                                            <p>Отзывы оставляют только те, кто купил товар. Так мы формируем честный рейтинг</p>
                                         </div>
                                     </div>
                                 </div>
+
+
                             </div>
                         </div>
 

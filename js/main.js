@@ -114,6 +114,18 @@ likeButtons.forEach(function (button) {
     });
 });
 
+const wishlistBtn = document.querySelectorAll('.js-toggle-active');
+
+wishlistBtn.forEach(function (button) {
+    button.addEventListener('click', function () {
+        if (button.classList.contains('active')) {
+            button.classList.remove('active');
+        } else {
+            button.classList.add('active');
+        }
+    });
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Swiper Sliders ]
 
