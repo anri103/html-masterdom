@@ -262,6 +262,10 @@ var swiperProductCollection = new Swiper(".swiperProductCollection", {
         nextEl: ".swiperProductCollection-next",
         prevEl: ".swiperProductCollection-prev",
     },
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+    },
     breakpoints: {
         992: {
             slidesPerView: 3,
@@ -301,6 +305,10 @@ var swiperReadyMadeSolutions = new Swiper(".swiperReadyMadeSolutions", {
     navigation: {
         nextEl: ".swiperReadyMadeSolutions-next",
         prevEl: ".swiperReadyMadeSolutions-prev",
+    },
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
     },
     breakpoints: {
         768: {
@@ -391,6 +399,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// Enable popovers
+// Enable bootstrap popovers
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))

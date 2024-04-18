@@ -1164,7 +1164,7 @@
                 </div>
 
                 <!-- Конетейнер для колонок "Галерея" и "Инфо о товаре" -->
-                <div class="row">
+                <div class="row" style="--bs-gutter-y: 2.5rem;">
 
                     <!-- Колонка с галереей товара -->
                     <div class="col-lg-6 col-xxl-5">
@@ -1283,13 +1283,17 @@
                                                 <div class="col-5">
                                                     <div class="properties-table-item__title">
                                                         Вид
-                                                        <div class="tooltip-custom">
+                                                        <button type="button" class="btn border-0 p-0" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                                        data-bs-content="
+                                                        <div class='d-flex gap-3 flex-column'>
+                                                            <div class='popover-text'>Всплывающая подсказка <a href='#'>с ссылкой</a>.</div>
+                                                        </div>">
                                                             <svg class="align-top" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                                                                 <circle cx="6" cy="6" r="6" fill="#DEE5ED"/>
                                                                 <path d="M5.8356 7.18565C5.8356 6.94937 5.8763 6.74684 5.95772 6.57806C6.04541 6.40928 6.15188 6.2602 6.27714 6.1308C6.40866 6.00141 6.54645 5.88045 6.6905 5.76793C6.84081 5.65541 6.98173 5.5429 7.11326 5.43038C7.24478 5.31224 7.35125 5.18565 7.43267 5.05063C7.51409 4.90999 7.5548 4.74684 7.5548 4.56118C7.5548 4.25738 7.42328 4.00985 7.16023 3.81857C6.89718 3.62729 6.52453 3.53165 6.04228 3.53165C5.64144 3.53165 5.29384 3.59072 4.99948 3.70886C4.70511 3.82138 4.45459 3.99015 4.24791 4.21519L3.75 3.87764C4.00052 3.59634 4.32307 3.37975 4.71764 3.22785C5.11221 3.07595 5.56942 3 6.08925 3C6.52766 3 6.90658 3.05907 7.22599 3.17721C7.55167 3.29536 7.80219 3.46414 7.97756 3.68354C8.15919 3.90295 8.25 4.16456 8.25 4.46835C8.25 4.71027 8.20616 4.91842 8.11848 5.09283C8.03706 5.2616 7.93058 5.4135 7.79906 5.54852C7.6738 5.67792 7.53601 5.80169 7.3857 5.91983C7.24165 6.03235 7.10386 6.14768 6.97234 6.26582C6.84081 6.38397 6.73434 6.51617 6.65292 6.66245C6.5715 6.80872 6.53079 6.98312 6.53079 7.18565H5.8356ZM6.18319 9C6.05167 9 5.9358 8.95781 5.8356 8.87342C5.74165 8.7834 5.69468 8.67933 5.69468 8.56118C5.69468 8.43741 5.74165 8.33615 5.8356 8.25738C5.9358 8.173 6.05167 8.1308 6.18319 8.1308C6.32724 8.1308 6.44624 8.173 6.54019 8.25738C6.63413 8.33615 6.68111 8.43741 6.68111 8.56118C6.68111 8.67933 6.63413 8.7834 6.54019 8.87342C6.44624 8.95781 6.32724 9 6.18319 9Z" fill="#1A1A16"/>
                                                             </svg>
-                                                            <div class="tooltip-content tooltip-top-right">Всплывающая подсказка <a href="#">с ссылкой</a>.</div>
-                                                        </div>
+                                                        </button>
+                                                        <!-- <div class="tooltip-content tooltip-top-right">Всплывающая подсказка <a href="#">с ссылкой</a>.</div> -->
                                                     </div>
                                                 </div>
                                                 <div class="col-7">
@@ -1742,7 +1746,7 @@
         <!-- Коллекции -->
         <section class="section section-product-collections">
             <div class="container">
-                <div class="row">
+                <div class="row" style="--bs-gutter-y: 2rem;">
                     <div class="col-lg-4">
                         <div class="d-flex flex-column" style="gap: 42px;">
                             <div class="d-flex gap-2 flex-column">
@@ -1768,7 +1772,7 @@
                                     текстуры Charme Extra
                                 </a>
                             </div>
-                            <div class="d-flex align-items-center" style="gap: 32px;">
+                            <div class="d-none d-lg-flex align-items-center" style="gap: 32px;">
                                 <button type="button" class="swiperProductCollection-prev btn border-0 p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="30" viewBox="0 0 18 30" fill="none">
                                         <path d="M18 0L0 15L18 30V27.8595L2.56855 15L18 2.14046V0Z" fill="#ACB2BF"/>
@@ -1783,7 +1787,8 @@
                         </div>
                     </div>
                     <div class="col-lg-8">
-                        <div class="swiper swiperProductCollection">
+                        <div class="swiper swiper-with-scrollbar swiperProductCollection">
+                            <div class="swiper-scrollbar"></div>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="product-collection-card">
@@ -2394,19 +2399,44 @@
         <section class="section section-slider-featured-collections">
             <div class="container">
                 <p class="h2 ff-title mb-32px">Готовые решения</p>
-                <div class="swiper swiperReadyMadeSolutions">
+                <div class="swiper swiper-with-scrollbar swiperReadyMadeSolutions">
+                    <div class="swiper-scrollbar"></div>
                     <div class="swiper-wrapper">
-
                         <div class="swiper-slide">
                             <div class="card-ready-made-solutions">
                                 <div class="card-top position-relative">
                                     <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
-                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="top" data-bs-html="true" data-bs-content="<p class='popover-title'><a href='#' class='text-reset'>Керамогранит MARMORI Калакатта Белый Полированный</a></p><p class='text-muted-light'>60x120</p><p class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></p>" style="top: 45%; left: 10%;"></button>
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 25%; left: 25%;"></button>
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 70%; left: 15%;"></button>
                                     <div class="card-top__info">Информация о проекте и дизайнере</div>
                                 </div>
                                 <div class="card-body">
-                                    <a href="#" class="card-title">Дизайн интерьера кухни</a>
-                                    <div class="text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня , это то место, где мы проводим большую часть времени...</div>
+                                    <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                    <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
                                     <a href="#" class="btn border-0 p-0">
                                         подробнее
                                         <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
@@ -2416,18 +2446,147 @@
                                 </div>
                             </div>
                         </div>
-
-
-
+                        <div class="swiper-slide">
+                            <div class="card-ready-made-solutions">
+                                <div class="card-top position-relative">
+                                    <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 48%; left: 82%;"></button>
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 77%; left: 72%;"></button>
+                                    <div class="card-top__info">Информация о проекте и дизайнере</div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                    <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">
+                                        подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                                            <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-ready-made-solutions">
+                                <div class="card-top position-relative">
+                                    <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 48%; left: 82%;"></button>
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 77%; left: 72%;"></button>
+                                    <div class="card-top__info">Информация о проекте и дизайнере</div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                    <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">
+                                        подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                                            <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-ready-made-solutions">
+                                <div class="card-top position-relative">
+                                    <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 25%; left: 25%;"></button>
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 70%; left: 15%;"></button>
+                                    <div class="card-top__info">Информация о проекте и дизайнере</div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                    <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">
+                                        подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                                            <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- Навигация слайдера -->
-                    <div class="swiperReadyMadeSolutions-next swiper-btn-brown swiper-btn-next" style="top: 200px;">
+                    <div class="swiperReadyMadeSolutions-next swiper-btn-brown swiper-btn-next" style="top: 235px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
                             <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
                         </svg>
                     </div>
                     <!-- Навигация слайдера -->
-                    <div class="swiperReadyMadeSolutions-prev swiper-btn-brown swiper-btn-prev" style="top: 200px;">
+                    <div class="swiperReadyMadeSolutions-prev swiper-btn-brown swiper-btn-prev" style="top: 235px;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
                             <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
                         </svg>
