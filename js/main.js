@@ -322,6 +322,26 @@ var swiperReadyMadeSolutions = new Swiper(".swiperReadyMadeSolutions", {
     },
 });
 
+var swiperProductSertification = new Swiper(".swiperProductSertification", {
+    slidesPerView: 2,
+    spaceBetween: 18,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiperProductSertification-next",
+        prevEl: ".swiperProductSertification-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 22,
+        },
+        1200: {
+            slidesPerView: 5,
+            spaceBetween: 34,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
