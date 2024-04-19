@@ -4202,3 +4202,17 @@ textarea {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+/* section-cart */
+
+.message-empty-wrap {
+    min-height: 75vh;
+    padding: 102px 0;
+}
+
+@media (min-width: 992px) {
+
+    .message-empty-wrap {
+        padding: 42px 0;
+    }
+}
