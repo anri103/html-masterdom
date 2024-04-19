@@ -427,6 +427,15 @@ textarea {
 .link-body {
     --bs-link-color-rgb: var(--bs-body-color-rgb);
     --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    color: rgba(var(--bs-link-color-rgb));
+}
+
+.btn-hover-primary {
+    --bs-btn-hover-color: var(--bs-primary);
+}
+
+.btn-hover-primary:hover .svg-path-hover-primary {
+    stroke: var(--bs-primary);
 }
 
 .text-red {
@@ -3666,6 +3675,7 @@ textarea {
 }
 
 .properties-table-item__format-wrapper a.active {
+    color: inherit;
     font-weight: 500;
     background-color: #F8F8F8;
 }
@@ -3704,7 +3714,6 @@ textarea {
 
 .section-product__brand-img {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
     max-width: 150px;
 }
@@ -3792,6 +3801,7 @@ textarea {
 }
 
 .counter-measure__item.active {
+    color: inherit;
     font-weight: 600;
     background-color: #f8f8f8;
 }

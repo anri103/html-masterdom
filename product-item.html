@@ -1143,16 +1143,16 @@
                                     <div class="d-flex align-items-center">
                                         <div class="section-product__sku">Арт. 610010001196</div>
                                         <div class="d-flex gap-3 align-items-center ms-auto">
-                                            <button type="button" class="btn section-product__btn-wishlist js-toggle-active border-0 p-0">
+                                            <button type="button" class="btn section-product__btn-wishlist btn-hover-primary js-toggle-active border-0 p-0">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
-                                                    <path d="M13.0075 21L2.82266 11.7879C-2.71261 6.2605 5.42421 -4.35199 13.0075 4.23381C20.5908 -4.35199 28.6908 6.29736 23.1924 11.7879L13.0075 21Z" stroke="#1A1A16" stroke-width="0.808552" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path class="svg-path-hover-primary" d="M13.0075 21L2.82266 11.7879C-2.71261 6.2605 5.42421 -4.35199 13.0075 4.23381C20.5908 -4.35199 28.6908 6.29736 23.1924 11.7879L13.0075 21Z" stroke="#1A1A16" stroke-width="0.808552" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
-                                            <button type="button" class="btn section-product__btn-share border-0 p-0">
+                                            <button type="button" class="btn section-product__btn-share btn-hover-primary border-0 p-0">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-                                                    <path d="M22 12L14.5 4L7 12" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M14 20L14 5" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M5 25H23" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path class="svg-path-hover-primary" d="M22 12L14.5 4L7 12" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path class="svg-path-hover-primary" d="M14 20L14 5" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path class="svg-path-hover-primary" d="M5 25H23" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>
                                             </button>
                                         </div>
@@ -1379,27 +1379,19 @@
                                         <div class="row gy-3 gx-2">
                                             <div class="col-sm-6">
                                                 <div class="counter-drop">
-                                                    <button type="button" class="counter__btn counter-decrease">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="2" viewBox="0 0 6 2" fill="none">
-                                                            <path d="M5.48733 0.151936V1.45414H0.183819V0.151936H5.48733Z" fill="black"/>
-                                                        </svg>
-                                                    </button>
+                                                    <button type="button" class="btn counter__btn counter-decrease btn-hover-primary">-</button>
                                                     <input type="text" style="display: none;">
                                                     <div class="counter__input" data-product="76578" data-quantity="1" data-measure="м2" data-measurecode="m2" data-measureproduct="м2" data-multiplicity="0.5" data-multiplicityvupakovke="22">
                                                         <span class="counter__value">900.59</span>
                                                         <span class="counter__volume ms-1">м<sup>2</sup></span>
                                                     </div>
-                                                    <button type="button" class="counter__btn counter-increase">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
-                                                            <path d="M3.82998 8.17133V0.358123H5.15586V8.17133H3.82998ZM0.586317 4.92766V3.60179H8.39952V4.92766H0.586317Z" fill="black"/>
-                                                        </svg>
-                                                    </button>
+                                                    <button type="button" class="btn counter__btn counter-increase btn-hover-primary">+</button>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="counter-measure">
-                                                    <button type="button" class="counter-measure__item active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
-                                                    <button type="button" class="counter-measure__item" data-measure="pieces" data-measurename="шт">шт</button>
+                                                    <button type="button" class="btn counter-measure__item btn-hover-primary active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
+                                                    <button type="button" class="btn counter-measure__item btn-hover-primary" data-measure="pieces" data-measurename="шт">шт</button>
                                                 </div>
                                                 <div class="text-muted-light text-center" style="margin-top: 10px; font-size: 12px;">0,52 м = 36 шт</div>
                                             </div>
@@ -1560,12 +1552,16 @@
                     </div>
                     <!-- Описание -->
                     <div class="product-tab" id="product-tab-about">
-                        <p class="h4">Основные</p>
-                        <p>Плитка керамическая Idalgo Арабеско ID9084b093MR (Россия). Цвет: Серый, Темно-серый, назначение плитки: Для пола, изготавливается из высококачественного материала - Керамогранит, эффект или декор поверхности плитки - С рисунком, поверхность: Матовая.</p>
-                        <p>Подходит для следующих помещений: для балкона, для бани и сауны, для бильярдного зала, для ванной, для гостиной, для детской, для душа, для коридора/прихожей, для кухни, для офиса/кабинета, для спальни. Перед покупкой рекомендуем уточнять наличие нужной Вам партии, так как разные партии будут отличаться по тональности.</p>
-                        <p>Обратите внимание на то, что реальный оттенок плитки может быть другим из-за разных настроек цветопередачи и разрешения монитора.</p>
-                        <p class="h4">Комплектация</p>
-                        <p>Материал в заводской упаковке. Количество штук указано в характеристиках.</p>
+                        <div class="row gy-3">
+                            <div class="col-lg-8">
+                                <p class="h4">Основные</p>
+                                <p>Плитка керамическая Idalgo Арабеско ID9084b093MR (Россия). Цвет: Серый, Темно-серый, назначение плитки: Для пола, изготавливается из высококачественного материала - Керамогранит, эффект или декор поверхности плитки - С рисунком, поверхность: Матовая.</p>
+                                <p>Подходит для следующих помещений: для балкона, для бани и сауны, для бильярдного зала, для ванной, для гостиной, для детской, для душа, для коридора/прихожей, для кухни, для офиса/кабинета, для спальни. Перед покупкой рекомендуем уточнять наличие нужной Вам партии, так как разные партии будут отличаться по тональности.</p>
+                                <p>Обратите внимание на то, что реальный оттенок плитки может быть другим из-за разных настроек цветопередачи и разрешения монитора.</p>
+                                <p class="h4">Комплектация</p>
+                                <p>Материал в заводской упаковке. Количество штук указано в характеристиках.</p>
+                            </div>
+                        </div>
                     </div>
                     <!-- Отзывы -->
                     <div class="product-tab" id="product-tab-reviews">
@@ -1774,8 +1770,12 @@
                     </div>
                     <!-- Доставка -->
                     <div class="product-tab" id="product-tab-delivery">
-                        <p class="h4">Доставка</p>
-                        <p>Подходит для следующих помещений: для балкона, для бани и сауны, для бильярдного зала, для ванной, для гостиной, для детской, для душа, для коридора/прихожей, для кухни, для офиса/кабинета, для спальни. Перед покупкой рекомендуем уточнять наличие нужной Вам партии, так как разные партии будут отличаться по тональности.</p>
+                        <div class="row gy-3">
+                            <div class="col-lg-8">
+                                <p class="h4">Доставка</p>
+                                <p>Подходит для следующих помещений: для балкона, для бани и сауны, для бильярдного зала, для ванной, для гостиной, для детской, для душа, для коридора/прихожей, для кухни, для офиса/кабинета, для спальни. Перед покупкой рекомендуем уточнять наличие нужной Вам партии, так как разные партии будут отличаться по тональности.</p>
+                            </div>
+                        </div>
                     </div>
                     <!-- Сертификаты -->
                     <div class="product-tab" id="product-tab-certificates">
@@ -1845,14 +1845,14 @@
                                 <p><a href="#" class="fw-medium">подробнее</a></p>
                             </div>
                             <div class="d-flex gap-2 flex-column align-items-start">
-                                <a href="#" class="btn border-0 p-0">
+                                <a href="#" class="btn btn-hover-primary border-0 p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7.61785 11.667C7.33001 11.3792 6.86333 11.3792 6.57549 11.667C6.28766 11.9548 6.28766 12.4215 6.57549 12.7094L15.2397 21.3736C15.3779 21.5118 15.5654 21.5894 15.7609 21.5894C15.9563 21.5894 16.1438 21.5118 16.282 21.3736L24.9462 12.7094C25.2341 12.4215 25.2341 11.9548 24.9462 11.667C24.6584 11.3792 24.1917 11.3792 23.9039 11.667L16.4992 19.0717L16.4992 3.76493C16.4992 3.35787 16.1692 3.02787 15.7621 3.02787C15.355 3.02787 15.0251 3.35787 15.0251 3.76493L15.0251 19.0742L7.61785 11.667Z" fill="#1A1A16"/>
                                         <path d="M5.64673 27.8317H25.8632" stroke="#1A1A16" stroke-width="1.47412" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                     каталог PDF
                                 </a>
-                                <a href="#" class="btn border-0 p-0">
+                                <a href="#" class="btn btn-hover-primary border-0 p-0">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7.61785 11.667C7.33001 11.3792 6.86333 11.3792 6.57549 11.667C6.28766 11.9548 6.28766 12.4215 6.57549 12.7094L15.2397 21.3736C15.3779 21.5118 15.5654 21.5894 15.7609 21.5894C15.9563 21.5894 16.1438 21.5118 16.282 21.3736L24.9462 12.7094C25.2341 12.4215 25.2341 11.9548 24.9462 11.667C24.6584 11.3792 24.1917 11.3792 23.9039 11.667L16.4992 19.0717L16.4992 3.76493C16.4992 3.35787 16.1692 3.02787 15.7621 3.02787C15.355 3.02787 15.0251 3.35787 15.0251 3.76493L15.0251 19.0742L7.61785 11.667Z" fill="#1A1A16"/>
                                         <path d="M5.64673 27.8317H25.8632" stroke="#1A1A16" stroke-width="1.47412" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1882,7 +1882,7 @@
                                     <div class="product-collection-card">
                                         <img class="img-fluid w-100" src="img/thumb-charme-01.png" alt="">
                                         <div class="card-body">
-                                            <a href="#" class="card-title stretched-link">Charme Extra Силвер Мозаика Люкс</a>
+                                            <a href="#" class="card-title link-body stretched-link">Charme Extra Силвер Мозаика Люкс</a>
                                             <div class="d-flex gap-2 flex-column">
                                                 <div>29.2x29.2 см</div>
                                                 <div>9 mm, Люкс</div>
@@ -1894,7 +1894,7 @@
                                     <div class="product-collection-card">
                                         <img class="img-fluid w-100" src="img/thumb-charme-02.png" alt="">
                                         <div class="card-body">
-                                            <a href="#" class="card-title stretched-link">Крим Ривер</a>
+                                            <a href="#" class="card-title link-body stretched-link">Крим Ривер</a>
                                             <div class="d-flex gap-2 flex-column">
                                                 <div>80x160 cm</div>
                                                 <div>9 mm, Натуральный</div>
@@ -1906,7 +1906,7 @@
                                     <div class="product-collection-card">
                                         <img class="img-fluid w-100" src="img/thumb-charme-03.png" alt="">
                                         <div class="card-body">
-                                            <a href="#" class="card-title stretched-link">Charme Extra Атлантик Мозаика</a>
+                                            <a href="#" class="card-title link-body stretched-link">Charme Extra Атлантик Мозаика</a>
                                             <div class="d-flex gap-2 flex-column">
                                                 <div>25x29 см</div>
                                                 <div>10 mm, Палированный</div>
@@ -1918,7 +1918,7 @@
                                     <div class="product-collection-card">
                                         <img class="img-fluid w-100" src="img/thumb-charme-01.png" alt="">
                                         <div class="card-body">
-                                            <a href="#" class="card-title stretched-link">Charme Extra Силвер Мозаика Люкс</a>
+                                            <a href="#" class="card-title link-body stretched-link">Charme Extra Силвер Мозаика Люкс</a>
                                             <div class="d-flex gap-2 flex-column">
                                                 <div>29.2x29.2 см</div>
                                                 <div>9 mm, Люкс</div>
@@ -1930,7 +1930,7 @@
                                     <div class="product-collection-card">
                                         <img class="img-fluid w-100" src="img/thumb-charme-02.png" alt="">
                                         <div class="card-body">
-                                            <a href="#" class="card-title stretched-link">Крим Ривер</a>
+                                            <a href="#" class="card-title link-body stretched-link">Крим Ривер</a>
                                             <div class="d-flex gap-2 flex-column">
                                                 <div>80x160 cm</div>
                                                 <div>9 mm, Натуральный</div>
@@ -1942,7 +1942,7 @@
                                     <div class="product-collection-card">
                                         <img class="img-fluid w-100" src="img/thumb-charme-03.png" alt="">
                                         <div class="card-body">
-                                            <a href="#" class="card-title stretched-link">Charme Extra Атлантик Мозаика</a>
+                                            <a href="#" class="card-title link-body stretched-link">Charme Extra Атлантик Мозаика</a>
                                             <div class="d-flex gap-2 flex-column">
                                                 <div>25x29 см</div>
                                                 <div>10 mm, Палированный</div>
@@ -1961,7 +1961,8 @@
         <section class="section section-slider-featured-products">
             <div class="container">
                 <p class="h2 ff-title mb-32px">Подобрали для вас</p>
-                <div class="swiper swiperFeaturedProducts">
+                <div class="swiper swiper-with-scrollbar swiperFeaturedProducts">
+                    <div class="swiper-scrollbar"></div>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="product-item">
@@ -2224,7 +2225,8 @@
         <section class="section section-slider-featured-products">
             <div class="container">
                 <p class="h2 ff-title mb-32px">Похожие товары</p>
-                <div class="swiper swiperFeaturedProducts">
+                <div class="swiper swiper-with-scrollbar swiperFeaturedProducts">
+                    <div class="swiper-scrollbar"></div>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="product-item">

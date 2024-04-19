@@ -296,6 +296,10 @@ var swiperFeaturedProducts = new Swiper(".swiperFeaturedProducts", {
         nextEl: ".swiperFeaturedProducts-next",
         prevEl: ".swiperFeaturedProducts-prev",
     },
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+    },
     breakpoints: {
         768: {
             slidesPerView: 3,
