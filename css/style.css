@@ -78,6 +78,18 @@
 
 html {
     scroll-behavior: smooth;
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+    min-height: 75vh;
 }
 
 /* LINKS ============================ */
@@ -379,6 +391,10 @@ textarea {
     margin-bottom: 32px !important;
 }
 
+.gap-12px {
+    gap: 12px !important;
+}
+
 .z-1 {
     z-index: 1 !important;
 }
@@ -530,6 +546,12 @@ textarea {
     position: relative;
     display: inline-block;
     flex: 0 0 auto;
+}
+
+.container-gutter-inherit,
+.row-gutter-inherit {
+    --bs-gutter-x: inherit;
+    --bs-gutter-y: inherit;
 }
 
 @media (min-width: 992px) {
@@ -2765,6 +2787,36 @@ textarea {
     transform: translateX(12px);
 }
 
+.shop-location__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+}
+
+.shop-location__contacts > * {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.shop-location__contacts > *::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shop-location__contacts .item-phone::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cg clip-path='url(%23clip0_3600_3321)'%3E%3Cpath d='M7.5739 18.295C6.723 18.8447 5.70903 19.0844 4.70249 18.9736C3.69596 18.8626 2.75823 18.408 2.047 17.6861L1.42522 17.0772C1.15263 16.7979 1 16.4229 1 16.0324C1 15.6419 1.15263 15.2668 1.42522 14.9876L4.06432 12.3721C4.34081 12.1 4.71296 11.9475 5.10062 11.9475C5.48827 11.9475 5.86043 12.1 6.13691 12.3721C6.41573 12.6451 6.79018 12.798 7.18012 12.798C7.57005 12.798 7.94449 12.6451 8.22331 12.3721L12.3685 8.22058C12.5068 8.08409 12.6166 7.92144 12.6915 7.74208C12.7665 7.56272 12.8051 7.37021 12.8051 7.17578C12.8051 6.98133 12.7665 6.78883 12.6915 6.60946C12.6166 6.4301 12.5068 6.26745 12.3685 6.13096C12.0968 5.85406 11.9445 5.48133 11.9445 5.09308C11.9445 4.70482 12.0968 4.33211 12.3685 4.05519L14.9937 1.42588C15.2726 1.15286 15.647 1 16.0369 1C16.427 1 16.8014 1.15286 17.0802 1.42588L17.6882 2.04861C18.4089 2.76093 18.8628 3.7001 18.9735 4.70818C19.0843 5.71627 18.8451 6.7318 18.2961 7.58401C15.4359 11.8058 11.7965 15.4413 7.5739 18.295Z' stroke='%23474A51' stroke-width='0.829822' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.shop-location__contacts .item-email::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cg clip-path='url(%23clip0_3600_7767)'%3E%3Cpath d='M17.5644 3.00012H2.37992C1.61754 3.00012 0.999512 3.60422 0.999512 4.34939V15.8182C0.999512 16.5634 1.61754 17.1675 2.37992 17.1675H17.5644C18.3268 17.1675 18.9448 16.5634 18.9448 15.8182V4.34939C18.9448 3.60422 18.3268 3.00012 17.5644 3.00012Z' stroke='%23474A51' stroke-width='0.829822' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M0.999512 4.8891L9.08871 9.40247C9.33675 9.53757 9.64936 9.61155 9.97217 9.61155C10.295 9.61155 10.6076 9.53757 10.8556 9.40247L18.9448 4.8891' stroke='%23474A51' stroke-width='0.829822' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3600_7767'%3E%3Crect width='20' height='20' fill='white' transform='translate(0.0541992)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
 @media (min-width: 992px) {
 
     .section-shops-location__link {
@@ -2968,6 +3020,17 @@ textarea {
     --bs-breadcrumb-item-active-color: var(--bs-secondary);
     --bs-link-color-rgb: 172,178,191;
     --bs-link-hover-color-rgb: 2,55,143;
+}
+
+.section-page-title {
+    margin-bottom: 38px;
+}
+
+@media (min-width: 992px) {
+
+    .section-page-title {
+        margin-bottom: 42px;
+    }
 }
 
 /* section-catalog-heading ============================ */
@@ -4206,13 +4269,105 @@ textarea {
 /* section-cart */
 
 .message-empty-wrap {
-    min-height: 75vh;
     padding: 102px 0;
+}
+
+.section-whishlist {
+    --bs-gutter-x: 18px;
+    --bs-gutter-y: 18px;
 }
 
 @media (min-width: 992px) {
 
     .message-empty-wrap {
         padding: 42px 0;
+    }
+
+    .section-whishlist {
+        --bs-gutter-x: 34px;
+        --bs-gutter-y: 34px;
+    }
+}
+
+/* section-shops-grid */
+
+.section-shops-grid {
+    --bs-gutter-x: 22px;
+    --bs-gutter-y: 22px;
+    margin-bottom: 42px;
+}
+
+.city-shops-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.city-shops-item:not(:last-child) {
+    padding-bottom: 22px;
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.card-shop-location {
+    --bs-card-font-size: 1.125rem;
+    --bs-body-color: var(--bs-secondary);
+    --bs-link-color-rgb: var(--bs-secondary-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    --bs-card-spacer-y: 12px;
+    --bs-card-spacer-x: 12px;
+    font-size: var(--bs-card-font-size) !important;
+}
+
+.btn-card-shop-location {
+    --bs-btn-font-weight: 400;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: rgba(159, 147, 135, 0.8);
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: rgba(159, 147, 135, 1);
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: rgba(159, 147, 135, 1);
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: rgba(159, 147, 135, 1);
+    --bs-btn-disabled-border-color: transparent;
+    position: absolute;
+    bottom: 20px;
+    left: 22px;
+    right: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 15px 22px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: 0.3s ease;
+}
+
+.card-shop-location .card-title {
+    --bs-link-color-rgb: var(--bs-body-color-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    font-family: var(--bs-title-font-family);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+
+    .section-shops-grid {
+        --bs-gutter-x: 32px;
+        --bs-gutter-y: 32px;
+    }
+
+    .card-shop-location:hover .btn-card-shop-location {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
     }
 }

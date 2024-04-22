@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Избранное (пусто)</title>
+    <title>Магазины</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -1115,28 +1115,258 @@
         <!-- section-page-title -->
         <section class="section section-page-title">
             <div class="container">
-                <h1 class="title">Избранное</h1>
+                <div class="row gy-3">
+                    <div class="col-lg-7">
+                        <h1 class="title">Заголовок</h1>
+                        <p>В наших магазинах вы увидите весь ассортимент товаров вживую, а наши дизайнеры проконсультируют вас и помогут определиться с выбором.</p>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 ms-auto">
+                        <a href="#" class="btn btn-outline w-100">магазины на карте</a>
+                    </div>
+                </div>
+                <hr class="mt-5 mt-lg-3">
             </div>
         </section>
 
-        <!-- section-whishlist -->
-        <section class="section section-whishlist">
+        <!-- section-shops-grid -->
+        <section class="section section-shops-grid">
             <div class="container container-gutter-inherit">
-                <div class="message-empty-wrap d-flex justify-content-center">
-                    <div class="d-flex flex-column" style="gap: 32px;">
-                        <div class="d-flex justify-content-center">
-                            <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="186" height="185" viewBox="0 0 186 185" fill="none">
-                                <path d="M92.8596 162.268L21.7115 97.8229C-16.9561 59.1553 39.8851 -15.0863 92.8596 44.9772C145.834 -15.0863 202.418 59.4131 164.008 97.8229L92.8596 162.268Z" stroke="#ACB2BF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M131.318 149.743C145.962 149.743 157.834 137.872 157.834 123.228C157.834 108.584 145.962 96.7129 131.318 96.7129C116.674 96.7129 104.803 108.584 104.803 123.228C104.803 137.872 116.674 149.743 131.318 149.743Z" stroke="#ACB2BF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M131.318 149.743C145.962 149.743 157.834 137.872 157.834 123.228C157.834 108.584 145.962 96.7129 131.318 96.7129C116.674 96.7129 104.803 108.584 104.803 123.228C104.803 137.872 116.674 149.743 131.318 149.743Z" fill="white"/>
-                                <path d="M166.849 160.349L151.47 144.971" stroke="#ACB2BF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+            <div class="city-shops-wrapper">
+                <!-- city-item -->
+                <div class="city-shops-item">
+                    <h2 class="h4 ff-title text-uppercase fw-bold mb-22px">Москва</h2>
+                    <div class="row-gutter-inherit row row-cols-1 row-cols-md-2 row-cols-xl-3">
+                        <!-- item -->
+                        <div class="col">
+                            <div class="card-shop-location">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="#"><img class="img-fluid w-100" src="img/card-shop-location-01.png" alt=""></a>
+                                    <a href="#" class="btn btn-card-shop-location">
+                                        Подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
+                                            <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex gap-12px flex-column align-items-center text-center">
+                                        <div class="card-title">
+                                            <a href="#">МастерДом на Профсоюзной</a>
+                                        </div>
+                                        <div class="shop-location__tags justify-content-center" style="max-width: 300px;">
+                                            <div class="item-tag">Обои</div>
+                                            <div class="item-tag">Плитка</div>
+                                            <div class="item-tag">Отдел шторы</div>
+                                            <div class="item-tag">Светильники</div>
+                                            <div class="item-tag">Сантехники</div>
+                                        </div>
+                                        <div class="text-primary fw-medium">ежедневно с 10:00 до 21:00</div>
+                                        <div>г. Москва, Нахимовский проспект, д.59а</div>
+                                        <div class="shop-location__metro justify-content-center">
+                                            <div class="item-metro">Профсоюзная, 15 м</div>
+                                            <div class="item-metro">Профсоюзная, 15 м</div>
+                                        </div>
+                                        <div class="shop-location__contacts justify-content-center">
+                                            <a href="tel:88003503243" class="item-phone">8 (800) 350-32-43</a>
+                                            <a href="mailto:info@mail.ru" class="item-email">info@mail.ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="h4 fw-normal text-center">Здесь пока пусто.</div>
-                        <div>
-                            <a href="#" class="btn btn-secondary">перейти к покупкам</a>
+                        <!-- item -->
+                        <div class="col">
+                            <div class="card-shop-location">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="#"><img class="img-fluid w-100" src="img/card-shop-location-01.png" alt=""></a>
+                                    <a href="#" class="btn btn-card-shop-location">
+                                        Подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
+                                            <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex gap-12px flex-column align-items-center text-center">
+                                        <div class="card-title">
+                                            <a href="#">МастерДом на Профсоюзной</a>
+                                        </div>
+                                        <div class="shop-location__tags justify-content-center" style="max-width: 300px;">
+                                            <div class="item-tag">Обои</div>
+                                            <div class="item-tag">Плитка</div>
+                                            <div class="item-tag">Отдел шторы</div>
+                                            <div class="item-tag">Светильники</div>
+                                            <div class="item-tag">Сантехники</div>
+                                        </div>
+                                        <div class="text-primary fw-medium">ежедневно с 10:00 до 21:00</div>
+                                        <div>г. Москва, Нахимовский проспект, д.59а</div>
+                                        <div class="shop-location__metro justify-content-center">
+                                            <div class="item-metro">Профсоюзная, 15 м</div>
+                                            <div class="item-metro">Профсоюзная, 15 м</div>
+                                        </div>
+                                        <div class="shop-location__contacts justify-content-center">
+                                            <a href="tel:88003503243" class="item-phone">8 (800) 350-32-43</a>
+                                            <a href="mailto:info@mail.ru" class="item-email">info@mail.ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col">
+                            <div class="card-shop-location">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="#"><img class="img-fluid w-100" src="img/card-shop-location-01.png" alt=""></a>
+                                    <a href="#" class="btn btn-card-shop-location">
+                                        Подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
+                                            <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex gap-12px flex-column align-items-center text-center">
+                                        <div class="card-title">
+                                            <a href="#">МастерДом на Профсоюзной</a>
+                                        </div>
+                                        <div class="shop-location__tags justify-content-center" style="max-width: 300px;">
+                                            <div class="item-tag">Обои</div>
+                                            <div class="item-tag">Плитка</div>
+                                            <div class="item-tag">Отдел шторы</div>
+                                            <div class="item-tag">Светильники</div>
+                                            <div class="item-tag">Сантехники</div>
+                                        </div>
+                                        <div class="text-primary fw-medium">ежедневно с 10:00 до 21:00</div>
+                                        <div>г. Москва, Нахимовский проспект, д.59а</div>
+                                        <div class="shop-location__metro justify-content-center">
+                                            <div class="item-metro">Профсоюзная, 15 м</div>
+                                            <div class="item-metro">Профсоюзная, 15 м</div>
+                                        </div>
+                                        <div class="shop-location__contacts justify-content-center">
+                                            <a href="tel:88003503243" class="item-phone">8 (800) 350-32-43</a>
+                                            <a href="mailto:info@mail.ru" class="item-email">info@mail.ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="col">
+                            <div class="card-shop-location">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="#"><img class="img-fluid w-100" src="img/card-shop-location-01.png" alt=""></a>
+                                    <a href="#" class="btn btn-card-shop-location">
+                                        Подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
+                                            <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex gap-12px flex-column align-items-center text-center">
+                                        <div class="card-title">
+                                            <a href="#">МастерДом на Профсоюзной</a>
+                                        </div>
+                                        <div class="shop-location__tags justify-content-center" style="max-width: 300px;">
+                                            <div class="item-tag">Обои</div>
+                                            <div class="item-tag">Плитка</div>
+                                            <div class="item-tag">Отдел шторы</div>
+                                            <div class="item-tag">Светильники</div>
+                                            <div class="item-tag">Сантехники</div>
+                                        </div>
+                                        <div class="text-primary fw-medium">ежедневно с 10:00 до 21:00</div>
+                                        <div>г. Москва, Нахимовский проспект, д.59а</div>
+                                        <div class="shop-location__metro justify-content-center">
+                                            <div class="item-metro">Профсоюзная, 15 м</div>
+                                            <div class="item-metro">Профсоюзная, 15 м</div>
+                                        </div>
+                                        <div class="shop-location__contacts justify-content-center">
+                                            <a href="tel:88003503243" class="item-phone">8 (800) 350-32-43</a>
+                                            <a href="mailto:info@mail.ru" class="item-email">info@mail.ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <!-- city-item -->
+                <div class="city-shops-item">
+                    <h2 class="h4 ff-title text-uppercase fw-bold mb-22px">Санкт-Петербург</h2>
+                    <div class="row-gutter-inherit row row-cols-1 row-cols-md-2 row-cols-xl-3">
+                        <!-- item -->
+                        <div class="col">
+                            <div class="card-shop-location">
+                                <div class="position-relative overflow-hidden">
+                                    <a href="#"><img class="img-fluid w-100" src="img/card-shop-location-01.png" alt=""></a>
+                                    <a href="#" class="btn btn-card-shop-location">
+                                        Подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
+                                            <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="white"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex gap-12px flex-column align-items-center text-center">
+                                        <div class="card-title">
+                                            <a href="#">МастерДом на Профсоюзной</a>
+                                        </div>
+                                        <div class="shop-location__tags justify-content-center" style="max-width: 300px;">
+                                            <div class="item-tag">Обои</div>
+                                            <div class="item-tag">Плитка</div>
+                                            <div class="item-tag">Отдел шторы</div>
+                                            <div class="item-tag">Светильники</div>
+                                            <div class="item-tag">Сантехники</div>
+                                        </div>
+                                        <div class="text-primary fw-medium">ежедневно с 10:00 до 21:00</div>
+                                        <div>г. Москва, Нахимовский проспект, д.59а</div>
+                                        <div class="shop-location__metro justify-content-center">
+                                            <div class="item-metro">Профсоюзная, 15 м</div>
+                                            <div class="item-metro">Профсоюзная, 15 м</div>
+                                        </div>
+                                        <div class="shop-location__contacts justify-content-center">
+                                            <a href="tel:88003503243" class="item-phone">8 (800) 350-32-43</a>
+                                            <a href="mailto:info@mail.ru" class="item-email">info@mail.ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section section-shops-map">
+            <div class="container">
+                <div class="d-flex flex-column flex-lg-row align-items-lg-center" style="gap: 4px 12px;">
+                    <h2 class="h2 title mb-0">Магазины на карте</h2>
+                    <div class="text-secondary fs-18px">12 магазинов</div>
+                </div>
+                <div class="shops-map-tab-nav scrollable-container" role="tablist">
+                    <div class="scrollable-wrapper">
+                        <div class="scrollable-item">
+                            <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-shops-map-01" role="tab" aria-selected="true"><span>Москва</span></button>
+                        </div>
+                        <div class="scrollable-item">
+                            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-shops-map-02" role="tab" aria-selected="false" tabindex="-1"><span>Санкт-Петербург</span></button>
+                        </div>
+                        <div class="scrollable-item">
+                            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-shops-map-01" role="tab" aria-selected="false" tabindex="-1"><span>Смоленск</span></button>
+                        </div>
+                        <div class="scrollable-item">
+                            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-shops-map-02" role="tab" aria-selected="false" tabindex="-1"><span>Курск</span></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Вкладка 01 -->
+                <div class="tab-pane fade show active" id="tab-shops-map-01" role="tabpanel" tabindex="0">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/?ll=37.688486%2C55.745753&utm_campaign=desktop&utm_medium=mapframe&utm_source=maps&z=10.8" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.688486%2C55.745753&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=10.8" width="100%" height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+                <!-- Вкладка 02 -->
+                <div class="tab-pane fade" id="tab-shops-map-02" role="tabpanel" tabindex="0">
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/geo/sankt_peterburg/53000093/?ll=30.346534%2C59.930424&utm_campaign=desktop&utm_medium=mapframe&utm_source=maps&z=11.72" style="color:#eee;font-size:12px;position:absolute;top:14px;">Санкт-Петербург — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=30.346534%2C59.930424&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzAwMDA5MxIr0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsyIKDR2F8kEVUcFvQg%2C%2C&utm_campaign=desktop&utm_medium=search&utm_source=maps&z=11.72" width="100%" height="500" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
                 </div>
             </div>
         </section>
