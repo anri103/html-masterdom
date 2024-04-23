@@ -2754,7 +2754,7 @@ textarea {
 .shop-location__metro {
     display: flex;
     flex-wrap: wrap;
-    gap: 11px 8px;
+    gap: 12px 8px;
     color: var(--bs-secondary);
     font-size: 18px;
     font-weight: 400;
