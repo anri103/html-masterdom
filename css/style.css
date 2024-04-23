@@ -399,6 +399,14 @@ textarea {
     gap: 22px !important;
 }
 
+.gap-32px {
+    gap: 32px !important;
+}
+
+.gap-row-12px {
+    row-gap: 12px !important;
+}
+
 .z-1 {
     z-index: 1 !important;
 }
@@ -4385,6 +4393,7 @@ textarea {
 .underline-tab-nav {
     --bs-nav-link-color: var(--bs-secondary);
     --bs-nav-link-hover-color: var(--bs-primary);
+    --underline-tab-space-between: 12px;
 }
 
 .underline-tab-nav .scrollable-wrapper {
@@ -4392,7 +4401,7 @@ textarea {
 }
 
 .underline-tab-nav .scrollable-item:not(:last-child) {
-    margin-right: 12px;
+    margin-right: var(--underline-tab-space-between);
 }
 
 .underline-tab-nav .nav-link {
@@ -4430,5 +4439,18 @@ textarea {
 
     .section-shops-map {
         margin-bottom: 82px;
+    }
+}
+
+/* section-shop-top-banner */
+
+.section-shop-top-banner {
+    margin-bottom: 22px;
+}
+
+@media (min-width: 992px) {
+
+    .section-shop-top-banner {
+        margin-bottom: 42px;
     }
 }

@@ -358,6 +358,20 @@ var swiperProductSertification = new Swiper(".swiperProductSertification", {
     },
 });
 
+var swiperShopHero = new Swiper(".swiperShopHero", {
+    slidesPerView: 1,
+    loop: false,
+    spaceBetween: 22,
+    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    navigation: {
+        nextEl: ".swiperShopHero-next",
+        prevEl: ".swiperShopHero-prev",
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
