@@ -372,6 +372,24 @@ var swiperShopHero = new Swiper(".swiperShopHero", {
     },
 });
 
+var swiperShopBrands = new Swiper(".swiperShopBrands", {
+    slidesPerView: 2.15,
+    spaceBetween: 32,
+    grabCursor: true,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 5,
+        },
+        1200: {
+            slidesPerView: 7,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
