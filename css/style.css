@@ -133,7 +133,7 @@ textarea {
 
 .form-control:focus,
 .form-select:focus {
-    border-color: #000;
+    border-color: var(--bs-primary);
 }
 
 .form-select {
@@ -468,6 +468,10 @@ textarea {
 
 .btn-hover-primary:hover .svg-path-hover-primary {
     stroke: var(--bs-primary);
+}
+
+.btn-hover-primary:hover .svg-path-hover-primary-fill {
+    fill: var(--bs-primary);
 }
 
 .text-red {
@@ -4472,3 +4476,52 @@ textarea {
     text-align: center;
 }
 
+@media (min-width: 992px) {
+
+    .section-shop-brands {
+        margin-bottom: 82px;
+    }
+}
+
+/* section-email-subscribe */
+
+.section-email-subscribe {
+    margin-bottom: 72px;
+}
+
+.email-subscribe-wrapper {
+    padding: 32px 12px;
+    margin-left: -12px;
+    margin-right: -12px;
+    background-color: #f2f9ff;
+}
+
+.email-subscribe-form .form-control {
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    height: 54px;
+    font-size: 20px;
+    padding-left: 12px;
+    padding-right: 42px;
+    background-color: transparent;
+}
+
+@media (min-width: 992px) {
+    .email-subscribe-wrapper {
+        padding: 32px 42px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .section-email-subscribe {
+        margin-bottom: 0;
+    }
+
+    .email-subscribe-wrapper {
+        padding: 51px 126px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
