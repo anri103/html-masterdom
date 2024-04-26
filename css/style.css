@@ -4525,3 +4525,24 @@ textarea {
         margin-right: 0;
     }
 }
+
+/* section-buyers-info */
+
+.buyers-info-menu {
+    --underline-tab-space-between: 22px;
+}
+
+@media (min-width: 992px) {
+
+    .buyers-info-menu {
+        --underline-tab-space-between: 0;
+    }
+    
+    .buyers-info-menu .scrollable-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        overflow: visible;
+        padding-bottom: 0;
+    }
+}
