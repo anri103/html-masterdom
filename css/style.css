@@ -4239,7 +4239,7 @@ textarea {
 
 .popover {
     --bs-popover-zindex: 999;
-    --bs-popover-max-width: 240px;
+    --bs-popover-max-width: 320px;
     --bs-popover-font-size: 1rem;
     font-family: var(--bs-body-font-family);
 }
@@ -4542,7 +4542,6 @@ textarea {
 
 .buyers-info-menu {
     --underline-tab-space-between: 22px;
-    margin-bottom: 32px;
 }
 
 @media (min-width: 992px) {
