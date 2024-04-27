@@ -383,6 +383,10 @@ textarea {
     margin-top: 32px !important;
 }
 
+.mb-10px {
+    margin-bottom: 10px !important;
+}
+
 .mb-12px {
     margin-bottom: 12px !important;
 }
@@ -395,6 +399,10 @@ textarea {
     margin-bottom: 32px !important;
 }
 
+.mb-42px {
+    margin-bottom: 42px !important;
+}
+
 .gap-12px {
     gap: 12px !important;
 }
@@ -405,6 +413,10 @@ textarea {
 
 .gap-32px {
     gap: 32px !important;
+}
+
+.gap-42px {
+    gap: 42px !important;
 }
 
 .gap-row-12px {
@@ -4530,6 +4542,7 @@ textarea {
 
 .buyers-info-menu {
     --underline-tab-space-between: 22px;
+    margin-bottom: 32px;
 }
 
 @media (min-width: 992px) {
@@ -4545,4 +4558,18 @@ textarea {
         overflow: visible;
         padding-bottom: 0;
     }
+}
+
+.card-pick-up-store {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.table-caption {
+    margin-top: 22px;
+}
+
+.table-caption p:last-child {
+    margin-bottom: 0;
 }
