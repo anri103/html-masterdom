@@ -4556,6 +4556,7 @@ textarea {
         gap: 10px;
         overflow: visible;
         padding-bottom: 0;
+        white-space: normal;
     }
 }
 
@@ -4571,4 +4572,17 @@ textarea {
 
 .table-caption p:last-child {
     margin-bottom: 0;
+}
+
+/* section-page-info */
+
+.section-page-info {
+    margin-bottom: 72px;
+}
+
+@media (min-width: 992px) {
+
+    .section-page-info {
+        margin-bottom: 82px;
+    }
 }
