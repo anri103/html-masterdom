@@ -1074,25 +1074,32 @@ textarea {
     width: 100%;
 }
 
-.navbar-desktop .navbar-nav .has-mega-menu {
-    position: static;
-}
-
-.navbar-desktop .navbar-nav .dropdown-menu {
+.navbar-desktop .navbar-nav .mega-menu {
     --bs-dropdown-padding-x: 0;
     --bs-dropdown-padding-y: 0;
     --bs-dropdown-spacer: 32px;
     position: absolute;
-}
-
-.navbar-desktop .navbar-nav .mega-menu {
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    display: none;
     width: 100%;
+    margin-top: var(--bs-dropdown-spacer);
+    text-align: left;
+    list-style: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: 1px solid var(--bs-border-color);
     animation-duration: 0.3s;
     -webkit-animation-duration: 0.3s;
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
     -webkit-animation-name: slideUp;
     animation-name: slideUp;
+}
+
+.navbar-desktop .has-mega-menu:hover .mega-menu {
+    display: block;
 }
 
 @keyframes slideUp {
@@ -4623,10 +4630,6 @@ textarea {
 
 .link-on-page::before {
     content: "";
-    display: block;
-    height: 150px;
-    margin-top: -150px;
-    visibility: hidden;
 }
 
 @media (min-width: 992px) {

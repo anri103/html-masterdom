@@ -28,6 +28,30 @@ window.onscroll = function () {
     }
 };
 
+// Мега меню на десктопе
+
+// const hasMegaMenus = document.querySelectorAll('.has-mega-menu');
+
+// hasMegaMenus.forEach(hasMegaMenu => {
+//   hasMegaMenu.addEventListener('mouseenter', () => {
+//     const navLink = hasMegaMenu.querySelector('.nav-link');
+//     const megaMenu = hasMegaMenu.querySelector('.mega-menu');
+
+//     navLink.classList.add('show');
+//     megaMenu.classList.add('show');
+//   });
+
+//   hasMegaMenu.addEventListener('mouseleave', () => {
+//     const navLink = hasMegaMenu.querySelector('.nav-link');
+//     const megaMenu = hasMegaMenu.querySelector('.mega-menu');
+
+//     setTimeout(() => {
+//       navLink.classList.remove('show');
+//       megaMenu.classList.remove('show');
+//     }, 300);
+//   });
+// });
+
 //////////////////////////////////////////////////////////////////
 // Клик по кнопкам, вызывающим всплывающие меню
 
