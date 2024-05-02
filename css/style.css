@@ -586,6 +586,32 @@ textarea {
     --bs-gutter-y: inherit;
 }
 
+.accordion {
+    --bs-accordion-btn-padding-x: 0;
+    --bs-accordion-btn-padding-y: 22px;
+    --bs-accordion-body-padding-x: 0;
+    --bs-accordion-body-padding-y: 22px;
+    --bs-accordion-active-color: inherit;
+    --bs-accordion-active-bg: transparent;
+}
+
+.accordion-item {
+    border-left: 0;
+    border-right: 0;
+}
+
+.accordion-item:first-of-type {
+    border-top: 0;
+}
+
+.accordion-item:last-of-type {
+    border-bottom: 0;
+}
+
+.accordion-button {
+    font-size: 1.5rem;
+}
+
 @media (min-width: 992px) {
 
     .title {
@@ -4580,9 +4606,37 @@ textarea {
     margin-bottom: 72px;
 }
 
+.faq-cat-nav {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 22px;
+    padding-bottom: 12px;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 24px;
+}
+
+.link-on-page {
+    position: relative;
+}
+
+.link-on-page::before {
+    content: "";
+    display: block;
+    height: 150px;
+    margin-top: -150px;
+    visibility: hidden;
+}
+
 @media (min-width: 992px) {
 
     .section-page-info {
         margin-bottom: 82px;
+    }
+
+    .faq-cat-nav {
+        flex-wrap: wrap;
+        padding-bottom: 0;
     }
 }
