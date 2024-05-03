@@ -717,7 +717,7 @@ textarea {
     position: relative;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 375px) {
 
     .navbar-mobile__navigation {
         gap: 22px;
