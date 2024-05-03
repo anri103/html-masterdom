@@ -17,6 +17,7 @@
 
     <!-- HEADER -->
     <header class="header">
+
         <!-- Мобильное меню -->
         <div class="fixed-header-mobile">
             <!-- Мобильное меню -->
@@ -616,30 +617,22 @@
                             <!-- Меню -->
                             <ul class="navbar-nav">
                                 <!-- Должна быть возможность добавить свои классы ссылке -->
-                                <li class="nav-item"><a href="#" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
-                                <li class="nav-item dropdown has-mega-menu">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><span>Плитка</span></a>
-                                    <div class="dropdown-menu mega-menu">
+                                <li><a href="#" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
+                                <li class="has-mega-menu">
+                                    <a href="#" class="nav-link"><span>Плитка</span></a>
+                                    <div class="mega-menu">
                                         <div class="row g-0">
                                             <div class="col-3 border-end">
-                                                <div class="nav-wrapper">
-                                                    <ul class="nav nav-tabs flex-column" role="tablist">
-                                                        <li class="nav-item" role="presentation">
-                                                            <a href="#mega-menu-tab-cat-plitka" class="nav-link active" data-bs-toggle="tab" role="tab" aria-selected="true">Плитка</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a href="#mega-menu-tab-cat-keramogranit" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">Керамогранит</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a href="#mega-menu-tab-cat-kamen" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">Камень</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                                <ul class="mega-menu__nav-tabs nav flex-column">
+                                                    <li><a href="#" class="nav-link active" data-nav-tab="mega-menu-tab-cat-plitka">Плитка</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-keramogranit">Керамогранит</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-kamen">Камень</a></li>
+                                                </ul>
                                             </div>
                                             <div class="col-9">
-                                                <div class="tab-content">
-                                                    <div class="tab-pane fade show active" id="mega-menu-tab-cat-plitka" role="tabpanel">
-                                                        <div class="content-wrapper">
+                                                <div class="mega-menu__tab-content">
+                                                    <div class="mega-menu__tab-pane active" id="mega-menu-tab-cat-plitka">
+                                                        <div class="mega-menu__content-wrapper">
                                                             <div class="mega-menu__grid">
                                                                 <div class="mega-menu__widget">
                                                                     <!-- Название фильтра -->
@@ -684,8 +677,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="mega-menu-tab-cat-keramogranit" role="tabpanel">
-                                                        <div class="content-wrapper">
+                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-keramogranit">
+                                                        <div class="mega-menu__content-wrapper">
                                                             <div class="mega-menu__grid">
                                                                 <div class="mega-menu__widget">
                                                                     <!-- Название фильтра -->
@@ -719,8 +712,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="mega-menu-tab-cat-kamen" role="tabpanel">
-                                                        <div class="content-wrapper">
+                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-kamen">
+                                                        <div class="mega-menu__content-wrapper">
                                                             <div class="mega-menu__grid">
                                                                 <div class="mega-menu__widget">
                                                                     <!-- Название фильтра -->
@@ -759,33 +752,23 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="nav-item"><a href="#" class="nav-link"><span>Обои</span></a></li>
-                                <li class="nav-item dropdown has-mega-menu">
-                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside"><span>Сантехника</span></a>
-                                    <div class="dropdown-menu mega-menu">
+                                <li><a href="#" class="nav-link"><span>Обои</span></a></li>
+                                <li class="has-mega-menu">
+                                    <a href="#" class="nav-link"><span>Сантехника</span></a>
+                                    <div class="mega-menu">
                                         <div class="row g-0">
                                             <div class="col-3 border-end">
-                                                <div class="nav-wrapper">
-                                                    <ul class="nav nav-tabs flex-column" role="tablist">
-                                                        <li class="nav-item" role="presentation">
-                                                            <a href="#mega-menu-tab-cat-rakoviny" class="nav-link active" data-bs-toggle="tab" role="tab" aria-selected="true">Раковины</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a href="#mega-menu-tab-cat-unitazy-i-bide" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">Унитазы и биде</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a href="#mega-menu-tab-cat-smesiteli" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">Смесители</a>
-                                                        </li>
-                                                        <li class="nav-item" role="presentation">
-                                                            <a href="#mega-menu-tab-cat-dushevie-kabiny" class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false">Душевые кабины</a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                                <ul class="mega-menu__nav-tabs nav flex-column">
+                                                    <li><a href="#" class="nav-link active" data-nav-tab="mega-menu-tab-cat-rakoviny">Раковины</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-unitazy-i-bide">Унитазы и биде</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-smesiteli">Смесители</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-dushevie-kabiny">Душевые кабины</a></li>
+                                                </ul>
                                             </div>
                                             <div class="col-9">
-                                                <div class="tab-content">
-                                                    <div class="tab-pane fade show active" id="mega-menu-tab-cat-rakoviny" role="tabpanel">
-                                                        <div class="content-wrapper">
+                                                <div class="mega-menu__tab-content">
+                                                    <div class="mega-menu__tab-pane active" id="mega-menu-tab-cat-rakoviny">
+                                                        <div class="mega-menu__content-wrapper">
                                                             <div class="mega-menu__grid">
                                                                 <div class="mega-menu__widget">
                                                                     <!-- Название фильтра -->
@@ -830,8 +813,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="mega-menu-tab-cat-unitazy-i-bide" role="tabpanel">
-                                                        <div class="content-wrapper">
+                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-unitazy-i-bide">
+                                                        <div class="mega-menu__content-wrapper">
                                                             <div class="mega-menu__grid">
                                                                 <div class="mega-menu__widget">
                                                                     <!-- Название фильтра -->
@@ -865,12 +848,12 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="mega-menu-tab-cat-smesiteli" role="tabpanel">
-                                                        <div class="content-wrapper">
+                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-smesiteli">
+                                                        <div class="mega-menu__content-wrapper">
                                                             <div class="mega-menu__grid">
                                                                 <div class="mega-menu__widget">
                                                                     <!-- Название фильтра -->
-                                                                    <p class="mega-menu__widget-title">Назначение</p>
+                                                                    <p class="mega-menu__widget-title">Материал</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Для пола</a></li>
                                                                         <li><a href="#">Для стен</a></li>
@@ -890,7 +873,7 @@
                                                                 </div>
                                                                 <div class="mega-menu__widget">
                                                                     <!-- Название фильтра -->
-                                                                    <p class="mega-menu__widget-title">Материал</p>
+                                                                    <p class="mega-menu__widget-title">Назначение</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Керамогранит</a></li>
                                                                         <li><a href="#">Керамическая плитка</a></li>
@@ -900,8 +883,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="tab-pane fade" id="mega-menu-tab-cat-dushevie-kabiny" role="tabpanel">
-                                                        <div class="content-wrapper">
+                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-dushevie-kabiny">
+                                                        <div class="mega-menu__content-wrapper">
                                                             <div class="mega-menu__grid">
                                                                 <div class="mega-menu__widget">
                                                                     <!-- Название фильтра -->
@@ -940,8 +923,8 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="nav-item"><a href="#" class="nav-link"><span>Свет</span></a></li>
-                                <li class="nav-item"><a href="#" class="nav-link"><span>Краски</span></a></li>
+                                <li><a href="#" class="nav-link"><span>Свет</span></a></li>
+                                <li><a href="#" class="nav-link"><span>Краски</span></a></li>
                             </ul>
                         </div>
                         <div class="navbar-desktop__search">
@@ -1091,6 +1074,7 @@
                 </div>
             </div>
         </div>
+        
     </header>
 
     <!-- MAIN -->

@@ -1050,13 +1050,25 @@ textarea {
     flex-direction: row;
     align-items: center;
     gap: 16px;
-    height: 70px;
 }
 
-.navbar-desktop .navbar-nav > li {
-    display: flex;
-    align-items: center;
-    height: 100%;
+.navbar-desktop .navbar-nav > li.has-mega-menu > .nav-link::after {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 6px;
+    vertical-align: middle;
+    border: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' viewBox='0 0 13 8' fill='none'%3E%3Cpath d='M1 0.944946L6.00196 6.82765C6.06052 6.89958 6.13086 6.95681 6.20874 6.99591C6.28661 7.03502 6.37041 7.05518 6.4551 7.05518C6.53976 7.05518 6.62358 7.03502 6.70145 6.99591C6.77932 6.95681 6.84966 6.89958 6.90823 6.82765L11.9102 0.944946' stroke='%231A1A16' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.3s ease;
+}
+
+.navbar-desktop .navbar-nav > li.has-mega-menu > .nav-link.active::after {
+    transform: rotate(180deg);
 }
 
 .navbar-desktop .navbar-nav > li > .nav-link span {
@@ -1091,6 +1103,7 @@ textarea {
     display: none;
     width: 100%;
     margin: 0;
+    margin-top: 22px;
     text-align: left;
     list-style: none;
     background-color: var(--bs-body-bg);
@@ -1104,7 +1117,7 @@ textarea {
     animation-name: slideUp;
 }
 
-.navbar-desktop .has-mega-menu:hover .mega-menu {
+.navbar-desktop .navbar-nav .mega-menu.active {
     display: block;
 }
 
@@ -1126,21 +1139,26 @@ textarea {
 }
 
 .navbar-desktop .mega-menu__nav-tabs {
-    --bs-nav-tabs-border-width: 0;
-    --bs-nav-tabs-border-radius: 0;
-    --bs-nav-tabs-link-active-color: var(--bs-body-color);
-    --bs-nav-tabs-link-active-bg: #DEE5ED;
     --bs-nav-link-color: var(--bs-secondary);
     --bs-nav-link-hover-color: var(--bs-primary);
-    --bs-navbar-active-color: var(--bs-body-color);
     padding: 22px 0;
 }
 
 .navbar-desktop .mega-menu__nav-tabs .nav-link.active {
+    color: var(--bs-body-color);
     font-weight: 500;
+    background-color: #DEE5ED;
 }
 
-.navbar-desktop .mega-menu .content-wrapper {
+.mega-menu__tab-content>.mega-menu__tab-pane {
+    display: none;
+}
+
+.mega-menu__tab-content>.mega-menu__tab-pane.active {
+    display: block;
+}
+
+.navbar-desktop .mega-menu__content-wrapper {
     padding: 31px 24px;
 }
 
@@ -1192,7 +1210,6 @@ textarea {
     border-right-width: 0 !important;
     border-left-width: 0 !important;
     padding-right: 47px;
-    padding-bottom: 2px;
     font-size: 16px;
 }
 

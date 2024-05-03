@@ -28,29 +28,56 @@ window.onscroll = function () {
     }
 };
 
+//////////////////////////////////////////////////////////////////
 // Мега меню на десктопе
 
-// const hasMegaMenus = document.querySelectorAll('.has-mega-menu');
+const megaMenuItems = document.querySelectorAll('.has-mega-menu');
 
-// hasMegaMenus.forEach(hasMegaMenu => {
-//   hasMegaMenu.addEventListener('mouseenter', () => {
-//     const navLink = hasMegaMenu.querySelector('.nav-link');
-//     const megaMenu = hasMegaMenu.querySelector('.mega-menu');
+megaMenuItems.forEach(item => {
+  const navLink = item.querySelector('.nav-link');
+  const megaMenu = item.querySelector('.mega-menu');
 
-//     navLink.classList.add('show');
-//     megaMenu.classList.add('show');
-//   });
+  item.addEventListener('mouseleave', () => {
+    setTimeout(() => {
+      if (!megaMenu.matches(':hover')) {
+        navLink.classList.remove('active');
+        megaMenu.classList.remove('active');
+      }
+    }, 100);
+  });
 
-//   hasMegaMenu.addEventListener('mouseleave', () => {
-//     const navLink = hasMegaMenu.querySelector('.nav-link');
-//     const megaMenu = hasMegaMenu.querySelector('.mega-menu');
+  item.addEventListener('mouseenter', () => {
+    navLink.classList.add('active');
+    megaMenu.classList.add('active');
+  });
+});
 
-//     setTimeout(() => {
-//       navLink.classList.remove('show');
-//       megaMenu.classList.remove('show');
-//     }, 300);
-//   });
-// });
+// Табы внутри мега меню на десктопе
+
+const megaMenus = document.querySelectorAll('.mega-menu');
+
+megaMenus.forEach(megaMenu => {
+  const navTabs = megaMenu.querySelectorAll('.mega-menu__nav-tabs a');
+  const tabPanes = megaMenu.querySelectorAll('.mega-menu__tab-pane');
+
+  navTabs.forEach(tab => {
+    tab.addEventListener('mouseover', () => {
+      const targetTabId = tab.getAttribute('data-nav-tab');
+
+      navTabs.forEach(navTab => {
+        navTab.classList.remove('active');
+      });
+      tab.classList.add('active');
+
+      tabPanes.forEach(pane => {
+        pane.classList.remove('active');
+        if (pane.id === targetTabId) {
+          pane.classList.add('active');
+        }
+      });
+    });
+  });
+});
 
 //////////////////////////////////////////////////////////////////
 // Клик по кнопкам, вызывающим всплывающие меню
