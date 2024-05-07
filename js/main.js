@@ -534,6 +534,45 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+//////////////////////////////////////////////////////////////////
 // Enable bootstrap popovers
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+//////////////////////////////////////////////////////////////////
+
+const solutions = document.querySelectorAll('[id^="tab-solutions"]');
+
+solutions.forEach((solution) => {
+    const rows = solution.querySelectorAll('.row');
+
+    rows.forEach((row) => {
+        const cols = row.querySelectorAll(".col");
+
+        cols.forEach((col, index) => {
+            if (index > 2) {
+                col.style.display = "none"; // Скрываем все элементы col, начиная с четвертого
+            }
+        });
+
+        if (cols.length > 3) {
+            const button = document.createElement("button");
+            button.textContent = "Посмотреть все";
+            button.classList.add("btn", "show-more-button");
+            row.parentNode.appendChild(button);
+
+            let isHidden = true; // Переменная для отслеживания состояния отображения элементов col
+
+            button.addEventListener("click", function() {
+                cols.forEach((col, index) => {
+                    if (index > 2) {
+                        col.style.display = isHidden ? "block" : "none"; // Переключаем отображение элементов col
+                    }
+                });
+
+                isHidden = !isHidden; // Инвертируем значение переменной isHidden
+                button.classList.toggle("active"); // Добавляем или удаляем класс active
+            });
+        }
+    });
+});
