@@ -253,6 +253,23 @@ textarea {
     --bs-btn-disabled-border-color: #B0C7DD;
 }
 
+.btn-secondary-light {
+    --bs-btn-color: #1A1A16;
+    --bs-btn-bg: #F2F9FF;
+    --bs-btn-border-color: #F2F9FF;
+    --bs-btn-hover-color: #1A1A16;
+    --bs-btn-hover-bg: #B0C7DD;
+    --bs-btn-hover-border-color: #B0C7DD;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #1A1A16;
+    --bs-btn-active-bg: #B0C7DD;
+    --bs-btn-active-border-color: #B0C7DD;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #1A1A16;
+    --bs-btn-disabled-bg: #B0C7DD;
+    --bs-btn-disabled-border-color: #B0C7DD;
+}
+
 .btn-outline {
     --bs-btn-color: var(--bs-body-color);
     --bs-btn-bg: transparent;
@@ -4334,9 +4351,10 @@ textarea {
 
 .card-ready-made-solutions .card-top__info {
     position: absolute;
-    bottom: 22px;
-    left: 22px;
-    right: 22px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 22px;
     padding: 12px 18px;
     color: #fff;
     background-color: #9F9387CC;
@@ -4803,4 +4821,23 @@ textarea {
     .swiper-custom-next, .swiper-custom-prev {
         display: flex;
     }
+}
+
+.solution-item__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 22px;
+    padding: 12px 18px;
+    color: #fff;
+    background-color: #9F9387CC;
+}
+
+.solution-item__short-descr p:last-child{
+    margin-bottom: 0;
+}
+
+.solution-item__parameter-table .table tr td:first-child {
+    width: 40%;
+    color: var(--theme-light-gray);
 }

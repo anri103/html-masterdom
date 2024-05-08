@@ -457,6 +457,28 @@ var swiperDesignersCircles = new Swiper(".swiperDesignersCircles", {
     },
 });
 
+var swiperSolutionItemGallery = new Swiper(".swiperSolutionItemGallery", {
+    slidesPerView: 1,
+    loop: false,
+    spaceBetween: 16,
+    grabCursor: true,
+    freeMode: true,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-custom-next",
+        prevEl: ".swiper-custom-prev",
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 32,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
