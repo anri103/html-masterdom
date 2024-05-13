@@ -479,6 +479,28 @@ var swiperSolutionItemGallery = new Swiper(".swiperSolutionItemGallery", {
     },
 });
 
+var swiperDesignerWork = new Swiper(".swiperDesignerWork", {
+    slidesPerView: 3,
+    loop: false,
+    spaceBetween: 12,
+    grabCursor: true,
+    freeMode: true,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 22,
+        },
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 32,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
