@@ -685,6 +685,13 @@ textarea {
     font-size: 1.5rem;
 }
 
+.card-title {
+    font-family: var(--bs-card-title-font);
+    font-size: var(--bs-card-title-size);
+    font-weight: var(--bs-card-title-weight);
+    text-transform: var(--bs-card-title-transform);
+}
+
 @media (min-width: 992px) {
 
     .title {
@@ -4840,4 +4847,42 @@ textarea {
 .solution-item__parameter-table .table tr td:first-child {
     width: 40%;
     color: var(--theme-light-gray);
+}
+
+.designer-cards-grid {
+    --bs-gutter-y: 32px;
+}
+
+.designer-card {
+    --bs-card-spacer-x: 0;
+    --bs-card-border-width: 0;
+    --bs-card-title-font: var(--bs-title-font-family);
+    --bs-card-title-size: 16px;
+    --bs-card-title-weight: 700;
+    --bs-card-title-transform: uppercase;
+}
+
+.designer-card .card-top {
+    border-radius: 60px 0 0 0;
+}
+
+@media (min-width: 992px) {
+
+    .designer-cards-grid {
+        --bs-gutter-y: 52px;
+    }
+
+    .designer-card {
+        --bs-card-title-size: 24px;
+    }
+
+    .designer-card .card-top {
+        border-radius: 125px 0 0 0;
+    }
+
+    .designer-card:hover .btn-card-shop-location {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
 }
