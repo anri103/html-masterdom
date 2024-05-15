@@ -52,7 +52,8 @@
     --bs-body-font-weight: 400;
     --bs-body-line-height: normal;
 
-    --bs-body-color: #1A1A16;
+    --bs-body-color: #474A51;
+    --bs-heading-color: #1A1A16;
     --bs-body-color-rgb: 26,26,22;
     --bs-body-bg: #fff;
     --bs-body-bg-rgb: 255,255,255;
@@ -289,6 +290,23 @@ textarea {
 
 .btn-outline:hover {
     box-shadow: inset 0 0 0 4px #fff;
+}
+
+.btn-text {
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: var(--bs-primary);
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: var(--bs-primary);
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--bs-primary);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: transparent;
 }
 
 .btn-icon {
@@ -4190,14 +4208,18 @@ textarea {
     }
 }
 
-.section-product-tabs__container .table {
+.table {
     --bs-table-bg: inherit;
 }
 
-.section-product-tabs__container .table tr td:first-child {
-    width: 35%;
+.table th {
     color: var(--theme-light-gray);
+    font-weight: normal;
 }
+
+/* .section-product-tabs__container .table tr td:first-child {
+    width: 35%;
+} */
 
 /* Комментарии */
 
@@ -4253,16 +4275,24 @@ textarea {
 .product-collection-card {
     --bs-card-spacer-y: 16px;
     --bs-card-spacer-x: 0;
+    --bs-card-border-width: 0;
     --bs-card-title-color: var(--bs-body-color);
+    --bs-card-title-weight: 600;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
+.product-collection-card .card-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .product-collection-card .card-title {
     display: block;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 @media (min-width: 992px) {
@@ -4842,11 +4872,6 @@ textarea {
 
 .solution-item__short-descr p:last-child{
     margin-bottom: 0;
-}
-
-.solution-item__parameter-table .table tr td:first-child {
-    width: 40%;
-    color: var(--theme-light-gray);
 }
 
 .designer-cards-grid {
