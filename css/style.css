@@ -4981,3 +4981,86 @@ textarea {
 .swiperCollectionItemHero-prev.swiper-button-disabled {
     opacity: 0.45;
 }
+
+.glossary-nav {
+    margin-bottom: 10px;
+}
+
+.glossary-nav__link {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    margin-right: 32px;
+    margin-bottom: 22px;
+    color: #1A1A16;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: transparent;
+}
+
+.glossary-nav__link.active,
+.glossary-group-btn,
+.glossary-nav__link:hover {
+    color: var(--bs-primary);
+}
+
+.glossary-nav__link.disabled {
+    color: #7C7D80;
+    font-weight: 400;
+}
+
+.glossary-nav__link.active,
+.glossary-nav__link.disabled {
+    pointer-events: none;
+}
+
+.glossary-nav__group-links .glossary-nav__link {
+    margin-right: 12px;
+    margin-bottom: 22px;
+}
+
+.glossary-group-btn.collapsed {
+    color: #1A1A16;
+}
+
+.glossary-brands-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.glossary-brand-title {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.glossary-brand-card {
+    --bs-card-spacer-y: 12px;
+    --bs-card-spacer-x: 0;
+    --bs-card-border-width: 0;
+    --bs-card-title-size: 18px;
+    --bs-card-title-weight: 400;
+}
+
+.glossary-brand-card .card-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 992px) {
+
+    .glossary-brands-wrapper {
+        gap: 32px;
+    }
+
+    .glossary-brand-title {
+        margin-bottom: 22px;
+    }
+
+    .glossary-brand-card {
+        --bs-card-title-size: 24px;
+    }
+}
