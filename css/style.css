@@ -4972,3 +4972,12 @@ textarea {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
+.swiperCollectionItemHero {
+    margin-bottom: 22px;
+}
+
+.swiperCollectionItemHero-next.swiper-button-disabled,
+.swiperCollectionItemHero-prev.swiper-button-disabled {
+    opacity: 0.45;
+}

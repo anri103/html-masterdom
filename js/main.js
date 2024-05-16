@@ -501,6 +501,17 @@ var swiperDesignerWork = new Swiper(".swiperDesignerWork", {
     },
 });
 
+var swiperCollectionItemHero = new Swiper(".swiperCollectionItemHero", {
+    slidesPerView: 1,
+    loop: false,
+    spaceBetween: 16,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiperCollectionItemHero-next",
+        prevEl: ".swiperCollectionItemHero-prev",
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
