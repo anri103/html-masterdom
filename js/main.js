@@ -318,9 +318,10 @@ var swiperUserCommentary = new Swiper(".swiperUserCommentary", {
 // Слайдер коллекций
 
 var swiperProductCollection = new Swiper(".swiperProductCollection", {
-    slidesPerView: 1.8,
+    slidesPerView: "auto",
     spaceBetween: 22,
     grabCursor: true,
+    freeMode: true,
     navigation: {
         nextEl: ".swiperProductCollection-next",
         prevEl: ".swiperProductCollection-prev",
@@ -331,7 +332,28 @@ var swiperProductCollection = new Swiper(".swiperProductCollection", {
     },
     breakpoints: {
         992: {
-            slidesPerView: 3,
+            spaceBetween: 34,
+        },
+    },
+});
+
+// Слайдер каталогов
+
+var swiperProductCatalog = new Swiper(".swiperProductCatalog", {
+    slidesPerView: "auto",
+    spaceBetween: 22,
+    grabCursor: true,
+    freeMode: true,
+    navigation: {
+        nextEl: ".swiperProductCatalog-next",
+        prevEl: ".swiperProductCatalog-prev",
+    },
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+    },
+    breakpoints: {
+        992: {
             spaceBetween: 34,
         },
     },
