@@ -502,7 +502,7 @@ var swiperSolutionItemGallery = new Swiper(".swiperSolutionItemGallery", {
 });
 
 var swiperDesignerWork = new Swiper(".swiperDesignerWork", {
-    slidesPerView: 1.2,
+    slidesPerView: "auto",
     loop: false,
     spaceBetween: 12,
     grabCursor: true,
@@ -513,11 +513,9 @@ var swiperDesignerWork = new Swiper(".swiperDesignerWork", {
     },
     breakpoints: {
         768: {
-            slidesPerView: 2,
             spaceBetween: 22,
         },
         992: {
-            slidesPerView: 3,
             spaceBetween: 22,
         },
     },
