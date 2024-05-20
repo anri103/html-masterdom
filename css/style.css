@@ -5133,7 +5133,7 @@ textarea {
 }
 
 .page-item__text a {
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .slider-categories-circles-wrapper {
