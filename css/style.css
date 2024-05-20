@@ -28,6 +28,7 @@
     --bs-primary: #02378f;
     --bs-primary-light: #DEE5ED;
     --bs-secondary: #474a51;
+    --theme-black: #1A1A16;
     --theme-light-gray: #7C7D80;
     --bs-success: #198754;
     --bs-info: #0dcaf0;
@@ -38,6 +39,7 @@
     --bs-primary-rgb: 2,55,143;
     --bs-primary-light-rgb: 222,229,237;
     --bs-secondary-rgb: 71,74,81;
+    --theme-black-rgb: 26,26,22;
     --theme-light-gray-rgb: 124,125,128;
     --bs-success-rgb: 25,135,84;
     --bs-info-rgb: 13,202,240;
@@ -561,6 +563,12 @@ textarea {
 
 .link-body {
     --bs-link-color-rgb: var(--bs-body-color-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    color: rgba(var(--bs-link-color-rgb));
+}
+
+.link-title {
+    --bs-link-color-rgb: var(--theme-black-rgb);
     --bs-link-hover-color-rgb: var(--bs-primary-rgb);
     color: rgba(var(--bs-link-color-rgb));
 }
@@ -3241,7 +3249,7 @@ textarea {
 }
 
 .blog-slide-item__title {
-    --bs-link-color-rgb: var(--bs-body-color-rgb);
+    --bs-link-color-rgb: var(--theme-black-rgb);
     --bs-link-hover-color-rgb: var(--bs-primary-rgb);
     font-family: var(--bs-title-font-family);
     font-size: 24px;
@@ -5152,15 +5160,51 @@ textarea {
 
 /* blog page */
 
-.blog-page__meta {
+.blog-page-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px 32px;
+}
+
+.card-blog-item {
+    --bs-card-spacer-x: 0;
+    --bs-card-border-width: 0;
+    --bs-card-title-size: 18px;
+    --bs-card-title-weight: 400;
+}
+
+.card-blog-item .card-img-wrapper {
+    overflow: hidden;
+}
+
+.card-blog-item img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    transition: .3s ease;
+}
+
+.card-blog-item:hover img {
+    transform: scale(1.1);
+}
+
+.card-blog-item.card-rounded .card-img-wrapper {
+    border-radius: 50%;
+}
+
+.card-blog-meta {
+    font-family: var(--bs-title-font-family);
+}
+
+.post-page__meta {
 
 }
 
-.blog-page__content-wrapper {
+.post-page__content-wrapper {
     margin-bottom: 32px;
 }
 
-.blog-page__posts-nav {
+.post-page__posts-nav {
     padding: 32px 0;
     border-top: 1px solid #DEE5ED;
 }
@@ -5183,7 +5227,23 @@ textarea {
 
 @media (min-width: 992px) {
 
-    .blog-page__content-wrapper {
+    .blog-page-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 82px 32px;
+    }
+
+    .card-blog-item.card-big {
+        grid-column: span 2;
+    }
+
+    .post-page__content-wrapper {
         margin-bottom: 52px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .blog-page-grid {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
