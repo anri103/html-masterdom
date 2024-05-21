@@ -1100,7 +1100,7 @@
             <div class="container">
 
                 <div>
-                    <div class="row">
+                    <div class="row" style="--bs-gutter-y: 2rem;">
                         <div class="col-lg-6">
                             <h1 class="h1 title mb-32px">Контакты</h1>
                             <div class="d-flex flex-column gap-32px">
@@ -1131,9 +1131,13 @@
                         <div class="col-lg-6">
                             <p class="title mb-12px">Главный офис</p>
                             <div class="d-flex flex-column gap-32px">
-                                <div class="d-flex flex-column gap-12px">
-                                    <div>г. Москва, Нахимовский проспект, д.59а</div>
-                                    <div>ПН-СБ: с 11:00 до 20:00<br> ВС: с 11:00 до 18:00</div>
+                                <div>
+                                    <p>г. Москва, Нахимовский проспект, д.59а</p>
+                                    <p>ПН-СБ: с 11:00 до 20:00<br> ВС: с 11:00 до 18:00</p>
+                                    <div class="shop-location__metro">
+                                        <div class="item-metro">Профсоюзная, 15 м</div>
+                                        <div class="item-metro">Профсоюзная, 15 м</div>
+                                    </div>
                                 </div>
                                 <a href="#" class="btn btn-text d-inline-flex align-items-center justify-content-between bg-light border-0 p-4 w-100" style="max-width: 600px;">
                                     <div class="d-flex align-items-center gap-3">
@@ -1161,8 +1165,10 @@
                 <div>
                     <div class="row">
                         <div class="col-lg-6">
-                            <p class="title">Обратная связь</p>
-                            <p>В наших магазинах вы увидите весь ассортимент товаров вживую, а наши дизайнеры проконсультируют вас и помогут определиться с выбором.</p>
+                            <div class="mb-32px">
+                                <p class="title">Обратная связь</p>
+                                <p>В наших магазинах вы увидите весь ассортимент товаров вживую, а наши дизайнеры проконсультируют вас и помогут определиться с выбором.</p>
+                            </div>
                         </div>
                     </div>
         
@@ -1176,7 +1182,7 @@
                                     <input type="text" class="form-control" placeholder="Телефон">
                                 </div>
                                 <div class="mb-32px">
-                                    <input type="text" class="form-control" placeholder="e-mail">
+                                    <input type="text" class="form-control" placeholder="E-mail">
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -1189,6 +1195,21 @@
                                 <div class="mb-32px">
                                     <input type="text" class="form-control" placeholder="Сообщение">
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-42px">
+                                    <label class="d-flex gap-2 align-items-center">
+                                        <input type="checkbox" class="form-checkbox">
+                                        <span>Принимаю условия <a href="#" class="text-decoration-underline">обработки персональных данных</a>.</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <button type="submit" class="btn btn-secondary w-100">отправить заявку</button>
                             </div>
                         </div>
                     </form>
