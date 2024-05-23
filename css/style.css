@@ -476,6 +476,10 @@ textarea {
     margin-top: 32px !important;
 }
 
+.mt-22px {
+    margin-top: 22px !important;
+}
+
 .mb-10px {
     margin-bottom: 10px !important;
 }
@@ -5112,6 +5116,7 @@ textarea {
 }
 
 .page-item__hero-img {
+    position: relative;
     height: 212px;
     margin-bottom: 22px;
 }
@@ -5321,5 +5326,63 @@ textarea {
 
     .about-history-item__body {
         padding: 42px 52px;
+    }
+}
+
+.block-blockquote {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 54px;
+    padding-left: 22px;
+    padding-bottom: 36px;
+    border-left: 1px solid #DEE5ED;
+}
+
+.blockquote__title {
+    color: #1A1A16;
+    font-family: var(--bs-title-font-family);
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.blockquote__title p:last-child {
+    margin-bottom: 0;
+}
+
+.blockquote__author {
+    color: #02378F;
+    font-size: 18px;
+}
+
+.block-blockquote::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='27' viewBox='0 0 27 27' fill='none'%3E%3Cpath d='M0 16.9556C0 10.5973 4.09655 3.96246 9.68276 0L10.6138 1.4744C6.23793 4.69966 4.09655 8.84642 4.09655 14.0068C4.09655 15.0205 4.18965 15.942 4.37586 16.8635C5.12069 16.3106 5.95862 16.0341 6.79655 16.0341C9.86897 16.0341 12.3828 18.5222 12.3828 21.5631C12.3828 24.6041 9.86897 27 6.79655 27C1.86207 27 0 22.3925 0 16.9556ZM14.6172 16.9556C14.6172 10.5973 18.7138 3.96246 24.3 0L25.231 1.4744C20.8552 4.69966 18.7138 8.84642 18.7138 14.0068C18.7138 15.0205 18.8069 15.942 18.9931 16.8635C19.7379 16.3106 20.5759 16.0341 21.4138 16.0341C24.4862 16.0341 27 18.5222 27 21.5631C27 24.6041 24.4862 27 21.4138 27C16.4793 27 14.6172 22.3925 14.6172 16.9556Z' fill='%23DEE5ED'/%3E%3C/svg%3E");
+    position: absolute;
+    top: 0;
+    left: -13px;
+    padding-bottom: 12px;
+    background: #fff;
+}
+
+.swiperAbout .swiper-img-wrapper {
+    height: 300px;
+}
+
+.swiperAbout img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#accordionAbout .accordion-button:not(.collapsed) {
+    color: var(--bs-primary);
+}
+
+@media (min-width: 992px) {
+
+    .swiperAbout .swiper-img-wrapper {
+        height: 500px;
     }
 }

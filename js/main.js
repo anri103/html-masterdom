@@ -532,6 +532,44 @@ var swiperCollectionItemHero = new Swiper(".swiperCollectionItemHero", {
     },
 });
 
+// swiperAbout
+
+var swiperAbout = new Swiper('.swiperAbout', {
+    spaceBetween: 12,
+    grabCursor: true,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+    },
+});
+
+/////////////
+
+swiperAbout.on('transitionEnd', () => {
+    const activeIndex = swiperAbout.activeIndex;
+    const accordionButtons = document.querySelectorAll('#accordionAbout .accordion-button');
+    const accordionCollapses = document.querySelectorAll('#accordionAbout .accordion-collapse');
+    
+    accordionButtons.forEach((button, index) => {
+        if (index === activeIndex) {
+            button.setAttribute('aria-expanded', 'true');
+            button.classList.remove('collapsed');
+            accordionCollapses[index].classList.add('show');
+        } else {
+            button.setAttribute('aria-expanded', 'false');
+            button.classList.add('collapsed');
+            accordionCollapses[index].classList.remove('show');
+        }
+    });
+});
+
+document.querySelectorAll('.accordion-item').forEach(item => {
+    item.addEventListener('click', () => {
+        const target = item.getAttribute('data-target');
+        swiperAbout.slideTo(target);
+    });
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
