@@ -570,6 +570,24 @@ document.querySelectorAll('.accordion-item').forEach(item => {
     });
 });
 
+var swiperProfileOrderCardGoodsList = new Swiper(".swiper-profile-order-card-goods-list", {
+    slidesPerView: 3,
+    loop: false,
+    spaceBetween: 12,
+    grabCursor: true,
+    freeMode: false,
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 22,
+        },
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 22,
+        },
+    },
+});
+
 //////////////////////////////////////////////////////////////////
 // [ Enable Fancybox ]
 
@@ -689,3 +707,7 @@ solutions.forEach((solution) => {
         }
     });
 });
+
+function goBack() {
+    window.history.back();
+}
