@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>История заказов</title>
+    <title>История заказ</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -1116,220 +1116,230 @@
                     </div>
                     <div class="col-lg-9">
 
-                        <!-- Фильтры -->
-                        <div class="d-flex flex-wrap align-items-center justify-content-between gap-22px mb-32px">
-                            <div class="d-flex align-items-center flex-wrap gap-22px">
-                                <div>
-                                    <button type="button" class="btn btn-dropdown-arrow fs-16px border-0 p-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Статус заказа
-                                        <span class="icon-arrow-down">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-select">
-                                        <li><a class="dropdown-item" href="#">Ожидает подтверждения</a></li>
-                                        <li><a class="dropdown-item" href="#">Подтвержден</a></li>
-                                        <li><a class="dropdown-item" href="#">Собран</a></li>
-                                        <li><a class="dropdown-item" href="#">В доставке</a></li>
-                                        <li><a class="dropdown-item" href="#">Доставлен</a></li>
-                                        <li><a class="dropdown-item" href="#">Отменен</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-dropdown-arrow fs-16px border-0 p-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Статус оплаты
-                                        <span class="icon-arrow-down">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-select">
-                                        <li><a class="dropdown-item" href="#">Оплачен</a></li>
-                                        <li><a class="dropdown-item" href="#">Не оплачен</a></li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <button type="button" class="btn btn-dropdown-arrow fs-16px border-0 p-0" data-bs-toggle="dropdown" aria-expanded="false">
-                                        По умолчанию
-                                        <span class="icon-arrow-down">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg>
-                                        </span>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-select">
-                                        <li><a class="dropdown-item" href="#">По умолчанию</a></li>
-                                        <li><a class="dropdown-item" href="#">По умолчанию</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <button type="button" class="btn d-inline-flex align-items-center gap-2 border-0 p-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
-                                    <path d="M22 6L6.44365 21.5564" stroke="#1A1A16" stroke-width="0.853923" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M6 6L21.5564 21.5564" stroke="#1A1A16" stroke-width="0.853923" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <span>Сбросить фильтры</span>
-                            </button>
-                        </div>
+                        <div class="d-flex flex-column gap-32px">
 
-                        <!-- Заказы -->
-                        <div style="max-width: 850px;">
-                            <div class="d-flex flex-column gap-32px">
-                                <!-- item -->
-                                <div class="card profile-order-card">
-                                    <div class="card-body">
-                                        <div class="profile-order-card__date">от 21.01.2024</div>
-                                        <div class="profile-order-card__heading">
-                                            <div class="profile-order-card__title title"><a href="#">Заказ №780</a></div>
-                                            <div class="profile-order-card__status text-primary">доставлен</div>
-                                        </div>
-                                        <div class="profile-order-card__amount">360 000 ₽</div>
-                                        <div class="profile-order-card__pay-status text-success">оплачен</div>
-                                        <div class="profile-order-card__goods-list">
-                                            <div class="swiper swiper-profile-order-card-goods-list">
-                                                <div class="swiper-wrapper">
-                                                    <div class="swiper-slide">
-                                                        <a href="#">
-                                                            <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-01.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="#">
-                                                            <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-02.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="#">
-                                                            <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-03.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="#">
-                                                            <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-04.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="#">
-                                                            <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-03.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="#">
-                                                            <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-04.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="profile-order-card__btn-group">
-                                            <a href="#" class="btn btn-outline">повторить заказ</a>
-                                        </div>
-                                    </div>
+                            <div>
+                                <div class="profile-order-card__date">от 21.01.2024</div>
+                                <div class="profile-order-card__heading">
+                                    <div class="profile-order-card__title title">Заказ №780</div>
+                                    <div class="profile-order-card__status text-primary">доставлен</div>
                                 </div>
-                                <!-- item -->
-                                <div class="card profile-order-card">
-                                    <div class="card-body">
-                                        <div class="profile-order-card__date">от 21.01.2024</div>
-                                        <div class="profile-order-card__heading">
-                                            <div class="profile-order-card__title title"><a href="#">Заказ №780</a></div>
-                                            <div class="profile-order-card__status text-danger">отменен</div>
-                                        </div>
-                                        <div class="profile-order-card__amount">360 000 ₽</div>
-                                        <div class="profile-order-card__pay-status text-success">возврат денежных средств</div>
-                                        <div class="profile-order-card__goods-list">
-                                            <div class="swiper swiper-profile-order-card-goods-list">
-                                                <div class="swiper-wrapper">
-                                                    <div class="swiper-slide">
-                                                        <a href="#">
-                                                            <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-01.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="#">
-                                                            <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-02.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="#">
-                                                            <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-03.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="#">
-                                                            <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-04.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="#">
-                                                            <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-03.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                    <div class="swiper-slide">
-                                                        <a href="#">
-                                                            <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-04.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="profile-order-card__btn-group">
-                                            <a href="#" class="btn btn-outline">повторить заказ</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="profile-order-card__amount">360 000 ₽</div>
+                                <div class="profile-order-card__pay-status mb-0 text-success">оплачен</div>
                             </div>
     
-                            <!-- Пагинация -->
-                            <div class="d-flex justify-content-center mt-5">
-                                <nav class="pagination-nav">
-                                    <ul class="pagination-list">
-                                        <li>
-                                            <a href="#" class="pagination-item prev">
-                                                <span class="me-2">
-                                                    <svg width="13" height="22" style="transform: rotate(180deg);">
-                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                                    </svg>
-                                                </span>
-                                                Назад
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="pagination-item active">1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="pagination-item">2</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="pagination-item">3</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="pagination-item">4</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="pagination-item">5</a>
-                                        </li>
-                                        <li>
-                                            <span class="pagination-item dots">...</span>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="pagination-item">10</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="pagination-item next">
-                                                Дальше
-                                                <span class="ms-2">
-                                                    <svg width="13" height="22">
-                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                                    </svg>
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
+                            <div>
+                                <div class="h4 mb-22px">Товары в заказе</div>
+
+                                <div class="profile-order-product-items__table-heading">
+                                    <div class="row">
+                                        <div class="col-lg-6">Товар (6)</div>
+                                        <div class="col-lg-6 d-none d-lg-block">
+                                            <div class="row">
+                                                <div class="col-lg-3 table-order-sku">Артикул</div>
+                                                <div class="col-lg-3 table-order-country">Страна</div>
+                                                <div class="col-lg-3 table-order-quantity">Кол-во</div>
+                                                <div class="col-lg-3 table-order-price">Цена</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="profile-order-product-items__table-body">
+
+                                    <!-- item -->
+                                    <div class="profile-order-product-item-card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <!-- Инфо на десктопе -->
+                                                <div class="col-lg-6 d-none d-lg-block">
+                                                    <div class="d-flex gap-2 gap-lg-4">
+                                                        <div class="card-img-wrapper">
+                                                            <a href="#">
+                                                                <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <div class="card-title">
+                                                                <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                                            </div>
+                                                            <div class="card-order-star-rating">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                    <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                                </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                    <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                                </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                    <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                                </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                    <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                                </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                    <path d="M10.5 1.18215L13.1301 6.76511L13.2446 7.00806L13.5101 7.04847L19.4381 7.95089L15.1331 12.3471L14.9547 12.5293L14.9959 12.781L16.0071 18.958L10.7431 16.0587L10.5 15.9248L10.2569 16.0587L4.99286 18.958L6.00414 12.781L6.04534 12.5293L5.86691 12.3471L1.56186 7.95089L7.48995 7.04847L7.75544 7.00806L7.86989 6.76511L10.5 1.18215Z" stroke="#ACB2BF" stroke-width="1.00761"/>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Инфо на мобилке -->
+                                                <div class="col-lg-6">
+                                                    <div class="card-content">
+                                                        <div class="card-img-wrapper d-lg-none">
+                                                            <a href="#">
+                                                                <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="d-lg-none">
+                                                                <div class="card-order-star-rating">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                        <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                                    </svg>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                        <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                                    </svg>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                        <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                                    </svg>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                        <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                                    </svg>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                        <path d="M10.5 1.18215L13.1301 6.76511L13.2446 7.00806L13.5101 7.04847L19.4381 7.95089L15.1331 12.3471L14.9547 12.5293L14.9959 12.781L16.0071 18.958L10.7431 16.0587L10.5 15.9248L10.2569 16.0587L4.99286 18.958L6.00414 12.781L6.04534 12.5293L5.86691 12.3471L1.56186 7.95089L7.48995 7.04847L7.75544 7.00806L7.86989 6.76511L10.5 1.18215Z" stroke="#ACB2BF" stroke-width="1.00761"/>
+                                                                    </svg>
+                                                                </div>
+                                                                <div class="card-title">
+                                                                    <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mb-12px">
+                                                                <div class="row gy-3">
+                                                                    <div class="col-auto col-lg-3 card-order-sku">Арт. CV20195</div>
+                                                                    <div class="col-auto col-lg-3 card-order-country">Россия</div>
+                                                                    <div class="col-auto col-lg-3 card-order-quantity">12 м2</div>
+                                                                    <div class="col-12 col-lg-3 card-order-price text-end text-lg-start">4 000 ₽</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="profile-order-product-item-card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <!-- Инфо на десктопе -->
+                                                <div class="col-lg-6 d-none d-lg-block">
+                                                    <div class="d-flex gap-2 gap-lg-4">
+                                                        <div class="card-img-wrapper">
+                                                            <a href="#">
+                                                                <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <div class="card-title">
+                                                                <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Инфо на мобилке -->
+                                                <div class="col-lg-6">
+                                                    <div class="card-content">
+                                                        <div class="card-img-wrapper d-lg-none">
+                                                            <a href="#">
+                                                                <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="d-lg-none">
+                                                                <div class="card-title">
+                                                                    <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mb-12px">
+                                                                <div class="row gy-3">
+                                                                    <div class="col-auto col-lg-3 card-order-sku">Арт. CV20195</div>
+                                                                    <div class="col-auto col-lg-3 card-order-country">Россия</div>
+                                                                    <div class="col-auto col-lg-3 card-order-quantity">12 м2</div>
+                                                                    <div class="col-12 col-lg-3 card-order-price text-end text-lg-start">4 000 ₽</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-rate-order-btn-desk">
+                                                            <button type="button" class="btn btn-outline w-100" style="max-width: 300px;" data-bs-toggle="modal" data-bs-target="#modal_leave_rating">оценить заказ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-lg-none mt-3">
+                                                <button type="button" class="btn btn-outline w-100" data-bs-toggle="modal" data-bs-target="#modal_leave_rating">оценить заказ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- item -->
+                                    <div class="profile-order-product-item-card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <!-- Инфо на десктопе -->
+                                                <div class="col-lg-6 d-none d-lg-block">
+                                                    <div class="d-flex gap-2 gap-lg-4">
+                                                        <div class="card-img-wrapper">
+                                                            <a href="#">
+                                                                <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <div class="card-title">
+                                                                <a href="#">Короткое название товара</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Инфо на мобилке -->
+                                                <div class="col-lg-6">
+                                                    <div class="card-content">
+                                                        <div class="card-img-wrapper d-lg-none">
+                                                            <a href="#">
+                                                                <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="flex-grow-1">
+                                                            <div class="d-lg-none">
+                                                                <div class="card-title">
+                                                                    <a href="#">Короткое название товара</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mb-12px">
+                                                                <div class="row gy-3">
+                                                                    <div class="col-auto col-lg-3 card-order-sku">Арт. CV201952-11</div>
+                                                                    <div class="col-auto col-lg-3 card-order-country">Россия</div>
+                                                                    <div class="col-auto col-lg-3 card-order-quantity">2</div>
+                                                                    <div class="col-12 col-lg-3 card-order-price text-end text-lg-start">1 000 ₽</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-rate-order-btn-desk">
+                                                            <button type="button" class="btn btn-outline w-100" style="max-width: 300px;" data-bs-toggle="modal" data-bs-target="#modal_leave_rating">оценить заказ</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-lg-none mt-3">
+                                                <button type="button" class="btn btn-outline w-100" data-bs-toggle="modal" data-bs-target="#modal_leave_rating">оценить заказ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
+
                         </div>
 
                     </div>
@@ -1953,6 +1963,114 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модалка "Оставить отзыв" -->
+    <div class="modal fade" id="modal_leave_rating" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header-top pb-0">
+                    <div class="d-flex justify-content-between">
+                        <p class="h4 modal-title">Оставить отзыв</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+
+                    <div class="profile-order-product-item-card mb-22px" style="--bs-card-spacer-y: 0;">
+                        <div class="card-body">
+                            <div class="row">
+                                <!-- Инфо на десктопе -->
+                                <div class="col-lg-6 d-none d-lg-block">
+                                    <div class="d-flex gap-2 gap-lg-4">
+                                        <div class="card-img-wrapper">
+                                            <a href="#">
+                                                <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <div class="card-title">
+                                                <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Инфо на мобилке -->
+                                <div class="col-lg-6">
+                                    <div class="card-content">
+                                        <div class="card-img-wrapper d-lg-none">
+                                            <a href="#">
+                                                <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <div class="d-lg-none">
+                                                <div class="card-title">
+                                                    <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                                </div>
+                                            </div>
+                                            <div class="mb-12px">
+                                                <div class="row gy-3">
+                                                    <div class="col-auto col-lg-3 card-order-sku">Арт. CV20195</div>
+                                                    <div class="col-auto col-lg-3 card-order-country">Россия</div>
+                                                    <div class="col-auto col-lg-3 card-order-quantity">12 м2</div>
+                                                    <div class="col-12 col-lg-3 card-order-price text-end text-lg-start">4 000 ₽</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <form action="#" style="max-width: 600px;">
+                            <div class="mb-32px">
+                                <div class="fw-medium mb-12px">Ваша оценка</div>
+                                <div>
+                                    <div class="card-order-star-rating">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                            <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                            <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                            <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                            <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                            <path d="M10.5 1.18215L13.1301 6.76511L13.2446 7.00806L13.5101 7.04847L19.4381 7.95089L15.1331 12.3471L14.9547 12.5293L14.9959 12.781L16.0071 18.958L10.7431 16.0587L10.5 15.9248L10.2569 16.0587L4.99286 18.958L6.00414 12.781L6.04534 12.5293L5.86691 12.3471L1.56186 7.95089L7.48995 7.04847L7.75544 7.00806L7.86989 6.76511L10.5 1.18215Z" stroke="#ACB2BF" stroke-width="1.00761"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-12px">
+                                <textarea class="form-control" rows="3" placeholder="Комментарий"></textarea>
+                            </div>
+                            <div class="mb-32px">
+                                <button type="button" class="btn btn-text-light text-start p-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M21.714 8H3.42829C2.16593 8 1.14258 9.02336 1.14258 10.2857V28.5714C1.14258 29.8338 2.16593 30.8571 3.42829 30.8571H21.714C22.9764 30.8571 23.9997 29.8338 23.9997 28.5714V10.2857C23.9997 9.02336 22.9764 8 21.714 8Z" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.99902 1.14307H28.5705C29.1766 1.14307 29.7581 1.38388 30.1867 1.81254C30.6153 2.24119 30.8562 2.82256 30.8562 3.42878V24.0002" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12.5713 13.7144V25.1429" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.285 19.4287H6.85645" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Добавить фото до 5 шт.</span>
+                                </button>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-secondary w-100" style="max-width: 364px;">оставить отзыв</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>
