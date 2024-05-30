@@ -297,6 +297,23 @@ var swiperRecommendProduct = new Swiper(".swiperRecommendProduct", {
     },
 });
 
+var swiperRecommendProduct02 = new Swiper(".swiperRecommendProduct02", {
+    slidesPerView: "auto",
+    loop: false,
+    spaceBetween: 12,
+    grabCursor: true,
+    freeMode: true,
+    navigation: {
+        nextEl: ".swiper-custom-next",
+        prevEl: ".swiper-custom-prev",
+    },
+    breakpoints: {
+        992: {
+            spaceBetween: 22,
+        },
+    },
+});
+
 // Слайдер пользователей
 
 var swiperUserCommentary = new Swiper(".swiperUserCommentary", {
@@ -666,9 +683,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //////////////////////////////////////////////////////////////////
-// Enable bootstrap popovers
+// Enable bootstrap popovers and tooltips
 const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
 const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 //////////////////////////////////////////////////////////////////
 
