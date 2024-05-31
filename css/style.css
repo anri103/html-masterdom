@@ -4149,7 +4149,7 @@ textarea {
 
 .calculate-cost__price-wrapper {
     font-size: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
 }
 
 .calculate-cost__price {
@@ -5603,9 +5603,12 @@ textarea {
 
 .table-profile-orders-summary {
     max-width: 470px;
-    margin-left: -8px;
-    margin-right: -8px;
     margin-bottom: 0;
+}
+
+.table-profile-orders-summary>:not(caption)>*>* {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .table-profile-orders-summary tr>th,
