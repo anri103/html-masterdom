@@ -2559,102 +2559,107 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-4 col-xxl-4">
-                        <div class="scroll-y">
-                            <div class="section-product__calculate-cost ms-auto" style="max-width: 400px;">
-    
-                                <div class="calculate-cost__title">Итого:</div>
-    
-                                <div class="calculate-cost__price-wrapper">
-                                    <span class="calculate-cost__price">13 000 ₽</span> <span>за 4 м2</span>
-                                </div>
-    
-                                <div class="collapse d-lg-block" id="asdasdasdasdasdasdasdasdasd234234234">
-    
-                                    <div class="mb-32px">
-                                        <div class="d-flex gap-22px">
-                                            <input type="text" class="form-control fs-14px" placeholder="Введите промокод">
-                                            <button type="button" class="btn btn-outline fs-14px px-4">Применить</button>
-                                        </div>
-                                    </div>
-        
-                                    <div class="mb-32px">
-                                        <div class="fw-medium">О заказе</div>
-                                        <table class="table table-profile-orders-summary">
-                                            <tbody>
-                                                <tr>
-                                                    <th>Товары (6)</th>
-                                                    <td>380 200 ₽</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Скидки на товары:</th>
-                                                    <td><div class="text-danger">-116 200 ₽</div></td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Сумма НДС:</th>
-                                                    <td>13 867 ₽</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Общий вес:</th>
-                                                    <td>30.973 кг</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-        
-                                    <div class="calculate-cost__deliver mb-32px">
-                                        <div class="calculate-cost__deliver-title mb-3">
-                                            <a href="#city-selector-modal" fancybox-dialog>
-                                                Доставка по <span>Москве и МО</span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
-                                                    <path d="M0.500732 0.5L4.62694 5.31382C4.67525 5.37267 4.73328 5.41951 4.79753 5.45151C4.86176 5.4835 4.93089 5.5 5.00075 5.5C5.07059 5.5 5.13973 5.4835 5.20397 5.45151C5.2682 5.41951 5.32623 5.37267 5.37455 5.31382L9.50073 0.499999" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                        <div class="calculate-cost__deliver-table">
-                                            <div class="calculate-cost__deliver-table-item">
-                                                <div class="row justify-content-between">
-                                                    <div class="col-6">
-                                                        <div>Курьером</div>
-                                                    </div>
-                                                    <div class="col-6 text-end">
-                                                        <div>от 800 <span>₽</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="calculate-cost__deliver-table-item">
-                                                <div class="row justify-content-between">
-                                                    <div class="col-6">
-                                                        <div>Самовывоз<br> со склада</div>
-                                                    </div>
-                                                    <div class="col-6 text-end">
-                                                        <div>Бесплатно</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                </div>
-    
-                                <div class="mb-22px">
-                                    <button type="button" class="btn btn-secondary w-100">оформить заказ</button>
-                                </div>
-    
-                                <div class="d-none d-lg-block">
-                                    <a href="#" class="btn btn-text p-0">
-                                        <span>Продолжить покупки</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
-                                            <path d="M1.00012 12L6.88283 6.99804C6.95475 6.93948 7.01199 6.86914 7.05109 6.79126C7.09019 6.71339 7.11035 6.62959 7.11035 6.5449C7.11035 6.46024 7.09019 6.37642 7.05109 6.29855C7.01199 6.22068 6.95475 6.15034 6.88283 6.09177L1.00012 1.08984" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                    </a>
-                                </div>
-    
-                                <div class="d-lg-none text-end">
-                                    <button type="button" class="btn btn-text p-0 collapsed" data-bs-toggle="collapse" data-bs-target="#asdasdasdasdasdasdasdasdasd234234234" aria-expanded="false">подробнее о заказе</button>
-                                </div>
-    
+                    <div class="col-fixed-mobile col-lg-4 col-xxl-4">
+                        <div class="section-product__calculate-cost">
+
+                            <div class="calculate-cost__title">Итого:</div>
+
+                            <div class="calculate-cost__price-wrapper">
+                                <span class="calculate-cost__price">13 000 ₽</span> <span>за 4 м2</span>
                             </div>
+
+                            <div class="collapse d-lg-block" id="collapse-cart-summary-info">
+
+                                <div class="mb-32px">
+                                    <div class="d-flex gap-22px">
+                                        <input type="text" class="form-control fs-14px" placeholder="Введите промокод">
+                                        <button type="button" class="btn btn-outline fs-14px px-4">Применить</button>
+                                    </div>
+                                </div>
+    
+                                <div class="mb-32px">
+                                    <div class="fw-medium">О заказе</div>
+                                    <table class="table table-profile-orders-summary">
+                                        <tbody>
+                                            <tr>
+                                                <th>Товары (6)</th>
+                                                <td>380 200 ₽</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Скидки на товары:</th>
+                                                <td><div class="text-danger">-116 200 ₽</div></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Сумма НДС:</th>
+                                                <td>13 867 ₽</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Общий вес:</th>
+                                                <td>30.973 кг</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+    
+                                <div class="calculate-cost__deliver mb-32px">
+                                    <div class="calculate-cost__deliver-title mb-3">
+                                        <a href="#city-selector-modal" fancybox-dialog>
+                                            Доставка по <span>Москве и МО</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                                <path d="M0.500732 0.5L4.62694 5.31382C4.67525 5.37267 4.73328 5.41951 4.79753 5.45151C4.86176 5.4835 4.93089 5.5 5.00075 5.5C5.07059 5.5 5.13973 5.4835 5.20397 5.45151C5.2682 5.41951 5.32623 5.37267 5.37455 5.31382L9.50073 0.499999" stroke="#1A1A16" stroke-width="0.833408" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="calculate-cost__deliver-table">
+                                        <div class="calculate-cost__deliver-table-item">
+                                            <div class="row justify-content-between">
+                                                <div class="col-6">
+                                                    <div>Курьером</div>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <div>от 800 <span>₽</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="calculate-cost__deliver-table-item">
+                                            <div class="row justify-content-between">
+                                                <div class="col-6">
+                                                    <div>Самовывоз<br> со склада</div>
+                                                </div>
+                                                <div class="col-6 text-end">
+                                                    <div>Бесплатно</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="mb-22px">
+                                <button type="button" class="btn btn-secondary w-100">оформить заказ</button>
+                            </div>
+
+                            <div class="d-none d-lg-block">
+                                <a href="#" class="btn btn-text p-0">
+                                    <span>Продолжить покупки</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none">
+                                        <path d="M1.00012 12L6.88283 6.99804C6.95475 6.93948 7.01199 6.86914 7.05109 6.79126C7.09019 6.71339 7.11035 6.62959 7.11035 6.5449C7.11035 6.46024 7.09019 6.37642 7.05109 6.29855C7.01199 6.22068 6.95475 6.15034 6.88283 6.09177L1.00012 1.08984" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="d-lg-none text-end">
+                                <button type="button" class="btn btn-with-collapsing-arrow border-0 p-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapse-cart-summary-info" aria-expanded="false">
+                                    подробнее о заказе
+                                    <span class="svg-arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+
                         </div>
                     </div>
                 </div>

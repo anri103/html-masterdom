@@ -5601,6 +5601,19 @@ textarea {
     }
 }
 
+.col-fixed-mobile {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: calc(100% - 100px);
+    background: #fff;
+    z-index: 100;
+}
+
 .table-profile-orders-summary {
     max-width: 470px;
     margin-bottom: 0;
@@ -5639,6 +5652,15 @@ textarea {
 }
 
 @media (min-width: 992px) {
+
+    .col-fixed-mobile {
+        position: static;
+    }
+
+    .col-fixed-mobile .section-product__calculate-cost {
+        margin-left: auto;
+        max-width: 400px;
+    }
 
     .product-cart-card__quantity-wrapper {
         max-width: 200px;
