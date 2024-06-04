@@ -147,6 +147,7 @@ textarea {
 .form-select {
     color: var(--bs-body-color);
     font-size: var(--bs-body-font-size);
+    padding: 1rem .75rem;
     border-radius: 0;
     border-top-width: 0;
     border-right-width: 0;
@@ -1422,6 +1423,7 @@ textarea {
 
 .navbar-desktop__search .form-search .form-control {
     --bs-border-color: var(--theme-light-gray);
+    padding: .375rem .75rem;
     border-top-width: 0 !important;
     border-right-width: 0 !important;
     border-left-width: 0 !important;
@@ -2224,7 +2226,7 @@ textarea {
 
 .hero-category__text {
     position: absolute;
-    bottom: 61px;
+    bottom: 15%;
     left: 25px;
 }
 
@@ -2265,11 +2267,6 @@ textarea {
         transform: scale(1.1);
     }
 
-    .hero-category__text {
-        bottom: 40px;
-        left: 30px;
-    }
-
     .hero-category__title {
         font-size: 22px;
     }
@@ -2280,11 +2277,6 @@ textarea {
 }
 
 @media (min-width: 1200px) {
-
-    .hero-category__text {
-        bottom: 74px;
-        left: 30px;
-    }
 
     .hero-category__title {
         font-size: 32px;
@@ -5666,4 +5658,58 @@ textarea {
         max-width: 200px;
     }
 
+}
+
+.checkout-radio-card {
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+
+.checkout-radio-card.disabled {
+    cursor: inherit;
+}
+
+.checkout-radio-card__body {
+    padding: 1.5rem;
+}
+
+.checkout-radio-card__header:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: 1px solid #DEE5ED;
+    pointer-events: none;
+    -webkit-transition: 0.3s;
+       -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+         -o-transition: 0.3s;
+            transition: 0.3s;
+}
+
+.checkout-radio-card:hover .checkout-radio-card__header:before,
+.checkout-radio-card__radio:checked + .checkout-radio-card__header:before {
+    border-color: #02378F;
+}
+
+.checkout-radio-card__radio {
+    display: none;
+}
+
+.checkout-radio-card__svg-indicator {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.checkout-radio-card__radio:checked + .checkout-radio-card__header svg .checkout-radio-card__svg-indicator {
+    visibility: visible;
+    opacity: 1;
+}
+
+.checkout-radio-card__radio:disabled + .checkout-radio-card__header:before {
+    border-color: #DEE5ED;
 }
