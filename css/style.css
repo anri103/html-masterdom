@@ -5660,21 +5660,38 @@ textarea {
 
 }
 
+/* checkout-radio-card */
+
 .checkout-radio-card {
     cursor: pointer;
     position: relative;
     display: block;
+    border: 1px solid #DEE5ED;
+}
+
+.checkout-radio-card__radio-input,
+.checkout-radio-btn__radio-input {
+    display: none;
 }
 
 .checkout-radio-card.disabled {
-    cursor: inherit;
+    cursor: default;
 }
 
-.checkout-radio-card__body {
+.checkout-radio-card__status-text {
+    display: none;
+    font-weight: 500;
+}
+
+.checkout-radio-card.disabled .checkout-radio-card__status-text {
+    display: block;
+}
+
+.checkout-radio-card__wrapper {
     padding: 1.5rem;
 }
 
-.checkout-radio-card__header:before {
+.checkout-radio-card__radio-label:before {
     content: "";
     display: block;
     position: absolute;
@@ -5691,25 +5708,45 @@ textarea {
             transition: 0.3s;
 }
 
-.checkout-radio-card:hover .checkout-radio-card__header:before,
-.checkout-radio-card__radio:checked + .checkout-radio-card__header:before {
+.checkout-radio-card:hover,
+.checkout-radio-card.checked {
     border-color: #02378F;
 }
 
-.checkout-radio-card__radio {
-    display: none;
+.checkout-radio-card.disabled {
+    border-color: #DEE5ED;
 }
 
-.checkout-radio-card__svg-indicator {
+.svg-radio__indicator {
     visibility: hidden;
     opacity: 0;
 }
 
-.checkout-radio-card__radio:checked + .checkout-radio-card__header svg .checkout-radio-card__svg-indicator {
+.checkout-radio-card.checked .checkout-radio-card__header .svg-radio__indicator,
+.checkout-radio-btn.checked .svg-radio__indicator {
     visibility: visible;
     opacity: 1;
 }
 
-.checkout-radio-card__radio:disabled + .checkout-radio-card__header:before {
-    border-color: #DEE5ED;
+/* checkout-radio-btn */
+
+.checkout-radio-btn {
+    display: block;
+    cursor: pointer;
+    background: #F8F8F8;
+}
+
+.checkout-radio-btn__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.checkout-radio-btn .svg-radio {
+    filter: grayscale(1) opacity(0.5);
+}
+
+.collapse-label:not(.open) {
+    display: none;
 }

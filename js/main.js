@@ -731,3 +731,56 @@ solutions.forEach((solution) => {
 function goBack() {
     window.history.back();
 }
+
+// const disabledRadioCards = document.querySelectorAll('.checkout-radio-card.disabled');
+
+// disabledRadioCards.forEach(card => {
+//     const radios = card.querySelectorAll('input[type="radio"]');
+//     radios.forEach(radio => {
+//         radio.disabled = true;
+//     });
+// });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const checkoutRadioCards = document.querySelectorAll('.checkout-radio-card');
+
+    checkoutRadioCards.forEach(card => {
+        card.addEventListener('click', function() {
+            if (!card.classList.contains('disabled')) {
+                card.classList.toggle('checked');
+
+                const radioInput = card.querySelector('.checkout-radio-card__radio-input');
+                if (radioInput) {
+                    radioInput.checked = !radioInput.checked;
+                }
+
+                const collapseLabel = card.nextElementSibling.querySelector('.collapse-label');
+                if (collapseLabel) {
+                    collapseLabel.classList.toggle('open', card.classList.contains('checked'));
+                }
+            }
+        });
+
+        const radioBtns = card.querySelectorAll('.checkout-radio-btn');
+        radioBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Чтобы клик по кнопке не активировал обработчик родительского card
+
+                if (!card.classList.contains('disabled')) {
+                    btn.classList.toggle('checked');
+
+                    const radioInput = btn.querySelector('.checkout-radio-btn__radio-input');
+                    if (radioInput) {
+                        radioInput.checked = !radioInput.checked;
+                    }
+
+                    const collapseLabel = card.nextElementSibling.querySelector('.collapse-label');
+                    if (collapseLabel) {
+                        collapseLabel.classList.toggle('open', btn.classList.contains('checked'));
+                    }
+                }
+            });
+        });
+    });
+});
