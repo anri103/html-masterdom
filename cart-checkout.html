@@ -1144,14 +1144,15 @@
                         <div class="h4 mb-22px">Способ доставки по Москве</div>
                         <div class="row" style="--bs-gutter-y: 22px;">
                             <div class="col-lg-6">
-                                <input class="checkout-radio-card__radio-input" id="checkout-radio-card__input-delivery-01" type="radio" name="deliver1">
                                 <div class="checkout-radio-card">
+                                    <input class="checkout-radio-card__radio-input" id="checkout-delivery-01" type="radio" name="checkout-delivery">
+                                    <label class="d-none" for="checkout-delivery-01">Самовывоз</label>
                                     <div class="checkout-radio-card__wrapper">
                                         <div class="checkout-radio-card__header mb-22px">
                                             <div class="d-flex justify-content-between mb-12px">
                                                 <div class="d-flex flex-wrap align-items-center justify-content-between gap-12px">
                                                     <div class="h4 fw-normal text-uppercase mb-0">
-                                                        <label class="checkout-radio-card__radio-label" for="checkout-radio-card__input-delivery-01">Самовывоз</label>
+                                                        <span>Самовывоз</span>
                                                         <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="После выбора этого пункта вы будете перенаправлены на страницу оплаты">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                                 <circle cx="10" cy="10" r="10" fill="#DEE5ED"/>
@@ -1171,37 +1172,34 @@
                                             </div>
                                         </div>
                                         <div class="d-flex flex-column gap-22px">
-
+                                            <!-- item -->
                                             <div>
+                                                <!-- Невидимый input -->
+                                                <input class="checkout-radio-btn__radio-input" id="checkout-pickup-01" type="radio" name="checkout-pickup">
                                                 <!-- Кнопка -->
-                                                <div class="mb-3">
-                                                    <div class="checkout-radio-btn">
-                                                        <input class="checkout-radio-btn__radio-input" id="radio-input-delivery-pickup-01" type="radio" name="deliver2">
-                                                        <div class="checkout-radio-btn__body">
-                                                            <div class="d-flex align-items-center gap-12px">
-                                                                <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                                                    <path d="M26.2836 11.4283C26.2836 18.2854 15.9979 26.2854 15.9979 26.2854C15.9979 26.2854 5.71222 18.2854 5.71222 11.4283C5.71222 5.82601 10.3956 1.14258 15.9979 1.14258C21.6002 1.14258 26.2836 5.82601 26.2836 11.4283Z" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M16.0002 14.8571C17.8937 14.8571 19.4287 13.3221 19.4287 11.4286C19.4287 9.53502 17.8937 8 16.0002 8C14.1066 8 12.5716 9.53502 12.5716 11.4286C12.5716 13.3221 14.1066 14.8571 16.0002 14.8571Z" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M25.3186 22.8574H27.4276L30.8562 30.8574H1.14191L4.57048 22.8574H6.67951" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </svg>
-                                                                <div class="fw-medium">Забрать из магазина</div>
-                                                            </div>
-                                                            <svg class="svg-radio flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-                                                                <circle cx="11" cy="11.5" r="10.5769" stroke="#ACB2BF" stroke-width="0.846154"/>
-                                                                <circle class="svg-radio__indicator" cx="11" cy="11.5002" r="5.92308" fill="#02378F"/>
+                                                <label class="checkout-radio-btn" for="checkout-pickup-01">
+                                                    <div class="checkout-radio-btn__body">
+                                                        <div class="d-flex align-items-center gap-12px">
+                                                            <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                                <path d="M26.2836 11.4283C26.2836 18.2854 15.9979 26.2854 15.9979 26.2854C15.9979 26.2854 5.71222 18.2854 5.71222 11.4283C5.71222 5.82601 10.3956 1.14258 15.9979 1.14258C21.6002 1.14258 26.2836 5.82601 26.2836 11.4283Z" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M16.0002 14.8571C17.8937 14.8571 19.4287 13.3221 19.4287 11.4286C19.4287 9.53502 17.8937 8 16.0002 8C14.1066 8 12.5716 9.53502 12.5716 11.4286C12.5716 13.3221 14.1066 14.8571 16.0002 14.8571Z" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M25.3186 22.8574H27.4276L30.8562 30.8574H1.14191L4.57048 22.8574H6.67951" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
                                                             </svg>
+                                                            <div class="fw-medium">Забрать из магазина</div>
                                                         </div>
+                                                        <svg class="svg-radio flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                                                            <circle cx="11" cy="11.5" r="10.5769" stroke="#ACB2BF" stroke-width="0.846154"/>
+                                                            <circle class="svg-radio__indicator" cx="11" cy="11.5002" r="5.92308" fill="#02378F"/>
+                                                        </svg>
                                                     </div>
-                                                </div>
-
+                                                </label>
                                                 <!-- Блок текста для десктопа -->
-                                                <div class="d-none d-lg-block">
+                                                <div class="d-none d-lg-block mt-3">
                                                     <p class="fw-medium mb-1">Условия получения заказа со склада</p>
                                                     <p class="text-muted-light">Заказ пропуска (ФИО + номер документа + гос. номер машины).Ежедневно с 10:00 до 17:00.</p>
                                                     <p class="fw-medium mb-1">Оплата</p>
                                                     <p class="text-muted-light">Онлайн, Оплата в фирменном салоне наличным или безналичным способами оплаты в кассе.</p>
                                                 </div>
-                                                
                                                 <div class="collapse-label">
                                                     <!-- Блок текста для мобилки -->
                                                     <div class="d-lg-none mb-3">
@@ -1226,37 +1224,34 @@
                                                     </div>
                                                 </div>
                                             </div>
-
+                                            <!-- item -->
                                             <div>
+                                                <!-- Невидимый input -->
+                                                <input class="checkout-radio-btn__radio-input" id="checkout-pickup-02" type="radio" name="checkout-pickup">
                                                 <!-- Кнопка -->
-                                                <div class="mb-3">
-                                                    <div class="checkout-radio-btn">
-                                                        <input class="checkout-radio-btn__radio-input" id="radio-input-delivery-pickup-02" type="radio" name="deliver2">
-                                                        <div class="checkout-radio-btn__body">
-                                                            <div class="d-flex align-items-center gap-12px">
-                                                                <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                                                    <path d="M26.2836 11.4283C26.2836 18.2854 15.9979 26.2854 15.9979 26.2854C15.9979 26.2854 5.71222 18.2854 5.71222 11.4283C5.71222 5.82601 10.3956 1.14258 15.9979 1.14258C21.6002 1.14258 26.2836 5.82601 26.2836 11.4283Z" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M16.0002 14.8571C17.8937 14.8571 19.4287 13.3221 19.4287 11.4286C19.4287 9.53502 17.8937 8 16.0002 8C14.1066 8 12.5716 9.53502 12.5716 11.4286C12.5716 13.3221 14.1066 14.8571 16.0002 14.8571Z" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                    <path d="M25.3186 22.8574H27.4276L30.8562 30.8574H1.14191L4.57048 22.8574H6.67951" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
-                                                                </svg>
-                                                                <div class="fw-medium">Забрать со склада</div>
-                                                            </div>
-                                                            <svg class="svg-radio flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-                                                                <circle cx="11" cy="11.5" r="10.5769" stroke="#ACB2BF" stroke-width="0.846154"/>
-                                                                <circle class="svg-radio__indicator" cx="11" cy="11.5002" r="5.92308" fill="#02378F"/>
+                                                <label class="checkout-radio-btn" for="checkout-pickup-02">
+                                                    <div class="checkout-radio-btn__body">
+                                                        <div class="d-flex align-items-center gap-12px">
+                                                            <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                                <path d="M26.2836 11.4283C26.2836 18.2854 15.9979 26.2854 15.9979 26.2854C15.9979 26.2854 5.71222 18.2854 5.71222 11.4283C5.71222 5.82601 10.3956 1.14258 15.9979 1.14258C21.6002 1.14258 26.2836 5.82601 26.2836 11.4283Z" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M16.0002 14.8571C17.8937 14.8571 19.4287 13.3221 19.4287 11.4286C19.4287 9.53502 17.8937 8 16.0002 8C14.1066 8 12.5716 9.53502 12.5716 11.4286C12.5716 13.3221 14.1066 14.8571 16.0002 14.8571Z" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M25.3186 22.8574H27.4276L30.8562 30.8574H1.14191L4.57048 22.8574H6.67951" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
                                                             </svg>
+                                                            <div class="fw-medium">Забрать со склада</div>
                                                         </div>
+                                                        <svg class="svg-radio flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                                                            <circle cx="11" cy="11.5" r="10.5769" stroke="#ACB2BF" stroke-width="0.846154"/>
+                                                            <circle class="svg-radio__indicator" cx="11" cy="11.5002" r="5.92308" fill="#02378F"/>
+                                                        </svg>
                                                     </div>
-                                                </div>
-
+                                                </label>
                                                 <!-- Блок текста для десктопа -->
-                                                <div class="d-none d-lg-block">
+                                                <div class="d-none d-lg-block mt-3">
                                                     <p class="fw-medium mb-1">Условия получения заказа со склада</p>
                                                     <p class="text-muted-light">Заказ пропуска (ФИО + номер документа + гос. номер машины).Ежедневно с 10:00 до 17:00.</p>
                                                     <p class="fw-medium mb-1">Оплата</p>
                                                     <p class="text-muted-light">Онлайн, Оплата в фирменном салоне наличным или безналичным способами оплаты в кассе.</p>
                                                 </div>
-
                                                 <div class="collapse-label">
                                                     <div class="d-lg-none mb-3">
                                                         <p class="fw-medium mb-1">Условия получения заказа со склада</p>
@@ -1275,20 +1270,20 @@
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <input class="checkout-radio-card__radio-input" id="checkout-radio-card__input-delivery-02" type="radio" name="deliver1">
-                                <div class="checkout-radio-card">
+                                <div class="checkout-radio-card disabled">
+                                    <input class="checkout-radio-card__radio-input" id="checkout-delivery-02" type="radio" name="checkout-delivery">
+                                    <label class="d-none" for="checkout-delivery-02">Курьерская доставка</label>
                                     <div class="checkout-radio-card__wrapper">
                                         <div class="checkout-radio-card__header mb-22px">
                                             <div class="d-flex justify-content-between mb-12px">
                                                 <div class="d-flex flex-wrap align-items-center justify-content-between gap-12px">
                                                     <div class="h4 fw-normal text-uppercase mb-0">
-                                                        <label class="checkout-radio-card__radio-label" for="checkout-radio-card__input-delivery-02">Курьерская доставка</label>
+                                                        <span>Курьерская доставка</span>
                                                     </div>
                                                     <div class="checkout-radio-card__status-text text-danger">недоступно для выбора</div>
                                                 </div>
@@ -1394,14 +1389,15 @@
                         <div class="h4 mb-22px">Способ оплаты</div>
                         <div class="row" style="--bs-gutter-y: 22px;">
                             <div class="col-lg-6">
-                                <input class="checkout-radio-card__radio-input" id="checkout-radio-card__input-payment-01" type="radio" name="pay1">
-                                <div class="checkout-radio-card h-100">
-                                    <div class="checkout-radio-card__wrapper">
+                                <div class="checkout-radio-card h-100 disabled">
+                                    <input class="checkout-radio-card__radio-input" id="checkout-payment-01" type="radio" name="checkout-payment">
+                                    <label class="d-none" for="checkout-payment-01">Оплата онлайн</label>
+                                    <div class="checkout-radio-card__wrapper h-100">
                                         <div class="checkout-radio-card__header mb-12px">
                                             <div class="d-flex justify-content-between mb-12px">
                                                 <div class="d-flex flex-wrap align-items-center justify-content-between gap-12px">
                                                     <div class="h4 fw-normal text-uppercase mb-0">
-                                                        <label class="checkout-radio-card__radio-label" for="checkout-radio-card__input-payment-01">Онлайн</label>
+                                                        <span>Онлайн</span>
                                                         <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="После выбора этого пункта вы будете перенаправлены на страницу оплаты">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                                 <circle cx="10" cy="10" r="10" fill="#DEE5ED"/>
@@ -1426,14 +1422,15 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <input class="checkout-radio-card__radio-input" id="checkout-radio-card__input-payment-02" type="radio" name="pay1">
                                 <div class="checkout-radio-card h-100">
-                                    <div class="checkout-radio-card__wrapper">
+                                    <input class="checkout-radio-card__radio-input" id="checkout-payment-02" type="radio" name="checkout-payment">
+                                    <label class="d-none" for="checkout-payment-02">Оплата при получении</label>
+                                    <div class="checkout-radio-card__wrapper h-100">
                                         <div class="checkout-radio-card__header mb-12px">
                                             <div class="d-flex justify-content-between mb-12px">
                                                 <div class="d-flex flex-wrap align-items-center justify-content-between gap-12px">
                                                     <div class="h4 fw-normal text-uppercase mb-0">
-                                                        <label class="checkout-radio-card__radio-label" for="checkout-radio-card__input-payment-02">При получении</label>
+                                                        <span>При получении</span>
                                                     </div>
                                                     <div class="checkout-radio-card__status-text text-danger">недоступно для выбора</div>
                                                 </div>

@@ -34,22 +34,22 @@ window.onscroll = function () {
 const megaMenuItems = document.querySelectorAll('.has-mega-menu');
 
 megaMenuItems.forEach(item => {
-  const navLink = item.querySelector('.nav-link');
-  const megaMenu = item.querySelector('.mega-menu');
+    const navLink = item.querySelector('.nav-link');
+    const megaMenu = item.querySelector('.mega-menu');
 
-  item.addEventListener('mouseleave', () => {
-    setTimeout(() => {
-      if (!megaMenu.matches(':hover')) {
-        navLink.classList.remove('active');
-        megaMenu.classList.remove('active');
-      }
-    }, 100);
-  });
+    item.addEventListener('mouseleave', () => {
+        setTimeout(() => {
+            if (!megaMenu.matches(':hover')) {
+                navLink.classList.remove('active');
+                megaMenu.classList.remove('active');
+            }
+        }, 100);
+    });
 
-  item.addEventListener('mouseenter', () => {
-    navLink.classList.add('active');
-    megaMenu.classList.add('active');
-  });
+    item.addEventListener('mouseenter', () => {
+        navLink.classList.add('active');
+        megaMenu.classList.add('active');
+    });
 });
 
 // Табы внутри мега меню на десктопе
@@ -57,26 +57,26 @@ megaMenuItems.forEach(item => {
 const megaMenus = document.querySelectorAll('.mega-menu');
 
 megaMenus.forEach(megaMenu => {
-  const navTabs = megaMenu.querySelectorAll('.mega-menu__nav-tabs a');
-  const tabPanes = megaMenu.querySelectorAll('.mega-menu__tab-pane');
+    const navTabs = megaMenu.querySelectorAll('.mega-menu__nav-tabs a');
+    const tabPanes = megaMenu.querySelectorAll('.mega-menu__tab-pane');
 
-  navTabs.forEach(tab => {
-    tab.addEventListener('mouseover', () => {
-      const targetTabId = tab.getAttribute('data-nav-tab');
+    navTabs.forEach(tab => {
+        tab.addEventListener('mouseover', () => {
+            const targetTabId = tab.getAttribute('data-nav-tab');
 
-      navTabs.forEach(navTab => {
-        navTab.classList.remove('active');
-      });
-      tab.classList.add('active');
+            navTabs.forEach(navTab => {
+                navTab.classList.remove('active');
+            });
+            tab.classList.add('active');
 
-      tabPanes.forEach(pane => {
-        pane.classList.remove('active');
-        if (pane.id === targetTabId) {
-          pane.classList.add('active');
-        }
-      });
+            tabPanes.forEach(pane => {
+                pane.classList.remove('active');
+                if (pane.id === targetTabId) {
+                    pane.classList.add('active');
+                }
+            });
+        });
     });
-  });
 });
 
 //////////////////////////////////////////////////////////////////
@@ -566,7 +566,7 @@ swiperAbout.on('transitionEnd', () => {
     const activeIndex = swiperAbout.activeIndex;
     const accordionButtons = document.querySelectorAll('#accordionAbout .accordion-button');
     const accordionCollapses = document.querySelectorAll('#accordionAbout .accordion-collapse');
-    
+
     accordionButtons.forEach((button, index) => {
         if (index === activeIndex) {
             button.setAttribute('aria-expanded', 'true');
@@ -626,12 +626,12 @@ Fancybox.bind("[fancybox-dialog]", {});
 //////////////////////////////////////////////////////////////////
 // Табы
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     var tabLinks = document.querySelectorAll('.custom-tab-nav-js a');
     var customTabLinks = document.querySelectorAll('.custom-tab-link-js');
 
-    tabLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
+    tabLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
 
             var tabId = this.getAttribute('href').substring(1);
@@ -639,8 +639,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    customTabLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
+    customTabLinks.forEach(function (link) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
 
             var tabId = this.getAttribute('href').substring(1);
@@ -653,7 +653,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth'
                 });
 
-                setTimeout(function() {
+                setTimeout(function () {
                     activateTab(tabId);
                 }, 500); // Дополнительная задержка для прокрутки
             }
@@ -664,7 +664,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var tabPanes = document.querySelectorAll('.product-tab');
         var tabLinks = document.querySelectorAll('.custom-tab-nav-js a');
 
-        tabPanes.forEach(function(tabPane) {
+        tabPanes.forEach(function (tabPane) {
             if (tabPane.id === tabId) {
                 tabPane.classList.add('show');
             } else {
@@ -672,7 +672,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        tabLinks.forEach(function(tabLink) {
+        tabLinks.forEach(function (tabLink) {
             if (tabLink.getAttribute('href') === '#' + tabId) {
                 tabLink.classList.add('active');
             } else {
@@ -714,7 +714,7 @@ solutions.forEach((solution) => {
 
             let isHidden = true; // Переменная для отслеживания состояния отображения элементов col
 
-            button.addEventListener("click", function() {
+            button.addEventListener("click", function () {
                 cols.forEach((col, index) => {
                     if (index > 2) {
                         col.style.display = isHidden ? "block" : "none"; // Переключаем отображение элементов col
@@ -732,66 +732,39 @@ function goBack() {
     window.history.back();
 }
 
-// const disabledRadioCards = document.querySelectorAll('.checkout-radio-card.disabled');
+document.addEventListener('DOMContentLoaded', function() {
+    var allRadioCards = document.querySelectorAll('.checkout-radio-card');
 
-// disabledRadioCards.forEach(card => {
-//     const radios = card.querySelectorAll('input[type="radio"]');
-//     radios.forEach(radio => {
-//         radio.disabled = true;
-//     });
-// });
+    allRadioCards.forEach(function(card) {
+        card.addEventListener('click', function() {
+            if (!card.classList.contains('disabled')) {
+                var radioInput = card.querySelector('.checkout-radio-card__radio-input');
+                var radioGroupName = radioInput.getAttribute('name');
 
-const disabledRadioCards = document.querySelectorAll('.checkout-radio-card');
+                document.querySelectorAll('input[name="' + radioGroupName + '"]').forEach(function(input) {
+                    var parentCard = input.closest('.checkout-radio-card');
+                    if (parentCard !== card) {
+                        parentCard.querySelectorAll('input').forEach(function(input) {
+                            if (input.type === 'checkbox') {
+                                input.checked = false; // Снятие флага с checkbox
+                            } else if (input.type === 'radio') {
+                                input.checked = false; // Снятие флага с radio
+                            }
+                            input.value = ''; // Очистка значения поля input
+                        });
+                    }
+                });
 
-disabledRadioCards.forEach(card => {
-    if (card.classList.contains('disabled')) {
-        const inputs = card.querySelectorAll('input');
-        inputs.forEach(input => {
-            input.disabled = true;
+                radioInput.checked = true;
+            }
         });
-    }
+
+        card.querySelectorAll('input').forEach(function(input) {
+            if (card.classList.contains('disabled')) {
+                input.setAttribute('disabled', 'disabled');
+            } else {
+                input.removeAttribute('disabled');
+            }
+        });
+    });
 });
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     const checkoutRadioCards = document.querySelectorAll('.checkout-radio-card');
-
-//     checkoutRadioCards.forEach(card => {
-//         card.addEventListener('click', function() {
-//             if (!card.classList.contains('disabled')) {
-//                 card.classList.toggle('checked');
-
-//                 const radioInput = card.querySelector('.checkout-radio-card__radio-input');
-//                 if (radioInput) {
-//                     radioInput.checked = !radioInput.checked;
-//                 }
-
-//                 const collapseLabel = card.nextElementSibling.querySelector('.collapse-label');
-//                 if (collapseLabel) {
-//                     collapseLabel.classList.toggle('open', card.classList.contains('checked'));
-//                 }
-//             }
-//         });
-
-//         const radioBtns = card.querySelectorAll('.checkout-radio-btn');
-//         radioBtns.forEach(btn => {
-//             btn.addEventListener('click', function(e) {
-//                 e.stopPropagation();
-
-//                 if (!card.classList.contains('disabled')) {
-//                     btn.classList.toggle('checked');
-
-//                     const radioInput = btn.querySelector('.checkout-radio-btn__radio-input');
-//                     if (radioInput) {
-//                         radioInput.checked = !radioInput.checked;
-//                     }
-
-//                     const collapseLabel = card.nextElementSibling.querySelector('.collapse-label');
-//                     if (collapseLabel) {
-//                         collapseLabel.classList.toggle('open', btn.classList.contains('checked'));
-//                     }
-//                 }
-//             });
-//         });
-//     });
-// });

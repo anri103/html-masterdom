@@ -5663,10 +5663,7 @@ textarea {
 /* checkout-radio-card */
 
 .checkout-radio-card {
-    cursor: pointer;
     position: relative;
-    display: block;
-    border: 1px solid #DEE5ED;
 }
 
 .checkout-radio-card.disabled,
@@ -5676,24 +5673,39 @@ textarea {
 }
 
 .checkout-radio-card__radio-input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 1px;
     display: none;
 }
 
+/* .checkout-radio-card__radio-input:checked {
+    background: green;
+} */
+
 .checkout-radio-card__wrapper {
+    cursor: pointer;
+    display: block;
+    border: 1px solid #DEE5ED;
     padding: 1.5rem;
 }
 
+.checkout-radio-card__wrapper:hover {
+    border-color: #02378F;
+}
+
+.checkout-radio-card__radio-input:checked ~ .checkout-radio-card__wrapper {
+    border-color: #02378F;
+}
+
+.checkout-radio-card.disabled .checkout-radio-card__wrapper {
+    border-color: #DEE5ED !important;
+}
+
 .checkout-radio-card__status-text {
+    display: none;
     font-weight: 500;
 }
 
-.checkout-radio-card:not(.disabled) .checkout-radio-card__status-text {
-    display: none;
+.checkout-radio-card.disabled .checkout-radio-card__status-text {
+    display: block;
 }
 
 /* .checkout-radio-card__radio-label:before {
@@ -5714,21 +5726,21 @@ textarea {
             transition: 0.3s;
 } */
 
-.checkout-radio-card:hover,
-.checkout-radio-card__radio-input:checked + .checkout-radio-card {
+/* .checkout-radio-card:hover,
+.checkout-radio-card.checked {
     border-color: #02378F;
-}
+} */
 
-.checkout-radio-card.disabled {
+/* .checkout-radio-card.disabled {
     border-color: #DEE5ED !important;
-}
+} */
 
-.svg-radio__indicator {
+.checkout-radio-card .checkout-radio-card__header .svg-radio__indicator {
     visibility: hidden;
     opacity: 0;
 }
 
-.checkout-radio-card__radio-input:checked + .checkout-radio-card .checkout-radio-card__header .svg-radio__indicator {
+.checkout-radio-card__radio-input:checked ~ .checkout-radio-card__wrapper .checkout-radio-card__header .svg-radio__indicator {
     visibility: visible;
     opacity: 1;
 }
@@ -5756,11 +5768,21 @@ textarea {
     filter: grayscale(1) opacity(0.5);
 }
 
-.checkout-radio-btn.checked .svg-radio__indicator {
+.checkout-radio-btn .svg-radio__indicator {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.checkout-radio-btn__radio-input:checked + .checkout-radio-btn .svg-radio__indicator {
     visibility: visible;
     opacity: 1;
 }
 
-.collapse-label:not(.open) {
+.collapse-label {
     display: none;
+}
+
+.checkout-radio-btn__radio-input:checked ~ .collapse-label {
+    display: block;
+    margin-top: 1rem;
 }
