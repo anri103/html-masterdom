@@ -624,63 +624,118 @@ Fancybox.bind("[data-fancybox]", {
 Fancybox.bind("[fancybox-dialog]", {});
 
 //////////////////////////////////////////////////////////////////
-// Табы
+// Табы на странице "Товара"
 
-document.addEventListener('DOMContentLoaded', function () {
-    var tabLinks = document.querySelectorAll('.custom-tab-nav-js a');
-    var customTabLinks = document.querySelectorAll('.custom-tab-link-js');
+// document.addEventListener('DOMContentLoaded', function () {
+//     var tabLinks = document.querySelectorAll('.custom-tab-nav-js a');
+    // var customTabLinks = document.querySelectorAll('.product-tab-link-js');
 
-    tabLinks.forEach(function (link) {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
+    // tabLinks.forEach(function (link) {
+    //     link.addEventListener('click', function (e) {
+    //         e.preventDefault();
 
-            var tabId = this.getAttribute('href').substring(1);
-            activateTab(tabId);
-        });
-    });
+    //         var tabId = this.getAttribute('href').substring(1);
+    //         activateTab(tabId);
+    //     });
+    // });
 
-    customTabLinks.forEach(function (link) {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
+    // customTabLinks.forEach(function (link) {
+    //     link.addEventListener('click', function (e) {
+    //         e.preventDefault();
 
-            var tabId = this.getAttribute('href').substring(1);
-            var tab = document.getElementById(tabId);
+    //         var tabId = this.getAttribute('href').substring(1);
+    //         var tab = document.getElementById(tabId);
 
-            if (tab) {
-                var offset = tab.offsetTop - 200;
-                window.scrollTo({
-                    top: offset,
-                    behavior: 'smooth'
-                });
+    //         if (tab) {
+    //             var offset = tab.offsetTop - 200;
+    //             window.scrollTo({
+    //                 top: offset,
+    //                 behavior: 'smooth'
+    //             });
 
-                setTimeout(function () {
-                    activateTab(tabId);
-                }, 500); // Дополнительная задержка для прокрутки
-            }
-        });
-    });
+    //             setTimeout(function () {
+    //                 activateTab(tabId);
+    //             }, 500);
+    //         }
+    //     });
+    // });
 
-    function activateTab(tabId) {
-        var tabPanes = document.querySelectorAll('.product-tab');
-        var tabLinks = document.querySelectorAll('.custom-tab-nav-js a');
+//     function activateTab(tabId) {
+//         var tabPanes = document.querySelectorAll('.product-tab');
+//         var tabLinks = document.querySelectorAll('.custom-tab-nav-js a');
 
-        tabPanes.forEach(function (tabPane) {
-            if (tabPane.id === tabId) {
-                tabPane.classList.add('show');
-            } else {
-                tabPane.classList.remove('show');
-            }
-        });
+//         tabPanes.forEach(function (tabPane) {
+//             if (tabPane.id === tabId) {
+//                 tabPane.classList.add('show');
+//             } else {
+//                 tabPane.classList.remove('show');
+//             }
+//         });
 
-        tabLinks.forEach(function (tabLink) {
-            if (tabLink.getAttribute('href') === '#' + tabId) {
-                tabLink.classList.add('active');
-            } else {
-                tabLink.classList.remove('active');
-            }
-        });
-    }
-});
+//         tabLinks.forEach(function (tabLink) {
+//             if (tabLink.getAttribute('href') === '#' + tabId) {
+//                 tabLink.classList.add('active');
+//             } else {
+//                 tabLink.classList.remove('active');
+//             }
+//         });
+//     }
+// });
+
+
+
+// {/* <div>
+// 	<a href="#product-tab-reviews" class="product-tab-link-js">150 отзывов</a>
+// </div>
+
+// <div>Разный контент</div>
+
+// <div class="custom-tab-nav-js">
+// 	<a href="#product-tab-properties" class="nav-link active">Характеристики</a>
+// 	<a href="#product-tab-about" class="nav-link">Описание</a>
+// 	<a href="#product-tab-reviews" class="nav-link">Отзывы</a>
+// </div>
+
+// <div class="section-product-tabs__container">
+// 	<div class="product-tab show" id="product-tab-properties">Контент таба</div>
+// 	<div class="product-tab" id="product-tab-about">Контент таба</div>
+// 	<div class="product-tab" id="product-tab-reviews">Контент таба</div>
+// </div> */}
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     let tabs = document.querySelectorAll('.nav-link');
+//     let tabContents = document.querySelectorAll('.product-tab');
+//     let reviewLink = document.querySelector('.product-tab-link-js');
+//     let reviewsTab = document.getElementById('product-tab-reviews');
+
+//     tabs.forEach((tab, index) => {
+//         tab.addEventListener('click', () => {
+//             tabs.forEach((node) => { node.classList.remove('active'); }); tab.classList.add('active');
+
+//             tabContents.forEach((content) => {
+//                 content.classList.remove('show');
+//             });
+//             tabContents[index].classList.add('show');
+//         });
+//     });
+
+//     reviewLink.addEventListener('click', () => {
+//         tabs.forEach((tab) => { tab.classList.remove('active'); }); tabs[2].classList.add('active');
+
+//         tabContents.forEach((content) => {
+//             content.classList.remove('show');
+//         });
+//         reviewsTab.classList.add('show');
+//     });
+// });
+
+
+
+
+
+
+
 
 //////////////////////////////////////////////////////////////////
 // Enable bootstrap popovers and tooltips
@@ -691,6 +746,7 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 //////////////////////////////////////////////////////////////////
+// Сетка на странице "Готовые решения"
 
 const solutions = document.querySelectorAll('[id^="tab-solutions"]');
 
@@ -728,23 +784,29 @@ solutions.forEach((solution) => {
     });
 });
 
+//////////////////////////////////////////////////////////////////
+// Кнопка "Назад"
+
 function goBack() {
     window.history.back();
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+//////////////////////////////////////////////////////////////////
+// Страница "Оформление заказа"
+
+document.addEventListener('DOMContentLoaded', function () {
     var allRadioCards = document.querySelectorAll('.checkout-radio-card');
 
-    allRadioCards.forEach(function(card) {
-        card.addEventListener('click', function() {
+    allRadioCards.forEach(function (card) {
+        card.addEventListener('click', function () {
             if (!card.classList.contains('disabled')) {
                 var radioInput = card.querySelector('.checkout-radio-card__radio-input');
                 var radioGroupName = radioInput.getAttribute('name');
 
-                document.querySelectorAll('input[name="' + radioGroupName + '"]').forEach(function(input) {
+                document.querySelectorAll('input[name="' + radioGroupName + '"]').forEach(function (input) {
                     var parentCard = input.closest('.checkout-radio-card');
                     if (parentCard !== card) {
-                        parentCard.querySelectorAll('input').forEach(function(input) {
+                        parentCard.querySelectorAll('input').forEach(function (input) {
                             if (input.type === 'checkbox') {
                                 input.checked = false; // Снятие флага с checkbox
                             } else if (input.type === 'radio') {
@@ -759,7 +821,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        card.querySelectorAll('input').forEach(function(input) {
+        card.querySelectorAll('input').forEach(function (input) {
             if (card.classList.contains('disabled')) {
                 input.setAttribute('disabled', 'disabled');
             } else {
