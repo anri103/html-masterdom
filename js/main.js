@@ -626,116 +626,49 @@ Fancybox.bind("[fancybox-dialog]", {});
 //////////////////////////////////////////////////////////////////
 // Табы на странице "Товара"
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     var tabLinks = document.querySelectorAll('.custom-tab-nav-js a');
-    // var customTabLinks = document.querySelectorAll('.product-tab-link-js');
+document.addEventListener('DOMContentLoaded', function () {
+    let tabs = document.querySelectorAll('.custom-tab-nav-js .nav-link');
+    let tabContents = document.querySelectorAll('.product-tab');
+    let reviewLink = document.querySelector('.product-tab-link-js');
+    let reviewsTab = document.getElementById('product-tab-reviews');
 
-    // tabLinks.forEach(function (link) {
-    //     link.addEventListener('click', function (e) {
-    //         e.preventDefault();
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', (e) => {
+            e.preventDefault();
 
-    //         var tabId = this.getAttribute('href').substring(1);
-    //         activateTab(tabId);
-    //     });
-    // });
+            if (!tab.classList.contains('active')) {
+                tabs.forEach((node) => {
+                    node.classList.remove('active');
+                });
+                tab.classList.add('active');
 
-    // customTabLinks.forEach(function (link) {
-    //     link.addEventListener('click', function (e) {
-    //         e.preventDefault();
+                tabContents.forEach((content) => {
+                    content.classList.remove('show');
+                });
+                tabContents[index].classList.add('show');
+            }
+        });
+    });
 
-    //         var tabId = this.getAttribute('href').substring(1);
-    //         var tab = document.getElementById(tabId);
+    reviewLink.addEventListener('click', (e) => {
+        e.preventDefault();
 
-    //         if (tab) {
-    //             var offset = tab.offsetTop - 200;
-    //             window.scrollTo({
-    //                 top: offset,
-    //                 behavior: 'smooth'
-    //             });
+        tabs.forEach((tab) => {
+            tab.classList.remove('active');
+        });
+        tabs[2].classList.add('active');
 
-    //             setTimeout(function () {
-    //                 activateTab(tabId);
-    //             }, 500);
-    //         }
-    //     });
-    // });
+        tabContents.forEach((content) => {
+            content.classList.remove('show');
+        });
+        reviewsTab.classList.add('show');
 
-//     function activateTab(tabId) {
-//         var tabPanes = document.querySelectorAll('.product-tab');
-//         var tabLinks = document.querySelectorAll('.custom-tab-nav-js a');
-
-//         tabPanes.forEach(function (tabPane) {
-//             if (tabPane.id === tabId) {
-//                 tabPane.classList.add('show');
-//             } else {
-//                 tabPane.classList.remove('show');
-//             }
-//         });
-
-//         tabLinks.forEach(function (tabLink) {
-//             if (tabLink.getAttribute('href') === '#' + tabId) {
-//                 tabLink.classList.add('active');
-//             } else {
-//                 tabLink.classList.remove('active');
-//             }
-//         });
-//     }
-// });
-
-
-
-// {/* <div>
-// 	<a href="#product-tab-reviews" class="product-tab-link-js">150 отзывов</a>
-// </div>
-
-// <div>Разный контент</div>
-
-// <div class="custom-tab-nav-js">
-// 	<a href="#product-tab-properties" class="nav-link active">Характеристики</a>
-// 	<a href="#product-tab-about" class="nav-link">Описание</a>
-// 	<a href="#product-tab-reviews" class="nav-link">Отзывы</a>
-// </div>
-
-// <div class="section-product-tabs__container">
-// 	<div class="product-tab show" id="product-tab-properties">Контент таба</div>
-// 	<div class="product-tab" id="product-tab-about">Контент таба</div>
-// 	<div class="product-tab" id="product-tab-reviews">Контент таба</div>
-// </div> */}
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     let tabs = document.querySelectorAll('.nav-link');
-//     let tabContents = document.querySelectorAll('.product-tab');
-//     let reviewLink = document.querySelector('.product-tab-link-js');
-//     let reviewsTab = document.getElementById('product-tab-reviews');
-
-//     tabs.forEach((tab, index) => {
-//         tab.addEventListener('click', () => {
-//             tabs.forEach((node) => { node.classList.remove('active'); }); tab.classList.add('active');
-
-//             tabContents.forEach((content) => {
-//                 content.classList.remove('show');
-//             });
-//             tabContents[index].classList.add('show');
-//         });
-//     });
-
-//     reviewLink.addEventListener('click', () => {
-//         tabs.forEach((tab) => { tab.classList.remove('active'); }); tabs[2].classList.add('active');
-
-//         tabContents.forEach((content) => {
-//             content.classList.remove('show');
-//         });
-//         reviewsTab.classList.add('show');
-//     });
-// });
-
-
-
-
-
-
-
+        window.scrollTo({
+            top: reviewsTab.offsetTop - 200,
+            behavior: 'smooth'
+        });
+    });
+});
 
 //////////////////////////////////////////////////////////////////
 // Enable bootstrap popovers and tooltips
