@@ -2581,7 +2581,19 @@ textarea {
 .product-item__img img:nth-child(2) {
     opacity: 1;
     visibility: visible;
+    object-fit: contain;
 }
+
+/* .product-item__img img:nth-child(2)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+} */
 
 .product-item__markers {
     position: absolute;
@@ -2734,7 +2746,7 @@ textarea {
         opacity: 1;
         visibility: visible;
     }
-    
+    .product-item__img:hover img:nth-child(1),
     .product-item__img img:nth-child(2) {
         opacity: 0;
         visibility: hidden;
