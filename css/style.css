@@ -2901,6 +2901,12 @@ textarea {
         visibility: visible;
     }
 
+    .product-cat-oboi .product-item__img:hover img:nth-child(1),
+    .product-cat-oboi .product-item__img img:nth-child(2) {
+        opacity: 0;
+        visibility: hidden;
+    }
+
     .product-cat-oboi .skuProperty .skuPropertyLink {
         width: 55px;
         height: 55px;
