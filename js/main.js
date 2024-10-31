@@ -763,3 +763,43 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Функция инициализации для проверки высоты текста и скрытия кнопки, если текст короткий
+function initializeTextBlocks() {
+    document.querySelectorAll(".hide-text-block").forEach((block) => {
+        const hideTextContent = block.querySelector(".hide-text-content");
+        const hideButton = block.querySelector(".toggle-hide-text");
+
+        // Проверяем, нужно ли показывать кнопку
+        if (hideTextContent.scrollHeight <= 90) { // 90px — начальная высота видимого текста
+            hideButton.style.display = "none";
+        } else {
+            hideButton.style.display = "inline-block";
+        }
+    });
+}
+
+// Обработчик клика для кнопок
+document.addEventListener("click", (event) => {
+    const hideButton = event.target.closest(".toggle-hide-text");
+
+    if (!hideButton) return;
+
+    const hideTextContent = hideButton.previousElementSibling; // Блок текста перед кнопкой
+
+    // Анимация раскрытия и скрытия текста
+    if (hideTextContent.classList.contains("js-collapsed")) {
+        // Раскрытие текста
+        hideTextContent.style.height = `${hideTextContent.scrollHeight}px`; // Полная высота текста
+        hideTextContent.classList.remove("js-collapsed");
+        hideButton.classList.add("js-active");
+    } else {
+        // Скрытие текста
+        hideTextContent.style.height = "90px"; // Возвращаем начальную видимую высоту
+        hideTextContent.classList.add("js-collapsed");
+        hideButton.classList.remove("js-active");
+    }
+});
+
+// Запускаем проверку при загрузке страницы
+document.addEventListener("DOMContentLoaded", initializeTextBlocks);

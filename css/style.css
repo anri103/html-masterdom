@@ -587,6 +587,10 @@ textarea {
     font-size: 1.25rem !important;
 }
 
+.fs-24px {
+    font-size: 1.5rem !important;
+}
+
 .fs-28px {
     font-size: 1.75rem !important;
 }
@@ -4555,6 +4559,7 @@ textarea {
 .card-ready-made-solutions {
     --bs-card-spacer-y: 22px;
     --bs-card-spacer-x: 0;
+    --bs-card-border-width: 0;
 }
 
 .card-ready-made-solutions .card-top__info {
@@ -5824,4 +5829,37 @@ textarea {
 .checkout-radio-btn__radio-input:checked ~ .collapse-label {
     display: block;
     margin-top: 1rem;
+}
+
+.designer-avatar-wrapper {
+    overflow: hidden;
+    border-radius: 60px 0 0 0;
+}
+
+@media (min-width: 992px) {
+    .designer-avatar-wrapper {
+        border-radius: 125px 0 0 0;
+    }
+}
+
+.hide-text-content {
+    overflow: hidden;
+    max-width: 870px;
+    transition: height 0.3s ease;
+}
+
+.hide-text-content.js-collapsed {
+    height: 90px;
+}
+
+.hide-text-content p:last-child {
+    margin-bottom: 0;
+}
+
+.toggle-hide-text .svg-inline {
+    transition: transform 0.3s ease;
+}
+
+.toggle-hide-text.js-active .svg-inline {
+    transform: rotate(180deg);
 }

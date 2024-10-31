@@ -1,0 +1,2129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дизайнер 2</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <!-- Мобильное меню -->
+        <div class="fixed-header-mobile">
+            <!-- Мобильное меню -->
+            <nav class="navbar navbar-mobile">
+                <div class="container">
+                    <div class="navbar-mobile__navigation">
+                        <div class="navbar-mobile__logo">
+                            <a href="#">
+                                <img src="img/logo.svg" alt="masterdom.ru">
+                            </a>
+                        </div>
+                        <!-- Кнопка -->
+                        <a href="#collapseMobileOverlayMenu" class="navbar-mobile__offcanvas-toggle collapsed" data-bs-toggle="collapse" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="14" viewBox="0 0 30 14" fill="none" class="icon-burger">
+                                <path d="M1 7H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1 1H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1 13H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="icon-close">
+                                <path d="M1.13867 1.03125L20.7981 20.9688" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1 20.8301L20.799 1.03109" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="navbar-mobile__icons">
+                        <div class="navbar-mobile__icon icon-search">
+                            <a href="#search-modal" fancybox-dialog>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M14.1733 25.1308C20.2244 25.1308 25.1298 20.2254 25.1298 14.1743C25.1298 8.12317 20.2244 3.21777 14.1733 3.21777C8.12219 3.21777 3.2168 8.12317 3.2168 14.1743C3.2168 20.2254 8.12219 25.1308 14.1733 25.1308Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M28.7816 28.7825L21.9492 21.9805" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="navbar-mobile__icon icon-phone">
+                            <a href="tel:88003503243">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16.3466 25.0126C19.5706 26.8301 23.5406 28.1469 28.4004 28.6306V21.3966L20.3618 18.8705L16.3466 25.0126ZM16.3466 25.0126C11.9066 22.5094 8.88175 19.0565 6.89662 15.5219M6.89662 15.5219C4.57454 11.3873 3.67515 7.14109 3.59766 4.1726L10.3721 3.36914L13.2427 11.7516L6.89662 15.5219Z" stroke="#1A1A16"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="navbar-mobile__icon icon-profile">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16.2817 13.0472C19.3335 13.0472 21.8075 10.5742 21.8075 7.52358C21.8075 4.47299 19.3335 2 16.2817 2C13.2299 2 10.7559 4.47299 10.7559 7.52358C10.7559 10.5742 13.2299 13.0472 16.2817 13.0472Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <div class="notification-count">2</div>
+                        </div>
+                        <div class="navbar-mobile__icon icon-cart">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M25.0033 30.5417C24.3684 30.5417 23.8535 30.0268 23.8535 29.3919C23.8535 28.757 24.3684 28.2422 25.0033 28.2422C25.6382 28.2422 26.153 28.757 26.153 29.3919C26.153 30.0268 25.6382 30.5417 25.0033 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M10.0619 30.5417C9.42685 30.5417 8.91211 30.0268 8.91211 29.3919C8.91211 28.757 9.42685 28.2422 10.0619 28.2422C10.6969 28.2422 11.2116 28.757 11.2116 29.3919C11.2116 30.0268 10.6969 30.5417 10.0619 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <div class="notification-count">99</div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Выпадающее окно на мобилке -->
+            <div class="collapse" id="collapseMobileOverlayMenu">
+                <div class="mobile-collapse-menu">
+                    <div class="container">
+
+                        <!-- Выбор города -->
+                        <div class="mobile-collapse-menu__header">
+                            <div class="title">Меню</div>
+                            <div class="city-select-invoker">
+                                <div>Ваш город:</div>
+                                <div class="city-select__current-city" data-src="#city-selector-modal" fancybox-dialog>
+                                    <div>Москва</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="7" viewBox="0 0 11 7" fill="none">
+                                        <path d="M1 1L5.0931 5.81382C5.14102 5.87267 5.19858 5.91951 5.26232 5.95151C5.32604 5.9835 5.39461 6 5.4639 6C5.53319 6 5.60177 5.9835 5.66549 5.95151C5.72921 5.91951 5.78677 5.87267 5.83471 5.81382L9.92778 0.999999" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Контейнер для двух меню -->
+                        <div class="mobile-collapse-menu__body">
+
+                            <!-- Конетейнер: Обычное меню -->
+                            <div class="mobile-collapse-menu__menu-container">
+
+                                <!-- Кнопка "Каталог >" -->
+                                <button type="button" class="btn-catalog mobile-catalog-menu-invoker">
+                                    <div>Каталог</div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="icon-arrow-right">
+                                        <path d="M6.94446 15.4551L12.8272 10.4531C12.8991 10.3946 12.9563 10.3242 12.9954 10.2463C13.0345 10.1685 13.0547 10.0847 13.0547 9.99998C13.0547 9.91532 13.0345 9.8315 12.9954 9.75363C12.9563 9.67576 12.8991 9.60542 12.8272 9.54684L6.94446 4.54492" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+
+                                <!-- Основное меню -->
+                                <ul class="mobile-main-menu-section">
+                                    <li><a href="#" class="text-primary fw-semibold">Магазины</a></li>
+                                    <li>
+                                        <a href="#" class="d-flex gap-2 align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M10.0054 17.2414L2.64031 10.5701C-1.36248 6.56735 4.52161 -1.11798 10.0054 5.09966C15.4892 -1.11798 21.3467 6.59405 17.3706 10.5701L10.0054 17.2414Z" fill="#02378F" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <span>Избраное <span>(0)</span></span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">О компании</a></li>
+                                    <li class="has-submenu">
+                                        <a href="#">Покупателям</a>
+                                        <button type="button" class="submenu-toggler"></button>
+                                        <ul class="submenu">
+                                            <li><a href="#">Доставка</a></li>
+                                            <li><a href="#">Оплата</a></li>
+                                            <li><a href="#">Возврат</a></li>
+                                            <li><a href="#">Вопрос-ответ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Готовые решения</a></li>
+                                    <li class="has-submenu">
+                                        <a href="#">Услуги</a>
+                                        <button type="button" class="submenu-toggler"></button>
+                                        <ul class="submenu">
+                                            <li><a href="#">3D визуализация</a></li>
+                                            <li><a href="#">Примерка обоев</a></li>
+                                            <li><a href="#">Примерка плитки</a></li>
+                                            <li><a href="#">Выезд дизайнера<br> для подбора штор</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Коллекции</a></li>
+                                    <li><a href="#">Каталоги</a></li>
+                                    <li><a href="#">Бренды</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li class="has-submenu">
+                                        <a href="#">Спецпредложения</a>
+                                        <button type="button" class="submenu-toggler"></button>
+                                        <ul class="submenu">
+                                            <li><a href="#">Каталог товаров SALE</a></li>
+                                            <li><a href="#">Программа лояльности</a></li>
+                                            <li><a href="#">Акции</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Дизайнеры</a></li>
+                                    <li><a href="#">Диллерам</a></li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Конетейнер: Каталог -->
+                            <div class="mobile-collapse-menu__catalog-container">
+
+                                <!-- Кнопка "< Каталог" -->
+                                <button type="button" class="btn-catalog mobile-catalog-menu-close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
+                                        <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <div>Каталог</div>
+                                </button>
+
+                                <!-- Меню каталога -->
+                                <ul class="mobile-catalog-menu-section">
+
+                                    <li class="catalog-menu-item-has-children">
+
+                                        <a href="#" class="catalog-menu-item__link">
+                                            <span>Плитка</span>
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+
+                                        <div class="catalog-menu-subs">
+
+                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
+                                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div>Назад</div>
+                                            </button>
+
+                                            <div class="container">
+                                                <!-- Ссылка на раздел -->
+                                                <a href="#" class="h5">
+                                                    <span>Перейти в раздел Плитка</span>
+                                                    <svg width="13" height="22">
+                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                    </svg>
+                                                </a>
+    
+                                                <!-- Сетка -->
+                                                <div class="row row-cols-2">
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="catalog-menu-item-has-children">
+
+                                        <a href="#" class="catalog-menu-item__link">
+                                            <span>Керамогранит</span>
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+
+                                        <div class="catalog-menu-subs">
+
+                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
+                                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div>Назад</div>
+                                            </button>
+
+                                            <div class="container">
+                                                <!-- Ссылка на раздел -->
+                                                <a href="#" class="h5">
+                                                    <span>Перейти в раздел Керамогранит</span>
+                                                    <svg width="13" height="22">
+                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                    </svg>
+                                                </a>
+    
+                                                <!-- Сетка -->
+                                                <div class="row row-cols-2">
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="catalog-menu-item-has-children">
+
+                                        <a href="#" class="catalog-menu-item__link">
+                                            <span>Обои</span>
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+
+                                        <div class="catalog-menu-subs">
+
+                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
+                                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div>Назад</div>
+                                            </button>
+
+                                            <div class="container">
+                                                <!-- Ссылка на раздел -->
+                                                <a href="#" class="h5">
+                                                    <span>Перейти в раздел Обои</span>
+                                                    <svg width="13" height="22">
+                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                    </svg>
+                                                </a>
+    
+                                                <!-- Сетка -->
+                                                <div class="row row-cols-2">
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="catalog-menu-item-has-children">
+
+                                        <a href="#" class="catalog-menu-item__link">
+                                            <span>Сантехника</span>
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+
+                                        <div class="catalog-menu-subs">
+
+                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
+                                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div>Назад</div>
+                                            </button>
+
+                                            <div class="container">
+                                                <!-- Ссылка на раздел -->
+                                                <a href="#" class="h5">
+                                                    <span>Перейти в раздел Сантехника</span>
+                                                    <svg width="13" height="22">
+                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                    </svg>
+                                                </a>
+    
+                                                <!-- Сетка -->
+                                                <div class="row row-cols-2">
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="catalog-menu-item-has-children">
+
+                                        <a href="#" class="catalog-menu-item__link">
+                                            <span>Свет</span>
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        
+                                        <div class="catalog-menu-subs">
+
+                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
+                                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div>Назад</div>
+                                            </button>
+
+                                            <div class="container">
+                                                <!-- Ссылка на раздел -->
+                                                <a href="#" class="h5">
+                                                    <span>Перейти в раздел Свет</span>
+                                                    <svg width="13" height="22">
+                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                    </svg>
+                                                </a>
+    
+                                                <!-- Сетка -->
+                                                <div class="row row-cols-2">
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li class="catalog-menu-item-has-children">
+
+                                        <a href="#" class="catalog-menu-item__link">
+                                            <span>Краска</span>
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+
+                                        <div class="catalog-menu-subs">
+
+                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
+                                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <div>Назад</div>
+                                            </button>
+
+                                            <div class="container">
+                                                <!-- Ссылка на раздел -->
+                                                <a href="#" class="h5">
+                                                    <span>Перейти в раздел Краска</span>
+                                                    <svg width="13" height="22">
+                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                    </svg>
+                                                </a>
+    
+                                                <!-- Сетка -->
+                                                <div class="row gy-3 row-cols-2">
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </li>
+
+                                    <li><a href="#" class="catalog-menu-item__link text-red font-title fw-bold">Акция</a></li>
+                                </ul>
+    
+                            </div>
+    
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Десктопное меню -->
+        <div class="fixed-header-desktop">
+            <!-- Десктопное меню -->
+            <nav class="navbar navbar-desktop">
+                <div class="container-xl">
+                    <!-- Логотип -->
+                    <div class="navbar-desktop__logo">
+                        <a href="#">
+                            <img src="img/logo.svg" alt="masterdom.ru">
+                        </a>
+                    </div>
+                    <div class="navbar-desktop__midd-block">
+                        <div class="navbar-desktop__navigation">
+                            <!-- Кнопка -->
+                            <a href="#collapseDesktopOverlayMenu" class="navbar-desktop__offcanvas-toggle collapsed" data-bs-toggle="collapse" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="14" viewBox="0 0 30 14" fill="none" class="icon-burger">
+                                    <path d="M1 7H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M1 1H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M1 13H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="icon-close">
+                                    <path d="M1.13867 1.03125L20.7981 20.9688" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 20.8301L20.799 1.03109" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <!-- Меню -->
+                            <ul class="navbar-nav">
+                                <!-- Должна быть возможность добавить свои классы ссылке -->
+                                <li><a href="#" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
+                                <li class="has-mega-menu">
+                                    <a href="#" class="nav-link"><span>Плитка</span></a>
+                                    <div class="mega-menu">
+                                        <div class="row g-0">
+                                            <div class="col-3 border-end">
+                                                <ul class="mega-menu__nav-tabs nav flex-column">
+                                                    <li><a href="#" class="nav-link active" data-nav-tab="mega-menu-tab-cat-plitka">Плитка</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-keramogranit">Керамогранит</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-kamen">Камень</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="mega-menu__tab-content">
+                                                    <div class="mega-menu__tab-pane active" id="mega-menu-tab-cat-plitka">
+                                                        <div class="mega-menu__content-wrapper">
+                                                            <div class="mega-menu__grid">
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Материал</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Керамогранит</a></li>
+                                                                        <li><a href="#">Керамическая плитка</a></li>
+                                                                        <li><a href="#">Камень</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Мозаика</a></li>
+                                                                        <li><a href="#">Ступени</a></li>
+                                                                        <li><a href="#">Плинтусы</a></li>
+                                                                        <li><a href="#">Декоры</a></li>
+                                                                        <li><a href="#">Панно напольное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Назначение</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Для пола</a></li>
+                                                                        <li><a href="#">Для стен</a></li>
+                                                                        <li><a href="#">Универсальное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Мозаика</a></li>
+                                                                        <li><a href="#">Ступени</a></li>
+                                                                        <li><a href="#">Плинтусы</a></li>
+                                                                        <li><a href="#">Декоры</a></li>
+                                                                        <li><a href="#">Панно напольное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-keramogranit">
+                                                        <div class="mega-menu__content-wrapper">
+                                                            <div class="mega-menu__grid">
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Назначение</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Для пола</a></li>
+                                                                        <li><a href="#">Для стен</a></li>
+                                                                        <li><a href="#">Универсальное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Мозаика</a></li>
+                                                                        <li><a href="#">Ступени</a></li>
+                                                                        <li><a href="#">Плинтусы</a></li>
+                                                                        <li><a href="#">Декоры</a></li>
+                                                                        <li><a href="#">Панно напольное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Материал</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Керамогранит</a></li>
+                                                                        <li><a href="#">Керамическая плитка</a></li>
+                                                                        <li><a href="#">Камень</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-kamen">
+                                                        <div class="mega-menu__content-wrapper">
+                                                            <div class="mega-menu__grid">
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Назначение</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Для пола</a></li>
+                                                                        <li><a href="#">Для стен</a></li>
+                                                                        <li><a href="#">Универсальное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Материал</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Керамогранит</a></li>
+                                                                        <li><a href="#">Керамическая плитка</a></li>
+                                                                        <li><a href="#">Камень</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Мозаика</a></li>
+                                                                        <li><a href="#">Ступени</a></li>
+                                                                        <li><a href="#">Плинтусы</a></li>
+                                                                        <li><a href="#">Декоры</a></li>
+                                                                        <li><a href="#">Панно напольное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#" class="nav-link"><span>Обои</span></a></li>
+                                <li class="has-mega-menu">
+                                    <a href="#" class="nav-link"><span>Сантехника</span></a>
+                                    <div class="mega-menu">
+                                        <div class="row g-0">
+                                            <div class="col-3 border-end">
+                                                <ul class="mega-menu__nav-tabs nav flex-column">
+                                                    <li><a href="#" class="nav-link active" data-nav-tab="mega-menu-tab-cat-rakoviny">Раковины</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-unitazy-i-bide">Унитазы и биде</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-smesiteli">Смесители</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-dushevie-kabiny">Душевые кабины</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="mega-menu__tab-content">
+                                                    <div class="mega-menu__tab-pane active" id="mega-menu-tab-cat-rakoviny">
+                                                        <div class="mega-menu__content-wrapper">
+                                                            <div class="mega-menu__grid">
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Материал</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Керамогранит</a></li>
+                                                                        <li><a href="#">Керамическая плитка</a></li>
+                                                                        <li><a href="#">Камень</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Мозаика</a></li>
+                                                                        <li><a href="#">Ступени</a></li>
+                                                                        <li><a href="#">Плинтусы</a></li>
+                                                                        <li><a href="#">Декоры</a></li>
+                                                                        <li><a href="#">Панно напольное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Назначение</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Для пола</a></li>
+                                                                        <li><a href="#">Для стен</a></li>
+                                                                        <li><a href="#">Универсальное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Мозаика</a></li>
+                                                                        <li><a href="#">Ступени</a></li>
+                                                                        <li><a href="#">Плинтусы</a></li>
+                                                                        <li><a href="#">Декоры</a></li>
+                                                                        <li><a href="#">Панно напольное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-unitazy-i-bide">
+                                                        <div class="mega-menu__content-wrapper">
+                                                            <div class="mega-menu__grid">
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Назначение</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Для пола</a></li>
+                                                                        <li><a href="#">Для стен</a></li>
+                                                                        <li><a href="#">Универсальное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Мозаика</a></li>
+                                                                        <li><a href="#">Ступени</a></li>
+                                                                        <li><a href="#">Плинтусы</a></li>
+                                                                        <li><a href="#">Декоры</a></li>
+                                                                        <li><a href="#">Панно напольное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Материал</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Керамогранит</a></li>
+                                                                        <li><a href="#">Керамическая плитка</a></li>
+                                                                        <li><a href="#">Камень</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-smesiteli">
+                                                        <div class="mega-menu__content-wrapper">
+                                                            <div class="mega-menu__grid">
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Материал</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Для пола</a></li>
+                                                                        <li><a href="#">Для стен</a></li>
+                                                                        <li><a href="#">Универсальное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Мозаика</a></li>
+                                                                        <li><a href="#">Ступени</a></li>
+                                                                        <li><a href="#">Плинтусы</a></li>
+                                                                        <li><a href="#">Декоры</a></li>
+                                                                        <li><a href="#">Панно напольное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Назначение</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Керамогранит</a></li>
+                                                                        <li><a href="#">Керамическая плитка</a></li>
+                                                                        <li><a href="#">Камень</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-dushevie-kabiny">
+                                                        <div class="mega-menu__content-wrapper">
+                                                            <div class="mega-menu__grid">
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Назначение</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Для пола</a></li>
+                                                                        <li><a href="#">Для стен</a></li>
+                                                                        <li><a href="#">Универсальное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Тип плитки</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Мозаика</a></li>
+                                                                        <li><a href="#">Ступени</a></li>
+                                                                        <li><a href="#">Плинтусы</a></li>
+                                                                        <li><a href="#">Декоры</a></li>
+                                                                        <li><a href="#">Панно напольное</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="mega-menu__widget">
+                                                                    <!-- Название фильтра -->
+                                                                    <p class="mega-menu__widget-title">Материал</p>
+                                                                    <ul class="mega-menu__widget-menu">
+                                                                        <li><a href="#">Керамогранит</a></li>
+                                                                        <li><a href="#">Керамическая плитка</a></li>
+                                                                        <li><a href="#">Камень</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#" class="nav-link"><span>Свет</span></a></li>
+                                <li><a href="#" class="nav-link"><span>Краски</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="navbar-desktop__search">
+                            <form class="form-search" action="#">
+                                <input type="text" class="form-control" placeholder="поиск">
+                                <button type="submit" class="btn form-search__btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                        <g clip-path="url(#clip0_34_11018)">
+                                            <path class="path-stroke-dynamic" d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02943 14.9706 1 10 1C5.02943 1 1 5.02943 1 10C1 14.9706 5.02943 19 10 19Z" stroke="#7C7D80" stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path class="path-stroke-dynamic" d="M21.999 21.9995L16.3867 16.4121" stroke="#7C7D80" stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="navbar-desktop__right-block">
+                        <div class="navbar-desktop__icons">
+                            <!-- icon -->
+                            <div class="navbar-desktop__icon icon-search">
+                                <a href="#search-modal" fancybox-dialog>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M14.1733 25.1308C20.2244 25.1308 25.1298 20.2254 25.1298 14.1743C25.1298 8.12317 20.2244 3.21777 14.1733 3.21777C8.12219 3.21777 3.2168 8.12317 3.2168 14.1743C3.2168 20.2254 8.12219 25.1308 14.1733 25.1308Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M28.7816 28.7825L21.9492 21.9805" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- icon -->
+                            <div class="navbar-desktop__icon icon-location">
+                                <a href="#city-selector-modal" fancybox-dialog>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M28.0687 13.0343C28.0687 21.0572 16.0343 30.4172 16.0343 30.4172C16.0343 30.4172 4 21.0572 4 13.0343C4 6.47963 9.47963 1 16.0343 1C22.589 1 28.0687 6.47963 28.0687 13.0343Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16.0349 17.0453C18.2503 17.0453 20.0463 15.2494 20.0463 13.0339C20.0463 10.8184 18.2503 9.02246 16.0349 9.02246C13.8194 9.02246 12.0234 10.8184 12.0234 13.0339C12.0234 15.2494 13.8194 17.0453 16.0349 17.0453Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- icon -->
+                            <div class="navbar-desktop__icon icon-profile">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M16.2817 13.0472C19.3335 13.0472 21.8075 10.5742 21.8075 7.52358C21.8075 4.47299 19.3335 2 16.2817 2C13.2299 2 10.7559 4.47299 10.7559 7.52358C10.7559 10.5742 13.2299 13.0472 16.2817 13.0472Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <div class="notification-count">2</div>
+                            </div>
+                            <!-- icon -->
+                            <div class="navbar-desktop__icon icon-whishlist">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M16.5091 28.2013L4.20238 17.054C-2.48607 10.3655 7.34593 -2.47625 16.5091 7.91311C25.6722 -2.47625 35.4598 10.4101 28.8159 17.054L16.5091 28.2013Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <div class="notification-count">2</div>
+                            </div>
+                            <!-- icon -->
+                            <div class="navbar-desktop__icon icon-cart">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                        <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M25.0033 30.5417C24.3684 30.5417 23.8535 30.0268 23.8535 29.3919C23.8535 28.757 24.3684 28.2422 25.0033 28.2422C25.6382 28.2422 26.153 28.757 26.153 29.3919C26.153 30.0268 25.6382 30.5417 25.0033 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.0619 30.5417C9.42685 30.5417 8.91211 30.0268 8.91211 29.3919C8.91211 28.757 9.42685 28.2422 10.0619 28.2422C10.6969 28.2422 11.2116 28.757 11.2116 29.3919C11.2116 30.0268 10.6969 30.5417 10.0619 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                                <div class="notification-count">99</div>
+                            </div>
+                        </div>
+                        <div class="navbar-desktop__phone">
+                            <a href="tel:88003503243">8 800 350-32-43</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Выпадающее окно "Меню" на десктопе -->
+            <div class="collapse" id="collapseDesktopOverlayMenu">
+                <div class="desktop-collapse-menu">
+                    <div class="container">
+                        <div class="desktop-collapse-menu__row">
+                            <div class="desktop-collapse-menu__col">
+                                <ul class="desktop-collapse-menu__menu">
+                                    <li><a href="#">О компании</a></li>
+                                    <li class="has-submenu">
+                                        <a href="#">Покупателям</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Доставка</a></li>
+                                            <li><a href="#">Оплата</a></li>
+                                            <li><a href="#">Возврат</a></li>
+                                            <li><a href="#">Вопрос-ответ</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Готовые решения</a></li>
+                                    <li class="has-submenu">
+                                        <a href="#">Услуги</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">3D визуализация</a></li>
+                                            <li><a href="#">Примерка обоев</a></li>
+                                            <li><a href="#">Примерка плитки</a></li>
+                                            <li><a href="#">Выезд дизайнера<br> для подбора штор</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Дилерам</a></li>
+                                </ul>
+                            </div>
+                            <div class="desktop-collapse-menu__col">
+                                <ul class="desktop-collapse-menu__menu">
+                                    <li><a href="#">Коллекции</a></li>
+                                    <li><a href="#">Каталоги</a></li>
+                                    <li><a href="#">Бренды</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li class="has-submenu">
+                                        <a href="#">Спецпредложения</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Каталог товаров SALE</a></li>
+                                            <li><a href="#">Программа лояльности</a></li>
+                                            <li><a href="#">Акции</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Дизайнерам</a></li>
+                                </ul>
+                            </div>
+                            <div class="desktop-collapse-menu__col">
+                                <div class="desktop-collapse-menu__blog-item">
+                                    <div class="blog-item-img">
+                                        <a href="#">
+                                            <img src="img/overlay-menu-blog-item.jpg" alt="Бранч для дизайнеров с брендами CRETO и VitrA и лекция Сергея Трегубова в Москве!">
+                                        </a>
+                                    </div>
+                                    <div class="blog-item-body">
+                                        <div class="blog-item-title">
+                                            <a href="#">Бранч для дизайнеров с брендами CRETO и VitrA и лекция Сергея Трегубова в Москве!</a>
+                                        </div>
+                                        <div class="blog-item-tags">
+                                            <div class="item-tag date">23.04.2021</div>
+                                            <div class="item-tag category">
+                                                <a href="#">Мероприятия</a>
+                                            </div>
+                                        </div>
+                                        <div class="blog-item-read-link">
+                                            <a href="#">Читать</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-outline fw-medium mt-4" style="width: 100%; max-width: 296px;">все статьи</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- section-breadcrumbs -->
+        <section class="section section-breadcrumbs">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Дизайнеры</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <span>Жанна Герасимова</span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Основная информация о дизайнере -->
+        <section class="section">
+            <div class="container">
+                <div class="row" style="--bs-gutter-y: 2rem;">
+                    <div class="col-lg-3">
+                        <div class="designer-avatar-wrapper">
+                            <img class="img-fluid w-100" src="img/designer-page-avatar.webp" alt="Жанна Герасимова">
+                        </div>
+                    </div>
+                    <div class="col-lg-9 ps-lg-4">
+                        <div class="mt-3 mb-12px">
+                            <div class="h1 title mb-12px">Жанна Герасимова</div>
+                            <div class="text-secondary">6 проектов</div>
+                        </div>
+                        <div class="hide-text-block mb-32px" id="hide-text-block-01">
+                            <div class="hide-text-content js-collapsed fs-24px mb-32px">
+                                <p>Жанна Герасимова — талантливый дизайнер интерьера, чьи проекты демонстрируют гармонию стиля, комфорта и функциональности. Её работы отражают тонкое чувство эстетики и внимание к деталям, придавая каждому пространству индивидуальный характер.<br>
+                                Жанна известна своим умением сочетать современные тренды с классическими мотивами, создавая интерьеры, которые выглядят стильно и живо, но остаются практичными и удобными для жизни.</p>
+                            </div>
+                            <button type="button" class="toggle-hide-text btn border-0 p-0" data-target="hide-text-block-01">
+                                читать
+                                <svg class="svg-inline v-middle" xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+                                    <path d="M1 0.5L5.12621 5.31382C5.17452 5.37267 5.23254 5.41951 5.29679 5.45151C5.36103 5.4835 5.43016 5.5 5.50001 5.5C5.56986 5.5 5.639 5.4835 5.70323 5.45151C5.76747 5.41951 5.8255 5.37267 5.87382 5.31382L10 0.499999" stroke="#1A1A16" stroke-width="0.833418" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="d-flex flex-wrap gap-3 fs-20px mb-32px" style="--bs-link-color-rgb: var(--bs-secondary-rgb); --bs-link-hover-color-rgb: var(--bs-primary-rgb);">
+                            <a href="tel:88003503243" class="item-phone">8 (800) 350-32-43</a>
+                            <a href="mailto:info@mail.ru" class="item-email">info@mail.ru</a>
+                        </div>
+                        <div class="d-flex flex-wrap gap-3 align-items-center">
+                            <a href="#" class="btn btn-secondary d-flex align-items-center justify-content-center rounded-circle border-0 p-0" style="width: 55px; height: 55px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M27.7068 0.29268C27.8439 0.429644 27.9382 0.603496 27.9783 0.793092C28.0185 0.982688 28.0026 1.17986 27.9328 1.36062L17.9341 27.3591C17.8633 27.5431 17.7397 27.702 17.5789 27.816C17.4181 27.9299 17.2272 27.9938 17.0301 27.9996C16.8331 28.0053 16.6388 27.9528 16.4716 27.8484C16.3044 27.7441 16.1717 27.5926 16.0903 27.4131L11.9088 18.2136L18.06 12.06C18.325 11.7757 18.4692 11.3996 18.4623 11.011C18.4555 10.6224 18.2981 10.2517 18.0233 9.97688C17.7485 9.70207 17.3778 9.54465 16.9892 9.5378C16.6007 9.53094 16.2246 9.67518 15.9403 9.94012L9.78712 16.0918L0.58832 11.912C0.408277 11.8307 0.256357 11.6979 0.151733 11.5303C0.0471084 11.3627 -0.00553029 11.1679 0.000459909 10.9704C0.0064501 10.7729 0.0708007 10.5816 0.18539 10.4207C0.29998 10.2598 0.459672 10.1364 0.644313 10.0661L26.6409 0.0666934C26.8214 -0.0027536 27.0182 -0.0183678 27.2073 0.0217423C27.3965 0.0618525 27.57 0.155966 27.7068 0.29268Z" fill="#474A51"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="btn btn-secondary d-flex align-items-center justify-content-center rounded-circle border-0 p-0" style="width: 55px; height: 55px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4424 0.572741C7.62796 1.38807 5.12585 3.02981 3.26291 5.28352C1.39996 7.53723 0.262814 10.2981 0 13.2055H6.65519C7.04101 8.78137 8.32898 4.48209 10.4403 0.57067L10.4424 0.572741ZM6.65519 15.7946H0C0.262265 18.7022 1.39893 21.4633 3.2615 23.7174C5.12408 25.9715 7.62596 27.6137 10.4403 28.4295C8.32898 24.5181 7.04101 20.2188 6.65519 15.7946ZM13.7762 28.9825C11.2531 25.0004 9.70701 20.4825 9.2632 15.7946H19.7347C19.2909 20.4825 17.7448 25.0004 15.2217 28.9825C14.7401 29.0058 14.2578 29.0058 13.7762 28.9825ZM18.5597 28.4274C21.3737 27.6117 23.8754 25.9698 25.7379 23.7162C27.6005 21.4625 28.7373 18.7018 29 15.7946H22.3448C21.959 20.2188 20.671 24.5181 18.5597 28.4295V28.4274ZM22.3448 13.2055H29C28.7377 10.298 27.6011 7.53685 25.7385 5.28277C23.8759 3.02869 21.374 1.38648 18.5597 0.57067C20.6711 4.48207 21.959 8.78136 22.3448 13.2055ZM13.7762 0.0176357C14.2585 -0.00587857 14.7415 -0.00587857 15.2238 0.0176357C17.7462 3.99991 19.2915 8.51781 19.7347 13.2055H9.26528C9.71658 8.48921 11.2681 3.96758 13.7783 0.0176357H13.7762Z" fill="#474A51"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="btn btn-secondary d-flex align-items-center justify-content-center rounded-circle border-0 p-0" style="width: 55px; height: 55px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9712 0.00538351C9.84743 0.145249 7.01556 1.26994 4.63776 3.31504C2.40392 5.23641 0.820116 7.95715 0.251815 10.8497C0.057179 11.8403 -0.00180965 12.4688 4.20062e-05 13.5339C0.00369242 15.7063 0.449678 17.5905 1.42064 19.5357C1.63114 19.9574 1.9728 20.5621 2.17987 20.8795C2.55639 21.4566 2.55639 21.4566 1.73002 23.913C1.27547 25.264 0.914498 26.3802 0.927777 26.3935C0.941056 26.4068 2.10146 26.0498 3.50645 25.6001C6.061 24.7827 6.061 24.7827 6.48736 25.0501C8.03868 26.0231 10.0667 26.7131 12.0444 26.9409C12.7232 27.0191 14.2751 27.0198 14.9552 26.9424C19.9838 26.3696 24.213 23.1388 26.086 18.4392C26.497 17.408 26.8055 16.1545 26.9418 14.9616C27.0194 14.2819 27.0194 12.733 26.9418 12.0533C26.4162 7.45347 23.6734 3.51106 19.5537 1.43392C17.7687 0.533911 15.9639 0.0814238 13.8706 0.00919082C13.5651 -0.00138503 13.1604 -0.00307716 12.9712 0.00538351ZM9.23427 6.23017C9.33029 6.27025 9.45742 6.36474 9.51678 6.4402C9.66116 6.62364 11.0175 9.8855 11.0523 10.1328C11.091 10.4083 10.9132 10.745 10.4614 11.2518C9.60683 12.2105 9.5972 12.2431 9.98187 12.8667C11.2188 14.872 13.1229 16.5078 15.0754 17.2427C15.8205 17.5232 15.9471 17.4415 16.9891 16.0086C17.5197 15.2791 17.7323 15.2442 18.7648 15.7172C19.1428 15.8904 19.9252 16.2655 20.5036 16.5508C21.4726 17.0288 21.5614 17.0843 21.6339 17.258C21.7299 17.4875 21.6935 18.0186 21.5423 18.5955C21.3719 19.2461 21.2422 19.4772 20.8058 19.909C20.4655 20.2456 20.3059 20.3556 19.7946 20.6059C19.0167 20.9867 18.6062 21.0903 17.8914 21.0865C17.0599 21.082 16.1157 20.8306 14.3468 20.1429C11.776 19.1433 9.51747 17.2379 7.39081 14.2742C5.75405 11.9932 5.28151 10.2293 5.8397 8.48393C6.17099 7.44813 6.93282 6.51 7.63338 6.27522C8.04424 6.13752 8.95134 6.11198 9.23427 6.23017Z" fill="#474A51"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Дизайн-проекты -->
+        <section class="section">
+            <div class="container">
+                <p class="h1 title fw-normal mb-32px">Дизайн-проекты</p>
+                <!-- Навигация табы -->
+                <div class="underline-tab-nav scrollable-container mb-22px" role="tablist" style="--underline-tab-space-between: 22px;">
+                    <div class="scrollable-wrapper">
+                        <div class="scrollable-item">
+                            <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-designer-work-01" role="tab" aria-selected="true"><span>Кухня</span></button>
+                        </div>
+                        <div class="scrollable-item">
+                            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-designer-work-02" role="tab" aria-selected="false"><span>Гостинная</span></button>
+                        </div>
+                        <div class="scrollable-item">
+                            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-designer-work-01" role="tab" aria-selected="false"><span>Ванная</span></button>
+                        </div>
+                        <div class="scrollable-item">
+                            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-designer-work-02" role="tab" aria-selected="false"><span>Прихожая</span></button>
+                        </div>
+                        <div class="scrollable-item">
+                            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-designer-work-01" role="tab" aria-selected="false"><span>Гараж, улица</span></button>
+                        </div>
+                        <div class="scrollable-item">
+                            <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-designer-work-02" role="tab" aria-selected="false"><span>Гостиницы</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <!-- Вкладка 01 -->
+                    <div class="tab-pane fade show active" id="tab-designer-work-01" role="tabpanel" tabindex="0">
+                        <div class="row gy-3 row-cols-1 row-cols-lg-3">
+                            <div class="col">
+                                <div class="card card-ready-made-solutions">
+                                    <div class="card-img-wrapper">
+                                        <a href="#">
+                                            <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                        <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                        <a href="#" class="btn border-0 p-0">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-ready-made-solutions">
+                                    <div class="card-img-wrapper">
+                                        <a href="#">
+                                            <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                        <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                        <a href="#" class="btn border-0 p-0">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-ready-made-solutions">
+                                    <div class="card-img-wrapper">
+                                        <a href="#">
+                                            <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                        <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                        <a href="#" class="btn border-0 p-0">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-ready-made-solutions">
+                                    <div class="card-img-wrapper">
+                                        <a href="#">
+                                            <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                        <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                        <a href="#" class="btn border-0 p-0">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Вкладка 02 -->
+                    <div class="tab-pane fade" id="tab-designer-work-02" role="tabpanel" tabindex="0">
+                        <div class="row gy-3 row-cols-1 row-cols-lg-3">
+                            <div class="col">
+                                <div class="card card-ready-made-solutions">
+                                    <div class="card-img-wrapper">
+                                        <a href="#">
+                                            <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <a href="#">Дизайн интерьера кухни</a>
+                                        </p>
+                                        <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                        <a href="#" class="btn border-0 p-0">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-ready-made-solutions">
+                                    <div class="card-img-wrapper">
+                                        <a href="#">
+                                            <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <a href="#">Дизайн интерьера кухни</a>
+                                        </p>
+                                        <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                        <a href="#" class="btn border-0 p-0">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card card-ready-made-solutions">
+                                    <div class="card-img-wrapper">
+                                        <a href="#">
+                                            <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-title">
+                                            <a href="#">Дизайн интерьера кухни</a>
+                                        </p>
+                                        <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                        <a href="#" class="btn border-0 p-0">подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- Похожие решения -->
+        <section class="section section-slider-featured-collections">
+            <div class="container">
+                <p class="h1 title fw-normal mb-32px">Похожие решения</p>
+                <div class="swiper swiper-with-scrollbar swiperReadyMadeSolutions">
+                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-ready-made-solutions">
+                                <div class="card-top position-relative">
+                                    <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 25%; left: 25%;"></button>
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 70%; left: 15%;"></button>
+                                    <div class="card-top__info">Информация о проекте и дизайнере</div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                    <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">
+                                        подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                                            <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-ready-made-solutions">
+                                <div class="card-top position-relative">
+                                    <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 48%; left: 82%;"></button>
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 77%; left: 72%;"></button>
+                                    <div class="card-top__info">Информация о проекте и дизайнере</div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                    <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">
+                                        подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                                            <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-ready-made-solutions">
+                                <div class="card-top position-relative">
+                                    <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 48%; left: 82%;"></button>
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 77%; left: 72%;"></button>
+                                    <div class="card-top__info">Информация о проекте и дизайнере</div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                    <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">
+                                        подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                                            <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-ready-made-solutions">
+                                <div class="card-top position-relative">
+                                    <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 25%; left: 25%;"></button>
+                                    <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                    data-bs-content="
+                                    <div class='d-flex gap-3 flex-column'>
+                                    <div class='popover-title'>
+                                        <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                    </div>
+                                    <div class='text-muted-light'>60x120</div>
+                                    <div class='d-flex align-items-center justify-content-between'>
+                                        <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                        <a href='#' class='svg-long-arrow'></a>
+                                    </div>
+                                    </div>"
+                                    style="top: 70%; left: 15%;"></button>
+                                    <div class="card-top__info">Информация о проекте и дизайнере</div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                    <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">
+                                        подробнее
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                                            <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Навигация слайдера -->
+                    <div class="swiperReadyMadeSolutions-next swiper-btn-brown swiper-btn-next" style="top: 235px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                            <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <!-- Навигация слайдера -->
+                    <div class="swiperReadyMadeSolutions-prev swiper-btn-brown swiper-btn-prev" style="top: 235px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                            <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-top__logo">
+                <a href="#">
+                    <img src="img/logo.svg" alt="masterdom.ru">
+                </a>
+            </div>
+            <div class="footer-top__contacts">
+                <a href="tel:+78003503243" class="contacts-link link-phone">8 (800) 350 32 43</a>
+                <a href="mail:info@gmail.com" class="contacts-link link-email">info@gmail.com</a>
+                <a href="#" class="contacts-link link-cooperate">
+                    <span>сотрудничать</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                        <path d="M0.500002 16L9.5 8L0.5 7.67558e-07L0.500001 1.90348L7.52342 8L0.500002 14.0965L0.500002 16Z" fill="#02378F"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-middle">
+            <div class="footer-middle__container">
+                <div class="footer-middle__col">
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li class="has-submenu">
+                                <a href="#">Ассортимент</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Плитка</a></li>
+                                    <li><a href="#">Обои</a></li>
+                                    <li><a href="#">Сантехника</a></li>
+                                    <li><a href="#">Свет</a></li>
+                                    <li><a href="#">Краски</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li class="has-submenu">
+                                <a href="#">Услуги</a>
+                                <ul class="submenu">
+                                    <li><a href="#">3D визуализация</a></li>
+                                    <li><a href="#">Примерка обоев</a></li>
+                                    <li><a href="#">Примерка плитки</a></li>
+                                    <li><a href="#">Выезд дизайнера для подбора штор</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle__col">
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li class="has-submenu">
+                                <a href="#">Покупателям</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Доставка</a></li>
+                                    <li><a href="#">Оплата</a></li>
+                                    <li><a href="#">Возврат</a></li>
+                                    <li><a href="#">Вопрос-ответ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li class="has-submenu">
+                                <a href="#">Блог</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Статьи</a></li>
+                                    <li><a href="#">События</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle__col">
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li class="has-submenu">
+                                <a href="#">Спецпредложения</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Каталог товаров SALE</a></li>
+                                    <li><a href="#">Программа лояльности</a></li>
+                                    <li><a href="#">Акции</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-middle__col">
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Магазины</a></li>
+                            <li><a href="#">Дизайнерам</a></li>
+                            <li><a href="#">Дилерам</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Магазины</a></li>
+                            <li><a href="#">Дизайнерам</a></li>
+                            <li><a href="#">Дилерам</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom__wrap">
+                <div class="footer-bottom__row align-items-center">
+                    <div class="footer-bottom__widget">
+                        <div class="footer-bottom__menu">
+                            <a href="#" class="menu-link">Политика конфиденциальности</a>
+                            <a href="#" class="menu-link">Глоссарий</a>
+                            <a href="#" class="menu-link">Карта сайта</a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom__widget">
+                        <img class="img-fluid img-payment" src="img/footer-payment-01.png" alt="Оплата">
+                    </div>
+                </div>
+                <div class="footer-bottom__row">
+                    <div class="footer-bottom__widget">
+                        <div class="footer-bottom__copyright">© 2023, <a href="#">«Мастер Дом»</a> <a href="mailto:shop@masterdom.ru">shop@masterdom.ru</a></div>
+                    </div>
+                    <div class="footer-bottom__widget">
+                        <div class="footer-bottom__copyright">ИП Цыпкин Александр Владимирович, ИНН: 772318769317, ОГРНИП: 317774600218206, ГРНИП 317774600218206 от 03.05.2017 г.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+
+    <!-- Модалка Поиск -->
+    <div class="fancybox-custom-modal" id="search-modal">
+        <div class="search-modal__container">
+            <p class="h5 search-modal__title">Поиск</p>
+            <div class="search-modal__form-wrapper">
+                <form class="form-search" action="#">
+                    <input type="text" class="form-control" placeholder="Белая плитка">
+                    <button type="submit" class="btn form-search__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                            <g>
+                                <path class="path-stroke-dynamic" d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02943 14.9706 1 10 1C5.02943 1 1 5.02943 1 10C1 14.9706 5.02943 19 10 19Z" stroke="#7C7D80" stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path class="path-stroke-dynamic" d="M21.999 21.9995L16.3867 16.4121" stroke="#7C7D80" stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="search-modal__similar-queries">
+                <p class="h6 search-modal__similar-queries-title">Похожее по запросу</p>
+                <ul class="search-modal__similar-queries-list">
+                    <li><a href="#">Керамогранит Onix One 60x120 Fancy Grey Polished</a></li>
+                    <li><a href="#">Похожее по запросу</a></li>
+                    <li><a href="#">Керамогранит Onix One 60x120 Fancy Grey Polished</a></li>
+                    <li><a href="#">Похожее по запросу</a></li>
+                    <li><a href="#">Керамогранит Onix One 60x120 Fancy Grey Polished</a></li>
+                    <li><a href="#">Похожее по запросу</a></li>
+                    <li><a href="#">Керамогранит Onix One 60x120 Fancy Grey Polished</a></li>
+                    <li><a href="#">Похожее по запросу</a></li>
+                    <li><a href="#">Керамогранит Onix One 60x120 Fancy Grey Polished</a></li>
+                    <li><a href="#">Похожее по запросу</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модалка "Выбор города", возможно нужно сделать модулем Битрикса -->
+    <div class="fancybox-custom-modal" id="city-selector-modal">
+        <div class="city-selector__container">
+            <p class="h5 city-selector__title">Выберете город</p>
+            <div class="city-selector__input-wrapper">
+                <form class="form-city-selector" action="#">
+                    <input type="text" class="form-control" placeholder="Найти город">
+                    <button type="submit" class="btn form-city-selector__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                            <g>
+                                <path class="path-stroke-dynamic" d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02943 14.9706 1 10 1C5.02943 1 1 5.02943 1 10C1 14.9706 5.02943 19 10 19Z" stroke="#7C7D80" stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path class="path-stroke-dynamic" d="M21.999 21.9995L16.3867 16.4121" stroke="#7C7D80" stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            <div class="city-selector__popular-cities">
+                <p class="h6 city-selector__popular-cities-title">Популярные города</p>
+                <ul class="city-selector__popular-cities-list">
+                    <li><a href="#">Город 1</a></li>
+                    <li><a href="#">Город 2</a></li>
+                    <li><a href="#">Город 3</a></li>
+                    <li><a href="#">Город 4</a></li>
+                    <li><a href="#">Город 5</a></li>
+                    <li><a href="#">Город 6</a></li>
+                    <li><a href="#">Город 7</a></li>
+                    <li><a href="#">Город 8</a></li>
+                    <li><a href="#">Город 9</a></li>
+                    <li><a href="#">Город 10</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модалка "Калькулятор товара" -->
+    <div class="modal fade" id="modal_calc_product" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header-top">
+                    <div class="d-flex justify-content-between">
+                        <p class="h4 modal-title">Рассчитайте количество плитки</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row gy-5">
+                        <div class="col-xl">
+                            <div class="d-flex flex-column" style="gap: 32px;">
+                                <div class="calc-product-line">
+                                    <div class="row gy-3 align-items-center">
+                                        <div class="col-xl-auto col-xl-20">
+                                            <div class="fs-18px">Поверхность 1</div>
+                                        </div>
+                                        <div class="col-xl">
+                                            <div class="row gy-3">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex align-items-center" style="gap: 22px;">
+                                                        <div class="d-flex flex-column gap-2">
+                                                            <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
+                                                            <div class="text-center text-muted-light">длина</div>
+                                                        </div>
+                                                        <div class="p-1">x</div>
+                                                        <div class="d-flex flex-column gap-2">
+                                                            <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
+                                                            <div class="text-center text-muted-light">высота</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="d-flex flex-column gap-2">
+                                                            <div class="counter-measure" style="height: 42px;">
+                                                                <button type="button" class="counter-measure__item px-4 active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
+                                                                <button type="button" class="counter-measure__item px-4" data-measure="pieces" data-measurename="шт">шт</button>
+                                                            </div>
+                                                            <div class="text-muted-light text-center small">0,52 м = 36 шт</div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div class="p-1">=</div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div class="fs-18px fw-semibold">0 м<sup>2</sup></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calc-product-line">
+                                    <div class="row gy-3 align-items-center">
+                                        <div class="col-xl-auto col-xl-20">
+                                            <div class="fs-18px">Поверхность 2</div>
+                                        </div>
+                                        <div class="col-xl">
+                                            <div class="row gy-3">
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex align-items-center" style="gap: 22px;">
+                                                        <div class="d-flex flex-column gap-2">
+                                                            <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
+                                                            <div class="text-center text-muted-light">длина</div>
+                                                        </div>
+                                                        <div class="p-1">x</div>
+                                                        <div class="d-flex flex-column gap-2">
+                                                            <input type="text" class="form-control text-center border-start-0 border-top-0 border-end-0" placeholder="М" style="height: 42px;">
+                                                            <div class="text-center text-muted-light">высота</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <div class="d-flex flex-column gap-2">
+                                                            <div class="counter-measure" style="height: 42px;">
+                                                                <button type="button" class="counter-measure__item px-4 active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
+                                                                <button type="button" class="counter-measure__item px-4" data-measure="pieces" data-measurename="шт">шт</button>
+                                                            </div>
+                                                            <div class="text-muted-light text-center small">0,52 м = 36 шт</div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div class="p-1">=</div>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <div class="fs-18px fw-semibold">9 м<sup>2</sup></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-auto col-xl-20">
+                            <div class="d-flex flex-column" style="gap: 12px;">
+                                <div class="text-secondary fs-18px">Итог: 9 м<sup>2</sup></div>
+                                <div class="text-secondary h4 fw-semibold">19 938 ₽/м2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer-bottom">
+                    <div class="border-top" style="padding-top: 22px;">
+                        <div class="row gy-4">
+                            <div class="col-lg-6 col-xl-5">
+                                <div class="fw-medium">В корзине 1 товар на сумму 19 938 ₽</div>
+                            </div>
+                            <div class="col-lg-6 col-xl-7">
+                                <div class="row gy-2">
+                                    <div class="col-xl-6 ms-auto">
+                                        <button type="button" class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#modal_product_add">добавить в корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модалка "Товар добавлен" -->
+    <div class="modal fade" id="modal_product_add" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header-top pb-0">
+                    <div class="d-flex justify-content-between">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column gap-3" style="padding: 70px 0 90px;">
+                        <div class="d-flex justify-content-center">
+                            <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+                                <path d="M24.5001 46.2853C36.8083 46.2853 46.7858 36.3078 46.7858 23.9996C46.7858 11.6915 36.8083 1.71387 24.5001 1.71387C12.192 1.71387 2.21436 11.6915 2.21436 23.9996C2.21436 36.3078 12.192 46.2853 24.5001 46.2853Z" stroke="#ACB2BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.5 27.0826L17.6022 33.6425C17.7744 33.8662 17.995 34.048 18.2475 34.1744C18.4999 34.3005 18.7777 34.368 19.06 34.3714C19.3377 34.3747 19.6126 34.3159 19.8648 34.1996C20.117 34.0832 20.34 33.912 20.5178 33.6986L36.7962 14" stroke="#ACB2BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="text-center">
+                            <p class="h4">Товар добавлен</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модалка "Товар добавлен в корзину" -->
+    <div class="modal fade" id="modal_basket_actions" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header-top">
+                    <div class="d-flex justify-content-between">
+                        <p class="h4 modal-title">Товар успешно добавлен в корзину</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row gy-3">
+                        <div class="col-4 col-lg-2">
+                            <a href="#">
+                                <img class="img-fluid w-100" src="img/product-gallery-01.jpg" alt="Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)">
+                            </a>
+                        </div>
+                        <div class="col-8 col-lg-10">
+                            <div class="position-relative">
+                                <div class="position-absolute top-0 end-0 mt-3">
+                                    <button type="button" class="product-item__like-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                            <path class="svg-like-path" d="M13.2766 22.8094L3.7117 14.1457C-1.48661 8.94735 6.1549 -1.03339 13.2766 7.0413C20.3982 -1.03339 28.0052 8.98202 22.8415 14.1457L13.2766 22.8094Z" stroke="#7C7D80" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="pe-4 pe-lg-5">
+                                    <div class="row gy-3">
+                                        <div class="col-lg-5">
+                                            <div class="ff-title h4 fw-bold link-body">
+                                                <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                            </div>
+                                            <div class="d-flex gap-2 flex-wrap justify-content-between" style="max-width: 210px;">
+                                                <div class="text-muted-light">Арт. CV20195</div>
+                                                <div class="text-muted-light">Страна</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 offset-lg-1">
+                                            <div class="d-flex flex-column gap-2">
+                                                <div class="flex-grow-1">
+                                                    <div class="counter-drop">
+                                                        <button type="button" class="counter__btn counter-decrease">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="2" viewBox="0 0 6 2" fill="none">
+                                                                <path d="M5.48733 0.151936V1.45414H0.183819V0.151936H5.48733Z" fill="black"/>
+                                                            </svg>
+                                                        </button>
+                                                        <input type="text" style="display: none;">
+                                                        <div class="counter__input" data-product="76578" data-quantity="1" data-measure="м2" data-measurecode="m2" data-measureproduct="м2" data-multiplicity="0.5" data-multiplicityvupakovke="22">
+                                                            <span class="counter__value">900.59</span>
+                                                            <span class="counter__volume ms-1">м<sup>2</sup></span>
+                                                        </div>
+                                                        <button type="button" class="counter__btn counter-increase">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9" fill="none">
+                                                                <path d="M3.82998 8.17133V0.358123H5.15586V8.17133H3.82998ZM0.586317 4.92766V3.60179H8.39952V4.92766H0.586317Z" fill="black"/>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <div class="counter-measure">
+                                                        <button type="button" class="counter-measure__item active" data-measure="m2" data-measurename="м2">м<sup>2</sup></button>
+                                                        <button type="button" class="counter-measure__item" data-measure="pieces" data-measurename="шт">шт</button>
+                                                    </div>
+                                                    <div class="text-muted-light text-center" style="margin-top: 10px; font-size: 12px;">0,52 м = 36 шт</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-2 flex-wrap align-items-center justify-content-between mt-4">
+                        <div>
+                            <button type="button" class="btn btn-with-collapsing-arrow border-0 p-0 fw-normal collapsed" data-bs-toggle="collapse" data-bs-target="#product-modal-recommend-items" aria-expanded="false">
+                                Берут вместе
+                                <span class="svg-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="d-flex gap-2 align-items-end">
+                            <div class="text-muted-light">3 250 ₽ / 1 м2</div>
+                            <div class="fs-5 fw-semibold">12 400 ₽</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="product-modal-recommend-items">
+                    <div class="swiper swiperRecommendProduct">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="recommend-item">
+                                    <div class="row g-0">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="img-fluid w-100" src="img/product-gallery-01.jpg" alt="Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)">
+                                            </a>
+                                        </div>
+                                        <div class="col-8 ps-2">
+                                            <div class="d-flex gap-2 flex-column justify-content-between h-100">
+                                                <div class="d-flex gap-2 align-items-start justify-content-between">
+                                                    <div class="recommend-item__title ff-title h5 fw-bold link-body">
+                                                        <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                                    </div>
+                                                    <button type="button" class="recommend-item__btn btn border-0 p-0">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                            <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M25.003 30.5417C24.3681 30.5417 23.8533 30.0268 23.8533 29.3919C23.8533 28.757 24.3681 28.2422 25.003 28.2422C25.6379 28.2422 26.1528 28.757 26.1528 29.3919C26.1528 30.0268 25.6379 30.5417 25.003 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M10.0628 30.5417C9.42783 30.5417 8.91309 30.0268 8.91309 29.3919C8.91309 28.757 9.42783 28.2422 10.0628 28.2422C10.6978 28.2422 11.2126 28.757 11.2126 29.3919C11.2126 30.0268 10.6978 30.5417 10.0628 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="text-end text-lg-start">
+                                                    <div class="d-flex gap-1 gap-lg-2 flex-column flex-lg-row align-items-lg-end">
+                                                        <div class="text-muted-light small">2 750 ₽ / 1 шт.</div>
+                                                        <div class="text-primary fw-medium">3 400 ₽ / 1 м2</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend-item">
+                                    <div class="row g-0">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="img-fluid w-100" src="img/product-gallery-01.jpg" alt="Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)">
+                                            </a>
+                                        </div>
+                                        <div class="col-8 ps-2">
+                                            <div class="d-flex gap-2 flex-column justify-content-between h-100">
+                                                <div class="d-flex gap-2 align-items-start justify-content-between">
+                                                    <div class="recommend-item__title ff-title h5 fw-bold link-body">
+                                                        <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                                    </div>
+                                                    <button type="button" class="recommend-item__btn btn border-0 p-0">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                            <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M25.003 30.5417C24.3681 30.5417 23.8533 30.0268 23.8533 29.3919C23.8533 28.757 24.3681 28.2422 25.003 28.2422C25.6379 28.2422 26.1528 28.757 26.1528 29.3919C26.1528 30.0268 25.6379 30.5417 25.003 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M10.0628 30.5417C9.42783 30.5417 8.91309 30.0268 8.91309 29.3919C8.91309 28.757 9.42783 28.2422 10.0628 28.2422C10.6978 28.2422 11.2126 28.757 11.2126 29.3919C11.2126 30.0268 10.6978 30.5417 10.0628 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="text-end text-lg-start">
+                                                    <div class="d-flex gap-1 gap-lg-2 flex-column flex-lg-row align-items-lg-end">
+                                                        <div class="text-muted-light small">2 750 ₽ / 1 шт.</div>
+                                                        <div class="text-primary fw-medium">3 400 ₽ / 1 м2</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend-item">
+                                    <div class="row g-0">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="img-fluid w-100" src="img/product-gallery-01.jpg" alt="Плиточный клей цементный UNIS XXI 25 кг">
+                                            </a>
+                                        </div>
+                                        <div class="col-8 ps-2">
+                                            <div class="d-flex gap-2 flex-column justify-content-between h-100">
+                                                <div class="d-flex gap-2 align-items-start justify-content-between">
+                                                    <div class="recommend-item__title ff-title h5 fw-bold link-body">
+                                                        <a href="#">Плиточный клей цементный UNIS XXI 25 кг</a>
+                                                    </div>
+                                                    <button type="button" class="recommend-item__btn btn border-0 p-0">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                            <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M25.003 30.5417C24.3681 30.5417 23.8533 30.0268 23.8533 29.3919C23.8533 28.757 24.3681 28.2422 25.003 28.2422C25.6379 28.2422 26.1528 28.757 26.1528 29.3919C26.1528 30.0268 25.6379 30.5417 25.003 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M10.0628 30.5417C9.42783 30.5417 8.91309 30.0268 8.91309 29.3919C8.91309 28.757 9.42783 28.2422 10.0628 28.2422C10.6978 28.2422 11.2126 28.757 11.2126 29.3919C11.2126 30.0268 10.6978 30.5417 10.0628 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="text-end text-lg-start">
+                                                    <div class="d-flex gap-1 gap-lg-2 flex-column flex-lg-row align-items-lg-end">
+                                                        <div class="text-muted-light small">2 750 ₽ / 1 шт.</div>
+                                                        <div class="text-primary fw-medium">3 400 ₽ / 1 м2</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend-item">
+                                    <div class="row g-0">
+                                        <div class="col-4">
+                                            <a href="#">
+                                                <img class="img-fluid w-100" src="img/product-gallery-01.jpg" alt="Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)">
+                                            </a>
+                                        </div>
+                                        <div class="col-8 ps-2">
+                                            <div class="d-flex gap-2 flex-column justify-content-between h-100">
+                                                <div class="d-flex gap-2 align-items-start justify-content-between">
+                                                    <div class="recommend-item__title ff-title h5 fw-bold link-body">
+                                                        <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                                    </div>
+                                                    <button type="button" class="recommend-item__btn btn border-0 p-0">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                            <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M25.003 30.5417C24.3681 30.5417 23.8533 30.0268 23.8533 29.3919C23.8533 28.757 24.3681 28.2422 25.003 28.2422C25.6379 28.2422 26.1528 28.757 26.1528 29.3919C26.1528 30.0268 25.6379 30.5417 25.003 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M10.0628 30.5417C9.42783 30.5417 8.91309 30.0268 8.91309 29.3919C8.91309 28.757 9.42783 28.2422 10.0628 28.2422C10.6978 28.2422 11.2126 28.757 11.2126 29.3919C11.2126 30.0268 10.6978 30.5417 10.0628 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="text-end text-lg-start">
+                                                    <div class="d-flex gap-1 gap-lg-2 flex-column flex-lg-row align-items-lg-end">
+                                                        <div class="text-muted-light small">2 750 ₽ / 1 шт.</div>
+                                                        <div class="text-primary fw-medium">3 400 ₽ / 1 м2</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Навигация слайдера -->
+                        <div class="swiperRecommendProduct-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <!-- Навигация слайдера -->
+                        <div class="swiperRecommendProduct-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer-bottom">
+                    <div class="border-top" style="padding-top: 22px;">
+                        <div class="row gy-4">
+                            <div class="col-lg-5">
+                                <div class="fw-medium">В корзине 1 товар на сумму 12 400 ₽</div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row gy-2">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-secondary w-100">оформить заказ</button>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-outline w-100" data-bs-dismiss="modal">продолжить покупки</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>
