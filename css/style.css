@@ -2191,13 +2191,10 @@ textarea {
 }
 
 .swiperHeroSlider-pagination {
-    --swiper-pagination-bottom: -12px;
+    --swiper-pagination-bottom: 12px;
     --swiper-pagination-bullet-width: 50px;
     --swiper-pagination-bullet-height: 2px;
     --swiper-pagination-bullet-border-radius: 0;
-    position: absolute;
-    display: flex;
-    justify-content: center;
 }
 
 .swiperHeroSlider .swiper-slide {
@@ -2205,10 +2202,9 @@ textarea {
 }
 
 .swiperHeroSlider .hero-slider-item img {
+    max-width: 100%;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    height: auto;
 }
 
 .hero-category {
@@ -2221,6 +2217,8 @@ textarea {
 }
 
 .hero-category img {
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2246,6 +2244,12 @@ textarea {
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.149px;
+}
+
+@media (max-width: 991px) {
+    .hero-category {
+        min-height: 300px;
+    }
 }
 
 @media (min-width: 992px) {
