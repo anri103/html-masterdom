@@ -109,8 +109,8 @@
                                 <!-- Кнопка "Каталог >" -->
                                 <button type="button" class="btn-catalog mobile-catalog-menu-invoker">
                                     <div>Каталог</div>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="icon-arrow-right">
-                                        <path d="M6.94446 15.4551L12.8272 10.4531C12.8991 10.3946 12.9563 10.3242 12.9954 10.2463C13.0345 10.1685 13.0547 10.0847 13.0547 9.99998C13.0547 9.91532 13.0345 9.8315 12.9954 9.75363C12.9563 9.67576 12.8991 9.60542 12.8272 9.54684L6.94446 4.54492" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="20" height="20">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                                     </svg>
                                 </button>
 
@@ -170,8 +170,8 @@
 
                                 <!-- Кнопка "< Каталог" -->
                                 <button type="button" class="btn-catalog mobile-catalog-menu-close">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
-                                        <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="21" height="20">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
                                     </svg>
                                     <div>Каталог</div>
                                 </button>
@@ -179,52 +179,311 @@
                                 <!-- Меню каталога -->
                                 <ul class="mobile-catalog-menu-section">
 
+                                    <!-- Плитка -->
                                     <li class="catalog-menu-item-has-children">
-
                                         <a href="#" class="catalog-menu-item__link">
                                             <span>Плитка</span>
                                             <svg width="13" height="22">
                                                 <use xlink:href="img/sprite.svg#menu-arrow"></use>
                                             </svg>
                                         </a>
-
                                         <div class="catalog-menu-subs">
-
                                             <!-- Кнопка "< Назад" (закрывает всплывашку) -->
                                             <button type="button" class="btn-catalog catalog-menu-subs-close">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
-                                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <svg width="21" height="20">
+                                                    <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
                                                 </svg>
                                                 <div>Назад</div>
                                             </button>
+                                            <div class="container">
+                                                <!-- Ссылка на раздел -->
+                                                <a href="#" class="h5">
+                                                    <span>Перейти в раздел Плитка</span>
+                                                    <svg width="13" height="22">
+                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                    </svg>
+                                                </a>
+                                                <!-- Сетка -->
+                                                <div class="row row-cols-1 gy-3">
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <p class="h6">Фабрики</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Neodom</a></li>
+                                                                <li><a href="#">Италон</a></li>
+                                                                <li><a href="#">Vitra</a></li>
+                                                                <li><a href="#">Atlas Concorde</a></li>
+                                                                <li><a href="#">Mainzu</a></li>
+                                                                <li><a href="#">Laminam</a></li>
+                                                                <li><a href="#">Grasaro</a></li>
+                                                                <li><a href="#">Kerranova</a></li>
+                                                                <li><a href="#">Rex Ceramiche</a></li>
+                                                                <li><a href="#">Fap Ceramiche</a></li>
+                                                                <li><a href="#">Living Ceramics</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>                                           
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для кухни</a></li>
+                                                                <li><a href="#">Для туалета</a></li>
+                                                                <li><a href="#">Для душевой</a></li>
+                                                                <li><a href="#">Для коридора</a></li>
+                                                                <li><a href="#">Для квартиры</a></li>
+                                                                <li><a href="#">Для улицы</a></li>
+                                                                <li><a href="#">Для гаража</a></li>
+                                                                <li><a href="#">Для крыльца</a></li>
+                                                                <li><a href="#">Для прихожей</a></li>
+                                                                <li><a href="#">Для общественных помещений</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>                                           
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <p class="h6">Поверхность</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Глянцевая</a></li>
+                                                                <li><a href="#">Матовая</a></li>
+                                                                <li><a href="#">Полированная</a></li>
+                                                                <li><a href="#">Сатинированная</a></li>
+                                                                <li><a href="#">Структуированная</a></li>
+                                                                <li><a href="#">Патинированная</a></li>
+                                                                <li><a href="#">Натуральная</a></li>
+                                                                <li><a href="#">Карвинг</a></li>
+                                                                <li><a href="#">Лаппатированная</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>                                           
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <p class="h6">Назначение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для пола</a></li>
+                                                                <li><a href="#">Для стен</a></li>
+                                                                <li><a href="#">Для фартука</a></li>
+                                                                <li><a href="#">Для дорожек</a></li>
+                                                                <li><a href="#">Для ступеней</a></li>
+                                                                <li><a href="#">Для фасада</a></li>
+                                                                <li><a href="#">Для укладки на землю</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>                                           
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <p class="h6">Размеры</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">60x120 см</a></li>
+                                                                <li><a href="#">60x60 см</a></li>
+                                                                <li><a href="#">80x160 см</a></li>
+                                                                <li><a href="#">120x120 см</a></li>
+                                                                <li><a href="#">20x20 см</a></li>
+                                                                <li><a href="#">25x70 см</a></li>
+                                                                <li><a href="#">120x280 см</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>                                           
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <p class="h6">Страны</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Россия</a></li>
+                                                                <li><a href="#">Испания</a></li>
+                                                                <li><a href="#">Италия</a></li>
+                                                                <li><a href="#">Индия</a></li>
+                                                                <li><a href="#">Китай</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>                                           
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <p class="h6">Рисунок</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Под мрамор</a></li>
+                                                                <li><a href="#">Под дерево</a></li>
+                                                                <li><a href="#">Под камень</a></li>
+                                                                <li><a href="#">Под бетон</a></li>
+                                                                <li><a href="#">Однотонный</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>                                           
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <p class="h6">Цвет</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Бежевый</a></li>
+                                                                <li><a href="#">Белый</a></li>
+                                                                <li><a href="#">Серый</a></li>
+                                                                <li><a href="#">Черный</a></li>
+                                                                <li><a href="#">Коричневый</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>                                           
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <p class="h6">Тип плитки</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Плитка</a></li>
+                                                                <li><a href="#">Мозаика</a></li>
+                                                                <li><a href="#">Декор</a></li>
+                                                                <li><a href="#">Плинтус</a></li>
+                                                                <li><a href="#">Бордюр</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
 
+                                    <!-- Керамогранит -->
+                                    <li class="catalog-menu-item-has-children">
+                                        <a href="#" class="catalog-menu-item__link">
+                                            <span>Керамогранит</span>
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="catalog-menu-subs">
+                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                <svg width="21" height="20">
+                                                    <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                                                </svg>
+                                                <div>Назад</div>
+                                            </button>
+                                            <div class="container">
+                                                <!-- Ссылка на раздел -->
+                                                <a href="#" class="h5">
+                                                    <span>Перейти в раздел Керамогранит</span>
+                                                    <svg width="13" height="22">
+                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                    </svg>
+                                                </a>
+                                                <!-- Сетка -->
+                                                <div class="row row-cols-1 gy-3">
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- Мрамор -->
+                                    <li class="catalog-menu-item-has-children">
+                                        <a href="#" class="catalog-menu-item__link">
+                                            <span>Мрамор</span>
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="catalog-menu-subs">
+                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                <svg width="21" height="20">
+                                                    <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                                                </svg>
+                                                <div>Назад</div>
+                                            </button>
+                                            <div class="container">
+                                                <!-- Ссылка на раздел -->
+                                                <a href="#" class="h5">
+                                                    <span>Перейти в раздел Мрамор</span>
+                                                    <svg width="13" height="22">
+                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                    </svg>
+                                                </a>
+                                                <!-- Сетка -->
+                                                <div class="row row-cols-1 gy-3">
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="catalog-grid-item">
+                                                            <!-- Название фильтра -->
+                                                            <p class="h6">Помещение</p>
+                                                            <ul class="list-unstyled mb-0">
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                                <li><a href="#">Для ванной</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- Обои -->
+                                    <li class="catalog-menu-item-has-children">
+                                        <a href="#" class="catalog-menu-item__link">
+                                            <span>Обои</span>
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="catalog-menu-subs">
+                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                <svg width="21" height="20">
+                                                    <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                                                </svg>
+                                                <div>Назад</div>
+                                            </button>
                                             <ul class="mobile-catalog-menu-section">
                                                 <li class="catalog-menu-item-has-children">
                                                     <a href="#" class="catalog-menu-item__link">
-                                                        <span>Плитка 2</span>
+                                                        <span>Все обои</span>
                                                         <svg width="13" height="22">
                                                             <use xlink:href="img/sprite.svg#menu-arrow"></use>
                                                         </svg>
                                                     </a>
                                                     <div class="catalog-menu-subs">
-
                                                         <!-- Кнопка "< Назад" (закрывает всплывашку) -->
                                                         <button type="button" class="btn-catalog catalog-menu-subs-close">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
-                                                                <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <svg width="21" height="20">
+                                                                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
                                                             </svg>
                                                             <div>Назад</div>
                                                         </button>
-
                                                         <div class="container">
                                                             <!-- Ссылка на раздел -->
                                                             <a href="#" class="h5">
-                                                                <span>Перейти в раздел Плитка 2</span>
+                                                                <span>Перейти в раздел Все обои</span>
                                                                 <svg width="13" height="22">
                                                                     <use xlink:href="img/sprite.svg#menu-arrow"></use>
                                                                 </svg>
                                                             </a>
-
                                                             <!-- Сетка -->
                                                             <div class="row row-cols-1 gy-3">
                                                                 <div class="col">
@@ -251,358 +510,236 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                     </div>
                                                 </li>
-                                                <li><a href="#" class="catalog-menu-item__link">Акция 1</a></li>
-                                                <li><a href="#" class="catalog-menu-item__link">Акция 2</a></li>
-                                                <li><a href="#" class="catalog-menu-item__link">Акция 3</a></li>
+                                                <li class="catalog-menu-item-has-children">
+                                                    <a href="#" class="catalog-menu-item__link">
+                                                        <span>Виниловые обои</span>
+                                                        <svg width="13" height="22">
+                                                            <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <div class="catalog-menu-subs">
+                                                        <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                                        <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                            <svg width="21" height="20">
+                                                                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                                                            </svg>
+                                                            <div>Назад</div>
+                                                        </button>
+                                                        <div class="container">
+                                                            <!-- Ссылка на раздел -->
+                                                            <a href="#" class="h5">
+                                                                <span>Перейти в раздел Виниловые обои</span>
+                                                                <svg width="13" height="22">
+                                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                                </svg>
+                                                            </a>
+                                                            <!-- Сетка -->
+                                                            <div class="row row-cols-1 gy-3">
+                                                                <div class="col">
+                                                                    <div class="catalog-grid-item">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="h6">Помещение</p>
+                                                                        <ul class="list-unstyled mb-0">
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="catalog-grid-item">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="h6">Помещение</p>
+                                                                        <ul class="list-unstyled mb-0">
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="catalog-menu-item-has-children">
+                                                    <a href="#" class="catalog-menu-item__link">
+                                                        <span>Флизелиновые обои</span>
+                                                        <svg width="13" height="22">
+                                                            <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <div class="catalog-menu-subs">
+                                                        <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                                        <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                            <svg width="21" height="20">
+                                                                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                                                            </svg>
+                                                            <div>Назад</div>
+                                                        </button>
+                                                        <div class="container">
+                                                            <!-- Ссылка на раздел -->
+                                                            <a href="#" class="h5">
+                                                                <span>Перейти в раздел Флизелиновые обои</span>
+                                                                <svg width="13" height="22">
+                                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                                </svg>
+                                                            </a>
+                                                            <!-- Сетка -->
+                                                            <div class="row row-cols-1 gy-3">
+                                                                <div class="col">
+                                                                    <div class="catalog-grid-item">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="h6">Помещение</p>
+                                                                        <ul class="list-unstyled mb-0">
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="catalog-grid-item">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="h6">Помещение</p>
+                                                                        <ul class="list-unstyled mb-0">
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="catalog-menu-item-has-children">
+                                                    <a href="#" class="catalog-menu-item__link">
+                                                        <span>Текстильные обои</span>
+                                                        <svg width="13" height="22">
+                                                            <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <div class="catalog-menu-subs">
+                                                        <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                                        <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                            <svg width="21" height="20">
+                                                                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                                                            </svg>
+                                                            <div>Назад</div>
+                                                        </button>
+                                                        <div class="container">
+                                                            <!-- Ссылка на раздел -->
+                                                            <a href="#" class="h5">
+                                                                <span>Перейти в раздел Текстильные обои</span>
+                                                                <svg width="13" height="22">
+                                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                                </svg>
+                                                            </a>
+                                                            <!-- Сетка -->
+                                                            <div class="row row-cols-1 gy-3">
+                                                                <div class="col">
+                                                                    <div class="catalog-grid-item">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="h6">Помещение</p>
+                                                                        <ul class="list-unstyled mb-0">
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="catalog-grid-item">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="h6">Помещение</p>
+                                                                        <ul class="list-unstyled mb-0">
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="catalog-menu-item-has-children">
+                                                    <a href="#" class="catalog-menu-item__link">
+                                                        <span>Бумажные обои</span>
+                                                        <svg width="13" height="22">
+                                                            <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <div class="catalog-menu-subs">
+                                                        <!-- Кнопка "< Назад" (закрывает всплывашку) -->
+                                                        <button type="button" class="btn-catalog catalog-menu-subs-close">
+                                                            <svg width="21" height="20">
+                                                                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                                                            </svg>
+                                                            <div>Назад</div>
+                                                        </button>
+                                                        <div class="container">
+                                                            <!-- Ссылка на раздел -->
+                                                            <a href="#" class="h5">
+                                                                <span>Перейти в раздел Бумажные обои</span>
+                                                                <svg width="13" height="22">
+                                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                                </svg>
+                                                            </a>
+                                                            <!-- Сетка -->
+                                                            <div class="row row-cols-1 gy-3">
+                                                                <div class="col">
+                                                                    <div class="catalog-grid-item">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="h6">Помещение</p>
+                                                                        <ul class="list-unstyled mb-0">
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <div class="catalog-grid-item">
+                                                                        <!-- Название фильтра -->
+                                                                        <p class="h6">Помещение</p>
+                                                                        <ul class="list-unstyled mb-0">
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                            <li><a href="#">Для ванной</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
                                             </ul>
-
                                         </div>
-
                                     </li>
 
-                                    <li class="catalog-menu-item-has-children">
-
+                                    <!-- Краски -->
+                                    <li>
                                         <a href="#" class="catalog-menu-item__link">
-                                            <span>Керамогранит</span>
-                                            <svg width="13" height="22">
-                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                            </svg>
+                                            <span>Краски</span>
                                         </a>
-
-                                        <div class="catalog-menu-subs">
-
-                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
-                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
-                                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <div>Назад</div>
-                                            </button>
-
-                                            <div class="container">
-                                                <!-- Ссылка на раздел -->
-                                                <a href="#" class="h5">
-                                                    <span>Перейти в раздел Керамогранит</span>
-                                                    <svg width="13" height="22">
-                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                                    </svg>
-                                                </a>
-    
-                                                <!-- Сетка -->
-                                                <div class="row row-cols-1 gy-3">
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
                                     </li>
 
-                                    <li class="catalog-menu-item-has-children">
-
+                                    <!-- Сопутствующие -->
+                                    <li>
                                         <a href="#" class="catalog-menu-item__link">
-                                            <span>Обои</span>
-                                            <svg width="13" height="22">
-                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                            </svg>
+                                            <span>Сопутствующие</span>
                                         </a>
-
-                                        <div class="catalog-menu-subs">
-
-                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
-                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
-                                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <div>Назад</div>
-                                            </button>
-
-                                            <div class="container">
-                                                <!-- Ссылка на раздел -->
-                                                <a href="#" class="h5">
-                                                    <span>Перейти в раздел Обои</span>
-                                                    <svg width="13" height="22">
-                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                                    </svg>
-                                                </a>
-    
-                                                <!-- Сетка -->
-                                                <div class="row row-cols-1 gy-3">
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
                                     </li>
 
-                                    <li class="catalog-menu-item-has-children">
-
-                                        <a href="#" class="catalog-menu-item__link">
-                                            <span>Сантехника</span>
-                                            <svg width="13" height="22">
-                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                            </svg>
+                                    <!-- Акция -->
+                                    <!-- <li>
+                                        <a href="#" class="catalog-menu-item__link text-red font-title fw-bold">
+                                            <span>Акция</span>
                                         </a>
-
-                                        <div class="catalog-menu-subs">
-
-                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
-                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
-                                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <div>Назад</div>
-                                            </button>
-
-                                            <div class="container">
-                                                <!-- Ссылка на раздел -->
-                                                <a href="#" class="h5">
-                                                    <span>Перейти в раздел Сантехника</span>
-                                                    <svg width="13" height="22">
-                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                                    </svg>
-                                                </a>
-    
-                                                <!-- Сетка -->
-                                                <div class="row row-cols-1 gy-3">
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-
-                                    <li class="catalog-menu-item-has-children">
-
-                                        <a href="#" class="catalog-menu-item__link">
-                                            <span>Свет</span>
-                                            <svg width="13" height="22">
-                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                            </svg>
-                                        </a>
-                                        
-                                        <div class="catalog-menu-subs">
-
-                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
-                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
-                                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <div>Назад</div>
-                                            </button>
-
-                                            <div class="container">
-                                                <!-- Ссылка на раздел -->
-                                                <a href="#" class="h5">
-                                                    <span>Перейти в раздел Свет</span>
-                                                    <svg width="13" height="22">
-                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                                    </svg>
-                                                </a>
-    
-                                                <!-- Сетка -->
-                                                <div class="row row-cols-1 gy-3">
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-
-                                    <li class="catalog-menu-item-has-children">
-
-                                        <a href="#" class="catalog-menu-item__link">
-                                            <span>Краска</span>
-                                            <svg width="13" height="22">
-                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                            </svg>
-                                        </a>
-
-                                        <div class="catalog-menu-subs">
-
-                                            <!-- Кнопка "< Назад" (закрывает всплывашку) -->
-                                            <button type="button" class="btn-catalog catalog-menu-subs-close">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none" class="icon-arrow-left">
-                                                    <path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                <div>Назад</div>
-                                            </button>
-
-                                            <div class="container">
-                                                <!-- Ссылка на раздел -->
-                                                <a href="#" class="h5">
-                                                    <span>Перейти в раздел Краска</span>
-                                                    <svg width="13" height="22">
-                                                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                                    </svg>
-                                                </a>
-    
-                                                <!-- Сетка -->
-                                                <div class="row gy-3 row-cols-2">
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="catalog-grid-item">
-                                                            <!-- Название фильтра -->
-                                                            <p class="h6">Помещение</p>
-                                                            <ul class="list-unstyled mb-0">
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                                <li><a href="#">Для ванной</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </li>
-
-                                    <li><a href="#" class="catalog-menu-item__link text-red font-title fw-bold">Акция</a></li>
+                                    </li> -->
                                 </ul>
     
                             </div>
