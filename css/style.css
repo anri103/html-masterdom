@@ -1200,6 +1200,17 @@ textarea {
     }
 }
 
+.mobile-catalog-menu-section .catalog-grid-item .h6 {
+    display: block;
+    padding: 10px;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    text-transform: uppercase;
+    background-color: #F8F8F8;
+}
+
 /* Десктопное меню */
 
 .fixed-header-desktop {
