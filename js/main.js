@@ -100,7 +100,7 @@ desktopToggle.addEventListener('click', handleToggleClick);
 //////////////////////////////////////////////////////////////////
 // Кастомные выпадашки на мобильном меню
 
-const mobileSubmenuTogglers = document.querySelectorAll('.mobile-main-menu-section .submenu-toggler');
+const mobileSubmenuTogglers = document.querySelectorAll('.submenu-toggler');
 
 mobileSubmenuTogglers.forEach(toggler => {
     toggler.addEventListener('click', function () {

@@ -130,7 +130,14 @@
                                         <a href="#">Покупателям</a>
                                         <button type="button" class="submenu-toggler"></button>
                                         <ul class="submenu">
-                                            <li><a href="#">Доставка</a></li>
+                                            <li class="has-submenu">
+                                                <a href="#">Доставка</a>
+                                                <button type="button" class="submenu-toggler"></button>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Пункт 1</a></li>
+                                                    <li><a href="#">Пункт 2</a></li>
+                                                </ul>
+                                            </li>
                                             <li><a href="#">Оплата</a></li>
                                             <li><a href="#">Возврат</a></li>
                                             <li><a href="#">Вопрос-ответ</a></li>
@@ -720,15 +727,18 @@
                         <div class="navbar-desktop__navigation">
                             <!-- Кнопка -->
                             <a href="#collapseDesktopOverlayMenu" class="navbar-desktop__offcanvas-toggle collapsed" data-bs-toggle="collapse" aria-expanded="false">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="14" viewBox="0 0 30 14" fill="none" class="icon-burger">
-                                    <path d="M1 7H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M1 1H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M1 13H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="icon-close">
-                                    <path d="M1.13867 1.03125L20.7981 20.9688" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M1 20.8301L20.799 1.03109" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                                <div class="icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="14" viewBox="0 0 30 14" fill="none" class="icon-burger">
+                                        <path d="M1 7H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1 1H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M1 13H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" class="icon-close">
+                                        <path d="M1.13867 1.03125L20.7981 20.9688" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1 20.8301L20.799 1.03109" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <span class="navbar-desktop__offcanvas-toggle-title">О нас</span>
                             </a>
                             <!-- Меню -->
                             <ul class="navbar-nav">
@@ -868,9 +878,8 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="#" class="nav-link"><span>Обои</span></a></li>
                                 <li class="has-mega-menu">
-                                    <a href="#" class="nav-link"><span>Сантехника</span></a>
+                                    <a href="#" class="nav-link"><span>Обои</span></a>
                                     <div class="mega-menu">
                                         <div class="row g-0">
                                             <div class="col-3 border-end">
@@ -1039,8 +1048,8 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="#" class="nav-link"><span>Свет</span></a></li>
-                                <li><a href="#" class="nav-link"><span>Краски</span></a></li>
+                                <li><a href="#" class="nav-link"><span>Краска</span></a></li>
+                                <li><a href="#" class="nav-link"><span>Сопутствующие</span></a></li>
                             </ul>
                         </div>
                         <div class="navbar-desktop__search">
@@ -1123,6 +1132,62 @@
                                 <ul class="desktop-collapse-menu__menu">
                                     <li><a href="#">О компании</a></li>
                                     <li class="has-submenu">
+                                        <a href="#">Плитка</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Каталог плитки</a></li>
+                                            <li><a href="#">Бренды и фабрики</a></li>
+                                            <li><a href="#">Магазины плитки</a></li>
+                                            <li><a href="#">Доставка плитки</a></li>
+                                            <li class="has-submenu">
+                                                <a href="#">Услуги</a>
+                                                <button type="button" class="submenu-toggler"></button>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Разгрузка</a></li>
+                                                    <li><a href="#">Выезд специалиста на замеры</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Распродажа плитки</a></li>
+                                            <li><a href="#">Реализованные проекты</a></li>
+                                            <li><a href="#">Дизайнеры</a></li>
+                                            <li><a href="#">Дилерам</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-submenu">
+                                        <a href="#">Обои</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Каталог обоев</a></li>
+                                            <li><a href="#">Бренды и фабрики</a></li>
+                                            <li><a href="#">Магазины обоев</a></li>
+                                            <li><a href="#">Доставка обоев</a></li>
+                                            <li class="has-submenu">
+                                                <a href="#">Услуги</a>
+                                                <button type="button" class="submenu-toggler"></button>
+                                                <ul class="submenu">
+                                                    <li><a href="#">Выезд дизайнера для подбора штор</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Распродажа обоев</a></li>
+                                            <li><a href="#">Дилерам</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Краска</a></li>
+                                </ul>
+                            </div>
+                            <div class="desktop-collapse-menu__col">
+                                <ul class="desktop-collapse-menu__menu">
+                                    <li><a href="#">Бренды</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li class="has-submenu">
+                                        <a href="#">Спецпредложения</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Каталог товаров SALE</a></li>
+                                            <li><a href="#">Программа лояльности</a></li>
+                                            <li><a href="#">Акции</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Дизайнерам</a></li>
+                                    <li><a href="#">Магазины</a></li>
+                                    <li class="has-submenu">
                                         <a href="#">Покупателям</a>
                                         <ul class="submenu">
                                             <li><a href="#">Доставка</a></li>
@@ -1142,23 +1207,6 @@
                                         </ul>
                                     </li>
                                     <li><a href="#">Дилерам</a></li>
-                                </ul>
-                            </div>
-                            <div class="desktop-collapse-menu__col">
-                                <ul class="desktop-collapse-menu__menu">
-                                    <li><a href="#">Коллекции</a></li>
-                                    <li><a href="#">Каталоги</a></li>
-                                    <li><a href="#">Бренды</a></li>
-                                    <li><a href="#">Контакты</a></li>
-                                    <li class="has-submenu">
-                                        <a href="#">Спецпредложения</a>
-                                        <ul class="submenu">
-                                            <li><a href="#">Каталог товаров SALE</a></li>
-                                            <li><a href="#">Программа лояльности</a></li>
-                                            <li><a href="#">Акции</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Дизайнерам</a></li>
                                 </ul>
                             </div>
                             <div class="desktop-collapse-menu__col">
