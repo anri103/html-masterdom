@@ -2726,6 +2726,7 @@ textarea {
 }
 
 .product-item__body {
+    /* flex: 1 1 auto; */
     margin-bottom: 12px;
     padding: 0;
 }
@@ -2771,6 +2772,12 @@ textarea {
     line-height: normal;
     letter-spacing: 0.16px;
     margin-bottom: 8px;
+
+    -webkit-line-clamp: 2;
+	line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .product-item__data-size {
