@@ -2636,7 +2636,10 @@ textarea {
 }
 
 .product-item__header {
+    flex: 1 1 auto;
     position: relative;
+    display: flex;
+    align-items: center;
     margin-bottom: 8px;
 }
 
@@ -2723,7 +2726,6 @@ textarea {
 }
 
 .product-item__body {
-    flex: 1 1 auto;
     margin-bottom: 12px;
     padding: 0;
 }
