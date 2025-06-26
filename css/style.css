@@ -1646,25 +1646,25 @@ textarea {
     line-height: normal;
 }
 
-.desktop-collapse-menu__menu .submenu .has-submenu {
+.desktop-collapse-menu__menu .has-submenu {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.desktop-collapse-menu__menu .submenu .submenu {
+.desktop-collapse-menu__menu .submenu {
     flex: 1 0 100%;
     display: none;
     padding-left: 1rem;
 }
 
-.desktop-collapse-menu__menu .submenu .submenu a {
-    font-size: 18px;
+.desktop-collapse-menu__menu .submenu.open {
+    display: block;
 }
 
-.desktop-collapse-menu__menu .submenu .submenu.open {
-    display: block;
+.desktop-collapse-menu__menu .submenu .submenu a {
+    font-size: 18px;
 }
 
 .desktop-collapse-menu__blog-item .blog-item-img {
@@ -2772,12 +2772,7 @@ textarea {
     line-height: normal;
     letter-spacing: 0.16px;
     margin-bottom: 8px;
-
-    -webkit-line-clamp: 2;
-	line-clamp: 2;
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	overflow: hidden;
+    min-height: 60px;
 }
 
 .product-item__data-size {
@@ -2889,8 +2884,9 @@ textarea {
     }
 
     .product-item__title {
-        font-size: 24px;
+        font-size: 22px;
         letter-spacing: 0.24px;
+        min-height: 81px;
     }
 
     .product-item__data-size {
