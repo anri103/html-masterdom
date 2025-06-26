@@ -1596,14 +1596,14 @@ textarea {
 
 .desktop-collapse-menu__col {
     flex: 1 1 100%;
-    padding: 22px 22px;
+    padding: 24px;
     border-left: 1px solid #DEE5ED;
 }
 
-.desktop-collapse-menu__col:last-child {
+/* .desktop-collapse-menu__col:last-child {
     padding: 22px 0;
     border: none;
-}
+} */
 
 .desktop-collapse-menu__menu {
     --bs-link-color-rgb: var(--bs-body-color-rgb);
@@ -1641,7 +1641,7 @@ textarea {
 
 .desktop-collapse-menu__menu .submenu a {
     display: block;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 400;
     line-height: normal;
 }
