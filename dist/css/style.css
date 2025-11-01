@@ -304,22 +304,6 @@ body {
   overflow-x: auto;
 }
 
-/* .scrollable-wrapper::-webkit-scrollbar {
-    width: 2px;
-    height: 2px;
-}
-
-.scrollable-wrapper::-webkit-scrollbar-track {
-    background-color: #F5F5F5;
-}
-
-.scrollable-wrapper::-webkit-scrollbar-thumb {
-    background-color: var(--bs-primary);
-}
-
-.scrollbar-none::-webkit-scrollbar {
-    display: none !important;
-} */
 .scrollable-wrapper .scrollable-item {
   position: relative;
   display: inline-block;
@@ -1200,6 +1184,14 @@ textarea {
   width: auto;
   height: auto;
   max-width: 320px;
+}
+
+/* swiperFeaturedProducts ============================ */
+.swiperFeaturedProducts .swiper-slide {
+  height: auto;
+}
+.swiperFeaturedProducts .product-item {
+  height: 100%;
 }
 
 /* SECTIONS ============================ */

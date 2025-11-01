@@ -447,3 +447,16 @@
     height: auto;
     max-width: 320px;
 }
+
+/* swiperFeaturedProducts ============================ */
+
+.swiperFeaturedProducts {
+
+    .swiper-slide {
+        height: auto;
+    }
+
+    .product-item {
+        height: 100%;
+    }
+}
