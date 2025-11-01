@@ -1,0 +1,57 @@
+@@include('partials/header.html', {
+    "title": "Корзина (пусто)"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Корзина</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- section-page-title -->
+    <section class="section section-page-title">
+        <div class="container">
+            <h1 class="title">Корзина</h1>
+        </div>
+    </section>
+
+    <!-- section-cart -->
+    <section class="section section-cart">
+        <div class="container">
+            <div class="message-empty-wrap d-flex justify-content-center">
+                <div class="d-flex flex-column" style="gap: 32px;">
+                    <div class="d-flex justify-content-center">
+                        <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="248" height="223" viewBox="0 0 248 223" fill="none">
+                            <path d="M13.731 17.5879H50.6739L63.8345 148.437C64.3815 152.044 66.2137 155.332 68.9936 157.695C71.7733 160.058 75.3135 161.336 78.9616 161.295H174.262C177.561 161.468 180.826 160.555 183.556 158.698C186.288 156.84 188.336 154.14 189.389 151.009L209.508 90.5005C210.259 88.2256 210.458 85.805 210.089 83.4382C209.722 81.0713 208.796 78.8257 207.391 76.8861C205.926 74.824 203.967 73.1619 201.695 72.0519C199.423 70.942 196.907 70.4197 194.381 70.5327H55.9684" stroke="#ACB2BF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M171.69 205.415C167.514 205.415 164.127 202.028 164.127 197.852C164.127 193.675 167.514 190.288 171.69 190.288C175.867 190.288 179.254 193.675 179.254 197.852C179.254 202.028 175.867 205.415 171.69 205.415Z" stroke="#ACB2BF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M73.3643 205.415C69.187 205.415 65.8008 202.028 65.8008 197.852C65.8008 193.675 69.187 190.288 73.3643 190.288C77.5415 190.288 80.9279 193.675 80.9279 197.852C80.9279 202.028 77.5415 205.415 73.3643 205.415Z" stroke="#ACB2BF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M195.682 166.008C215.556 166.008 231.666 149.897 231.666 130.023C231.666 110.149 215.556 94.0381 195.682 94.0381C175.808 94.0381 159.697 110.149 159.697 130.023C159.697 149.897 175.808 166.008 195.682 166.008Z" stroke="#ACB2BF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M195.682 166.008C215.556 166.008 231.666 149.897 231.666 130.023C231.666 110.149 215.556 94.0381 195.682 94.0381C175.808 94.0381 159.697 110.149 159.697 130.023C159.697 149.897 175.808 166.008 195.682 166.008Z" fill="white"/>
+                            <path d="M243.901 180.401L223.03 159.53" stroke="#ACB2BF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="h4 fw-normal text-center">В корзине пока пусто.</div>
+                    <div>
+                        <a href="#" class="btn btn-secondary">перейти к покупкам</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')

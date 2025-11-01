@@ -1,0 +1,85 @@
+/* FORMS ============================ */
+
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    outline: none;
+}
+
+:focus,
+:active {
+    outline: none;
+    box-shadow: none !important;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.form-control,
+.form-select {
+    color: var(--bs-body-color);
+    font-size: var(--bs-body-font-size);
+    padding: 1rem .75rem;
+    border-radius: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--bs-primary);
+}
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='8' viewBox='0 0 13 8' fill='none'%3E%3Cpath d='M1.00781 1.07916L5.9816 6.70326C6.03983 6.77202 6.10978 6.82674 6.18723 6.86412C6.26466 6.9015 6.34798 6.92078 6.43219 6.92078C6.51638 6.92078 6.59972 6.9015 6.67715 6.86412C6.75459 6.82674 6.82453 6.77202 6.88278 6.70326L11.8565 1.07916' stroke='%23474A51' stroke-width='1.00133' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: auto;
+}
+
+.form-checkbox {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 12px 12px;
+    border: 1px solid #ACB2BF;
+    border-radius: 0;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+.form-checkbox:focus,
+.form-checkbox:active {
+    box-shadow: none;
+}
+
+.form-checkbox:checked {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Crect x='0' y='0' width='12' height='12' fill='%2302378F'/%3E%3C/svg%3E");
+    background-color: transparent;
+    border-color: #ACB2BF;
+}
+
+.dropdown-select {
+    --bs-dropdown-link-color: var(--bs-body-color);
+    --bs-dropdown-link-hover-color: var(--bs-body-color);
+    --bs-dropdown-link-hover-bg: #DEE5ED;
+    --bs-dropdown-link-active-color: var(--bs-body-color);
+    --bs-dropdown-link-active-bg: #DEE5ED;
+    --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
+}

@@ -1,0 +1,277 @@
+@@include('partials/header.html', {
+    "title": "История заказа"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Страница</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row" style="--bs-gutter-y: 2rem;">
+                <div class="col-lg-3">
+                    <div class="d-flex gap-12px flex-column">
+                        <div class="d-flex flex-column gap-2">
+                            <h1 class="title mb-0">Личный кабинет</h1>
+                            <div class="text-secondary fs-18px">профиль создан 12.02.2024</div>
+                        </div>
+                        <div class="buyers-info-menu underline-tab-nav scrollable-container">
+                            <div class="scrollable-wrapper">
+                                <div class="scrollable-item"><a href="#" class="nav-link active"><span>Личные данные</span></a></div>
+                                <div class="scrollable-item"><a href="#" class="nav-link"><span>Заказы</span></a></div>
+                                <div class="scrollable-item"><a href="#" class="nav-link"><span>История заказов</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+
+                    <div class="d-flex flex-column gap-32px">
+
+                        <div>
+                            <div class="profile-order-card__date">от 21.01.2024</div>
+                            <div class="profile-order-card__heading">
+                                <div class="profile-order-card__title title">Заказ №780</div>
+                                <div class="profile-order-card__status text-primary">доставлен</div>
+                            </div>
+                            <div class="profile-order-card__amount">360 000 ₽</div>
+                            <div class="profile-order-card__pay-status mb-0 text-success">оплачен</div>
+                        </div>
+
+                        <div>
+                            <div class="h4 mb-22px">Товары в заказе</div>
+
+                            <div class="profile-order-product-items__table-heading">
+                                <div class="row">
+                                    <div class="col-lg-6">Товар (6)</div>
+                                    <div class="col-lg-6 d-none d-lg-block">
+                                        <div class="row">
+                                            <div class="col-lg-3 table-order-sku">Артикул</div>
+                                            <div class="col-lg-3 table-order-country">Страна</div>
+                                            <div class="col-lg-3 table-order-quantity">Кол-во</div>
+                                            <div class="col-lg-3 table-order-price">Цена</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-order-product-items__table-body">
+
+                                <!-- item -->
+                                <div class="profile-order-product-item-card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <!-- Инфо на десктопе -->
+                                            <div class="col-lg-6 d-none d-lg-block">
+                                                <div class="d-flex gap-2 gap-lg-4">
+                                                    <div class="card-img-wrapper">
+                                                        <a href="#">
+                                                            <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <div class="card-title">
+                                                            <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                                        </div>
+                                                        <div class="card-order-star-rating">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                            </svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                            </svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                            </svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                            </svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                <path d="M10.5 1.18215L13.1301 6.76511L13.2446 7.00806L13.5101 7.04847L19.4381 7.95089L15.1331 12.3471L14.9547 12.5293L14.9959 12.781L16.0071 18.958L10.7431 16.0587L10.5 15.9248L10.2569 16.0587L4.99286 18.958L6.00414 12.781L6.04534 12.5293L5.86691 12.3471L1.56186 7.95089L7.48995 7.04847L7.75544 7.00806L7.86989 6.76511L10.5 1.18215Z" stroke="#ACB2BF" stroke-width="1.00761"/>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Инфо на мобилке -->
+                                            <div class="col-lg-6">
+                                                <div class="card-content">
+                                                    <div class="card-img-wrapper d-lg-none">
+                                                        <a href="#">
+                                                            <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-lg-none">
+                                                            <div class="card-order-star-rating">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                    <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                                </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                    <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                                </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                    <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                                </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                    <path d="M10.5 0L13.5859 6.55041L20.4861 7.60081L15.493 12.6996L16.6717 19.8992L10.5 16.5L4.32825 19.8992L5.50695 12.6996L0.513906 7.60081L7.41413 6.55041L10.5 0Z" fill="#B0C7DD"/>
+                                                                </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                                                    <path d="M10.5 1.18215L13.1301 6.76511L13.2446 7.00806L13.5101 7.04847L19.4381 7.95089L15.1331 12.3471L14.9547 12.5293L14.9959 12.781L16.0071 18.958L10.7431 16.0587L10.5 15.9248L10.2569 16.0587L4.99286 18.958L6.00414 12.781L6.04534 12.5293L5.86691 12.3471L1.56186 7.95089L7.48995 7.04847L7.75544 7.00806L7.86989 6.76511L10.5 1.18215Z" stroke="#ACB2BF" stroke-width="1.00761"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="card-title">
+                                                                <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-12px">
+                                                            <div class="row gy-3">
+                                                                <div class="col-auto col-lg-3 card-order-sku">Арт. CV20195</div>
+                                                                <div class="col-auto col-lg-3 card-order-country">Россия</div>
+                                                                <div class="col-auto col-lg-3 card-order-quantity">12 м2</div>
+                                                                <div class="col-12 col-lg-3 card-order-price text-end text-lg-start">4 000 ₽</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="profile-order-product-item-card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <!-- Инфо на десктопе -->
+                                            <div class="col-lg-6 d-none d-lg-block">
+                                                <div class="d-flex gap-2 gap-lg-4">
+                                                    <div class="card-img-wrapper">
+                                                        <a href="#">
+                                                            <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <div class="card-title">
+                                                            <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Инфо на мобилке -->
+                                            <div class="col-lg-6">
+                                                <div class="card-content">
+                                                    <div class="card-img-wrapper d-lg-none">
+                                                        <a href="#">
+                                                            <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-lg-none">
+                                                            <div class="card-title">
+                                                                <a href="#">Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-12px">
+                                                            <div class="row gy-3">
+                                                                <div class="col-auto col-lg-3 card-order-sku">Арт. CV20195</div>
+                                                                <div class="col-auto col-lg-3 card-order-country">Россия</div>
+                                                                <div class="col-auto col-lg-3 card-order-quantity">12 м2</div>
+                                                                <div class="col-12 col-lg-3 card-order-price text-end text-lg-start">4 000 ₽</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-rate-order-btn-desk">
+                                                        <button type="button" class="btn btn-outline w-100" style="max-width: 300px;" data-bs-toggle="modal" data-bs-target="#modal_leave_rating">оценить заказ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-lg-none mt-3">
+                                            <button type="button" class="btn btn-outline w-100" data-bs-toggle="modal" data-bs-target="#modal_leave_rating">оценить заказ</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- item -->
+                                <div class="profile-order-product-item-card">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <!-- Инфо на десктопе -->
+                                            <div class="col-lg-6 d-none d-lg-block">
+                                                <div class="d-flex gap-2 gap-lg-4">
+                                                    <div class="card-img-wrapper">
+                                                        <a href="#">
+                                                            <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <div class="card-title">
+                                                            <a href="#">Короткое название товара</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Инфо на мобилке -->
+                                            <div class="col-lg-6">
+                                                <div class="card-content">
+                                                    <div class="card-img-wrapper d-lg-none">
+                                                        <a href="#">
+                                                            <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-lg-none">
+                                                            <div class="card-title">
+                                                                <a href="#">Короткое название товара</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mb-12px">
+                                                            <div class="row gy-3">
+                                                                <div class="col-auto col-lg-3 card-order-sku">Арт. CV201952-11</div>
+                                                                <div class="col-auto col-lg-3 card-order-country">Россия</div>
+                                                                <div class="col-auto col-lg-3 card-order-quantity">2</div>
+                                                                <div class="col-12 col-lg-3 card-order-price text-end text-lg-start">1 000 ₽</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-rate-order-btn-desk">
+                                                        <button type="button" class="btn btn-outline w-100" style="max-width: 300px;" data-bs-toggle="modal" data-bs-target="#modal_leave_rating">оценить заказ</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-lg-none mt-3">
+                                            <button type="button" class="btn btn-outline w-100" data-bs-toggle="modal" data-bs-target="#modal_leave_rating">оценить заказ</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')

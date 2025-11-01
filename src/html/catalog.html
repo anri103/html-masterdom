@@ -1,0 +1,1091 @@
+@@include('partials/header.html', {
+    "title": "Каталог"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Каталог</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- section-catalog-heading -->
+    <section class="section section-catalog-heading mb-22px">
+        <div class="container">
+            <div class="catalog-heading__wrapper d-flex flex-column flex-lg-row align-items-lg-center" style="gap: 4px 12px;">
+                <h1 class="title mb-0">Мраморная плитка</h1>
+                <div class="text-secondary fs-18px">660 товаров</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-catalog-body -->
+    <section class="section section-catalog-body">
+        <div class="container">
+            <div class="row">
+
+                <!-- Фильтры (колонка слева) -->
+                <div class="col-lg-20">
+                    <div class="d-flex flex-column" style="gap: 22px;">
+
+                        <!-- Категории -->
+                        <!-- Если хотим скрыть, то присваиваем d-none d-lg-block -->
+                        <div class="section-catalog-body__sidebar-widget">
+                            <div class="catalog-categories-nav scrollable-container">
+                                <div class="scrollable-wrapper">
+                                    <div class="scrollable-item">
+                                        <a href="#" class="nav-link"><span>Затирки</span></a>
+                                    </div>
+                                    <div class="scrollable-item">
+                                        <a href="#" class="nav-link"><span>Клей для плитки</span></a>
+                                    </div>
+                                    <div class="scrollable-item">
+                                        <a href="#" class="nav-link"><span>Пропитки и чистящие средства</span></a>
+                                    </div>
+                                    <div class="scrollable-item">
+                                        <a href="#" class="nav-link"><span>Аутлет</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Фильтры -->
+                        <!-- Если хотим скрыть, то присваиваем d-none d-lg-block -->
+                        <div class="section-catalog-body__sidebar-widget">
+                            <form action="#" method="get" class="catalog-form-smartfilter">
+                                <div class="offcanvas offcanvas-start" id="offcanvasSmartFilter" tabindex="-1">
+                                    <div class="offcanvas-header justify-content-end">
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="offcanvas-top">
+                                            <span class="offcanvas-title">Фильтры</span>
+                                            <div class="reset_fltr">
+                                                <input type="button" class="del_filter" id="del_filter" name="del_filter" value="Сбросить">
+                                            </div>
+                                            </div>
+                                        <div class="smartfilter">
+                                            <div class="catalog-form-smartfilter__wrapper">
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Цена -->
+                                                <div class="bx-filter-parameters-box filter-price-block">
+
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+
+                                                    <div class="btn-filter-parameters" style="margin-bottom: 22px;">
+                                                        <span>Цена, ₽</span>
+                                                    </div>
+
+                                                    <div class="filter_block">
+                                                        <div class="row bx-filter-parameters-box-container">
+
+                                                            <div class="col-5 bx-filter-parameters-box-container-block bx-left">
+                                                                <div class="bx-filter-input-container">
+                                                                    <span class="bx-ft-sub">От</span>
+                                                                    <input
+                                                                        class="min-price"
+                                                                        type="text"
+                                                                        name="arFilterCatalog_P1_MIN"
+                                                                        id="arFilterCatalog_P1_MIN"
+                                                                        value=""
+                                                                        placeholder="168"
+                                                                        size="5"
+                                                                        onkeyup="smartFilter.keyup(this)"
+                                                                    />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="price-separator col-2"></div>
+
+                                                            <div class="col-5 bx-filter-parameters-box-container-block bx-right">
+                                                                <div class="bx-filter-input-container">
+                                                                    <span class="bx-ft-sub">До</span>
+                                                                    <input
+                                                                        class="max-price"
+                                                                        type="text"
+                                                                        name="arFilterCatalog_P1_MAX"
+                                                                        id="arFilterCatalog_P1_MAX"
+                                                                        value=""
+                                                                        placeholder="7000"
+                                                                        size="5"
+                                                                        onkeyup="smartFilter.keyup(this)"
+                                                                    />
+                                                                </div>
+                                                            </div>
+                        
+                                                            <div class="col-12 bx-ui-slider-track-container">
+                                                                <div class="bx-ui-slider-track" id="drag_track_c4ca4238a0b923820dcc509a6f75849b">
+                                                                    <div class="bx-ui-slider-part p1"><span>168</span></div>
+                                                                    <div class="bx-ui-slider-part p2"><span>7 000</span></div>
+                                                                    
+                                                                    <div class="bx-ui-slider-pricebar-vd" style="left: 0; right: 0;" id="colorUnavailableActive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                                                                    <div class="bx-ui-slider-pricebar-vn" style="left: 0; right: 0;" id="colorAvailableInactive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                                                                    <div class="bx-ui-slider-pricebar-v"  style="left: 0; right: 0;" id="colorAvailableActive_c4ca4238a0b923820dcc509a6f75849b"></div>
+                                                                    <div class="bx-ui-slider-range" id="drag_tracker_c4ca4238a0b923820dcc509a6f75849b"  style="left: 0%; right: 0%;">
+                                                                        <a class="bx-ui-slider-handle left"  style="left: 0;" href="javascript:void(0)" id="left_slider_c4ca4238a0b923820dcc509a6f75849b"></a>
+                                                                        <a class="bx-ui-slider-handle right" style="right: 0;" href="javascript:void(0)" id="right_slider_c4ca4238a0b923820dcc509a6f75849b"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Размер -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container">
+                                                        <div class="bx-tooltip in bx-filter-popup-result left tooltipstered">
+                                                            <div class="tooltip-inner">
+                                                                <div class="tooltip-content"><span>46</span> товаров</div>
+                                                                <a class="btn btn-primary w-100 p-2" href="#" target="">применить</a>
+                                                                <span class="tooltip-arrow">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 28 27" fill="none">
+                                                                        <path d="M0.999999 13.5L21.25 1.80866L21.25 25.1913L0.999999 13.5Z" fill="white"/>
+                                                                        <path d="M21.25 1.80872L0.999999 13.5001L21.25 25.1914" stroke="#ACB2BF"/>
+                                                                    </svg>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                    <div class="btn-filter-parameters collapsed" data-bs-toggle="collapse" data-bs-target="#smartFilter-razmer" aria-expanded="false">
+                                                        <span>Размер</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse" id="smartFilter-razmer">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Размер 1">
+                                                                    <span>Размер 1</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Размер 2">
+                                                                    <span>Размер 2</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Поверхность -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+                                                    <div class="btn-filter-parameters collapsed" data-bs-toggle="collapse" data-bs-target="#smartFilter-poverhnost" aria-expanded="false">
+                                                        <span>Поверхность</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse" id="smartFilter-poverhnost">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Поверхность 1">
+                                                                    <span>Поверхность 1</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Поверхность 2">
+                                                                    <span>Поверхность 2</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Материал -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+                                                    <div class="btn-filter-parameters" data-bs-toggle="collapse" data-bs-target="#smartFilter-material" aria-expanded="true">
+                                                        <span>Материал</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse show" id="smartFilter-material">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Керамогранит">
+                                                                    <span>Керамогранит</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Керамическая плитка">
+                                                                    <span>Керамическая плитка</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Камень">
+                                                                    <span>Камень</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Мрамор">
+                                                                    <span>Мрамор</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Литокерамика">
+                                                                    <span>Литокерамика</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Стекло">
+                                                                    <span>Стекло</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Металл">
+                                                                    <span>Металл</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Тип плитки -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+                                                    <div class="btn-filter-parameters" data-bs-toggle="collapse" data-bs-target="#smartFilter-tip-plitki" aria-expanded="true">
+                                                        <span>Тип плитки</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse show" id="smartFilter-tip-plitki">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Мозаика">
+                                                                    <span>Мозаика</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Ступени">
+                                                                    <span>Ступени</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Плинтусы">
+                                                                    <span>Плинтусы</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Декоры">
+                                                                    <span>Декоры</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Панно напольное">
+                                                                    <span>Панно напольное</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Декоративные вставки">
+                                                                    <span>Декоративные вставки</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Бордюры">
+                                                                    <span>Бордюры</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Столешницы и подоконники">
+                                                                    <span>Столешницы и подоконники</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Назначение -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+                                                    <div class="btn-filter-parameters" data-bs-toggle="collapse" data-bs-target="#smartFilter-naznachenie" aria-expanded="true">
+                                                        <span>Назначение</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse show" id="smartFilter-naznachenie">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Для пола">
+                                                                    <span>Для пола</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Для стен">
+                                                                    <span>Для стен</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Универсальное">
+                                                                    <span>Универсальное</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Для внутренней отделки">
+                                                                    <span>Для внутренней отделки</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Для наружной отделки">
+                                                                    <span>Для наружной отделки</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Для камина">
+                                                                    <span>Для камина</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Для дорожек">
+                                                                    <span>Для дорожек</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Для фасада">
+                                                                    <span>Для фасада</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Для лестницы">
+                                                                    <span>Для лестницы</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Для укладки на землю">
+                                                                    <span>Для укладки на землю</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Цвет -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+                                                    <div class="btn-filter-parameters collapsed" data-bs-toggle="collapse" data-bs-target="#smartFilter-color" aria-expanded="false">
+                                                        <span>Цвет</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse" id="smartFilter-color">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Цвет 1">
+                                                                    <span>Цвет 1</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Цвет 2">
+                                                                    <span>Цвет 2</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Коллекции -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+                                                    <div class="btn-filter-parameters collapsed" data-bs-toggle="collapse" data-bs-target="#smartFilter-kollekcii" aria-expanded="false">
+                                                        <span>Коллекции</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse" id="smartFilter-kollekcii">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Коллекции 1">
+                                                                    <span>Коллекции 1</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Коллекции 2">
+                                                                    <span>Коллекции 2</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Помещение -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+                                                    <div class="btn-filter-parameters collapsed" data-bs-toggle="collapse" data-bs-target="#smartFilter-pomeshenie" aria-expanded="false">
+                                                        <span>Помещение</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse" id="smartFilter-pomeshenie">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Помещение 1">
+                                                                    <span>Помещение 1</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Помещение 2">
+                                                                    <span>Помещение 2</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Рисунок -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+                                                    <div class="btn-filter-parameters collapsed" data-bs-toggle="collapse" data-bs-target="#smartFilter-risunok" aria-expanded="false">
+                                                        <span>Рисунок</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse" id="smartFilter-risunok">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Рисунок 1">
+                                                                    <span>Рисунок 1</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Рисунок 2">
+                                                                    <span>Рисунок 2</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- Контейнер Скрытые фильтры -->
+                                            <div class="collapse" id="hidden-smartfilter-wrapper">
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Материал 2 -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+                                                    <div class="btn-filter-parameters collapsed" data-bs-toggle="collapse" data-bs-target="#smartFilter-material-2" aria-expanded="false">
+                                                        <span>Материал 2</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse" id="smartFilter-material-2">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Материал 2-1">
+                                                                    <span>Материал 2-1</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Материал 2-2">
+                                                                    <span>Материал 2-2</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Поверхность 2 -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+                                                    <div class="btn-filter-parameters collapsed" data-bs-toggle="collapse" data-bs-target="#smartFilter-poverhnost-2" aria-expanded="false">
+                                                        <span>Поверхность 2</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse" id="smartFilter-poverhnost-2">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Поверхность 2-1">
+                                                                    <span>Поверхность 2-1</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Поверхность 2-2">
+                                                                    <span>Поверхность 2-2</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Помещение 2 -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+                                                    <div class="btn-filter-parameters collapsed" data-bs-toggle="collapse" data-bs-target="#smartFilter-pomeshenie-2" aria-expanded="false">
+                                                        <span>Помещение 2</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse" id="smartFilter-pomeshenie-2">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Помещение 2-1">
+                                                                    <span>Помещение 2-1</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Помещение 2-2">
+                                                                    <span>Помещение 2-2</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Секция фильтра -->
+                                                <!-- Рисунок 2 -->
+                                                <div class="bx-filter-parameters-box">
+                                                    <!-- Контейнер всплывашки -->
+                                                    <span class="bx-filter-tooltip-container"></span>
+                                                    <div class="btn-filter-parameters collapsed" data-bs-toggle="collapse" data-bs-target="#smartFilter-risunok-2" aria-expanded="false">
+                                                        <span>Рисунок 2</span>
+                                                        <span class="btn-filter-parameters__arrow">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="filter_block collapse" id="smartFilter-risunok-2">
+                                                        <div class="filter_flex_box">
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Рисунок 2-1">
+                                                                    <span>Рисунок 2-1</span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="checkbox filter_input_checkbox">
+                                                                <label class="filter_param_label">
+                                                                    <input type="checkbox" class="form-checkbox" data-value="Рисунок 2-2">
+                                                                    <span>Рисунок 2-2</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- Кнопка Все фильтры -->
+                                            <button type="button" class="btn btn-with-collapsing-arrow btn-with-collapsing-span border-0 w-100 py-0 mb-22px collapsed" id="btn-toggle-hidden-smartfilter-wrapper" data-bs-toggle="collapse" data-bs-target="#hidden-smartfilter-wrapper" aria-expanded="false">
+                                                <span class="span-1">Все фильтры</span>
+                                                <span class="span-2">Свернуть фильтры</span>
+                                                <span class="svg-arrow">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                                                        <path d="M1 0.944946L6.00196 6.82765C6.06052 6.89958 6.13086 6.95681 6.20874 6.99591C6.28661 7.03502 6.37041 7.05518 6.4551 7.05518C6.53976 7.05518 6.62358 7.03502 6.70145 6.99591C6.77932 6.95681 6.84966 6.89958 6.90823 6.82765L11.9102 0.944946" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </span>
+                                            </button>
+
+                                            <!-- Кнопка Применить фильтры -->
+                                            <button type="submit" class="btn btn-secondary w-100 d-none d-lg-block">Применить фильтры</button>
+
+                                        </div>
+                                    </div>
+                                    <div class="offcanvas-footer d-lg-none">
+                                        <p class="fs-18px fw-medium">Найдено: 45 товаров</p>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <button type="submit" class="btn btn-primary w-100">Применить</button>
+                                            </div>
+                                            <div class="col-6">
+                                                <button type="reset" class="btn btn-outline w-100">Сбросить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- Каталоги -->
+                        <!-- Если хотим скрыть, то присваиваем d-none d-lg-block -->
+                        <div class="section-catalog-body__sidebar-widget d-none d-lg-block">
+                            <div class="pdf-catalogs-wrapper d-flex flex-column" style="margin-top: 60px; gap: 22px;">
+                                <!-- item 1 -->
+                                <div class="catalog-pdf-item">
+                                    <div class="catalog-pdf-item__title h5 text-center mb-3">Новинки от Coliseum</div>
+                                    <a href="#">
+                                        <div class="catalog-pdf-item__img">
+                                            <img class="img-fluid w-100" src="img/catalog-pdf-cover-01.jpg" alt="Новинки от Coliseum">
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item 2 -->
+                                <div class="catalog-pdf-item">
+                                    <div class="catalog-pdf-item__title h5 text-center mb-3">Новинки от Coliseum</div>
+                                    <a href="#">
+                                        <div class="catalog-pdf-item__img">
+                                            <img class="img-fluid w-100" src="img/catalog-pdf-cover-02.jpg" alt="Новинки от Coliseum">
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- item 3 -->
+                                <div class="catalog-pdf-item">
+                                    <div class="catalog-pdf-item__title h5 text-center mb-3">Новинки от Coliseum</div>
+                                    <a href="#">
+                                        <div class="catalog-pdf-item__img">
+                                            <img class="img-fluid w-100" src="img/catalog-pdf-cover-03.jpg" alt="Новинки от Coliseum">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Сетка товаров (колонка справа) -->
+                <div class="col-lg-75 offset-lg-5">
+
+                    <!-- Сортировка и Фильтры -->
+                    <div class="section-catalog-body__sorting d-flex align-items-center justify-content-between mb-32px">
+                        <button type="button" class="btn fs-18px fw-medium text-uppercase border-0 p-0 d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSmartFilter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                                <g>
+                                    <path d="M18.3206 1.17871H0.677734L7.46345 10.6787V18.8216L11.5349 16.1073V10.6787L18.3206 1.17871Z" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clippath>
+                                    <rect width="19" height="19" fill="white" transform="translate(0 0.5)"/>
+                                    </clippath>
+                                </defs>
+                            </svg>
+                            <span>Фильтры</span>
+                        </button>
+                        <div class="position-relative">
+                            <button type="button" class="btn btn-dropdown-arrow fs-16px border-0 p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                По популярности
+                                <span class="icon-arrow-down">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-select">
+                                <li><a class="dropdown-item" href="#">По популярности</a></li>
+                                <li><a class="dropdown-item" href="#">Цене</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Сетка товаров -->
+                    <div class="section-catalog-body__grid">
+
+                        <!-- item 1 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-01.webp",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished (проверка длинного названия товара)",
+                            "markerTop": "true"
+                        })
+
+                        <!-- item 2 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-02.webp",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true",
+                            "markerNew": "true"
+                        })
+
+                        <!-- item 3 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-01.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerNew": "true",
+                            "markerDelivery": "true"
+                        })
+
+                        <!-- item 4 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-02.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerSale": "true"
+                        })
+
+                        <!-- item 5 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-03.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerTop": "true"
+                        })
+
+                        <!-- item 6 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-04.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerDelivery": "true"
+                        })
+
+                        <!-- item 7 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-01.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 8 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-02.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerNew": "true"
+                        })
+
+                        <!-- item 9 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-03.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerSale": "true"
+                        })
+
+                        <!-- item 10 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-04.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 11 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-01.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 12 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-02.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 13 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-03.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 14 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-04.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 15 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-01.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 16 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-02.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 17 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-03.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 18 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-04.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 19 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-01.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 20 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-02.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 21 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-03.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 22 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-04.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 23 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-01.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                        <!-- item 24 -->
+                        @@include('partials/card-product-item.html', {
+                            "thumbURL": "img/catalog/product-thumb-02.jpg",
+                            "title": "Керамогранит Onix One 60x120 Fancy Grey Polished",
+                            "markerHit": "true"
+                        })
+
+                    </div>
+
+                    <!-- Пагинация -->
+                    <div class="section-catalog-body__pagination">
+                        <nav class="pagination-nav">
+                            <ul class="pagination-list">
+                                <li>
+                                    <a href="#" class="pagination-item prev">
+                                        <span class="me-2">
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-back"></use>
+                                            </svg>
+                                        </span>
+                                        Назад
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item active">1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item">2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item">3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item">4</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item">5</a>
+                                </li>
+                                <li>
+                                    <span class="pagination-item dots">...</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item">10</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item next">
+                                        Дальше
+                                        <span class="ms-2">
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container">
+            <h2 class="h1 title fw-normal mb-42px">Совет от дизайнера</h2>
+            <div class="row" style="--bs-gutter-y: 2rem;">
+                <div class="col-lg-2">
+                    <a href="#" class="categories-circles__item">
+                        <div class="categories-circles__img">
+                            <img src="img/designers-avatar-01.png" alt="Елена Пьюзо">
+                            <!-- <div class="categories-circles__overlay">
+                                <div class="text-center fs-12px">
+                                    <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                                    <div class="text-primary fw-medium">подробнее</div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="categories-circles__title">Елена Пьюзо</div>
+                    </a>
+                </div>
+                <div class="col-lg-10">
+                    <div style="max-width: 1100px;">
+                        <div class="accordion" id="accordion-designer-tips" style="--bs-accordion-active-color: #02378F;">
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <div class="h1 title fw-normal" style="margin-top: var(--bs-accordion-btn-padding-y);">Рекомендация №1</div>
+                                    <button type="button" class="accordion-button fw-medium" data-bs-toggle="collapse" data-bs-target="#accordion-designer-tip-01" aria-expanded="true">
+                                    Как выбрать плитку для ванной комнаты, чтобы визуально увеличить пространство?
+                                    </button>
+                                </div>
+                                <div id="accordion-designer-tip-01" class="accordion-collapse collapse show" data-bs-parent="#accordion-designer-tips">
+                                    <div class="accordion-body">
+                                        <p>Для небольших помещений рекомендуется использовать светлую плитку с глянцевой поверхностью. Она отражает свет, который визуально делает помещение больше.</p>
+                                        <p>Если плитку крупной формы, чтобы минимизировать количество швов — создается цельный и просторный эффект. Также избегайте насыщенных узоров: лучше подойдут однотонные модели или плитка с легкой текстурой, имитирующая мрамор.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <div class="h1 title fw-normal" style="margin-top: var(--bs-accordion-btn-padding-y);">Рекомендация №2</div>
+                                    <button type="button" class="accordion-button fw-medium collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-designer-tip-02" aria-expanded="false">
+                                    Какие свойства плитки важны для кухни в условиях рабочего фартука?
+                                    </button>
+                                </div>
+                                <div id="accordion-designer-tip-02" class="accordion-collapse collapse" data-bs-parent="#accordion-designer-tips">
+                                    <div class="accordion-body">
+                                        <p>Для небольших помещений рекомендуется использовать светлую плитку с глянцевой поверхностью. Она отражает свет, который визуально делает помещение больше.</p>
+                                        <p>Если плитку крупной формы, чтобы минимизировать количество швов — создается цельный и просторный эффект. Также избегайте насыщенных узоров: лучше подойдут однотонные модели или плитка с легкой текстурой, имитирующая мрамор.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <div class="h1 title fw-normal" style="margin-top: var(--bs-accordion-btn-padding-y);">Рекомендация №3</div>
+                                    <button type="button" class="accordion-button fw-medium collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-designer-tip-03" aria-expanded="false">
+                                    Какую плитку выбрать для пола в гостиной, чтобы совместить практичность и стиль?
+                                    </button>
+                                </div>
+                                <div id="accordion-designer-tip-03" class="accordion-collapse collapse" data-bs-parent="#accordion-designer-tips">
+                                    <div class="accordion-body">
+                                        <p>Для небольших помещений рекомендуется использовать светлую плитку с глянцевой поверхностью. Она отражает свет, который визуально делает помещение больше.</p>
+                                        <p>Если плитку крупной формы, чтобы минимизировать количество швов — создается цельный и просторный эффект. Также избегайте насыщенных узоров: лучше подойдут однотонные модели или плитка с легкой текстурой, имитирующая мрамор.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')

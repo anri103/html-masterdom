@@ -1,0 +1,203 @@
+/* MODALS ============================ */
+
+.modal {
+    --bs-modal-padding: 22px;
+    --bs-modal-header-padding: 22px;
+    --bs-modal-footer-padding: 22px;
+}
+
+.modal .btn-close {
+    margin-left: auto;
+    padding: 5px;
+}
+
+.modal-header-top {
+    flex-shrink: 0;
+    padding: var(--bs-modal-header-padding);
+}
+
+.modal-footer-bottom {
+    flex-shrink: 0;
+    padding: var(--bs-modal-footer-padding);
+}
+
+.modal-footer {
+    display: block;
+    padding: var(--bs-modal-footer-padding);
+}
+
+.fancybox__container {
+    --fancybox-bg: rgba(24, 24, 27, 0.69);
+}
+
+.fancybox-custom-modal {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    padding: 22px 22px 32px;
+}
+
+.fancybox-custom-modal>.f-button.is-close-btn {
+    --f-button-width: 44px;
+    --f-button-height: 44px;
+    --f-button-border-radius: 0;
+    --f-button-color: var(--theme-light-gray, #fff);
+    --f-button-hover-color: var(--theme-light-gray, #fff);
+    --f-button-bg: transparent;
+    --f-button-hover-bg: transparent;
+    --f-button-active-bg: transparent;
+    --f-button-svg-width: 22px;
+    --f-button-svg-height: 22px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .75;
+}
+
+.is-compact .fancybox-custom-modal>.f-button.is-close-btn {
+    --f-button-border-radius: 0;
+    --f-button-color: var(--theme-light-gray, #fff);
+    --f-button-hover-color: var(--theme-light-gray, #fff);
+    --f-button-outline-color: #000;
+    --f-button-bg: transparent;
+    --f-button-active-bg: transparent;
+    --f-button-hover-bg: transparent;
+    --f-button-svg-width: 18px;
+    --f-button-svg-height: 18px;
+    --f-button-svg-filter: none;
+    top: 0;
+    right: 0;
+}
+
+@media (min-width: 992px) {
+
+    .fancybox-custom-modal {
+        padding: 32px 42px 42px;
+    }
+}
+
+/* Modal search */
+
+.search-modal__title {
+    margin-bottom: 22px;
+}
+
+.search-modal__container .form-search {
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.search-modal__container .form-search .form-control {
+    --bs-border-color: var(--theme-light-gray);
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-left-width: 0 !important;
+    padding-left: 47px;
+    padding-bottom: 2px;
+    font-size: 18px;
+}
+
+.search-modal__container .form-search .form-search__btn {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    padding: 0;
+    transform: translateY(-50%);
+    border: none;
+    z-index: 5;
+}
+
+.search-modal__similar-queries {
+    margin-top: 22px;
+}
+
+.search-modal__similar-queries-title {
+    display: block;
+    background: #DEE5ED;
+    padding: 9px 22px;
+    margin: 0 -22px;
+    margin-bottom: 12px;
+}
+
+.search-modal__similar-queries-list {
+    --bs-link-color-rgb: var(--bs-secondary-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 1;
+}
+
+.search-modal__similar-queries-list a {
+    display: block;
+    padding: 6px 0;
+}
+
+@media (min-width: 992px) {
+
+    .search-modal__similar-queries-title {
+        padding: 9px 42px;
+        margin: 0 -42px;
+    }
+}
+
+/* Modal city-selector */
+
+.city-selector__title {
+    margin-bottom: 22px;
+}
+
+.city-selector__input-wrapper .form-city-selector {
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.city-selector__input-wrapper .form-city-selector .form-control {
+    --bs-border-color: var(--theme-light-gray);
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-left-width: 0 !important;
+    padding-left: 47px;
+    padding-bottom: 2px;
+    font-size: 18px;
+}
+
+.city-selector__input-wrapper .form-city-selector .form-city-selector__btn {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    padding: 0;
+    transform: translateY(-50%);
+    border: none;
+    z-index: 5;
+}
+
+.city-selector__popular-cities {
+    margin-top: 22px;
+}
+
+.city-selector__popular-cities-title {
+    color: #999999;
+    margin-bottom: 22px;
+}
+
+.city-selector__popular-cities-list {
+    --bs-link-color-rgb: var(--bs-secondary-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 1;
+}
+
+.city-selector__popular-cities-list a {
+    display: block;
+    padding: 4px 0;
+}
+
+@media (min-width: 992px) {
+
+    .city-selector__popular-cities-list {
+        columns: 3;
+    }
+}

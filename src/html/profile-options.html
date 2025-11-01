@@ -1,0 +1,128 @@
+@@include('partials/header.html', {
+    "title": "Личные данные"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Страница</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row" style="--bs-gutter-y: 2rem;">
+                <div class="col-lg-3">
+                    <div class="d-flex gap-12px flex-column">
+                        <div class="d-flex flex-column gap-2">
+                            <h1 class="title mb-0">Личный кабинет</h1>
+                            <div class="text-secondary fs-18px">профиль создан 12.02.2024</div>
+                        </div>
+                        <div class="buyers-info-menu underline-tab-nav scrollable-container">
+                            <div class="scrollable-wrapper">
+                                <div class="scrollable-item"><a href="#" class="nav-link active"><span>Личные данные</span></a></div>
+                                <div class="scrollable-item"><a href="#" class="nav-link"><span>Заказы</span></a></div>
+                                <div class="scrollable-item"><a href="#" class="nav-link"><span>История заказов</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+
+                    <div style="max-width: 600px;">
+                        <form action="#">
+                            <div class="mb-32px">
+                                <div class="mb-22px">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="Имя Фамилия*">
+                                        <label>Имя Фамилия*</label>
+                                    </div>
+                                </div>
+                                <div class="mb-22px">
+                                    <select class="form-select">
+                                        <option selected>Пол</option>
+                                        <option value="1">Мужчина</option>
+                                        <option value="2">Женщина</option>
+                                    </select>
+                                </div>
+                                <div class="mb-22px">
+                                    <select class="form-select">
+                                        <option selected>Город</option>
+                                        <option value="1">Москва</option>
+                                        <option value="2">Казань</option>
+                                    </select>
+                                </div>
+                                <div class="mb-22px">
+                                    <input type="text" class="form-control" placeholder="дд.мм.гггг">
+                                </div>
+                                <div class="mb-22px">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" placeholder="Почта*">
+                                        <label>Почта*</label>
+                                    </div>
+                                    <div class="text-muted-light small mt-12px">*Поля для обязательного заполнения</div>
+                                </div>
+                                <div class="mb-22px">
+                                    <input type="text" class="form-control" placeholder="8 (925) 689-15-19" disabled>
+                                    <div class="text-muted-light small mt-12px">
+                                        <a href="#" class="text-decoration-underline">сменить номер телефона</a>
+                                    </div>
+                                </div>
+                                <div class="mb-22px">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="Адрес">
+                                        <label>Адрес</label>
+                                    </div>
+                                </div>
+                                <div class="mb-22px">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="Индекс">
+                                        <label>Индекс</label>
+                                    </div>
+                                </div>
+                                <div class="mb-22px">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" placeholder="Пароль">
+                                        <label>Пароль</label>
+                                    </div>
+                                    <div class="text-muted-light small mt-12px">Пароль должен содержать не менее 6 символов</div>
+                                </div>
+                                <div class="mb-22px">
+                                    <div class="form-floating">
+                                        <input type="password" class="form-control" placeholder="Подтверждение пароля">
+                                        <label>Подтверждение пароля</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-12px">
+                                <button type="submit" class="btn btn-outline w-100">сохранить изменения</button>
+                            </div>
+                            <div>
+                                <label class="d-flex gap-2 align-items-center">
+                                    <input type="checkbox" class="form-checkbox">
+                                    <span>Принимаю условия <a href="#" class="text-decoration-underline">обработки персональных данных</a>.</span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')

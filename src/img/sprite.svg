@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+    <symbol id="menu-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 22" fill="none" stroke="currentColor"><path d="M1 1l11 10L1 21"/></symbol>
+    <symbol id="menu-back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 22" fill="none" stroke="currentColor"><path d="M12 1L1 11l11 10"/></symbol>
+
+    <symbol id="fancy-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" fill="none" stroke="currentColor"><path d="M1 17L17 1m0 16L1 1" stroke-linecap="square" stroke-linejoin="round"/></symbol>
+
+    <symbol id="next-slider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 15" fill="none" stroke="currentColor"><path d="M1 1l7 6.5L1 14"/></symbol>
+    <symbol id="prev-slider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 15" fill="none" stroke="currentColor"><path d="M8 1L1 7.5 8 14"/></symbol>
+
+    <symbol id="select" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 8" fill="none" stroke="currentColor"><path d="M1 1l6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+
+    <symbol id="slider-next" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 35" fill="none" stroke="currentColor"><path d="M1.23 1L19 17.5 1.23 34"/></symbol>
+    <symbol id="slider-prev" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 35" fill="none" stroke="currentColor"><path d="M18.77 1L1 17.5 18.77 34"/></symbol>
+
+    <symbol id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" stroke="currentColor"><path d="M6.94446 15.4551L12.8272 10.4531C12.8991 10.3946 12.9563 10.3242 12.9954 10.2463C13.0345 10.1685 13.0547 10.0847 13.0547 9.99998C13.0547 9.91532 13.0345 9.8315 12.9954 9.75363C12.9563 9.67576 12.8991 9.60542 12.8272 9.54684L6.94446 4.54492" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" fill="none" stroke="currentColor"><path d="M13.5555 4.54492L7.67284 9.54688C7.60091 9.60544 7.54368 9.67578 7.50457 9.75367C7.46547 9.83154 7.44531 9.91533 7.44531 10C7.44531 10.0847 7.46547 10.1685 7.50457 10.2464C7.54368 10.3242 7.60091 10.3946 7.67284 10.4532L13.5555 15.4551" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+
+</svg>

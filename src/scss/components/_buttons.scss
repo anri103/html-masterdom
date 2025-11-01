@@ -1,0 +1,268 @@
+/* BUTTONS ============================ */
+
+.btn {
+    --bs-btn-padding-y: 0.8125rem;
+    --bs-btn-padding-x: 2.5rem;
+    --bs-btn-font-size: 1.125rem;
+    --bs-btn-font-weight: 500;
+    --bs-btn-line-height: normal;
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-width: 1px;
+    --bs-btn-border-color: transparent;
+    --bs-btn-border-radius: 0;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    --bs-btn-disabled-opacity: 0.65;
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+}
+
+.btn-lg {
+    --bs-btn-padding-y: 1.0625rem;
+    --bs-btn-padding-x: 3rem;
+    --bs-btn-font-size: 1.25rem;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.btn-secondary {
+    --bs-btn-color: #1A1A16;
+    --bs-btn-bg: #DEE5ED;
+    --bs-btn-border-color: #DEE5ED;
+    --bs-btn-hover-color: #1A1A16;
+    --bs-btn-hover-bg: #B0C7DD;
+    --bs-btn-hover-border-color: #B0C7DD;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #1A1A16;
+    --bs-btn-active-bg: #B0C7DD;
+    --bs-btn-active-border-color: #B0C7DD;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #1A1A16;
+    --bs-btn-disabled-bg: #B0C7DD;
+    --bs-btn-disabled-border-color: #B0C7DD;
+}
+
+.btn-secondary-light {
+    --bs-btn-color: #1A1A16;
+    --bs-btn-bg: #F2F9FF;
+    --bs-btn-border-color: #F2F9FF;
+    --bs-btn-hover-color: #1A1A16;
+    --bs-btn-hover-bg: #B0C7DD;
+    --bs-btn-hover-border-color: #B0C7DD;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #1A1A16;
+    --bs-btn-active-bg: #B0C7DD;
+    --bs-btn-active-border-color: #B0C7DD;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #1A1A16;
+    --bs-btn-disabled-bg: #B0C7DD;
+    --bs-btn-disabled-border-color: #B0C7DD;
+}
+
+.btn-outline {
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: #B0C7DD;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.btn-outline:hover {
+    box-shadow: inset 0 0 0 4px #fff;
+}
+
+.btn-text {
+    --bs-btn-color: var(--bs-body-color);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: var(--bs-primary);
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: var(--bs-primary);
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--bs-primary);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: transparent;
+}
+
+.btn-text-light {
+    --bs-btn-color: #7C7D80;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: var(--bs-primary);
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: var(--bs-primary);
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--bs-primary);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: transparent;
+}
+
+.btn-icon {
+    --btn-icon-size: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--btn-icon-size);
+    height: var(--btn-icon-size);
+    padding: 0 !important;
+}
+
+.btn-with-collapsing-arrow .svg-arrow {
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-with-collapsing-arrow:not(.collapsed) .svg-arrow {
+    transform: rotate(180deg);
+}
+
+.btn-dropdown-arrow .icon-arrow-down {
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-dropdown-arrow.show .icon-arrow-down {
+    transform: rotate(180deg);
+}
+
+.btn-with-arrow {
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-with-arrow .icon-arrow-right {
+    transition: 0.3s ease;
+}
+
+.btn-with-arrow:hover .icon-arrow-right {
+    transform: translateX(10px);
+}
+
+.btn-interest {
+    position: absolute;
+    display: block;
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 0 0 0 #fff;
+    background: rgba(159, 147, 135, 0.8);
+    z-index: 3;
+    animation: pulse-white 2s infinite;
+}
+
+.btn-interest::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 1);
+    transition: all 0.25s ease-in-out;
+}
+
+@keyframes pulse-white {
+    0% {
+        -moz-transform: scale(.95);
+        -o-transform: scale(.95);
+        -ms-transform: scale(.95);
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        -webkit-box-shadow: 0 0 0 0 rgba(159, 147, 135, 0.7);
+        box-shadow: 0 0 0 0 rgba(159, 147, 135, 0.7);
+    }
+    70% {
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-box-shadow: 0 0 0 10px rgba(159, 147, 135, 0);
+        box-shadow: 0 0 0 10px rgba(159, 147, 135, 0);
+    }
+    100% {
+        -moz-transform: scale(.95);
+        -o-transform: scale(.95);
+        -ms-transform: scale(.95);
+        -webkit-transform: scale(.95);
+        transform: scale(.95);
+        -webkit-box-shadow: 0 0 0 0 rgba(159, 147, 135, 0);
+        box-shadow: 0 0 0 0 rgba(159, 147, 135, 0);
+    }
+}
+
+.show-more-button {
+    --bs-btn-color: #7C7D80;
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: transparent;
+    --bs-btn-hover-color: #7C7D80;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #7C7D80;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: transparent;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #7C7D80;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: transparent;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.show-more-button::after {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin-left: 3px;
+    vertical-align: middle;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='23' viewBox='0 0 25 23' fill='none'%3E%3Cpath d='M6 6.99954L12.8773 16.6276C12.9579 16.7453 13.0546 16.839 13.1617 16.903C13.2687 16.967 13.3839 17 13.5004 17C13.6168 17 13.732 16.967 13.8391 16.903C13.9462 16.839 14.0429 16.7453 14.1234 16.6276L21.0007 6.99954' stroke='%237C7D80' stroke-width='1.66674' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.show-more-button.active::after {
+    transform: rotate(180deg);
+}

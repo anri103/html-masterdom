@@ -1,0 +1,80 @@
+@@include('partials/header.html', {
+    "title": "Каталог категории"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Каталог</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- section-catalog-heading -->
+    <section class="section section-catalog-heading mb-22px">
+        <div class="container">
+            <div class="catalog-heading__wrapper d-flex flex-column flex-lg-row align-items-lg-center" style="gap: 4px 12px;">
+                <h1 class="title mb-0">Каталог товаров</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-catalog-body -->
+    <section class="section section-catalog-body">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" style="--bs-gutter-y: 22px;">
+
+                <div class="col">
+                    <a href="#" class="hero-category h-100">
+                        <img src="img/hero-category-01.jpg" alt="Керамогранит">
+                        <div class="hero-category__text">
+                            <div class="hero-category__title">Керамогранит</div>
+                            <div class="hero-category__link">
+                                <span>подробнее</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="hero-category h-100">
+                        <img src="img/hero-category-01.jpg" alt="Плитка">
+                        <div class="hero-category__text">
+                            <div class="hero-category__title">Плитка</div>
+                            <div class="hero-category__link">
+                                <span>подробнее</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#" class="hero-category h-100">
+                        <img src="img/hero-category-01.jpg" alt="Хиты продаж">
+                        <div class="hero-category__text">
+                            <div class="hero-category__title">Хиты продаж</div>
+                            <div class="hero-category__link">
+                                <span>подробнее</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')

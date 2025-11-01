@@ -1,0 +1,455 @@
+@@include('partials/header.html', {
+    "title": "Оформление заказа"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="cart.html">Корзина</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Оформление заказа</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- section-page-title -->
+    <section class="section section-page-title">
+        <div class="container">
+            <div class="catalog-heading__wrapper d-flex flex-column flex-lg-row align-items-lg-center" style="gap: 4px 12px;">
+                <h1 class="title mb-0">Оформление заказа</h1>
+                <div class="text-secondary fs-18px">660 товаров</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <form action="cart-message-success.html">
+                <div class="d-flex flex-column gap-32px" style="max-width: 1250px;">
+
+                    <!-- Block Item "Покупатель" -->
+                    <div>
+                        <div class="h4 mb-22px">Покупатель</div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column gap-22px">
+                                    <div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" placeholder="Имя Фамилия*">
+                                            <label>Имя Фамилия*</label>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" placeholder="Телефон*">
+                                            <label>Телефон</label>
+                                        </div>
+                                        <div class="text-muted-light small mt-12px">Необходим для уточнения деталей заказа</div>
+                                    </div>
+                                    <div>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" placeholder="Почта*">
+                                            <label>Почта*</label>
+                                        </div>
+                                        <div class="text-muted-light small mt-12px">*Поля для обязательного заполнения</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Block Item "Способы доставки" -->
+                    <div>
+                        <div class="h4 mb-22px">Способ доставки по Москве</div>
+                        <div class="row" style="--bs-gutter-y: 22px;">
+                            <div class="col-lg-6">
+                                <div class="checkout-radio-card">
+                                    <input class="checkout-radio-card__radio-input" id="checkout-delivery-01" type="radio" name="checkout-delivery">
+                                    <label class="d-none" for="checkout-delivery-01">Самовывоз</label>
+                                    <div class="checkout-radio-card__wrapper">
+                                        <div class="checkout-radio-card__header mb-22px">
+                                            <div class="d-flex justify-content-between mb-12px">
+                                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-12px">
+                                                    <div class="h4 fw-normal text-uppercase mb-0">
+                                                        <span>Самовывоз</span>
+                                                        <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="После выбора этого пункта вы будете перенаправлены на страницу оплаты">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <circle cx="10" cy="10" r="10" fill="#DEE5ED"/>
+                                                                <path d="M9.72599 11.9761C9.72599 11.5823 9.79384 11.2447 9.92954 10.9634C10.0757 10.6821 10.2531 10.4337 10.4619 10.218C10.6811 10.0023 10.9108 9.80075 11.1508 9.61322C11.4014 9.42569 11.6362 9.23816 11.8554 9.05063C12.0746 8.85373 12.2521 8.64276 12.3878 8.41772C12.5235 8.18331 12.5913 7.91139 12.5913 7.60197C12.5913 7.09564 12.3721 6.68308 11.9337 6.36428C11.4953 6.04548 10.8742 5.88608 10.0705 5.88608C9.4024 5.88608 8.82307 5.98453 8.33246 6.18143C7.84186 6.36896 7.42432 6.65026 7.07985 7.02532L6.25 6.46273C6.66754 5.99391 7.20511 5.63291 7.86273 5.37975C8.52035 5.12658 9.28236 5 10.1487 5C10.8794 5 11.511 5.09845 12.0433 5.29536C12.5861 5.49226 13.0037 5.77356 13.2959 6.13924C13.5986 6.50492 13.75 6.94093 13.75 7.44726C13.75 7.85045 13.6769 8.19737 13.5308 8.48804C13.3951 8.76934 13.2176 9.0225 12.9984 9.24754C12.7897 9.4632 12.56 9.66948 12.3095 9.86639C12.0694 10.0539 11.8398 10.2461 11.6206 10.443C11.4014 10.6399 11.2239 10.8603 11.0882 11.1041C10.9525 11.3479 10.8847 11.6385 10.8847 11.9761H9.72599ZM10.3053 15C10.0861 15 9.89301 14.9297 9.72599 14.789C9.56942 14.639 9.49113 14.4655 9.49113 14.2686C9.49113 14.0624 9.56942 13.8936 9.72599 13.7623C9.89301 13.6217 10.0861 13.5513 10.3053 13.5513C10.5454 13.5513 10.7437 13.6217 10.9003 13.7623C11.0569 13.8936 11.1352 14.0624 11.1352 14.2686C11.1352 14.4655 11.0569 14.639 10.9003 14.789C10.7437 14.9297 10.5454 15 10.3053 15Z" fill="#1A1A16"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="checkout-radio-card__status-text text-danger">недоступно для выбора</div>
+                                                </div>
+                                                <svg class="svg-radio flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                                                    <circle cx="11" cy="11.5" r="10.5769" stroke="#ACB2BF" stroke-width="0.846154"/>
+                                                    <circle class="svg-radio__indicator" cx="11" cy="11.5002" r="5.92308" fill="#02378F"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <div class="text-success fw-semibold mb-1">Бесплатно</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column gap-22px">
+                                            <!-- item -->
+                                            <div>
+                                                <!-- Невидимый input -->
+                                                <input class="checkout-radio-btn__radio-input" id="checkout-pickup-01" type="radio" name="checkout-pickup">
+                                                <!-- Кнопка -->
+                                                <label class="checkout-radio-btn" for="checkout-pickup-01">
+                                                    <div class="checkout-radio-btn__body">
+                                                        <div class="d-flex align-items-center gap-12px">
+                                                            <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                                <path d="M26.2836 11.4283C26.2836 18.2854 15.9979 26.2854 15.9979 26.2854C15.9979 26.2854 5.71222 18.2854 5.71222 11.4283C5.71222 5.82601 10.3956 1.14258 15.9979 1.14258C21.6002 1.14258 26.2836 5.82601 26.2836 11.4283Z" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M16.0002 14.8571C17.8937 14.8571 19.4287 13.3221 19.4287 11.4286C19.4287 9.53502 17.8937 8 16.0002 8C14.1066 8 12.5716 9.53502 12.5716 11.4286C12.5716 13.3221 14.1066 14.8571 16.0002 14.8571Z" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M25.3186 22.8574H27.4276L30.8562 30.8574H1.14191L4.57048 22.8574H6.67951" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            <div class="fw-medium">Забрать из магазина</div>
+                                                        </div>
+                                                        <svg class="svg-radio flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                                                            <circle cx="11" cy="11.5" r="10.5769" stroke="#ACB2BF" stroke-width="0.846154"/>
+                                                            <circle class="svg-radio__indicator" cx="11" cy="11.5002" r="5.92308" fill="#02378F"/>
+                                                        </svg>
+                                                    </div>
+                                                </label>
+                                                <!-- Блок текста для десктопа -->
+                                                <div class="d-none d-lg-block mt-3">
+                                                    <p class="fw-medium mb-1">Условия получения заказа со склада</p>
+                                                    <p class="text-muted-light">Заказ пропуска (ФИО + номер документа + гос. номер машины).Ежедневно с 10:00 до 17:00.</p>
+                                                    <p class="fw-medium mb-1">Оплата</p>
+                                                    <p class="text-muted-light">Онлайн, Оплата в фирменном салоне наличным или безналичным способами оплаты в кассе.</p>
+                                                </div>
+                                                <div class="collapse-label">
+                                                    <!-- Блок текста для мобилки -->
+                                                    <div class="d-lg-none mb-3">
+                                                        <p class="fw-medium mb-1">Условия получения заказа со склада</p>
+                                                        <p class="text-muted-light">Заказ пропуска (ФИО + номер документа + гос. номер машины).Ежедневно с 10:00 до 17:00.</p>
+                                                        <p class="fw-medium mb-1">Оплата</p>
+                                                        <p class="text-muted-light">Онлайн, Оплата в фирменном салоне наличным или безналичным способами оплаты в кассе.</p>
+                                                    </div>
+                                                    <!-- Блок скрыт по умолчанию, показывается если выбран пункт -->
+                                                    <div>
+                                                        <p class="h4 ff-title fw-normal mb-12px">МастерДом на Профсоюзной</p>
+                                                        <p class="mb-12px">г. Москва, Нахимовский проспект, д.59а</p>
+                                                        <div class="d-flex flex-wrap gap-2 mb-12px">
+                                                            <div class="item-metro">Профсоюзная, 15 м</div>
+                                                            <div class="item-metro">Профсоюзная, 15 м</div>
+                                                        </div>
+                                                        <div class="d-flex flex-wrap gap-22px mb-12px" style="--bs-link-color-rgb: var(--bs-secondary-rgb); --bs-link-hover-color-rgb: var(--bs-primary-rgb);">
+                                                            <a href="tel:88003503243" class="item-phone">8 (800) 350-32-43</a>
+                                                            <a href="mailto:info@mail.ru" class="item-email">info@mail.ru</a>
+                                                        </div>
+                                                        <div class="text-primary fw-medium">c 18 января</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- item -->
+                                            <div>
+                                                <!-- Невидимый input -->
+                                                <input class="checkout-radio-btn__radio-input" id="checkout-pickup-02" type="radio" name="checkout-pickup">
+                                                <!-- Кнопка -->
+                                                <label class="checkout-radio-btn" for="checkout-pickup-02">
+                                                    <div class="checkout-radio-btn__body">
+                                                        <div class="d-flex align-items-center gap-12px">
+                                                            <svg class="flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                                                <path d="M26.2836 11.4283C26.2836 18.2854 15.9979 26.2854 15.9979 26.2854C15.9979 26.2854 5.71222 18.2854 5.71222 11.4283C5.71222 5.82601 10.3956 1.14258 15.9979 1.14258C21.6002 1.14258 26.2836 5.82601 26.2836 11.4283Z" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M16.0002 14.8571C17.8937 14.8571 19.4287 13.3221 19.4287 11.4286C19.4287 9.53502 17.8937 8 16.0002 8C14.1066 8 12.5716 9.53502 12.5716 11.4286C12.5716 13.3221 14.1066 14.8571 16.0002 14.8571Z" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M25.3186 22.8574H27.4276L30.8562 30.8574H1.14191L4.57048 22.8574H6.67951" stroke="#1A1A16" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            <div class="fw-medium">Забрать со склада</div>
+                                                        </div>
+                                                        <svg class="svg-radio flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                                                            <circle cx="11" cy="11.5" r="10.5769" stroke="#ACB2BF" stroke-width="0.846154"/>
+                                                            <circle class="svg-radio__indicator" cx="11" cy="11.5002" r="5.92308" fill="#02378F"/>
+                                                        </svg>
+                                                    </div>
+                                                </label>
+                                                <!-- Блок текста для десктопа -->
+                                                <div class="d-none d-lg-block mt-3">
+                                                    <p class="fw-medium mb-1">Условия получения заказа со склада</p>
+                                                    <p class="text-muted-light">Заказ пропуска (ФИО + номер документа + гос. номер машины).Ежедневно с 10:00 до 17:00.</p>
+                                                    <p class="fw-medium mb-1">Оплата</p>
+                                                    <p class="text-muted-light">Онлайн, Оплата в фирменном салоне наличным или безналичным способами оплаты в кассе.</p>
+                                                </div>
+                                                <div class="collapse-label">
+                                                    <div class="d-lg-none mb-3">
+                                                        <p class="fw-medium mb-1">Условия получения заказа со склада</p>
+                                                        <p class="text-muted-light">Заказ пропуска (ФИО + номер документа + гос. номер машины).Ежедневно с 10:00 до 17:00.</p>
+                                                        <p class="fw-medium mb-1">Оплата</p>
+                                                        <p class="text-muted-light">Онлайн, Оплата в фирменном салоне наличным или безналичным способами оплаты в кассе.</p>
+                                                    </div>
+                                                    <!-- Блок скрыт по умолчанию, показывается если выбран пункт -->
+                                                    <div>
+                                                        <p class="h4 ff-title fw-normal mb-12px">Адрес</p>
+                                                        <p class="mb-12px">Московская область, Зелёное шоссе, 2</p>
+                                                        <div class="d-flex flex-wrap gap-22px mb-12px" style="--bs-link-color-rgb: var(--bs-secondary-rgb); --bs-link-hover-color-rgb: var(--bs-primary-rgb);">
+                                                            <a href="tel:88003503243" class="item-phone">8 (800) 350-32-43</a>
+                                                        </div>
+                                                        <div class="text-primary fw-medium">c 18 января</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkout-radio-card disabled">
+                                    <input class="checkout-radio-card__radio-input" id="checkout-delivery-02" type="radio" name="checkout-delivery">
+                                    <label class="d-none" for="checkout-delivery-02">Курьерская доставка</label>
+                                    <div class="checkout-radio-card__wrapper">
+                                        <div class="checkout-radio-card__header mb-22px">
+                                            <div class="d-flex justify-content-between mb-12px">
+                                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-12px">
+                                                    <div class="h4 fw-normal text-uppercase mb-0">
+                                                        <span>Курьерская доставка</span>
+                                                    </div>
+                                                    <div class="checkout-radio-card__status-text text-danger">недоступно для выбора</div>
+                                                </div>
+                                                <svg class="svg-radio flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                                                    <circle cx="11" cy="11.5" r="10.5769" stroke="#ACB2BF" stroke-width="0.846154"/>
+                                                    <circle class="svg-radio__indicator" cx="11" cy="11.5002" r="5.92308" fill="#02378F"/>
+                                                </svg>
+                                            </div>
+                                            <div>
+                                                <div class="text-primary fw-semibold mb-1">от 1000 ₽</div>
+                                                <div class="mb-1">от 2-7 дней с 10-18 часов</div>
+                                                <div class="text-muted-light">*точное время лоставки уточняйте у менеждера</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column gap-22px mb-22px">
+                                            <div>
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" placeholder="Адрес*">
+                                                    <label>Адрес*</label>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" placeholder="Индекс*">
+                                                    <label>Индекс*</label>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="row align-items-center" style="--bs-gutter-y: 22px;">
+                                                    <div class="col-6 col-xxl">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" placeholder="Дом">
+                                                            <label>Дом</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-xxl">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" placeholder="Квартира">
+                                                            <label>Квартира</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-xxl">
+                                                        <div class="form-floating">
+                                                            <input type="text" class="form-control" placeholder="Этаж">
+                                                            <label>Этаж</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-xxl">
+                                                        <label class="d-flex gap-2 align-items-center">
+                                                            <input type="checkbox" class="form-checkbox">
+                                                            <span>Нет лифта</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="d-flex flex-wrap gap-32px gap-row-12px">
+                                                    <label class="d-flex gap-2 align-items-center">
+                                                        <input type="checkbox" class="form-checkbox">
+                                                        <span>нужна разгрузка</span>
+                                                    </label>
+                                                    <label class="d-flex gap-2 align-items-center">
+                                                        <input type="checkbox" class="form-checkbox">
+                                                        <span>подьем на этаж</span>
+                                                    </label>
+                                                    <label class="d-flex gap-2 align-items-center">
+                                                        <input type="checkbox" class="form-checkbox">
+                                                        <span>паркинг</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="text-primary fw-semibold">+ 1000 ₽</div>
+                                        </div>
+                                        <div class="d-none d-lg-block" style="max-width: 480px;">
+                                            <div>
+                                                <p class="fw-medium mb-1">Условия получения заказа</p>
+                                                <p>1. На месте, где предполагается разгрузка, необходимо иметь доступ для грузового автомобиля.</p>
+                                                <p>2. Чтобы избежать повторной платной доставки, пожалуйста, будьте на месте для приема товара в указанное время, так как водитель не может ждать более 20 минут из-за его графика.</p>
+                                                <p>3. При расчете стоимости доставки учитывается общий вес и объем товаров.</p>
+                                                <p class="fw-medium mb-1">Оплата</p>
+                                                <p class="text-muted-light">Онлайн, наличными при получении</p>
+                                                <p class="text-primary">*Доставка разных категорий товаров считается по максимальной: обои-свет, плитка-сантехника, крупный формат.</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-lg-none text-end">
+                                            <button type="button" class="btn border-0 p-0">подробнее об условиях</button>
+                                            <!-- <button type="button" class="btn btn-with-collapsing-arrow border-0 p-0 fw-normal collapsed" data-bs-toggle="collapse" data-bs-target="#product-modal-recommend-items" aria-expanded="false">
+                                                <span>Берут вместе</span>
+                                                <span class="svg-arrow">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                        <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    </svg>
+                                                </span>
+                                            </button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Block Item "Способы оплаты" -->
+                    <div>
+                        <div class="h4 mb-22px">Способ оплаты</div>
+                        <div class="row" style="--bs-gutter-y: 22px;">
+                            <div class="col-lg-6">
+                                <div class="checkout-radio-card h-100 disabled">
+                                    <input class="checkout-radio-card__radio-input" id="checkout-payment-01" type="radio" name="checkout-payment">
+                                    <label class="d-none" for="checkout-payment-01">Оплата онлайн</label>
+                                    <div class="checkout-radio-card__wrapper h-100">
+                                        <div class="checkout-radio-card__header mb-12px">
+                                            <div class="d-flex justify-content-between mb-12px">
+                                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-12px">
+                                                    <div class="h4 fw-normal text-uppercase mb-0">
+                                                        <span>Онлайн</span>
+                                                        <span data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="После выбора этого пункта вы будете перенаправлены на страницу оплаты">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                                <circle cx="10" cy="10" r="10" fill="#DEE5ED"/>
+                                                                <path d="M9.72599 11.9761C9.72599 11.5823 9.79384 11.2447 9.92954 10.9634C10.0757 10.6821 10.2531 10.4337 10.4619 10.218C10.6811 10.0023 10.9108 9.80075 11.1508 9.61322C11.4014 9.42569 11.6362 9.23816 11.8554 9.05063C12.0746 8.85373 12.2521 8.64276 12.3878 8.41772C12.5235 8.18331 12.5913 7.91139 12.5913 7.60197C12.5913 7.09564 12.3721 6.68308 11.9337 6.36428C11.4953 6.04548 10.8742 5.88608 10.0705 5.88608C9.4024 5.88608 8.82307 5.98453 8.33246 6.18143C7.84186 6.36896 7.42432 6.65026 7.07985 7.02532L6.25 6.46273C6.66754 5.99391 7.20511 5.63291 7.86273 5.37975C8.52035 5.12658 9.28236 5 10.1487 5C10.8794 5 11.511 5.09845 12.0433 5.29536C12.5861 5.49226 13.0037 5.77356 13.2959 6.13924C13.5986 6.50492 13.75 6.94093 13.75 7.44726C13.75 7.85045 13.6769 8.19737 13.5308 8.48804C13.3951 8.76934 13.2176 9.0225 12.9984 9.24754C12.7897 9.4632 12.56 9.66948 12.3095 9.86639C12.0694 10.0539 11.8398 10.2461 11.6206 10.443C11.4014 10.6399 11.2239 10.8603 11.0882 11.1041C10.9525 11.3479 10.8847 11.6385 10.8847 11.9761H9.72599ZM10.3053 15C10.0861 15 9.89301 14.9297 9.72599 14.789C9.56942 14.639 9.49113 14.4655 9.49113 14.2686C9.49113 14.0624 9.56942 13.8936 9.72599 13.7623C9.89301 13.6217 10.0861 13.5513 10.3053 13.5513C10.5454 13.5513 10.7437 13.6217 10.9003 13.7623C11.0569 13.8936 11.1352 14.0624 11.1352 14.2686C11.1352 14.4655 11.0569 14.639 10.9003 14.789C10.7437 14.9297 10.5454 15 10.3053 15Z" fill="#1A1A16"/>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <div class="checkout-radio-card__status-text text-danger">недоступно для выбора</div>
+                                                </div>
+                                                <svg class="svg-radio flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                                                    <circle cx="11" cy="11.5" r="10.5769" stroke="#ACB2BF" stroke-width="0.846154"/>
+                                                    <circle class="svg-radio__indicator" cx="11" cy="11.5002" r="5.92308" fill="#02378F"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-wrap align-items-center gap-2">
+                                            <img class="img-fluid" src="img/payment-logo-visa.png" alt="">
+                                            <img class="img-fluid" src="img/payment-logo-mc.png" alt="">
+                                            <img class="img-fluid" src="img/payment-logo-mir.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkout-radio-card h-100">
+                                    <input class="checkout-radio-card__radio-input" id="checkout-payment-02" type="radio" name="checkout-payment">
+                                    <label class="d-none" for="checkout-payment-02">Оплата при получении</label>
+                                    <div class="checkout-radio-card__wrapper h-100">
+                                        <div class="checkout-radio-card__header mb-12px">
+                                            <div class="d-flex justify-content-between mb-12px">
+                                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-12px">
+                                                    <div class="h4 fw-normal text-uppercase mb-0">
+                                                        <span>При получении</span>
+                                                    </div>
+                                                    <div class="checkout-radio-card__status-text text-danger">недоступно для выбора</div>
+                                                </div>
+                                                <svg class="svg-radio flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                                                    <circle cx="11" cy="11.5" r="10.5769" stroke="#ACB2BF" stroke-width="0.846154"/>
+                                                    <circle class="svg-radio__indicator" cx="11" cy="11.5002" r="5.92308" fill="#02378F"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <ol class="text-muted-light">
+                                                <li>Оплата в фирменном салоне наличным или безналичным способами оплаты в кассе.</li>
+                                                <li>Наличный расчет курьеру при получении</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Block Item "О заказе" -->
+                    <div>
+                        <div class="h4 mb-22px">О заказе</div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column gap-32px">
+
+                                    <div>
+                                        <table class="table table-profile-orders-summary">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Товары (6)</th>
+                                                    <td>380 200 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Скидки на товары:</th>
+                                                    <td><div class="text-danger">-116 200 ₽</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Сумма НДС:</th>
+                                                    <td>13 867 ₽</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Общий вес:</th>
+                                                    <td>30.973 кг</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Оплата</th>
+                                                    <td>онлайн</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Доставка</th>
+                                                    <td>курьером</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div>
+                                        <div class="text-muted-light fs-6">Итого:</div>
+                                        <div class="h2 text-primary ff-title fw-bold mb-0">560 000 ₽</div>
+                                    </div>
+
+                                    <div>
+                                        <div class="mb-22px">
+                                            <button type="submit" class="btn btn-secondary w-100" style="max-width: 380px;">оформить заказ</button>
+                                        </div>
+        
+                                        <div>
+                                            <label class="d-flex gap-2 align-items-center">
+                                                <input type="checkbox" class="form-checkbox">
+                                                <span>Принимаю условия <a href="#" class="text-decoration-underline">обработки персональных данных</a>.</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')

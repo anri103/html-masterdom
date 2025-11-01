@@ -1,0 +1,357 @@
+@@include('partials/header.html', {
+    "title": "Бренды"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Страница</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row" style="--bs-gutter-y: 2rem;">
+                <div class="col-lg-3">
+                    <div class="d-flex gap-12px flex-column">
+                        <div class="d-flex flex-wrap align-items-center" style="gap: 4px 12px;">
+                            <h1 class="title mb-0">Бренды</h1>
+                            <div class="text-secondary fs-18px">80</div>
+                        </div>
+                        <div class="buyers-info-menu underline-tab-nav scrollable-container">
+                            <div class="scrollable-wrapper">
+                                <div class="scrollable-item"><a href="#" class="nav-link active"><span>Плитка</span></a></div>
+                                <div class="scrollable-item"><a href="#" class="nav-link"><span>Свет</span></a></div>
+                                <div class="scrollable-item"><a href="#" class="nav-link"><span>Обои</span></a></div>
+                                <div class="scrollable-item"><a href="#" class="nav-link"><span>Категория</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+
+                    <div class="d-flex flex-wrap align-items-center justify-content-between gap-22px mb-32px">
+                        <!-- Фильтры -->
+                        <div class="d-flex align-items-center flex-wrap gap-22px">
+                            <div>
+                                <button type="button" class="btn btn-dropdown-arrow fs-16px border-0 p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Страна
+                                    <span class="icon-arrow-down">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-select">
+                                    <li><a class="dropdown-item" href="#">Россия</a></li>
+                                    <li><a class="dropdown-item" href="#">Германия</a></li>
+                                    <li><a class="dropdown-item" href="#">США</a></li>
+                                    <li><a class="dropdown-item" href="#">Китай</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="btn d-inline-flex align-items-center gap-2 border-0 p-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                <path d="M22 6L6.44365 21.5564" stroke="#1A1A16" stroke-width="0.853923" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L21.5564 21.5564" stroke="#1A1A16" stroke-width="0.853923" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Сбросить фильтры</span>
+                        </button>
+                    </div>
+
+                    <div class="glossary-nav">
+
+                        <a href="#" class="glossary-nav__link active">Все</a>
+                        
+                        <a href="#" class="glossary-nav__link disabled">0-9</a>
+
+                        <button type="button" class="glossary-nav__link glossary-group-btn d-lg-none collapsed" data-bs-toggle="collapse" data-bs-target="#glossary-en-letters" aria-expanded="false">A-Z</button>
+
+                        <button type="button" class="glossary-nav__link glossary-group-btn d-lg-none collapsed" data-bs-toggle="collapse" data-bs-target="#glossary-ru-letters" aria-expanded="false">А-Я</button>
+
+                        <div class="collapse d-lg-inline-block" id="glossary-en-letters">
+                            <div class="glossary-nav__group-links">
+                                <a href="#" class="glossary-nav__link">A</a>
+                                <a href="#" class="glossary-nav__link">B</a>
+                                <a href="#" class="glossary-nav__link">C</a>
+                                <a href="#" class="glossary-nav__link">D</a>
+                                <a href="#" class="glossary-nav__link">E</a>
+                                <a href="#" class="glossary-nav__link">F</a>
+                                <a href="#" class="glossary-nav__link">G</a>
+                                <a href="#" class="glossary-nav__link">H</a>
+                                <a href="#" class="glossary-nav__link">I</a>
+                                <a href="#" class="glossary-nav__link disabled">J</a>
+                                <a href="#" class="glossary-nav__link">K</a>
+                                <a href="#" class="glossary-nav__link">L</a>
+                                <a href="#" class="glossary-nav__link">M</a>
+                                <a href="#" class="glossary-nav__link">N</a>
+                                <a href="#" class="glossary-nav__link disabled">O</a>
+                                <a href="#" class="glossary-nav__link">P</a>
+                                <a href="#" class="glossary-nav__link disabled">Q</a>
+                                <a href="#" class="glossary-nav__link">R</a>
+                                <a href="#" class="glossary-nav__link">S</a>
+                                <a href="#" class="glossary-nav__link disabled">T</a>
+                                <a href="#" class="glossary-nav__link disabled">U</a>
+                                <a href="#" class="glossary-nav__link">V</a>
+                                <a href="#" class="glossary-nav__link disabled">W</a>
+                                <a href="#" class="glossary-nav__link disabled">X</a>
+                                <a href="#" class="glossary-nav__link disabled">Y</a>
+                                <a href="#" class="glossary-nav__link">Z</a>
+                            </div>
+                        </div>
+
+                        <div class="collapse d-lg-inline-block" id="glossary-ru-letters">
+                            <div class="glossary-nav__group-links">
+                                <a href="#" class="glossary-nav__link">А</a>
+                                <a href="#" class="glossary-nav__link disabled">Б</a>
+                                <a href="#" class="glossary-nav__link disabled">В</a>
+                                <a href="#" class="glossary-nav__link disabled">Г</a>
+                                <a href="#" class="glossary-nav__link disabled">Д</a>
+                                <a href="#" class="glossary-nav__link disabled">Е</a>
+                                <a href="#" class="glossary-nav__link disabled">Ж</a>
+                                <a href="#" class="glossary-nav__link disabled">З</a>
+                                <a href="#" class="glossary-nav__link">И</a>
+                                <a href="#" class="glossary-nav__link disabled">К</a>
+                                <a href="#" class="glossary-nav__link disabled">Л</a>
+                                <a href="#" class="glossary-nav__link disabled">М</a>
+                                <a href="#" class="glossary-nav__link disabled">Н</a>
+                                <a href="#" class="glossary-nav__link disabled">О</a>
+                                <a href="#" class="glossary-nav__link disabled">П</a>
+                                <a href="#" class="glossary-nav__link disabled">Р</a>
+                                <a href="#" class="glossary-nav__link disabled">С</a>
+                                <a href="#" class="glossary-nav__link disabled">Т</a>
+                                <a href="#" class="glossary-nav__link disabled">У</a>
+                                <a href="#" class="glossary-nav__link disabled">Ф</a>
+                                <a href="#" class="glossary-nav__link disabled">Х</a>
+                                <a href="#" class="glossary-nav__link disabled">Ц</a>
+                                <a href="#" class="glossary-nav__link disabled">Ч</a>
+                                <a href="#" class="glossary-nav__link disabled">Ш</a>
+                                <a href="#" class="glossary-nav__link disabled">Щ</a>
+                                <a href="#" class="glossary-nav__link disabled">Э</a>
+                                <a href="#" class="glossary-nav__link disabled">Ю</a>
+                                <a href="#" class="glossary-nav__link disabled">Я</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="glossary-brands-wrapper">
+                        <!-- Буква -->
+                        <div class="glossary-brands-item">
+                            <div class="glossary-brand-title" id="glossary-brand-title-en-01">A</div>
+                            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4" style="--bs-gutter-y: 2rem;">
+                                <div class="col">
+                                    <div class="card glossary-brand-card">
+                                        <div class="card-img-wrapper">
+                                            <img class="img-fluid" src="img/card-brand-01.png" alt="Бренд Aparici страна">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="card-title">
+                                                <a href="#" class="link-body stretched-link">Aparici</a>
+                                            </div>
+                                            <div class="card-country">страна</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card glossary-brand-card">
+                                        <div class="card-img-wrapper">
+                                            <img class="img-fluid" src="img/card-brand-02.png" alt="Бренд Atlas Concorde страна">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="card-title">
+                                                <a href="#" class="link-body stretched-link">Atlas Concorde</a>
+                                            </div>
+                                            <div class="card-country">страна</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card glossary-brand-card">
+                                        <div class="card-img-wrapper">
+                                            <img class="img-fluid" src="img/card-brand-03.png" alt="Бренд Azteca страна">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="card-title">
+                                                <a href="#" class="link-body stretched-link">Azteca</a>
+                                            </div>
+                                            <div class="card-country">страна</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Буква -->
+                        <div class="glossary-brands-item">
+                            <div class="glossary-brand-title" id="glossary-brand-title-en-02">B</div>
+                            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4" style="--bs-gutter-y: 2rem;">
+                                <div class="col">
+                                    <div class="card glossary-brand-card">
+                                        <div class="card-img-wrapper">
+                                            <img class="img-fluid" src="img/card-brand-04.png" alt="Бренд Butech страна">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="card-title">
+                                                <a href="#" class="link-body stretched-link">Butech</a>
+                                            </div>
+                                            <div class="card-country">страна</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Буква -->
+                        <div class="glossary-brands-item">
+                            <div class="glossary-brand-title" id="glossary-brand-title-en-03">C</div>
+                            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4" style="--bs-gutter-y: 2rem;">
+                                <div class="col">
+                                    <div class="card glossary-brand-card">
+                                        <div class="card-img-wrapper">
+                                            <img class="img-fluid" src="img/card-brand-05.png" alt="Бренд Casa Dolce Casa страна">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="card-title">
+                                                <a href="#" class="link-body stretched-link">Casa Dolce Casa</a>
+                                            </div>
+                                            <div class="card-country">страна</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card glossary-brand-card">
+                                        <div class="card-img-wrapper">
+                                            <img class="img-fluid" src="img/card-brand-06.png" alt="Бренд Cedit страна">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="card-title">
+                                                <a href="#" class="link-body stretched-link">Cedit</a>
+                                            </div>
+                                            <div class="card-country">страна</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card glossary-brand-card">
+                                        <div class="card-img-wrapper">
+                                            <img class="img-fluid" src="img/card-brand-05.png" alt="Бренд Casa Dolce Casa страна">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="card-title">
+                                                <a href="#" class="link-body stretched-link">Casa Dolce Casa</a>
+                                            </div>
+                                            <div class="card-country">страна</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card glossary-brand-card">
+                                        <div class="card-img-wrapper">
+                                            <img class="img-fluid" src="img/card-brand-06.png" alt="Бренд Cedit страна">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="card-title">
+                                                <a href="#" class="link-body stretched-link">Cedit</a>
+                                            </div>
+                                            <div class="card-country">страна</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card glossary-brand-card">
+                                        <div class="card-img-wrapper">
+                                            <img class="img-fluid" src="img/card-brand-05.png" alt="Бренд Casa Dolce Casa страна">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="card-title">
+                                                <a href="#" class="link-body stretched-link">Casa Dolce Casa</a>
+                                            </div>
+                                            <div class="card-country">страна</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card glossary-brand-card">
+                                        <div class="card-img-wrapper">
+                                            <img class="img-fluid" src="img/card-brand-06.png" alt="Бренд Cedit страна">
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="card-title">
+                                                <a href="#" class="link-body stretched-link">Cedit</a>
+                                            </div>
+                                            <div class="card-country">страна</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Пагинация -->
+                    <div class="d-flex justify-content-center mt-5">
+                        <nav class="pagination-nav">
+                            <ul class="pagination-list">
+                                <li>
+                                    <a href="#" class="pagination-item prev">
+                                        <span class="me-2">
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-back"></use>
+                                            </svg>
+                                        </span>
+                                        Назад
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item active">1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item">2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item">3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item">4</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item">5</a>
+                                </li>
+                                <li>
+                                    <span class="pagination-item dots">...</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item">10</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="pagination-item next">
+                                        Дальше
+                                        <span class="ms-2">
+                                            <svg width="13" height="22">
+                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')

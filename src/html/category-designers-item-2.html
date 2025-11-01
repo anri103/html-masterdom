@@ -1,0 +1,428 @@
+@@include('partials/header.html', {
+    "title": "Дизайнер 2"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Дизайнеры</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Жанна Герасимова</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Основная информация о дизайнере -->
+    <section class="section">
+        <div class="container">
+            <div class="row" style="--bs-gutter-y: 2rem;">
+                <div class="col-lg-3">
+                    <div class="designer-avatar-wrapper">
+                        <img class="img-fluid w-100" src="img/designer-page-avatar.webp" alt="Жанна Герасимова">
+                    </div>
+                </div>
+                <div class="col-lg-9 ps-lg-4">
+                    <div class="mt-3 mb-12px">
+                        <div class="h1 title mb-12px">Жанна Герасимова</div>
+                        <div class="text-secondary">6 проектов</div>
+                    </div>
+                    <div class="hide-text-block mb-32px" id="hide-text-block-01">
+                        <div class="hide-text-content js-collapsed fs-24px mb-32px">
+                            <p>Жанна Герасимова — талантливый дизайнер интерьера, чьи проекты демонстрируют гармонию стиля, комфорта и функциональности. Её работы отражают тонкое чувство эстетики и внимание к деталям, придавая каждому пространству индивидуальный характер.<br>
+                            Жанна известна своим умением сочетать современные тренды с классическими мотивами, создавая интерьеры, которые выглядят стильно и живо, но остаются практичными и удобными для жизни.</p>
+                        </div>
+                        <button type="button" class="toggle-hide-text btn border-0 p-0" data-target="hide-text-block-01">
+                            читать
+                            <svg class="svg-inline v-middle" xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+                                <path d="M1 0.5L5.12621 5.31382C5.17452 5.37267 5.23254 5.41951 5.29679 5.45151C5.36103 5.4835 5.43016 5.5 5.50001 5.5C5.56986 5.5 5.639 5.4835 5.70323 5.45151C5.76747 5.41951 5.8255 5.37267 5.87382 5.31382L10 0.499999" stroke="#1A1A16" stroke-width="0.833418" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3 fs-20px mb-32px" style="--bs-link-color-rgb: var(--bs-secondary-rgb); --bs-link-hover-color-rgb: var(--bs-primary-rgb);">
+                        <a href="tel:88003503243" class="item-phone">8 (800) 350-32-43</a>
+                        <a href="mailto:info@mail.ru" class="item-email">info@mail.ru</a>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3 align-items-center">
+                        <a href="#" class="btn btn-secondary d-flex align-items-center justify-content-center rounded-circle border-0 p-0" style="width: 55px; height: 55px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.7068 0.29268C27.8439 0.429644 27.9382 0.603496 27.9783 0.793092C28.0185 0.982688 28.0026 1.17986 27.9328 1.36062L17.9341 27.3591C17.8633 27.5431 17.7397 27.702 17.5789 27.816C17.4181 27.9299 17.2272 27.9938 17.0301 27.9996C16.8331 28.0053 16.6388 27.9528 16.4716 27.8484C16.3044 27.7441 16.1717 27.5926 16.0903 27.4131L11.9088 18.2136L18.06 12.06C18.325 11.7757 18.4692 11.3996 18.4623 11.011C18.4555 10.6224 18.2981 10.2517 18.0233 9.97688C17.7485 9.70207 17.3778 9.54465 16.9892 9.5378C16.6007 9.53094 16.2246 9.67518 15.9403 9.94012L9.78712 16.0918L0.58832 11.912C0.408277 11.8307 0.256357 11.6979 0.151733 11.5303C0.0471084 11.3627 -0.00553029 11.1679 0.000459909 10.9704C0.0064501 10.7729 0.0708007 10.5816 0.18539 10.4207C0.29998 10.2598 0.459672 10.1364 0.644313 10.0661L26.6409 0.0666934C26.8214 -0.0027536 27.0182 -0.0183678 27.2073 0.0217423C27.3965 0.0618525 27.57 0.155966 27.7068 0.29268Z" fill="#474A51"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="btn btn-secondary d-flex align-items-center justify-content-center rounded-circle border-0 p-0" style="width: 55px; height: 55px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4424 0.572741C7.62796 1.38807 5.12585 3.02981 3.26291 5.28352C1.39996 7.53723 0.262814 10.2981 0 13.2055H6.65519C7.04101 8.78137 8.32898 4.48209 10.4403 0.57067L10.4424 0.572741ZM6.65519 15.7946H0C0.262265 18.7022 1.39893 21.4633 3.2615 23.7174C5.12408 25.9715 7.62596 27.6137 10.4403 28.4295C8.32898 24.5181 7.04101 20.2188 6.65519 15.7946ZM13.7762 28.9825C11.2531 25.0004 9.70701 20.4825 9.2632 15.7946H19.7347C19.2909 20.4825 17.7448 25.0004 15.2217 28.9825C14.7401 29.0058 14.2578 29.0058 13.7762 28.9825ZM18.5597 28.4274C21.3737 27.6117 23.8754 25.9698 25.7379 23.7162C27.6005 21.4625 28.7373 18.7018 29 15.7946H22.3448C21.959 20.2188 20.671 24.5181 18.5597 28.4295V28.4274ZM22.3448 13.2055H29C28.7377 10.298 27.6011 7.53685 25.7385 5.28277C23.8759 3.02869 21.374 1.38648 18.5597 0.57067C20.6711 4.48207 21.959 8.78136 22.3448 13.2055ZM13.7762 0.0176357C14.2585 -0.00587857 14.7415 -0.00587857 15.2238 0.0176357C17.7462 3.99991 19.2915 8.51781 19.7347 13.2055H9.26528C9.71658 8.48921 11.2681 3.96758 13.7783 0.0176357H13.7762Z" fill="#474A51"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="btn btn-secondary d-flex align-items-center justify-content-center rounded-circle border-0 p-0" style="width: 55px; height: 55px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9712 0.00538351C9.84743 0.145249 7.01556 1.26994 4.63776 3.31504C2.40392 5.23641 0.820116 7.95715 0.251815 10.8497C0.057179 11.8403 -0.00180965 12.4688 4.20062e-05 13.5339C0.00369242 15.7063 0.449678 17.5905 1.42064 19.5357C1.63114 19.9574 1.9728 20.5621 2.17987 20.8795C2.55639 21.4566 2.55639 21.4566 1.73002 23.913C1.27547 25.264 0.914498 26.3802 0.927777 26.3935C0.941056 26.4068 2.10146 26.0498 3.50645 25.6001C6.061 24.7827 6.061 24.7827 6.48736 25.0501C8.03868 26.0231 10.0667 26.7131 12.0444 26.9409C12.7232 27.0191 14.2751 27.0198 14.9552 26.9424C19.9838 26.3696 24.213 23.1388 26.086 18.4392C26.497 17.408 26.8055 16.1545 26.9418 14.9616C27.0194 14.2819 27.0194 12.733 26.9418 12.0533C26.4162 7.45347 23.6734 3.51106 19.5537 1.43392C17.7687 0.533911 15.9639 0.0814238 13.8706 0.00919082C13.5651 -0.00138503 13.1604 -0.00307716 12.9712 0.00538351ZM9.23427 6.23017C9.33029 6.27025 9.45742 6.36474 9.51678 6.4402C9.66116 6.62364 11.0175 9.8855 11.0523 10.1328C11.091 10.4083 10.9132 10.745 10.4614 11.2518C9.60683 12.2105 9.5972 12.2431 9.98187 12.8667C11.2188 14.872 13.1229 16.5078 15.0754 17.2427C15.8205 17.5232 15.9471 17.4415 16.9891 16.0086C17.5197 15.2791 17.7323 15.2442 18.7648 15.7172C19.1428 15.8904 19.9252 16.2655 20.5036 16.5508C21.4726 17.0288 21.5614 17.0843 21.6339 17.258C21.7299 17.4875 21.6935 18.0186 21.5423 18.5955C21.3719 19.2461 21.2422 19.4772 20.8058 19.909C20.4655 20.2456 20.3059 20.3556 19.7946 20.6059C19.0167 20.9867 18.6062 21.0903 17.8914 21.0865C17.0599 21.082 16.1157 20.8306 14.3468 20.1429C11.776 19.1433 9.51747 17.2379 7.39081 14.2742C5.75405 11.9932 5.28151 10.2293 5.8397 8.48393C6.17099 7.44813 6.93282 6.51 7.63338 6.27522C8.04424 6.13752 8.95134 6.11198 9.23427 6.23017Z" fill="#474A51"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Дизайн-проекты -->
+    <section class="section">
+        <div class="container">
+            <p class="h1 title fw-normal mb-32px">Дизайн-проекты</p>
+            <!-- Навигация табы -->
+            <div class="underline-tab-nav scrollable-container mb-22px" role="tablist" style="--underline-tab-space-between: 22px;">
+                <div class="scrollable-wrapper">
+                    <div class="scrollable-item">
+                        <button type="button" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-designer-work-01" role="tab" aria-selected="true"><span>Кухня</span></button>
+                    </div>
+                    <div class="scrollable-item">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-designer-work-02" role="tab" aria-selected="false"><span>Гостинная</span></button>
+                    </div>
+                    <div class="scrollable-item">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-designer-work-01" role="tab" aria-selected="false"><span>Ванная</span></button>
+                    </div>
+                    <div class="scrollable-item">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-designer-work-02" role="tab" aria-selected="false"><span>Прихожая</span></button>
+                    </div>
+                    <div class="scrollable-item">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-designer-work-01" role="tab" aria-selected="false"><span>Гараж, улица</span></button>
+                    </div>
+                    <div class="scrollable-item">
+                        <button type="button" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-designer-work-02" role="tab" aria-selected="false"><span>Гостиницы</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <!-- Вкладка 01 -->
+                <div class="tab-pane fade show active" id="tab-designer-work-01" role="tabpanel" tabindex="0">
+                    <div class="row gy-3 row-cols-1 row-cols-lg-3">
+                        <div class="col">
+                            <div class="card card-ready-made-solutions">
+                                <div class="card-img-wrapper">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                    <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-ready-made-solutions">
+                                <div class="card-img-wrapper">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                    <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-ready-made-solutions">
+                                <div class="card-img-wrapper">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                    <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-ready-made-solutions">
+                                <div class="card-img-wrapper">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                    <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Вкладка 02 -->
+                <div class="tab-pane fade" id="tab-designer-work-02" role="tabpanel" tabindex="0">
+                    <div class="row gy-3 row-cols-1 row-cols-lg-3">
+                        <div class="col">
+                            <div class="card card-ready-made-solutions">
+                                <div class="card-img-wrapper">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        <a href="#">Дизайн интерьера кухни</a>
+                                    </p>
+                                    <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-ready-made-solutions">
+                                <div class="card-img-wrapper">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        <a href="#">Дизайн интерьера кухни</a>
+                                    </p>
+                                    <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-ready-made-solutions">
+                                <div class="card-img-wrapper">
+                                    <a href="#">
+                                        <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title">
+                                        <a href="#">Дизайн интерьера кухни</a>
+                                    </p>
+                                    <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                    <a href="#" class="btn border-0 p-0">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- Похожие решения -->
+    <section class="section section-slider-featured-collections">
+        <div class="container">
+            <p class="h1 title fw-normal mb-32px">Похожие решения</p>
+            <div class="swiper swiper-with-scrollbar swiperReadyMadeSolutions">
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card-ready-made-solutions">
+                            <div class="card-top position-relative">
+                                <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
+                                <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                data-bs-content="
+                                <div class='d-flex gap-3 flex-column'>
+                                <div class='popover-title'>
+                                    <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                </div>
+                                <div class='text-muted-light'>60x120</div>
+                                <div class='d-flex align-items-center justify-content-between'>
+                                    <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                    <a href='#' class='svg-long-arrow'></a>
+                                </div>
+                                </div>"
+                                style="top: 25%; left: 25%;"></button>
+                                <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                data-bs-content="
+                                <div class='d-flex gap-3 flex-column'>
+                                <div class='popover-title'>
+                                    <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                </div>
+                                <div class='text-muted-light'>60x120</div>
+                                <div class='d-flex align-items-center justify-content-between'>
+                                    <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                    <a href='#' class='svg-long-arrow'></a>
+                                </div>
+                                </div>"
+                                style="top: 70%; left: 15%;"></button>
+                                <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                <a href="#" class="btn border-0 p-0">
+                                    подробнее
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                                        <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-ready-made-solutions">
+                            <div class="card-top position-relative">
+                                <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                data-bs-content="
+                                <div class='d-flex gap-3 flex-column'>
+                                <div class='popover-title'>
+                                    <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                </div>
+                                <div class='text-muted-light'>60x120</div>
+                                <div class='d-flex align-items-center justify-content-between'>
+                                    <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                    <a href='#' class='svg-long-arrow'></a>
+                                </div>
+                                </div>"
+                                style="top: 48%; left: 82%;"></button>
+                                <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                data-bs-content="
+                                <div class='d-flex gap-3 flex-column'>
+                                <div class='popover-title'>
+                                    <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                </div>
+                                <div class='text-muted-light'>60x120</div>
+                                <div class='d-flex align-items-center justify-content-between'>
+                                    <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                    <a href='#' class='svg-long-arrow'></a>
+                                </div>
+                                </div>"
+                                style="top: 77%; left: 72%;"></button>
+                                <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                <a href="#" class="btn border-0 p-0">
+                                    подробнее
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                                        <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-ready-made-solutions">
+                            <div class="card-top position-relative">
+                                <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="">
+                                <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                data-bs-content="
+                                <div class='d-flex gap-3 flex-column'>
+                                <div class='popover-title'>
+                                    <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                </div>
+                                <div class='text-muted-light'>60x120</div>
+                                <div class='d-flex align-items-center justify-content-between'>
+                                    <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                    <a href='#' class='svg-long-arrow'></a>
+                                </div>
+                                </div>"
+                                style="top: 48%; left: 82%;"></button>
+                                <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                data-bs-content="
+                                <div class='d-flex gap-3 flex-column'>
+                                <div class='popover-title'>
+                                    <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                </div>
+                                <div class='text-muted-light'>60x120</div>
+                                <div class='d-flex align-items-center justify-content-between'>
+                                    <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                    <a href='#' class='svg-long-arrow'></a>
+                                </div>
+                                </div>"
+                                style="top: 77%; left: 72%;"></button>
+                                <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                <a href="#" class="btn border-0 p-0">
+                                    подробнее
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                                        <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-ready-made-solutions">
+                            <div class="card-top position-relative">
+                                <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="">
+                                <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                data-bs-content="
+                                <div class='d-flex gap-3 flex-column'>
+                                <div class='popover-title'>
+                                    <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                </div>
+                                <div class='text-muted-light'>60x120</div>
+                                <div class='d-flex align-items-center justify-content-between'>
+                                    <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                    <a href='#' class='svg-long-arrow'></a>
+                                </div>
+                                </div>"
+                                style="top: 25%; left: 25%;"></button>
+                                <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
+                                data-bs-content="
+                                <div class='d-flex gap-3 flex-column'>
+                                <div class='popover-title'>
+                                    <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
+                                </div>
+                                <div class='text-muted-light'>60x120</div>
+                                <div class='d-flex align-items-center justify-content-between'>
+                                    <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
+                                    <a href='#' class='svg-long-arrow'></a>
+                                </div>
+                                </div>"
+                                style="top: 70%; left: 15%;"></button>
+                                <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title"><a href="#">Дизайн интерьера кухни</a></p>
+                                <div class="card-short-descr text-secondary" style="margin-bottom: 12px;">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
+                                <a href="#" class="btn border-0 p-0">
+                                    подробнее
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
+                                        <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Навигация слайдера -->
+                <div class="swiperReadyMadeSolutions-next swiper-btn-brown swiper-btn-next" style="top: 235px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
+                        <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                    </svg>
+                </div>
+                <!-- Навигация слайдера -->
+                <div class="swiperReadyMadeSolutions-prev swiper-btn-brown swiper-btn-prev" style="top: 235px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
+                        <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')

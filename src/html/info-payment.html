@@ -1,0 +1,92 @@
+@@include('partials/header.html', {
+    "title": "Инфо: Оплата"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Страница</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- section-page-info -->
+    <section class="section section-page-info">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-3">
+                    <div class="d-flex gap-32px flex-column">
+                        <div>
+                            <h1 class="title fw-normal mb-12px">Покупателям</h1>
+                            <div class="buyers-info-menu underline-tab-nav scrollable-container">
+                                <div class="scrollable-wrapper">
+                                    <div class="scrollable-item"><a href="#" class="nav-link active"><span>Доставка и самовывоз</span></a></div>
+                                    <div class="scrollable-item"><a href="#" class="nav-link"><span>Возврат</span></a></div>
+                                    <div class="scrollable-item"><a href="#" class="nav-link"><span>Оплата</span></a></div>
+                                    <div class="scrollable-item"><a href="#" class="nav-link"><span>Вопрос-ответ</span></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="d-flex gap-32px flex-column" style="max-width: 830px;">
+                        <!-- Блок "Способы оплаты" -->
+                        <div style="max-width: 600px;">
+                            <p class="h2 fw-normal text-uppercase mb-22px">Способы оплаты</p>
+                            <div>
+                                <p class="h4 fw-normal">Наш интернет-магазин предлагает несколько вариантов оплаты:</p>
+                                <div class="text-secondary">
+                                    <ul>
+                                        <li>Наличный расчет курьеру при получении</li>
+                                        <li>Оплата в фирменном салоне наличным или безналичным способами оплаты в кассе</li>
+                                        <li>Оплата по выставленному счету онлайн на сайте</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="h4 fw-semibold">Как устроена онлайн-оплата на сайте</p>
+                            <div>
+                                <p>Оплата пластиковыми картами на нашем сайте осуществляется через платежную систему ASSIST.</p>
+                                <p>В системе ASSIST безопасность платежей обеспечивается использованием SSL протокола для передачи конфиденциальной информации от клиента на сервер системы ASSIST для дальнейшей обработки.</p>
+                                <p>При оплате заказа банковской картой, обработка платежа (включая ввод номера карты) происходит на защищенной странице процессинговой системы, которая прошла международную сертификацию. Это значит, что Ваши конфиденциальные данные (реквизиты карты, регистрационные данные и др.) не поступают в интернет-магазин, их обработка полностью защищена и никто, в том числе наш интернет-магазин, не может получить персональные и банковские данные клиента.</p>
+                                <p>При работе с карточными данными применяется стандарт защиты информации, разработанный международными платёжными системами <b>Visa и MasterCard - Payment Card Industry Data Security Standard (PCI DSS)</b>, что обеспечивает безопасную обработку реквизитов Банковской карты Держателя. Применяемая технология передачи данных гарантирует безопасность по сделкам с Банковскими картами путем использования протоколов Secure Sockets Layer (SSL), Verified by Visa, Secure Code, и закрытых банковских сетей, имеющих высшую степень защиты.</p>
+                                <p>Перед совершением покупки посредством электронного платежа через систему ASSIST предлагаем Вам ознакомиться с условиями договора-оферты.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="h4 fw-semibold">Реквизиты</p>
+                            <div>
+                                <p>ИП Цыпкин Александр Владимирович<br>
+                                    Юр. адрес: 109144, Москва г,<br> Новочеркасский б-р, дом № 30, квартира 2<br>
+                                    Факт. адрес : 109144, Москва г,<br> Новочеркасский б-р, дом № 30, квартира 2<br>
+                                    ОГРНИП: 317774600218206<br>
+                                    ИНН 772318769317 / ОКПО 0113336209<br>
+                                    р/с 40802810900000024616<br>
+                                    к/с 30101810200000000700<br>
+                                    в АО "РАЙФФАЙЗЕНБАНК" г.Москва<br>
+                                    БИК 044525700<br>
+                                    Тел. +7 (925) 356-19-10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')

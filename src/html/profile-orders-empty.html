@@ -1,0 +1,56 @@
+@@include('partials/header.html', {
+    "title": "Заказы (пусто)"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Страница</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row" style="--bs-gutter-y: 2rem;">
+                <div class="col-lg-3">
+                    <div class="d-flex gap-12px flex-column">
+                        <div class="d-flex flex-column gap-2">
+                            <h1 class="title mb-0">Личный кабинет</h1>
+                            <div class="text-secondary fs-18px">профиль создан 12.02.2024</div>
+                        </div>
+                        <div class="buyers-info-menu underline-tab-nav scrollable-container">
+                            <div class="scrollable-wrapper">
+                                <div class="scrollable-item"><a href="#" class="nav-link active"><span>Личные данные</span></a></div>
+                                <div class="scrollable-item"><a href="#" class="nav-link"><span>Заказы</span></a></div>
+                                <div class="scrollable-item"><a href="#" class="nav-link"><span>История заказов</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+
+                    <div style="max-width: 600px; padding-top: 44px;">
+                        <div class="h4 mb-32px">Вы не оформляли еще заказ.</div>
+                        <a href="#" class="btn btn-outline w-100" style="max-width: 470px;">перейти к покупкам</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')

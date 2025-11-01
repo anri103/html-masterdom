@@ -1,0 +1,26 @@
+/* BREADCRUMBS ============================ */
+
+.section-breadcrumbs {
+    margin-bottom: 22px;
+}
+
+.section-breadcrumbs .breadcrumb {
+    --bs-breadcrumb-margin-bottom: 0;
+    --bs-breadcrumb-divider: '|';
+    --bs-breadcrumb-item-padding-x: 4px;
+    --bs-breadcrumb-divider-color: #ACB2BF;
+    --bs-breadcrumb-item-active-color: var(--bs-secondary);
+    --bs-link-color-rgb: 172,178,191;
+    --bs-link-hover-color-rgb: 2,55,143;
+}
+
+.section-page-title {
+    margin-bottom: 38px;
+}
+
+@media (min-width: 992px) {
+
+    .section-page-title {
+        margin-bottom: 42px;
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "html-masterdom",
+  "version": "1.0.0",
+  "description": "The project is an adaptive HTML template for 1C-Bitrix CMS, built with Bootstrap 5. It is designed for an online store, featuring a customer account section and a modern, functional design, optimized for seamless display across all devices.",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "clean": "gulp clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anri103/html-masterdom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anri103/html-masterdom/issues"
+  },
+  "homepage": "https://github.com/anri103/html-masterdom#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.58.3"
+  }
+}

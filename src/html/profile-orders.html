@@ -1,0 +1,282 @@
+@@include('partials/header.html', {
+    "title": "Заказы"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Страница</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row" style="--bs-gutter-y: 2rem;">
+                <div class="col-lg-3">
+                    <div class="d-flex gap-12px flex-column">
+                        <div class="d-flex flex-column gap-2">
+                            <h1 class="title mb-0">Личный кабинет</h1>
+                            <div class="text-secondary fs-18px">профиль создан 12.02.2024</div>
+                        </div>
+                        <div class="buyers-info-menu underline-tab-nav scrollable-container">
+                            <div class="scrollable-wrapper">
+                                <div class="scrollable-item"><a href="#" class="nav-link active"><span>Личные данные</span></a></div>
+                                <div class="scrollable-item"><a href="#" class="nav-link"><span>Заказы</span></a></div>
+                                <div class="scrollable-item"><a href="#" class="nav-link"><span>История заказов</span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+
+                    <!-- Фильтры -->
+                    <div class="d-flex flex-wrap align-items-center justify-content-between gap-22px mb-32px">
+                        <div class="d-flex align-items-center flex-wrap gap-22px">
+                            <div>
+                                <button type="button" class="btn btn-dropdown-arrow fs-16px border-0 p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Статус заказа
+                                    <span class="icon-arrow-down">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-select">
+                                    <li><a class="dropdown-item" href="#">Ожидает подтверждения</a></li>
+                                    <li><a class="dropdown-item" href="#">Подтвержден</a></li>
+                                    <li><a class="dropdown-item" href="#">Собран</a></li>
+                                    <li><a class="dropdown-item" href="#">В доставке</a></li>
+                                    <li><a class="dropdown-item" href="#">Доставлен</a></li>
+                                    <li><a class="dropdown-item" href="#">Отменен</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-dropdown-arrow fs-16px border-0 p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Статус оплаты
+                                    <span class="icon-arrow-down">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-select">
+                                    <li><a class="dropdown-item" href="#">Оплачен</a></li>
+                                    <li><a class="dropdown-item" href="#">Не оплачен</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-dropdown-arrow fs-16px border-0 p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                    По умолчанию
+                                    <span class="icon-arrow-down">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-select">
+                                    <li><a class="dropdown-item" href="#">По умолчанию</a></li>
+                                    <li><a class="dropdown-item" href="#">По умолчанию</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button type="button" class="btn d-inline-flex align-items-center gap-2 border-0 p-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                                <path d="M22 6L6.44365 21.5564" stroke="#1A1A16" stroke-width="0.853923" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L21.5564 21.5564" stroke="#1A1A16" stroke-width="0.853923" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Сбросить фильтры</span>
+                        </button>
+                    </div>
+
+                    <!-- Заказы -->
+                    <div style="max-width: 850px;">
+                        <div class="d-flex flex-column gap-32px">
+                            <!-- item -->
+                            <div class="card profile-order-card">
+                                <div class="card-body">
+                                    <div class="profile-order-card__date">от 21.01.2024</div>
+                                    <div class="profile-order-card__heading">
+                                        <div class="profile-order-card__title title"><a href="#">Заказ №780</a></div>
+                                        <div class="profile-order-card__status text-primary">ожидает подтверждения</div>
+                                    </div>
+                                    <div class="profile-order-card__amount">360 000 ₽</div>
+                                    <div class="profile-order-card__pay-status text-danger">не оплачен</div>
+                                    <div class="profile-order-card__status-descr">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <circle cx="10" cy="10" r="10" fill="#DEE5ED"/>
+                                            <path d="M9.72599 11.9761C9.72599 11.5823 9.79384 11.2447 9.92954 10.9634C10.0757 10.6821 10.2531 10.4337 10.4619 10.218C10.6811 10.0023 10.9108 9.80075 11.1508 9.61322C11.4014 9.42569 11.6362 9.23816 11.8554 9.05063C12.0746 8.85373 12.2521 8.64276 12.3878 8.41772C12.5235 8.18331 12.5913 7.91139 12.5913 7.60197C12.5913 7.09564 12.3721 6.68308 11.9337 6.36428C11.4953 6.04548 10.8742 5.88608 10.0705 5.88608C9.4024 5.88608 8.82307 5.98453 8.33246 6.18143C7.84186 6.36896 7.42432 6.65026 7.07985 7.02532L6.25 6.46273C6.66754 5.99391 7.20511 5.63291 7.86273 5.37975C8.52035 5.12658 9.28236 5 10.1487 5C10.8794 5 11.511 5.09845 12.0433 5.29536C12.5861 5.49226 13.0037 5.77356 13.2959 6.13924C13.5986 6.50492 13.75 6.94093 13.75 7.44726C13.75 7.85045 13.6769 8.19737 13.5308 8.48804C13.3951 8.76934 13.2176 9.0225 12.9984 9.24754C12.7897 9.4632 12.56 9.66948 12.3095 9.86639C12.0694 10.0539 11.8398 10.2461 11.6206 10.443C11.4014 10.6399 11.2239 10.8603 11.0882 11.1041C10.9525 11.3479 10.8847 11.6385 10.8847 11.9761H9.72599ZM10.3053 15C10.0861 15 9.89301 14.9297 9.72599 14.789C9.56942 14.639 9.49113 14.4655 9.49113 14.2686C9.49113 14.0624 9.56942 13.8936 9.72599 13.7623C9.89301 13.6217 10.0861 13.5513 10.3053 13.5513C10.5454 13.5513 10.7437 13.6217 10.9003 13.7623C11.0569 13.8936 11.1352 14.0624 11.1352 14.2686C11.1352 14.4655 11.0569 14.639 10.9003 14.789C10.7437 14.9297 10.5454 15 10.3053 15Z" fill="#1A1A16"/>
+                                        </svg>
+                                        <div>Принят,менеджер свзяжется с вами в крочатйшие<br> сроки для подтверждения ассортимента заказа</div>
+                                    </div>
+                                    <div class="profile-order-card__goods-list">
+                                        <div class="swiper swiper-profile-order-card-goods-list">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-01.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-02.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-03.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-04.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-03.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-04.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-order-card__btn-group">
+                                        <a href="#" class="btn btn-secondary">оплатить заказ</a>
+                                        <a href="#" class="btn btn-outline">повторить заказ</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="card profile-order-card">
+                                <div class="card-body">
+                                    <div class="profile-order-card__date">от 21.01.2024</div>
+                                    <div class="profile-order-card__heading">
+                                        <div class="profile-order-card__title title"><a href="#">Заказ №780</a></div>
+                                        <div class="profile-order-card__status text-primary">ожидает подтверждения</div>
+                                    </div>
+                                    <div class="profile-order-card__amount">360 000 ₽</div>
+                                    <div class="profile-order-card__pay-status text-success">оплачен</div>
+                                    <div class="profile-order-card__status-descr">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <circle cx="10" cy="10" r="10" fill="#DEE5ED"/>
+                                            <path d="M9.72599 11.9761C9.72599 11.5823 9.79384 11.2447 9.92954 10.9634C10.0757 10.6821 10.2531 10.4337 10.4619 10.218C10.6811 10.0023 10.9108 9.80075 11.1508 9.61322C11.4014 9.42569 11.6362 9.23816 11.8554 9.05063C12.0746 8.85373 12.2521 8.64276 12.3878 8.41772C12.5235 8.18331 12.5913 7.91139 12.5913 7.60197C12.5913 7.09564 12.3721 6.68308 11.9337 6.36428C11.4953 6.04548 10.8742 5.88608 10.0705 5.88608C9.4024 5.88608 8.82307 5.98453 8.33246 6.18143C7.84186 6.36896 7.42432 6.65026 7.07985 7.02532L6.25 6.46273C6.66754 5.99391 7.20511 5.63291 7.86273 5.37975C8.52035 5.12658 9.28236 5 10.1487 5C10.8794 5 11.511 5.09845 12.0433 5.29536C12.5861 5.49226 13.0037 5.77356 13.2959 6.13924C13.5986 6.50492 13.75 6.94093 13.75 7.44726C13.75 7.85045 13.6769 8.19737 13.5308 8.48804C13.3951 8.76934 13.2176 9.0225 12.9984 9.24754C12.7897 9.4632 12.56 9.66948 12.3095 9.86639C12.0694 10.0539 11.8398 10.2461 11.6206 10.443C11.4014 10.6399 11.2239 10.8603 11.0882 11.1041C10.9525 11.3479 10.8847 11.6385 10.8847 11.9761H9.72599ZM10.3053 15C10.0861 15 9.89301 14.9297 9.72599 14.789C9.56942 14.639 9.49113 14.4655 9.49113 14.2686C9.49113 14.0624 9.56942 13.8936 9.72599 13.7623C9.89301 13.6217 10.0861 13.5513 10.3053 13.5513C10.5454 13.5513 10.7437 13.6217 10.9003 13.7623C11.0569 13.8936 11.1352 14.0624 11.1352 14.2686C11.1352 14.4655 11.0569 14.639 10.9003 14.789C10.7437 14.9297 10.5454 15 10.3053 15Z" fill="#1A1A16"/>
+                                        </svg>
+                                        <div>Принят,менеджер свзяжется с вами в крочатйшие<br> сроки для подтверждения ассортимента заказа</div>
+                                    </div>
+                                    <div class="profile-order-card__goods-list">
+                                        <div class="swiper swiper-profile-order-card-goods-list">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-01.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-02.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-03.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-04.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-03.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="#">
+                                                        <img class="img-fluid w-100" src="img/swiper-profile-order-card-goods-list-04.png" alt="">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="profile-order-card__btn-group">
+                                        <a href="#" class="btn btn-outline">повторить заказ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Пагинация -->
+                        <div class="d-flex justify-content-center mt-5">
+                            <nav class="pagination-nav">
+                                <ul class="pagination-list">
+                                    <li>
+                                        <a href="#" class="pagination-item prev">
+                                            <span class="me-2">
+                                                <svg width="13" height="22">
+                                                    <use xlink:href="img/sprite.svg#menu-back"></use>
+                                                </svg>
+                                            </span>
+                                            Назад
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item active">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item">5</a>
+                                    </li>
+                                    <li>
+                                        <span class="pagination-item dots">...</span>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item">10</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="pagination-item next">
+                                            Дальше
+                                            <span class="ms-2">
+                                                <svg width="13" height="22">
+                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')

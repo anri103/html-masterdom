@@ -1,0 +1,50 @@
+@@include('partials/header.html', {
+    "title": "Заказ оформлен"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Заказ оформлен</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- section-page-title -->
+    <section class="section section-page-title">
+        <div class="container">
+            <h1 class="title mb-0">Заказ сформирован</h1>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div>
+                <div class="d-flex flex-column align-items-center gap-22px">
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24.0001 46.2853C36.3083 46.2853 46.2858 36.3078 46.2858 23.9996C46.2858 11.6915 36.3083 1.71387 24.0001 1.71387C11.692 1.71387 1.71436 11.6915 1.71436 23.9996C1.71436 36.3078 11.692 46.2853 24.0001 46.2853Z" stroke="#ACB2BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 27.0826L17.1022 33.6425C17.2744 33.8662 17.495 34.048 17.7475 34.1744C17.9999 34.3005 18.2777 34.368 18.56 34.3714C18.8377 34.3747 19.1126 34.3159 19.3648 34.1996C19.617 34.0832 19.84 33.912 20.0178 33.6986L36.2962 14" stroke="#ACB2BF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="h4 fw-normal text-center mb-0" style="max-width: 840px;">Ваш заказ <b class="text-primary">№780</b> от 23.10.2023 15:37 успешно создан. Менеждер свяжется с Вами для подтверждения заказа.</div>
+                    <div class="text-muted-light text-center" style="max-width: 900px;">Вы можете следить за выполнением своего заказа в <a href="profile-auth.html" class="text-decoration-underline">Личном кабинете</a>. Обратите внимание, что для входа в этот раздел вам необходимо будет атаризоваться.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')

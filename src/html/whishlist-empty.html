@@ -1,0 +1,55 @@
+@@include('partials/header.html', {
+    "title": "Избранное (пусто)"
+})
+
+<!-- MAIN -->
+<main class="main">
+
+    <!-- section-breadcrumbs -->
+    <section class="section section-breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span>Страница</span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- section-page-title -->
+    <section class="section section-page-title">
+        <div class="container">
+            <h1 class="title">Избранное</h1>
+        </div>
+    </section>
+
+    <!-- section-whishlist -->
+    <section class="section section-whishlist">
+        <div class="container container-gutter-inherit">
+            <div class="message-empty-wrap d-flex justify-content-center">
+                <div class="d-flex flex-column" style="gap: 32px;">
+                    <div class="d-flex justify-content-center">
+                        <svg class="img-fluid" xmlns="http://www.w3.org/2000/svg" width="186" height="185" viewBox="0 0 186 185" fill="none">
+                            <path d="M92.8596 162.268L21.7115 97.8229C-16.9561 59.1553 39.8851 -15.0863 92.8596 44.9772C145.834 -15.0863 202.418 59.4131 164.008 97.8229L92.8596 162.268Z" stroke="#ACB2BF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M131.318 149.743C145.962 149.743 157.834 137.872 157.834 123.228C157.834 108.584 145.962 96.7129 131.318 96.7129C116.674 96.7129 104.803 108.584 104.803 123.228C104.803 137.872 116.674 149.743 131.318 149.743Z" stroke="#ACB2BF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M131.318 149.743C145.962 149.743 157.834 137.872 157.834 123.228C157.834 108.584 145.962 96.7129 131.318 96.7129C116.674 96.7129 104.803 108.584 104.803 123.228C104.803 137.872 116.674 149.743 131.318 149.743Z" fill="white"/>
+                            <path d="M166.849 160.349L151.47 144.971" stroke="#ACB2BF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="h4 fw-normal text-center">Здесь пока пусто.</div>
+                    <div>
+                        <a href="#" class="btn btn-secondary">перейти к покупкам</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+@@include('partials/footer.html')
