@@ -5,21 +5,18 @@
  */
 
 // components
-@use 'components/fonts';
-@use 'components/variables';
-@use 'components/general';
-@use 'components/typography';
-@use 'components/links';
-@use 'components/forms';
-@use 'components/buttons';
-@use 'components/swiper';
-@use 'components/sections';
-@use 'components/cards';
-@use 'components/modals';
-@use 'components/breadcrumbs';
-@use 'components/pagination';
-@use 'components/header';
-@use 'components/footer';
-
-// pages
-// @use 'pages/home';
+@import 'components/fonts';
+@import 'components/variables';
+@import 'components/general';
+@import 'components/typography';
+@import 'components/links';
+@import 'components/forms';
+@import 'components/buttons';
+@import 'components/swiper';
+@import 'components/sections';
+@import 'components/cards';
+@import 'components/modals';
+@import 'components/breadcrumbs';
+@import 'components/pagination';
+@import 'components/header';
+@import 'components/footer';
