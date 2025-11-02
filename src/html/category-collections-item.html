@@ -11,10 +11,13 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Главная</a>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="category-collections.html">Коллекции</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <span>Страница</span>
+                        <span>Коллекция плитки и керамогранита GROOVE</span>
                     </li>
                 </ol>
             </nav>
@@ -163,140 +166,68 @@
                 <div>
                     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 row-cols-xl-6" style="--bs-gutter-y: 2rem;">
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-01.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>80x160 cm, 120х278 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                        <div>6 mm, Люкс</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-01.png",
+                                "title": "Волкано",
+                                "size": "80x160 см, 120х278 см",
+                                "subtitle": "6 мм, Люкс"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-02.png" alt="Ачеро">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Ачеро</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>80x160 cm, 120х278 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                        <div>6 mm, Люкс</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-02.png",
+                                "title": "Ачеро",
+                                "size": "80x160 см, 120х278 см",
+                                "subtitle": "6 мм, Люкс"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-03.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>80x160 cm, 120х278 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                        <div>6 mm, Люкс</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-03.png",
+                                "title": "Волкано",
+                                "size": "80x160 см, 120х278 см",
+                                "subtitle": "6 мм, Люкс"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-03.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>80x160 cm, 120х278 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                        <div>6 mm, Люкс</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-03.png",
+                                "title": "Волкано",
+                                "size": "80x160 см, 120х278 см",
+                                "subtitle": "6 мм, Люкс"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-02.png" alt="Ачеро">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Ачеро</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>80x160 cm, 120х278 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                        <div>6 mm, Люкс</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-02.png",
+                                "title": "Ачеро",
+                                "size": "80x160 см, 120х278 см",
+                                "subtitle": "6 мм, Люкс"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-01.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>80x160 cm, 120х278 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                        <div>6 mm, Люкс</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-01.png",
+                                "title": "Волкано",
+                                "size": "80x160 см, 120х278 см",
+                                "subtitle": "6 мм, Люкс"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-03.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>80x160 cm, 120х278 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                        <div>6 mm, Люкс</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-03.png",
+                                "title": "Волкано",
+                                "size": "80x160 см, 120х278 см",
+                                "subtitle": "6 мм, Люкс"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-02.png" alt="Ачеро">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Ачеро</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>80x160 cm, 120х278 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                        <div>6 mm, Люкс</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-02.png",
+                                "title": "Ачеро",
+                                "size": "80x160 см, 120х278 см",
+                                "subtitle": "6 мм, Люкс"
+                            })
                         </div>
                     </div>
                 </div>
@@ -313,156 +244,84 @@
                     <p class="h4 fw-normal text-secondary mb-32px">Натуральная/Люкс</p>
                     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 row-cols-xl-6" style="--bs-gutter-y: 2rem;">
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-04.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>20x160 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-04.png",
+                                "title": "Волкано",
+                                "size": "20x160 см",
+                                "subtitle": "9 мм, Натуральный"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-05.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>20x160 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-05.png",
+                                "title": "Волкано",
+                                "size": "20x160 см",
+                                "subtitle": "9 мм, Натуральный"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-06.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>20x160 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-06.png",
+                                "title": "Волкано",
+                                "size": "20x160 см",
+                                "subtitle": "9 мм, Натуральный"
+                            })
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 row-cols-xl-6" style="--bs-gutter-y: 2rem;">
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-07.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>20x160 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-07.png",
+                                "title": "Волкано",
+                                "size": "20x160 см",
+                                "subtitle": "9 мм, Натуральный"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-08.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>20x160 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-08.png",
+                                "title": "Волкано",
+                                "size": "20x160 см",
+                                "subtitle": "9 мм, Натуральный"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-09.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>20x160 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-09.png",
+                                "title": "Волкано",
+                                "size": "20x160 см",
+                                "subtitle": "9 мм, Натуральный"
+                            })
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 row-cols-xl-6" style="--bs-gutter-y: 2rem;">
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-10.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>20x160 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-10.png",
+                                "title": "Волкано",
+                                "size": "20x160 см",
+                                "subtitle": "9 мм, Натуральный"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-11.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>20x160 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-11.png",
+                                "title": "Волкано",
+                                "size": "20x160 см",
+                                "subtitle": "9 мм, Натуральный"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-12.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>20x160 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-12.png",
+                                "title": "Волкано",
+                                "size": "20x160 см",
+                                "subtitle": "9 мм, Натуральный"
+                            })
                         </div>
                     </div>
                 </div>
@@ -470,36 +329,20 @@
                     <p class="h4 fw-normal text-secondary mb-32px">Макси-формат</p>
                     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 row-cols-xl-6" style="--bs-gutter-y: 2rem;">
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-13.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>20x160 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-13.png",
+                                "title": "Волкано",
+                                "size": "20x160 см",
+                                "subtitle": "9 мм, Натуральный"
+                            })
                         </div>
                         <div class="col">
-                            <div class="card product-collection-card">
-                                <div class="card-img-wrapper">
-                                    <img class="img-fluid" src="img/product-collection-card-14.png" alt="Волкано">
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <a href="#" class="link-body stretched-link">Волкано</a>
-                                    </div>
-                                    <div class="d-flex gap-2 flex-column">
-                                        <div>20x160 cm</div>
-                                        <div>9 mm, Натуральный</div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-product-collection.html', {
+                                "thumbURL": "img/product-collection-card-14.png",
+                                "title": "Волкано",
+                                "size": "20x160 см",
+                                "subtitle": "9 мм, Натуральный"
+                            })
                         </div>
                     </div>
                 </div>
@@ -521,72 +364,36 @@
                         <div class="col-lg-8">
                             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4" style="--bs-gutter-y: 2rem;">
                                 <div class="col">
-                                    <div class="card product-collection-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/product-collection-card-16.png" alt="Этернум Стрип">
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Этернум Стрип</a>
-                                            </div>
-                                            <div class="d-flex gap-2 flex-column">
-                                                <div>Голд</div>
-                                                <div>30x3 см</div>
-                                                <div>9 mm, Натуральный</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-product-collection.html', {
+                                        "thumbURL": "img/product-collection-card-16.png",
+                                        "title": "Этернум Стрип",
+                                        "size": "30x3 см",
+                                        "subtitle": "9 мм, Натуральный"
+                                    })
                                 </div>
                                 <div class="col">
-                                    <div class="card product-collection-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/product-collection-card-17.png" alt="Этернум Стрип">
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Этернум Стрип</a>
-                                            </div>
-                                            <div class="d-flex gap-2 flex-column">
-                                                <div>Голд</div>
-                                                <div>30x3 см</div>
-                                                <div>9 mm, Натуральный</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-product-collection.html', {
+                                        "thumbURL": "img/product-collection-card-17.png",
+                                        "title": "Этернум Стрип",
+                                        "size": "30x3 см",
+                                        "subtitle": "9 мм, Натуральный"
+                                    })
                                 </div>
                                 <div class="col">
-                                    <div class="card product-collection-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/product-collection-card-18.png" alt="Этернум Стрип">
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Этернум Стрип</a>
-                                            </div>
-                                            <div class="d-flex gap-2 flex-column">
-                                                <div>Голд</div>
-                                                <div>30x3 см</div>
-                                                <div>9 mm, Натуральный</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-product-collection.html', {
+                                        "thumbURL": "img/product-collection-card-18.png",
+                                        "title": "Этернум Стрип",
+                                        "size": "30x3 см",
+                                        "subtitle": "9 мм, Натуральный"
+                                    })
                                 </div>
                                 <div class="col">
-                                    <div class="card product-collection-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/product-collection-card-19.png" alt="Этернум Стрип">
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Этернум Стрип</a>
-                                            </div>
-                                            <div class="d-flex gap-2 flex-column">
-                                                <div>Голд</div>
-                                                <div>30x3 см</div>
-                                                <div>9 mm, Натуральный</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-product-collection.html', {
+                                        "thumbURL": "img/product-collection-card-19.png",
+                                        "title": "Этернум Стрип",
+                                        "size": "30x3 см",
+                                        "subtitle": "9 мм, Натуральный"
+                                    })
                                 </div>
                             </div>
                         </div>
@@ -600,38 +407,20 @@
                         <div class="col-lg-8">
                             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4" style="--bs-gutter-y: 2rem;">
                                 <div class="col">
-                                    <div class="card product-collection-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/product-collection-card-21.png" alt="Этернум Стрип">
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Этернум Стрип</a>
-                                            </div>
-                                            <div class="d-flex gap-2 flex-column">
-                                                <div>Голд</div>
-                                                <div>30x3 см</div>
-                                                <div>9 mm, Натуральный</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-product-collection.html', {
+                                        "thumbURL": "img/product-collection-card-21.png",
+                                        "title": "Этернум Стрип",
+                                        "size": "30x3 см",
+                                        "subtitle": "9 мм, Натуральный"
+                                    })
                                 </div>
                                 <div class="col">
-                                    <div class="card product-collection-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/product-collection-card-22.png" alt="Этернум Стрип">
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Этернум Стрип</a>
-                                            </div>
-                                            <div class="d-flex gap-2 flex-column">
-                                                <div>Голд</div>
-                                                <div>30x3 см</div>
-                                                <div>9 mm, Натуральный</div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-product-collection.html', {
+                                        "thumbURL": "img/product-collection-card-22.png",
+                                        "title": "Этернум Стрип",
+                                        "size": "30x3 см",
+                                        "subtitle": "9 мм, Натуральный"
+                                    })
                                 </div>
                             </div>
                         </div>
@@ -681,48 +470,7 @@
     </section>
 
     <!-- section-email-subscribe -->
-    <section class="section section-email-subscribe">
-        <div class="container">
-            <div class="email-subscribe-wrapper">
-                <div class="row" style="--bs-gutter-y: 42px;">
-                    <div class="col-lg-4">
-                        <div class="h2 ff-title text-uppercase mb-12px">Новостная рассылка</div>
-                        <div>Получайте последние новости интернет-магазина Мастер Дом о новых продуктах, эксклюзивных предложениях, образе жизни и модных тенденциях.</div>
-                    </div>
-                    <div class="col-lg-6 ms-auto">
-                        <form action="#" class="email-subscribe-form">
-                            <div class="d-flex flex-wrap gap-32px gap-row-12px mb-32px">
-                                <label class="d-flex gap-2 align-items-center">
-                                    <input type="checkbox" class="form-checkbox">
-                                    <span>Новости</span>
-                                </label>
-                                <label class="d-flex gap-2 align-items-center">
-                                    <input type="checkbox" class="form-checkbox">
-                                    <span>Мероприятия</span>
-                                </label>
-                                <label class="d-flex gap-2 align-items-center">
-                                    <input type="checkbox" class="form-checkbox">
-                                    <span>Акции</span>
-                                </label>
-                            </div>
-                            <div class="position-relative mb-12px">
-                                <input type="email" class="form-control" placeholder="Email">
-                                <button type="submit" class="btn btn-hover-primary border-0 p-0 position-absolute top-50 end-0 translate-middle-y me-2" style="width: 24px; height: 24px;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22" fill="none">
-                                        <path class="svg-path-hover-primary-fill" d="M0 22L13 11L-1.91596e-06 1.14085e-06L-1.77926e-06 1.56967L11.1449 11L-1.36701e-07 20.4303L0 22Z" fill="#ACB2BF"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="fs-14px">
-                                Подписываясь на рассылку вы принимаете условия пользовательского соглашения. Этот сайт защищен reCAPTCHA и применяются<br>
-                                <a href="#" class="text-decoration-underline">Политика конфиденциальности</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @@include('partials/section-email-subscribe.html')
 
 </main>
 

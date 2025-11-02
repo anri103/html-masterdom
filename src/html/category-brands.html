@@ -11,10 +11,10 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Главная</a>
+                        <a href="index.html">Главная</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <span>Страница</span>
+                        <span>Бренды</span>
                     </li>
                 </ol>
             </nav>
@@ -24,6 +24,7 @@
     <section class="section">
         <div class="container">
             <div class="row" style="--bs-gutter-y: 2rem;">
+
                 <div class="col-lg-3">
                     <div class="d-flex gap-12px flex-column">
                         <div class="d-flex flex-wrap align-items-center" style="gap: 4px 12px;">
@@ -40,10 +41,11 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-9">
 
+                    <!-- filters -->
                     <div class="d-flex flex-wrap align-items-center justify-content-between gap-22px mb-32px">
-                        <!-- Фильтры -->
                         <div class="d-flex align-items-center flex-wrap gap-22px">
                             <div>
                                 <button type="button" class="btn btn-dropdown-arrow fs-16px border-0 p-0" data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,6 +73,7 @@
                         </button>
                     </div>
 
+                    <!-- glossary-nav -->
                     <div class="glossary-nav">
 
                         <a href="#" class="glossary-nav__link active">Все</a>
@@ -147,207 +150,109 @@
 
                     </div>
 
+                    <!-- glossary-wrapper -->
                     <div class="glossary-brands-wrapper">
-                        <!-- Буква -->
+
+                        <!-- letter -->
                         <div class="glossary-brands-item">
                             <div class="glossary-brand-title" id="glossary-brand-title-en-01">A</div>
                             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4" style="--bs-gutter-y: 2rem;">
                                 <div class="col">
-                                    <div class="card glossary-brand-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/card-brand-01.png" alt="Бренд Aparici страна">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Aparici</a>
-                                            </div>
-                                            <div class="card-country">страна</div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-glossary-brand.html', {
+                                        "thumbURL": "img/card-brand-01.png",
+                                        "title": "Aparici",
+                                        "country": "Россия"
+                                    })
                                 </div>
                                 <div class="col">
-                                    <div class="card glossary-brand-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/card-brand-02.png" alt="Бренд Atlas Concorde страна">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Atlas Concorde</a>
-                                            </div>
-                                            <div class="card-country">страна</div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-glossary-brand.html', {
+                                        "thumbURL": "img/card-brand-02.png",
+                                        "title": "Atlas Concorde",
+                                        "country": "Россия"
+                                    })
                                 </div>
                                 <div class="col">
-                                    <div class="card glossary-brand-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/card-brand-03.png" alt="Бренд Azteca страна">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Azteca</a>
-                                            </div>
-                                            <div class="card-country">страна</div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-glossary-brand.html', {
+                                        "thumbURL": "img/card-brand-03.png",
+                                        "title": "Azteca",
+                                        "country": "Россия"
+                                    })
                                 </div>
                             </div>
                         </div>
-                        <!-- Буква -->
+                        
+                        <!-- letter -->
                         <div class="glossary-brands-item">
                             <div class="glossary-brand-title" id="glossary-brand-title-en-02">B</div>
                             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4" style="--bs-gutter-y: 2rem;">
                                 <div class="col">
-                                    <div class="card glossary-brand-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/card-brand-04.png" alt="Бренд Butech страна">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Butech</a>
-                                            </div>
-                                            <div class="card-country">страна</div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-glossary-brand.html', {
+                                        "thumbURL": "img/card-brand-04.png",
+                                        "title": "Butech",
+                                        "country": "Россия"
+                                    })
                                 </div>
                             </div>
                         </div>
-                        <!-- Буква -->
+
+                        <!-- letter -->
                         <div class="glossary-brands-item">
                             <div class="glossary-brand-title" id="glossary-brand-title-en-03">C</div>
                             <div class="row row-cols-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4" style="--bs-gutter-y: 2rem;">
                                 <div class="col">
-                                    <div class="card glossary-brand-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/card-brand-05.png" alt="Бренд Casa Dolce Casa страна">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Casa Dolce Casa</a>
-                                            </div>
-                                            <div class="card-country">страна</div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-glossary-brand.html', {
+                                        "thumbURL": "img/card-brand-05.png",
+                                        "title": "Casa Dolce Casa",
+                                        "country": "Россия"
+                                    })
                                 </div>
                                 <div class="col">
-                                    <div class="card glossary-brand-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/card-brand-06.png" alt="Бренд Cedit страна">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Cedit</a>
-                                            </div>
-                                            <div class="card-country">страна</div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-glossary-brand.html', {
+                                        "thumbURL": "img/card-brand-06.png",
+                                        "title": "Cedit",
+                                        "country": "Россия"
+                                    })
                                 </div>
                                 <div class="col">
-                                    <div class="card glossary-brand-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/card-brand-05.png" alt="Бренд Casa Dolce Casa страна">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Casa Dolce Casa</a>
-                                            </div>
-                                            <div class="card-country">страна</div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-glossary-brand.html', {
+                                        "thumbURL": "img/card-brand-05.png",
+                                        "title": "Casa Dolce Casa",
+                                        "country": "Россия"
+                                    })
                                 </div>
                                 <div class="col">
-                                    <div class="card glossary-brand-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/card-brand-06.png" alt="Бренд Cedit страна">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Cedit</a>
-                                            </div>
-                                            <div class="card-country">страна</div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-glossary-brand.html', {
+                                        "thumbURL": "img/card-brand-06.png",
+                                        "title": "Cedit",
+                                        "country": "Россия"
+                                    })
                                 </div>
                                 <div class="col">
-                                    <div class="card glossary-brand-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/card-brand-05.png" alt="Бренд Casa Dolce Casa страна">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Casa Dolce Casa</a>
-                                            </div>
-                                            <div class="card-country">страна</div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-glossary-brand.html', {
+                                        "thumbURL": "img/card-brand-05.png",
+                                        "title": "Casa Dolce Casa",
+                                        "country": "Россия"
+                                    })
                                 </div>
                                 <div class="col">
-                                    <div class="card glossary-brand-card">
-                                        <div class="card-img-wrapper">
-                                            <img class="img-fluid" src="img/card-brand-06.png" alt="Бренд Cedit страна">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <div class="card-title">
-                                                <a href="#" class="link-body stretched-link">Cedit</a>
-                                            </div>
-                                            <div class="card-country">страна</div>
-                                        </div>
-                                    </div>
+                                    @@include('partials/card-glossary-brand.html', {
+                                        "thumbURL": "img/card-brand-06.png",
+                                        "title": "Cedit",
+                                        "country": "Россия"
+                                    })
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
-                    <!-- Пагинация -->
+                    <!-- pagination -->
                     <div class="d-flex justify-content-center mt-5">
-                        <nav class="pagination-nav">
-                            <ul class="pagination-list">
-                                <li>
-                                    <a href="#" class="pagination-item prev">
-                                        <span class="me-2">
-                                            <svg width="13" height="22">
-                                                <use xlink:href="img/sprite.svg#menu-back"></use>
-                                            </svg>
-                                        </span>
-                                        Назад
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item active">1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item">2</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item">3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item">4</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item">5</a>
-                                </li>
-                                <li>
-                                    <span class="pagination-item dots">...</span>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item">10</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item next">
-                                        Дальше
-                                        <span class="ms-2">
-                                            <svg width="13" height="22">
-                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        @@include('partials/pagination.html')
                     </div>
 
                 </div>
+
             </div>
         </div>
     </section>

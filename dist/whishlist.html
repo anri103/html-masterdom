@@ -763,7 +763,7 @@
                             <!-- Меню -->
                             <ul class="navbar-nav">
                                 <!-- Должна быть возможность добавить свои классы ссылке -->
-                                <li><a href="#" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
+                                <li><a href="category-shops.html" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
                                 <li class="has-mega-menu">
                                     <a href="#" class="nav-link"><span>Плитка</span></a>
                                     <div class="mega-menu">
@@ -1251,10 +1251,10 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Главная</a>
+                        <a href="index.html">Главная</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <span>Страница</span>
+                        <span>Избранное</span>
                     </li>
                 </ol>
             </nav>
@@ -1270,11 +1270,13 @@
 
     <!-- section-whishlist -->
     <section class="section section-whishlist">
-        <div class="container container-gutter-inherit">
-            <div class="row-gutter-inherit row row-cols-2 row-cols-lg-4">
-                <!-- item 1 -->
-                <div class="col">
-                    <div class="product-item">
+        <div class="container">
+
+            <!-- grid -->
+            <div class="section-catalog-body__grid">
+
+                <!-- item -->
+                <div class="product-item">
     <div class="product-item__top">
         <div class="product-item__top-brand">Italon</div>
         <div class="product-item__top-country">Россия</div>
@@ -1336,14 +1338,17 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
-                </div>
-                <!-- item 2 -->
-                <div class="col">
-                    <div class="product-item">
+
+                <!-- item -->
+                <div class="product-item">
     <div class="product-item__top">
         <div class="product-item__top-brand">Italon</div>
         <div class="product-item__top-country">Россия</div>
@@ -1405,14 +1410,17 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
-                </div>
-                <!-- item 3 -->
-                <div class="col">
-                    <div class="product-item">
+
+                <!-- item -->
+                <div class="product-item">
     <div class="product-item__top">
         <div class="product-item__top-brand">Italon</div>
         <div class="product-item__top-country">Россия</div>
@@ -1474,14 +1482,17 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
-                </div>
-                <!-- item 4 -->
-                <div class="col">
-                    <div class="product-item">
+
+                <!-- item -->
+                <div class="product-item">
     <div class="product-item__top">
         <div class="product-item__top-brand">Italon</div>
         <div class="product-item__top-country">Россия</div>
@@ -1543,14 +1554,17 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
-                </div>
-                <!-- item 5 -->
-                <div class="col">
-                    <div class="product-item">
+
+                <!-- item -->
+                <div class="product-item">
     <div class="product-item__top">
         <div class="product-item__top-brand">Italon</div>
         <div class="product-item__top-country">Россия</div>
@@ -1612,12 +1626,66 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
-                </div>
+
             </div>
+
+            <!-- pagination -->
+            <div class="section-catalog-body__pagination">
+                <nav class="pagination-nav">
+    <ul class="pagination-list">
+        <li>
+            <a href="#" class="pagination-item prev">
+                <span class="me-2">
+                    <svg width="13" height="22">
+                        <use xlink:href="img/sprite.svg#menu-back"></use>
+                    </svg>
+                </span>
+                Назад
+            </a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item active">1</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">2</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">3</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">4</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">5</a>
+        </li>
+        <li>
+            <span class="pagination-item dots">...</span>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">10</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item next">
+                Дальше
+                <span class="ms-2">
+                    <svg width="13" height="22">
+                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                    </svg>
+                </span>
+            </a>
+        </li>
+    </ul>
+</nav>
+            </div>
+
         </div>
     </section>
 

@@ -11,10 +11,10 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Главная</a>
+                        <a href="index.html">Главная</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <span>Страница</span>
+                        <span>Избранное</span>
                     </li>
                 </ol>
             </nav>
@@ -30,44 +30,48 @@
 
     <!-- section-whishlist -->
     <section class="section section-whishlist">
-        <div class="container container-gutter-inherit">
-            <div class="row-gutter-inherit row row-cols-2 row-cols-lg-4">
-                <!-- item 1 -->
-                <div class="col">
-                    @@include('partials/card-product-item.html', {
-                        "thumbURL": "img/catalog/product-thumb-01.jpg",
-                        "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                    })
-                </div>
-                <!-- item 2 -->
-                <div class="col">
-                    @@include('partials/card-product-item.html', {
-                        "thumbURL": "img/catalog/product-thumb-02.jpg",
-                        "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                    })
-                </div>
-                <!-- item 3 -->
-                <div class="col">
-                    @@include('partials/card-product-item.html', {
-                        "thumbURL": "img/catalog/product-thumb-03.jpg",
-                        "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                    })
-                </div>
-                <!-- item 4 -->
-                <div class="col">
-                    @@include('partials/card-product-item.html', {
-                        "thumbURL": "img/catalog/product-thumb-04.jpg",
-                        "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                    })
-                </div>
-                <!-- item 5 -->
-                <div class="col">
-                    @@include('partials/card-product-item.html', {
-                        "thumbURL": "img/catalog/product-thumb-01.jpg",
-                        "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                    })
-                </div>
+        <div class="container">
+
+            <!-- grid -->
+            <div class="section-catalog-body__grid">
+
+                <!-- item -->
+                @@include('partials/card-product-item.html', {
+                    "thumbURL": "img/catalog/product-thumb-01.jpg",
+                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
+                })
+
+                <!-- item -->
+                @@include('partials/card-product-item.html', {
+                    "thumbURL": "img/catalog/product-thumb-02.jpg",
+                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
+                })
+
+                <!-- item -->
+                @@include('partials/card-product-item.html', {
+                    "thumbURL": "img/catalog/product-thumb-03.jpg",
+                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
+                })
+
+                <!-- item -->
+                @@include('partials/card-product-item.html', {
+                    "thumbURL": "img/catalog/product-thumb-04.jpg",
+                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
+                })
+
+                <!-- item -->
+                @@include('partials/card-product-item.html', {
+                    "thumbURL": "img/catalog/product-thumb-01.jpg",
+                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
+                })
+
             </div>
+
+            <!-- pagination -->
+            <div class="section-catalog-body__pagination">
+                @@include('partials/pagination.html')
+            </div>
+
         </div>
     </section>
 

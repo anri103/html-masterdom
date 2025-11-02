@@ -763,7 +763,7 @@
                             <!-- Меню -->
                             <ul class="navbar-nav">
                                 <!-- Должна быть возможность добавить свои классы ссылке -->
-                                <li><a href="#" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
+                                <li><a href="category-shops.html" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
                                 <li class="has-mega-menu">
                                     <a href="#" class="nav-link"><span>Плитка</span></a>
                                     <div class="mega-menu">
@@ -1251,10 +1251,10 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Главная</a>
+                        <a href="index.html">Главная</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <span>Страница</span>
+                        <span>Личные данные</span>
                     </li>
                 </ol>
             </nav>
@@ -1264,6 +1264,8 @@
     <section class="section">
         <div class="container">
             <div class="row" style="--bs-gutter-y: 2rem;">
+
+                <!-- sidebar -->
                 <div class="col-lg-3">
                     <div class="d-flex gap-12px flex-column">
                         <div class="d-flex flex-column gap-2">
@@ -1272,16 +1274,24 @@
                         </div>
                         <div class="buyers-info-menu underline-tab-nav scrollable-container">
                             <div class="scrollable-wrapper">
-                                <div class="scrollable-item"><a href="#" class="nav-link active"><span>Личные данные</span></a></div>
-                                <div class="scrollable-item"><a href="#" class="nav-link"><span>Заказы</span></a></div>
-                                <div class="scrollable-item"><a href="#" class="nav-link"><span>История заказов</span></a></div>
+                                <div class="scrollable-item">
+                                    <a href="profile-options.html" class="nav-link active"><span>Личные данные</span></a>
+                                </div>
+                                <div class="scrollable-item">
+                                    <a href="profile-orders.html" class="nav-link"><span>Заказы</span></a>
+                                </div>
+                                <div class="scrollable-item">
+                                    <a href="profile-history-orders.html" class="nav-link"><span>История заказов</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9">
 
+                <!-- content -->
+                <div class="col-lg-9">
                     <div style="max-width: 600px;">
+
                         <form action="#">
                             <div class="mb-32px">
                                 <div class="mb-22px">
@@ -1356,9 +1366,10 @@
                                 </label>
                             </div>
                         </form>
-                    </div>
 
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>

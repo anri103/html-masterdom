@@ -11,10 +11,10 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Главная</a>
+                        <a href="index.html">Главная</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <span>Страница</span>
+                        <span>Заказов нет</span>
                     </li>
                 </ol>
             </nav>
@@ -24,6 +24,8 @@
     <section class="section">
         <div class="container">
             <div class="row" style="--bs-gutter-y: 2rem;">
+
+                <!-- sidebar -->
                 <div class="col-lg-3">
                     <div class="d-flex gap-12px flex-column">
                         <div class="d-flex flex-column gap-2">
@@ -32,13 +34,21 @@
                         </div>
                         <div class="buyers-info-menu underline-tab-nav scrollable-container">
                             <div class="scrollable-wrapper">
-                                <div class="scrollable-item"><a href="#" class="nav-link active"><span>Личные данные</span></a></div>
-                                <div class="scrollable-item"><a href="#" class="nav-link"><span>Заказы</span></a></div>
-                                <div class="scrollable-item"><a href="#" class="nav-link"><span>История заказов</span></a></div>
+                                <div class="scrollable-item">
+                                    <a href="profile-options.html" class="nav-link"><span>Личные данные</span></a>
+                                </div>
+                                <div class="scrollable-item">
+                                    <a href="profile-orders.html" class="nav-link active"><span>Заказы</span></a>
+                                </div>
+                                <div class="scrollable-item">
+                                    <a href="profile-history-orders.html" class="nav-link"><span>История заказов</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- content -->
                 <div class="col-lg-9">
 
                     <div style="max-width: 600px; padding-top: 44px;">
@@ -47,6 +57,7 @@
                     </div>
 
                 </div>
+
             </div>
         </div>
     </section>

@@ -141,7 +141,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Навигация слайдера -->
             <div class="swiperCategoriesCircles-next">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
                     <path
@@ -149,7 +148,6 @@
                         fill="#02378F" />
                 </svg>
             </div>
-            <!-- Навигация слайдера -->
             <div class="swiperCategoriesCircles-prev">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
                     <path
@@ -265,94 +263,17 @@
                 <div class="swiper swiperShopsLocation">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="shop-location__item">
-                                <div class="shop-location__img">
-                                    <img src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
-                                </div>
-                                <div class="shop-location__body">
-                                    <div class="shop-location__body-top">
-                                        <div class="shop-location__title">
-                                            <a href="#">МастерДом на Профсоюзной</a>
-                                        </div>
-                                        <div class="shop-location__tags">
-                                            <div class="item-tag">Обои</div>
-                                            <div class="item-tag">Плитка</div>
-                                            <div class="item-tag">Отдел шторы</div>
-                                            <div class="item-tag">Светильники</div>
-                                            <div class="item-tag">Сантехники</div>
-                                        </div>
-                                    </div>
-                                    <div class="shop-location__body-bottom">
-                                        <div class="shop-location__body-bottom-content">
-                                            <div class="shop-location__hours">ежедневно с 10:00 до 21:00</div>
-                                            <div class="shop-location__address">г. Москва, Нахимовский проспект, д.59а</div>
-                                            <div class="shop-location__metro">
-                                                <div class="item-metro">Профсоюзная, 15 м</div>
-                                                <div class="item-metro">Профсоюзная, 15 м</div>
-                                            </div>
-                                            <div class="shop-location__phone">
-                                                <a href="tel:88003503243">8 (800) 350-32-43</a>
-                                            </div>
-                                        </div>
-                                        <div class="shop-location__link">
-                                            <a href="#">
-                                                <div class="flex-shrink-0">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
-                                                        <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#ACB2BF"/>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-shop-item.html', {
+                                "title": "МастерДом на Профсоюзной"
+                            })
                         </div>
                         <div class="swiper-slide">
-                            <div class="shop-location__item">
-                                <div class="shop-location__img">
-                                    <img src="img/shops-location-01.jpg" alt="МастерДом на Профсоюзной">
-                                </div>
-                                <div class="shop-location__body">
-                                    <div class="shop-location__body-top">
-                                        <div class="shop-location__title">
-                                            <a href="#">МастерДом на Профсоюзной пример длинного заголовка</a>
-                                        </div>
-                                        <div class="shop-location__tags">
-                                            <div class="item-tag">Обои</div>
-                                            <div class="item-tag">Плитка</div>
-                                            <div class="item-tag">Отдел шторы</div>
-                                            <div class="item-tag">Светильники</div>
-                                            <div class="item-tag">Сантехники</div>
-                                        </div>
-                                    </div>
-                                    <div class="shop-location__body-bottom">
-                                        <div class="shop-location__body-bottom-content">
-                                            <div class="shop-location__hours">ежедневно с 10:00 до 21:00</div>
-                                            <div class="shop-location__address">г. Москва, Нахимовский проспект, д.59а</div>
-                                            <div class="shop-location__metro">
-                                                <div class="item-metro">Профсоюзная, 15 м</div>
-                                                <div class="item-metro">Профсоюзная, 15 м</div>
-                                            </div>
-                                            <div class="shop-location__phone">
-                                                <a href="tel:88003503243">8 (800) 350-32-43</a>
-                                            </div>
-                                        </div>
-                                        <div class="shop-location__link">
-                                            <a href="#">
-                                                <div class="flex-shrink-0">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="61" height="8" viewBox="0 0 61 8" fill="none">
-                                                        <path d="M60.3536 4.35355C60.5488 4.15829 60.5488 3.84171 60.3536 3.64645L57.1716 0.464466C56.9763 0.269204 56.6597 0.269204 56.4645 0.464466C56.2692 0.659728 56.2692 0.976311 56.4645 1.17157L59.2929 4L56.4645 6.82843C56.2692 7.02369 56.2692 7.34027 56.4645 7.53553C56.6597 7.7308 56.9763 7.7308 57.1716 7.53553L60.3536 4.35355ZM0 4.5H60V3.5H0V4.5Z" fill="#ACB2BF"/>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @@include('partials/card-shop-item.html', {
+                                "title": "МастерДом на Профсоюзной длинный заголовок"
+                            })
                         </div>
                     </div>
                 </div>
-                <!-- Навигация слайдера -->
                 <div class="swiperShopsLocation-navigation">
                     <div class="swiperShopsLocation-next">
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
@@ -451,13 +372,11 @@
                         })
                     </div>
                 </div>
-                <!-- Навигация слайдера -->
                 <div class="swiperBlogSlider-next">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
                         <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
                     </svg>
                 </div>
-                <!-- Навигация слайдера -->
                 <div class="swiperBlogSlider-prev">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
                         <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>

@@ -763,7 +763,7 @@
                             <!-- Меню -->
                             <ul class="navbar-nav">
                                 <!-- Должна быть возможность добавить свои классы ссылке -->
-                                <li><a href="#" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
+                                <li><a href="category-shops.html" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
                                 <li class="has-mega-menu">
                                     <a href="#" class="nav-link"><span>Плитка</span></a>
                                     <div class="mega-menu">
@@ -1276,12 +1276,11 @@
         <div class="container">
             <div class="row">
 
-                <!-- Фильтры (колонка слева) -->
+                <!-- sidebar -->
                 <div class="col-lg-20">
                     <div class="d-flex flex-column" style="gap: 22px;">
 
-                        <!-- Категории -->
-                        <!-- Если хотим скрыть, то присваиваем d-none d-lg-block -->
+                        <!-- widget-categories-nav -->
                         <div class="section-catalog-body__sidebar-widget">
                             <div class="catalog-categories-nav scrollable-container">
                                 <div class="scrollable-wrapper">
@@ -1301,8 +1300,7 @@
                             </div>
                         </div>
 
-                        <!-- Фильтры -->
-                        <!-- Если хотим скрыть, то присваиваем d-none d-lg-block -->
+                        <!-- widget-filters -->
                         <div class="section-catalog-body__sidebar-widget">
                             <form action="#" method="get" class="catalog-form-smartfilter">
                                 <div class="offcanvas offcanvas-start" id="offcanvasSmartFilter" tabindex="-1">
@@ -1315,7 +1313,7 @@
                                             <div class="reset_fltr">
                                                 <input type="button" class="del_filter" id="del_filter" name="del_filter" value="Сбросить">
                                             </div>
-                                            </div>
+                                        </div>
                                         <div class="smartfilter">
                                             <div class="catalog-form-smartfilter__wrapper">
 
@@ -1955,8 +1953,7 @@
                             </form>
                         </div>
 
-                        <!-- Каталоги -->
-                        <!-- Если хотим скрыть, то присваиваем d-none d-lg-block -->
+                        <!-- widget-catalogs -->
                         <div class="section-catalog-body__sidebar-widget d-none d-lg-block">
                             <div class="pdf-catalogs-wrapper d-flex flex-column" style="margin-top: 60px; gap: 22px;">
                                 <!-- item 1 -->
@@ -1992,10 +1989,10 @@
                     </div>
                 </div>
 
-                <!-- Сетка товаров (колонка справа) -->
+                <!-- content -->
                 <div class="col-lg-75 offset-lg-5">
 
-                    <!-- Сортировка и Фильтры -->
+                    <!-- sorting -->
                     <div class="section-catalog-body__sorting d-flex align-items-center justify-content-between mb-32px">
                         <button type="button" class="btn fs-18px fw-medium text-uppercase border-0 p-0 d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSmartFilter">
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
@@ -2026,7 +2023,7 @@
                         </div>
                     </div>
 
-                    <!-- Сетка товаров -->
+                    <!-- grid -->
                     <div class="section-catalog-body__grid">
 
                         <!-- item 1 -->
@@ -2103,8 +2100,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -2175,8 +2176,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -2255,8 +2260,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -2325,8 +2334,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -2404,8 +2417,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -2482,8 +2499,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -2552,8 +2573,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -2622,8 +2647,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -2692,8 +2721,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -2762,8 +2795,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -2832,8 +2869,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -2902,8 +2943,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -2972,8 +3017,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -3042,8 +3091,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -3112,8 +3165,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -3182,8 +3239,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -3252,8 +3313,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -3322,8 +3387,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -3392,8 +3461,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -3462,8 +3535,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -3532,8 +3609,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -3602,8 +3683,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -3672,8 +3757,12 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
@@ -3742,60 +3831,64 @@
             </div>
         </div>
         <div class="free-delivery mb-2">&nbsp;</div>
-        <button type="button" class="btn product-item__btn" data-bs-toggle="modal"
-            data-bs-target="#modal_basket_actions">в корзину</button>
+        <button
+            type="button"
+            class="btn product-item__btn"
+            data-bs-toggle="modal"
+            data-bs-target="#modal_basket_actions"
+        >в корзину</button>
     </div>
 </div>
 
                     </div>
 
-                    <!-- Пагинация -->
+                    <!-- pagination -->
                     <div class="section-catalog-body__pagination">
                         <nav class="pagination-nav">
-                            <ul class="pagination-list">
-                                <li>
-                                    <a href="#" class="pagination-item prev">
-                                        <span class="me-2">
-                                            <svg width="13" height="22">
-                                                <use xlink:href="img/sprite.svg#menu-back"></use>
-                                            </svg>
-                                        </span>
-                                        Назад
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item active">1</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item">2</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item">3</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item">4</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item">5</a>
-                                </li>
-                                <li>
-                                    <span class="pagination-item dots">...</span>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item">10</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="pagination-item next">
-                                        Дальше
-                                        <span class="ms-2">
-                                            <svg width="13" height="22">
-                                                <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+    <ul class="pagination-list">
+        <li>
+            <a href="#" class="pagination-item prev">
+                <span class="me-2">
+                    <svg width="13" height="22">
+                        <use xlink:href="img/sprite.svg#menu-back"></use>
+                    </svg>
+                </span>
+                Назад
+            </a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item active">1</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">2</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">3</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">4</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">5</a>
+        </li>
+        <li>
+            <span class="pagination-item dots">...</span>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">10</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item next">
+                Дальше
+                <span class="ms-2">
+                    <svg width="13" height="22">
+                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                    </svg>
+                </span>
+            </a>
+        </li>
+    </ul>
+</nav>
                     </div>
 
                 </div>
@@ -3804,7 +3897,8 @@
         </div>
     </section>
 
-    <section class="">
+    <!-- section-designer-advice -->
+    <section class="section">
         <div class="container">
             <h2 class="h1 title fw-normal mb-42px">Совет от дизайнера</h2>
             <div class="row" style="--bs-gutter-y: 2rem;">
@@ -3867,7 +3961,7 @@
                                     </div>
                                 </div>
                             </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

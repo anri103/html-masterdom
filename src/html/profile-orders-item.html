@@ -11,10 +11,13 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Главная</a>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="profile-orders.html">Заказы</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <span>Страница</span>
+                        <span>Заказ №780</span>
                     </li>
                 </ol>
             </nav>
@@ -24,6 +27,8 @@
     <section class="section">
         <div class="container">
             <div class="row" style="--bs-gutter-y: 2rem;">
+
+                <!-- sidebar -->
                 <div class="col-lg-3">
                     <div class="d-flex gap-12px flex-column">
                         <div class="d-flex flex-column gap-2">
@@ -32,17 +37,25 @@
                         </div>
                         <div class="buyers-info-menu underline-tab-nav scrollable-container">
                             <div class="scrollable-wrapper">
-                                <div class="scrollable-item"><a href="#" class="nav-link active"><span>Личные данные</span></a></div>
-                                <div class="scrollable-item"><a href="#" class="nav-link"><span>Заказы</span></a></div>
-                                <div class="scrollable-item"><a href="#" class="nav-link"><span>История заказов</span></a></div>
+                                <div class="scrollable-item">
+                                    <a href="profile-options.html" class="nav-link"><span>Личные данные</span></a>
+                                </div>
+                                <div class="scrollable-item">
+                                    <a href="profile-orders.html" class="nav-link active"><span>Заказы</span></a>
+                                </div>
+                                <div class="scrollable-item">
+                                    <a href="profile-history-orders.html" class="nav-link"><span>История заказов</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9">
 
+                <!-- content -->
+                <div class="col-lg-9">
                     <div class="d-flex flex-column gap-32px">
 
+                        <!-- content-widget -->
                         <div>
                             <div class="h2 fw-normal text-uppercase mb-22px">Детали заказа</div>
     
@@ -93,6 +106,7 @@
                             </div>
                         </div>
 
+                        <!-- content-widget -->
                         <div>
                             <div class="h4 mb-22px">Товары в заказе</div>
 
@@ -259,6 +273,7 @@
                             </div>
                         </div>
 
+                        <!-- content-widget -->
                         <div>
                             <table class="table table-profile-orders-summary">
                                 <tbody>
@@ -290,18 +305,20 @@
                             </table>
                         </div>
 
+                        <!-- content-widget -->
                         <div>
                             <div class="text-muted-light fs-6">Общая стоимость:</div>
                             <div class="h2 text-primary ff-title fw-bold mb-0">560 000 ₽</div>
                         </div>
 
+                        <!-- content-widget -->
                         <div>
                             <button type="button" class="btn btn-secondary w-100" style="max-width: 380px;">оплатить заказ</button>
                         </div>
 
                     </div>
-
                 </div>
+
             </div>
         </div>
     </section>

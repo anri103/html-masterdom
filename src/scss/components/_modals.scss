@@ -4,11 +4,11 @@
     --bs-modal-padding: 22px;
     --bs-modal-header-padding: 22px;
     --bs-modal-footer-padding: 22px;
-}
 
-.modal .btn-close {
-    margin-left: auto;
-    padding: 5px;
+    .btn-close {
+        margin-left: auto;
+        padding: 5px;
+    }
 }
 
 .modal-header-top {
@@ -76,7 +76,7 @@
     }
 }
 
-/* Modal search */
+/* Modal search-modal ============================ */
 
 .search-modal__title {
     margin-bottom: 22px;
@@ -141,7 +141,7 @@
     }
 }
 
-/* Modal city-selector */
+/* Modal city-selector ============================ */
 
 .city-selector__title {
     margin-bottom: 22px;

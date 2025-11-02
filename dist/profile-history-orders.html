@@ -763,7 +763,7 @@
                             <!-- Меню -->
                             <ul class="navbar-nav">
                                 <!-- Должна быть возможность добавить свои классы ссылке -->
-                                <li><a href="#" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
+                                <li><a href="category-shops.html" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
                                 <li class="has-mega-menu">
                                     <a href="#" class="nav-link"><span>Плитка</span></a>
                                     <div class="mega-menu">
@@ -1251,10 +1251,10 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Главная</a>
+                        <a href="index.html">Главная</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <span>Страница</span>
+                        <span>История заказов</span>
                     </li>
                 </ol>
             </nav>
@@ -1264,6 +1264,8 @@
     <section class="section">
         <div class="container">
             <div class="row" style="--bs-gutter-y: 2rem;">
+
+                <!-- sidebar -->
                 <div class="col-lg-3">
                     <div class="d-flex gap-12px flex-column">
                         <div class="d-flex flex-column gap-2">
@@ -1272,16 +1274,24 @@
                         </div>
                         <div class="buyers-info-menu underline-tab-nav scrollable-container">
                             <div class="scrollable-wrapper">
-                                <div class="scrollable-item"><a href="#" class="nav-link active"><span>Личные данные</span></a></div>
-                                <div class="scrollable-item"><a href="#" class="nav-link"><span>Заказы</span></a></div>
-                                <div class="scrollable-item"><a href="#" class="nav-link"><span>История заказов</span></a></div>
+                                <div class="scrollable-item">
+                                    <a href="profile-options.html" class="nav-link"><span>Личные данные</span></a>
+                                </div>
+                                <div class="scrollable-item">
+                                    <a href="profile-orders.html" class="nav-link"><span>Заказы</span></a>
+                                </div>
+                                <div class="scrollable-item">
+                                    <a href="profile-history-orders.html" class="nav-link active"><span>История заказов</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- content -->
                 <div class="col-lg-9">
 
-                    <!-- Фильтры -->
+                    <!-- filters -->
                     <div class="d-flex flex-wrap align-items-center justify-content-between gap-22px mb-32px">
                         <div class="d-flex align-items-center flex-wrap gap-22px">
                             <div>
@@ -1340,15 +1350,19 @@
                         </button>
                     </div>
 
-                    <!-- Заказы -->
                     <div style="max-width: 850px;">
+
+                        <!-- grid -->
                         <div class="d-flex flex-column gap-32px">
+
                             <!-- item -->
                             <div class="card profile-order-card">
                                 <div class="card-body">
                                     <div class="profile-order-card__date">от 21.01.2024</div>
                                     <div class="profile-order-card__heading">
-                                        <div class="profile-order-card__title title"><a href="#">Заказ №780</a></div>
+                                        <div class="profile-order-card__title title">
+                                            <a href="profile-history-orders-item.html">Заказ №780</a>
+                                        </div>
                                         <div class="profile-order-card__status text-primary">доставлен</div>
                                     </div>
                                     <div class="profile-order-card__amount">360 000 ₽</div>
@@ -1394,12 +1408,15 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- item -->
                             <div class="card profile-order-card">
                                 <div class="card-body">
                                     <div class="profile-order-card__date">от 21.01.2024</div>
                                     <div class="profile-order-card__heading">
-                                        <div class="profile-order-card__title title"><a href="#">Заказ №780</a></div>
+                                        <div class="profile-order-card__title title">
+                                            <a href="profile-history-orders-item.html">Заказ №780</a>
+                                        </div>
                                         <div class="profile-order-card__status text-danger">отменен</div>
                                     </div>
                                     <div class="profile-order-card__amount">360 000 ₽</div>
@@ -1445,59 +1462,62 @@
                                     </div>
                                 </div>
                             </div>
+
                         </div>
 
-                        <!-- Пагинация -->
+                        <!-- pagination -->
                         <div class="d-flex justify-content-center mt-5">
                             <nav class="pagination-nav">
-                                <ul class="pagination-list">
-                                    <li>
-                                        <a href="#" class="pagination-item prev">
-                                            <span class="me-2">
-                                                <svg width="13" height="22">
-                                                    <use xlink:href="img/sprite.svg#menu-back"></use>
-                                                </svg>
-                                            </span>
-                                            Назад
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pagination-item active">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pagination-item">2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pagination-item">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pagination-item">4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pagination-item">5</a>
-                                    </li>
-                                    <li>
-                                        <span class="pagination-item dots">...</span>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pagination-item">10</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="pagination-item next">
-                                            Дальше
-                                            <span class="ms-2">
-                                                <svg width="13" height="22">
-                                                    <use xlink:href="img/sprite.svg#menu-arrow"></use>
-                                                </svg>
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+    <ul class="pagination-list">
+        <li>
+            <a href="#" class="pagination-item prev">
+                <span class="me-2">
+                    <svg width="13" height="22">
+                        <use xlink:href="img/sprite.svg#menu-back"></use>
+                    </svg>
+                </span>
+                Назад
+            </a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item active">1</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">2</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">3</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">4</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">5</a>
+        </li>
+        <li>
+            <span class="pagination-item dots">...</span>
+        </li>
+        <li>
+            <a href="#" class="pagination-item">10</a>
+        </li>
+        <li>
+            <a href="#" class="pagination-item next">
+                Дальше
+                <span class="ms-2">
+                    <svg width="13" height="22">
+                        <use xlink:href="img/sprite.svg#menu-arrow"></use>
+                    </svg>
+                </span>
+            </a>
+        </li>
+    </ul>
+</nav>
                         </div>
+                        
                     </div>
 
                 </div>
+
             </div>
         </div>
     </section>

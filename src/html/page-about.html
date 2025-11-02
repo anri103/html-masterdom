@@ -11,10 +11,10 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="#">Главная</a>
+                        <a href="index.html">Главная</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                        <span>Страница</span>
+                        <span>О компании</span>
                     </li>
                 </ol>
             </nav>
@@ -35,11 +35,11 @@
 
             <div class="page-item__hero-img">
                 <img src="img/page-about-hero-01.png" alt="Заголовок о компании">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-play-video border-0 p-0 position-absolute top-50 start-50 translate-middle" data-fancybox="video-gallery">
+                <!-- <a href="#" class="btn btn-play-video border-0 p-0 position-absolute top-50 start-50 translate-middle" data-fancybox="video-gallery">
                     <svg xmlns="http://www.w3.org/2000/svg" width="42" height="50" viewBox="0 0 42 50" fill="none">
                         <path d="M42 25L-2.26252e-06 49.2487L-1.62442e-07 0.751288L42 25Z" fill="white"/>
                     </svg>
-                </a>
+                </a> -->
             </div>
 
             <div class="page-item__text">
@@ -296,43 +296,8 @@
         </div>
     </section>
 
-    <!-- Заявка на сотрудничество -->
-    <section class="section">
-        <div class="container">
-            <div class="email-subscribe-wrapper">
-                <div class="row" style="--bs-gutter-y: 42px;">
-                    <div class="col-lg-4">
-                        <div class="h2 ff-title text-uppercase mb-12px">Оставте заявку на сотрудничество!</div>
-                        <div>Программа МД ПАРТНЕР разработана для дизайнеров интерьеров, архитекторов и видеоблогеров.</div>
-                    </div>
-                    <div class="col-lg-6 ms-auto">
-                        <form action="#" class="email-subscribe-form">
-                            <div class="d-flex flex-column gap-22px mb-42px">
-                                <div class="position-relative">
-                                    <input type="text" class="form-control" placeholder="Имя Фамилия">
-                                </div>
-                                <div class="position-relative">
-                                    <input type="text" class="form-control" placeholder="Телефон">
-                                </div>
-                                <div class="position-relative">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="position-relative">
-                                    <label class="d-flex gap-2 align-items-center">
-                                        <input type="checkbox" class="form-checkbox">
-                                        <span>Принимаю условия <a href="#" class="text-decoration-underline">обработки персональных данных</a>.</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div>
-                                <button type="button" class="btn btn-secondary w-100">отправить заявку</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- section-cta -->
+    @@include('partials/section-cta.html')
 
 </main>
 
