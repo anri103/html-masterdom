@@ -65,7 +65,6 @@
                                     <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </a>
-                            <div class="notification-count">2</div>
                         </div>
                         <div class="navbar-mobile__icon icon-heart">
                             <a href="#">
@@ -734,6 +733,7 @@
 
         <!-- Десктопное меню -->
         <div class="fixed-header-desktop">
+
             <!-- Десктопное меню -->
             <nav class="navbar navbar-desktop">
                 <div class="container-xl">
@@ -765,7 +765,7 @@
                                 <!-- Должна быть возможность добавить свои классы ссылке -->
                                 <li><a href="category-shops.html" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
                                 <li class="has-mega-menu">
-                                    <a href="#" class="nav-link"><span>Плитка</span></a>
+                                    <a href="catalog.html" class="nav-link"><span>Плитка</span></a>
                                     <div class="mega-menu">
                                         <div class="row g-0">
                                             <div class="col-3 border-end">
@@ -899,7 +899,7 @@
                                     </div>
                                 </li>
                                 <li class="has-mega-menu">
-                                    <a href="#" class="nav-link"><span>Обои</span></a>
+                                    <a href="catalog.html" class="nav-link"><span>Обои</span></a>
                                     <div class="mega-menu">
                                         <div class="row g-0">
                                             <div class="col-3 border-end">
@@ -1068,8 +1068,12 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="#" class="nav-link"><span>Краска</span></a></li>
-                                <li><a href="#" class="nav-link"><span>Сопутствующие</span></a></li>
+                                <li>
+                                    <a href="catalog.html" class="nav-link"><span>Краска</span></a>
+                                </li>
+                                <li>
+                                    <a href="catalog.html" class="nav-link"><span>Сопутствующие</span></a>
+                                </li>
                             </ul>
                         </div>
                         <div class="navbar-desktop__search">
@@ -1114,7 +1118,6 @@
                                         <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <div class="notification-count">2</div>
                             </div>
                             <!-- icon -->
                             <div class="navbar-desktop__icon icon-whishlist">
@@ -1143,6 +1146,7 @@
                     </div>
                 </div>
             </nav>
+
             <!-- Выпадающее окно "Меню" на десктопе -->
             <div class="collapse" id="collapseDesktopOverlayMenu">
                 <div class="desktop-collapse-menu">
@@ -1151,7 +1155,8 @@
                             <div class="desktop-collapse-menu__col">
                                 <ul class="desktop-collapse-menu__menu">
                                     <li class="has-submenu">
-                                        <a href="#">Плитка</a>
+                                        <a href="catalog.html">Плитка</a>
+                                        <button type="button" class="submenu-toggler"></button>
                                         <ul class="submenu">
                                             <li><a href="#">Каталог плитки</a></li>
                                             <li><a href="#">Бренды и фабрики</a></li>
@@ -1172,7 +1177,7 @@
                                         </ul>
                                     </li>
                                     <li class="has-submenu">
-                                        <a href="#">Обои</a>
+                                        <a href="catalog.html">Обои</a>
                                         <button type="button" class="submenu-toggler"></button>
                                         <ul class="submenu">
                                             <li><a href="#">Каталог обоев</a></li>
@@ -1190,11 +1195,11 @@
                                             <li><a href="#">Дилерам</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Краска</a></li>
-                                    <li><a href="#">Магазины</a></li>
-                                    <li><a href="#">Доставка</a></li>
+                                    <li><a href="catalog.html">Краска</a></li>
+                                    <li><a href="category-shops.html">Магазины</a></li>
+                                    <li><a href="info-delivery.html">Доставка</a></li>
                                     <li class="has-submenu">
-                                        <a href="#">Услуги</a>
+                                        <a href="page-services.html">Услуги</a>
                                         <button type="button" class="submenu-toggler"></button>
                                         <ul class="submenu">
                                             <li><a href="#">Разгрузка</a></li>
@@ -1202,9 +1207,9 @@
                                             <li><a href="#">Выезд дизайнера для подбора штор</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">О компании</a></li>
-                                    <li><a href="#">Оплата и возврат</a></li>
-                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="page-about.html">О компании</a></li>
+                                    <li><a href="info-payment.html">Оплата и возврат</a></li>
+                                    <li><a href="page-contacts.html">Контакты</a></li>
                                     <li><a href="#">Дилерам</a></li>
                                 </ul>
                             </div>
@@ -1212,13 +1217,13 @@
                             <div class="desktop-collapse-menu__col">
                                 <div class="desktop-collapse-menu__blog-item">
                                     <div class="blog-item-img">
-                                        <a href="#">
+                                        <a href="blog-item.html">
                                             <img src="img/overlay-menu-blog-item.jpg" alt="Бранч для дизайнеров с брендами CRETO и VitrA и лекция Сергея Трегубова в Москве!">
                                         </a>
                                     </div>
                                     <div class="blog-item-body">
                                         <div class="blog-item-title">
-                                            <a href="#">Бранч для дизайнеров с брендами CRETO и VitrA и лекция Сергея Трегубова в Москве!</a>
+                                            <a href="blog-item.html">Бранч для дизайнеров с брендами CRETO и VitrA и лекция Сергея Трегубова в Москве!</a>
                                         </div>
                                         <div class="blog-item-tags">
                                             <div class="item-tag date">23.04.2021</div>
@@ -1227,16 +1232,17 @@
                                             </div>
                                         </div>
                                         <div class="blog-item-read-link">
-                                            <a href="#">Читать</a>
+                                            <a href="blog-item.html">Читать</a>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-outline fw-medium mt-4" style="width: 100%; max-width: 296px;">все статьи</a>
+                                <a href="blog.html" class="btn btn-outline fw-medium mt-4" style="width: 100%; max-width: 296px;">все статьи</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
         
     </header>
@@ -1301,296 +1307,86 @@
                 <div class="tab-pane fade show active" id="tab-solutions-01" role="tabpanel" tabindex="0">
                     <div class="row gy-3 row-cols-1 row-cols-lg-3" id="row-01">
                         <div class="col">
-                            <div class="card-ready-made-solutions">
-    <div class="card-top position-relative">
-        <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 25%; left: 25%;"></button>
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 70%; left: 15%;"></button>
-
-        <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            <div class="card card-ready-made-solutions">
+    <div class="card-img-wrapper">
+        <a href="category-solutions-item.html">
+            <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
+        </a>
     </div>
     <div class="card-body">
-        <p class="card-title">
-            <a href="#">Дизайн интерьера кухни</a>
-        </p>
+        <p class="card-title"><a href="category-solutions-item.html">Дизайн интерьера кухни</a></p>
         <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
-        <a href="#" class="btn border-0 p-0">
-            подробнее
-            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
-                <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
-            </svg>
-        </a>
+        <a href="category-solutions-item.html" class="btn border-0 p-0">подробнее</a>
     </div>
 </div>
                         </div>
                         <div class="col">
-                            <div class="card-ready-made-solutions">
-    <div class="card-top position-relative">
-        <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 25%; left: 25%;"></button>
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 70%; left: 15%;"></button>
-
-        <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            <div class="card card-ready-made-solutions">
+    <div class="card-img-wrapper">
+        <a href="category-solutions-item.html">
+            <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="...">
+        </a>
     </div>
     <div class="card-body">
-        <p class="card-title">
-            <a href="#">Дизайн интерьера кухни</a>
-        </p>
+        <p class="card-title"><a href="category-solutions-item.html">Дизайн интерьера кухни</a></p>
         <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
-        <a href="#" class="btn border-0 p-0">
-            подробнее
-            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
-                <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
-            </svg>
-        </a>
+        <a href="category-solutions-item.html" class="btn border-0 p-0">подробнее</a>
     </div>
 </div>
                         </div>
                         <div class="col">
-                            <div class="card-ready-made-solutions">
-    <div class="card-top position-relative">
-        <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 25%; left: 25%;"></button>
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 70%; left: 15%;"></button>
-
-        <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            <div class="card card-ready-made-solutions">
+    <div class="card-img-wrapper">
+        <a href="category-solutions-item.html">
+            <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
+        </a>
     </div>
     <div class="card-body">
-        <p class="card-title">
-            <a href="#">Дизайн интерьера кухни</a>
-        </p>
+        <p class="card-title"><a href="category-solutions-item.html">Дизайн интерьера кухни</a></p>
         <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
-        <a href="#" class="btn border-0 p-0">
-            подробнее
-            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
-                <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
-            </svg>
-        </a>
+        <a href="category-solutions-item.html" class="btn border-0 p-0">подробнее</a>
     </div>
 </div>
                         </div>
                         <div class="col">
-                            <div class="card-ready-made-solutions">
-    <div class="card-top position-relative">
-        <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 25%; left: 25%;"></button>
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 70%; left: 15%;"></button>
-
-        <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            <div class="card card-ready-made-solutions">
+    <div class="card-img-wrapper">
+        <a href="category-solutions-item.html">
+            <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="...">
+        </a>
     </div>
     <div class="card-body">
-        <p class="card-title">
-            <a href="#">Дизайн интерьера кухни</a>
-        </p>
+        <p class="card-title"><a href="category-solutions-item.html">Дизайн интерьера кухни</a></p>
         <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
-        <a href="#" class="btn border-0 p-0">
-            подробнее
-            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
-                <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
-            </svg>
-        </a>
+        <a href="category-solutions-item.html" class="btn border-0 p-0">подробнее</a>
     </div>
 </div>
                         </div>
                         <div class="col">
-                            <div class="card-ready-made-solutions">
-    <div class="card-top position-relative">
-        <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 25%; left: 25%;"></button>
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 70%; left: 15%;"></button>
-
-        <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            <div class="card card-ready-made-solutions">
+    <div class="card-img-wrapper">
+        <a href="category-solutions-item.html">
+            <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
+        </a>
     </div>
     <div class="card-body">
-        <p class="card-title">
-            <a href="#">Дизайн интерьера кухни</a>
-        </p>
+        <p class="card-title"><a href="category-solutions-item.html">Дизайн интерьера кухни</a></p>
         <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
-        <a href="#" class="btn border-0 p-0">
-            подробнее
-            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
-                <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
-            </svg>
-        </a>
+        <a href="category-solutions-item.html" class="btn border-0 p-0">подробнее</a>
     </div>
 </div>
                         </div>
                         <div class="col">
-                            <div class="card-ready-made-solutions">
-    <div class="card-top position-relative">
-        <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 25%; left: 25%;"></button>
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 70%; left: 15%;"></button>
-
-        <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            <div class="card card-ready-made-solutions">
+    <div class="card-img-wrapper">
+        <a href="category-solutions-item.html">
+            <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="...">
+        </a>
     </div>
     <div class="card-body">
-        <p class="card-title">
-            <a href="#">Дизайн интерьера кухни</a>
-        </p>
+        <p class="card-title"><a href="category-solutions-item.html">Дизайн интерьера кухни</a></p>
         <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
-        <a href="#" class="btn border-0 p-0">
-            подробнее
-            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
-                <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
-            </svg>
-        </a>
+        <a href="category-solutions-item.html" class="btn border-0 p-0">подробнее</a>
     </div>
 </div>
                         </div>
@@ -1601,149 +1397,44 @@
                 <div class="tab-pane fade" id="tab-solutions-02" role="tabpanel" tabindex="0">
                     <div class="row gy-3 row-cols-1 row-cols-lg-3" id="row-02">
                         <div class="col">
-                            <div class="card-ready-made-solutions">
-    <div class="card-top position-relative">
-        <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 25%; left: 25%;"></button>
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 70%; left: 15%;"></button>
-
-        <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            <div class="card card-ready-made-solutions">
+    <div class="card-img-wrapper">
+        <a href="category-solutions-item.html">
+            <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
+        </a>
     </div>
     <div class="card-body">
-        <p class="card-title">
-            <a href="#">Дизайн интерьера кухни</a>
-        </p>
+        <p class="card-title"><a href="category-solutions-item.html">Дизайн интерьера кухни</a></p>
         <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
-        <a href="#" class="btn border-0 p-0">
-            подробнее
-            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
-                <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
-            </svg>
-        </a>
+        <a href="category-solutions-item.html" class="btn border-0 p-0">подробнее</a>
     </div>
 </div>
                         </div>
                         <div class="col">
-                            <div class="card-ready-made-solutions">
-    <div class="card-top position-relative">
-        <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 25%; left: 25%;"></button>
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 70%; left: 15%;"></button>
-
-        <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            <div class="card card-ready-made-solutions">
+    <div class="card-img-wrapper">
+        <a href="category-solutions-item.html">
+            <img class="img-fluid w-100" src="img/ready-made-solutions-02.png" alt="...">
+        </a>
     </div>
     <div class="card-body">
-        <p class="card-title">
-            <a href="#">Дизайн интерьера кухни</a>
-        </p>
+        <p class="card-title"><a href="category-solutions-item.html">Дизайн интерьера кухни</a></p>
         <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
-        <a href="#" class="btn border-0 p-0">
-            подробнее
-            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
-                <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
-            </svg>
-        </a>
+        <a href="category-solutions-item.html" class="btn border-0 p-0">подробнее</a>
     </div>
 </div>
                         </div>
                         <div class="col">
-                            <div class="card-ready-made-solutions">
-    <div class="card-top position-relative">
-        <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 25%; left: 25%;"></button>
-
-        <button type="button" class="btn-interest" data-bs-toggle="popover" data-bs-placement="right" data-bs-html="true"
-        data-bs-content="
-        <div class='d-flex gap-3 flex-column'>
-        <div class='popover-title'>
-            <a href='#'>Керамогранит MARMORI Калакатта Белый Полированный</a>
-        </div>
-        <div class='text-muted-light'>60x120</div>
-        <div class='d-flex align-items-center justify-content-between'>
-            <div class='text-primary fw-medium'>3 250 ₽ за 1 м<sup>2</sup></div>
-            <a href='#' class='svg-long-arrow'></a>
-        </div>
-        </div>"
-        style="top: 70%; left: 15%;"></button>
-
-        <div class="card-top__info">Информация о проекте и дизайнере</div>
+                            <div class="card card-ready-made-solutions">
+    <div class="card-img-wrapper">
+        <a href="category-solutions-item.html">
+            <img class="img-fluid w-100" src="img/ready-made-solutions-01.png" alt="...">
+        </a>
     </div>
     <div class="card-body">
-        <p class="card-title">
-            <a href="#">Дизайн интерьера кухни</a>
-        </p>
+        <p class="card-title"><a href="category-solutions-item.html">Дизайн интерьера кухни</a></p>
         <div class="card-short-descr text-secondary mb-12px">Современная кухня в серо-коричневых тонах. Кухня - это то место, где мы проводим большую часть времени, поэтому современная кухня должна быть выполнена в приятных светлых тонах</div>
-        <a href="#" class="btn border-0 p-0">
-            подробнее
-            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="8" viewBox="0 0 51 8" fill="none">
-                <path d="M50.6878 4.35404C50.883 4.15878 50.883 3.8422 50.6878 3.64693L47.5058 0.464954C47.3105 0.269692 46.994 0.269692 46.7987 0.464954C46.6034 0.660217 46.6034 0.976799 46.7987 1.17206L49.6271 4.00049L46.7987 6.82892C46.6034 7.02418 46.6034 7.34076 46.7987 7.53602C46.994 7.73128 47.3105 7.73128 47.5058 7.53602L50.6878 4.35404ZM0.334229 4.50049H50.3342V3.50049H0.334229V4.50049Z" fill="#02378F"/>
-            </svg>
-        </a>
+        <a href="category-solutions-item.html" class="btn border-0 p-0">подробнее</a>
     </div>
 </div>
                         </div>
@@ -1771,12 +1462,6 @@
                         <a href="#" class="categories-circles__item">
                             <div class="categories-circles__img">
                                 <img src="img/designers-avatar-01.png" alt="Елена Пьюзо">
-                                <div class="categories-circles__overlay">
-                                    <div class="text-center fs-12px">
-                                        <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="text-primary fw-medium">подробнее</div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="categories-circles__title">Елена Пьюзо</div>
                         </a>
@@ -1785,12 +1470,6 @@
                         <a href="#" class="categories-circles__item">
                             <div class="categories-circles__img">
                                 <img src="img/designers-avatar-02.png" alt="Диана Бахтиярова">
-                                <div class="categories-circles__overlay">
-                                    <div class="text-center fs-12px">
-                                        <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="text-primary fw-medium">подробнее</div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="categories-circles__title">Диана Бахтиярова</div>
                         </a>
@@ -1799,12 +1478,6 @@
                         <a href="#" class="categories-circles__item">
                             <div class="categories-circles__img">
                                 <img src="img/designers-avatar-03.png" alt="Оксана Федорова">
-                                <div class="categories-circles__overlay">
-                                    <div class="text-center fs-12px">
-                                        <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="text-primary fw-medium">подробнее</div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="categories-circles__title">Оксана Федорова</div>
                         </a>
@@ -1813,12 +1486,6 @@
                         <a href="#" class="categories-circles__item">
                             <div class="categories-circles__img">
                                 <img src="img/designers-avatar-04.png" alt="Юлия Белохвостова">
-                                <div class="categories-circles__overlay">
-                                    <div class="text-center fs-12px">
-                                        <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="text-primary fw-medium">подробнее</div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="categories-circles__title">Юлия Белохвостова</div>
                         </a>
@@ -1827,12 +1494,6 @@
                         <a href="#" class="categories-circles__item">
                             <div class="categories-circles__img">
                                 <img src="img/designers-avatar-03.png" alt="Оксана Федорова">
-                                <div class="categories-circles__overlay">
-                                    <div class="text-center fs-12px">
-                                        <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="text-primary fw-medium">подробнее</div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="categories-circles__title">Оксана Федорова</div>
                         </a>
@@ -1841,12 +1502,6 @@
                         <a href="#" class="categories-circles__item">
                             <div class="categories-circles__img">
                                 <img src="img/designers-avatar-05.png" alt="Елена Балашова">
-                                <div class="categories-circles__overlay">
-                                    <div class="text-center fs-12px">
-                                        <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="text-primary fw-medium">подробнее</div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="categories-circles__title">Елена Балашова</div>
                         </a>
@@ -1855,12 +1510,6 @@
                         <a href="#" class="categories-circles__item">
                             <div class="categories-circles__img">
                                 <img src="img/designers-avatar-01.png" alt="Елена Пьюзо">
-                                <div class="categories-circles__overlay">
-                                    <div class="text-center fs-12px">
-                                        <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="text-primary fw-medium">подробнее</div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="categories-circles__title">Елена Пьюзо</div>
                         </a>
@@ -1869,12 +1518,6 @@
                         <a href="#" class="categories-circles__item">
                             <div class="categories-circles__img">
                                 <img src="img/designers-avatar-02.png" alt="Диана Бахтиярова">
-                                <div class="categories-circles__overlay">
-                                    <div class="text-center fs-12px">
-                                        <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="text-primary fw-medium">подробнее</div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="categories-circles__title">Диана Бахтиярова</div>
                         </a>
@@ -1883,12 +1526,6 @@
                         <a href="#" class="categories-circles__item">
                             <div class="categories-circles__img">
                                 <img src="img/designers-avatar-03.png" alt="Оксана Федорова">
-                                <div class="categories-circles__overlay">
-                                    <div class="text-center fs-12px">
-                                        <div class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-                                        <div class="text-primary fw-medium">подробнее</div>
-                                    </div>
-                                </div>
                             </div>
                             <div class="categories-circles__title">Оксана Федорова</div>
                         </a>
@@ -1908,74 +1545,6 @@
                             fill="white" />
                     </svg>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Сотрудничество -->
-    <section class="section">
-        <div class="container">
-            <div class="h1 title fw-normal mb-22px">Сотрудничество</div>
-            <!-- Вопросы о сайте -->
-            <div style="max-width: 1100px;">
-                <div class="link-on-page" id="faq-cat-01">
-                    <p class="h4 fw-semibold">Вопросы о сайте</p>
-                    <div>
-                        <div class="accordion" id="accordion-faq-cat-01">
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accordion-faq-cat-01-01" aria-expanded="true">
-                                    Как устроена онлайн-оплата на сайте?
-                                    </button>
-                                </div>
-                                <div id="accordion-faq-cat-01-01" class="accordion-collapse collapse show" data-bs-parent="#accordion-faq-cat-01">
-                                    <div class="accordion-body">
-                                        <p>Оплата пластиковыми картами на нашем сайте осуществляется через платежную систему ASSIST.</p>
-                                        <p>В системе ASSIST безопасность платежей обеспечивается использованием SSL протокола для передачи конфиденциальной информации от клиента на сервер системы ASSIST для дальнейшей обработки.</p>
-                                        <p>При оплате заказа банковской картой, обработка платежа (включая ввод номера карты) происходит на защищенной странице процессинговой системы, которая прошла международную сертификацию. Это значит, что Ваши конфиденциальные данные (реквизиты карты, регистрационные данные и др.) не поступают в интернет-магазин, их обработка полностью защищена и никто, в том числе наш интернет-магазин, не может получить персональные и банковские данные клиента.</p>
-                                        <p>При работе с карточными данными применяется стандарт защиты информации, разработанный международными платёжными системами <b>Visa и MasterCard - Payment Card Industry Data Security Standard (PCI DSS)</b>, что обеспечивает безопасную обработку реквизитов Банковской карты Держателя. Применяемая технология передачи данных гарантирует безопасность по сделкам с Банковскими картами путем использования протоколов Secure Sockets Layer (SSL), Verified by Visa, Secure Code, и закрытых банковских сетей, имеющих высшую степень защиты.</p>
-                                        <p>Перед совершением покупки посредством электронного платежа через систему ASSIST предлагаем Вам ознакомиться с условиями договора-оферты.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-faq-cat-01-02" aria-expanded="false">
-                                    Как устроена онлайн-оплата на сайте?
-                                    </button>
-                                </div>
-                                <div id="accordion-faq-cat-01-02" class="accordion-collapse collapse" data-bs-parent="#accordion-faq-cat-01">
-                                    <div class="accordion-body">
-                                        <p>Оплата пластиковыми картами на нашем сайте осуществляется через платежную систему ASSIST.</p>
-                                        <p>В системе ASSIST безопасность платежей обеспечивается использованием SSL протокола для передачи конфиденциальной информации от клиента на сервер системы ASSIST для дальнейшей обработки.</p>
-                                        <p>При оплате заказа банковской картой, обработка платежа (включая ввод номера карты) происходит на защищенной странице процессинговой системы, которая прошла международную сертификацию. Это значит, что Ваши конфиденциальные данные (реквизиты карты, регистрационные данные и др.) не поступают в интернет-магазин, их обработка полностью защищена и никто, в том числе наш интернет-магазин, не может получить персональные и банковские данные клиента.</p>
-                                        <p>При работе с карточными данными применяется стандарт защиты информации, разработанный международными платёжными системами <b>Visa и MasterCard - Payment Card Industry Data Security Standard (PCI DSS)</b>, что обеспечивает безопасную обработку реквизитов Банковской карты Держателя. Применяемая технология передачи данных гарантирует безопасность по сделкам с Банковскими картами путем использования протоколов Secure Sockets Layer (SSL), Verified by Visa, Secure Code, и закрытых банковских сетей, имеющих высшую степень защиты.</p>
-                                        <p>Перед совершением покупки посредством электронного платежа через систему ASSIST предлагаем Вам ознакомиться с условиями договора-оферты.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <div class="accordion-header">
-                                    <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#accordion-faq-cat-01-03" aria-expanded="false">
-                                    Как устроена онлайн-оплата на сайте?
-                                    </button>
-                                </div>
-                                <div id="accordion-faq-cat-01-03" class="accordion-collapse collapse" data-bs-parent="#accordion-faq-cat-01">
-                                    <div class="accordion-body">
-                                        <p>Оплата пластиковыми картами на нашем сайте осуществляется через платежную систему ASSIST.</p>
-                                        <p>В системе ASSIST безопасность платежей обеспечивается использованием SSL протокола для передачи конфиденциальной информации от клиента на сервер системы ASSIST для дальнейшей обработки.</p>
-                                        <p>При оплате заказа банковской картой, обработка платежа (включая ввод номера карты) происходит на защищенной странице процессинговой системы, которая прошла международную сертификацию. Это значит, что Ваши конфиденциальные данные (реквизиты карты, регистрационные данные и др.) не поступают в интернет-магазин, их обработка полностью защищена и никто, в том числе наш интернет-магазин, не может получить персональные и банковские данные клиента.</p>
-                                        <p>При работе с карточными данными применяется стандарт защиты информации, разработанный международными платёжными системами <b>Visa и MasterCard - Payment Card Industry Data Security Standard (PCI DSS)</b>, что обеспечивает безопасную обработку реквизитов Банковской карты Держателя. Применяемая технология передачи данных гарантирует безопасность по сделкам с Банковскими картами путем использования протоколов Secure Sockets Layer (SSL), Verified by Visa, Secure Code, и закрытых банковских сетей, имеющих высшую степень защиты.</p>
-                                        <p>Перед совершением покупки посредством электронного платежа через систему ASSIST предлагаем Вам ознакомиться с условиями договора-оферты.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-            <div style="max-width: 350px; margin-top: 32px;">
-                <a href="#" class="btn btn-outline w-100">Подробнее</a>
             </div>
         </div>
     </section>
@@ -2018,28 +1587,12 @@
     </div>
 </section>
 
-    <!-- CTA -->
-    <section class="section section-cta-01">
-        <div class="container">
-            <div class="row" style="--bs-gutter-y: 2rem;">
-                <div class="col-lg-4">
-                    <div class="h2 ff-title text-uppercase mb-12px">3d рендер c нашей плиткой бесплатно!</div>
-                    <div>От вашей мечты до реализации один шаг.</div>
-                    <div style="max-width: 350px; margin-top: 32px;">
-                        <a href="#" class="btn btn-outline w-100">Подробнее</a>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <img class="img-fluid w-100" src="img/cta-img-01.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
 </main>
 
     <!-- FOOTER -->
     <footer class="footer">
+
+        <!-- footer-top -->
         <div class="footer-top">
             <div class="footer-top__logo">
                 <a href="#">
@@ -2057,19 +1610,22 @@
                 </a>
             </div>
         </div>
+
+        <!-- footer-middle -->
         <div class="footer-middle">
             <div class="footer-middle__container">
                 <div class="footer-middle__col">
                     <div class="footer-middle__widget">
                         <ul class="footer-middle__menu">
                             <li class="has-submenu">
-                                <a href="#">Ассортимент</a>
+                                <a href="catalog.html">Ассортимент</a>
                                 <ul class="submenu">
-                                    <li><a href="#">Плитка</a></li>
-                                    <li><a href="#">Обои</a></li>
-                                    <li><a href="#">Сантехника</a></li>
-                                    <li><a href="#">Свет</a></li>
-                                    <li><a href="#">Краски</a></li>
+                                    <li><a href="catalog.html">Каталог плитки</a></li>
+                                    <li><a href="catalog.html">Керамогранит</a></li>
+                                    <li><a href="catalog.html">Мрамор</a></li>
+                                    <li><a href="catalog.html">Каталог обоев</a></li>
+                                    <li><a href="catalog.html">Краски</a></li>
+                                    <li><a href="catalog.html">Сопутствующие</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -2077,12 +1633,10 @@
                     <div class="footer-middle__widget">
                         <ul class="footer-middle__menu">
                             <li class="has-submenu">
-                                <a href="#">Услуги</a>
+                                <a href="page-promotions.html">Спецпредложения</a>
                                 <ul class="submenu">
-                                    <li><a href="#">3D визуализация</a></li>
-                                    <li><a href="#">Примерка обоев</a></li>
-                                    <li><a href="#">Примерка плитки</a></li>
-                                    <li><a href="#">Выезд дизайнера для подбора штор</a></li>
+                                    <li><a href="page-promotions.html">Распродажа плитки</a></li>
+                                    <li><a href="page-promotions.html">Распродажа обоев</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -2094,10 +1648,9 @@
                             <li class="has-submenu">
                                 <a href="#">Покупателям</a>
                                 <ul class="submenu">
-                                    <li><a href="#">Доставка</a></li>
-                                    <li><a href="#">Оплата</a></li>
-                                    <li><a href="#">Возврат</a></li>
-                                    <li><a href="#">Вопрос-ответ</a></li>
+                                    <li><a href="info-delivery.html">Доставка</a></li>
+                                    <li><a href="info-payment.html">Оплата</a></li>
+                                    <li><a href="info-faq.html">Вопрос-ответ</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -2105,46 +1658,79 @@
                     <div class="footer-middle__widget">
                         <ul class="footer-middle__menu">
                             <li class="has-submenu">
-                                <a href="#">Блог</a>
+                                <a href="page-services.html">Услуги</a>
                                 <ul class="submenu">
-                                    <li><a href="#">Новости</a></li>
-                                    <li><a href="#">Статьи</a></li>
-                                    <li><a href="#">События</a></li>
+                                    <li><a href="page-services.html">Разгузка</a></li>
+                                    <li><a href="page-services.html">Выезд специалиста на замеры</a></li>
+                                    <li><a href="page-services.html">Выезд дизайнера для подбора штор</a></li>
                                 </ul>
                             </li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="blog.html">Блог</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-middle__col">
                     <div class="footer-middle__widget">
                         <ul class="footer-middle__menu">
-                            <li class="has-submenu">
-                                <a href="#">Спецпредложения</a>
-                                <ul class="submenu">
-                                    <li><a href="#">Каталог товаров SALE</a></li>
-                                    <li><a href="#">Программа лояльности</a></li>
-                                    <li><a href="#">Акции</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="category-designers.html">Дизайнеры</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="category-solutions.html">Реализованные проекты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="#">Программа «МД Партнёр»</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="category-collections.html">Коллекции</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="category-pdf-catalogs.html">Каталоги</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="info-faq.html">Вопрос-ответ</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-middle__col">
                     <div class="footer-middle__widget">
                         <ul class="footer-middle__menu">
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Магазины</a></li>
-                            <li><a href="#">Дизайнерам</a></li>
+                            <li><a href="page-about.html">О компании</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="category-shops.html">Магазины</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
                             <li><a href="#">Дилерам</a></li>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Магазины</a></li>
-                            <li><a href="#">Дизайнерам</a></li>
-                            <li><a href="#">Дилерам</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="#">Вакансии</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- footer-bottom -->
         <div class="footer-bottom">
             <div class="footer-bottom__wrap">
                 <div class="footer-bottom__row align-items-center">
@@ -2169,6 +1755,7 @@
                 </div>
             </div>
         </div>
+
     </footer>
 
     <!-- MODALS -->

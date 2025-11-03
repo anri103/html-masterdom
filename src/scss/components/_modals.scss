@@ -26,6 +26,10 @@
     padding: var(--bs-modal-footer-padding);
 }
 
+.offcanvas-footer {
+    padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+}
+
 .fancybox__container {
     --fancybox-bg: rgba(24, 24, 27, 0.69);
 }

@@ -1,0 +1,61 @@
+/* TYPOGRAPHY ============================ */
+
+.title {
+    --bs-link-color-rgb: var(--bs-body-color-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    font-family: var(--bs-title-font-family);
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+}
+
+.ff-title,
+.font-title {
+    font-family: var(--bs-title-font-family) !important;
+}
+
+.fs-12px {
+    font-size: .75rem !important;
+}
+
+.fs-14px {
+    font-size: .875rem !important;
+}
+
+.fs-16px {
+    font-size: 1rem !important;
+}
+
+.fs-18px {
+    font-size: 1.125rem !important;
+}
+
+.fs-20px {
+    font-size: 1.25rem !important;
+}
+
+.fs-24px {
+    font-size: 1.5rem !important;
+}
+
+.fs-28px {
+    font-size: 1.75rem !important;
+}
+
+.text-red {
+    color: #DF5A5A !important;
+}
+
+.text-muted-light {
+    --bs-text-opacity: 1;
+    color: var(--theme-light-gray) !important;
+}
+
+@media (min-width: 992px) {
+
+    .title {
+        font-size: 32px;
+    }
+}

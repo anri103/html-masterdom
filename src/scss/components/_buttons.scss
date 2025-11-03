@@ -266,3 +266,15 @@
 .show-more-button.active::after {
     transform: rotate(180deg);
 }
+
+.btn-hover-primary {
+    --bs-btn-hover-color: var(--bs-primary);
+}
+
+.btn-hover-primary:hover .svg-path-hover-primary {
+    stroke: var(--bs-primary);
+}
+
+.btn-hover-primary:hover .svg-path-hover-primary-fill {
+    fill: var(--bs-primary);
+}

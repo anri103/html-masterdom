@@ -65,7 +65,6 @@
                                     <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </a>
-                            <div class="notification-count">2</div>
                         </div>
                         <div class="navbar-mobile__icon icon-heart">
                             <a href="#">
@@ -734,6 +733,7 @@
 
         <!-- Десктопное меню -->
         <div class="fixed-header-desktop">
+
             <!-- Десктопное меню -->
             <nav class="navbar navbar-desktop">
                 <div class="container-xl">
@@ -765,7 +765,7 @@
                                 <!-- Должна быть возможность добавить свои классы ссылке -->
                                 <li><a href="category-shops.html" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
                                 <li class="has-mega-menu">
-                                    <a href="#" class="nav-link"><span>Плитка</span></a>
+                                    <a href="catalog.html" class="nav-link"><span>Плитка</span></a>
                                     <div class="mega-menu">
                                         <div class="row g-0">
                                             <div class="col-3 border-end">
@@ -899,7 +899,7 @@
                                     </div>
                                 </li>
                                 <li class="has-mega-menu">
-                                    <a href="#" class="nav-link"><span>Обои</span></a>
+                                    <a href="catalog.html" class="nav-link"><span>Обои</span></a>
                                     <div class="mega-menu">
                                         <div class="row g-0">
                                             <div class="col-3 border-end">
@@ -1068,8 +1068,12 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="#" class="nav-link"><span>Краска</span></a></li>
-                                <li><a href="#" class="nav-link"><span>Сопутствующие</span></a></li>
+                                <li>
+                                    <a href="catalog.html" class="nav-link"><span>Краска</span></a>
+                                </li>
+                                <li>
+                                    <a href="catalog.html" class="nav-link"><span>Сопутствующие</span></a>
+                                </li>
                             </ul>
                         </div>
                         <div class="navbar-desktop__search">
@@ -1114,7 +1118,6 @@
                                         <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                                <div class="notification-count">2</div>
                             </div>
                             <!-- icon -->
                             <div class="navbar-desktop__icon icon-whishlist">
@@ -1143,6 +1146,7 @@
                     </div>
                 </div>
             </nav>
+
             <!-- Выпадающее окно "Меню" на десктопе -->
             <div class="collapse" id="collapseDesktopOverlayMenu">
                 <div class="desktop-collapse-menu">
@@ -1151,7 +1155,8 @@
                             <div class="desktop-collapse-menu__col">
                                 <ul class="desktop-collapse-menu__menu">
                                     <li class="has-submenu">
-                                        <a href="#">Плитка</a>
+                                        <a href="catalog.html">Плитка</a>
+                                        <button type="button" class="submenu-toggler"></button>
                                         <ul class="submenu">
                                             <li><a href="#">Каталог плитки</a></li>
                                             <li><a href="#">Бренды и фабрики</a></li>
@@ -1172,7 +1177,7 @@
                                         </ul>
                                     </li>
                                     <li class="has-submenu">
-                                        <a href="#">Обои</a>
+                                        <a href="catalog.html">Обои</a>
                                         <button type="button" class="submenu-toggler"></button>
                                         <ul class="submenu">
                                             <li><a href="#">Каталог обоев</a></li>
@@ -1190,11 +1195,11 @@
                                             <li><a href="#">Дилерам</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Краска</a></li>
-                                    <li><a href="#">Магазины</a></li>
-                                    <li><a href="#">Доставка</a></li>
+                                    <li><a href="catalog.html">Краска</a></li>
+                                    <li><a href="category-shops.html">Магазины</a></li>
+                                    <li><a href="info-delivery.html">Доставка</a></li>
                                     <li class="has-submenu">
-                                        <a href="#">Услуги</a>
+                                        <a href="page-services.html">Услуги</a>
                                         <button type="button" class="submenu-toggler"></button>
                                         <ul class="submenu">
                                             <li><a href="#">Разгрузка</a></li>
@@ -1202,9 +1207,9 @@
                                             <li><a href="#">Выезд дизайнера для подбора штор</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">О компании</a></li>
-                                    <li><a href="#">Оплата и возврат</a></li>
-                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="page-about.html">О компании</a></li>
+                                    <li><a href="info-payment.html">Оплата и возврат</a></li>
+                                    <li><a href="page-contacts.html">Контакты</a></li>
                                     <li><a href="#">Дилерам</a></li>
                                 </ul>
                             </div>
@@ -1212,13 +1217,13 @@
                             <div class="desktop-collapse-menu__col">
                                 <div class="desktop-collapse-menu__blog-item">
                                     <div class="blog-item-img">
-                                        <a href="#">
+                                        <a href="blog-item.html">
                                             <img src="img/overlay-menu-blog-item.jpg" alt="Бранч для дизайнеров с брендами CRETO и VitrA и лекция Сергея Трегубова в Москве!">
                                         </a>
                                     </div>
                                     <div class="blog-item-body">
                                         <div class="blog-item-title">
-                                            <a href="#">Бранч для дизайнеров с брендами CRETO и VitrA и лекция Сергея Трегубова в Москве!</a>
+                                            <a href="blog-item.html">Бранч для дизайнеров с брендами CRETO и VitrA и лекция Сергея Трегубова в Москве!</a>
                                         </div>
                                         <div class="blog-item-tags">
                                             <div class="item-tag date">23.04.2021</div>
@@ -1227,16 +1232,17 @@
                                             </div>
                                         </div>
                                         <div class="blog-item-read-link">
-                                            <a href="#">Читать</a>
+                                            <a href="blog-item.html">Читать</a>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" class="btn btn-outline fw-medium mt-4" style="width: 100%; max-width: 296px;">все статьи</a>
+                                <a href="blog.html" class="btn btn-outline fw-medium mt-4" style="width: 100%; max-width: 296px;">все статьи</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
         
     </header>
@@ -1526,6 +1532,8 @@
 
     <!-- FOOTER -->
     <footer class="footer">
+
+        <!-- footer-top -->
         <div class="footer-top">
             <div class="footer-top__logo">
                 <a href="#">
@@ -1543,19 +1551,22 @@
                 </a>
             </div>
         </div>
+
+        <!-- footer-middle -->
         <div class="footer-middle">
             <div class="footer-middle__container">
                 <div class="footer-middle__col">
                     <div class="footer-middle__widget">
                         <ul class="footer-middle__menu">
                             <li class="has-submenu">
-                                <a href="#">Ассортимент</a>
+                                <a href="catalog.html">Ассортимент</a>
                                 <ul class="submenu">
-                                    <li><a href="#">Плитка</a></li>
-                                    <li><a href="#">Обои</a></li>
-                                    <li><a href="#">Сантехника</a></li>
-                                    <li><a href="#">Свет</a></li>
-                                    <li><a href="#">Краски</a></li>
+                                    <li><a href="catalog.html">Каталог плитки</a></li>
+                                    <li><a href="catalog.html">Керамогранит</a></li>
+                                    <li><a href="catalog.html">Мрамор</a></li>
+                                    <li><a href="catalog.html">Каталог обоев</a></li>
+                                    <li><a href="catalog.html">Краски</a></li>
+                                    <li><a href="catalog.html">Сопутствующие</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -1563,12 +1574,10 @@
                     <div class="footer-middle__widget">
                         <ul class="footer-middle__menu">
                             <li class="has-submenu">
-                                <a href="#">Услуги</a>
+                                <a href="page-promotions.html">Спецпредложения</a>
                                 <ul class="submenu">
-                                    <li><a href="#">3D визуализация</a></li>
-                                    <li><a href="#">Примерка обоев</a></li>
-                                    <li><a href="#">Примерка плитки</a></li>
-                                    <li><a href="#">Выезд дизайнера для подбора штор</a></li>
+                                    <li><a href="page-promotions.html">Распродажа плитки</a></li>
+                                    <li><a href="page-promotions.html">Распродажа обоев</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -1580,10 +1589,9 @@
                             <li class="has-submenu">
                                 <a href="#">Покупателям</a>
                                 <ul class="submenu">
-                                    <li><a href="#">Доставка</a></li>
-                                    <li><a href="#">Оплата</a></li>
-                                    <li><a href="#">Возврат</a></li>
-                                    <li><a href="#">Вопрос-ответ</a></li>
+                                    <li><a href="info-delivery.html">Доставка</a></li>
+                                    <li><a href="info-payment.html">Оплата</a></li>
+                                    <li><a href="info-faq.html">Вопрос-ответ</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -1591,46 +1599,79 @@
                     <div class="footer-middle__widget">
                         <ul class="footer-middle__menu">
                             <li class="has-submenu">
-                                <a href="#">Блог</a>
+                                <a href="page-services.html">Услуги</a>
                                 <ul class="submenu">
-                                    <li><a href="#">Новости</a></li>
-                                    <li><a href="#">Статьи</a></li>
-                                    <li><a href="#">События</a></li>
+                                    <li><a href="page-services.html">Разгузка</a></li>
+                                    <li><a href="page-services.html">Выезд специалиста на замеры</a></li>
+                                    <li><a href="page-services.html">Выезд дизайнера для подбора штор</a></li>
                                 </ul>
                             </li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="blog.html">Блог</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-middle__col">
                     <div class="footer-middle__widget">
                         <ul class="footer-middle__menu">
-                            <li class="has-submenu">
-                                <a href="#">Спецпредложения</a>
-                                <ul class="submenu">
-                                    <li><a href="#">Каталог товаров SALE</a></li>
-                                    <li><a href="#">Программа лояльности</a></li>
-                                    <li><a href="#">Акции</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="category-designers.html">Дизайнеры</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="category-solutions.html">Реализованные проекты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="#">Программа «МД Партнёр»</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="category-collections.html">Коллекции</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="category-pdf-catalogs.html">Каталоги</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="info-faq.html">Вопрос-ответ</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-middle__col">
                     <div class="footer-middle__widget">
                         <ul class="footer-middle__menu">
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Магазины</a></li>
-                            <li><a href="#">Дизайнерам</a></li>
+                            <li><a href="page-about.html">О компании</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="category-shops.html">Магазины</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
                             <li><a href="#">Дилерам</a></li>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Магазины</a></li>
-                            <li><a href="#">Дизайнерам</a></li>
-                            <li><a href="#">Дилерам</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-middle__widget">
+                        <ul class="footer-middle__menu">
+                            <li><a href="#">Вакансии</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- footer-bottom -->
         <div class="footer-bottom">
             <div class="footer-bottom__wrap">
                 <div class="footer-bottom__row align-items-center">
@@ -1655,6 +1696,7 @@
                 </div>
             </div>
         </div>
+
     </footer>
 
     <!-- MODALS -->

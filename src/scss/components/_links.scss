@@ -3,3 +3,15 @@
 a {
     text-decoration: none;
 }
+
+.link-body {
+    --bs-link-color-rgb: var(--bs-body-color-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    color: rgba(var(--bs-link-color-rgb));
+}
+
+.link-title {
+    --bs-link-color-rgb: var(--theme-black-rgb);
+    --bs-link-hover-color-rgb: var(--bs-primary-rgb);
+    color: rgba(var(--bs-link-color-rgb));
+}
