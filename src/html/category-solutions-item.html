@@ -30,7 +30,7 @@
             <div class="row" style="--bs-gutter-y: 22px;">
                 <div class="col-lg-6">
                     <div class="position-relative">
-                        <img class="img-fluid w-100" src="img/solution-item-01.png" alt="Просторная ванная">
+                        <img class="img-fluid w-100" src="img/hero/solution-item-01.png" alt="Просторная ванная">
                         <!-- <button
                             type="button"
                             class="btn-interest"
@@ -95,45 +95,7 @@
     <!-- Галерея -->
     <section class="section">
         <div class="container">
-            <div class="swiper swiper-with-scrollbar swiperSolutionItemGallery">
-                <div class="swiper-scrollbar"></div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="img/solution-slider-item-01.png" data-fancybox="solution-item-gallery-slide">
-                            <img class="img-fluid w-100" src="img/solution-slider-item-01.png" alt="">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="img/solution-slider-item-02.png" data-fancybox="solution-item-gallery-slide">
-                            <img class="img-fluid w-100" src="img/solution-slider-item-02.png" alt="">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="img/solution-slider-item-01.png" data-fancybox="solution-item-gallery-slide">
-                            <img class="img-fluid w-100" src="img/solution-slider-item-01.png" alt="">
-                        </a>
-                    </div>
-                    <div class="swiper-slide">
-                        <a href="img/solution-slider-item-02.png" data-fancybox="solution-item-gallery-slide">
-                            <img class="img-fluid w-100" src="img/solution-slider-item-02.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="swiper-custom-next">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
-                        <path
-                            d="M0.00125885 36L21.5195 18.0001L0.00125563 0.000173497L0.00125586 2.56872L18.4489 18.0001L0.00125862 33.4315L0.00125885 36Z"
-                            fill="white" />
-                    </svg>
-                </div>
-                <div class="swiper-custom-prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
-                        <path
-                            d="M0.00125885 36L21.5195 18.0001L0.00125563 0.000173497L0.00125586 2.56872L18.4489 18.0001L0.00125862 33.4315L0.00125885 36Z"
-                            fill="white" />
-                    </svg>
-                </div>
-            </div>
+            @@include('partials/slider-gallery-02.html')
         </div>
     </section>
 
@@ -147,100 +109,12 @@
                 <!-- Слайдер с подзаголовком -->
                 <div class="featured-products-slider__item">
                     <p>Плитка</p>
-                    <div class="swiper swiper-with-scrollbar swiperFeaturedProducts">
-                        <div class="swiper-scrollbar"></div>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                @@include('partials/card-product-item.html', {
-                                    "thumbURL": "img/catalog/product-thumb-01.jpg",
-                                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                                })
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('partials/card-product-item.html', {
-                                    "thumbURL": "img/catalog/product-thumb-02.jpg",
-                                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                                })
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('partials/card-product-item.html', {
-                                    "thumbURL": "img/catalog/product-thumb-03.jpg",
-                                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                                })
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('partials/card-product-item.html', {
-                                    "thumbURL": "img/catalog/product-thumb-04.jpg",
-                                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                                })
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('partials/card-product-item.html', {
-                                    "thumbURL": "img/catalog/product-thumb-01.jpg",
-                                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                                })
-                            </div>
-                        </div>
-                        <div class="swiperFeaturedProducts-next swiper-btn-brown swiper-btn-next" style="top: 200px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
-                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                            </svg>
-                        </div>
-                        <div class="swiperFeaturedProducts-prev swiper-btn-brown swiper-btn-prev" style="top: 200px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
-                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                            </svg>
-                        </div>
-                    </div>
+                    @@include('partials/slider-featured-products.html')
                 </div>
                 <!-- Слайдер с подзаголовком -->
                 <div class="featured-products-slider__item">
                     <p>Сантехника</p>
-                    <div class="swiper swiper-with-scrollbar swiperFeaturedProducts">
-                        <div class="swiper-scrollbar"></div>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                @@include('partials/card-product-item.html', {
-                                    "thumbURL": "img/catalog/product-thumb-01.jpg",
-                                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                                })
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('partials/card-product-item.html', {
-                                    "thumbURL": "img/catalog/product-thumb-02.jpg",
-                                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                                })
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('partials/card-product-item.html', {
-                                    "thumbURL": "img/catalog/product-thumb-03.jpg",
-                                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                                })
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('partials/card-product-item.html', {
-                                    "thumbURL": "img/catalog/product-thumb-04.jpg",
-                                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                                })
-                            </div>
-                            <div class="swiper-slide">
-                                @@include('partials/card-product-item.html', {
-                                    "thumbURL": "img/catalog/product-thumb-01.jpg",
-                                    "title": "Керамогранит Onix One 60x120 Fancy Grey Polished"
-                                })
-                            </div>
-                        </div>
-                        <div class="swiperFeaturedProducts-next swiper-btn-brown swiper-btn-next" style="top: 200px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
-                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                            </svg>
-                        </div>
-                        <div class="swiperFeaturedProducts-prev swiper-btn-brown swiper-btn-prev" style="top: 200px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
-                                <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
-                            </svg>
-                        </div>
-                    </div>
+                    @@include('partials/slider-featured-products.html')
                 </div>
             </div>
 

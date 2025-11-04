@@ -18,18 +18,21 @@
     <!-- HEADER -->
     <header class="header">
 
-        <!-- Мобильное меню -->
+        <!-- header-mobile -->
         <div class="fixed-header-mobile">
-            <!-- Мобильное меню -->
+
+            <!-- navbar-mobile -->
             <nav class="navbar navbar-mobile">
                 <div class="container">
+                    <!-- left -->
                     <div class="navbar-mobile__navigation">
+                        <!-- logo -->
                         <div class="navbar-mobile__logo">
                             <a href="#">
                                 <img src="img/logo.svg" alt="masterdom.ru">
                             </a>
                         </div>
-                        <!-- Кнопка -->
+                        <!-- toggler: collapse-mobile -->
                         <a href="#collapseMobileOverlayMenu" class="navbar-mobile__offcanvas-toggle collapsed" data-bs-toggle="collapse" aria-expanded="false">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="14" viewBox="0 0 30 14" fill="none" class="icon-burger">
                                 <path d="M1 7H29" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
@@ -42,7 +45,9 @@
                             </svg>
                         </a>
                     </div>
+                    <!-- right -->
                     <div class="navbar-mobile__icons">
+                        <!-- icon-search -->
                         <div class="navbar-mobile__icon icon-search">
                             <a href="#search-modal" fancybox-dialog>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -51,6 +56,7 @@
                                 </svg>
                             </a>
                         </div>
+                        <!-- icon-phone -->
                         <div class="navbar-mobile__icon icon-phone">
                             <a href="tel:88003503243">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -58,24 +64,27 @@
                                 </svg>
                             </a>
                         </div>
+                        <!-- icon-profile -->
                         <div class="navbar-mobile__icon icon-profile">
-                            <a href="#">
+                            <a href="profile-auth.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <path d="M16.2817 13.0472C19.3335 13.0472 21.8075 10.5742 21.8075 7.52358C21.8075 4.47299 19.3335 2 16.2817 2C13.2299 2 10.7559 4.47299 10.7559 7.52358C10.7559 10.5742 13.2299 13.0472 16.2817 13.0472Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M4 29.8903H28.564V28.505C28.5422 26.5573 27.9936 24.6464 26.9693 22.9512C25.945 21.2557 24.4784 19.831 22.7066 18.8102C20.9348 17.7893 18.9155 17.2056 16.8375 17.1134C16.6522 17.1052 16.467 17.1009 16.282 17.1006C16.097 17.1009 15.9118 17.1052 15.7265 17.1134C13.6484 17.2056 11.6292 17.7893 9.85733 18.8102C8.08553 19.831 6.61898 21.2557 5.59467 22.9512C4.57037 24.6464 4.02173 26.5573 4 28.505V29.8903Z" fill="white" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </a>
                         </div>
+                        <!-- icon-heart -->
                         <div class="navbar-mobile__icon icon-heart">
-                            <a href="#">
+                            <a href="whishlist.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <path d="M16.5091 28.2013L4.20238 17.054C-2.48607 10.3655 7.34593 -2.47625 16.5091 7.91311C25.6722 -2.47625 35.4598 10.4101 28.8159 17.054L16.5091 28.2013Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg>
                             </a>
                             <div class="notification-count">99</div>
                         </div>
+                        <!-- icon-cart -->
                         <div class="navbar-mobile__icon icon-cart">
-                            <a href="#">
+                            <a href="cart.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                     <path d="M1 2H6.61352L8.61329 21.8827C8.6964 22.4308 8.97481 22.9304 9.39722 23.2894C9.8196 23.6485 10.3575 23.8427 10.9119 23.8365H25.3929C25.8942 23.8627 26.3903 23.724 26.8052 23.4418C27.2203 23.1596 27.5315 22.7492 27.6915 22.2735L30.7486 13.0791C30.8626 12.7335 30.893 12.3657 30.8369 12.006C30.781 11.6464 30.6403 11.3052 30.4268 11.0104C30.2043 10.6971 29.9066 10.4445 29.5614 10.2759C29.2161 10.1072 28.8339 10.0279 28.45 10.045H7.41803" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M25.0033 30.5417C24.3684 30.5417 23.8535 30.0268 23.8535 29.3919C23.8535 28.757 24.3684 28.2422 25.0033 28.2422C25.6382 28.2422 26.153 28.757 26.153 29.3919C26.153 30.0268 25.6382 30.5417 25.0033 30.5417Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
@@ -88,12 +97,12 @@
                 </div>
             </nav>
 
-            <!-- Выпадающее окно на мобилке -->
+            <!-- collapse-mobile -->
             <div class="collapse" id="collapseMobileOverlayMenu">
+                <!-- mobile-collapse-menu -->
                 <div class="mobile-collapse-menu">
                     <div class="container">
-
-                        <!-- Выбор города -->
+                        <!-- mobile-collapse-menu__header -->
                         <div class="mobile-collapse-menu__header">
                             <div class="title">Меню</div>
                             <div class="city-select-invoker">
@@ -106,8 +115,7 @@
                                 </div>
                             </div>
                         </div>
-    
-                        <!-- Контейнер для двух меню -->
+                        <!-- mobile-collapse-menu__body -->
                         <div class="mobile-collapse-menu__body">
 
                             <!-- Конетейнер: Обычное меню -->
@@ -123,17 +131,17 @@
 
                                 <!-- Основное меню -->
                                 <ul class="mobile-main-menu-section">
-                                    <!-- <li><a href="#" class="text-primary fw-semibold">Магазины</a></li> -->
-                                    <!-- <li>
-                                        <a href="#" class="d-flex gap-2 align-items-center">
+                                    <li><a href="category-shops.html" class="text-primary fw-semibold">Магазины</a></li>
+                                    <li>
+                                        <a href="whishlist.html" class="d-flex gap-2 align-items-center">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                                 <path d="M10.0054 17.2414L2.64031 10.5701C-1.36248 6.56735 4.52161 -1.11798 10.0054 5.09966C15.4892 -1.11798 21.3467 6.59405 17.3706 10.5701L10.0054 17.2414Z" fill="#02378F" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
-                                            <span>Избраное <span>(0)</span></span>
+                                            <span>Избраное (<span>99</span>)</span>
                                         </a>
-                                    </li> -->
+                                    </li>
                                     <li class="has-submenu">
-                                        <a href="#">Плитка</a>
+                                        <a href="catalog.html">Плитка</a>
                                         <button type="button" class="submenu-toggler"></button>
                                         <ul class="submenu">
                                             <li><a href="#">Каталог плитки</a></li>
@@ -155,7 +163,7 @@
                                         </ul>
                                     </li>
                                     <li class="has-submenu">
-                                        <a href="#">Обои</a>
+                                        <a href="catalog.html">Обои</a>
                                         <button type="button" class="submenu-toggler"></button>
                                         <ul class="submenu">
                                             <li><a href="#">Каталог обоев</a></li>
@@ -173,10 +181,10 @@
                                             <li><a href="#">Дилерам</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Магазины</a></li>
-                                    <li><a href="#">Доставка</a></li>
+                                    <li><a href="category-shops.html">Магазины</a></li>
+                                    <li><a href="info-delivery.html">Доставка</a></li>
                                     <li class="has-submenu">
-                                        <a href="#">Услуги</a>
+                                        <a href="page-services.html">Услуги</a>
                                         <button type="button" class="submenu-toggler"></button>
                                         <ul class="submenu">
                                             <li><a href="#">Разгрузка</a></li>
@@ -184,9 +192,9 @@
                                             <li><a href="#">Выезд дизайнера для подбора штор</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">О компании</a></li>
-                                    <li><a href="#">Оплата и возврат</a></li>
-                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="page-about.html">О компании</a></li>
+                                    <li><a href="info-payment.html">Оплата и возврат</a></li>
+                                    <li><a href="page-contacts.html">Контакты</a></li>
                                     <li><a href="#">Дилерам</a></li>
                                 </ul>
                             </div>
@@ -715,37 +723,39 @@
                                     </li>
 
                                     <!-- Акция -->
-                                    <!-- <li>
+                                    <li>
                                         <a href="#" class="catalog-menu-item__link text-red font-title fw-bold">
                                             <span>Акция</span>
                                         </a>
-                                    </li> -->
+                                    </li>
+
                                 </ul>
     
                             </div>
     
                         </div>
-
                     </div>
                 </div>
             </div>
+
         </div>
 
-        <!-- Десктопное меню -->
+        <!-- header-desktop -->
         <div class="fixed-header-desktop">
 
-            <!-- Десктопное меню -->
+            <!-- navbar-desktop -->
             <nav class="navbar navbar-desktop">
                 <div class="container-xl">
-                    <!-- Логотип -->
+                    <!-- left -->
                     <div class="navbar-desktop__logo">
                         <a href="index.html">
                             <img src="img/logo.svg" alt="masterdom.ru">
                         </a>
                     </div>
+                    <!-- middle -->
                     <div class="navbar-desktop__midd-block">
                         <div class="navbar-desktop__navigation">
-                            <!-- Кнопка -->
+                            <!-- toggler: collapse-desktop -->
                             <a href="#collapseDesktopOverlayMenu" class="navbar-desktop__offcanvas-toggle collapsed" data-bs-toggle="collapse" aria-expanded="false">
                                 <div class="icon-box">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="14" viewBox="0 0 30 14" fill="none" class="icon-burger">
@@ -760,9 +770,8 @@
                                 </div>
                                 <span class="navbar-desktop__offcanvas-toggle-title">О нас</span>
                             </a>
-                            <!-- Меню -->
+                            <!-- navbar -->
                             <ul class="navbar-nav">
-                                <!-- Должна быть возможность добавить свои классы ссылке -->
                                 <li><a href="category-shops.html" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
                                 <li class="has-mega-menu">
                                     <a href="catalog.html" class="nav-link"><span>Плитка</span></a>
@@ -770,9 +779,9 @@
                                         <div class="row g-0">
                                             <div class="col-3 border-end">
                                                 <ul class="mega-menu__nav-tabs nav flex-column">
-                                                    <li><a href="#" class="nav-link active" data-nav-tab="mega-menu-tab-cat-plitka">Плитка</a></li>
+                                                    <li><a href="#" class="nav-link active" data-nav-tab="mega-menu-tab-cat-plitka">Вся плитка</a></li>
                                                     <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-keramogranit">Керамогранит</a></li>
-                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-kamen">Камень</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-plitka">Мрамор</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-9">
@@ -781,7 +790,6 @@
                                                         <div class="mega-menu__content-wrapper">
                                                             <div class="mega-menu__grid">
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Материал</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Керамогранит</a></li>
@@ -790,7 +798,6 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Тип плитки</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Мозаика</a></li>
@@ -801,7 +808,6 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Назначение</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Для пола</a></li>
@@ -810,7 +816,6 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Тип плитки</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Мозаика</a></li>
@@ -827,7 +832,6 @@
                                                         <div class="mega-menu__content-wrapper">
                                                             <div class="mega-menu__grid">
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Назначение</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Для пола</a></li>
@@ -836,7 +840,6 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Тип плитки</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Мозаика</a></li>
@@ -847,47 +850,11 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Материал</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Керамогранит</a></li>
                                                                         <li><a href="#">Керамическая плитка</a></li>
                                                                         <li><a href="#">Камень</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-kamen">
-                                                        <div class="mega-menu__content-wrapper">
-                                                            <div class="mega-menu__grid">
-                                                                <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
-                                                                    <p class="mega-menu__widget-title">Назначение</p>
-                                                                    <ul class="mega-menu__widget-menu">
-                                                                        <li><a href="#">Для пола</a></li>
-                                                                        <li><a href="#">Для стен</a></li>
-                                                                        <li><a href="#">Универсальное</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
-                                                                    <p class="mega-menu__widget-title">Материал</p>
-                                                                    <ul class="mega-menu__widget-menu">
-                                                                        <li><a href="#">Керамогранит</a></li>
-                                                                        <li><a href="#">Керамическая плитка</a></li>
-                                                                        <li><a href="#">Камень</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
-                                                                    <p class="mega-menu__widget-title">Тип плитки</p>
-                                                                    <ul class="mega-menu__widget-menu">
-                                                                        <li><a href="#">Мозаика</a></li>
-                                                                        <li><a href="#">Ступени</a></li>
-                                                                        <li><a href="#">Плинтусы</a></li>
-                                                                        <li><a href="#">Декоры</a></li>
-                                                                        <li><a href="#">Панно напольное</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -904,19 +871,19 @@
                                         <div class="row g-0">
                                             <div class="col-3 border-end">
                                                 <ul class="mega-menu__nav-tabs nav flex-column">
-                                                    <li><a href="#" class="nav-link active" data-nav-tab="mega-menu-tab-cat-rakoviny">Раковины</a></li>
-                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-unitazy-i-bide">Унитазы и биде</a></li>
-                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-smesiteli">Смесители</a></li>
-                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-dushevie-kabiny">Душевые кабины</a></li>
+                                                    <li><a href="#" class="nav-link active" data-nav-tab="mega-menu-tab-cat-vse-oboi">Все обои</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-vynil">Виниловые</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-vse-oboi">Флизелиновые</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-vynil">Текстильные</a></li>
+                                                    <li><a href="#" class="nav-link" data-nav-tab="mega-menu-tab-cat-vse-oboi">Бумажные</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-9">
                                                 <div class="mega-menu__tab-content">
-                                                    <div class="mega-menu__tab-pane active" id="mega-menu-tab-cat-rakoviny">
+                                                    <div class="mega-menu__tab-pane active" id="mega-menu-tab-cat-vse-oboi">
                                                         <div class="mega-menu__content-wrapper">
                                                             <div class="mega-menu__grid">
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Материал</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Керамогранит</a></li>
@@ -925,7 +892,6 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Тип плитки</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Мозаика</a></li>
@@ -936,7 +902,6 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Назначение</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Для пола</a></li>
@@ -945,7 +910,6 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Тип плитки</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Мозаика</a></li>
@@ -958,11 +922,10 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-unitazy-i-bide">
+                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-vynil">
                                                         <div class="mega-menu__content-wrapper">
                                                             <div class="mega-menu__grid">
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Назначение</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Для пола</a></li>
@@ -971,7 +934,6 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Тип плитки</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Мозаика</a></li>
@@ -982,77 +944,6 @@
                                                                     </ul>
                                                                 </div>
                                                                 <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
-                                                                    <p class="mega-menu__widget-title">Материал</p>
-                                                                    <ul class="mega-menu__widget-menu">
-                                                                        <li><a href="#">Керамогранит</a></li>
-                                                                        <li><a href="#">Керамическая плитка</a></li>
-                                                                        <li><a href="#">Камень</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-smesiteli">
-                                                        <div class="mega-menu__content-wrapper">
-                                                            <div class="mega-menu__grid">
-                                                                <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
-                                                                    <p class="mega-menu__widget-title">Материал</p>
-                                                                    <ul class="mega-menu__widget-menu">
-                                                                        <li><a href="#">Для пола</a></li>
-                                                                        <li><a href="#">Для стен</a></li>
-                                                                        <li><a href="#">Универсальное</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
-                                                                    <p class="mega-menu__widget-title">Тип плитки</p>
-                                                                    <ul class="mega-menu__widget-menu">
-                                                                        <li><a href="#">Мозаика</a></li>
-                                                                        <li><a href="#">Ступени</a></li>
-                                                                        <li><a href="#">Плинтусы</a></li>
-                                                                        <li><a href="#">Декоры</a></li>
-                                                                        <li><a href="#">Панно напольное</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
-                                                                    <p class="mega-menu__widget-title">Назначение</p>
-                                                                    <ul class="mega-menu__widget-menu">
-                                                                        <li><a href="#">Керамогранит</a></li>
-                                                                        <li><a href="#">Керамическая плитка</a></li>
-                                                                        <li><a href="#">Камень</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="mega-menu__tab-pane" id="mega-menu-tab-cat-dushevie-kabiny">
-                                                        <div class="mega-menu__content-wrapper">
-                                                            <div class="mega-menu__grid">
-                                                                <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
-                                                                    <p class="mega-menu__widget-title">Назначение</p>
-                                                                    <ul class="mega-menu__widget-menu">
-                                                                        <li><a href="#">Для пола</a></li>
-                                                                        <li><a href="#">Для стен</a></li>
-                                                                        <li><a href="#">Универсальное</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
-                                                                    <p class="mega-menu__widget-title">Тип плитки</p>
-                                                                    <ul class="mega-menu__widget-menu">
-                                                                        <li><a href="#">Мозаика</a></li>
-                                                                        <li><a href="#">Ступени</a></li>
-                                                                        <li><a href="#">Плинтусы</a></li>
-                                                                        <li><a href="#">Декоры</a></li>
-                                                                        <li><a href="#">Панно напольное</a></li>
-                                                                    </ul>
-                                                                </div>
-                                                                <div class="mega-menu__widget">
-                                                                    <!-- Название фильтра -->
                                                                     <p class="mega-menu__widget-title">Материал</p>
                                                                     <ul class="mega-menu__widget-menu">
                                                                         <li><a href="#">Керамогранит</a></li>
@@ -1076,6 +967,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <!-- search -->
                         <div class="navbar-desktop__search">
                             <form class="form-search" action="#">
                                 <input type="text" class="form-control" placeholder="поиск">
@@ -1090,9 +982,11 @@
                             </form>
                         </div>
                     </div>
+                    <!-- right -->
                     <div class="navbar-desktop__right-block">
+                        <!-- icons -->
                         <div class="navbar-desktop__icons">
-                            <!-- icon -->
+                            <!-- icon-search -->
                             <div class="navbar-desktop__icon icon-search">
                                 <a href="#search-modal" fancybox-dialog>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -1101,7 +995,7 @@
                                     </svg>
                                 </a>
                             </div>
-                            <!-- icon -->
+                            <!-- icon-location -->
                             <div class="navbar-desktop__icon icon-location">
                                 <a href="#city-selector-modal" fancybox-dialog>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -1110,7 +1004,7 @@
                                     </svg>
                                 </a>
                             </div>
-                            <!-- icon -->
+                            <!-- icon-profile -->
                             <div class="navbar-desktop__icon icon-profile">
                                 <a href="profile-auth.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -1119,7 +1013,7 @@
                                     </svg>
                                 </a>
                             </div>
-                            <!-- icon -->
+                            <!-- icon-whishlist -->
                             <div class="navbar-desktop__icon icon-whishlist">
                                 <a href="whishlist.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -1128,7 +1022,7 @@
                                 </a>
                                 <div class="notification-count">2</div>
                             </div>
-                            <!-- icon -->
+                            <!-- icon-cart -->
                             <div class="navbar-desktop__icon icon-cart">
                                 <a href="cart.html">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -1140,6 +1034,7 @@
                                 <div class="notification-count">99</div>
                             </div>
                         </div>
+                        <!-- phone -->
                         <div class="navbar-desktop__phone">
                             <a href="tel:88003503243">8 800 350-32-43</a>
                         </div>
@@ -1147,11 +1042,14 @@
                 </div>
             </nav>
 
-            <!-- Выпадающее окно "Меню" на десктопе -->
+            <!-- collapse-desktop -->
             <div class="collapse" id="collapseDesktopOverlayMenu">
+                <!-- desktop-collapse-menu -->
                 <div class="desktop-collapse-menu">
                     <div class="container">
+                        <!-- row -->
                         <div class="desktop-collapse-menu__row">
+                            <!-- col -->
                             <div class="desktop-collapse-menu__col">
                                 <ul class="desktop-collapse-menu__menu">
                                     <li class="has-submenu">
@@ -1213,12 +1111,14 @@
                                     <li><a href="#">Дилерам</a></li>
                                 </ul>
                             </div>
+                            <!-- col -->
                             <div class="desktop-collapse-menu__col"></div>
+                            <!-- col -->
                             <div class="desktop-collapse-menu__col">
                                 <div class="desktop-collapse-menu__blog-item">
                                     <div class="blog-item-img">
                                         <a href="blog-item.html">
-                                            <img src="img/overlay-menu-blog-item.jpg" alt="Бранч для дизайнеров с брендами CRETO и VitrA и лекция Сергея Трегубова в Москве!">
+                                            <img src="img/blog/overlay-menu-blog-item.jpg" alt="Бранч для дизайнеров с брендами CRETO и VitrA и лекция Сергея Трегубова в Москве!">
                                         </a>
                                     </div>
                                     <div class="blog-item-body">
@@ -1587,7 +1487,7 @@
                         </div>
                     </div>
                     <div class="footer-bottom__widget">
-                        <img class="img-fluid img-payment" src="img/footer-payment-01.png" alt="Оплата">
+                        <img class="img-fluid img-payment" src="img/footer/footer-payment-01.png" alt="Оплата">
                     </div>
                 </div>
                 <div class="footer-bottom__row">
@@ -1841,7 +1741,7 @@
                     <div class="row gy-3">
                         <div class="col-4 col-lg-2">
                             <a href="#">
-                                <img class="img-fluid w-100" src="img/product-gallery-01.jpg" alt="Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)">
+                                <img class="img-fluid w-100" src="img/product/product-gallery-01.jpg" alt="Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)">
                             </a>
                         </div>
                         <div class="col-8 col-lg-10">
@@ -1901,14 +1801,14 @@
                     </div>
                     <div class="d-flex gap-2 flex-wrap align-items-center justify-content-between mt-4">
                         <div>
-                            <button type="button" class="btn btn-with-collapsing-arrow border-0 p-0 fw-normal collapsed" data-bs-toggle="collapse" data-bs-target="#product-modal-recommend-items" aria-expanded="false">
+                            <!-- <button type="button" class="btn btn-with-collapsing-arrow border-0 p-0 fw-normal collapsed" data-bs-toggle="collapse" data-bs-target="#product-modal-recommend-items" aria-expanded="false">
                                 Берут вместе
                                 <span class="svg-arrow">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                         <path d="M4.54492 6.94495L9.54688 12.8277C9.60544 12.8996 9.67578 12.9568 9.75367 12.9959C9.83154 13.035 9.91533 13.0552 10 13.0552C10.0847 13.0552 10.1685 13.035 10.2464 12.9959C10.3242 12.9568 10.3946 12.8996 10.4532 12.8277L15.4551 6.94495" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
                                 </span>
-                            </button>
+                            </button> -->
                         </div>
                         <div class="d-flex gap-2 align-items-end">
                             <div class="text-muted-light">3 250 ₽ / 1 м2</div>
@@ -1916,7 +1816,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse" id="product-modal-recommend-items">
+                <!-- <div class="collapse" id="product-modal-recommend-items">
                     <div class="swiper swiperRecommendProduct">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -1924,7 +1824,7 @@
                                     <div class="row g-0">
                                         <div class="col-4">
                                             <a href="#">
-                                                <img class="img-fluid w-100" src="img/product-gallery-01.jpg" alt="Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)">
+                                                <img class="img-fluid w-100" src="img/product/product-gallery-01.jpg" alt="Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)">
                                             </a>
                                         </div>
                                         <div class="col-8 ps-2">
@@ -1957,7 +1857,7 @@
                                     <div class="row g-0">
                                         <div class="col-4">
                                             <a href="#">
-                                                <img class="img-fluid w-100" src="img/product-gallery-01.jpg" alt="Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)">
+                                                <img class="img-fluid w-100" src="img/product/product-gallery-01.jpg" alt="Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)">
                                             </a>
                                         </div>
                                         <div class="col-8 ps-2">
@@ -1990,7 +1890,7 @@
                                     <div class="row g-0">
                                         <div class="col-4">
                                             <a href="#">
-                                                <img class="img-fluid w-100" src="img/product-gallery-01.jpg" alt="Плиточный клей цементный UNIS XXI 25 кг">
+                                                <img class="img-fluid w-100" src="img/product/product-gallery-01.jpg" alt="Плиточный клей цементный UNIS XXI 25 кг">
                                             </a>
                                         </div>
                                         <div class="col-8 ps-2">
@@ -2023,7 +1923,7 @@
                                     <div class="row g-0">
                                         <div class="col-4">
                                             <a href="#">
-                                                <img class="img-fluid w-100" src="img/product-gallery-01.jpg" alt="Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)">
+                                                <img class="img-fluid w-100" src="img/product/product-gallery-01.jpg" alt="Керамогранит Laparet Adelaida белый AD 0070 60х60 см (1.44 м2)">
                                             </a>
                                         </div>
                                         <div class="col-8 ps-2">
@@ -2052,20 +1952,18 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Навигация слайдера -->
                         <div class="swiperRecommendProduct-next">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none">
                                 <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
                             </svg>
                         </div>
-                        <!-- Навигация слайдера -->
                         <div class="swiperRecommendProduct-prev">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="36" viewBox="0 0 22 36" fill="none" style="transform: rotate(180deg);">
                                 <path d="M-5.72205e-05 35.9998L21.5273 17.9998L-6.04466e-05 -7.06433e-05L-6.02164e-05 2.56847L18.4554 17.9998L-5.74506e-05 33.4312L-5.72205e-05 35.9998Z" fill="white"/>
                             </svg>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="modal-footer-bottom">
                     <div class="border-top" style="padding-top: 22px;">
                         <div class="row gy-4">
@@ -2109,7 +2007,7 @@
                                     <div class="d-flex gap-2 gap-lg-4">
                                         <div class="card-img-wrapper">
                                             <a href="#">
-                                                <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                <img class="img-fluid w-100" src="img/profile/card-profile-orders-item-01.png" alt="">
                                             </a>
                                         </div>
                                         <div>
@@ -2124,7 +2022,7 @@
                                     <div class="card-content">
                                         <div class="card-img-wrapper d-lg-none">
                                             <a href="#">
-                                                <img class="img-fluid w-100" src="img/card-profile-orders-item-01.png" alt="">
+                                                <img class="img-fluid w-100" src="img/profile/card-profile-orders-item-01.png" alt="">
                                             </a>
                                         </div>
                                         <div class="flex-grow-1">
