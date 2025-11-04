@@ -3,6 +3,12 @@ const sass = require('gulp-sass')(require('sass'));
 const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
 const fileInclude = require('gulp-file-include');
+const del = require('del');
+
+// ===== Очистка dist =====
+function clean() {
+  return del(['dist/**/*']);
+}
 
 // ===== HTML include =====
 function html() {
@@ -76,12 +82,13 @@ function watch() {
 
 
 // ===== Сборка =====
-const build = gulp.parallel(html, scss, css, scripts, images, fonts);
+const build = gulp.series(clean, gulp.parallel(html, scss, css, scripts, images, fonts));
 
 // ===== Разработка =====
 const dev = gulp.series(build, gulp.parallel(serve, watch));
 
 // ===== Экспорт задач =====
+exports.clean = clean;
 exports.html = html;
 exports.scss = scss;
 exports.css = css;
