@@ -5557,15 +5557,15 @@ textarea {
   color: #7C7D80;
   font-size: clamp(18px, 1.8vw, 24px);
 }
-.section-service-offer-brands .collapsing-category-brands {
+.section-service-offer-brands .collapsing-product-category-brands {
   border-top: 1px solid #DEE5ED;
 }
-.section-service-offer-brands .collapsing-category-brands .item {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item {
   position: relative;
   padding: 25px 0;
   border-bottom: 1px solid #DEE5ED;
 }
-.section-service-offer-brands .collapsing-category-brands .item__button {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item__button {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -5575,7 +5575,7 @@ textarea {
   -moz-user-select: none;
   user-select: none;
 }
-.section-service-offer-brands .collapsing-category-brands .item__title {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item__title {
   min-width: 200px;
   color: #02378F;
   font-family: var(--bs-title-font-family);
@@ -5586,7 +5586,7 @@ textarea {
   text-transform: uppercase;
   margin-bottom: 0;
 }
-.section-service-offer-brands .collapsing-category-brands .item__country-list {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item__country-list {
   flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
@@ -5595,7 +5595,7 @@ textarea {
   padding: 10px 0;
   transition: 0.3s ease;
 }
-.section-service-offer-brands .collapsing-category-brands .item__country-list .country-item {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item__country-list .country-item {
   min-width: 140px;
   color: #7C7D80;
   font-family: var(--bs-title-font-family);
@@ -5604,10 +5604,10 @@ textarea {
   line-height: normal;
   margin-bottom: 0;
 }
-.section-service-offer-brands .collapsing-category-brands .item__toggler {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item__toggler {
   flex-shrink: 0;
 }
-.section-service-offer-brands .collapsing-category-brands .item__icon {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5615,24 +5615,24 @@ textarea {
   height: 32px;
   transition: 0.3s ease;
 }
-.section-service-offer-brands .collapsing-category-brands .item__icon svg {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item__icon svg {
   flex-shrink: 0;
 }
-.section-service-offer-brands .collapsing-category-brands .item__button:not(.collapsed) .item__country-list {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item__button:not(.collapsed) .product-category-item__country-list {
   display: none;
 }
-.section-service-offer-brands .collapsing-category-brands .item__button:not(.collapsed) .item__icon {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item__button:not(.collapsed) .product-category-item__icon {
   transform: rotate(180deg);
 }
-.section-service-offer-brands .collapsing-category-brands .item__divider {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item__divider {
   height: 20px;
 }
-.section-service-offer-brands .collapsing-category-brands .item__grid {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item__grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 34px;
 }
-.section-service-offer-brands .collapsing-category-brands .item .widget-brands__title {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item .widget-brands__title {
   color: #1A1A16;
   font-family: var(--bs-title-font-family);
   font-size: clamp(20px, 1.6vw, 24px);
@@ -5640,12 +5640,12 @@ textarea {
   line-height: normal;
   margin-bottom: 12px;
 }
-.section-service-offer-brands .collapsing-category-brands .item .widget-brands__list {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item .widget-brands__list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
-.section-service-offer-brands .collapsing-category-brands .item .widget-brands__list a {
+.section-service-offer-brands .collapsing-product-category-brands .product-category-item .widget-brands__list a {
   display: inline-block;
   text-decoration: underline;
 }
@@ -5657,25 +5657,25 @@ textarea {
     align-items: center;
     gap: 20px;
   }
-  .section-service-offer-brands .collapsing-category-brands .item {
+  .section-service-offer-brands .collapsing-product-category-brands .product-category-item {
     padding: 40px 0;
   }
-  .section-service-offer-brands .collapsing-category-brands .item__button {
+  .section-service-offer-brands .collapsing-product-category-brands .product-category-item__button {
     flex-wrap: nowrap;
   }
-  .section-service-offer-brands .collapsing-category-brands .item__country-list {
+  .section-service-offer-brands .collapsing-product-category-brands .product-category-item__country-list {
     padding: 0;
   }
-  .section-service-offer-brands .collapsing-category-brands .item__country-list .country-item {
+  .section-service-offer-brands .collapsing-product-category-brands .product-category-item__country-list .country-item {
     min-width: 220px;
   }
-  .section-service-offer-brands .collapsing-category-brands .item__toggler {
+  .section-service-offer-brands .collapsing-product-category-brands .product-category-item__toggler {
     order: 999;
   }
-  .section-service-offer-brands .collapsing-category-brands .item__divider {
+  .section-service-offer-brands .collapsing-product-category-brands .product-category-item__divider {
     height: 40px;
   }
-  .section-service-offer-brands .collapsing-category-brands .item__grid {
+  .section-service-offer-brands .collapsing-product-category-brands .product-category-item__grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

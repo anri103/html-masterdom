@@ -2043,10 +2043,10 @@
         font-size: clamp(18px, 1.8vw, 24px);
     }
 
-    .collapsing-category-brands {
+    .collapsing-product-category-brands {
         border-top: 1px solid #DEE5ED;
 
-        .item {
+        .product-category-item {
             position: relative;
             padding: 25px 0;
             border-bottom: 1px solid #DEE5ED;
@@ -2115,13 +2115,13 @@
 
             &__button:not(.collapsed) {
                 
-                .item__country-list {
+                .product-category-item__country-list {
                     display: none;
                     // visibility: hidden;
                     // opacity: 0;
                 }
 
-                .item__icon {
+                .product-category-item__icon {
                     transform: rotate(180deg);
                 }
             }
@@ -2174,9 +2174,9 @@
             gap: 20px;
         }
 
-        .collapsing-category-brands {
+        .collapsing-product-category-brands {
 
-            .item {
+            .product-category-item {
                 padding: 40px 0;
 
                 // header-button
