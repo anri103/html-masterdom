@@ -11,19 +11,19 @@ select {
     outline: none;
 }
 
-:focus,
-:active {
-    outline: none;
-    box-shadow: none !important;
-}
+// :focus,
+// :active {
+//     outline: none;
+//     box-shadow: none !important;
+// }
 
 textarea {
     overflow: auto;
 }
 
-.form-check-input:focus {
-    box-shadow: none;
-}
+// .form-check-input:focus {
+//     box-shadow: none;
+// }
 
 .form-control,
 .form-select {
@@ -37,8 +37,10 @@ textarea {
 }
 
 .form-control:focus,
-.form-select:focus {
+.form-select:focus,
+.form-check-input:focus {
     border-color: var(--bs-primary);
+    box-shadow: none !important;
 }
 
 .form-select {
