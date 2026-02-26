@@ -105,7 +105,7 @@
                         <!-- mobile-collapse-menu__header -->
                         <div class="mobile-collapse-menu__header">
                             <div class="title">Меню</div>
-                            <div class="city-select-invoker">
+                            <!-- <div class="city-select-invoker">
                                 <div>Ваш город:</div>
                                 <div class="city-select__current-city" data-src="#city-selector-modal" fancybox-dialog>
                                     <div>Москва</div>
@@ -113,7 +113,7 @@
                                         <path d="M1 1L5.0931 5.81382C5.14102 5.87267 5.19858 5.91951 5.26232 5.95151C5.32604 5.9835 5.39461 6 5.4639 6C5.53319 6 5.60177 5.9835 5.66549 5.95151C5.72921 5.91951 5.78677 5.87267 5.83471 5.81382L9.92778 0.999999" stroke="#474A51" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- mobile-collapse-menu__body -->
                         <div class="mobile-collapse-menu__body">
@@ -741,7 +741,36 @@
         </div>
 
         <!-- header-desktop -->
-        <div class="fixed-header-desktop">
+        <div class="fixed-header-desktop position-relative">
+
+            <!-- topbar-desktop -->
+            <div class="topbar topbar-desktop">
+                <div class="container-xl">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <ul class="nav topbar-nav">
+                            <li>
+                                <a href="info-delivery.html" class="nav-link">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="info-payment.html" class="nav-link">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="page-about.html" class="nav-link">О компании</a>
+                            </li>
+                            <li>
+                                <a href="page-contacts.html" class="nav-link">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="category-designers.html" class="nav-link">Дизайнерам</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex gap-5">
+                            <a href="mailto:shop@masterdom.ru" class="fs-16px fw-semibold">shop@masterdom.ru</a>
+                            <a href="tel:88003503243" class="fs-16px fw-semibold">8 800 350-32-43</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- navbar-desktop -->
             <nav class="navbar navbar-desktop">
@@ -772,7 +801,15 @@
                             </a>
                             <!-- navbar -->
                             <ul class="navbar-nav">
-                                <li><a href="category-shops.html" class="nav-link text-primary fw-semibold"><span>Магазины</span></a></li>
+                                <li>
+                                    <a href="category-shops.html" class="nav-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M17.5429 8.14645C17.5429 13.1608 10.0215 19.0108 10.0215 19.0108C10.0215 19.0108 2.5 13.1608 2.5 8.14645C2.5 4.04977 5.92477 0.625 10.0215 0.625C14.1181 0.625 17.5429 4.04977 17.5429 8.14645Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.0218 10.6533C11.4065 10.6533 12.529 9.53086 12.529 8.1462C12.529 6.76153 11.4065 5.63905 10.0218 5.63905C8.63713 5.63905 7.51465 6.76153 7.51465 8.1462C7.51465 9.53086 8.63713 10.6533 10.0218 10.6533Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <span>Магазины</span>
+                                    </a>
+                                </li>
                                 <li class="has-mega-menu">
                                     <a href="catalog.html" class="nav-link"><span>Плитка</span></a>
                                     <div class="mega-menu">
@@ -996,14 +1033,14 @@
                                 </a>
                             </div>
                             <!-- icon-location -->
-                            <div class="navbar-desktop__icon icon-location">
+                            <!-- <div class="navbar-desktop__icon icon-location">
                                 <a href="#city-selector-modal" fancybox-dialog>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                         <path d="M28.0687 13.0343C28.0687 21.0572 16.0343 30.4172 16.0343 30.4172C16.0343 30.4172 4 21.0572 4 13.0343C4 6.47963 9.47963 1 16.0343 1C22.589 1 28.0687 6.47963 28.0687 13.0343Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
                                         <path d="M16.0349 17.0453C18.2503 17.0453 20.0463 15.2494 20.0463 13.0339C20.0463 10.8184 18.2503 9.02246 16.0349 9.02246C13.8194 9.02246 12.0234 10.8184 12.0234 13.0339C12.0234 15.2494 13.8194 17.0453 16.0349 17.0453Z" stroke="#1A1A16" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </a>
-                            </div>
+                            </div> -->
                             <!-- icon-profile -->
                             <div class="navbar-desktop__icon icon-profile">
                                 <a href="profile-auth.html">
@@ -1035,9 +1072,9 @@
                             </div>
                         </div>
                         <!-- phone -->
-                        <div class="navbar-desktop__phone">
+                        <!-- <div class="navbar-desktop__phone">
                             <a href="tel:88003503243">8 800 350-32-43</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </nav>
