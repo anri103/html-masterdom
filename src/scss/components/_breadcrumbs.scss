@@ -1,7 +1,8 @@
 /* BREADCRUMBS ============================ */
 
 .section-breadcrumbs {
-    margin-bottom: 22px;
+    margin-top: 2rem;
+    margin-bottom: 12px;
 }
 
 .section-breadcrumbs .breadcrumb {
@@ -12,6 +13,7 @@
     --bs-breadcrumb-item-active-color: var(--bs-secondary);
     --bs-link-color-rgb: 172,178,191;
     --bs-link-hover-color-rgb: 2,55,143;
+    --bs-breadcrumb-font-size: 16px;
 }
 
 .section-page-title {
