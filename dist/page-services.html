@@ -1008,14 +1008,89 @@
                         <div class="navbar-desktop__search">
                             <form class="form-search" action="#">
                                 <input type="text" class="form-control" placeholder="поиск">
-                                <button type="submit" class="btn form-search__btn">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
-                                        <g clip-path="url(#clip0_34_11018)">
-                                            <path class="path-stroke-dynamic" d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02943 14.9706 1 10 1C5.02943 1 1 5.02943 1 10C1 14.9706 5.02943 19 10 19Z" stroke="#7C7D80" stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path class="path-stroke-dynamic" d="M21.999 21.9995L16.3867 16.4121" stroke="#7C7D80" stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round" />
-                                        </g>
-                                    </svg>
-                                </button>
+                                <div class="form-search__btn d-flex gap-2">
+                                    <style>
+                                        .tooltip-wrap {
+                                            position: relative;
+                                            display: inline-flex;
+                                        }
+
+                                        .custom-tooltip {
+                                            position: absolute;
+                                            top: calc(100% + 12px);
+                                            bottom: auto;
+                                            left: 50%;
+                                            transform: translateX(-50%) translateY(-4px);
+                                            background: #fff;
+                                            border: 1px solid rgba(0, 0, 0, 0.12);
+                                            border-radius: 6px;
+                                            padding: 6px 10px;
+                                            font-size: 13px;
+                                            color: #1a1a1a;
+                                            white-space: nowrap;
+                                            pointer-events: none;
+                                            opacity: 0;
+                                            transition: opacity 0.15s ease, transform 0.15s ease;
+                                            z-index: 1080;
+                                        }
+
+                                        .custom-tooltip::after {
+                                            content: '';
+                                            position: absolute;
+                                            top: auto;
+                                            bottom: 100%;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                            border: 5px solid transparent;
+                                            border-top-color: transparent;
+                                            border-bottom-color: rgba(0, 0, 0, 0.12);
+                                        }
+
+                                        .custom-tooltip::before {
+                                            content: '';
+                                            position: absolute;
+                                            top: auto;
+                                            bottom: calc(100% - 1px);
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                            border: 5px solid transparent;
+                                            border-top-color: transparent;
+                                            border-bottom-color: #fff;
+                                            z-index: 1;
+                                        }
+
+                                        .tooltip-wrap:hover .custom-tooltip {
+                                            opacity: 1;
+                                            transform: translateX(-50%) translateY(0);
+                                        }
+
+                                        /*.tooltip-wrap:focus-within .custom-tooltip {
+                                            opacity: 1;
+                                            transform: translateX(-50%) translateY(0);
+                                        }*/
+                                    </style>
+                                    <div class="tooltip-wrap">
+                                        <div class="custom-tooltip">Найти товары по фото</div>
+                                        <button type="button" class="btn border-0 p-0" data-bs-toggle="modal" data-bs-target="#amd-image-search-component-sjllz" id="amd-image-search-component-sjllzinitbtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                                                <g clip-path="url(#clip0_13698_8185)">
+                                                    <path d="M11 20.4C11.1591 20.4 11.3117 20.3368 11.4242 20.2243C11.5368 20.1117 11.6 19.9591 11.6 19.8C11.6 19.6409 11.5368 19.4883 11.4242 19.3757C11.3117 19.2632 11.1591 19.2 11 19.2C10.1502 19.2 9.30051 19.2 8.45077 19.2C6.73384 19.2 5.01691 19.2 3.29998 19.2C2.88063 19.2015 2.46405 19.029 2.1686 18.7314C1.87101 18.4359 1.69846 18.0193 1.69998 17.6C1.69998 14.3 1.69998 11 1.69998 7.7C1.69846 7.28066 1.87101 6.86407 2.1686 6.56863C2.46405 6.27103 2.88063 6.09848 3.29998 6.1C3.66664 6.1 4.03331 6.1 4.39998 6.1C5.1339 6.10262 5.86277 5.80071 6.37987 5.2799C6.37987 5.2799 6.37988 5.2799 6.37988 5.27989C6.90069 4.76279 7.2026 4.03392 7.19998 3.3C7.19995 3.23447 7.21294 3.16918 7.23804 3.10866C7.23804 3.10866 7.23804 3.10866 7.23804 3.10866C7.26309 3.04812 7.30007 2.99276 7.34642 2.94644C7.43873 2.85345 7.56895 2.79951 7.69998 2.8C9.89997 2.8 12.1 2.8 14.3 2.8C14.431 2.79951 14.5612 2.85345 14.6535 2.94644C14.7465 3.03875 14.8005 3.16897 14.8 3.3C14.7974 4.03392 15.0993 4.76279 15.6201 5.2799C16.1372 5.80071 16.8661 6.10262 17.6 6.1C17.9666 6.1 18.3333 6.1 18.7 6.1C19.1193 6.09848 19.5359 6.27103 19.8313 6.56863C20.1289 6.86407 20.3015 7.28066 20.3 7.7C20.3 8.1336 20.3 8.56719 20.3 9.00079C20.3 9.85053 20.3 10.7003 20.3 11.55C20.3 11.7091 20.3632 11.8617 20.4757 11.9743C20.5882 12.0868 20.7408 12.15 20.9 12.15C21.0591 12.15 21.2117 12.0868 21.3242 11.9743C21.4368 11.8617 21.5 11.7091 21.5 11.55C21.5 10.7003 21.5 9.85053 21.5 9.00079C21.5 8.56719 21.5 8.1336 21.5 7.7C21.5026 6.96608 21.2007 6.2372 20.6799 5.7201C20.1628 5.19928 19.4339 4.89737 18.7 4.9C18.3333 4.9 17.9666 4.9 17.6 4.9C17.1806 4.90152 16.764 4.72896 16.4686 4.43137C16.171 4.13592 15.9985 3.71934 16 3.3C16.0016 2.85439 15.8183 2.41188 15.5021 2.09792C15.1881 1.7817 14.7456 1.59841 14.3 1.6C12.1 1.6 9.89997 1.6 7.69998 1.6C7.25437 1.59841 6.81186 1.7817 6.49789 2.09792C6.34049 2.25515 6.21442 2.44384 6.12938 2.64944C6.12938 2.64944 6.12938 2.64944 6.12938 2.64944C6.04413 2.85494 5.99985 3.07751 5.99998 3.3C6.00149 3.71934 5.82894 4.13592 5.53135 4.43137C5.53135 4.43137 5.53135 4.43137 5.53135 4.43137C5.2359 4.72896 4.81932 4.90152 4.39998 4.9C4.03331 4.9 3.66664 4.9 3.29998 4.9C2.56606 4.89737 1.83718 5.19928 1.32008 5.7201C0.799262 6.2372 0.497352 6.96608 0.499976 7.7C0.499976 11 0.499976 14.3 0.499976 17.6C0.497352 18.3339 0.799261 19.0628 1.32008 19.5799C1.83718 20.1007 2.56606 20.4026 3.29998 20.4C5.01691 20.4 6.73384 20.4 8.45077 20.4C9.30051 20.4 10.1502 20.4 11 20.4Z" fill="currentColor"/>
+                                                    <path d="M14.3 17.6H20.9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M17.6 14.3V20.9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M7.69995 12.1C7.69995 12.9752 8.04763 13.8146 8.6665 14.4335C9.28537 15.0523 10.1247 15.4 11 15.4C11.8752 15.4 12.7145 15.0523 13.3334 14.4335C13.9523 13.8146 14.3 12.9752 14.3 12.1C14.3 11.2248 13.9523 10.3854 13.3334 9.76655C12.7145 9.14768 11.8752 8.8 11 8.8C10.1247 8.8 9.28537 9.14768 8.6665 9.76655C8.04763 10.3854 7.69995 11.2248 7.69995 12.1Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button type="submit" class="btn border-0 p-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <g clip-path="url(#clip0_13693_8154)">
+                                                <path d="M8.69559 16.5217C13.0178 16.5217 16.5217 13.0179 16.5217 8.69566C16.5217 4.37342 13.0178 0.869568 8.69559 0.869568C4.37336 0.869568 0.869507 4.37342 0.869507 8.69566C0.869507 13.0179 4.37336 16.5217 8.69559 16.5217Z" stroke="currentColor" stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M19.1304 19.1304L14.2501 14.2718" stroke="currentColor" stroke-width="1.18421" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -2036,6 +2111,84 @@
                                 <button type="submit" class="btn btn-secondary w-100" style="max-width: 364px;">оставить отзыв</button>
                             </div>
                         </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модалка "Поиск по фото" -->
+    <div class="modal fade" id="amd-image-search-component-sjllz" tabindex="-1">
+        <div class="modal-dialog" style="max-width: 700px;">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Найти товары по фото</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- Экран 1 (фото еще не загружено) -->
+                    <div class="amd-image-search-screen-upload">
+                        <!-- Область загрузки файла -->
+                        <div class="py-2">
+                            <input type="file" accept=".png, .jpg, .jpeg, .webp, .bmp, .gif" name="" id="amd-image-search-input-sjllz" class="d-none visually-hidden">
+                            <label for="amd-image-search-input-sjllz" class="image-drop-zone d-block">
+                                <div class="d-flex flex-column text-center border p-4" style="--bs-border-width: 2px; --bs-border-style: dashed; min-height: 270px; border-radius: 4px; background-color: #F2F9FF;">
+                                    <div class="flex-fill d-flex flex-column align-items-center justify-content-center">
+                                        <div class="fw-medium">Перетащите или</div>
+                                        <div>
+                                            <span class="btn btn-link fw-medium border-0 p-0">загрузите фото</span>
+                                        </div>
+                                    </div>
+                                    <div class="fs-6 text-muted-light">Поддерживаются фото в формате:<br> jpg, jpeg, png, webp, bmp, gif</div>
+                                </div>
+                            </label>
+                        </div>
+                        <!-- Поле для ссылки на фото -->
+                        <div class="py-2">
+                            <div class="position-relative">
+                                <input type="text" name="" id="amd-image-search-input-sjllzfileurl" class="form-control pe-5" placeholder="Вставьте ссылку на фото">
+                                <div class="position-absolute top-50 end-0 translate-middle-y d-flex gap-2 align-items-center me-2">
+                                    <button type="button" class="btn border-0 p-0" id="amd-image-search-input-sjllzfileurlbtn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                            <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Контейнер для сообщений об ошибках -->
+                        <div id="amd-image-search-input-sjllzerrors"></div>
+                    </div>
+
+                    <!-- Экран 2 (фото загружено) -->
+                    <div class="amd-image-search-screen-preview" style="display: none;">
+                        <!-- Область загруженного изображения -->
+                        <div class="py-2">
+                            <div class="overflow-hidden d-flex align-items-center justify-content-center" style="height: 400px; background-color: #F2F9FF;">
+                                <img src="img/card/popular-product-thumb-03.jpg" class="w-100 h-100 object-fit-contain" id="amd-image-search-input-sjllzimage">
+                            </div>
+                        </div>
+                        <div class="py-2">
+                            <button type="button" class="btn btn-secondary w-100 m-0" id="amd-image-search-input-sjllzreset-fields">Загрузить другое фото</button>
+                        </div>
+                        <!-- Категории того, что ищем -->
+                        <div class="d-flex gap-4 justify-content-center py-3">
+                            <label for="amd-image-search-input-sjllzsection16" class="btn border-0 py-2 px-3">
+                                <input type="radio" name="image_search_section" value="16" id="amd-image-search-input-sjllzsection16">
+                                Плитка
+                            </label>
+                            <label for="amd-image-search-input-sjllzsection58" class="btn border-0 py-2 px-3">
+                                <input type="radio" name="image_search_section" value="58" id="amd-image-search-input-sjllzsection58">
+                                Обои
+                            </label>
+                        </div>
+                        <!-- Кнопка «Найти товар» -->
+                        <div class="mt-3">
+                            <button type="button" class="btn btn-primary w-100 m-0" id="amd-image-search-input-sjllzcrop">Найти товар</button>
+                        </div>
                     </div>
 
                 </div>

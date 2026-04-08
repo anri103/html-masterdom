@@ -624,6 +624,22 @@ textarea {
   --bs-btn-disabled-border-color: transparent;
 }
 
+.btn-link {
+  --bs-btn-font-weight: 400;
+  --bs-btn-color: var(--bs-link-color);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-color: var(--bs-link-hover-color);
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-color: var(--bs-link-hover-color);
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-border-color: transparent;
+  --bs-btn-box-shadow: 0 0 0 #000;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  text-decoration: underline;
+}
+
 .btn-icon {
   --btn-icon-size: 50px;
   display: inline-flex;
@@ -5395,8 +5411,8 @@ textarea {
 .navbar-desktop__search .form-search .form-control:focus {
   border-color: var(--bs-primary);
 }
-.navbar-desktop__search .form-search .form-control:focus ~ .form-search__btn svg .path-stroke-dynamic {
-  stroke: #02378f;
+.navbar-desktop__search .form-search .form-control:focus ~ .form-search__btn .btn[type=submit] {
+  color: #02378f;
 }
 .navbar-desktop__search .form-search .form-control:focus::placeholder {
   color: transparent;
@@ -5404,7 +5420,7 @@ textarea {
 .navbar-desktop__search .form-search__btn {
   position: absolute;
   top: 50%;
-  right: 12px;
+  right: 10px;
   padding: 0;
   transform: translateY(-50%);
   border: none;

@@ -676,8 +676,8 @@
             .form-control:focus {
                 border-color: var(--bs-primary);
         
-                ~ .form-search__btn svg .path-stroke-dynamic {
-                    stroke: #02378f;
+                ~ .form-search__btn .btn[type=submit] {
+                    color: #02378f;
                 }
             }
 
@@ -688,7 +688,7 @@
             &__btn {
                 position: absolute;
                 top: 50%;
-                right: 12px;
+                right: 10px;
                 padding: 0;
                 transform: translateY(-50%);
                 border: none;
