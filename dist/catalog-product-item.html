@@ -4009,7 +4009,7 @@
                 <div class="modal-body">
 
                     <!-- Экран 1 (фото еще не загружено) -->
-                    <div class="amd-image-search-screen-upload">
+                    <div class="amd-image-search-screen-upload" style="/* display: none; */">
                         <!-- Область загрузки файла -->
                         <div class="py-2">
                             <input type="file" accept=".png, .jpg, .jpeg, .webp, .bmp, .gif" name="" id="amd-image-search-input-sjllz" class="d-none visually-hidden">
@@ -4039,8 +4039,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Контейнер для сообщений об ошибках -->
-                        <div id="amd-image-search-input-sjllzerrors"></div>
                     </div>
 
                     <!-- Экран 2 (фото загружено) -->
@@ -4069,6 +4067,11 @@
                         <div class="mt-3">
                             <button type="button" class="btn btn-primary w-100 m-0" id="amd-image-search-input-sjllzcrop">Найти товар</button>
                         </div>
+                    </div>
+
+                    <!-- Контейнер для сообщений об ошибках -->
+                    <div class="py-2" id="amd-image-search-input-sjllzerrors">
+                        <span class="text-danger fs-14px">Не удалось загрузить картинку</span>
                     </div>
 
                 </div>
@@ -4112,6 +4115,11 @@
                         <div class="mt-3">
                             <button type="button" class="btn btn-primary w-100 m-0" id="amd-image-search-input-sjllzcrop-mobile">Найти товар</button>
                         </div>
+                    </div>
+
+                    <!-- Контейнер для сообщений об ошибках -->
+                    <div class="py-2" id="amd-image-search-input-sjllzerrors-mobile">
+                        <span class="text-danger fs-14px">Выберите категорию</span>
                     </div>
 
                 </div>
