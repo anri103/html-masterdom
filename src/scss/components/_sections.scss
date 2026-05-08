@@ -2564,6 +2564,20 @@
             font-size: 12px;
             line-height: 1;
         }
+
+        // Эффект наведения
+        &:hover {
+            .item-body {
+                border-color: #02378F;
+            }
+
+            .item-img-wrapper {
+                .item-img {
+                    filter: drop-shadow(0px 28px 20px rgba(26, 26, 22, 0.16));
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
 
     @media (min-width: 992px) {
@@ -2579,7 +2593,6 @@
         }
 
         .main-category-item {
-
             .item-img-wrapper {
                 margin: 0 10px;
                 margin-bottom: -120px;
@@ -2596,20 +2609,6 @@
 
             .item-quantity {
                 font-size: 16px;
-            }
-
-            // Эффект наведения
-            &:hover {
-                .item-body {
-                    border-color: #02378F;
-                }
-
-                .item-img-wrapper {
-                    .item-img {
-                        filter: drop-shadow(0px 28px 20px rgba(26, 26, 22, 0.16));
-                        transform: scale(1.1);
-                    }
-                }
             }
         }
     }

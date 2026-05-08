@@ -4863,6 +4863,13 @@ textarea {
   font-size: 12px;
   line-height: 1;
 }
+.section-main-categories .main-category-item:hover .item-body {
+  border-color: #02378F;
+}
+.section-main-categories .main-category-item:hover .item-img-wrapper .item-img {
+  filter: drop-shadow(0px 28px 20px rgba(26, 26, 22, 0.16));
+  transform: scale(1.1);
+}
 @media (min-width: 992px) {
   .section-main-categories {
     margin: 40px 0;
@@ -4887,13 +4894,6 @@ textarea {
   }
   .section-main-categories .main-category-item .item-quantity {
     font-size: 16px;
-  }
-  .section-main-categories .main-category-item:hover .item-body {
-    border-color: #02378F;
-  }
-  .section-main-categories .main-category-item:hover .item-img-wrapper .item-img {
-    filter: drop-shadow(0px 28px 20px rgba(26, 26, 22, 0.16));
-    transform: scale(1.1);
   }
 }
 
