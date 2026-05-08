@@ -654,13 +654,16 @@
 
     // search
     &__search {
-        display: none;
+        // display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-grow: 1;
 
         .form-search {
             position: relative;
-            width: 70%;
-            margin: 0 auto;
+            width: 245px;
+            margin: 0;
             transition: 0.5s ease;
             
             .form-control {
@@ -697,7 +700,7 @@
         }
         
         .form-search:focus-within {
-            width: 80%;
+            width: 300px;
         }
     }
 
@@ -758,9 +761,9 @@
     }
 
     @media (min-width: 1400px) {
-        &__search {
-            display: block;
-        }
+        // &__search {
+        //     display: block;
+        // }
 
         &__icon.icon-search {
             display: none;
