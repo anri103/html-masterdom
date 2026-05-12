@@ -2504,7 +2504,7 @@
 .section-main-categories {
     position: relative;
     overflow-x: clip;
-    padding: 40px 0;
+    padding: 30px 0;
     margin: 20px 0;
     background-color: #F8F8F8;
 
@@ -2533,6 +2533,7 @@
 
             .item-img {
                 max-width: 100%;
+                max-height: 240px;
                 height: auto;
                 filter: drop-shadow(0px 12px 8px rgba(26, 26, 22, 0.16));
                 transform: scale(1);
@@ -2595,7 +2596,7 @@
         .main-category-item {
             .item-img-wrapper {
                 margin: 0 10px;
-                margin-bottom: -120px;
+                margin-bottom: -110px;
             }
 
             .item-body {
