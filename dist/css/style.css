@@ -4900,12 +4900,14 @@ textarea {
 
 /* HEADER ============================ */
 .header {
-  height: 80px;
-  margin-bottom: 10px;
+  --topbar-height: 0px;
+  --navbar-height: 80px;
+  height: calc(var(--topbar-height) + var(--navbar-height));
 }
 @media (min-width: 992px) {
   .header {
-    height: 106px;
+    --topbar-height: 34px;
+    --navbar-height: 84px;
   }
 }
 
@@ -4925,16 +4927,22 @@ textarea {
 }
 
 .navbar-mobile {
-  --bs-navbar-padding-y: 10px;
-  height: 80px;
+  --bs-navbar-padding-y: 0;
+  display: flex;
+  align-items: center;
+  height: var(--navbar-height);
 }
 .navbar-mobile__navigation {
   display: flex;
   align-items: center;
   gap: 12px;
 }
+.navbar-mobile__logo {
+  flex-shrink: 0;
+}
 .navbar-mobile__logo img {
-  max-width: 46px;
+  max-width: 100%;
+  max-height: 45px;
   height: auto;
 }
 .navbar-mobile__offcanvas-toggle {
@@ -4982,7 +4990,7 @@ textarea {
     gap: 16px;
   }
   .navbar-mobile__logo img {
-    max-width: 56px;
+    max-height: 55px;
   }
   .navbar-mobile__icons {
     gap: 12px;
@@ -4999,7 +5007,7 @@ textarea {
 
 /* Выпадающее окно на мобилке */
 .mobile-collapse-menu {
-  height: calc(100dvh - 80px);
+  height: calc(100dvh - (var(--topbar-height) + var(--navbar-height)));
   overflow-y: auto;
   overflow-x: hidden;
 }
@@ -5294,10 +5302,9 @@ textarea {
 
 /* Десктопное меню ============================ */
 .fixed-header-desktop {
-  border-bottom: 1px solid transparent;
+  position: relative;
   background-color: var(--bs-body-bg);
-  z-index: 1030;
-  transition: border-bottom 0.3s ease;
+  z-index: 10;
 }
 .fixed-header-desktop.js-fixed {
   border-bottom: 1px solid #ACB2BF;
@@ -5305,7 +5312,7 @@ textarea {
 
 .topbar-desktop {
   display: none;
-  height: 36px;
+  height: var(--topbar-height);
   padding: 0;
   background-color: #F2F9FF;
 }
@@ -5326,7 +5333,7 @@ textarea {
   --bs-navbar-padding-y: 0;
   --bs-navbar-active-color: var(--bs-primary);
   display: none;
-  height: 70px;
+  height: var(--navbar-height);
 }
 .navbar-desktop__logo {
   flex-shrink: 0;
@@ -5604,7 +5611,7 @@ textarea {
 }
 /* Выпадающее окно на десктопе */
 .desktop-collapse-menu {
-  height: calc(100vh - 100px);
+  height: calc(100vh - (var(--topbar-height) + var(--navbar-height)));
   overflow-y: auto;
 }
 .desktop-collapse-menu__row {
