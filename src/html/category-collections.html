@@ -42,6 +42,47 @@
                 
                 <div class="col-lg-9">
 
+                    <!-- switches -->
+                    <style>
+                        .switches ul {
+                            list-style: none;
+                            display: flex;
+                            gap: 1rem;
+                            padding: 4px;
+                            border: 1px solid #d5d4d4;
+                            border-radius: 50px;
+                            width: 368px;
+                            justify-content: space-between;
+                        }
+                        @media (max-width: 768px) {
+                            .switches ul {
+                                width: 100%;
+                            }
+                        }
+                        .switches ul li {
+                            padding: .6rem 1rem;
+                            border-radius: 50px;
+                            width: 50%;
+                            text-align: center;
+                        }
+                        .switches ul li.active {
+                            background-color: #EEF4FE;
+                            border-radius: 50px;
+                            width: 50%;
+                            text-align: center;
+                        }
+                    </style>
+                    <div class="switches">
+                        <ul>
+                            <li class="">
+                                <a href="/katalog/plitka/" class="fw-semibold">Товары</a>
+                            </li>
+                            <li class="active">
+                                <span class="text-primary fw-semibold">Коллекции</span>
+                            </li>
+                        </ul>
+                    </div>
+
                     <!-- filters -->
                     <div class="d-flex flex-wrap align-items-center justify-content-between gap-22px mb-32px">
                         <div class="d-flex align-items-center flex-wrap gap-22px">
@@ -74,12 +115,6 @@
                                     <li><a class="dropdown-item" href="#">Бренд 03</a></li>
                                 </ul>
                             </div>
-                            <div>
-                                <label class="d-flex gap-2 align-items-center">
-                                    <input type="checkbox" class="form-checkbox">
-                                    <span>Широкий формат</span>
-                                </label>
-                            </div>
                         </div>
                         <button type="button" class="btn d-inline-flex align-items-center gap-2 border-0 p-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
@@ -93,17 +128,17 @@
                     <!-- grid -->
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3" style="--bs-gutter-y: 2rem;">
                         <div class="col">
-                            @@include('partials/card-collection.html', {
+                            @@include('partials/card-collection-detailed.html', {
                                 "thumbURL": "img/card/collection-card-01.png"
                             })
                         </div>
                         <div class="col">
-                            @@include('partials/card-collection.html', {
+                            @@include('partials/card-collection-detailed.html', {
                                 "thumbURL": "img/card/collection-card-02.png"
                             })
                         </div>
                         <div class="col">
-                            @@include('partials/card-collection.html', {
+                            @@include('partials/card-collection-detailed.html', {
                                 "thumbURL": "img/card/collection-card-03.png"
                             })
                         </div>

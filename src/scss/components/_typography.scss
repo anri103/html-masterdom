@@ -53,6 +53,11 @@
     color: var(--theme-light-gray) !important;
 }
 
+.text-gray-dark {
+    --bs-text-opacity: 1;
+    color: rgba(95, 95, 92,var(--bs-text-opacity))!important;
+}
+
 @media (min-width: 992px) {
 
     .title {

@@ -1,19 +1,19 @@
 /* BREADCRUMBS ============================ */
 
 .section-breadcrumbs {
-    margin-top: 2rem;
-    margin-bottom: 12px;
-}
+    margin-top: 3rem;
+    margin-bottom: 22px;
 
-.section-breadcrumbs .breadcrumb {
-    --bs-breadcrumb-margin-bottom: 0;
-    --bs-breadcrumb-divider: '|';
-    --bs-breadcrumb-item-padding-x: 4px;
-    --bs-breadcrumb-divider-color: #ACB2BF;
-    --bs-breadcrumb-item-active-color: var(--bs-secondary);
-    --bs-link-color-rgb: 172,178,191;
-    --bs-link-hover-color-rgb: 2,55,143;
-    --bs-breadcrumb-font-size: 16px;
+    .breadcrumb {
+        --bs-breadcrumb-margin-bottom: 0;
+        --bs-breadcrumb-divider: '|';
+        --bs-breadcrumb-item-padding-x: 4px;
+        --bs-breadcrumb-divider-color: #ACB2BF;
+        --bs-breadcrumb-item-active-color: var(--bs-secondary);
+        --bs-link-color-rgb: 172,178,191;
+        --bs-link-hover-color-rgb: 2,55,143;
+        --bs-breadcrumb-font-size: 16px;
+    }
 }
 
 .section-page-title {

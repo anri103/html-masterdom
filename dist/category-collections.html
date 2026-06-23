@@ -1303,6 +1303,47 @@
                 
                 <div class="col-lg-9">
 
+                    <!-- switches -->
+                    <style>
+                        .switches ul {
+                            list-style: none;
+                            display: flex;
+                            gap: 1rem;
+                            padding: 4px;
+                            border: 1px solid #d5d4d4;
+                            border-radius: 50px;
+                            width: 368px;
+                            justify-content: space-between;
+                        }
+                        @media (max-width: 768px) {
+                            .switches ul {
+                                width: 100%;
+                            }
+                        }
+                        .switches ul li {
+                            padding: .6rem 1rem;
+                            border-radius: 50px;
+                            width: 50%;
+                            text-align: center;
+                        }
+                        .switches ul li.active {
+                            background-color: #EEF4FE;
+                            border-radius: 50px;
+                            width: 50%;
+                            text-align: center;
+                        }
+                    </style>
+                    <div class="switches">
+                        <ul>
+                            <li class="">
+                                <a href="/katalog/plitka/" class="fw-semibold">Товары</a>
+                            </li>
+                            <li class="active">
+                                <span class="text-primary fw-semibold">Коллекции</span>
+                            </li>
+                        </ul>
+                    </div>
+
                     <!-- filters -->
                     <div class="d-flex flex-wrap align-items-center justify-content-between gap-22px mb-32px">
                         <div class="d-flex align-items-center flex-wrap gap-22px">
@@ -1335,12 +1376,6 @@
                                     <li><a class="dropdown-item" href="#">Бренд 03</a></li>
                                 </ul>
                             </div>
-                            <div>
-                                <label class="d-flex gap-2 align-items-center">
-                                    <input type="checkbox" class="form-checkbox">
-                                    <span>Широкий формат</span>
-                                </label>
-                            </div>
                         </div>
                         <button type="button" class="btn d-inline-flex align-items-center gap-2 border-0 p-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
@@ -1354,22 +1389,40 @@
                     <!-- grid -->
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3" style="--bs-gutter-y: 2rem;">
                         <div class="col">
-                            <div class="card collection-card">
-    <div class="card-top">
-        <div class="link-body text-uppercase">
-            <a href="category-collections-item.html">Italon</a>
+                            <div class="card collection-detailed-card">
+    <!-- top -->
+    <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex flex-column gap-1">
+            <a href="category-collections-item.html" class="link-body text-uppercase">Вандерфул Лайф</a>
+            <div class="text-muted-light fs-14px">Wonderful Life</div>
         </div>
-        <!-- <div>Россия</div> -->
+        <div class="flex-shrink-0 d-flex align-items-center justify-content-center" style="width: 55px; height: 45px;">
+            <img class="w-100 h-100 object-fit-contain" src="img/product/italon.jpg" alt="Italon" title="Italon">
+        </div>
     </div>
-    <div class="card-head">
+    <div class="card-thumb-wrap">
         <a href="category-collections-item.html">
-            <img class="img-fluid w-100" src="img/card/collection-card-01.png" alt="...">
+            <img class="card-thumb" src="img/card/collection-card-01.png" alt="...">
         </a>
     </div>
-    <!-- <div class="card-body">
-        <div class="text-primary fw-medium">от 3 250 ₽ / 1 м2</div>
-    </div> -->
-    <!-- <div class="card-bottom">
+    <div class="d-flex align-items-center gap-2">
+        <img class="img-fluid" src="img/product/flag-ru.png" width="16" height="16" alt="RU" title="RU">
+        <div class="fs-14px">Россия</div>
+    </div>
+    <div class="d-flex align-items-center gap-2">
+        <div class="text-primary fw-medium">
+            <span>от 2 900 ₽</span> / <span class="measure">м2</span>
+        </div>
+        <div class="text-muted-light">
+            <span class="old_price fs-14px text-decoration-line-through">
+                <span>3 400 ₽</span> / <span class="measure">м2</span>
+            </span>
+        </div>
+    </div>
+    <div class="text-gray-dark fs-14px">
+        <span class="text-muted-light">Формат: </span><span>60х60, 60x120</span>
+    </div>
+    <div>
         <div class="collection-card-options">
             <div class="collection-card-option__item active">
                 <a href="#">
@@ -1402,26 +1455,44 @@
                 </a>
             </div>
         </div>
-    </div> -->
+    </div>
 </div>
                         </div>
                         <div class="col">
-                            <div class="card collection-card">
-    <div class="card-top">
-        <div class="link-body text-uppercase">
-            <a href="category-collections-item.html">Italon</a>
+                            <div class="card collection-detailed-card">
+    <!-- top -->
+    <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex flex-column gap-1">
+            <a href="category-collections-item.html" class="link-body text-uppercase">Вандерфул Лайф</a>
+            <div class="text-muted-light fs-14px">Wonderful Life</div>
         </div>
-        <!-- <div>Россия</div> -->
+        <div class="flex-shrink-0 d-flex align-items-center justify-content-center" style="width: 55px; height: 45px;">
+            <img class="w-100 h-100 object-fit-contain" src="img/product/italon.jpg" alt="Italon" title="Italon">
+        </div>
     </div>
-    <div class="card-head">
+    <div class="card-thumb-wrap">
         <a href="category-collections-item.html">
-            <img class="img-fluid w-100" src="img/card/collection-card-02.png" alt="...">
+            <img class="card-thumb" src="img/card/collection-card-02.png" alt="...">
         </a>
     </div>
-    <!-- <div class="card-body">
-        <div class="text-primary fw-medium">от 3 250 ₽ / 1 м2</div>
-    </div> -->
-    <!-- <div class="card-bottom">
+    <div class="d-flex align-items-center gap-2">
+        <img class="img-fluid" src="img/product/flag-ru.png" width="16" height="16" alt="RU" title="RU">
+        <div class="fs-14px">Россия</div>
+    </div>
+    <div class="d-flex align-items-center gap-2">
+        <div class="text-primary fw-medium">
+            <span>от 2 900 ₽</span> / <span class="measure">м2</span>
+        </div>
+        <div class="text-muted-light">
+            <span class="old_price fs-14px text-decoration-line-through">
+                <span>3 400 ₽</span> / <span class="measure">м2</span>
+            </span>
+        </div>
+    </div>
+    <div class="text-gray-dark fs-14px">
+        <span class="text-muted-light">Формат: </span><span>60х60, 60x120</span>
+    </div>
+    <div>
         <div class="collection-card-options">
             <div class="collection-card-option__item active">
                 <a href="#">
@@ -1454,26 +1525,44 @@
                 </a>
             </div>
         </div>
-    </div> -->
+    </div>
 </div>
                         </div>
                         <div class="col">
-                            <div class="card collection-card">
-    <div class="card-top">
-        <div class="link-body text-uppercase">
-            <a href="category-collections-item.html">Italon</a>
+                            <div class="card collection-detailed-card">
+    <!-- top -->
+    <div class="d-flex align-items-center justify-content-between">
+        <div class="d-flex flex-column gap-1">
+            <a href="category-collections-item.html" class="link-body text-uppercase">Вандерфул Лайф</a>
+            <div class="text-muted-light fs-14px">Wonderful Life</div>
         </div>
-        <!-- <div>Россия</div> -->
+        <div class="flex-shrink-0 d-flex align-items-center justify-content-center" style="width: 55px; height: 45px;">
+            <img class="w-100 h-100 object-fit-contain" src="img/product/italon.jpg" alt="Italon" title="Italon">
+        </div>
     </div>
-    <div class="card-head">
+    <div class="card-thumb-wrap">
         <a href="category-collections-item.html">
-            <img class="img-fluid w-100" src="img/card/collection-card-03.png" alt="...">
+            <img class="card-thumb" src="img/card/collection-card-03.png" alt="...">
         </a>
     </div>
-    <!-- <div class="card-body">
-        <div class="text-primary fw-medium">от 3 250 ₽ / 1 м2</div>
-    </div> -->
-    <!-- <div class="card-bottom">
+    <div class="d-flex align-items-center gap-2">
+        <img class="img-fluid" src="img/product/flag-ru.png" width="16" height="16" alt="RU" title="RU">
+        <div class="fs-14px">Россия</div>
+    </div>
+    <div class="d-flex align-items-center gap-2">
+        <div class="text-primary fw-medium">
+            <span>от 2 900 ₽</span> / <span class="measure">м2</span>
+        </div>
+        <div class="text-muted-light">
+            <span class="old_price fs-14px text-decoration-line-through">
+                <span>3 400 ₽</span> / <span class="measure">м2</span>
+            </span>
+        </div>
+    </div>
+    <div class="text-gray-dark fs-14px">
+        <span class="text-muted-light">Формат: </span><span>60х60, 60x120</span>
+    </div>
+    <div>
         <div class="collection-card-options">
             <div class="collection-card-option__item active">
                 <a href="#">
@@ -1506,7 +1595,7 @@
                 </a>
             </div>
         </div>
-    </div> -->
+    </div>
 </div>
                         </div>
                     </div>

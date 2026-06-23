@@ -395,6 +395,11 @@ body {
   color: var(--theme-light-gray) !important;
 }
 
+.text-gray-dark {
+  --bs-text-opacity: 1;
+  color: rgba(95, 95, 92, var(--bs-text-opacity)) !important;
+}
+
 @media (min-width: 992px) {
   .title {
     font-size: 32px;
@@ -2110,15 +2115,16 @@ textarea {
 .collection-card-options {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 .collection-card-option__item {
-  width: 58px;
-  height: 58px;
-  padding: 3px;
+  width: 55px;
+  height: 55px;
   border: 1px solid;
   border-color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .collection-card-option__item.active {
   border-color: var(--bs-primary);
@@ -2128,6 +2134,33 @@ textarea {
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+/* collection-detailed-card ============================ */
+.collection-detailed-card {
+  --bs-card-border-color: #DEE5ED;
+  --bs-card-border-radius: 1rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.collection-detailed-card .card-thumb-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  padding-bottom: 100%;
+}
+
+.collection-detailed-card .card-thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.collection-detailed-card .collection-card-option__item {
+  width: 48px;
+  height: 48px;
 }
 
 /* card-blog-item ============================ */
@@ -5967,10 +6000,9 @@ textarea {
 
 /* BREADCRUMBS ============================ */
 .section-breadcrumbs {
-  margin-top: 2rem;
-  margin-bottom: 12px;
+  margin-top: 3rem;
+  margin-bottom: 22px;
 }
-
 .section-breadcrumbs .breadcrumb {
   --bs-breadcrumb-margin-bottom: 0;
   --bs-breadcrumb-divider: "|";
